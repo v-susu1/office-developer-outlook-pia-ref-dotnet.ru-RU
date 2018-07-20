@@ -1,0 +1,66 @@
+<Type Name="CardView" FullName="Microsoft.Office.Interop.Outlook.CardView">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="efd6706aca2f052585ee7113d586127382680d3d" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ru-RU" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20640310" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface CardView : Microsoft.Office.Interop.Outlook._CardView" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CardView implements class Microsoft.Office.Interop.Outlook._CardView" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.CardView" />
+  <TypeSignature Language="VB.NET" Value="Public Interface CardView&#xA;Implements _CardView" />
+  <TypeSignature Language="C++ CLI" Value="public interface class CardView : Microsoft::Office::Interop::Outlook::_CardView" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._CardView</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.CardViewClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00063098-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="69f9a-101">Представляет представление, которое отображает элементы Outlook в формате карточек индекса.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="69f9a-101">Represents a view that displays Outlook items as a series of index cards.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="69f9a-102">
+        <para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._CardView" />.</para>
+        <para>
+          <b>CardView</b> объекта, производного от <see cref="T:Microsoft.Office.Interop.Outlook.View" /> объект, можно создавать настраиваемые представления, которые позволяют отображать элементы Outlook как карточки указателя.</para>
+        <para>Outlook предоставляет несколько встроенных объектов <b>CardView</b> и также можно создавать пользовательские объекты <b>CardView</b> . Использование <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> семейства сайтов для добавления нового <b>CardView</b> для <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объекта. Использование <see cref="P:Microsoft.Office.Interop.Outlook._CardView.Standard" /> свойства, чтобы определить, является ли существующий объект CardView Встроенные или настраиваемые.</para>
+        <para>Можно настроить отображение элементов Outlook в объекте <b>CardView</b> . Использование <see cref="P:Microsoft.Office.Interop.Outlook._CardView.MultiLineFieldHeight" /> свойство, чтобы указать номер строки используется для отображения многострочный текст в каждой карточке <see cref="P:Microsoft.Office.Interop.Outlook._CardView.HeadingsFont" /> свойство, чтобы указать шрифт, используемый для отображения текста заголовка в каждой карточке и <see cref="P:Microsoft.Office.Interop.Outlook._CardView.BodyFont" /> свойство, чтобы указать шрифт, используемый для отображения текста на Каждый карточки. Использование <see cref="P:Microsoft.Office.Interop.Outlook._CardView.AllowInCellEditing" /> свойство, чтобы разрешить изменение значения свойства элемента Outlook в представлении и <see cref="P:Microsoft.Office.Interop.Outlook._CardView.ShowEmptyFields" /> свойство для отображения пустой свойства элемента Outlook в представлении. Использование <see cref="P:Microsoft.Office.Interop.Outlook._CardView.Filter" /> свойство, чтобы определить, какие элементы Outlook для отображения в представлении, <see cref="P:Microsoft.Office.Interop.Outlook._CardView.ViewFields" /> коллекцией, чтобы указать свойства элемента Outlook для отображения в каждой карточке и <see cref="P:Microsoft.Office.Interop.Outlook._CardView.SortFields" /> коллекцией, чтобы указать свойства элемента Outlook, какие Outlook элементы сортируются в представлении.</para>
+        <para>Определения для каждого объекта <b>CardView</b> хранится в формате языка (XML). Использование <see cref="P:Microsoft.Office.Interop.Outlook._CardView.XML" /> свойство для работы с XML-определении для объекта CardView.</para>
+        <para>Использования <see cref="M:Microsoft.Office.Interop.Outlook._CardView.Apply" /> методу, чтобы применить изменения, внесенные объект <b>CardView</b> к текущему представлению. Использование <see cref="M:Microsoft.Office.Interop.Outlook._CardView.Save" /> метод, чтобы сохранить изменения, внесенные в объект <b>CardView</b> . Использование <see cref="P:Microsoft.Office.Interop.Outlook._CardView.LockUserChanges" /> свойство, чтобы разрешить или запретить изменения в пользовательский интерфейс для представления.</para>
+        <para>Встроенные объекты <b>CardView</b> можно изменить, но их нельзя удалить. Использование <see cref="M:Microsoft.Office.Interop.Outlook._CardView.Delete" /> метод, чтобы удалить настраиваемый объект <b>CardView</b> . Использование <see cref="M:Microsoft.Office.Interop.Outlook._CardView.Reset" /> метод, чтобы сбросить свойства встроенный объект <b>CardView</b> значения по умолчанию.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="69f9a-102">
+          <para>This is a .NET interface derived from a COM coclass that is required by managed code for interoperability with the corresponding COM object. Use this derived interface to access all method, property, and event members of the COM object. However, if a method or event you want to use shares the same name under the same COM object, cast to the corresponding primary interface to call the method, and cast to the latest events interface to connect to the event. Refer to this topic for information about the COM object. For information about the method and property members of the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook._CardView" />.</para>
+          <para>The <b>CardView</b> object, derived from the <see cref="T:Microsoft.Office.Interop.Outlook.View" /> object, allows you to create customizable views that allow you to display Outlook items as index cards.</para>
+          <para>Outlook provides several built-in <b>CardView</b> objects, and you can also create custom <b>CardView</b> objects. Use the <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> method of the <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> collection to add a new <b>CardView</b> to a <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> object. Use the <see cref="P:Microsoft.Office.Interop.Outlook._CardView.Standard" /> property to determine if an existing CardView object is built-in or custom.</para>
+          <para>You can configure how Outlook items appear within the <b>CardView</b> object. Use the <see cref="P:Microsoft.Office.Interop.Outlook._CardView.MultiLineFieldHeight" /> property to specify the number of lines used to display multi-line text in each card, the <see cref="P:Microsoft.Office.Interop.Outlook._CardView.HeadingsFont" /> property to specify the font used to display heading text on each card, and the <see cref="P:Microsoft.Office.Interop.Outlook._CardView.BodyFont" /> property to specify the font used to display body text on each card. Use the <see cref="P:Microsoft.Office.Interop.Outlook._CardView.AllowInCellEditing" /> property to allow editing of Outlook item property values in the view, and the <see cref="P:Microsoft.Office.Interop.Outlook._CardView.ShowEmptyFields" /> property to display empty Outlook item properties in the view. Use the <see cref="P:Microsoft.Office.Interop.Outlook._CardView.Filter" /> property to determine which Outlook items to display in the view, the <see cref="P:Microsoft.Office.Interop.Outlook._CardView.ViewFields" /> collection to specify the Outlook item properties to display in each card, and the <see cref="P:Microsoft.Office.Interop.Outlook._CardView.SortFields" /> collection to specify the Outlook item properties by which Outlook items are sorted in the view.</para>
+          <para>The definition for each <b>CardView</b> object is stored in Extensible Markup Language (XML) format. Use the <see cref="P:Microsoft.Office.Interop.Outlook._CardView.XML" /> property to work with the XML definition for the CardView object.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Outlook._CardView.Apply" /> method to apply any changes made to the <b>CardView</b> object to the current view. Use the <see cref="M:Microsoft.Office.Interop.Outlook._CardView.Save" /> method to persist any changes made to the <b>CardView</b> object. Use the <see cref="P:Microsoft.Office.Interop.Outlook._CardView.LockUserChanges" /> property to allow or prevent changes to the user interface for the view.</para>
+          <para>You can change built-in <b>CardView</b> objects, but you cannot delete them. Use the <see cref="M:Microsoft.Office.Interop.Outlook._CardView.Delete" /> method to delete a custom <b>CardView</b> object. Use the <see cref="M:Microsoft.Office.Interop.Outlook._CardView.Reset" /> method to reset the properties of a built-in <b>CardView</b> object to their default values.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

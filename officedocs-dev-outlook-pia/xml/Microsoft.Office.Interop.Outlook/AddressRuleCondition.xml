@@ -1,0 +1,59 @@
+<Type Name="AddressRuleCondition" FullName="Microsoft.Office.Interop.Outlook.AddressRuleCondition">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="6fb93c163c144051524a8ccda77644fc156e0d63" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ru-RU" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20640577" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface AddressRuleCondition : Microsoft.Office.Interop.Outlook._AddressRuleCondition" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddressRuleCondition implements class Microsoft.Office.Interop.Outlook._AddressRuleCondition" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.AddressRuleCondition" />
+  <TypeSignature Language="VB.NET" Value="Public Interface AddressRuleCondition&#xA;Implements _AddressRuleCondition" />
+  <TypeSignature Language="C++ CLI" Value="public interface class AddressRuleCondition : Microsoft::Office::Interop::Outlook::_AddressRuleCondition" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._AddressRuleCondition</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.AddressRuleConditionClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000630FA-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="d038e-101">Представляет условие для правила, которое определяет, является ли адрес получателя или отправителя сообщения содержится в поле адрес, указанный в <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.Address" />.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="d038e-101">Represents a rule condition that evaluates whether the address for the recipient or sender of the message is contained in the address specified in <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.Address" />.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="d038e-102">
+        <para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._AddressRuleCondition" />.</para>
+        <para>
+          <b>AddressRuleCondition</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> объекта. Каждое правило связана с <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.RecipientAddress" /> свойство и <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.SenderAddress" />. Каждое из этих свойств всегда возвращает объект <b>AddressRuleCondition</b> . <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.ConditionType" /> отличает среди этих условий правила. Если данное правило соответствует любой из этих правила условия, этот параметр включен, затем <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+        <para>Дополнительные сведения о задании действия правила можно <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Указание условия правила</a></para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="d038e-102">
+          <para>This is a .NET interface derived from a COM coclass that is required by managed code for interoperability with the corresponding COM object. Use this derived interface to access all method, property, and event members of the COM object. However, if a method or event you want to use shares the same name under the same COM object, cast to the corresponding primary interface to call the method, and cast to the latest events interface to connect to the event. Refer to this topic for information about the COM object. For information about the method and property members of the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook._AddressRuleCondition" />.</para>
+          <para>
+            <b>AddressRuleCondition</b> is derived from the <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object. Each rule is associated with a <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> object which has a <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.RecipientAddress" /> property and a <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.SenderAddress" />. Each of these properties always returns a <b>AddressRuleCondition</b> object. <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.ConditionType" /> distinguishes among these rule conditions. If the rule has any of these rule conditions enabled, then <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.Enabled" /> would be <b>True</b>.</para>
+          <para>For more information on specifying rule actions, see <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Specifying Rule Conditions</a></para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

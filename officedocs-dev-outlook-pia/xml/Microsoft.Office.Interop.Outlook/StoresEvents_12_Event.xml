@@ -1,0 +1,214 @@
+<Type Name="StoresEvents_12_Event" FullName="Microsoft.Office.Interop.Outlook.StoresEvents_12_Event">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="b7130da689629b3854734549d3eea36f219b10b1" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ru-RU" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20640748" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface StoresEvents_12_Event" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract StoresEvents_12_Event" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.StoresEvents_12_Event" />
+  <TypeSignature Language="VB.NET" Value="Public Interface StoresEvents_12_Event" />
+  <TypeSignature Language="C++ CLI" Value="public interface class StoresEvents_12_Event" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComEventInterface(typeof(Microsoft.Office.Interop.Outlook.StoresEvents_12), typeof(Microsoft.Office.Interop.Outlook.StoresEvents_12_EventProvider))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="1f55d-p101">Это интерфейс .NET, созданный при обработке компонентного класса COM, который требуется управляемому коду для взаимодействия с соответствующим объектом COM. Этот интерфейс реализует все события предыдущих интерфейсов и новые события. Используйте его, только если имя нужного события совпадает с именем метода объекта COM. В этом случае выполните приведение типов к этому интерфейсу, чтобы подключиться к событию, и выполните приведение типов к первичному интерфейсу, вызвать метод. В противном случае используйте интерфейс .NET, производный от компонентного класса COM, для доступа к методам, свойствам и событиям объекта COM.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="1f55d-p101">This is a .NET interface created when processing a COM coclass that is required by managed code for interoperability with the corresponding COM object. This interface implements all events of earlier interfaces and any additional new events. Use this interface only when the event you want to use shares the same name as a method of the COM object; in this case, cast to this interface to connect to the event, and cast to the primary interface to call the method. Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BeforeStoreRemove">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.StoresEvents_12_BeforeStoreRemoveEventHandler BeforeStoreRemove;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.StoresEvents_12_BeforeStoreRemoveEventHandler BeforeStoreRemove" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.StoresEvents_12_Event.BeforeStoreRemove" />
+      <MemberSignature Language="VB.NET" Value="Event BeforeStoreRemove As StoresEvents_12_BeforeStoreRemoveEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::StoresEvents_12_BeforeStoreRemoveEventHandler ^ BeforeStoreRemove;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.StoresEvents_12_BeforeStoreRemoveEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1f55d-105">Происходит, когда <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> будет вскоре удален из текущего сеанса программно или с помощью пользовательского действия.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f55d-105">Occurs when a <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> is about to be removed from the current session either programmatically or through user action.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="1f55d-106">
+            <para>Outlook должна быть запущена в порядке для этого события. Это событие будет срабатывать, когда происходит одно из следующих значений: </para>
+            <list type="bullet">
+              <item>
+                <para>хранилище было удалено пользователем, выбрав команду Закрыть в контекстном меню.</para>
+              </item>
+              <item>
+                <para>Хранилища удаляется программным способом посредством вызова <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.RemoveStore(Microsoft.Office.Interop.Outlook.MAPIFolder)" />.</para>
+              </item>
+            </list>
+            <para>Это событие не будет срабатывать, когда происходит одно из следующих значений:</para>
+            <list type="bullet">
+              <item>
+                <para>При работе с Outlook завершает работу и закрывает основной или хранить делегата.</para>
+              </item>
+              <item>
+                <para>Если удалить хранилище через "Почта" в панели управления Microsoft Windows и Outlook не выполняется.</para>
+              </item>
+              <item>
+                <para>Хранилища делегат удаляется на вкладке Дополнительно диалогового окна Microsoft Exchange Server.</para>
+              </item>
+              <item>
+                <para>Хранилища удаляется на вкладке файлы данных диалогового окна Диспетчер учетных записей, когда Outlook не выполняется.</para>
+              </item>
+              <item>
+                <para>Хранилище IMAP удаляется из профиля.</para>
+              </item>
+            </list>
+            <para>Можно использовать данное событие для определения удаления хранилища и выполнить соответствующие действия, если хранилище является обязательным для приложения (например, повторном монтировании хранилище). В противном случае следует прибегать к опроса <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> семейства.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f55d-106">
+              <para>Outlook must be running in order for this event to fire. This event will fire when any of the following occurs:  </para>
+              <list type="bullet">
+                <item>
+                  <para>A store is removed by the user clicking the Close command on the Shortcut menu.</para>
+                </item>
+                <item>
+                  <para>A store is removed programmatically by calling <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.RemoveStore(Microsoft.Office.Interop.Outlook.MAPIFolder)" />.</para>
+                </item>
+              </list>
+              <para>This event will not fire when any of the following occurs: </para>
+              <list type="bullet">
+                <item>
+                  <para>When Outlook shuts down and closes a primary or delegate store.</para>
+                </item>
+                <item>
+                  <para>If a store is removed through the Mail applet in the Microsoft Windows Control Panel and Outlook is not running.</para>
+                </item>
+                <item>
+                  <para>A delegate store is removed on the Advanced tab of the Microsoft Exchange Server dialog box.</para>
+                </item>
+                <item>
+                  <para>A store is removed through the Data Files tab of the Account Manager dialog box when Outlook is not running.</para>
+                </item>
+                <item>
+                  <para>An IMAP Store is removed from the profile.</para>
+                </item>
+              </list>
+              <para>You can use this event to determine that a store has been removed, and take appropriate actions if the store is required for your application (such as remounting the store). Otherwise you would have to resort to polling the <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> collection.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StoreAdd">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.StoresEvents_12_StoreAddEventHandler StoreAdd;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.StoresEvents_12_StoreAddEventHandler StoreAdd" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.StoresEvents_12_Event.StoreAdd" />
+      <MemberSignature Language="VB.NET" Value="Event StoreAdd As StoresEvents_12_StoreAddEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::StoresEvents_12_StoreAddEventHandler ^ StoreAdd;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.StoresEvents_12_StoreAddEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1f55d-107">Происходит, когда <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> был добавлен к текущему сеансу программно или с помощью пользовательского действия.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f55d-107">Occurs when a <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> has been added to the current session either programmatically or through user action.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="1f55d-108">
+            <para>Outlook должна быть запущена в порядке для этого события. Это событие будет выполняться при возникновении одного из следующих значений: </para>
+            <list type="bullet">
+              <item>
+                <para>хранилище добавляется в диалоговом окне Открытие файла данных Outlook выберите Открыть, а затем файл данных Outlook в меню файл.</para>
+              </item>
+              <item>
+                <para>Хранилище добавляется на вкладке файлы данных диалогового окна Диспетчер учетных записей.</para>
+              </item>
+              <item>
+                <para>Хранилища успешно добавлен, вызвав <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.AddStore(System.Object)" /> метод.</para>
+              </item>
+            </list>
+            <para>Это событие не будет срабатывать, когда происходит одно из следующих значений:</para>
+            <list type="bullet">
+              <item>
+                <para>Outlook при запуске и открывает основного или хранить делегата.</para>
+              </item>
+              <item>
+                <para>Если хранилище будет добавлен через "Почта" в панели управления Microsoft Windows и Outlook не выполняется.</para>
+              </item>
+              <item>
+                <para>Хранилища делегат добавляется на вкладке Дополнительно диалогового окна Microsoft Exchange Server.</para>
+              </item>
+            </list>
+            <para>Можно использовать это событие для определения, были ли добавлены хранилища и выполнить соответствующие действия для элементов этого хранилища. В противном случае следует прибегать к опроса <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> семейства.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f55d-108">
+              <para>Outlook must be running in order for this event to fire. This event will fire when any of the following occur:  </para>
+              <list type="bullet">
+                <item>
+                  <para>A store is added through the Open Outlook Data File dialog box, by selecting Open and then Outlook Data File on the File menu.</para>
+                </item>
+                <item>
+                  <para>A store is added through the Data Files tab of the Account Manager dialog box.</para>
+                </item>
+                <item>
+                  <para>A store is added successfully by calling the <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.AddStore(System.Object)" /> method.</para>
+                </item>
+              </list>
+              <para>This event will not fire when any of the following occurs: </para>
+              <list type="bullet">
+                <item>
+                  <para>When Outlook starts and opens a primary or delegate store. </para>
+                </item>
+                <item>
+                  <para>If a store is added through the Mail applet in the Microsoft Windows Control Panel and Outlook is not running. </para>
+                </item>
+                <item>
+                  <para>A delegate store is added through the Advanced tab of the Microsoft Exchange Server dialog box. </para>
+                </item>
+              </list>
+              <para>You can use this event to determine whether a store has been added and take appropriate actions on items in that store. Otherwise, you would have to resort to polling the <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> collection.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

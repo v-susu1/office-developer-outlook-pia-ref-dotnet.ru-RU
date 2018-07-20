@@ -1,0 +1,529 @@
+<Type Name="OlkTimeZoneControlEvents_Event" FullName="Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="ace53552d870de047458ea4d3f31ae51e1131a0d" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ru-RU" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20641293" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface OlkTimeZoneControlEvents_Event" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OlkTimeZoneControlEvents_Event" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event" />
+  <TypeSignature Language="VB.NET" Value="Public Interface OlkTimeZoneControlEvents_Event" />
+  <TypeSignature Language="C++ CLI" Value="public interface class OlkTimeZoneControlEvents_Event" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComEventInterface(typeof(Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents), typeof(Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_EventProvider))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="2b9cf-p101">Это интерфейс .NET, созданный при обработке компонентного класса COM, который требуется управляемому коду для взаимодействия с соответствующим объектом COM. Этот интерфейс реализует все события предыдущих интерфейсов и новые события. Используйте его, только если имя нужного события совпадает с именем метода объекта COM. В этом случае выполните приведение типов к этому интерфейсу, чтобы подключиться к событию, и выполните приведение типов к первичному интерфейсу, вызвать метод. В противном случае используйте интерфейс .NET, производный от компонентного класса COM, для доступа к методам, свойствам и событиям объекта COM.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="2b9cf-p101">This is a .NET interface created when processing a COM coclass that is required by managed code for interoperability with the corresponding COM object. This interface implements all events of earlier interfaces and any additional new events. Use this interface only when the event you want to use shares the same name as a method of the COM object; in this case, cast to this interface to connect to the event, and cast to the primary interface to call the method. Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AfterUpdate">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_AfterUpdateEventHandler AfterUpdate;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_AfterUpdateEventHandler AfterUpdate" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.AfterUpdate" />
+      <MemberSignature Language="VB.NET" Value="Event AfterUpdate As OlkTimeZoneControlEvents_AfterUpdateEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::OlkTimeZoneControlEvents_AfterUpdateEventHandler ^ AfterUpdate;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_AfterUpdateEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2b9cf-105">Возникает после изменения данных в элементе управления посредством пользовательского интерфейса.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2b9cf-105">Occurs after the data in the control has been changed through the user interface.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="2b9cf-106">
+            <para>
+              <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.BeforeUpdate" />и <b>после обновления</b> может возникнуть каждый раз, когда данные в элементе управления сохраняются к элементу. Типичная последовательность событий, связанных с <b>после обновления</b> для данного элемента управления, как показано ниже: </para>возникает 
+          <list type="number"><item><description>пользователя в центре внимания элемента управления</description></item><item><description><b>до обновления</b> происходит</description></item><item><description>обновления данных управления</description></item><item><description><b>после обновления</b></description></item><item><description><see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.Exit" /> возникает: пользователь перемещает фокус от элемента управления</description></item></list><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2b9cf-106">
+              <para>
+                <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.BeforeUpdate" /> and <b>AfterUpdate</b> can occur any time the data in the control is being saved to the item. The typical sequence of events involving <b>AfterUpdate</b> for this control is as follows:  </para>
+              <list type="number">
+                <item>
+                  <description>User focuses on the control</description>
+                </item>
+                <item>
+                  <description>
+                    <b>BeforeUpdate</b> occurs</description>
+                </item>
+                <item>
+                  <description>Control data is updated</description>
+                </item>
+                <item>
+                  <description>
+                    <b>AfterUpdate</b> occurs</description>
+                </item>
+                <item>
+                  <description>
+                    <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.Exit" /> occurs: User moves focus away from control </description>
+                </item>
+              </list>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforeUpdate">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_BeforeUpdateEventHandler BeforeUpdate;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_BeforeUpdateEventHandler BeforeUpdate" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.BeforeUpdate" />
+      <MemberSignature Language="VB.NET" Value="Event BeforeUpdate As OlkTimeZoneControlEvents_BeforeUpdateEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::OlkTimeZoneControlEvents_BeforeUpdateEventHandler ^ BeforeUpdate;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_BeforeUpdateEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2b9cf-107">Происходит, когда данные в элементе управления изменяются через пользовательский интерфейс и должен быть сохранен к элементу.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2b9cf-107">Occurs when the data in the control is changed through the user interface and is about to be saved to the item.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="2b9cf-108">
+            <para>Отмена это свойство будет вернуться в текущее значение свойства элемента управления и возврата фокуса на элемент управления.</para>
+            <para>
+              <b>До обновления</b> и <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.AfterUpdate" /> может возникнуть в любое время, данные в элементе управления сохраняются к элементу. Типичная последовательность событий, связанных с <b>после обновления</b> для данного элемента управления, как показано ниже: </para>возникает 
+          <list type="number"><item><description>пользователя в центре внимания элемента управления</description></item><item><description><b>до обновления</b> происходит</description></item><item><description>обновления данных управления</description></item><item><description><b>после обновления</b></description></item><item><description><see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.Exit" /> возникает: пользователь перемещает фокус от элемента управления</description></item></list><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2b9cf-108">
+              <para>Canceling this property will revert the control to the current value of the property and return the focus to the control.</para>
+              <para>
+                <b>BeforeUpdate</b> and <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.AfterUpdate" /> can occur any time the data in the control is being saved to the item. The typical sequence of events involving <b>AfterUpdate</b> for this control is as follows:  </para>
+              <list type="number">
+                <item>
+                  <description>User focuses on the control</description>
+                </item>
+                <item>
+                  <description>
+                    <b>BeforeUpdate</b>  occurs</description>
+                </item>
+                <item>
+                  <description>Control data is updated</description>
+                </item>
+                <item>
+                  <description>
+                    <b>AfterUpdate</b> occurs</description>
+                </item>
+                <item>
+                  <description>
+                    <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.Exit" /> occurs: User moves focus away from control</description>
+                </item>
+              </list>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Change">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_ChangeEventHandler Change;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_ChangeEventHandler Change" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.Change" />
+      <MemberSignature Language="VB.NET" Value="Event Change As OlkTimeZoneControlEvents_ChangeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::OlkTimeZoneControlEvents_ChangeEventHandler ^ Change;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_ChangeEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2b9cf-109">Происходит, когда <see cref="P:Microsoft.Office.Interop.Outlook._OlkTimeZoneControl.Value" /> изменения свойств.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2b9cf-109">Occurs when the <see cref="P:Microsoft.Office.Interop.Outlook._OlkTimeZoneControl.Value" /> property changes.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Click">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_ClickEventHandler Click;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_ClickEventHandler Click" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.Click" />
+      <MemberSignature Language="VB.NET" Value="Event Click As OlkTimeZoneControlEvents_ClickEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::OlkTimeZoneControlEvents_ClickEventHandler ^ Click;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_ClickEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2b9cf-110">Происходит, когда пользователь нажимает внутри элемента управления.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2b9cf-110">Occurs when the user clicks inside the control.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoubleClick">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_DoubleClickEventHandler DoubleClick;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_DoubleClickEventHandler DoubleClick" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.DoubleClick" />
+      <MemberSignature Language="VB.NET" Value="Event DoubleClick As OlkTimeZoneControlEvents_DoubleClickEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::OlkTimeZoneControlEvents_DoubleClickEventHandler ^ DoubleClick;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_DoubleClickEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2b9cf-111">Возникает при двойном щелчке внутри элемента управления.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2b9cf-111">Occurs when the user double-clicks inside the control.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropButtonClick">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_DropButtonClickEventHandler DropButtonClick;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_DropButtonClickEventHandler DropButtonClick" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.DropButtonClick" />
+      <MemberSignature Language="VB.NET" Value="Event DropButtonClick As OlkTimeZoneControlEvents_DropButtonClickEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::OlkTimeZoneControlEvents_DropButtonClickEventHandler ^ DropButtonClick;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_DropButtonClickEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2b9cf-112">Происходит, когда пользователь нажимает кнопку раскрывающегося разверните раскрывающегося списка в элементе управления часовой пояс или <see cref="M:Microsoft.Office.Interop.Outlook._OlkTimeZoneControl.DropDown" /> программным путем вызова метода.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2b9cf-112">Occurs when the user clicks the drop button to expand the drop-down list in the time zone control, or when the <see cref="M:Microsoft.Office.Interop.Outlook._OlkTimeZoneControl.DropDown" /> method is called programmatically.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enter">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_EnterEventHandler Enter;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_EnterEventHandler Enter" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.Enter" />
+      <MemberSignature Language="VB.NET" Value="Event Enter As OlkTimeZoneControlEvents_EnterEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::OlkTimeZoneControlEvents_EnterEventHandler ^ Enter;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_EnterEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2b9cf-113">Происходит, когда элемент управления получает фокус, сразу после <b>выхода</b> события предыдущего элемента управления.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2b9cf-113">Occurs when the control receives focus, immediately after the previous control's <b>Exit</b> event.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="2b9cf-114">
+            <para>Это событие <b>Получение фокуса</b> , предоставляемые с управляемым кодом элементы управления или в Microsoft Visual Basic 6.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2b9cf-114">
+              <para>This is similar to the <b>GotFocus</b> event exposed by managed-code controls or in Microsoft Visual Basic 6.  </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Exit">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_ExitEventHandler Exit;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_ExitEventHandler Exit" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.Exit" />
+      <MemberSignature Language="VB.NET" Value="Event Exit As OlkTimeZoneControlEvents_ExitEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::OlkTimeZoneControlEvents_ExitEventHandler ^ Exit;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_ExitEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2b9cf-115">Происходит после передает фокус из этого элемента управления на другой элемент управления в той же форме.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2b9cf-115">Occurs just after the focus passes from this control to another control on the same form.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyDown">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_KeyDownEventHandler KeyDown;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_KeyDownEventHandler KeyDown" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.KeyDown" />
+      <MemberSignature Language="VB.NET" Value="Event KeyDown As OlkTimeZoneControlEvents_KeyDownEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::OlkTimeZoneControlEvents_KeyDownEventHandler ^ KeyDown;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_KeyDownEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2b9cf-116">Происходит, когда пользователь нажимает клавишу.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2b9cf-116">Occurs when a user presses a key.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="2b9cf-117">
+            <para>Состояние клавиш (SHIFT, CTRL или ALT), которые нажата во время события <b>KeyDown</b> доступен через <paramref name="Shift" /> параметр.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2b9cf-117">
+              <para>The state of the modifier keys (SHIFT, CTRL, or ALT) that are pressed during the <b>KeyDown</b> event is accessible through the <paramref name="Shift" /> parameter.  </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyPress">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_KeyPressEventHandler KeyPress;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_KeyPressEventHandler KeyPress" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.KeyPress" />
+      <MemberSignature Language="VB.NET" Value="Event KeyPress As OlkTimeZoneControlEvents_KeyPressEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::OlkTimeZoneControlEvents_KeyPressEventHandler ^ KeyPress;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_KeyPressEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2b9cf-118">Происходит, когда пользователь нажимает клавишу с кодом ANSI.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2b9cf-118">Occurs when the user presses an ANSI key.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="2b9cf-119">
+            <para>Клавиша ANSI —, которая возвращает typeable символ, когда пользователь нажимает ее. Событие <b>KeyPress</b> происходит, когда пользователь нажимает клавишу с кодом ANSI на выполнение формы в форме при или элемент управления имеет фокус. Событие может возникнуть до или после выпуска ключ.</para>
+            <para>Событие <b>KeyPress</b> не происходит при следующих условиях:</para>
+            <list type="bullet">
+              <item>
+                <para>При нажатии клавиши TAB </para>
+              </item>
+              <item>
+                <para>При нажатии клавиши ВВОД </para>
+              </item>
+              <item>
+                <para>клавиш со стрелкой </para>
+              </item>
+              <item>
+                <para>при нажатии клавиши фокус перемещается с одного элемента управления на другой</para>
+              </item>
+            </list>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2b9cf-119">
+              <para>An ANSI key is one that produces a typeable character when the user presses it. The <b>KeyPress</b> event occurs when the user presses an ANSI key on a running form while the form or a control on it has the focus. The event can occur either before or after the key is released.</para>
+              <para>A <b>KeyPress</b> event does not occur under the following conditions:  </para>
+              <list type="bullet">
+                <item>
+                  <para>Pressing TAB </para>
+                </item>
+                <item>
+                  <para>Pressing ENTER </para>
+                </item>
+                <item>
+                  <para>Pressing an arrow key </para>
+                </item>
+                <item>
+                  <para>When a keystroke causes the focus to move from one control to another</para>
+                </item>
+              </list>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyUp">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_KeyUpEventHandler KeyUp;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_KeyUpEventHandler KeyUp" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.KeyUp" />
+      <MemberSignature Language="VB.NET" Value="Event KeyUp As OlkTimeZoneControlEvents_KeyUpEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::OlkTimeZoneControlEvents_KeyUpEventHandler ^ KeyUp;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_KeyUpEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2b9cf-120">Происходит, когда пользователь отпускает клавишу.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2b9cf-120">Occurs when the user releases a key.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="2b9cf-121">
+            <para>Состояние клавиш (SHIFT, CTRL или ALT), которые нажата во время события <b>KeyUp</b> доступен через параметр Shift.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2b9cf-121">
+              <para>The state of the modifier keys (SHIFT, CTRL, or ALT) that are pressed during the <b>KeyUp</b> event is accessible through the Shift parameter.  </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MouseDown">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_MouseDownEventHandler MouseDown;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_MouseDownEventHandler MouseDown" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.MouseDown" />
+      <MemberSignature Language="VB.NET" Value="Event MouseDown As OlkTimeZoneControlEvents_MouseDownEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::OlkTimeZoneControlEvents_MouseDownEventHandler ^ MouseDown;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_MouseDownEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2b9cf-122">Происходит, когда пользователь нажимает кнопку мыши на элементе управления.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2b9cf-122">Occurs when the user presses a mouse button on the control.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MouseMove">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_MouseMoveEventHandler MouseMove;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_MouseMoveEventHandler MouseMove" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.MouseMove" />
+      <MemberSignature Language="VB.NET" Value="Event MouseMove As OlkTimeZoneControlEvents_MouseMoveEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::OlkTimeZoneControlEvents_MouseMoveEventHandler ^ MouseMove;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_MouseMoveEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2b9cf-123">Возникает после регистрации движения мыши на элемент управления.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2b9cf-123">Occurs after a mouse movement has been registered over the control.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="2b9cf-124">
+            <para>Нажатие клавиши ALT запускает событие <b>MouseMove</b> .</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2b9cf-124">
+              <para>Pressing the ALT key fires the <b>MouseMove</b> event.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MouseUp">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_MouseUpEventHandler MouseUp;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_MouseUpEventHandler MouseUp" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.MouseUp" />
+      <MemberSignature Language="VB.NET" Value="Event MouseUp As OlkTimeZoneControlEvents_MouseUpEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::OlkTimeZoneControlEvents_MouseUpEventHandler ^ MouseUp;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_MouseUpEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2b9cf-125">Возникает после отпускании кнопки мыши, которые были нажаты на элементе управления.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2b9cf-125">Occurs after the user releases a mouse button that has been pressed on the control.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

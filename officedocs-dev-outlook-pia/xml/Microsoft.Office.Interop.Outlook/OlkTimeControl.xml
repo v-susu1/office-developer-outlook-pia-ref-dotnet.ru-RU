@@ -1,0 +1,68 @@
+<Type Name="OlkTimeControl" FullName="Microsoft.Office.Interop.Outlook.OlkTimeControl">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="4bfe7f2f9831d7ca1eabf6f748b796fed585d49a" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ru-RU" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20640987" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface OlkTimeControl : Microsoft.Office.Interop.Outlook._OlkTimeControl, Microsoft.Office.Interop.Outlook.OlkTimeControlEvents_Event" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OlkTimeControl implements class Microsoft.Office.Interop.Outlook._OlkTimeControl, class Microsoft.Office.Interop.Outlook.OlkTimeControlEvents_Event" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OlkTimeControl" />
+  <TypeSignature Language="VB.NET" Value="Public Interface OlkTimeControl&#xA;Implements _OlkTimeControl, OlkTimeControlEvents_Event" />
+  <TypeSignature Language="C++ CLI" Value="public interface class OlkTimeControl : Microsoft::Office::Interop::Outlook::_OlkTimeControl, Microsoft::Office::Interop::Outlook::OlkTimeControlEvents_Event" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._OlkTimeControl</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook.OlkTimeControlEvents_Event</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.OlkTimeControlClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000672EF-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="08f17-101">Элемент управления, который отображает раскрывающееся меню Outlook времени.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="08f17-101">A control that displays the Outlook time drop-down menu.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="08f17-102">
+        <para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._OlkTimeControl" />. Сведения об элементах события COM-объектом можно <see cref="T:Microsoft.Office.Interop.Outlook.OlkTimeControlEvents_Event" />.</para>
+        <para>, Прежде чем использовать этот элемент управления в первый раз в конструкторе форм, добавьте элемент управления Microsoft Outlook времени на панель элементов управления. Этот элемент управления можно добавить только к области формы в форме Outlook с помощью конструктора форм; не удается добавить этот элемент управления Visual Basic <b>UserForm</b> объект в редакторе Visual Basic.</para>
+        <para>Время элемент управления имеет несколько различных режимах, которые предоставляются с помощью свойства элемента управления.  Его можно привязать любое свойство <b>даты и времени</b> и могут быть привязаны к одному свойству, как элемент управления даты для предоставления возможности для выбора даты и времени.</para>
+        <para>Ниже приводится пример элемента управления времени во время выполнения. Этот элемент управления поддерживает темы Microsoft Windows.</para>
+        <para>Если <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeControlEvents_Event.Click" /> реализации событий, но <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeControlEvents_Event.DropButtonClick" /> события не реализованы, а затем нажав кнопку размещения будет выполняться только событие <b>Click</b> .</para>
+        <para>, Чтобы выполнить привязку элемента управления времени время начала и время окончания встречи, необходимо использовать надстройку для управления Включение и отключение элемента управления времени. В частности, когда пользователь устанавливает встреча событием на целый день, необходимо использовать код для отключения элементов управления времени для времени начала и время окончания и включите элементы управления только в том случае, если пользователь удаляет этот параметр.</para>
+        <para>Дополнительные сведения об элементах управления Outlook можно <a href="http://go.microsoft.com/fwlink/?LinkId=87823">элементов управления в форме Custom</a></para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="08f17-102">
+          <para>This is a .NET interface derived from a COM coclass that is required by managed code for interoperability with the corresponding COM object. Use this derived interface to access all method, property, and event members of the COM object. However, if a method or event you want to use shares the same name under the same COM object, cast to the corresponding primary interface to call the method, and cast to the latest events interface to connect to the event. Refer to this topic for information about the COM object. For information about the method and property members of the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook._OlkTimeControl" />. For information about the event members of the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.OlkTimeControlEvents_Event" />.</para>
+          <para>Before you use this control for the first time in the forms designer, add the Microsoft Outlook Time Control to the control toolbox. You can only add this control to a form region in an Outlook form using  the forms designer; you cannot add this control to a Visual Basic <b>UserForm</b> object in the Visual Basic Editor.</para>
+          <para>The time control has several different modes which are exposed via properties on the control.  It can be bound to any <b>DateTime</b> property, and can be bound to the same property as a date control to provide the capability to select both date and time.</para>
+          <para>The following is an example of the time control at runtime. This control supports Microsoft Windows themes.</para>
+          <para>If  the <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeControlEvents_Event.Click" /> event is implemented but the <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeControlEvents_Event.DropButtonClick" /> event is not implemented, then clicking the drop button will fire only the <b>Click</b> event.</para>
+          <para>If you bind the time control to the start time or the end time of an appointment item, you must use an add-in to control enabling and disabling of the time control. In particular, when the user sets the appointment as an all-day event, you must use code to disable the time controls for the start time and the end time, and enable the controls only when the user clears this setting.</para>
+          <para>For more information about Outlook controls, see <a href="http://go.microsoft.com/fwlink/?LinkId=87823">Controls in a Custom Form</a></para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

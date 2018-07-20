@@ -1,0 +1,794 @@
+<Type Name="_Table" FullName="Microsoft.Office.Interop.Outlook._Table">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f3622358929b16ec4cf2cb1b6f8e806f59c4d317" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ru-RU" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20640562" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface _Table" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Table" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Table" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _Table" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _Table" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000630D2-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="59a5d-101">Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="59a5d-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span>
+      </span>
+      <span data-ttu-id="59a5d-102">Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="59a5d-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span>
+      </span>
+      <span data-ttu-id="59a5d-103">В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="59a5d-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span>
+      </span>
+      <span data-ttu-id="59a5d-104">Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Table" />.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="59a5d-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.Table" />.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Table.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::Application ^ Application { Microsoft::Office::Interop::Outlook::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61440)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61440)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="59a5d-105">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение (для Outlook) для <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> объекта.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-105">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object that represents the parent application (Outlook) for the <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> object.</span>
+          </span>
+          <span data-ttu-id="59a5d-106">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-106">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Class">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlObjectClass Class { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlObjectClass Class" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Table.Class" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Class As OlObjectClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlObjectClass Class { Microsoft::Office::Interop::Outlook::OlObjectClass get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61450)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61450)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="59a5d-107">Возвращает константу в <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> перечисление, указывающее, класс <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> объекта.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-107">Returns a constant in the <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> enumeration indicating the class of the <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> object.</span>
+          </span>
+          <span data-ttu-id="59a5d-108">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-108">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Columns">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Columns Columns { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.Columns Columns" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Table.Columns" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Columns As Columns" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::Columns ^ Columns { Microsoft::Office::Interop::Outlook::Columns ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64403)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64403)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Columns</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="59a5d-109">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> коллекцию, содержащую объект, содержащий столбцы, определенных для <see cref="T:Microsoft.Office.Interop.Outlook.Table" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-109">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> collection object that contains the columns defined for the <see cref="T:Microsoft.Office.Interop.Outlook.Table" />.</span>
+          </span>
+          <span data-ttu-id="59a5d-110">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-110">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="59a5d-111">
+            <para>Объект коллекции <b>столбцы</b> — это элемент по умолчанию для объекта <b>таблицы</b> .  </para>
+            <para>Во время строки в <b>таблице</b> , соответствуют элементы в родительском <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> или <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> объект в <b>таблице</b>, <b>столбцы</b> в <b>таблице</b> соответствуют свойствам этих элементов. Определенные столбцы по умолчанию для всех папок в зависимости от родительской папки объекта <b>таблицы</b> . Например, являются свойства по умолчанию для папки "Входящие": <b>EntryID</b>, <b>тему</b>, <b>CreationTime</b>, <b>LastModificationTime</b>и <b>MessageClass</b>. Дополнительные сведения о свойствах по умолчанию для <b>таблицы</b>в разделе <a href="http://go.microsoft.com/fwlink/?LinkId=87925">Свойства по умолчанию, отображаемые в объекте таблицы</a></para>
+            <para>для добавления <see cref="T:Microsoft.Office.Interop.Outlook.Column" /> объекты в коллекцию <b>столбцов</b><b>в таблице</b>, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Add(System.String)" />. Чтобы удалить набор столбцов по умолчанию, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Columns.RemoveAll" />. Дополнительные сведения о настройке столбцов <b>в таблице</b>можно <a href="http://go.microsoft.com/fwlink/?LinkID=87935">Добавления столбцов в объекте таблицы</a></para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-111">
+              <para>The <b>Columns</b> collection object is the default member of the <b>Table</b> object.  </para>
+              <para>While rows in a <b>Table</b> correspond to items in the parent <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> or <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> object of the <b>Table</b>, <b>Columns</b> in a <b>Table</b> correspond to the properties of these items. Default columns are defined for all folders depending on the parent folder of the <b>Table</b> object. For example, the default properties for the Inbox are: <b>EntryID</b>, <b>Subject</b>, <b>CreationTime</b>, <b>LastModificationTime</b>, and <b>MessageClass</b>. For more information on default properties for a <b>Table</b>, see <a href="http://go.microsoft.com/fwlink/?LinkId=87925">Default Properties Displayed in a Table Object</a></para>
+              <para>To add <see cref="T:Microsoft.Office.Interop.Outlook.Column" /> objects to the <b>Columns</b> collection of a <b>Table</b>, use <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Add(System.String)" />. To remove the default column set, use <see cref="M:Microsoft.Office.Interop.Outlook._Columns.RemoveAll" />. For more information on adjusting columns of a <b>Table</b>, see <a href="http://go.microsoft.com/fwlink/?LinkID=87935">Adding Columns to a Table Object</a></para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndOfTable">
+      <MemberSignature Language="C#" Value="public bool EndOfTable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EndOfTable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Table.EndOfTable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndOfTable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EndOfTable { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64287)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64287)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="59a5d-112">Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, находится ли текущей строки после последней строки в <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> объекта.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-112">Returns a <b>Boolean</b> (<b>bool</b> in C#) that indicates whether the current row is positioned after the last row in the <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> object.</span>
+          </span>
+          <span data-ttu-id="59a5d-113">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-113">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="59a5d-114">
+            <para>При открытии <b>таблицы</b> с помощью <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.GetTable(System.Object,System.Object)" />, <see cref="M:Microsoft.Office.Interop.Outlook.Search.GetTable" />, или <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" />, значение <b>EndOfTable</b> зависит от количество строк в <b>таблице</b>. Если нет ни одной строки, <b>EndOfTable</b> возвращает значение True. Если имеются строки, <b>EndOfTable</b> возвращает <b>значение False</b> , пока курсор выходит за пределы последней строки в таблице.  </para>
+            <para>В <b>таблице</b> имеет два виртуальных <b>значение Null,</b> строки, прежде чем первой строки и после последней строки в <b>таблице</b>. Для каждого вызова <see cref="M:Microsoft.Office.Interop.Outlook._Table.GetNextRow" /> перемещает текущей строки на следующую строку в <b>таблице</b> и возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> объект, представляющий текущую строку.   </para>
+            <para>Свойство <b>EndOfTable</b> возвращает <b>значение True</b> , если текущей строки после последней строки и <b>значение False</b> , если текущей строки не позднее последней строки.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-114">
+              <para>When you open a <b>Table</b> using <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.GetTable(System.Object,System.Object)" />, <see cref="M:Microsoft.Office.Interop.Outlook.Search.GetTable" />, or <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" />, the value of <b>EndOfTable</b> depends on the number of rows in the <b>Table</b>. If there are no rows, <b>EndOfTable</b> returns True. If there are rows, <b>EndOfTable</b> returns <b>False</b> until the cursor moves beyond the last row in the Table.  </para>
+              <para>The <b>Table</b> has two virtual <b>Null</b> rows, one before the first row and one after the last row in the <b>Table</b>. Each call to <see cref="M:Microsoft.Office.Interop.Outlook._Table.GetNextRow" /> moves the current row to the next row in the <b>Table</b> and returns a <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> object that represents the current row.   </para>
+              <para>The <b>EndOfTable</b> property returns <b>True</b> if the current row is after the last row and <b>False</b> if the current row is on or before the last row. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindNextRow">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Row FindNextRow ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.Row FindNextRow() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._Table.FindNextRow" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindNextRow () As Row" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::Row ^ FindNextRow();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(99)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Row</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="59a5d-115">Находит следующую строку в <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> , условиям, указанным в предыдущих <see cref="M:Microsoft.Office.Interop.Outlook._Table.FindRow(System.String)" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-115">Finds the next row in the <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> that meets the criteria specified in a preceding  <see cref="M:Microsoft.Office.Interop.Outlook._Table.FindRow(System.String)" />.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="59a5d-116">A <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> объект, представляющий следующую строку в <b>таблице</b> , которая соответствует условия фильтра в предыдущем вызове <b>метода FindRow</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-116">A <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> object that represents the next row in the <b>Table</b> that meets the filter condition in the preceding call to <b>FindRow</b>.</span>
+          </span>
+          <span data-ttu-id="59a5d-117">Возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если <b>FindNextRow</b> не удается найти другую строку, в которой условиям, указанным в <b>FindRow</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-117">Returns <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#) if <b>FindNextRow</b> cannot find another row that meets the criteria specified in <b>FindRow</b>.</span>
+          </span>
+          <span data-ttu-id="59a5d-118">Также возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если не был вызван <b>FindRow</b> перед <b>FindNextRow</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-118">Also returns <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#) if <b>FindRow</b> has not been called before <b>FindNextRow</b>.</span>
+          </span>
+        </returns>
+        <remarks>
+          <span data-ttu-id="59a5d-119">
+            <para>
+              <b>FindNextRow</b> находит следующую строку на основании строки, возвращаемой выше <b>FindRow</b> или <b>FindNextRow</b>. Он не зависит от текущей строки (как текущей строки был перемещен с момента предыдущего <b>FindRow</b> или <b>FindNextRow</b>, например, с <see cref="M:Microsoft.Office.Interop.Outlook._Table.MoveToStart" />).</para>
+            <para>, Если <b>FindNextRow</b> находит строку, будут размещены текущей строки в этой строке. Если не удается найти другую строку, он будет не перемещает текущей строки.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-119">
+              <para>
+                <b>FindNextRow</b> finds the next row based on the row returned by the preceding <b>FindRow</b> or <b>FindNextRow</b>. It does not depend on the current row (as the current row may have been repositioned since the preceding <b>FindRow</b> or <b>FindNextRow</b>, for example, by <see cref="M:Microsoft.Office.Interop.Outlook._Table.MoveToStart" />).</para>
+              <para>If <b>FindNextRow</b> finds a row, it will position the current row to that row. If it does not find another row, it will not not reposition the current row.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindRow">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Row FindRow (string Filter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.Row FindRow([in]string Filter) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._Table.FindRow(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindRow (Filter As String) As Row" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::Row ^ FindRow(System::String ^ Filter);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(98)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Row</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Filter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Filter">
+          <span data-ttu-id="59a5d-120">Указывает условие, должен соответствовать строка в <b>таблице</b> .</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-120">Specifies the condition that a row in the <b>Table</b> has to meet.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="59a5d-121">Поиск в первой строке <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> , соответствующие условиям, указанного в <paramref name="Filter" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-121">Finds the first row in the  <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> that meets the criteria specified in <paramref name="Filter" />.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="59a5d-122">A <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> объект, представляющий первой строки в <b>таблице</b> с заданным критериям фильтра.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-122">A <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> object that represents the first row in the <b>Table</b> that meets the filter criteria.</span>
+          </span>
+          <span data-ttu-id="59a5d-123">Возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если строка может быть найдена или в <b>таблице</b> не содержит каких-либо строк.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-123">Returns <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#) if no such  row can be found, or the <b>Table</b> does not contain any rows.</span>
+          </span>
+        </returns>
+        <remarks>
+          <span data-ttu-id="59a5d-124">
+            <para>
+              <b>FindRow</b> всегда начинается с первой строки в <b>таблице</b>.  </para>
+            <para>
+              <b>FindRow</b> возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если свойство в <paramref name="Filter" /> не существует в указанном пространстве имен. Свойство считается именованного свойства в набор свойств MAPI, PS_PUBLIC_STRINGS. <b>FindRow</b> не возвращает ошибку, в данном случае.</para>
+            <para>
+              <b>FindRow</b> возвращает ошибку, если <paramref name="Filter" /> — это пустая строка или недопустимое ограничение. В тех случаях, где <b>FindRow</b> не находит любой строке, текущей строки не будет перемещен к которой он был до вызова <b>метода FindRow</b>.</para>
+            <para>Для использования контента индексирования поиска в <b>таблице</b>, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> метод. <b>FindRow</b> возвращает ошибку, если <paramref name="Filter" /> содержит ключевые слова содержимого индексации. </para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-124">
+              <para>
+                <b>FindRow</b> always starts from the first row in the <b>Table</b>.  </para>
+              <para>
+                <b>FindRow</b> returns <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#) if a property in <paramref name="Filter" /> does not exist in the specified namespace. The property is considered a named property in the MAPI property set, PS_PUBLIC_STRINGS. <b>FindRow</b> does not return an error in this case.</para>
+              <para>
+                <b>FindRow</b> returns an error if <paramref name="Filter" /> is a blank string or an invalid restriction. In cases where  <b>FindRow</b> does not find any row, the current row will not be repositioned to where it was before the call to <b>FindRow</b>.</para>
+              <para>To use content indexing search in a <b>Table</b>, use the <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> method. <b>FindRow</b> returns an error if <paramref name="Filter" /> contains content indexing keywords. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArray">
+      <MemberSignature Language="C#" Value="public object GetArray (int MaxRows);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetArray([in]int32 MaxRows) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._Table.GetArray(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetArray (MaxRows As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetArray(int MaxRows);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64463)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="MaxRows" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="MaxRows">
+          <span data-ttu-id="59a5d-125">Указывает максимальное число строк, возвращаемых в <b>таблице</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-125">Specifies the maximum number of rows to return from the <b>Table</b>.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="59a5d-126">Получает двухмерный массив, содержащий набор строк и столбцов значений из <see cref="T:Microsoft.Office.Interop.Outlook.Table" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-126">Obtains a two-dimensional array that contains a set of row and column values from the <see cref="T:Microsoft.Office.Interop.Outlook.Table" />.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="59a5d-127">Значение <b>объекта</b> , который является двумерного массива, представляющий набор значений строк и столбцов в <b>таблице</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-127">An <b>Object</b> value that is a two-dimensional array representing a set of row and column values from the <b>Table</b>.</span>
+          </span>
+          <span data-ttu-id="59a5d-128">Массив с отсчетом от нуля; Индекс (i, j) индексов массива в строке i го столбца и j ое в массиве.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-128">The array is zero-based; an array index (i, j) indexes into the i-th column and j-th row in the array.</span>
+          </span>
+          <span data-ttu-id="59a5d-129">Столбцы в массиве, соответствующие столбцы в <b>таблице</b>и строк в массиве соответствуют строкам в <b>таблице</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-129">Columns in the array correspond to columns in the <b>Table</b>, and rows in the array correspond to rows in the <b>Table</b>.</span>
+          </span>
+          <span data-ttu-id="59a5d-130">Количество строк в массиве является меньшим значением <paramref name="MaxRows" /> и фактическое число строк в <b>таблице</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-130">The number of rows in the returned array is the lesser value of <paramref name="MaxRows" /> and the actual number of rows in the <b>Table</b>.</span>
+          </span>
+        </returns>
+        <remarks>
+          <span data-ttu-id="59a5d-131">
+            <para>Метод <b>GetArray</b> предлагает концептуально простых средств для получения значений из <b>таблицы</b> , копирование или его часть данных в <b>таблице</b> (на основании текущей строки) в массив и индексации в массиве.</para>
+            <para>
+              <b>GetArray</b> всегда начинается с текущей строки в <b>таблице</b>. Возвращает массив с <paramref name="MaxRows" /> число строк, если имеется по крайней мере <paramref name="MaxRows" /> число строк в <b>таблице</b> , начиная с текущей позиции. Если <paramref name="MaxRows" /> не превышает общее число строк в <b>таблице</b>, и меньше <paramref name="MaxRows" /> количество элементов в <b>таблице</b> , начиная с текущей строки, он возвращает массив, содержащий только оставшиеся строки в <b> В таблице</b>. При вызове <b>GetArray</b> нет оставшихся строк, затем <b>GetArray</b> возвращает пустой массив нулей.</para>
+            <para>После получения соответствующих строк в <b>таблице</b> и перед возвращением, <b>GetArray</b> всегда перемещает текущей строки на следующую строку в <b>таблице</b>, если существует следующей строке. GetArray(n) работает как если бы <see cref="M:Microsoft.Office.Interop.Outlook._Table.GetNextRow" /> является именем n раз.</para>
+            <para>Значения в столбцах сопоставления столбцов в <b>таблице</b>и таким образом определяется формат имени свойства, используемые для столбца. Для получения дополнительных сведений см <a href="http://go.microsoft.com/fwlink/?LinkId=87858">Факторы влияния на свойство представление значений в таблице и классов представления</a></para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-131">
+              <para>The <b>GetArray</b> method offers a conceptually simple means to get values from a <b>Table</b> by copying all or part of the data in the <b>Table</b> (based on the current row) to an array and indexing into the array.</para>
+              <para>
+                <b>GetArray</b> always starts at the current row of the <b>Table</b>. It returns an array with <paramref name="MaxRows" /> number of rows if there are at least <paramref name="MaxRows" /> number of rows in the <b>Table</b> starting at the current position. If <paramref name="MaxRows" /> is not larger than the total number of rows in the <b>Table</b>, and  there are fewer than <paramref name="MaxRows" /> number of elements in the <b>Table</b> starting at the current row, it will  return an array that contains only the remaining rows in the <b>Table</b>. If <b>GetArray</b> is called and there are no remaining rows, then <b>GetArray</b> returns an empty array with zero elements.</para>
+              <para>After obtaining the appropriate rows from the <b>Table</b> and before it returns, <b>GetArray</b> always repositions the current row to the next row in the <b>Table</b>, if there exists a next row. GetArray(n) operates as if <see cref="M:Microsoft.Office.Interop.Outlook._Table.GetNextRow" /> is called n times.</para>
+              <para>The values in the columns map to columns in the <b>Table</b>, and are therefore determined by the format of the property name used for the column. For more information, see <a href="http://go.microsoft.com/fwlink/?LinkId=87858">Factors Affecting Property Value Representation in the Table and View Classes</a></para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNextRow">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Row GetNextRow ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.Row GetNextRow() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._Table.GetNextRow" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNextRow () As Row" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::Row ^ GetNextRow();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(87)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Row</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="59a5d-132">Перемещает текущей строки в следующей строке в <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> и получает этой строки в <b>таблице</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-132">Moves the current row to the next row in the <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> and obtains that row in the <b>Table</b>.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="59a5d-133">A <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> объект, представляющий допустимый следующую строку в <b>таблице</b> , если существуют дополнительные строки недоступны.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-133">A <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> object that represents the next valid row in the <b>Table</b> if there are additional rows available.</span>
+          </span>
+          <span data-ttu-id="59a5d-134">Если нет ни одной дополнительные строки (где <see cref="P:Microsoft.Office.Interop.Outlook._Table.EndOfTable" /> имеет <b>значение True</b>), <b>GetNextRow</b> возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-134">If there are no additional rows available (where <see cref="P:Microsoft.Office.Interop.Outlook._Table.EndOfTable" /> is <b>True</b>), <b>GetNextRow</b> will return <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#).</span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRowCount">
+      <MemberSignature Language="C#" Value="public int GetRowCount ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetRowCount() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._Table.GetRowCount" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRowCount () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetRowCount();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(80)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="59a5d-135">Получает количество строк в <see cref="T:Microsoft.Office.Interop.Outlook.Table" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-135">Obtains the number of rows in the <see cref="T:Microsoft.Office.Interop.Outlook.Table" />.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="59a5d-136">
+            <b>Целое число</b> (<b>int</b> в C#) значение, представляющее количество строк в таблице.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-136">An <b>Integer</b> (<b>int</b> in C#) value that represents the number of rows in the Table.</span>
+          </span>
+        </returns>
+        <remarks>
+          <span data-ttu-id="59a5d-137">
+            <para>
+              <b>GetRowCount</b> для большой таблицы приведет к сказаться на производительности.  Из-за ограничений MAPI (например, доступной памяти для больших таблиц, одновременных операций в <b>таблице</b>) <b>GetRowCount</b> не удается определить число строк в <b>таблице</b>или он может возвращать только только приблизительно, например строки счетчик. В таких случаях <b>GetRowCount</b> возвращает ошибку. Обнаружение соответствующих ошибок для <b>GetRowCount</b> следует использовать для определения, если вызов возвращает ошибку.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-137">
+              <para>
+                <b>GetRowCount</b> on a large table will result in a performance impact.  Due to MAPI restrictions (for example, memory constraints for large tables, simultaneous operations on the <b>Table</b>), <b>GetRowCount</b> may not be able to determine the number of rows in the <b>Table</b>,  or it may only only return an approximate row count. In these cases, <b>GetRowCount</b> will return an error. You should use appropriate error detection for <b>GetRowCount</b> to determine if the call returns an error. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveToStart">
+      <MemberSignature Language="C#" Value="public void MoveToStart ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MoveToStart() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._Table.MoveToStart" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MoveToStart ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveToStart();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64286)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="59a5d-138">Перемещение текущей строки <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> для перед первой строки в <b>таблице</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-138">Moves the current row of the <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> to just before the first row of the <b>Table</b>.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="59a5d-139">
+            <para>
+              <b>MoveToStart</b> эквивалентно Сброс в <b>таблице</b>. При вызове <see cref="M:Microsoft.Office.Interop.Outlook._Table.GetNextRow" /> после вызова <b>MoveToStart</b>возвращает строку, представляющее первой строки в <b>таблице</b>.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-139">
+              <para>
+                <b>MoveToStart</b> is equivalent to resetting the <b>Table</b>. If you call <see cref="M:Microsoft.Office.Interop.Outlook._Table.GetNextRow" /> after you call <b>MoveToStart</b>, you will return a row representing the first row in the <b>Table</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Table.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61441)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61441)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="59a5d-140">Возвращает родительский <b>объект</b> из <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> объекта.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-140">Returns the parent <b>Object</b> of the <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> object.</span>
+          </span>
+          <span data-ttu-id="59a5d-141">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-141">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Restrict">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Table Restrict (string Filter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.Table Restrict([in]string Filter) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Restrict (Filter As String) As Table" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::Table ^ Restrict(System::String ^ Filter);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Table</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Filter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Filter">
+          <span data-ttu-id="59a5d-142">Задает условия для строк в объекте <b>таблицы</b> .</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-142">Specifies  the criteria for rows in the <b>Table</b> object.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="59a5d-143">Применяет фильтр для строки в <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> и получает новый объект <b>таблицы</b> .</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-143">Applies a filter to the rows in the <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> and obtains a new <b>Table</b> object.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="59a5d-144">Объект <b>таблицы</b> , который возвращается с применением <paramref name="Filter" /> для строки в <b>таблице</b> родительский объект.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-144">A <b>Table</b> object that is  returned by applying <paramref name="Filter" /> to the rows in the parent <b>Table</b> object.</span>
+          </span>
+        </returns>
+        <remarks>
+          <span data-ttu-id="59a5d-145">
+            <para>Чтобы применить другой фильтр для этой <b>таблицы</b> , если родительский объект в <b>таблице</b> можно использовать только <b>Table.Restrict</b><see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объектов. Если родительский объект является <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> объекта <b>Restrict</b> возвратит ошибку.</para>
+            <para>С момента строкам в объекте таблицы применяется фильтр, это эквивалентно применение фильтра, который является логического и с <paramref name="Filter" /> и все выше фильтров, применяемых на тот же объект <b>таблицы</b> .</para>
+            <para>
+              <paramref name="Filter" /> — это запрос на определенные свойства, представленные в виде строки в <b>таблице</b>родительских элементов. В запросе используется синтаксис Microsoft Jet или синтаксис DAV поиска и поиск (DASL). К примеру, следующие Jet фильтр и фильтр DASL укажите тем же условиям для элементов с <b>LastModificationTime</b> более ранних чем 3:30 по 12 июня 2005:</para>критерии
+          <para>= «[LastModificationTime] &lt; "» &amp; формат $(" 6/12 / 2005 3:30 PM «,» даты») &amp; «"»</para><para>критерии = «@SQL =» &amp; Chr(34) &amp; «DAV:getlastmodified» &amp; Chr(34) &amp; " &lt; "» &amp; формат $(" 6/12/2005 3:30 по "," даты ") &amp; «"» </para><para>Для получения дополнительных сведений о задании фильтры для объекта <b>в таблице</b><a href="http://go.microsoft.com/fwlink/?LinkId=87855">Фильтрации элементы</a>отображаются</para><para>Если <paramref name="Filter" /> содержит пользовательские свойства этих свойств должен существовать в родительской папке объекта <b>таблицы</b> в приоритет для ограничения для правильной работы.  Некоторые свойства не поддерживаются в <b>таблице</b> фильтра, включая двоичные свойства, вычисленные свойства и содержимое текста запроса HTML или RTF. Для получения дополнительных сведений см <a href="http://go.microsoft.com/fwlink/?LinkId=87926">Неподдерживаемые свойства в объекте таблицы или фильтр таблицы</a></para><para>Если <paramref name="Filter" /> — это пустая строка <b>Restrict</b> возвращает объект <b>таблицы</b> , идентичный родительский объект <b>в таблице</b> .  </para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-145">
+              <para>You can only use <b>Table.Restrict</b> to apply another filter to that <b>Table</b> if the parent object of the <b>Table</b> is a <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> object. If the parent object is a <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> object,  <b>Restrict</b> will return an error.</para>
+              <para>Since the filter is applied to the rows in the Table object, this is equivalent to applying a filter that is a logical AND of <paramref name="Filter" /> and all preceding filters applied to the same <b>Table</b> object.</para>
+              <para>
+                <paramref name="Filter" /> is a query on specified properties of items that are represented as rows in the parent <b>Table</b>. The query uses either the Microsoft Jet syntax or the DAV Searching and Locating (DASL) syntax. For example, the following Jet filter and DASL filter specify the same criteria for items with <b>LastModificationTime</b> earlier than 3:30pm of June 12, 2005:</para>
+              <para>criteria = "[LastModificationTime] &lt; '" &amp; Format$("6/12/2005 3:30PM","General Date") &amp; "'"</para>
+              <para>criteria = "@SQL=" &amp; Chr(34) &amp; "DAV:getlastmodified" &amp; Chr(34)          &amp; " &lt; '" &amp; Format$("6/12/2005 3:30PM","General Date") &amp; "'" </para>
+              <para>For more information on specifying filters for the <b>Table</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Filtering Items</a></para>
+              <para>If <paramref name="Filter" /> contains custom properties, those properties must exist in the parent folder of the <b>Table</b> object in order for the restriction to work correctly.  Certain properties are not supported in a <b>Table</b> filter, including binary properties, computed properties, and HTML or RTF body content. For more information, see <a href="http://go.microsoft.com/fwlink/?LinkId=87926">Unsupported Properties in a Table Object or Table Filter</a></para>
+              <para>If <paramref name="Filter" /> is a blank string, <b>Restrict</b> returns a <b>Table</b> object that is identical to the parent <b>Table</b> object.  </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Session">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.NameSpace Session { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.NameSpace Session" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Table.Session" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Session As NameSpace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::NameSpace ^ Session { Microsoft::Office::Interop::Outlook::NameSpace ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61451)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61451)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="59a5d-146">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-146">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> object for the current session.</span>
+          </span>
+          <span data-ttu-id="59a5d-147">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-147">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="59a5d-148">
+            <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+            <code>Dim objNamespace As Outlook.NameSpace = _
+    Application.GetNamespace("MAPI")</code>
+            <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+            <code>Outlook.NameSpace objNamespace = 
+    Application.GetNamespace("MAPI");</code>
+            <code>Outlook.NameSpace objSession = Application.Session;</code>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-148">
+              <para>The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session. Both members serve the same purpose. For example, the following pairs of statements perform the same function:</para>
+              <code>Dim objNamespace As Outlook.NameSpace = _
+    Application.GetNamespace("MAPI")</code>
+              <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+              <code>Outlook.NameSpace objNamespace = 
+    Application.GetNamespace("MAPI");</code>
+              <code>Outlook.NameSpace objSession = Application.Session;</code>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sort">
+      <MemberSignature Language="C#" Value="public void Sort (string SortProperty, object Descending);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Sort([in]string SortProperty, [in]object Descending) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._Table.Sort(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Sort (SortProperty As String, Optional Descending As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(97)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SortProperty" Type="System.String" />
+        <Parameter Name="Descending" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="SortProperty">
+          <span data-ttu-id="59a5d-149">Свойство требуется использовать для сортировки строк в <b>таблице</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-149">Specifies the property to use to sort the rows of the <b>Table</b>.</span>
+          </span>
+        </param>
+        <param name="Descending">
+          <span data-ttu-id="59a5d-150">Следует ли сортировка в <b>таблице</b> в убывающем порядке.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-150">Whether to sort the <b>Table</b> in descending order.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="59a5d-151">Сортирует строки <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> , свойство, указанное в <paramref name="SortProperty" /> и сбрасывает текущую строку перед первой строки в <b>таблице</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-151">Sorts the rows of the <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> by the property specified in <paramref name="SortProperty" /> and resets the current row to just before the first row in the <b>Table</b>.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="59a5d-152">
+            <para>
+              <paramref name="SortProperty" /> может быть любой явных встроенных свойств или настраиваемые свойства, за исключением двоичных и многозначных свойств. Ссылка на свойство должно его явного строковое имя. не могут быть созданы пространством имен. О дальнейших Указание свойств сортировки, см <a href="http://go.microsoft.com/fwlink/?LinkId=87936">Сортировка элементов в папке</a></para>
+            <para>Сортировка в таблице эквивалентно вызову метода <see cref="M:Microsoft.Office.Interop.Outlook._Table.MoveToStart" /> метод. Курсор будет расположена в начало таблицы.  </para>
+            <para>Если <b>Table.Sort</b> и затем <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> вызываются, отфильтрованных элементов в новой <b>таблицы</b> будут упорядочены по же <paramref name="SortProperty" /> и <paramref name="SortOrder" />.</para>
+            <para>
+              <b>Table.Sort</b> поддерживает только сортировку по одному столбцу.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="59a5d-152">
+              <para>
+                <paramref name="SortProperty" /> can be any explicit built-in property or custom property, with the exception of binary and multi-valued properties. The property must be referenced by its explicit string name; it cannot be referenced by namespace. For futher information on specifying sort properties, see <a href="http://go.microsoft.com/fwlink/?LinkId=87936">Sorting Items in a Folder</a></para>
+              <para>Sorting the table is equivalent to calling a <see cref="M:Microsoft.Office.Interop.Outlook._Table.MoveToStart" /> method. The cursor will be positioned to the start of the Table.  </para>
+              <para>If <b>Table.Sort</b> and then <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> are called, the filtered items in the new <b>Table</b> will be sorted by the same <paramref name="SortProperty" /> and <paramref name="SortOrder" />.</para>
+              <para>
+                <b>Table.Sort</b> only supports sorting on a single column.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

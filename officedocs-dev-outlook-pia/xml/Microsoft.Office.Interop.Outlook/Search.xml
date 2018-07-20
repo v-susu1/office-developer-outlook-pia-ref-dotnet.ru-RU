@@ -1,0 +1,656 @@
+<Type Name="Search" FullName="Microsoft.Office.Interop.Outlook.Search">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="95e75d0a084b225bee45b2e7972a363b981ca65d" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ru-RU" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20641261" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Search" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Search" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Search" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Search" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Search" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0006300B-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="6f544-101">Содержит сведения об отдельных операций поиска, выполненные с элементами Outlook.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="6f544-101">Contains information about individual searches performed against Outlook items.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="6f544-102">
+        <para>Объект <b>поиска</b> содержит свойства, которые определяют тип поиска и параметров поиска самого.</para>
+        <para>Использования <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объекта <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> метод, возвращающий объект <b>поиска</b> .</para>
+        <para>Использования <see cref="E:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.AdvancedSearchComplete" /> события, чтобы определить, когда определенного поиска.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="6f544-102">
+          <para>The <b>Search</b> object contains properties that define the type of search and the parameters of the search itself.</para>
+          <para>Use the <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object's <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> method to return a <b>Search</b> object.</para>
+          <para>Use the <see cref="E:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.AdvancedSearchComplete" /> event to determine when a given search has completed.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook.Search.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::Application ^ Application { Microsoft::Office::Interop::Outlook::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61440)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61440)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6f544-103">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-103">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span>
+          </span>
+          <span data-ttu-id="6f544-104">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-104">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Class">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlObjectClass Class { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlObjectClass Class" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook.Search.Class" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Class As OlObjectClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlObjectClass Class { Microsoft::Office::Interop::Outlook::OlObjectClass get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61450)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61450)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6f544-105">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-105">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span>
+          </span>
+          <span data-ttu-id="6f544-106">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-106">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public string Filter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Filter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook.Search.Filter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Filter As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Filter { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6f544-107">Возвращает значение типа <b>String</b> (<b>строка</b> в C#), представляющее DASL оператор, используемый для ограничения поиска до указанного подмножества данных.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-107">Returns a <b>String</b> (<b>string</b> in C#) value that represents the DASL statement used to restrict the search to a specified subset of data.</span>
+          </span>
+          <span data-ttu-id="6f544-108">Только для чтения</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-108">Read-only</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="6f544-109">
+            <para>Это свойство задано как <paramref name="Filter" /> аргумент в <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объекта <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> метод. </para>
+            <para>При поиске <b>текстовых</b> полей, можно использовать апостроф (') или двойные кавычки ("») для разделения значения, которые являются частью фильтра. Например, все следующие строки функции правильно, если поле введите <b>String </b>(<b>строка</b> в C#):</para>
+            <code>sFilter = "[CompanyName] = 'Microsoft'"</code>
+            <code>sFilter = "[CompanyName] = 'Microsoft'";</code>
+            <code>sFilter = "[CompanyName] = ""Microsoft"""</code>
+            <code>sFilter = "[CompanyName] = ""Microsoft""";</code>
+            <code>sFilter = "[CompanyName] = " &amp;amp; Chr(34) &amp;amp; "Microsoft" &amp;amp; Chr(34)</code>
+            <code>sFilter = "[CompanyName] = " &amp;amp; Chr(34) &amp;amp; "Microsoft" &amp;amp; Chr(34);</code>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-109">
+              <para>This property is set as the <paramref name="Filter" /> argument in the <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object's <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" />  method. </para>
+              <para>When searching <b>Text</b> fields, you can use either an apostrophe (') or double quotation marks ("") to delimit the values that are part of the filter. For example, all of the following lines function correctly when the field is of type <b>String </b>(<b>string</b> in C#): </para>
+              <code>sFilter = "[CompanyName] = 'Microsoft'"</code>
+              <code>sFilter = "[CompanyName] = 'Microsoft'";</code>
+              <code>sFilter = "[CompanyName] = ""Microsoft"""</code>
+              <code>sFilter = "[CompanyName] = ""Microsoft""";</code>
+              <code>sFilter = "[CompanyName] = " &amp;amp; Chr(34) &amp;amp; "Microsoft" &amp;amp; Chr(34)</code>
+              <code>sFilter = "[CompanyName] = " &amp;amp; Chr(34) &amp;amp; "Microsoft" &amp;amp; Chr(34);</code>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTable">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Table GetTable ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.Table GetTable() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook.Search.GetTable" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTable () As Table" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::Table ^ GetTable();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64285)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Table</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="6f544-110">Получает <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> объект, который содержит элементы, отфильтрованные по <paramref name="Filter" /> параметр в предыдущих <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> вызова метода.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-110">Obtains a <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> object that contains items filtered by the <paramref name="Filter" /> parameter in a preceding <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> method call.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="6f544-111">Содержит элементы, которые соответствуют условиям, указанным <b>в таблице</b><paramref name="Filter" /> параметр в предыдущем вызове метода <b>Application.AdvancedSearch</b> .</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-111">A <b>Table</b> that contains items that meet the criteria specified by the <paramref name="Filter" /> parameter in a preceding <b>Application.AdvancedSearch</b> method call.</span>
+          </span>
+        </returns>
+        <remarks>
+          <span data-ttu-id="6f544-112">
+            <para>В отличие от <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.GetTable(System.Object,System.Object)" />, <b>Search.GetTable</b> не принимает <paramref name="Filter" /> параметр. Фильтр для <b>таблицы</b> , определяется <see cref="P:Microsoft.Office.Interop.Outlook.Search.Filter" />. Поскольку <b>Search.Filter</b> является свойством только для чтения, <paramref name="Filter" /> параметра для метода <b>Application.AdvancedSearch</b> устанавливает фильтр для <b>таблицы</b> объект, возвращенный свойством <b>Search.GetTable</b>.</para>
+            <para>
+              <paramref name="Filter" /> Указано Application.AdvancedSearch параметр должен быть запроса DASL. Фильтр для <b>AdvancedSearch</b> не принимает запрос JET. Не префиксов запроса DASL для <b>AdvancedSearch</b> с «@SQL =». Если вы добавляете «@SQL =» префикс, запрос вызовет ошибку. Дополнительные сведения о фильтрах можно <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Фильтрации элементов</a></para>
+            <para>
+              <b>Search.GetTable</b> возвращает <b>таблицу</b> со столбцом по умолчанию для типа папки из родительской <b>папки</b>. Чтобы изменить набор столбцов по умолчанию, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Add(System.String)" />, <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Remove(System.Object)" />, или <see cref="M:Microsoft.Office.Interop.Outlook._Columns.RemoveAll" /> методы <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> объекта collection.  Дополнительные сведения о наборах столбец по умолчанию в разделе <a href="http://go.microsoft.com/fwlink/?LinkId=87925">Свойства по умолчанию, отображаемые в объекте таблицы</a></para>
+            <para>в отличие от <b>Folder.GetTable</b>нельзя использовать <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> для применения последующие фильтров к <b>таблице</b> , основанный на <b> Поиск</b> объекта. Указание нового фильтра в <b>Application.AdvancedSearch</b> повторно применить фильтр.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-112">
+              <para>Unlike <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.GetTable(System.Object,System.Object)" />, <b>Search.GetTable</b> does not accept a <paramref name="Filter" /> parameter. The filter for the <b>Table</b> is determined by <see cref="P:Microsoft.Office.Interop.Outlook.Search.Filter" />. Since <b>Search.Filter</b> is a read-only property, the <paramref name="Filter" /> parameter for the <b>Application.AdvancedSearch</b> method establishes the filter for the <b>Table</b> object returned by <b>Search.GetTable</b>.</para>
+              <para>The <paramref name="Filter" /> parameter supplied to Application.AdvancedSearch must be a DASL query. The filter for <b>AdvancedSearch</b> will not accept a JET query. Do not prefix a DASL query for <b>AdvancedSearch</b> with “@SQL=”. If you add the “@SQL=” prefix, your query will raise an error. For more information on filters, see <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Filtering Items</a></para>
+              <para>
+                <b>Search.GetTable</b> returns a <b>Table</b> with the default column set for the folder type of the parent <b>Folder</b>. To modify the default column set, use the <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Add(System.String)" />, <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Remove(System.Object)" />, or <see cref="M:Microsoft.Office.Interop.Outlook._Columns.RemoveAll" /> methods of the <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> collection object.  For more information on default column sets, see <a href="http://go.microsoft.com/fwlink/?LinkId=87925">Default Properties Displayed in a Table Object</a></para>
+              <para>Unlike <b>Folder.GetTable</b>, you cannot use <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> to apply subsequent filters to a <b>Table</b> that is based on the <b>Search</b> object. Specify a new filter in <b>Application.AdvancedSearch</b> to re-apply a filter.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronous">
+      <MemberSignature Language="C#" Value="public bool IsSynchronous { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronous" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook.Search.IsSynchronous" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronous As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronous { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64104)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6f544-113">Возвращает <b>логическое</b> (<b>bool</b> в C#), указывающее, является ли поиска синхронные.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-113">Returns a <b>Boolean</b> (<b>bool</b> in C#) indicating whether the search is synchronous.</span>
+          </span>
+          <span data-ttu-id="6f544-114">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-114">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="6f544-115">
+            <para>Поиск может быть синхронными и асинхронными. Если поиск синхронные, выполнение кода возникнет Пауза до завершения поиска. С другой стороны Если поиск является асинхронным, выполнение кода будет предоставляться несмотря на то, что поиск не завершено. В этом случае используйте <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> объекта <see cref="M:Microsoft.Office.Interop.Outlook.Search.Stop" /> метод для остановки поиска.  Чтобы получить достоверные результаты из асинхронного поиска, используйте <see cref="E:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.AdvancedSearchComplete" /> событий для уведомления о завершении поиска.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-115">
+              <para>A search can be synchronous or asynchronous. If the search is synchronous, code execution will pause until the search has completed. Conversely, if the search is asynchronous, code execution will continue even though the search has not completed. In this case, use the <see cref="T:Microsoft.Office.Interop.Outlook.Search" />  object's <see cref="M:Microsoft.Office.Interop.Outlook.Search.Stop" /> method to halt the search.  In order to get meaningful results from an asynchronous search, use the <see cref="E:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.AdvancedSearchComplete" />  event to notify you when the search has finished.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook.Search.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61441)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61441)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6f544-116">Возвращает родительский <b>объект</b> заданного объекта.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-116">Returns the parent <b>Object</b> of the specified object.</span>
+          </span>
+          <span data-ttu-id="6f544-117">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-117">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Results">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Results Results { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.Results Results" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook.Search.Results" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Results As Results" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::Results ^ Results { Microsoft::Office::Interop::Outlook::Results ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64105)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Results</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6f544-118">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Results" /> семейства сайтов, которое указывает, что результаты поиска.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-118">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.Results" /> collection that specifies the results of the search.</span>
+          </span>
+          <span data-ttu-id="6f544-119">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-119">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.MAPIFolder Save (string Name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.MAPIFolder Save([in]string Name) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook.Search.Save(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Save (Name As String) As MAPIFolder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::MAPIFolder ^ Save(System::String ^ Name);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64173)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.MAPIFolder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Name">
+          <span data-ttu-id="6f544-120">Строка, представляющая имя папки поиска.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-120">A string that represents the Search Folder name.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="6f544-121">Сохраняет результаты поиска в папку поиска.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-121">Saves the search results to a Search Folder.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="6f544-122">
+            <para>Метод <b>Save</b> выводится сообщение об ошибке, если папка поиска с тем же именем уже существует.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-122">
+              <para>The <b>Save</b> method displays an error if a Search Folder with the same name already exists.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scope">
+      <MemberSignature Language="C#" Value="public string Scope { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Scope" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook.Search.Scope" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scope As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Scope { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64165)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64165)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6f544-123">Возвращает <b>строку</b> (<b>строка</b> в C#), который определяет область поиска.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-123">Returns a <b>String</b> (<b>string</b> in C#) that specifies the scope of the specified search.</span>
+          </span>
+          <span data-ttu-id="6f544-124">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-124">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="6f544-125">
+            <para>Область поиска определяется при запуске поиска. Дополнительные сведения можно <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> метод.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-125">
+              <para>The scope of the search is defined when the search is initiated. For more information, see the <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> method.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchSubFolders">
+      <MemberSignature Language="C#" Value="public bool SearchSubFolders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SearchSubFolders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook.Search.SearchSubFolders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SearchSubFolders As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SearchSubFolders { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6f544-126">Возвращает <b>логическое</b> (<b>bool</b> в C#), указывающее, является ли область поиска указанного Включить вложенные папки поиска.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-126">Returns a <b>Boolean</b> (<b>bool</b> in C#) indicating whether the scope of the specified search included the subfolders of any folders searched.</span>
+          </span>
+          <span data-ttu-id="6f544-127">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-127">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="6f544-128">
+            <para>Это свойство определяет, какие <paramref name="SearchSubfolders" /> аргумент <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> метод и указывается при запуске поиска. Если <b>значение True</b>, <b>поиска</b> объект выполняет поиск вложенные папки в поле путь указанного фильтра.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-128">
+              <para>This property is determined by the <paramref name="SearchSubfolders" /> argument of the <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> method and is specified when the search is initiated. If <b>True</b>, the <b>Search</b> object searches through any subfolders in the specified filter path.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Session">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.NameSpace Session { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.NameSpace Session" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook.Search.Session" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Session As NameSpace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::NameSpace ^ Session { Microsoft::Office::Interop::Outlook::NameSpace ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61451)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61451)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6f544-129">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-129">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span>
+          </span>
+          <span data-ttu-id="6f544-130">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-130">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="6f544-131">
+            <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+            <code>Dim objNamespace As Outlook.NameSpace = _
+    Application.GetNamespace("MAPI")</code>
+            <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+            <code>Outlook.NameSpace objNamespace = 
+    Application.GetNamespace("MAPI");</code>
+            <code>Outlook.NameSpace objSession = Application.Session;</code>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-131">
+              <para>The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session. Both members serve the same purpose. For example, the following pairs of statements perform the same function:</para>
+              <code>Dim objNamespace As Outlook.NameSpace = _
+    Application.GetNamespace("MAPI")</code>
+              <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+              <code>Outlook.NameSpace objNamespace = 
+    Application.GetNamespace("MAPI");</code>
+              <code>Outlook.NameSpace objSession = Application.Session;</code>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Stop() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook.Search.Stop" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="6f544-132">Немедленно завершает поиска, который выполняется в настоящее время.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-132">Immediately ends the search that is being performed currently.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tag">
+      <MemberSignature Language="C#" Value="public string Tag { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Tag" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook.Search.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tag As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Tag { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64109)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64109)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6f544-133">Возвращает <b>строку</b> (<b>строка</b> в C#) с именем текущего поиска.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-133">Returns a <b>String</b> (<b>string</b> in C#) specifying the name of the current search.</span>
+          </span>
+          <span data-ttu-id="6f544-134">Свойство <b>Tag</b> используется для идентификации определенного поиска.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-134">The <b>Tag</b> property is used to identify a specific search.</span>
+          </span>
+          <span data-ttu-id="6f544-135">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-135">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="6f544-136">
+            <para>Свойство <b>Tag</b> задано с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> метод при <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> создается объект.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6f544-136">
+              <para>The <b>Tag</b> property is set by using the <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> method when the <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> object is created.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

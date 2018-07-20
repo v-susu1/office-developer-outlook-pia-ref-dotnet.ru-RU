@@ -1,0 +1,666 @@
+<Type Name="_TimeZone" FullName="Microsoft.Office.Interop.Outlook._TimeZone">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="c93472155461317f92e16b09941e71830b4f74ac" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ru-RU" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20640570" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface _TimeZone" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _TimeZone" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._TimeZone" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _TimeZone" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _TimeZone" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000630FD-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="ca588-101">Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="ca588-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span>
+      </span>
+      <span data-ttu-id="ca588-102">Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="ca588-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span>
+      </span>
+      <span data-ttu-id="ca588-103">В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="ca588-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span>
+      </span>
+      <span data-ttu-id="ca588-104">Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.TimeZone" />.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="ca588-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.TimeZone" />.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._TimeZone.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::Application ^ Application { Microsoft::Office::Interop::Outlook::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61440)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61440)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca588-105">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-105">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object that represents the parent Outlook application for the object.</span>
+          </span>
+          <span data-ttu-id="ca588-106">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-106">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bias">
+      <MemberSignature Language="C#" Value="public int Bias { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Bias" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._TimeZone.Bias" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bias As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Bias { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64545)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64545)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca588-107">Возвращает <b>целое число</b> (<b>int</b> в C#) значение, которое представляет разницу в минутах между local time в данном часовом поясе и по Гринвичу (UTC).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-107">Returns an <b>Integer</b> (<b>int</b> in C#) value that represents the difference in minutes of between the local time in this time zone and the Coordinated Universal Time (UTC).</span>
+          </span>
+          <span data-ttu-id="ca588-108">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-108">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca588-109">
+            <para>Это значение хранится как часть значение для TZI для этого часового пояса в реестре Windows. Значение TZI сопоставляется с Windows <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
+            <para>
+              <b>смещение</b> не учитывают смещения времени для перехода на летнее время или стандартное время в часовом поясе. С учетом смещения перехода на летнее время, используйте <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.DaylightBias" />. В общем случае при локальный часовой пояс использует перехода на летнее время, время в формате UTC производится в результате добавления <b>смещения</b> и <b>DaylightBias</b> местного времени. С учетом смещения (зима), используйте <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.StandardBias" />. В общем случае при локальный часовой пояс использует стандартное время, время в формате UTC производится в результате добавления <b>смещения</b> и <b>StandardBias</b> местного времени. </para>
+            <para>, Например в состоянии осваивает перехода на летнее время в зоне Тихоокеанское время, <b>смещение</b> — 480 минут, а <b>DaylightBias</b> —-60 минут. Чтобы определить время в формате UTC, 11 июня, PST по 2, добавьте <b>Bias</b> часов (480/60) и <b>DaylightBias</b> -(60/60) часов местного времени 11 июня 2: 00. Время в формате UTC — 11 июня, 9: 00</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-109">
+              <para>This value is stored as part of the value for  TZI for that  time zone in the Windows registry. The TZI value is mapped to the Windows <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
+              <para>
+                <b>Bias</b> does not take into account any time offset for daylight time or standard time in the time zone. To account for any daylight time offset, use <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.DaylightBias" />. In general, when the local time zone is adopting daylight time, UTC time is the result of adding the <b>Bias</b> and <b>DaylightBias</b> to the local time. To account for any standard time offset, use <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.StandardBias" />. In general, when the local time zone is adopting standard time, UTC time is the result of  adding the <b>Bias</b> and <b>StandardBias</b> to the local time. </para>
+              <para>For example, in a state adopting daylight time in the Pacific time zone, the <b>Bias</b> is 480 minutes and <b>DaylightBias</b> is -60 minutes. To  determine the time in UTC for June 11, 2 A.M. PST, add a <b>Bias</b> of (480/60) hours and  a <b>DaylightBias</b> of -(60/60) hours to the local time June 11, 2 A.M. The time in UTC is June 11, 9 A.M.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Class">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlObjectClass Class { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlObjectClass Class" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._TimeZone.Class" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Class As OlObjectClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlObjectClass Class { Microsoft::Office::Interop::Outlook::OlObjectClass get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61450)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61450)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca588-110">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, которая представляет класс объекта.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-110">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant that represents the object's class.</span>
+          </span>
+          <span data-ttu-id="ca588-111">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-111">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DaylightBias">
+      <MemberSignature Language="C#" Value="public int DaylightBias { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DaylightBias" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._TimeZone.DaylightBias" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DaylightBias As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DaylightBias { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64547)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64547)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca588-112">Возвращает <b>целое число</b> (<b>int</b> в C#) значение, представляющее смещение времени в минутах из <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.Bias" /> для учетной записи для перехода на летнее время в данном часовом поясе.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-112">Returns an <b>Integer</b> (<b>int</b> in C#) value that represents the time offset in minutes from the <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.Bias" /> to account for  daylight time in this time zone.</span>
+          </span>
+          <span data-ttu-id="ca588-113">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-113">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca588-114">
+            <para>Это значение хранится как часть значение для TZI для этого часового пояса в реестре Windows. Значение TZI сопоставляется с Windows <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
+            <para>точки зрения время в формате UTC и местного времени часовой пояс времени UTC производится в результате добавления <b>смещения</b> и <b>DaylightBias</b> местного времени. К примеру в состоянии осваивает перехода на летнее время в зоне Тихоокеанское время, <b>смещение</b> — 480 минут и <b>DaylightBias</b> является-60 минут. Чтобы определить время в формате UTC, 11 июня, PST по 2, добавьте <b>Bias</b> часов (480/60) и <b>DaylightBias</b> -(60/60) часов местного времени 11 июня 2: 00. Время в формате UTC — 11 июня, 9: 00</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-114">
+              <para>This value is stored as part of the value for TZI for that time zone in the Windows registry. The TZI value is mapped to the Windows <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
+              <para>In relation to the UTC time and the local time of the time zone, UTC time is the result of adding the <b>Bias</b> and <b>DaylightBias</b> to the local time. For example, in a state adopting daylight time in the Pacific time zone, the <b>Bias</b> is 480 minutes and <b>DaylightBias</b> is -60 minutes. To  determine the time in UTC for June 11, 2 A.M. PST, add a <b>Bias</b> of (480/60) hours and  a <b>DaylightBias</b> of -(60/60) hours to the local time June 11, 2 A.M. The time in UTC is June 11, 9 A.M.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DaylightDate">
+      <MemberSignature Language="C#" Value="public DateTime DaylightDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime DaylightDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._TimeZone.DaylightDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DaylightDate As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime DaylightDate { DateTime get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64549)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64549)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca588-115">Возвращает значение <b>даты и времени</b> , представляющий дату и время в данном часовом поясе при изменении времени для перехода на летнее время в текущем году.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-115">Returns a <b>DateTime</b> value that represents the date and time in this time zone when time changes over to daylight time in the current year.</span>
+          </span>
+          <span data-ttu-id="ca588-116">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-116">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca588-117">
+            <para>Это значение сохраняется как часть TZI значения для часового пояса в реестре Windows. Значение TZI сопоставляется с Windows <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-117">
+              <para>This value is stored as part of the TZI value for the time zone in the Windows registry. The TZI value is mapped to the Windows <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DaylightDesignation">
+      <MemberSignature Language="C#" Value="public string DaylightDesignation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DaylightDesignation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._TimeZone.DaylightDesignation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DaylightDesignation As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DaylightDesignation { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64555)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64555)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca588-118">Возвращает <b>строку</b> (<b>строка</b> в C#), который определяет часовой пояс летнего времени.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-118">Returns a <b>String</b> (<b>string</b> in C#) that identifies the time zone in daylight time.</span>
+          </span>
+          <span data-ttu-id="ca588-119">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-119">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca588-120">
+            <para>Это свойство сохраняется как значение ленточного для часового пояса в реестре.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-120">
+              <para>This property is stored as the Dlt value for the time zone in the registry.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public string ID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._TimeZone.ID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ID { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64562)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64562)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca588-121">Возвращает <b>строку</b> (<b>строка</b> в C#), который уникальным образом определяет часовой пояс.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-121">Returns a <b>String</b> (<b>string</b> in C#) that uniquely identifies the  time zone.</span>
+          </span>
+          <span data-ttu-id="ca588-122">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-122">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca588-123">
+            <para>
+              <b>Идентификатор</b> часового пояса аналогична глобально для этого часового пояса.  Это имя раздела реестра Windows, который содержит данные часового пояса. В отличие от <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.Name" /> свойства, значение <b>идентификатора</b> не локализованы.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-123">
+              <para>The <b>ID</b> of a time zone is  globally the same for that time zone.  It is the name of the Windows registry key that contains the time zone information. Unlike the <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.Name" /> property, the value of  <b>ID</b> is not localized.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._TimeZone.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8450)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8450)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca588-124">Возвращает <b>строку</b> (<b>строка</b> в C#), который представляет идентификатор часового пояса.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-124">Returns a <b>String</b> (<b>string</b> in C#) that represents the identifier of the time zone.</span>
+          </span>
+          <span data-ttu-id="ca588-125">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-125">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca588-126">
+            <para>
+              <b>Имя</b> обычно включает в себя значение смещения из по Гринвичу (UTC), имя официальная часовой пояс и области, где используется часового пояса. Он сохраняется как отображаемое значение раздела реестра для данного часового пояса.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-126">
+              <para>The <b>Name</b> usually includes the offset value from Coordinated Universal Time (UTC), the official  time zone name, and regions where the time zone is used. It is stored as the Display value in the registry key for a time zone.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._TimeZone.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61441)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61441)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca588-127">Возвращает родительский <b>объект</b> заданного объекта.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-127">Returns the parent <b>Object</b> of the specified object.</span>
+          </span>
+          <span data-ttu-id="ca588-128">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-128">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Session">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.NameSpace Session { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.NameSpace Session" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._TimeZone.Session" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Session As NameSpace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::NameSpace ^ Session { Microsoft::Office::Interop::Outlook::NameSpace ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61451)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61451)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca588-129">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-129">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> object for the current session.</span>
+          </span>
+          <span data-ttu-id="ca588-130">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-130">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca588-131">
+            <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+            <code>Dim objNamespace As Outlook.NameSpace = _
+    Application.GetNamespace("MAPI")</code>
+            <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+            <code>Outlook.NameSpace objNamespace = 
+    Application.GetNamespace("MAPI");</code>
+            <code>Outlook.NameSpace objSession = Application.Session;</code>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-131">
+              <para>The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session. Both members serve the same purpose. For example, the following pairs of statements perform the same function:</para>
+              <code>Dim objNamespace As Outlook.NameSpace = _
+    Application.GetNamespace("MAPI")</code>
+              <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+              <code>Outlook.NameSpace objNamespace = 
+    Application.GetNamespace("MAPI");</code>
+              <code>Outlook.NameSpace objSession = Application.Session;</code>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardBias">
+      <MemberSignature Language="C#" Value="public int StandardBias { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StandardBias" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._TimeZone.StandardBias" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StandardBias As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StandardBias { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64546)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64546)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca588-132">Возвращает <b>целое число</b> (<b>int</b> в C#) значение, представляющее смещение времени в минутах из <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.Bias" /> с учетом стандартное время в данном часовом поясе.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-132">Returns an <b>Integer</b> (<b>int</b> in C#) value that represents the time offset in minutes from the <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.Bias" /> to account for standard time in this time zone.</span>
+          </span>
+          <span data-ttu-id="ca588-133">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-133">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca588-134">
+            <para>Это значение хранится как часть значение для TZI для часового пояса в реестре Windows. Значение TZI сопоставляется с Windows <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
+            <para>точки зрения время в формате UTC и местного времени часовой пояс времени UTC производится в результате добавления <b>смещения</b> и <b>StandardBias</b> местного времени. К примеру в состоянии осваивает зимнего тихоокеанского часового пояса, <b>Bias</b> — 480 минут и <b>StandardBias</b> равно 0 минут. Чтобы определить время в формате UTC, 11 июня, PST по 2, добавьте <b>Bias</b> часов (480/60) и <b>StandardBias</b> 0 часов местного времени 11 июня 2: 00. Время в формате UTC — 11 июня, 10 по</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-134">
+              <para>This value is stored as part of the value for  TZI for the time zone in the Windows registry. The TZI value is mapped to the Windows <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
+              <para>In relation to the UTC time and the local time of the time zone, UTC time is the result of adding the <b>Bias</b> and <b>StandardBias</b> to the local time. For example, in a state adopting standard time in the Pacific time zone, the <b>Bias</b> is 480 minutes and <b>StandardBias</b> is 0 minutes. To  determine the time in UTC for June 11, 2 A.M. PST, add a <b>Bias</b> of (480/60) hours and  a <b>StandardBias</b> of 0 hours to the local time June 11, 2 A.M. The time in UTC is June 11, 10 A.M.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardDate">
+      <MemberSignature Language="C#" Value="public DateTime StandardDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime StandardDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._TimeZone.StandardDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StandardDate As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime StandardDate { DateTime get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64548)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64548)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca588-135">Возвращает значение <b>даты и времени</b> , представляющий дату и время в данном часовом поясе при изменении стандартного времени.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-135">Returns a <b>DateTime</b> value that represents the date and time in this time zone when time changes over to standard time.</span>
+          </span>
+          <span data-ttu-id="ca588-136">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-136">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca588-137">
+            <para>Это значение сохраняется как часть TZI значения для часового пояса в реестре Windows. Значение TZI сопоставляется с Windows <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-137">
+              <para>This value is stored as part of the TZI value for the time zone in the Windows registry. The TZI value is mapped to the Windows <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardDesignation">
+      <MemberSignature Language="C#" Value="public string StandardDesignation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StandardDesignation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._TimeZone.StandardDesignation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StandardDesignation As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StandardDesignation { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64556)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64556)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca588-138">Возвращает <b>строку</b> (<b>строка</b> в C#), который определяет часовой пояс в стандартное время.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-138">Returns a <b>String</b> (<b>string</b> in C#) that identifies the time zone in standard time.</span>
+          </span>
+          <span data-ttu-id="ca588-139">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-139">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca588-140">
+            <para>Это свойство хранится как стандартное значение для часового пояса в реестре.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca588-140">
+              <para>This property is stored as the Std value for the time zone in the registry.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

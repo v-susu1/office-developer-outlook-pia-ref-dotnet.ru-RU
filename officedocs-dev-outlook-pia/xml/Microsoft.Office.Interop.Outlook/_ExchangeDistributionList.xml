@@ -1,0 +1,1339 @@
+<Type Name="_ExchangeDistributionList" FullName="Microsoft.Office.Interop.Outlook._ExchangeDistributionList">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="3175efc5bfb7f609655b29eeb8a6e763f74a99de" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ru-RU" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20640079" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface _ExchangeDistributionList" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _ExchangeDistributionList" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._ExchangeDistributionList" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _ExchangeDistributionList" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _ExchangeDistributionList" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000630CA-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="19e4d-101">Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="19e4d-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span>
+      </span>
+      <span data-ttu-id="19e4d-102">Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="19e4d-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span>
+      </span>
+      <span data-ttu-id="19e4d-103">В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="19e4d-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span>
+      </span>
+      <span data-ttu-id="19e4d-104">Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="19e4d-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Address">
+      <MemberSignature Language="C#" Value="public string Address { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Address" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.Address" />
+      <MemberSignature Language="VB.NET" Value="Public Property Address As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Address { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12291)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12291)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(12291)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-105">Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляющее X400 адреса электронной почты <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-105">Returns or sets a <b>String</b> (<b>string</b> in C#) representing the X400  e-mail address of the <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</span>
+          </span>
+          <span data-ttu-id="19e4d-106">Для чтения и записи.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-106">Read/write.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="19e4d-107">
+            <para>Это свойство предполагается X400-адрес списка рассылки. Чтобы определить основной адрес Интернет, используйте <see cref="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.PrimarySmtpAddress" /> свойство.</para>
+            <para>Свойству <b>адреса</b> необходимо задать до вызова метода <see cref="M:Microsoft.Office.Interop.Outlook._ExchangeUser.Details(System.Object)" /> метод.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-107">
+              <para>This property assumes the X400 address of the distribution list. To determine the primary Internet address, use the <see cref="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.PrimarySmtpAddress" /> property.</para>
+              <para>The <b>Address</b> property must be set before calling the <see cref="M:Microsoft.Office.Interop.Outlook._ExchangeUser.Details(System.Object)" /> method. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddressEntryUserType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlAddressEntryUserType AddressEntryUserType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlAddressEntryUserType AddressEntryUserType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.AddressEntryUserType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AddressEntryUserType As OlAddressEntryUserType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlAddressEntryUserType AddressEntryUserType { Microsoft::Office::Interop::Outlook::OlAddressEntryUserType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64242)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64242)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlAddressEntryUserType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-108">Возвращает <b>olExchangeDistributionListAddressEntry</b> — константа из <see cref="T:Microsoft.Office.Interop.Outlook.OlAddressEntryUserType" /> тип перечисления, представляющий пользователя <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-108">Returns <b>olExchangeDistributionListAddressEntry</b> which is a constant from the <see cref="T:Microsoft.Office.Interop.Outlook.OlAddressEntryUserType" /> enumeration representing the user type of the <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</span>
+          </span>
+          <span data-ttu-id="19e4d-109">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-109">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="19e4d-110">
+            <para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Свойство <b>AddressEntryUserType</b> наследует объект <b>AddressEntry</b> . В случае <b>ExchangeDistributionList</b><b>AddressEntryUserType</b> всегда должна вернуть <b>olExchangeDistributionListAddressEntry</b>.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-110">
+              <para>The <b>ExchangeDistributionList</b> object is derived from the <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object. It inherits the <b>AddressEntryUserType</b> property from the <b>AddressEntry</b> object. In the case of <b>ExchangeDistributionList</b>,  <b>AddressEntryUserType</b> should always return <b>olExchangeDistributionListAddressEntry</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alias">
+      <MemberSignature Language="C#" Value="public string Alias { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Alias" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.Alias" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Alias As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Alias { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14848)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(14848)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-111">Возвращает <b>строку</b> (<b>строка</b> в C#) представляет псевдоним для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-111">Returns a <b>String</b> (<b>string</b> in C#) representing the alias for the <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</span>
+          </span>
+          <span data-ttu-id="19e4d-112">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-112">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="19e4d-113">
+            <para>Это свойство соответствует свойству MAPI <b>PidTagAccount</b>.</para>
+            <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeDistributionList</b> .</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-113">
+              <para>This property corresponds to the MAPI property <b>PidTagAccount</b>.</para>
+              <para>Returns an empty string if this property has not been implemented or does not exist for the <b>ExchangeDistributionList</b> object. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::Application ^ Application { Microsoft::Office::Interop::Outlook::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61440)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61440)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-114">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение (для Outlook) для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-114">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object that represents the parent application (Outlook) for the <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> object.</span>
+          </span>
+          <span data-ttu-id="19e4d-115">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-115">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Class">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlObjectClass Class { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlObjectClass Class" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.Class" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Class As OlObjectClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlObjectClass Class { Microsoft::Office::Interop::Outlook::OlObjectClass get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61450)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61450)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-116">Возвращает константу в <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> перечисление, указывающее, класс <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-116">Returns a constant in the <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> enumeration indicating the class of the <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> object.</span>
+          </span>
+          <span data-ttu-id="19e4d-117">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-117">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Comments">
+      <MemberSignature Language="C#" Value="public string Comments { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Comments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.Comments" />
+      <MemberSignature Language="VB.NET" Value="Public Property Comments As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Comments { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12292)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12292)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(12292)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-118">Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее комментариев для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-118">Returns a <b>String</b> (<b>string</b> in C#) representing the comments for the <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</span>
+          </span>
+          <span data-ttu-id="19e4d-119">Для чтения и записи.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-119">Read/write.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="19e4d-120">
+            <para>Это свойство соответствует параметру свойства MAPI, <b>PidTagComment</b>.</para>
+            <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeDistributionList</b> .</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-120">
+              <para>This property corresponds to the MAPI property, <b>PidTagComment</b>.</para>
+              <para> Returns an empty string if this property has not been implemented or does not exist for the <b>ExchangeDistributionList</b> object. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(770)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-121">Удаляет <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта из <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> объект коллекции, к которой он принадлежит.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-121">Deletes the <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> object from the <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> collection object to which  it belongs.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="19e4d-122">
+            <para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Объект <b>ExchangeDistributionList</b> — это объект <b>AddressEntry</b> , имеет <b>olExchangeDistributionListAddressEntry</b> как <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.AddressEntryUserType" />; вызов <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntry.GetExchangeDistributionList" /> возвращает соответствующий объект <b>ExchangeDistributionList</b> .</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-122">
+              <para>The <b>ExchangeDistributionList</b> object is derived from the <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object. An <b>ExchangeDistributionList</b> object is an <b>AddressEntry</b> object that has <b>olExchangeDistributionListAddressEntry</b> as the <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.AddressEntryUserType" />; calling <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntry.GetExchangeDistributionList" /> returns the corresponding <b>ExchangeDistributionList</b> object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Details">
+      <MemberSignature Language="C#" Value="public void Details (object HWnd);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Details([in]object HWnd) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.Details(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Details (Optional HWnd As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(769)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="HWnd" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="HWnd">
+          <span data-ttu-id="19e4d-123">Дескриптор родительского окна для диалоговое окно "Подробности".</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-123">The parent window handle for the Details dialog box.</span>
+          </span>
+          <span data-ttu-id="19e4d-124">Нулевое значение (по умолчанию) указывает модального диалогового окна.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-124">A zero value (the default) specifies a modal dialog box.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="19e4d-125">Отображает модальное диалоговое окно, которое предоставляет подробные сведения о <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-125">Displays a modal dialog box that provides detailed information about an <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> object.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="19e4d-126">
+            <para>Метод <b>сведений</b> не выполняется, если <see cref="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.Name" /> оставлено пустым. Необходимо использовать для обработки ошибок во время выполнения, обработку ошибок и при нажатии кнопки "Отмена" в диалоговом окне. </para>Метод 
+          <para><b>сведения о</b> фактически останавливает выполнение во время отображения диалоговое окно кода.   </para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-126">
+              <para>The <b>Details</b> method fails if the <see cref="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.Name" /> property is empty. You must use error handling to handle run-time errors, and when the user clicks Cancel in the dialog box. </para>
+              <para>The <b>Details</b> method actually stops the code from running while the dialog box is displayed.   </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlDisplayType DisplayType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlDisplayType DisplayType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.DisplayType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayType As OlDisplayType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlDisplayType DisplayType { Microsoft::Office::Interop::Outlook::OlDisplayType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14592)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(14592)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlDisplayType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-127">Возвращает <b>olDistList</b> — константа из <see cref="T:Microsoft.Office.Interop.Outlook.OlDisplayType" /> перечисление, представляющее природы <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-127">Returns <b>olDistList</b> which is a constant from the <see cref="T:Microsoft.Office.Interop.Outlook.OlDisplayType" /> enumeration representing the nature of the <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</span>
+          </span>
+          <span data-ttu-id="19e4d-128">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-128">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="19e4d-129">
+            <para>Это свойство соответствует свойству MAPI <b>PidTagDisplayType</b>.</para> Объект <b>ExchangeDistributionList</b><para>является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Свойство <b>DisplayType</b> наследует объект <b>AddressEntry</b> . В случае <b>ExchangeDistributionList</b><b>DisplayType</b> всегда должна вернуть <b>olDistList</b>.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-129">
+              <para>This property corresponds to the MAPI property <b>PidTagDisplayType</b>.</para>
+              <para>The <b>ExchangeDistributionList</b> object is derived from the <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object. It inherits the <b>DisplayType</b> property from the <b>AddressEntry</b> object. In the case of <b>ExchangeDistributionList</b>,  <b>DisplayType</b> should always return  <b>olDistList</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContact">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.ContactItem GetContact ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.ContactItem GetContact() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.GetContact" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetContact () As ContactItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::ContactItem ^ GetContact();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64240)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ContactItem</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-130">Возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), так как <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта не соответствует контакта в адресной книге контакты.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-130">Returns <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#) because the <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> object does not correspond to  a contact in a Contacts Address Book.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="19e4d-131">
+            <b>Значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), так как объект <b>ExchangeDistributionList</b> не соответствует контакта в адресной книге контакты.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-131">
+              <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#) because the <b>ExchangeDistributionList</b> object does not correspond to  a contact in a Contacts Address Book.</span>
+          </span>
+        </returns>
+        <remarks>
+          <span data-ttu-id="19e4d-132">
+            <para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Метод <b>GetContact</b> оно наследуется от объект <b>AddressEntry</b> , и в случае <b>ExchangeDistributionList</b>, этот метод всегда возвращает <b>значение Nothing</b>.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-132">
+              <para>The <b>ExchangeDistributionList</b> object is derived  from the <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object. It inherits the <b>GetContact</b> method from the <b>AddressEntry</b> object, and in the case of <b>ExchangeDistributionList</b>, this method always returns <b>Nothing</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExchangeDistributionList">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.ExchangeDistributionList GetExchangeDistributionList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.ExchangeDistributionList GetExchangeDistributionList() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.GetExchangeDistributionList" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetExchangeDistributionList () As ExchangeDistributionList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::ExchangeDistributionList ^ GetExchangeDistributionList();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64239)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ExchangeDistributionList</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-133">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-133">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> object.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="19e4d-134">Родительский объект <b>ExchangeDistributionList</b> .</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-134">The parent <b>ExchangeDistributionList</b> object.</span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExchangeDistributionListMembers">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.AddressEntries GetExchangeDistributionListMembers ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.AddressEntries GetExchangeDistributionListMembers() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.GetExchangeDistributionListMembers" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetExchangeDistributionListMembers () As AddressEntries" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::AddressEntries ^ GetExchangeDistributionListMembers();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64246)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.AddressEntries</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-135">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> коллекции, представляющей членов списка рассылки Exchange.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-135">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> collection that represents the members of the Exchange distribution list.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="19e4d-136">
+            <b>AddressEntries</b> коллекция, содержащая <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекты, которые представляют элементы, принадлежащей списку рассылки.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-136">An <b>AddressEntries</b> collection that contains <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objects that represent members belonging to the distribution list.</span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExchangeUser">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.ExchangeUser GetExchangeUser ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.ExchangeUser GetExchangeUser() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.GetExchangeUser" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetExchangeUser () As ExchangeUser" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::ExchangeUser ^ GetExchangeUser();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64241)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ExchangeUser</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-137">Возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), так как <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта не соответствует <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" /> объекта.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-137">Returns <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#) because the <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> object does not correspond to  an <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" /> object.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="19e4d-138">
+            <b>Значение NULL</b> (<b>Nothing</b> в Visual Basic), так как объект <b>ExchangeDistributionList</b> не соответствует объект <b>ExchangeUser</b> .</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-138">
+              <b>Null</b> (<b>Nothing</b> in Visual Basic) because the <b>ExchangeDistributionList</b> object does not correspond to an <b>ExchangeUser</b> object.</span>
+          </span>
+        </returns>
+        <remarks>
+          <span data-ttu-id="19e4d-139">
+            <para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Метод <b>GetExchangeUser</b> оно наследуется от объект <b>AddressEntry</b> , и в случае <b>ExchangeDistributionList</b>, этот метод всегда возвращает <b>значение Nothing</b>.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-139">
+              <para>The <b>ExchangeDistributionList</b> object is derived  from the <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object. It inherits the <b>GetExchangeUser</b> method from the <b>AddressEntry</b> object, and in the case of <b>ExchangeDistributionList</b>, this method always returns <b>Nothing</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFreeBusy">
+      <MemberSignature Language="C#" Value="public string GetFreeBusy (DateTime Start, int MinPerChar, object CompleteFormat);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetFreeBusy([in]valuetype System.DateTime Start, [in]int32 MinPerChar, [in]object CompleteFormat) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.GetFreeBusy(System.DateTime,System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFreeBusy (Start As DateTime, MinPerChar As Integer, Optional CompleteFormat As Object) As String" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(774)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Start" Type="System.DateTime" />
+        <Parameter Name="MinPerChar" Type="System.Int32" />
+        <Parameter Name="CompleteFormat" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Start">To be added.</param>
+        <param name="MinPerChar">To be added.</param>
+        <param name="CompleteFormat">To be added.</param>
+        <summary>
+          <span data-ttu-id="19e4d-140">Возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), так как сведения о занятости будет доступно только для отдельных пользователей, а не <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объектов.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-140">Returns <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#) because free-busy information is available only to individual users and not  <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> objects.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="19e4d-141">
+            <para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Метод <b>GetFreeBusy</b> оно наследуется от объект <b>AddressEntry</b> , а в случае <b>ExchangeDistributionList</b>, независимо от значения параметров, этот метод всегда возвращает <b>значение Nothing</b>.</para>
+            <para>Этот метод не возвращает сведения о занятости отдельных участников <b>ExchangeDistributionList</b>. Чтобы получить сведения о занятости для приглашения на собрание, отправьте запрос для отдельных пользователей. Использование <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.AddressEntryUserType" /> свойства объекта <b>AddressEntry</b> получили от <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.AddressEntry" /> для определения <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> представляет <b>ExchangeDistributionList</b>.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-141">
+              <para>The <b>ExchangeDistributionList</b> object is derived  from the <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object. It inherits the <b>GetFreeBusy</b> method from the <b>AddressEntry</b> object, and in the case of <b>ExchangeDistributionList</b>, regardless of the values of the parameters, this method always returns <b>Nothing</b>.</para>
+              <para> This method does not return the free-busy information of individual members of an <b>ExchangeDistributionList</b>. To obtain free-busy information for a meeting request, send the request to individual users. Use the <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.AddressEntryUserType" /> property of the <b>AddressEntry</b> object obtained from <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.AddressEntry" /> to determine if a <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> represents an <b>ExchangeDistributionList</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMemberOfList">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.AddressEntries GetMemberOfList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.AddressEntries GetMemberOfList() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.GetMemberOfList" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMemberOfList () As AddressEntries" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::AddressEntries ^ GetMemberOfList();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64244)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.AddressEntries</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-142">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> коллекцию, содержащую объект, который содержит все <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объектов, представляющих списки рассылки Exchange из которых <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> , является участником.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-142">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> collection object that contains all the <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objects representing Exchange Distribution Lists of which the <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> is a member.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="19e4d-143">Объект <b>AddressEntries</b> семейства сайтов, который представляет списки рассылки, членом которых является этот объект <b>ExchangeDistributionList</b> .</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-143">An <b>AddressEntries</b> collection object that represents the distribution lists of  which this <b>ExchangeDistributionList</b> object is a member.</span>
+          </span>
+          <span data-ttu-id="19e4d-144">Возвращает объект <b>AddressEntries</b> с количеством нуль (0), если <b>ExchangeDistributionList</b> не должна быть членом любого списка рассылки Exchange.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-144">Returns an <b>AddressEntries</b> object with a count of zero (0) if  the <b>ExchangeDistributionList</b> is not a member of any Exchange distribution list.</span>
+          </span>
+        </returns>
+        <remarks>
+          <span data-ttu-id="19e4d-145">
+            <para>
+              <b>GetMemberOfList</b> — это дорогой операции с точки зрения производительности при наличии медленное подключение к Exchange Server.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-145">
+              <para>
+                <b>GetMemberOfList</b> is an expensive operation in terms of performance if there is a slow connection to Exchange Server.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOwners">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.AddressEntries GetOwners ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.AddressEntries GetOwners() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.GetOwners" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOwners () As AddressEntries" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::AddressEntries ^ GetOwners();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64247)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.AddressEntries</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-146">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> коллекцию, содержащую объект, который содержит все владельцы <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-146">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> collection object that contains all the owners of the <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="19e4d-147">Объект <b>AddressEntries</b> семейства сайтов, содержащий <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объектов, представляющих всех владельцев <b>ExchangeDistributionList</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-147">An <b>AddressEntries</b> collection object that contains <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objects representing all the owners of the <b>ExchangeDistributionList</b>.</span>
+          </span>
+          <span data-ttu-id="19e4d-148">Возвращает объект <b>AddressEntries</b> с нуля (0), если ни один владелец можно найти для <b>ExchangeDistributionList</b> в текущем сеансе.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-148">Returns an <b>AddressEntries</b> object with a count of zero (0) if no owners can be found for the <b>ExchangeDistributionList</b> in the current session.</span>
+          </span>
+        </returns>
+        <remarks>
+          <span data-ttu-id="19e4d-149">
+            <para>
+              <b>GetOwners</b> — это дорогой операции с точки зрения производительности при наличии медленное подключение к Exchange Server.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-149">
+              <para>
+                <b>GetOwners</b> is an expensive operation in terms of performance if there is a slow connection to Exchange Server.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public string ID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.ID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ID { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61470)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61470)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-150">Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее уникальный идентификатор для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-150">Returns a <b>String</b> (<b>string</b> in C#) representing the unique identifier for the <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</span>
+          </span>
+          <span data-ttu-id="19e4d-151">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-151">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="19e4d-152">
+            <para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Он наследует свойство <b>ID</b> из объект <b>AddressEntry</b> . При создании объект <b>AddressEntry</b> , поставщика транспорта назначает строку постоянная, уникальный идентификатор. Эти идентификаторы не изменяйте из одного сеанса в другую.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-152">
+              <para> The <b>ExchangeDistributionList</b> object is derived from the <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object. It inherits the <b>ID</b> property from the <b>AddressEntry</b> object. The transport provider assigns a permanent, unique string ID when an <b>AddressEntry</b> object is created. These identifiers do not change from one session to another.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Manager">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.AddressEntry Manager { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.AddressEntry Manager" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.Manager" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Manager As AddressEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::AddressEntry ^ Manager { Microsoft::Office::Interop::Outlook::AddressEntry ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(771)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(771)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.AddressEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-153">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-153">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MAPIOBJECT">
+      <MemberSignature Language="C#" Value="public object MAPIOBJECT { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object MAPIOBJECT" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.MAPIOBJECT" />
+      <MemberSignature Language="VB.NET" Value="Public Property MAPIOBJECT As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ MAPIOBJECT { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61696)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61696)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(61696)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-154">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-154">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Members">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.AddressEntries Members { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.AddressEntries Members" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.Members" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Members As AddressEntries" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::AddressEntries ^ Members { Microsoft::Office::Interop::Outlook::AddressEntries ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(772)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(772)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.AddressEntries</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-155">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-155">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12289)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12289)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(12289)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-156">Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет отображаемое имя для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-156">Returns or sets a <b>String</b> (<b>string</b> in C#) value that represents the display name for the <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> object.</span>
+          </span>
+          <span data-ttu-id="19e4d-157">Для чтения и записи.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-157">Read/write.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61441)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61441)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-158">Возвращает родительский <b>объект</b> из <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-158">Returns the parent <b>Object</b> of the <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> object.</span>
+          </span>
+          <span data-ttu-id="19e4d-159">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-159">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrimarySmtpAddress">
+      <MemberSignature Language="C#" Value="public string PrimarySmtpAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PrimarySmtpAddress" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.PrimarySmtpAddress" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrimarySmtpAddress As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrimarySmtpAddress { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64245)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64245)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-160">Возвращает <b>строку</b> (<b>строка</b> в C#) представляет основной адрес Simple Mail Transfer Protocol (SMTP) для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-160">Returns a <b>String</b> (<b>string</b> in C#) representing the primary Simple Mail Transfer Protocol (SMTP) address for the <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</span>
+          </span>
+          <span data-ttu-id="19e4d-161">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-161">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="19e4d-162">
+            <para>Это свойство соответствует свойству MAPI <b>PidTagEmailAddress</b>.</para>
+            <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeDistributionList</b> .</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-162">
+              <para>This property corresponds to the MAPI property <b>PidTagEmailAddress</b>.</para>
+              <para>Returns an empty string if this property has not been implemented or does not exist for the <b>ExchangeDistributionList</b> object. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyAccessor">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.PropertyAccessor PropertyAccessor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.PropertyAccessor PropertyAccessor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.PropertyAccessor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyAccessor As PropertyAccessor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::PropertyAccessor ^ PropertyAccessor { Microsoft::Office::Interop::Outlook::PropertyAccessor ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64253)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64253)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.PropertyAccessor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-163">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект, который поддерживает создание, получение, Установка и удаление свойств родительского <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-163">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> object that supports creating, getting, setting, and deleting properties of the parent <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> object.</span>
+          </span>
+          <span data-ttu-id="19e4d-164">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-164">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Session">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.NameSpace Session { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.NameSpace Session" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.Session" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Session As NameSpace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::NameSpace ^ Session { Microsoft::Office::Interop::Outlook::NameSpace ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61451)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61451)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-165">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-165">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> object for the current session.</span>
+          </span>
+          <span data-ttu-id="19e4d-166">Только для чтения.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-166">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="19e4d-167">
+            <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+            <code>Dim objNamespace As Outlook.NameSpace = _
+    Application.GetNamespace("MAPI")</code>
+            <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+            <code>Outlook.NameSpace objNamespace = 
+    Application.GetNamespace("MAPI");</code>
+            <code>Outlook.NameSpace objSession = Application.Session;</code>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-167">
+              <para>The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session. Both members serve the same purpose. For example, the following pairs of statements perform the same function:</para>
+              <code>Dim objNamespace As Outlook.NameSpace = _
+    Application.GetNamespace("MAPI")</code>
+              <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+              <code>Outlook.NameSpace objNamespace = 
+    Application.GetNamespace("MAPI");</code>
+              <code>Outlook.NameSpace objSession = Application.Session;</code>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public string Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12290)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12290)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(12290)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-168">Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее тип записи для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-168">Returns a <b>String</b> (<b>string</b> in C#) representing the type of entry for the <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</span>
+          </span>
+          <span data-ttu-id="19e4d-169">Для чтения и записи.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-169">Read/write.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="19e4d-170">
+            <para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Свойство <b>Type</b> наследует объект <b>AddressEntry</b> . В случае <b>ExchangeDistributionList</b>тип всегда является строка «EX».</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-170">
+              <para>The <b>ExchangeDistributionList</b> object is derived from the <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object. It inherits the <b>Type</b> property from the <b>AddressEntry</b> object. In the case of <b>ExchangeDistributionList</b>, the type is always the string "EX".</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public void Update (object MakePermanent, object Refresh);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Update([in]object MakePermanent, [in]object Refresh) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.Update(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Update (Optional MakePermanent As Object, Optional Refresh As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(768)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="MakePermanent" Type="System.Object" />
+        <Parameter Name="Refresh" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="MakePermanent">
+          <span data-ttu-id="19e4d-171">Значение <b>True</b> означает, что при сбросе кэша свойства и все изменения завершены в базовом адресной книги.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-171">A value of <b>True</b> indicates that the property cache is flushed and all changes are committed in the underlying address book.</span>
+          </span>
+          <span data-ttu-id="19e4d-172">Значение <b>False</b> указывает, что кэш свойств очищен, но не было зафиксировано постоянное хранилище.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-172">A value of <b>False</b> indicates that the property cache is flushed but not committed to persistent storage.</span>
+          </span>
+          <span data-ttu-id="19e4d-173">Значение по умолчанию — <b>True</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-173">The default value is <b>True</b>.</span>
+          </span>
+        </param>
+        <param name="Refresh">
+          <span data-ttu-id="19e4d-174">Значение <b>True</b> указывает, что кэш свойств перезагружается из значений в базовом адресной книги.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-174">A value of <b>True</b> indicates that the property cache is reloaded from the values in the underlying address book.</span>
+          </span>
+          <span data-ttu-id="19e4d-175">Значение <b>False</b> указывает, что кэш свойств не загружаются.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-175">A value of <b>False</b> indicates that the property cache is not reloaded.</span>
+          </span>
+          <span data-ttu-id="19e4d-176">Значение по умолчанию — <b>False</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-176">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="19e4d-177">Внесение изменений в публикации, посвященные <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объект в системе обмена сообщениями.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-177">Posts a change to the <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> object in the messaging system.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="19e4d-178">
+            <para>Новые записи или изменения существующих записей, не сохраняются в коллекции до вызова метода <b>Update</b> с его <paramref name="MakePermanent" /> параметра задано значение <b>True</b>.  </para>
+            <para>Для очистки кэша и перезагрузите значения из адресной книги, вызове <b>Update</b> с <paramref name="MakePermanent" /> параметра значение <b>False</b> и <paramref name="Refresh" /> параметра задано значение <b>True</b>.  </para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-178">
+              <para> New entries or changes to existing entries are not persisted in the collection until the <b>Update</b> method has been called with its <paramref name="MakePermanent" /> parameter set to <b>True</b>.  </para>
+              <para>To flush the cache and then reload the values from the address book, call <b>Update</b> with the <paramref name="MakePermanent" /> parameter set to <b>False</b> and the <paramref name="Refresh" /> parameter set to <b>True</b>.  </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateFreeBusy">
+      <MemberSignature Language="C#" Value="public void UpdateFreeBusy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateFreeBusy() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.UpdateFreeBusy" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateFreeBusy ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateFreeBusy();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(775)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="19e4d-179">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="19e4d-179">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
