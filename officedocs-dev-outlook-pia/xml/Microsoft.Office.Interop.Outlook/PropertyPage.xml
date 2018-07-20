@@ -1,0 +1,110 @@
+<Type Name="PropertyPage" FullName="Microsoft.Office.Interop.Outlook.PropertyPage">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="6dbed428a055e97eb67cfd333fb2c6bc9ce4824a" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ru-RU" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20640173" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface PropertyPage" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PropertyPage" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.PropertyPage" />
+  <TypeSignature Language="VB.NET" Value="Public Interface PropertyPage" />
+  <TypeSignature Language="C++ CLI" Value="public interface class PropertyPage" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0006307E-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Представляет пользовательскую страницу свойств в диалоговом окне Параметры или в диалоговом окне Свойства папки.</summary>
+    <remarks>
+      <para>Outlook использует этот объект, позволяющие пользовательскую страницу свойств для взаимодействия с кнопкой "Применить" в диалоговом окне.</para> Объект 
+      <para><b>PropertyPage</b> — это абстрактный объект. То есть объект <b>PropertyPage</b> в библиотеку объектов Microsoft Outlook не содержит реализации кода. Вместо этого предоставляется в виде шаблона, чтобы помочь реализовывать объект в Microsoft Visual Basic. Это предоставляет набор интерфейсов, которые Outlook можно использовать для определения, изменился ли настраиваемое свойство страницы и для уведомления программа, что пользователь нажатия кнопки Применить или кнопку ОК. (Если страница настраиваемого свойства не зависит от кнопку Применить, а затем необходимо реализовать объект <b>PropertyPage</b> .)</para> Страница настраиваемого свойства 
+      <para>A является элементом управления ActiveX, который отображается в диалоговом окне Параметры или в диалоговом окне Свойства папки Outlook при нажатии кнопки на вкладку страница настраиваемого свойства. Для реализации объекта <b>PropertyPage</b> в Visual Basic .NET, модуль, который содержит код реализации должен содержать следующий оператор Implements.</para><code>Implements Outlook.PropertyPage</code><para>Модуль должен также содержать процедуры, которые реализуют свойства и методы объекта <b>PropertyPage</b> .</para><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Apply">
+      <MemberSignature Language="C#" Value="public void Apply ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Apply() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook.PropertyPage.Apply" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Apply ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Apply();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Применяет изменения, внесенные в настраиваемое свойство страницы.</summary>
+        <remarks>
+          <para>Так как <see cref="T:Microsoft.Office.Interop.Outlook.PropertyPage" /> — это абстрактного объекта, который является реализованы в приложении (, а не с Microsoft Outlook, самого), реализация из <b>Применить</b> метод имеет следующий вид: процедуру события в коде программы. То есть написание кода, реализующего метод точно так же, как можно написать процедуру события. Другими словами Outlook вызывает метод <b>Применить</b> для уведомления программы, которые пользователь выполнения действия в диалоговом окне "" Отображение настраиваемого свойства страницы, который требует программы для применения пользователь изменить значения свойств.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dirty">
+      <MemberSignature Language="C#" Value="public bool Dirty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Dirty" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook.PropertyPage.Dirty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Dirty As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Dirty { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8449)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), который имеет <b>значение True</b> , если были изменены содержимого страницы настраиваемого свойства. Элемент управления ActiveX, который реализует <see cref="T:Microsoft.Office.Interop.Outlook.PropertyPage" /> объекта задается значение этого свойства и Microsoft Outlook запрашивает это в ответ на <see cref="M:Microsoft.Office.Interop.Outlook.PropertyPageSite.OnStatusChange" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.PropertyPageSite" /> объекта. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPageInfo">
+      <MemberSignature Language="C#" Value="public void GetPageInfo (out string HelpFile, out int HelpContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetPageInfo([out] string&amp; HelpFile, [out] int32&amp; HelpContext) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook.PropertyPage.GetPageInfo(System.String@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetPageInfo (ByRef HelpFile As String, ByRef HelpContext As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetPageInfo([Runtime::InteropServices::Out] System::String ^ % HelpFile, [Runtime::InteropServices::Out] int % HelpContext);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="HelpFile" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="HelpContext" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="HelpFile">Указывает файл справки, связанный со страницей свойств.</param>
+        <param name="HelpContext">Указывает идентификатор контекста справки, связанный со страницей свойств.</param>
+        <summary>Возвращает справочную информацию о пользовательскую страницу свойств.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

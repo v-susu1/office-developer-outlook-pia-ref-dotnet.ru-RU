@@ -1,0 +1,43 @@
+<Type Name="RemoteItem" FullName="Microsoft.Office.Interop.Outlook.RemoteItem">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="185bb292e440d2cfff3fc9eb8ff8016fa4d88ef0" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ru-RU" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20639966" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface RemoteItem : Microsoft.Office.Interop.Outlook._RemoteItem, Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RemoteItem implements class Microsoft.Office.Interop.Outlook._RemoteItem, class Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.RemoteItem" />
+  <TypeSignature Language="VB.NET" Value="Public Interface RemoteItem&#xA;Implements _RemoteItem, ItemEvents_10_Event" />
+  <TypeSignature Language="C++ CLI" Value="public interface class RemoteItem : Microsoft::Office::Interop::Outlook::_RemoteItem, Microsoft::Office::Interop::Outlook::ItemEvents_10_Event" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._RemoteItem</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook.ItemEvents_10_Event</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.RemoteItemClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00063023-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Представляет удаленных элементов в папке "Входящие".</summary>
+    <remarks>
+      <para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._RemoteItem" />. Сведения об элементах события COM-объектом можно <see cref="T:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />.</para> Объект 
+      <para><b>RemoteItem</b> похож на <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> объект, но он содержит только тема, получено Дата и время, отправителя, размер и первых 256 символов тексте сообщения. Он используется для предоставления кто-то подключение в удаленном режиме достаточно сведений, чтобы определить, загрузите соответствующий сообщение электронной почты или нет. Тем не менее, заголовков элементов, содержащихся в файле автономной папки (OST) не были доступны с помощью объекта <b>RemoteItem</b> .</para><para>В отличие от других объектов Microsoft Outlook не удается создать этот объект. Удаленные элементы создаются Outlook автоматически при подключении системы удаленного доступа (RAS). Каждый объект <b>RemoteItem</b> , созданный в локальной системе соответствует объекту <b>MailItem</b> уже имеющихся на удаленном компьютере.</para> Объект 
+      <para><b>RemoteItem</b> наследует номер из свойства, методы и события, из-за природы объекта, не имеют никакой функции. Обозреватель объектов показывает эти свойства, методы и события как относящиеся к объекту <b>RemoteItem</b> , но попытка использовать их будет необходимо создать не влияет.</para><para>Методы, которые не работают для объекта <b>RemoteItem</b> включают <b>Закрыть</b>, <b>Копировать</b>, <b>отображаемое</b>, <b>Перемещение</b>и <b>Сохраните</b>.</para><para>Свойства, которые не работают для объекта <b>RemoteItem</b> включают <b>BillingInformation</b>, <b>Body</b>, <b>категории</b>, <b>компании</b>и <b>расстояния</b>.</para><para>События, которые не работают для объекта <b>RemoteItem</b> включают <b>Open</b>, <b>Close</b>, <b>вперед</b>, <b>ответ</b>, <b>ReplyAll</b>и <b>Отправить</b>.</para><para /></remarks>
+  </Docs>
+  <Members />
+</Type>

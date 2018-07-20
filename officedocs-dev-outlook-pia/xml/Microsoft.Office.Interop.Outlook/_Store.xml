@@ -1,0 +1,723 @@
+<Type Name="_Store" FullName="Microsoft.Office.Interop.Outlook._Store">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="3f2239ab127f9c76011dbb664fdfb2aec7a1918e" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ru-RU" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20641354" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface _Store" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Store" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Store" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _Store" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _Store" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000630C7-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Store" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Store.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::Application ^ Application { Microsoft::Office::Interop::Outlook::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61440)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61440)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Categories">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Categories Categories { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.Categories Categories" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Store.Categories" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Categories As Categories" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::Categories ^ Categories { Microsoft::Office::Interop::Outlook::Categories ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64421)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64421)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Categories</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Categories" /> коллекции, представляющей всех категорий, определенных для <see cref="T:Microsoft.Office.Interop.Outlook.Store" />. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Это свойство аналогично <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.Categories" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта, за исключением, это свойство применяется в профиле сеанса, который определяет одну или несколько учетных записей и определение категорий для хранилища, связана учетной записи, в то время как <b> Категории</b> применяется свойство объекта <b>пространства имен</b> в профиле сеанса, который определяет только одну учетную запись и задает главный список категорий для данного сеанса.</para>
+          <para>Для определенных хранилищ дополнительного доставки, такие как хранилище IMAP, свойства <b>Categories</b> возвращает набор <b>категорий</b> для основного хранилища. Хранилища IMAP фактически не поддерживают коллекцию отдельные категории.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Class">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlObjectClass Class { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlObjectClass Class" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Store.Class" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Class As OlObjectClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlObjectClass Class { Microsoft::Office::Interop::Outlook::OlObjectClass get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61450)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61450)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayName">
+      <MemberSignature Language="C#" Value="public string DisplayName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Store.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12289)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12289)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляет отображаемое имя <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекта. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>Отображаемое имя</b> является свойством по умолчанию объекта <b>хранилища</b> . Это свойство соответствует свойству MAPI, <b>PidTagDisplayName</b>. </para>
+          <para>
+            <b>DisplayName</b> доступен только для чтения. Чтобы изменить параметр <b>DisplayName</b> файл личных папок (.pst), используйте <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объекта и <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.SetProperty(System.String,System.Object)" /> метод.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExchangeStoreType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlExchangeStoreType ExchangeStoreType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlExchangeStoreType ExchangeStoreType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Store.ExchangeStoreType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExchangeStoreType As OlExchangeStoreType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlExchangeStoreType ExchangeStoreType { Microsoft::Office::Interop::Outlook::OlExchangeStoreType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64218)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64218)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlExchangeStoreType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает константу в <see cref="T:Microsoft.Office.Interop.Outlook.OlExchangeStoreType" /> перечисление, указывающее тип хранилища Exchange. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Свойство <b>ExchangeStoreType</b> отличает между различными типами хранилища Exchange, таких как основной почтовый ящик Exchange, почтовый ящик Exchange, хранилище общих папок или не Exchange. Это свойство не различать каждый тип хранилища, включая Hotmail, HTTP, IMAP и т. д. Использование <see cref="P:Microsoft.Office.Interop.Outlook._Account.AccountType" /> для типа сервера, связанные с использованием учетной записи электронной почты, например, Exchange, HTTP, IMAP или POP3.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilePath">
+      <MemberSignature Language="C#" Value="public string FilePath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FilePath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Store.FilePath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FilePath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FilePath { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64221)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64221)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющий полный путь к файлу для файл личных папок (.pst) или в хранилище автономной папки файла (OST). Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Это свойство поддерживает Exchange и хранилищ не Exchange. Если хранилище не .pst или .ost хранилища, <b>FilePath</b> возвращает пустую строку.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultFolder">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.MAPIFolder GetDefaultFolder (Microsoft.Office.Interop.Outlook.OlDefaultFolders FolderType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.MAPIFolder GetDefaultFolder([in]valuetype Microsoft.Office.Interop.Outlook.OlDefaultFolders FolderType) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._Store.GetDefaultFolder(Microsoft.Office.Interop.Outlook.OlDefaultFolders)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDefaultFolder (FolderType As OlDefaultFolders) As MAPIFolder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::MAPIFolder ^ GetDefaultFolder(Microsoft::Office::Interop::Outlook::OlDefaultFolders FolderType);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64621)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.MAPIFolder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FolderType" Type="Microsoft.Office.Interop.Outlook.OlDefaultFolders" />
+      </Parameters>
+      <Docs>
+        <param name="FolderType">Указывает тип папки запрошенного по умолчанию.</param>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.MAPIFolder" /> объект, представляющий папки по умолчанию в хранилище и, которое имеет тип, указанный с <paramref name="FolderType" /> аргумент.</summary>
+        <returns>Возвращает объект <b>Folder</b> , представляющий папки по умолчанию требуемого типа. Если папка по умолчанию требуемого типа не существует, <b>GetDefaultFolder</b> возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</returns>
+        <remarks>
+          <para>Этот метод аналогичен <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetDefaultFolder(Microsoft.Office.Interop.Outlook.OlDefaultFolders)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта. Отличие заключается в том, что этот метод получает папки по умолчанию в хранилище доставки, связанный с учетной записью, тогда как <b>GetDefaultFolder</b> объекта <b>пространство имен</b> возвращает папки по умолчанию в хранилище по умолчанию для текущего профиля.</para>
+          <para>Один пример при <b>GetDefaultFolder</b> возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#) — это когда <see cref="F:Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderManagedEmail" /> указан как <paramref name="FolderType" /> , но группа управляемых папок не был развернут.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRootFolder">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.MAPIFolder GetRootFolder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.MAPIFolder GetRootFolder() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._Store.GetRootFolder" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRootFolder () As MAPIFolder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::MAPIFolder ^ GetRootFolder();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64219)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.MAPIFolder</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий в корневой папке <see cref="T:Microsoft.Office.Interop.Outlook.Store" />. Только для чтения.</summary>
+        <returns>Объект <b>папки</b> , который представляет папку в корне этого <b>хранилища</b>.</returns>
+        <remarks>
+          <para>Перечисление вложенных папок в корневой папке в <b>хранилище</b>можно использовать метод <b>GetRootFolder</b> . В отличие от <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.Folders" /> которого содержит все папках для всех хранилищ текущего профиля, <b>Store.GetRootFolder.Folders</b> позволяет перечислить все папки для данного объекта <b>хранилища</b> в текущий профиль.</para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Parent" /> Свойство корневой папки хранилища возвращает строку «Mapi».</para> Хранилище 
+          <para>корневой папки для общих папок Exchange — папка общих папок. Эта папка возвращается при вызове Application.Session.GetDefaultFolder(olPublicFoldersAllPublicFolders).</para><para><b>GetRootFolder</b> возвращает ошибку, если поставщик услуг поддерживает корневые папки.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRules">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Rules GetRules ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.Rules GetRules() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._Store.GetRules" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRules () As Rules" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::Rules ^ GetRules();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64265)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Rules</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Rules" /> коллекцию, содержащую объект, который содержит <see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> объектов, определенных для текущего сеанса.</summary>
+        <returns>Объект коллекции <b>правил</b> , который представляет набор <b>правил,</b> определенных для текущего сеанса.</returns>
+        <remarks>
+          <para>Вызов <b>GetRules</b> может быть дорогим операции с точки зрения производительности при медленном подключении к серверу Exchange.</para> Следует 
+          <para>порядок объектов <b>правила</b> в коллекции, возвращаемой из <b>GetRules</b> , что из <see cref="P:Microsoft.Office.Interop.Outlook._Rule.ExecutionOrder" /> с <b>ExecutionOrder</b> равно 1 является первое <b>правило</b> в коллекции и <b>ExecutionOrder</b> равно <see cref="P:Microsoft.Office.Interop.Outlook._Rules.Count" /> , Последнее <b>правило</b> в семействе сайтов.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSearchFolders">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Folders GetSearchFolders ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.Folders GetSearchFolders() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._Store.GetSearchFolders" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSearchFolders () As Folders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::Folders ^ GetSearchFolders();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64220)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Folders</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> коллекцию, содержащую объект, представляющий папок поиска определенных для <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекта.</summary>
+        <returns>Объект коллекции <b>папок</b> , представляющий все папки поиска для объекта <b>хранилища</b> .</returns>
+        <remarks>
+          <para>
+            <b>GetSearchFolders</b> возвращает все папки видимым active поиска для <b>хранилища</b>. Не возвращает неинициализированный или устаревания масштабирование папок поиска.</para>
+          <para>
+            <b>GetSearchFolders</b> возвращает объект коллекции <b>папок</b> с <see cref="P:Microsoft.Office.Interop.Outlook._Folders.Count" /> равно нуль (0), если нет папки поиска не определено для <b>хранилища</b>.</para>
+          <para>Для <b>папок</b> коллекцию, содержащую объект, представляющий коллекцию папок поиска <see cref="P:Microsoft.Office.Interop.Outlook._Folders.Parent" /> возвращает тот же объект, что <see cref="M:Microsoft.Office.Interop.Outlook._Store.GetRootFolder" />. <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Folders" /> возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSpecialFolder">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.MAPIFolder GetSpecialFolder (Microsoft.Office.Interop.Outlook.OlSpecialFolders FolderType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.MAPIFolder GetSpecialFolder([in]valuetype Microsoft.Office.Interop.Outlook.OlSpecialFolders FolderType) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._Store.GetSpecialFolder(Microsoft.Office.Interop.Outlook.OlSpecialFolders)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSpecialFolder (FolderType As OlSpecialFolders) As MAPIFolder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::MAPIFolder ^ GetSpecialFolder(Microsoft::Office::Interop::Outlook::OlSpecialFolders FolderType);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8456)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.MAPIFolder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FolderType" Type="Microsoft.Office.Interop.Outlook.OlSpecialFolders" />
+      </Parameters>
+      <Docs>
+        <param name="FolderType">Константу в перечислении <b>OlSpecialFolders</b> , которая определяет тип специальную папку в хранилище.</param>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект для отдельной папки, указанного идентификатором <paramref name="FolderType" /> в заданного хранилища.</summary>
+        <returns>Объект <b>Folder</b> , который представляет особой папкой, указанного идентификатором <paramref name="FolderType" />.</returns>
+        <remarks>
+          <para>Не все специальные папки существует во всех хранилищах.  Если запрошенный специальную папку не существует, <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#) будут возвращены.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCachedExchange">
+      <MemberSignature Language="C#" Value="public bool IsCachedExchange { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCachedExchange" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Store.IsCachedExchange" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCachedExchange As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCachedExchange { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64222)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64222)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, если <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> является хранилищем кэширования данных Exchange. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>IsCachedExchange</b> возвращает <b>значение True,</b> Если <see cref="P:Microsoft.Office.Interop.Outlook._Store.ExchangeStoreType" /> — это основной почтовый ящик Exchange (<b>Store.ExchangeStoreType</b> — <b>olExchangePrimaryMailbox</b>) и почтовый ящик настроен режим использования кэширования данных Exchange. Возвращает <b>значение False</b> в противном случае. В частности возвращается <b>значение False</b> для хранилища общих папок Exchange, который настроен для кэша общей папки "Избранное".</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsConversationEnabled">
+      <MemberSignature Language="C#" Value="public bool IsConversationEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsConversationEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Store.IsConversationEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsConversationEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsConversationEnabled { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64630)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64630)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <see cref="T:System.Boolean" /> (<b>bool</b> для языка C#) значение, равное <b>True</b> , если хранилище поддерживает представление беседы. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>Хранилища <para>A поддерживает представление беседы, если хранилище является хранилищем POP, IMAP или PST-файлов или при запуске версии Microsoft Exchange Server, чем Microsoft Exchange Server 2010. Хранилище также поддерживает представление беседы, если хранилище работает под управлением Microsoft Exchange Server 2007, версии Outlook — по крайней мере Microsoft Outlook 2010 и Outlook работает в режиме кэширования.</para> Вызов метода <b>GetConversation</b> элемента в хранилище возвращает 
+          <para>, если хранилище поддерживает бесед, <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объект для элемента. Если хранилище не поддерживает бесед, <b>GetConversation</b> возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#) для элементов в магазине.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDataFileStore">
+      <MemberSignature Language="C#" Value="public bool IsDataFileStore { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDataFileStore" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Store.IsDataFileStore" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDataFileStore As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDataFileStore { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64223)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64223)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, если <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> — это хранилище для файла данных Outlook, который является файл личных папок (.pst) или автономной папки файл (OST). Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>IsDataFileStore</b> поддерживает только хранилища Exchange и возвращает <b>значение False</b> для хранилищ тип HTTP, таких как Hotmail и MSN, а также для хранилища IMAP.</para>
+          <para>Exchange для хранилища <b>IsDataFileStore</b> возвращает <b>значение False,</b> Если профилей пользователей не использует режим кэширования данных Exchange. Когда хранилище является общей папке <b>IsDataFileStore</b> также вернет <b>значение False</b> (то есть, <see cref="P:Microsoft.Office.Interop.Outlook._Store.ExchangeStoreType" /> — <b>olExchangePublicFolder</b>).</para>
+          <para>
+            <b>IsDataFileStore</b> не указывает, находится ли хранилище на локальный жесткий диск. Например, в PST-файл может находиться на сетевого диска и <b>IsDataFileStore</b> по-прежнему возвращает <b>значение True,</b>.</para>
+          <para>, Можно изменить возвращаемое значение <b>IsDataFileStore</b> Если пользователь настроен классический автономный режим Exchange. Когда пользователь отключен от сети и с помощью классический автономный режим Exchange, <b>IsDataFileStore</b> возвращает <b>значение True</b>. Когда пользователь находится в сети и с помощью классического режима Exchange online, <b>IsDataFileStore</b> возвращает <b>значение False</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInstantSearchEnabled">
+      <MemberSignature Language="C#" Value="public bool IsInstantSearchEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInstantSearchEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Store.IsInstantSearchEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInstantSearchEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInstantSearchEnabled { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64532)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64532)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, является ли мгновенного поиска включено и работает в хранилище. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Используйте <b>IsInstantSearchEnabled</b> , чтобы оценить необходимость использования операторов <b>ci_startswith</b> или <b>ci_phrasematch</b> в запросе. Если вы используете <b>ci_startswith</b> или <b>ci_phrasematch</b> в мгновенного поиска и запросов не включено, Outlook возвращает ошибку.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOpen">
+      <MemberSignature Language="C#" Value="public bool IsOpen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOpen" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Store.IsOpen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOpen As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOpen { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64224)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64224)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, если <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> открыта. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Это свойство поддерживает Exchange и не Exchange хранилищ.</para>
+          <para>
+            <b>IsOpen</b> только указывает, открыт ли хранилище. Не обеспечивает Если хранилище находится в автономном режиме, или если почтовый ящик Exchange или общую папку Exchange и хранилища сервера не работает.</para>
+          <para>Так, как открытие хранилища может применяться к снижению производительности и <see cref="M:Microsoft.Office.Interop.Outlook._Store.GetRootFolder" /> и <see cref="M:Microsoft.Office.Interop.Outlook._Store.GetSearchFolders" /> будет открыть хранилище если она еще не открыта, можно использовать <b>IsOpen</b> перед принятием решения для вызова <b>GetRootFolder</b> или <b>GetSearchFolders</b> для сведения к минимуму проблемы с производительностью. </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MAPIOBJECT">
+      <MemberSignature Language="C#" Value="public object MAPIOBJECT { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object MAPIOBJECT" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Store.MAPIOBJECT" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MAPIOBJECT As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ MAPIOBJECT { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61696)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61696)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Store.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61441)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61441)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Родительский <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> — это объект <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyAccessor">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.PropertyAccessor PropertyAccessor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.PropertyAccessor PropertyAccessor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Store.PropertyAccessor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyAccessor As PropertyAccessor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::PropertyAccessor ^ PropertyAccessor { Microsoft::Office::Interop::Outlook::PropertyAccessor ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64253)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64253)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.PropertyAccessor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект, который поддерживает создание, получение, Установка и удаление свойств родительского <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекта. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshQuotaDisplay">
+      <MemberSignature Language="C#" Value="public void RefreshQuotaDisplay ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RefreshQuotaDisplay() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._Store.RefreshQuotaDisplay" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RefreshQuotaDisplay ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshQuotaDisplay();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64590)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Обновляет сведения о квотах хранилища, который отображается в строке состояния в окне проводника.</summary>
+        <remarks>
+          <para>Если хранилище не поддерживает отображение сведений о квотах, этот метод не имеет никакого эффекта.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Session">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.NameSpace Session { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.NameSpace Session" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Store.Session" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Session As NameSpace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::NameSpace ^ Session { Microsoft::Office::Interop::Outlook::NameSpace ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61451)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61451)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+          <code>Dim objNamespace As Outlook.NameSpace = _
+    Application.GetNamespace("MAPI")</code>
+          <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+          <code>Outlook.NameSpace objNamespace = 
+    Application.GetNamespace("MAPI");</code>
+          <code>Outlook.NameSpace objSession = Application.Session;</code>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StoreID">
+      <MemberSignature Language="C#" Value="public string StoreID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StoreID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Store.StoreID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StoreID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StoreID { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12552)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12552)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), определяющая <see cref="T:Microsoft.Office.Interop.Outlook.Store" />. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>StoreID</b> является уникальным для профиля. Это эквивалентно свойству MAPI <b>PidTagStoreEntryId</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

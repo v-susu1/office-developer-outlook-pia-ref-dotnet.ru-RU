@@ -1,0 +1,42 @@
+<Type Name="CalendarView" FullName="Microsoft.Office.Interop.Outlook.CalendarView">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="12ed0a14ddc65370b41ab256c1e4929bc224c9a8" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ru-RU" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20641363" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface CalendarView : Microsoft.Office.Interop.Outlook._CalendarView" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalendarView implements class Microsoft.Office.Interop.Outlook._CalendarView" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.CalendarView" />
+  <TypeSignature Language="VB.NET" Value="Public Interface CalendarView&#xA;Implements _CalendarView" />
+  <TypeSignature Language="C++ CLI" Value="public interface class CalendarView : Microsoft::Office::Interop::Outlook::_CalendarView" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._CalendarView</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.CalendarViewClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00063099-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Представляет представление, которое отображает элементы Outlook в формате календаря.</summary>
+    <remarks>
+      <para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._CalendarView" />.</para>
+      <para>
+        <b>Представления календаря</b> объекта, производного от <see cref="T:Microsoft.Office.Interop.Outlook.View" /> объект, можно создать настраиваемые представления, которые используются для отображения элементов Outlook в рамках календаря в одном из нескольких режимах.</para>
+      <para>Outlook предоставляет несколько встроенных объектов <b>представления календаря</b> и также можно создавать пользовательские объекты <b>представления календаря</b> . Использование <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> семейства сайтов для добавления нового <b>представления календаря</b> для <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объекта. Использование <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.Standard" /> свойства, чтобы определить, является ли существующий объект <b>представления календаря</b> встроенные или настраиваемые.</para> Объект 
+      <para><b>представления календаря</b> поддерживает различные режимы различные представления, в зависимости от макета и период времени, в котором будет отображаться элементов Outlook. Использование <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.CalendarViewMode" /> свойство, чтобы задать режим просмотра <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.StartField" /> свойство для указания свойства элемента Outlook, который содержит дату начала и <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.EndField" /> для задания свойств элемента Outlook, который содержит дату окончания для элементов Outlook быть свойство отображаемые.</para><para>, Если свойство <b>CalendarViewMode</b> для любого значения, кроме <b>olCalendarViewMonth</b>, можно использовать <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.DayWeekFont" /> и <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.DayWeekTimeFont" /> свойства, чтобы настроить шрифты, используемые для отображения в представлении день, Дата и время подписи. Использование <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.DayWeekTimeScale" /> для настройки масштаба времени, используется для отображения элементов Outlook в представлении. Если значение <b>CalendarViewMode</b><b>olCalendarViewMultiDay</b>, можно использовать <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.DaysInMultiDayMode" /> свойство, чтобы определить, сколько дней отображения в представлении.</para><para>, Если значение <b>CalendarViewMode</b><b>olCalendarViewMonth</b>, можно использовать <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.MonthFont" /> свойство настройка шрифтов, используется для отображения названия месяца и дня и <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.MonthShowEndTime" /> для указания, отображается ли в время окончания Просмотр.</para><para>Можно также настроить отображения элементов Outlook в объекте <b>представления календаря</b> . Использование <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.BoldSubjects" /> свойство, указывающее, отображаются ли темы для элементов Outlook полужирным шрифтом и <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.BoldDatesWithItems" /> свойство, указывающее, отображаются ли даты в окне выбора даты, которые содержат элементы Outlook полужирным шрифтом. Использование <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.Filter" /> свойство, чтобы определить, какие элементы Outlook для отображения в представлении. </para><para>Определения для каждого объекта <b>представления календаря</b> сохраняются в формате языка (XML). Использование <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.XML" /> свойство для работы с XML-определении объекта представления календаря.</para><para>Использования <see cref="M:Microsoft.Office.Interop.Outlook._CalendarView.Apply" /> метод, чтобы применить все изменения, внесенные в объект <b>представления календаря</b> к текущему представлению. Использование <see cref="M:Microsoft.Office.Interop.Outlook._CalendarView.Save" /> метод, чтобы сохранить все изменения, внесенные в объект <b>представления календаря</b> . Использование <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.LockUserChanges" /> свойство, чтобы разрешить или запретить изменения в пользовательский интерфейс для представления.</para><para>Встроенные объекты <b>представления календаря</b> можно изменить, но их нельзя удалить. Использование <see cref="M:Microsoft.Office.Interop.Outlook._CalendarView.Delete" /> метод, чтобы удалить настраиваемый объект <b>представления календаря</b> . Использование <see cref="M:Microsoft.Office.Interop.Outlook._CalendarView.Reset" /> метод, чтобы сбросить свойства встроенный объект <b>представления календаря</b> значения по умолчанию.</para><para /></remarks>
+  </Docs>
+  <Members />
+</Type>

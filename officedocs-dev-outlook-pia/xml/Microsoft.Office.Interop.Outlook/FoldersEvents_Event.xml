@@ -1,0 +1,97 @@
+<Type Name="FoldersEvents_Event" FullName="Microsoft.Office.Interop.Outlook.FoldersEvents_Event">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="8712690eb460563beab04c8826e629a5eefa9363" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ru-RU" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20641566" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface FoldersEvents_Event" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FoldersEvents_Event" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.FoldersEvents_Event" />
+  <TypeSignature Language="VB.NET" Value="Public Interface FoldersEvents_Event" />
+  <TypeSignature Language="C++ CLI" Value="public interface class FoldersEvents_Event" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComEventInterface(typeof(Microsoft.Office.Interop.Outlook.FoldersEvents), typeof(Microsoft.Office.Interop.Outlook.FoldersEvents_EventProvider))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Это интерфейс .NET, созданный при обработке компонентного класса COM, который требуется управляемому коду для взаимодействия с соответствующим объектом COM. Этот интерфейс реализует все события предыдущих интерфейсов и новые события. Используйте его, только если имя нужного события совпадает с именем метода объекта COM. В этом случае выполните приведение типов к этому интерфейсу, чтобы подключиться к событию, и выполните приведение типов к первичному интерфейсу, вызвать метод. В противном случае используйте интерфейс .NET, производный от компонентного класса COM, для доступа к методам, свойствам и событиям объекта COM.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FolderAdd">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.FoldersEvents_FolderAddEventHandler FolderAdd;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.FoldersEvents_FolderAddEventHandler FolderAdd" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.FoldersEvents_Event.FolderAdd" />
+      <MemberSignature Language="VB.NET" Value="Event FolderAdd As FoldersEvents_FolderAddEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::FoldersEvents_FolderAddEventHandler ^ FolderAdd;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.FoldersEvents_FolderAddEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Происходит при добавлении папки в указанном <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> семейства сайтов.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FolderChange">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.FoldersEvents_FolderChangeEventHandler FolderChange;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.FoldersEvents_FolderChangeEventHandler FolderChange" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.FoldersEvents_Event.FolderChange" />
+      <MemberSignature Language="VB.NET" Value="Event FolderChange As FoldersEvents_FolderChangeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::FoldersEvents_FolderChangeEventHandler ^ FolderChange;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.FoldersEvents_FolderChangeEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Происходит, когда папки в указанном <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> изменены семейства сайтов.</summary>
+        <remarks>
+          <para>Событие <b>FolderChange</b> активируется при изменении папки в объект коллекции <b>папок</b> с помощью пользовательского действия или программный код. Изменение может быть пользователем или программой переименование папки или добавления, изменения или удаления элемента в папке.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FolderRemove">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.FoldersEvents_FolderRemoveEventHandler FolderRemove;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.FoldersEvents_FolderRemoveEventHandler FolderRemove" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.FoldersEvents_Event.FolderRemove" />
+      <MemberSignature Language="VB.NET" Value="Event FolderRemove As FoldersEvents_FolderRemoveEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::FoldersEvents_FolderRemoveEventHandler ^ FolderRemove;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.FoldersEvents_FolderRemoveEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возникает при удалении папки из указанного <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> семейства сайтов.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

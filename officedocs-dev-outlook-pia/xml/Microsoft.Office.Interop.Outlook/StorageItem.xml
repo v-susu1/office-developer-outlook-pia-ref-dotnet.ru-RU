@@ -1,0 +1,40 @@
+<Type Name="StorageItem" FullName="Microsoft.Office.Interop.Outlook.StorageItem">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="64f3b31b5fb2ef6128f00acedda29ebf7479b98f" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ru-RU" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20640049" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface StorageItem : Microsoft.Office.Interop.Outlook._StorageItem" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract StorageItem implements class Microsoft.Office.Interop.Outlook._StorageItem" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.StorageItem" />
+  <TypeSignature Language="VB.NET" Value="Public Interface StorageItem&#xA;Implements _StorageItem" />
+  <TypeSignature Language="C++ CLI" Value="public interface class StorageItem : Microsoft::Office::Interop::Outlook::_StorageItem" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._StorageItem</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.StorageItemClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000630CB-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Объект message в MAPI, который всегда сохраняется как скрытый элемент в родительской папке и сохранение личных данных для решения для Outlook.</summary>
+    <remarks>
+      <para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._StorageItem" />. </para>
+      <para>Объект <b>StorageItem</b> хранится на уровне папок, что позволяет перемещать с учетной записью, доступен через сеть или автономно.</para> Объектная модель 
+      <para>Outlook не предоставляет любой объект коллекции для <b>элемент для хранения</b> объектов. Тем не менее, можно использовать <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.GetTable(System.Object,System.Object)" /> для получения <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> с скрытые элементы в <see cref="T:Microsoft.Office.Interop.Outlook.Folder" />, при указании <paramref name="TableContents" /> параметр как <b>olHiddenItems</b>. Если сохранение данных закрытый высокой важна, следует зашифровать данные перед сохранением его</para><para>После получения объект <b>StorageItem</b> можно выполнить следующие действия для хранения данных решения:</para><list type="bullet"><item><para>Добавления вложений элемента для хранилища.</para></item><item><para>Использовать явные встроенные свойства элемента, такие как <see cref="P:Microsoft.Office.Interop.Outlook._StorageItem.Body" /> для хранения пользовательских данных.</para></item><item><para>Добавить настраиваемые свойства элемента, используя <see cref="M:Microsoft.Office.Interop.Outlook.UserProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> метод. Обратите внимание, что в данном случае Дополнительно <paramref name="AddToFolderFields" /> и <paramref name="DisplayFormat" /> аргументы метода <b>UserProperties.Add</b> будет игнорироваться.</para></item><item><para>Использования <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект, который требуется получить или задать настраиваемые свойства.</para></item></list> Класс сообщения по умолчанию для новых <b>StorageItem</b><para>— <b>IPM. Хранилище</b>. Если <b>элемент для хранения</b> существовало в виде скрытого сообщения в версии Outlook до Microsoft Office Outlook 2007, класс сообщения не изменятся. Для предотвращения изменения класса сообщения, <b>элемент для хранения</b> не предоставляет явных свойство <b>MessageClass</b> .</para><para>Дополнительные сведения о хранении с помощью объекта <b>элемент для хранения</b> данных решения можно <a href="http://go.microsoft.com/fwlink/?LinkId=87931">Хранение данных для решений</a></para><para /></remarks>
+  </Docs>
+  <Members />
+</Type>

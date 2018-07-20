@@ -1,0 +1,111 @@
+<Type Name="_DDocSiteControl" FullName="Microsoft.Office.Interop.Outlook._DDocSiteControl">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="12a286b8e35832938e6762766814ade975f518fd" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ru-RU" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20641047" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface _DDocSiteControl" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _DDocSiteControl" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._DDocSiteControl" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _DDocSiteControl" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _DDocSiteControl" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0006F026-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Элемент управления, который отображает тела элемента Outlook.</summary>
+    <remarks>
+      <para>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот интерфейс используется для доступа к объекту и его элементы; Обратитесь к этот интерфейс для получения сведений о них.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="public sbyte ReadOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int8 ReadOnly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._DDocSiteControl.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReadOnly As SByte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::SByte ReadOnly { System::SByte get(); void set(System::SByte value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-2147356664)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-2147356664)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(-2147356664)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.SByte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает или устанавливает <b>логическое</b> значение (<b>bool</b> в C#), указывающее, является ли текст, отображаемый в элементе управления можно просматривать только и не могут быть изменены. Для чтения и записи.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>Значение true,</b> чтобы указать, что элемент управления только отображает текст и не поддерживает его изменения; <b>Значение false,</b> чтобы указать, что элемент управления поддерживает как просмотр и изменение текста элемента.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuppressAttachments">
+      <MemberSignature Language="C#" Value="public sbyte SuppressAttachments { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int8 SuppressAttachments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._DDocSiteControl.SuppressAttachments" />
+      <MemberSignature Language="VB.NET" Value="Public Property SuppressAttachments As SByte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::SByte SuppressAttachments { System::SByte get(); void set(System::SByte value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64483)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64483)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(64483)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.SByte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает или устанавливает <b>логическое</b> значение (<b>bool</b> в C#), который указан ли вложения для такого элемента Outlook не должен отображаться в элементе управления. Для чтения и записи.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Это свойство применяется только к файлам, подключенного к элементу Outlook, в окне "вложения" и не относятся к встроенного файлами, вложенными как внедренные элементы в элементе Outlook.</para>
+          <para>
+            <b>Значение true,</b> чтобы указать, что элемент управления не отображает вложений элемента; <b>Значение false,</b> чтобы указать, что элемент управления поддерживает отображение вложений элемента.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,44 @@
+<Type Name="Store" FullName="Microsoft.Office.Interop.Outlook.Store">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="6445374782d0b4add1312b6169f01fab8b0ba475" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ru-RU" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20641002" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Store : Microsoft.Office.Interop.Outlook._Store" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Store implements class Microsoft.Office.Interop.Outlook._Store" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Store" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Store&#xA;Implements _Store" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Store : Microsoft::Office::Interop::Outlook::_Store" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._Store</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.StoreClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000630C7-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Представляет файл на локальном компьютере или сетевой диск, в которой хранятся сообщения электронной почты и другие элементы для учетной записи текущего профиля.</summary>
+    <remarks>
+      <para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._Store" />. </para>
+      <para>A профиль определяет один или несколько учетных записей электронной почты и каждой учетной записи электронной почты связан с сервером определенного типа. Для Exchange server хранилища может быть на сервере Exchange общей папки или в локальный файл личных папок (.pst) или автономной папки файла (OST). Для сервера электронной почты POP3, IMAP или HTTP, хранилище — в PST-файл.</para>
+      <para>Можно использовать <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> и <b>хранения</b> объектов перечислить все папки и папки на все хранилища поиска в текущем сеансе.  Поскольку начало корневую папку или в хранилище в папках поиска требуется хранилище должны быть открыты и открытие хранилища, задает дополнительные затраты ресурсов на производительность, вы можете проверить <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsOpen" /> свойства, прежде чем продолжить операции. </para>
+      <para>При использовании Exchange server, доступ к другим явные встроенные <b>хранилища</b> свойств для хранения характеристики, такие как <see cref="P:Microsoft.Office.Interop.Outlook._Store.ExchangeStoreType" />, <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsCachedExchange" />, и <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsDataFileStore" />. Использование <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект, возвращенный свойством <see cref="P:Microsoft.Office.Interop.Outlook._Store.PropertyAccessor" /> для доступа к другим свойствам хранилища, не представленных в объектной модели Outlook.</para>
+      <para>Дополнительные сведения о хранении элементов Outlook в папках и хранилищах можно <a href="http://go.microsoft.com/fwlink/?LinkId=87932">Хранения элементов Outlook</a></para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

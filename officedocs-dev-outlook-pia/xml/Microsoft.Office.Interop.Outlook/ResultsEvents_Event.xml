@@ -1,0 +1,100 @@
+<Type Name="ResultsEvents_Event" FullName="Microsoft.Office.Interop.Outlook.ResultsEvents_Event">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="3a87dc9dae2379388ad923144e6c646f5a199984" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ru-RU" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20641165" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ResultsEvents_Event" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ResultsEvents_Event" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.ResultsEvents_Event" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ResultsEvents_Event" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ResultsEvents_Event" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComEventInterface(typeof(Microsoft.Office.Interop.Outlook.ResultsEvents), typeof(Microsoft.Office.Interop.Outlook.ResultsEvents_EventProvider))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Это интерфейс .NET, созданный при обработке компонентного класса COM, который требуется управляемому коду для взаимодействия с соответствующим объектом COM. Этот интерфейс реализует все события предыдущих интерфейсов и новые события. Используйте его, только если имя нужного события совпадает с именем метода объекта COM. В этом случае выполните приведение типов к этому интерфейсу, чтобы подключиться к событию, и выполните приведение типов к первичному интерфейсу, вызвать метод. В противном случае используйте интерфейс .NET, производный от компонентного класса COM, для доступа к методам, свойствам и событиям объекта COM.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ItemAdd">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.ResultsEvents_ItemAddEventHandler ItemAdd;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.ResultsEvents_ItemAddEventHandler ItemAdd" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.ResultsEvents_Event.ItemAdd" />
+      <MemberSignature Language="VB.NET" Value="Event ItemAdd As ResultsEvents_ItemAddEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::ResultsEvents_ItemAddEventHandler ^ ItemAdd;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ResultsEvents_ItemAddEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Происходит, когда один или несколько элементов добавляются для указанного семейства сайтов.</summary>
+        <remarks>
+          <para>Это событие не выполняется большое число элементов добавляются к папке за один раз.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemChange">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.ResultsEvents_ItemChangeEventHandler ItemChange;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.ResultsEvents_ItemChangeEventHandler ItemChange" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.ResultsEvents_Event.ItemChange" />
+      <MemberSignature Language="VB.NET" Value="Event ItemChange As ResultsEvents_ItemChangeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::ResultsEvents_ItemChangeEventHandler ^ ItemChange;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ResultsEvents_ItemChangeEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возникает при изменении элемента в указанном семействе сайтов.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemRemove">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.ResultsEvents_ItemRemoveEventHandler ItemRemove;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.ResultsEvents_ItemRemoveEventHandler ItemRemove" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.ResultsEvents_Event.ItemRemove" />
+      <MemberSignature Language="VB.NET" Value="Event ItemRemove As ResultsEvents_ItemRemoveEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::ResultsEvents_ItemRemoveEventHandler ^ ItemRemove;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ResultsEvents_ItemRemoveEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Происходит, когда элемент удаляется из указанного семейства сайтов.</summary>
+        <remarks>
+          <para>Это событие не выполняется при удалении последнего элемента в файл личных папок (PST) или 16 или более элементов, одновременно удаляются из PST-файл, почтовых ящиков Microsoft Exchange или общую папку Exchange.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
