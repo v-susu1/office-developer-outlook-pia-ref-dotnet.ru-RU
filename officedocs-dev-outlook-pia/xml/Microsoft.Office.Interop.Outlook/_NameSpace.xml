@@ -1,0 +1,1571 @@
+<Type Name="_NameSpace" FullName="Microsoft.Office.Interop.Outlook._NameSpace">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="180db45f39b12a2e4725cdddcd3cc5780306b7d7" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ru-RU" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20640082" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface _NameSpace" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _NameSpace" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._NameSpace" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _NameSpace" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _NameSpace" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00063002-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Accounts">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Accounts Accounts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.Accounts Accounts" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._NameSpace.Accounts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Accounts As Accounts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::Accounts ^ Accounts { Microsoft::Office::Interop::Outlook::Accounts ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64208)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64208)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Accounts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Accounts" /> коллекцию, содержащую объект, представляющий все <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> объекты текущего профиля. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Если Outlook работает в режиме без установки сеансов, <b>учетные записи</b> возвращает коллекцию <b>учетных записей</b> с <see cref="P:Microsoft.Office.Interop.Outlook._Accounts.Count" /> равно 0.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddressLists">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.AddressLists AddressLists { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.AddressLists AddressLists" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._NameSpace.AddressLists" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AddressLists As AddressLists" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::AddressLists ^ AddressLists { Microsoft::Office::Interop::Outlook::AddressLists ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8461)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8461)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.AddressLists</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressLists" /> семейства сайтов, представляющий коллекцию адреса перечислены доступные для данного сеанса. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Коллекция <b>AddressLists</b> представляет корень иерархии адресной книги для текущего сеанса. Определенный <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> объект представляет один из доступных адресных книг. Тип доступа, который вы получите зависит от разрешения доступа, предоставленные каждого поставщика адресных книг.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddStore">
+      <MemberSignature Language="C#" Value="public void AddStore (object Store);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddStore([in]object Store) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.AddStore(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddStore (Store As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddStore(System::Object ^ Store);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8473)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Store" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Store">Путь к PST-файл для добавления к профилю. Если PST-файл не существует, Microsoft Outlook создает его.</param>
+        <summary>Добавляет файл личных папок (PST) для текущего профиля.</summary>
+        <remarks>
+          <para>Используйте метод <b>RemoveStore</b> для удаления PST-файл, который уже добавлен в профиль.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddStoreEx">
+      <MemberSignature Language="C#" Value="public void AddStoreEx (object Store, Microsoft.Office.Interop.Outlook.OlStoreType Type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddStoreEx([in]object Store, [in]valuetype Microsoft.Office.Interop.Outlook.OlStoreType Type) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.AddStoreEx(System.Object,Microsoft.Office.Interop.Outlook.OlStoreType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddStoreEx (Store As Object, Type As OlStoreType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddStoreEx(System::Object ^ Store, Microsoft::Office::Interop::Outlook::OlStoreType Type);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64197)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Store" Type="System.Object" />
+        <Parameter Name="Type" Type="Microsoft.Office.Interop.Outlook.OlStoreType" />
+      </Parameters>
+      <Docs>
+        <param name="Store">Путь к PST-файл для добавления к профилю. Если PST-файл не существует, Microsoft Outlook создает его.</param>
+        <param name="Type">Формат, в котором должен быть создан файл данных.</param>
+        <summary>Добавляет в файл личных папок (.pst) в формате, указанном для текущего профиля.</summary>
+        <remarks>
+          <para>Используйте константу <b>olStoreUnicode</b> для добавления новых PST-файл, который имеет больше возможностей хранения элементов и папок и поддерживает многоязычные данные Юникод, чтобы профиль пользователя. Константа <b>olStoreANSI</b> позволяет создать PST-файлов, которые не поддерживают полный многоязычных данных в формате Юникод, но совместимы с предыдущими версиями Outlook.  Константа <b>olStoreDefault</b> служит для создания в PST-файл в формате по умолчанию, совместимый с режимом почтового ящика, в котором Outlook работает на сервере Microsoft Exchange Server.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._NameSpace.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::Application ^ Application { Microsoft::Office::Interop::Outlook::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61440)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61440)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoDiscoverConnectionMode">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlAutoDiscoverConnectionMode AutoDiscoverConnectionMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlAutoDiscoverConnectionMode AutoDiscoverConnectionMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._NameSpace.AutoDiscoverConnectionMode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AutoDiscoverConnectionMode As OlAutoDiscoverConnectionMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlAutoDiscoverConnectionMode AutoDiscoverConnectionMode { Microsoft::Office::Interop::Outlook::OlAutoDiscoverConnectionMode get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64558)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64558)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlAutoDiscoverConnectionMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlAutoDiscoverConnectionMode" /> константа, которая определяет тип подключения к серверу Exchange для службы автообнаружения. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoDiscoverXml">
+      <MemberSignature Language="C#" Value="public string AutoDiscoverXml { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AutoDiscoverXml" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._NameSpace.AutoDiscoverXml" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AutoDiscoverXml As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AutoDiscoverXml { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64515)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64515)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <b>String</b> (<b>строка</b> в C#), который представляет сведения в формате XML, извлекается из службы автоматического обнаружения сервера Exchange. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>Строка <para>возвращаемый XML содержит сведения о различных доступных серверов и веб-служб (например, службы доступности и служба единой системы обмена сообщениями).  </para><para>Возвращается сообщение об ошибке, если текущей конфигурации не содержит учетную запись Microsoft Exchange Server 2007 или более поздняя версия.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Categories">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Categories Categories { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.Categories Categories" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._NameSpace.Categories" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Categories As Categories" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::Categories ^ Categories { Microsoft::Office::Interop::Outlook::Categories ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64421)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64421)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Categories</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.Categories" /> объект, представляющий набор <see cref="T:Microsoft.Office.Interop.Outlook.Category" /> объектов, доступных для пространства имен. Для чтения и записи.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Это свойство представляет главный список категорий, которая представляет собой набор объектов <b>категории</b> , которые можно применить элементов Outlook, содержащихся в объекте <b>пространство имен</b> и применяется ко всем пользователям этого пространства имен.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Class">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlObjectClass Class { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlObjectClass Class" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._NameSpace.Class" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Class As OlObjectClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlObjectClass Class { Microsoft::Office::Interop::Outlook::OlObjectClass get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61450)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61450)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareEntryIDs">
+      <MemberSignature Language="C#" Value="public bool CompareEntryIDs (string FirstEntryID, string SecondEntryID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CompareEntryIDs([in]string FirstEntryID, [in]string SecondEntryID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.CompareEntryIDs(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareEntryIDs (FirstEntryID As String, SecondEntryID As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CompareEntryIDs(System::String ^ FirstEntryID, System::String ^ SecondEntryID);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64508)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FirstEntryID" Type="System.String" />
+        <Parameter Name="SecondEntryID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="FirstEntryID">Идентификатор первой записи для сравнения.</param>
+        <param name="SecondEntryID">Второй идентификатор записи для сравнения.</param>
+        <summary>Возвращает <b>логическое</b> значение (<b>bool</b> в C#), которое указывает, если два значения Идентификаторов запись обратитесь к тому же элементу Outlook.</summary>
+        <returns>
+          <b>Значение true,</b> Если значения ID записи относятся к тому же элементу Outlook; в противном случае — <b>False</b>.</returns>
+        <remarks>
+          <para>Идентификаторы записей нельзя сравнивать напрямую, так как один объект могут быть представлены два двоичные значения. Используйте этот метод, чтобы определить, представляют ли два идентификаторы записей тот же объект.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateContactCard">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.ContactCard CreateContactCard (Microsoft.Office.Interop.Outlook.AddressEntry AddressEntry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.ContactCard CreateContactCard([in]class Microsoft.Office.Interop.Outlook.AddressEntry AddressEntry) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.CreateContactCard(Microsoft.Office.Interop.Outlook.AddressEntry)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Core::ContactCard ^ CreateContactCard(Microsoft::Office::Interop::Outlook::AddressEntry ^ AddressEntry);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64645)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.ContactCard</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="AddressEntry" Type="Microsoft.Office.Interop.Outlook.AddressEntry" />
+      </Parameters>
+      <Docs>
+        <param name="AddressEntry">
+          <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> , Представляющий пользователя, для которого должен быть создан карточки контакта.</param>
+        <summary>Создает экземпляр <see cref="T:Microsoft.Office.Core.ContactCard" /> объекта контакта, который указан с <paramref name="AddressEntry" /> параметр.</summary>
+        <returns>Возвращает объект <b>ContactCard</b> , созданный для указанного пользователя.</returns>
+        <remarks>
+          <para>Объект <b>ContactCard</b> доступен в библиотеке типов, системы Microsoft Office. Прежде чем вызывать <b>CreateContactCard</b> Создание карточки контакта в Microsoft Outlook, Outlook должны войти в сеанс обмена Outlook. </para>
+          <para>
+            <paramref name="AddressEntry" /> Параметр — это объект <b>AddressEntry</b> , представляющий один из следующих типов AddressEntry, определенных в <see cref="T:Microsoft.Office.Interop.Outlook.OlAddressEntryUserType" /> перечисления:</para>
+          <list type="bullet">
+            <item>
+              <para>
+                <see cref="F:Microsoft.Office.Interop.Outlook.OlAddressEntryUserType.olExchangeDistributionListAddressEntry" />
+              </para>
+            </item>
+            <item>
+              <para>
+                <see cref="F:Microsoft.Office.Interop.Outlook.OlAddressEntryUserType.olExchangeRemoteUserAddressEntry" />
+              </para>
+            </item>
+            <item>
+              <para>
+                <see cref="F:Microsoft.Office.Interop.Outlook.OlAddressEntryUserType.olExchangeUserAddressEntry" />
+              </para>
+            </item>
+            <item>
+              <para>
+                <see cref="F:Microsoft.Office.Interop.Outlook.OlAddressEntryUserType.olOutlookContactAddressEntry" />
+              </para>
+            </item>
+          </list>
+          <para>Outlook вызывает <b>E _INVALIDARG</b> ошибка при передаче любое из следующих значений <b>OlAddressEntryUserType</b> в качестве аргумента метода <b>CreateContactCard</b> :</para>
+          <list type="bullet">
+            <item>
+              <para>
+                <see cref="F:Microsoft.Office.Interop.Outlook.OlAddressEntryUserType.olExchangeAgentAddressEntry" />
+              </para>
+            </item>
+            <item>
+              <para>
+                <see cref="F:Microsoft.Office.Interop.Outlook.OlAddressEntryUserType.olExchangeOrganizationAddressEntry" />
+              </para>
+            </item>
+            <item>
+              <para>
+                <see cref="F:Microsoft.Office.Interop.Outlook.OlAddressEntryUserType.olExchangePublicFolderAddressEntry" />
+              </para>
+            </item>
+            <item>
+              <para>
+                <see cref="F:Microsoft.Office.Interop.Outlook.OlAddressEntryUserType.olLdapAddressEntry" />
+              </para>
+            </item>
+            <item>
+              <para>
+                <see cref="F:Microsoft.Office.Interop.Outlook.OlAddressEntryUserType.olOtherAddressEntry" />
+              </para>
+            </item>
+            <item>
+              <para>
+                <see cref="F:Microsoft.Office.Interop.Outlook.OlAddressEntryUserType.olOutlookDistributionListAddressEntry" />
+              </para>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRecipient">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Recipient CreateRecipient (string RecipientName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.Recipient CreateRecipient([in]string RecipientName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.CreateRecipient(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateRecipient (RecipientName As String) As Recipient" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::Recipient ^ CreateRecipient(System::String ^ RecipientName);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8458)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Recipient</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="RecipientName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="RecipientName">Имя получателя, она может быть строка, представляющая отображаемое имя, псевдоним или полный адрес электронной почты SMTP получателя.</param>
+        <summary>Создает <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> объекта.</summary>
+        <returns>Объект <b>получателя</b> , который представляет нового получателя.</returns>
+        <remarks>
+          <para>Этот метод чаще всего используется для создания объекта <b>получателя</b> для использования с <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetSharedDefaultFolder(Microsoft.Office.Interop.Outlook.Recipient,Microsoft.Office.Interop.Outlook.OlDefaultFolders)" /> метод, например, чтобы открыть папку сотрудника. Его можно использовать для проверки заданным именем к адресной книге.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSharingItem">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.SharingItem CreateSharingItem (object Context, object Provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.SharingItem CreateSharingItem([in]object Context, [in]object Provider) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.CreateSharingItem(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateSharingItem (Context As Object, Optional Provider As Object) As SharingItem" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64484)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.SharingItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Context" Type="System.Object" />
+        <Parameter Name="Provider" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Context">Значение <b>String</b> (<b>строка</b> в C#) или <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий контекст доступа для использования.</param>
+        <param name="Provider">
+          <see cref="T:Microsoft.Office.Interop.Outlook.OlSharingProvider" /> Значение, представляющее общего доступа поставщика для использования.</param>
+        <summary>Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекта.</summary>
+        <returns>Объект <b>SharingItem</b> , который представляет общего доступа сообщений для указанного контекста.</returns>
+        <remarks>
+          <para>Если указано значение <b>String</b> (<b>строка</b> в C#) в <paramref name="Context" />, в методе предполагается, что URL-адрес было предоставлено как контекст доступа. Если <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, указанный в <paramref name="Context" />, метод пытается обнаружение контекст доступа из папки. Если нет общего доступа к контекста существует, или если присутствует более одного общего доступа контекста, возникает ошибка.</para>
+          <para>Если <paramref name="Provider" /> не указан, метод пытается использовать соответствующий поставщик общего доступа для значения, указанного в <paramref name="Context" />.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentProfileName">
+      <MemberSignature Language="C#" Value="public string CurrentProfileName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CurrentProfileName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._NameSpace.CurrentProfileName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentProfileName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CurrentProfileName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64213)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64213)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющая название текущего профиля. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Назначение имени профиля при создании профиля.</para>
+          <para>
+            <b>CurrentProfileName</b> сопоставляет свойство MAPI <b>PidTagProfileName</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentUser">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Recipient CurrentUser { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.Recipient CurrentUser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._NameSpace.CurrentUser" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentUser As Recipient" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::Recipient ^ CurrentUser { Microsoft::Office::Interop::Outlook::Recipient ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8449)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8449)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Recipient</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает отображаемое имя текущего пользователя, как <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> объекта. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultStore">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Store DefaultStore { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.Store DefaultStore" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._NameSpace.DefaultStore" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultStore As Store" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::Store ^ DefaultStore { Microsoft::Office::Interop::Outlook::Store ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64236)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64236)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Store</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объект, представляющий хранилище по умолчанию для профиля. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Возвращает ошибку, если не хранилище по умолчанию для текущего профиля.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dial">
+      <MemberSignature Language="C#" Value="public void Dial (object ContactItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dial([in]object ContactItem) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.Dial(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dial (Optional ContactItem As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64013)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ContactItem" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="ContactItem">
+          <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" /> Объекта контакта, которым требуется позвонить.</param>
+        <summary>Отображает диалоговое окно Новый звонок, который позволяет пользователям выполнять телефонное подключение основной номер телефона указанного контакта.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExchangeConnectionMode">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode ExchangeConnectionMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode ExchangeConnectionMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._NameSpace.ExchangeConnectionMode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExchangeConnectionMode As OlExchangeConnectionMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlExchangeConnectionMode ExchangeConnectionMode { Microsoft::Office::Interop::Outlook::OlExchangeConnectionMode get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64193)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64193)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode" /> с помощью константа, которая указывает текущий режим подключения пользователя. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Если свойство <b>ExchangeConnectionMode</b><b>olOffline</b> или <b>olDisconnected</b><see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.Offline" /> свойство будет возвращать <b>значение True</b> . Если свойство <b>ExchangeConnectionMode</b><b>olOnline</b>, <b>olConnected</b>или <b>olConnectedHeaders</b>, свойство <b>NameSpace.Offline</b> возвращает <b>значение False</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExchangeMailboxServerName">
+      <MemberSignature Language="C#" Value="public string ExchangeMailboxServerName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExchangeMailboxServerName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._NameSpace.ExchangeMailboxServerName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExchangeMailboxServerName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExchangeMailboxServerName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64517)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64517)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает значение <b>String</b> (<b>строка</b> в C#), который представляет имя сервера Exchange Server, на котором размещен почтовый ящик active. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Если почтовый ящик Exchange не указан в пространстве имен, данное свойство возвращает пустую строку.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExchangeMailboxServerVersion">
+      <MemberSignature Language="C#" Value="public string ExchangeMailboxServerVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExchangeMailboxServerVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._NameSpace.ExchangeMailboxServerVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExchangeMailboxServerVersion As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExchangeMailboxServerVersion { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64516)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64516)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает значение типа <b>String</b> (<b>строка</b> в C#), представляющее полная версия Exchange server, на котором размещен почтовый ящик active. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Данное свойство возвращает строку, содержащую номер версии сервера Exchange Server для активной почтового ящика. Номер версии состоит из четырех частей следующим образом:</para>
+          <code>&amp;lt;major version&amp;gt;.&amp;lt;minor version&amp;gt;.&amp;lt;build number&amp;gt;.&amp;lt;revision&amp;gt;</code>
+          <para>не все части может быть представлен в номер версии, в зависимости от сведений о версии, предоставляемые Microsoft Exchange Server. Например, данное свойство возвращает «6.5.7638» для Microsoft Exchange Server 2003 с пакетом обновления 2.</para>
+          <para>Если почтовый ящик Exchange не указан в пространстве имен, данное свойство возвращает пустую строку.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Folders">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Folders Folders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.Folders Folders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._NameSpace.Folders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Folders As Folders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::Folders ^ Folders { Microsoft::Office::Interop::Outlook::Folders ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8451)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8451)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Folders</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> коллекции, представляющей все папки, содержащиеся в указанном <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>Пространство имен</b> объекта является корневым каталогом всех папок для места заданным именем.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAddressEntryFromID">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.AddressEntry GetAddressEntryFromID (string ID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.AddressEntry GetAddressEntryFromID([in]string ID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.GetAddressEntryFromID(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAddressEntryFromID (ID As String) As AddressEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::AddressEntry ^ GetAddressEntryFromID(System::String ^ ID);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64260)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.AddressEntry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ID">Строковый идентификатор для записи адреса, задаваемые для сеанса.</param>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объект, представляющий запись адреса, заданную с <paramref name="ID" />.</summary>
+        <returns>
+          <b>AddressEntry</b> с <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.ID" /> свойство в указанном <paramref name="ID" />.</returns>
+        <remarks>
+          <para>Свойство <b>ID</b><b>AddressEntry</b> — это строковый постоянная, уникальный идентификатор, поставщика транспорта назначает при создании <b>AddressEntry</b> . </para>
+          <para>Outlook поддерживает иерархию адресные книги для сеанса и возвращаются записи адреса должно соответствовать заданным <paramref name="ID" /> и быть в одном из адресных книг.</para>
+          <para>
+            <b>GetAddressEntryFromID</b> возвращает ошибку, если ни один элемент с заданным <paramref name="ID" /> можно найти.</para>
+          <para>
+            <b>GetAddressEntryFromID</b> возвращает ошибку, если соединение недоступно или пользователь устанавливать в автономный режим.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultFolder">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.MAPIFolder GetDefaultFolder (Microsoft.Office.Interop.Outlook.OlDefaultFolders FolderType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.MAPIFolder GetDefaultFolder([in]valuetype Microsoft.Office.Interop.Outlook.OlDefaultFolders FolderType) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.GetDefaultFolder(Microsoft.Office.Interop.Outlook.OlDefaultFolders)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDefaultFolder (FolderType As OlDefaultFolders) As MAPIFolder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::MAPIFolder ^ GetDefaultFolder(Microsoft::Office::Interop::Outlook::OlDefaultFolders FolderType);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8459)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.MAPIFolder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FolderType" Type="Microsoft.Office.Interop.Outlook.OlDefaultFolders" />
+      </Parameters>
+      <Docs>
+        <param name="FolderType">Тип папки по умолчанию для возврата.</param>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий папки по умолчанию требуемого типа для текущего профиля; Например получает папки календаря по умолчанию для пользователя, который выполнил вход в систему.</summary>
+        <returns>Объект <b>Folder</b> , представляющий папки по умолчанию требуемого типа для текущего профиля.</returns>
+        <remarks>
+          <para>Для возврата указанной папки не по умолчанию, используйте <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> семейства.</para> Если папка по умолчанию требуемого типа не существует, в зависимости от типа 
+          <para>Outlook может быть создан и вернуть папку или может вызвать ошибку. Например, если указано olFolderManagedEmail FolderType, но группа управляемых папок не был развернут, Microsoft Outlook вызывает ошибку.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFolderFromID">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.MAPIFolder GetFolderFromID (string EntryIDFolder, object EntryIDStore);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.MAPIFolder GetFolderFromID([in]string EntryIDFolder, [in]object EntryIDStore) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.GetFolderFromID(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFolderFromID (EntryIDFolder As String, Optional EntryIDStore As Object) As MAPIFolder" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8456)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.MAPIFolder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="EntryIDFolder" Type="System.String" />
+        <Parameter Name="EntryIDStore" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="EntryIDFolder">
+          <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.EntryID" /> Папки.</param>
+        <param name="EntryIDStore">
+          <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.StoreID" /> Для папки.</param>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, определенный код указанного элемента (если допустимый).</summary>
+        <returns>Объект<b>Folder</b> , представляющий указанной папки.</returns>
+        <remarks>
+          <para>Этот метод используется для упрощения перехода между приложениями MAPI и OLE/системы обмена сообщениями и Microsoft Outlook.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGlobalAddressList">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.AddressList GetGlobalAddressList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.AddressList GetGlobalAddressList() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.GetGlobalAddressList" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetGlobalAddressList () As AddressList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::AddressList ^ GetGlobalAddressList();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64261)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.AddressList</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> объект, представляющий глобального списка адресов Exchange.</summary>
+        <returns>
+          <b>AddressList</b> , представляющий глобального списка адресов.</returns>
+        <remarks>
+          <para>
+            <b>GetGlobalAddressList</b> поддерживает только серверы Exchange. Возвращает ошибку, если в глобальном списке адресов недоступна или не удается найти.</para>
+          <para>Он также возвращает ошибку, если соединение недоступно или пользователь устанавливать в автономный режим.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemFromID">
+      <MemberSignature Language="C#" Value="public object GetItemFromID (string EntryIDItem, object EntryIDStore);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetItemFromID([in]string EntryIDItem, [in]object EntryIDStore) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.GetItemFromID(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItemFromID (EntryIDItem As String, Optional EntryIDStore As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8457)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="EntryIDItem" Type="System.String" />
+        <Parameter Name="EntryIDStore" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="EntryIDItem">
+          <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.EntryID" /> Элемента.</param>
+        <param name="EntryIDStore">
+          <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.StoreID" /> Для папки. <paramref name="EntryIDStore" />Обычно необходимо указать при извлечении элемента на основании его идентификаторы MAPI.</param>
+        <summary>Возвращает элемент Microsoft Outlook, обозначенный код указанного элемента (если допустимый).</summary>
+        <returns>Значение объекта, который представляет указанный элемент Outlook.</returns>
+        <remarks>
+          <para>Этот метод используется для упрощения перехода между приложениями MAPI и OLE/системы обмена сообщениями и Outlook.</para>
+          <para>Дополнительные сведения о идентификаторы можно <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.EntryID" /> свойство.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRecipientFromID">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Recipient GetRecipientFromID (string EntryID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.Recipient GetRecipientFromID([in]string EntryID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.GetRecipientFromID(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRecipientFromID (EntryID As String) As Recipient" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::Recipient ^ GetRecipientFromID(System::String ^ EntryID);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8455)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Recipient</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="EntryID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="EntryID">
+          <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.EntryID" /> Получателя.</param>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> объект, определенный код указанного элемента (если допустимый).</summary>
+        <returns>Объект <b>получателя</b> , представляющий указанного получателя.</returns>
+        <remarks>
+          <para>Этот метод используется для упрощения перехода между приложениями MAPI и OLE/системы обмена сообщениями и Microsoft Outlook.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSelectNamesDialog">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.SelectNamesDialog GetSelectNamesDialog ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.SelectNamesDialog GetSelectNamesDialog() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.GetSelectNamesDialog" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSelectNamesDialog () As SelectNamesDialog" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::SelectNamesDialog ^ GetSelectNamesDialog();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64225)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.SelectNamesDialog</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.SelectNamesDialog" /> объекта для текущего сеанса.</summary>
+        <returns>Объект <b>SelectNamesDialog</b> для текущего сеанса. Объект <b>SelectNamesDialog</b> поддерживает отображает диалоговое окно Выбор имен для пользователя для выбора записей из одного или нескольких списков адресов в текущем сеансе.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSharedDefaultFolder">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.MAPIFolder GetSharedDefaultFolder (Microsoft.Office.Interop.Outlook.Recipient Recipient, Microsoft.Office.Interop.Outlook.OlDefaultFolders FolderType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.MAPIFolder GetSharedDefaultFolder([in]class Microsoft.Office.Interop.Outlook.Recipient Recipient, [in]valuetype Microsoft.Office.Interop.Outlook.OlDefaultFolders FolderType) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.GetSharedDefaultFolder(Microsoft.Office.Interop.Outlook.Recipient,Microsoft.Office.Interop.Outlook.OlDefaultFolders)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::MAPIFolder ^ GetSharedDefaultFolder(Microsoft::Office::Interop::Outlook::Recipient ^ Recipient, Microsoft::Office::Interop::Outlook::OlDefaultFolders FolderType);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8460)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.MAPIFolder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Recipient" Type="Microsoft.Office.Interop.Outlook.Recipient" />
+        <Parameter Name="FolderType" Type="Microsoft.Office.Interop.Outlook.OlDefaultFolders" />
+      </Parameters>
+      <Docs>
+        <param name="Recipient">Владелец папки. Обратите внимание, что необходимо разрешить объект <b>получателя</b> .</param>
+        <param name="FolderType">Тип папки.</param>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий папки указанного по умолчанию для указанного пользователя.</summary>
+        <returns>Объект <b>папки</b> , который представляет папку установленный по умолчанию для указанного пользователя.</returns>
+        <remarks>
+          <para>Этот метод используется в сценарии делегирования, где один пользователь делегированный доступ к другому пользователю для одного или нескольких из папки по умолчанию (например, общие папки «Календарь»).</para>
+          <para>
+            <paramref name="FolderType" /> может иметь одно из следующих констант <b>OlDefaultFolders</b> : <b>olFolderCalendar</b>, <b>olFolderContacts</b>, <b>olFolderDrafts</b>, <b>olFolderInbox</b>, <b>olFolderJournal</b>, <b>olFolderNotes</b>или <b> olFolderTasks</b>. (Константы <b>olFolderDeletedItems</b>, <b>olFolderOutbox</b>, <b>olFolderJunk</b>, <b>olFolderConflicts</b>, <b>olFolderLocalFailures</b>, <b>olFolderServerFailures</b>, <b>olFolderSyncIssues</b><b>olPublicFoldersAllPublicFolders</b>, <b>olFolderRssSubscriptions</b>, <b>olFolderToDo</b>, <b>olFolderManagedEmail</b>и <b>olFolderSentMail</b> не может быть указан для этого аргумента.)</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStoreFromID">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Store GetStoreFromID (string ID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.Store GetStoreFromID([in]string ID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.GetStoreFromID(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStoreFromID (ID As String) As Store" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::Store ^ GetStoreFromID(System::String ^ ID);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64262)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Store</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ID">Строковое значение, указывающее хранилища.</param>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объект, представляющий хранилища, указанного идентификатором <paramref name="ID" />.</summary>
+        <returns>Объект <b>хранилища</b> , который имеет <see cref="P:Microsoft.Office.Interop.Outlook._Store.StoreID" /> соответствия свойство <paramref name="ID" />.</returns>
+        <remarks>
+          <para>Свойство <b>StoreID</b><b>Store</b> является уникальным для профиля для сеанса. Это эквивалентно свойству MAPI <b>PidTagStoreEntryId</b>.</para>
+          <para>В этот метод для успешного выполнения необходимо подключить хранилище.</para>
+          <para>
+            <b>GetStoreFromID</b> возвращает ошибку, если нет хранилища с указанным <paramref name="ID" /> можно найти в текущем сеансе.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Logoff">
+      <MemberSignature Language="C#" Value="public void Logoff ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Logoff() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.Logoff" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Logoff ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Logoff();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8454)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Выходе пользователя из текущего сеанса MAPI.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Logon">
+      <MemberSignature Language="C#" Value="public void Logon (object Profile, object Password, object ShowDialog, object NewSession);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Logon([in]object Profile, [in]object Password, [in]object ShowDialog, [in]object NewSession) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.Logon(System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Logon (Optional Profile As Object, Optional Password As Object, Optional ShowDialog As Object, Optional NewSession As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8453)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Profile" Type="System.Object" />
+        <Parameter Name="Password" Type="System.Object" />
+        <Parameter Name="ShowDialog" Type="System.Object" />
+        <Parameter Name="NewSession" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Profile">Имя профиля MAPI в <b>String </b>(<b>строка</b> в C#), для использования в сеансе. Укажите пустую строку для использования профиля по умолчанию для текущего сеанса.</param>
+        <param name="Password">Пароль (если есть), как <b>String </b>(<b>строка</b> в C#), связанные с профилем.  Этот параметр существует только для обратной совместимости и по соображениям безопасности не рекомендуется для использования.  Microsoft Oultook выводит запрос пользователю для указания пароля в большинстве конфигураций системы.  Это пароль входа, его не следует путать с паролями PST-файлов.</param>
+        <param name="ShowDialog">
+          <b>Значение true,</b> чтобы открыть диалоговое окно входа в систему MAPI разрешить пользователю выбрать профиль MAPI.</param>
+        <param name="NewSession">
+          <b>Значение true,</b> Чтобы создать новый сеанс Outlook. Поскольку нескольких сеансов не может быть создано в Outlook, этот параметр следует указать значение True, только если сеанс еще не существует.</param>
+        <summary>Журналы пользователей вход в систему MAPI, получение сеанса MAPI.</summary>
+        <remarks>
+          <para>Используйте метод <b>входа в систему</b> только войдите в систему в определенный профиль, когда Outlook уже не выполняется. Это так, как одновременно может выполняться только один процесс Outlook, и этот процесс Outlook использует только один профиль и поддерживает только один сеанс MAPI. Когда пользователь запускает Outlook еще раз, этот экземпляр Outlook выполняется в рамках одного процесса Outlook, не создается новый процесс и использует тот же профиль. </para>
+          <para>Если Outlook уже выполняется, с помощью этого метода не создавать новый сеанс Outlook или изменить текущий профиль на другое.</para>
+          <para>, Если Outlook не выполняется, и вы только нужно запустить Outlook с профилем по умолчанию, не используйте метод <b>входа в систему</b> . Лучший вариант, показан в следующем примере кода InitializeMAPI: во-первых, создайте экземпляр Outlook <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объекта, а затем ссылки в папку по умолчанию, например папки «Входящие». Это приводит к со стороны инициализации MAPI для использования профиля по умолчанию и объектной моделью полностью функциональным. </para>
+          <code>
+Imports Outlook = Microsoft.Office.Interop.Outlook
+
+Sub InitializeMAPI ()
+
+    ' Start Outlook.
+    Dim olApp As Outlook.Application
+    Set olApp = CreateObject("Outlook.Application")
+    
+    ' Get a session object. 
+    Dim olNs As Outlook.NameSpace
+    Set olNs = olApp.GetNamespace("MAPI")
+    
+    ' Create an instance of the Inbox folder. 
+    ' If Outlook is not already running, this has the side
+    ' effect of initializing MAPI.
+    Dim mailFolder As Outlook.Folder
+    Set mailFolder = olNs.GetDefaultFolder(olFolderInbox)
+
+    ' Continue to use the object model to automate Outlook.
+End Sub</code>
+          <para>Начиная с Outlook 2010, если у вас есть несколько профилей, вы настроили Outlook всегда использовать профиль по умолчанию и входа в систему профиля по умолчанию без уведомления пользователя используйте метод <b>входа в систему</b> , пользователь получит запрос в любом случае выберите профиль. Чтобы избежать этого, не используйте метод <b>входа</b> ; использовать обходной путь, предложенных в предыдущем примере InitializeMAPI вместо.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MAPIOBJECT">
+      <MemberSignature Language="C#" Value="public object MAPIOBJECT { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object MAPIOBJECT" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._NameSpace.MAPIOBJECT" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MAPIOBJECT As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ MAPIOBJECT { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61696)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61696)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offline">
+      <MemberSignature Language="C#" Value="public bool Offline { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Offline" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._NameSpace.Offline" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Offline As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Offline { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64076)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64076)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), указывающее, <b>значение True,</b> Если Outlook находится в автономном режиме (не подключен к серверу Exchange) и <b>значение False,</b> Если online (подключен к серверу Exchange).  Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>Свойство <para>в автономном режиме возвращает действительную информацию только для профиля Exchange. Не предназначен для учетной записи не Exchange типов, таких как POP3, IMAPI и HTTP.</para><para>Если <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.ExchangeConnectionMode" /> свойство <b>olOffline</b><b>olDisconnected</b>, или возвращает <b>значение True,</b>свойство <b>не в сети</b> . Если свойство <b>ExchangeConnectionMode</b><b>olOnline</b>, <b>olConnected</b>или <b>olConnectedHeaders</b>, свойство <b>не в сети</b> возвращает <b>значение False</b>.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenSharedFolder">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.MAPIFolder OpenSharedFolder (string Path, object Name, object DownloadAttachments, object UseTTL);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.MAPIFolder OpenSharedFolder([in]string Path, [in]object Name, [in]object DownloadAttachments, [in]object UseTTL) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.OpenSharedFolder(System.String,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OpenSharedFolder (Path As String, Optional Name As Object, Optional DownloadAttachments As Object, Optional UseTTL As Object) As MAPIFolder" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64502)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.MAPIFolder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Path" Type="System.String" />
+        <Parameter Name="Name" Type="System.Object" />
+        <Parameter Name="DownloadAttachments" Type="System.Object" />
+        <Parameter Name="UseTTL" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Path">URL-адрес или имя локального файла к общей папке, чтобы открыть.</param>
+        <param name="Name">Имя Really Simple Syndication (RSS) веб-канал или календарь Webcal. Этот параметр игнорируется для других типов общую папку.</param>
+        <param name="DownloadAttachments">Указывает, следует ли загружать вложения (для RSS-каналы) или вложения (для Webcal календарей.) Этот параметр игнорируется для других типов общую папку.</param>
+        <param name="UseTTL">Указывает веб-канала параметра времени жизни (TTL) в RSS или календарь WebCal следует использовать. Этот параметр игнорируется для других типов общую папку.</param>
+        <summary>Открывается по ссылке через URL-адрес или имя общей папки.</summary>
+        <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий общую папку.</returns>
+        <remarks>
+          <para>Этот метод используется для доступа к следующие типы общей папки:</para>
+          <item>
+            <para>RSS-каналы (feed://mysite/myfeed)</para>
+          </item>
+          <item>
+            <para>папок Microsoft SharePoint Foundation (stssync://mysite/myfolder)</para>
+          </item>
+          <item>
+            <para>Webcal календарей (webcal://mysite/mycalendar)</para>
+          </item>
+          <item>
+            <para>файлы iCalendar календарей (ICS)</para>
+          </item>
+          <item>
+            <para>
+              <list type="bullet">визитной карточки контакта (. файлы VCF)
+            <item><para>файлы Outlook сообщения (MSG-файл)</para></item></list>
+            </para>
+          </item>
+          <para>
+            <b>Примечание</b>: этот метод не поддерживает файлы iCalendar (.ics) встречи. Чтобы открыть файлы iCalendar встречи, можно использовать <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.OpenSharedItem(System.String)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект.</para>
+          <para>Можно использовать <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetSharedDefaultFolder(Microsoft.Office.Interop.Outlook.Recipient,Microsoft.Office.Interop.Outlook.OlDefaultFolders)" /> метод объекта <b>пространства имен</b> для совместного использования папки по умолчанию, например папке "Входящие" в Exchange.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenSharedItem">
+      <MemberSignature Language="C#" Value="public object OpenSharedItem (string Path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object OpenSharedItem([in]string Path) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.OpenSharedItem(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OpenSharedItem (Path As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ OpenSharedItem(System::String ^ Path);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64503)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Path">Путь или URL-адрес элемента общей для открытия.</param>
+        <summary>Открывает общий элемент из указанного пути или URL-адрес.</summary>
+        <returns>Объект, представляющий соответствующий элемент Outlook для общего элемента.</returns>
+        <remarks>
+          <para>Этот метод используется для открытия файлов iCalendar (.ics) встречи, файлы vCard (.vcf) и файлы Outlook сообщения (MSG-файл). Тип объекта, возвращаемые данным методом зависит от типа общего элемента открывается, как описано в следующей таблице.</para>
+          <list type="table">
+            <item>
+              <description>Файла iCalendar (.ics) встречи</description>
+              <description>AppointmentItem</description>
+            </item>
+            <item>
+              <description>тип элемента Shared</description>
+              <description>элемента Outlook</description>
+            </item>
+            <item>
+              <description>файла vCard (VCF)</description>
+              <description>ContactItem</description>
+            </item>
+            <item>
+              <description>файл сообщения (MSG-файл) в Outlook</description>
+              <description>Тип соответствует тип элемента, который был сохранен в виде msg-файл</description>
+            </item>
+          </list>
+          <para>
+            <b>Примечание</b>: этот метод не поддерживает файлы iCalendar календарей (ICS). Чтобы открыть файлы iCalendar календаря, можно использовать <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.OpenSharedFolder(System.String,System.Object,System.Object,System.Object)" /> метод объекта <b>пространства имен</b> .</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._NameSpace.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61441)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61441)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PickFolder">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.MAPIFolder PickFolder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.MAPIFolder PickFolder() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.PickFolder" />
+      <MemberSignature Language="VB.NET" Value="Public Function PickFolder () As MAPIFolder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::MAPIFolder ^ PickFolder();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8462)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.MAPIFolder</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Отображает диалоговое окно Выбор папки.</summary>
+        <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий к папке, где пользователь выбирает в диалоговом окне, или <b>значение Nothing</b> , если диалоговое окно отменена пользователем.</returns>
+        <remarks>
+          <para>Диалоговое окно Выбор папки — это модальное диалоговое окно, что означает, что выполнение кода не будет продолжена, пока пользователь выбирает папку или отменяет диалоговое окно.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshRemoteHeaders">
+      <MemberSignature Language="C#" Value="public void RefreshRemoteHeaders ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RefreshRemoteHeaders() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.RefreshRemoteHeaders" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RefreshRemoteHeaders ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshRemoteHeaders();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8471)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveStore">
+      <MemberSignature Language="C#" Value="public void RemoveStore (Microsoft.Office.Interop.Outlook.MAPIFolder Folder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveStore([in]class Microsoft.Office.Interop.Outlook.MAPIFolder Folder) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.RemoveStore(Microsoft.Office.Interop.Outlook.MAPIFolder)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveStore (Folder As MAPIFolder)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveStore(Microsoft::Office::Interop::Outlook::MAPIFolder ^ Folder);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8474)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Folder" Type="Microsoft.Office.Interop.Outlook.MAPIFolder" />
+      </Parameters>
+      <Docs>
+        <param name="Folder">Файл личных папок (PST) для удаления из списка.</param>
+        <summary>Удаляет файл личных папок (PST) из текущего профиля MAPI или сеанса.</summary>
+        <remarks>
+          <para>Этот метод удаляет хранилище только из интерфейса пользователя Microsoft Outlook. Не удается удалить хранилище из основного почтового ящика на сервере или жесткий диск компьютера пользователя, с помощью объектной модели Outlook.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendAndReceive">
+      <MemberSignature Language="C#" Value="public void SendAndReceive (bool showProgressDialog);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendAndReceive([in]bool showProgressDialog) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._NameSpace.SendAndReceive(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendAndReceive (showProgressDialog As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendAndReceive(bool showProgressDialog);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64215)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="showProgressDialog" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="showProgressDialog">Указывает, будет ли диалоговое окно хода выполнения отправки и получения Outlook должно отображаться, вне зависимости от параметров пользователя.</param>
+        <summary>Инициирует немедленной доставки всех недоставленных сообщений, отправленных в текущем сеансе и Немедленные уведомления электронной почты для всех учетных записей в текущий профиль.</summary>
+        <remarks>
+          <para>Вызов метода <b>SendAndReceive</b> является асинхронным.</para>
+          <para>
+            <b>SendAndReceive</b> предоставляет программный эквивалент для отправки и получения все команды, доступные при нажатии кнопки средства, а затем отправки и получения.</para>
+          <para>Не требуется синхронизировать все объекты, воспользуйтесь <see cref="T:Microsoft.Office.Interop.Outlook.SyncObjects" /> коллекцию, содержащую объект для выбора определенных объектов. Дополнительные сведения можно <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.SyncObjects" />.</para>
+          <para>Все учетные записи, определенных в текущий профиль используются в всех отправки и получения. При необходимости подключение для выполнения отправки и получения все подключения соответствии с предпочтениями пользователя.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Session">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.NameSpace Session { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.NameSpace Session" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._NameSpace.Session" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Session As NameSpace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::NameSpace ^ Session { Microsoft::Office::Interop::Outlook::NameSpace ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61451)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61451)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+          <code>Dim objNamespace As Outlook.NameSpace = _
+    Application.GetNamespace("MAPI")</code>
+          <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+          <code>Outlook.NameSpace objNamespace = 
+    Application.GetNamespace("MAPI");</code>
+          <code>Outlook.NameSpace objSession = Application.Session;</code>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stores">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Stores Stores { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.Stores Stores" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._NameSpace.Stores" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Stores As Stores" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::Stores ^ Stores { Microsoft::Office::Interop::Outlook::Stores ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64216)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64216)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Stores</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> коллекцию, содержащую объект, представляющий все <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекты текущего профиля. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncObjects">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.SyncObjects SyncObjects { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.SyncObjects SyncObjects" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._NameSpace.SyncObjects" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncObjects As SyncObjects" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::SyncObjects ^ SyncObjects { Microsoft::Office::Interop::Outlook::SyncObjects ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8472)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8472)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.SyncObjects</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.SyncObjects" /> коллекция, содержащая все группы отправки и получения. Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public string Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._NameSpace.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8452)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8452)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), определяющее тип указанного объекта.  Только для чтения.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

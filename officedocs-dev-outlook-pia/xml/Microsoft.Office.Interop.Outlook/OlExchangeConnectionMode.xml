@@ -1,0 +1,199 @@
+<Type Name="OlExchangeConnectionMode" FullName="Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="b39ab38c85bbff93e02638a9f90ec6229d87948a" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ru-RU" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20640650" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum OlExchangeConnectionMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OlExchangeConnectionMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum OlExchangeConnectionMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class OlExchangeConnectionMode" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Указывает, является ли учетная запись подключена к серверу Exchange и если да, режим подключения.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="olCachedConnectedDrizzle">
+      <MemberSignature Language="C#" Value="olCachedConnectedDrizzle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode olCachedConnectedDrizzle = int32(600)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode.olCachedConnectedDrizzle" />
+      <MemberSignature Language="VB.NET" Value="olCachedConnectedDrizzle" />
+      <MemberSignature Language="C++ CLI" Value="olCachedConnectedDrizzle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>600</MemberValue>
+      <Docs>
+        <summary>Учетная запись использует режим кэширования данных Exchange, таким образом, загружаются заголовки во-первых, за которым следует текст сообщений и вложений целиком.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="olCachedConnectedFull">
+      <MemberSignature Language="C#" Value="olCachedConnectedFull" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode olCachedConnectedFull = int32(700)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode.olCachedConnectedFull" />
+      <MemberSignature Language="VB.NET" Value="olCachedConnectedFull" />
+      <MemberSignature Language="C++ CLI" Value="olCachedConnectedFull" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>700</MemberValue>
+      <Docs>
+        <summary>Учетная запись с помощью режима кэширования данных Exchange в локальной сети или быстрого соединения с сервером Exchange. Пользователь также может выбрать это состояние вручную, отключение автоматического определения логики и всегда загрузку целиком независимо от того, подключение на скорости.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="olCachedConnectedHeaders">
+      <MemberSignature Language="C#" Value="olCachedConnectedHeaders" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode olCachedConnectedHeaders = int32(500)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode.olCachedConnectedHeaders" />
+      <MemberSignature Language="VB.NET" Value="olCachedConnectedHeaders" />
+      <MemberSignature Language="C++ CLI" Value="olCachedConnectedHeaders" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>500</MemberValue>
+      <Docs>
+        <summary>Учетная запись использует режим кэширования данных Exchange на телефонное или медленное соединение с сервером Exchange, таким образом, загружаются только заголовки. Все элементы текст сообщений и вложений, остаются на сервере. Пользователь также может выбрать это состояние вручную независимо от того, подключение на скорости.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="olCachedDisconnected">
+      <MemberSignature Language="C#" Value="olCachedDisconnected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode olCachedDisconnected = int32(400)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode.olCachedDisconnected" />
+      <MemberSignature Language="VB.NET" Value="olCachedDisconnected" />
+      <MemberSignature Language="C++ CLI" Value="olCachedDisconnected" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>400</MemberValue>
+      <Docs>
+        <summary>Учетная запись, используемая режим кэширования данных Exchange с отключенное подключение к серверу Exchange.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="olCachedOffline">
+      <MemberSignature Language="C#" Value="olCachedOffline" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode olCachedOffline = int32(200)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode.olCachedOffline" />
+      <MemberSignature Language="VB.NET" Value="olCachedOffline" />
+      <MemberSignature Language="C++ CLI" Value="olCachedOffline" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>200</MemberValue>
+      <Docs>
+        <summary>Учетная запись используется режим кэширования данных Exchange и пользователь выбрал работать автономно в меню файл.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="olDisconnected">
+      <MemberSignature Language="C#" Value="olDisconnected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode olDisconnected = int32(300)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode.olDisconnected" />
+      <MemberSignature Language="VB.NET" Value="olDisconnected" />
+      <MemberSignature Language="C++ CLI" Value="olDisconnected" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>300</MemberValue>
+      <Docs>
+        <summary>Учетная запись имеет отключенное подключение к серверу Exchange.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="olNoExchange">
+      <MemberSignature Language="C#" Value="olNoExchange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode olNoExchange = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode.olNoExchange" />
+      <MemberSignature Language="VB.NET" Value="olNoExchange" />
+      <MemberSignature Language="C++ CLI" Value="olNoExchange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>Учетная запись не использует сервер Exchange.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="olOffline">
+      <MemberSignature Language="C#" Value="olOffline" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode olOffline = int32(100)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode.olOffline" />
+      <MemberSignature Language="VB.NET" Value="olOffline" />
+      <MemberSignature Language="C++ CLI" Value="olOffline" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>100</MemberValue>
+      <Docs>
+        <summary>Учетная запись не подключен к серверу Exchange и находится в классический автономный режим.  Это также происходит, когда пользователь выбирает работать автономно в меню файл.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="olOnline">
+      <MemberSignature Language="C#" Value="olOnline" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode olOnline = int32(800)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode.olOnline" />
+      <MemberSignature Language="VB.NET" Value="olOnline" />
+      <MemberSignature Language="C++ CLI" Value="olOnline" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>800</MemberValue>
+      <Docs>
+        <summary>Учетная запись подключена к серверу Exchange и в классическом режиме online.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

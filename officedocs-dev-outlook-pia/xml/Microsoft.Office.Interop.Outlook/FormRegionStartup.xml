@@ -1,0 +1,47 @@
+<Type Name="FormRegionStartup" FullName="Microsoft.Office.Interop.Outlook.FormRegionStartup">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="75a9b2ad694849b28efb9d70e2610a95ab5912e0" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ru-RU" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20640637" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface FormRegionStartup : Microsoft.Office.Interop.Outlook._FormRegionStartup" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FormRegionStartup implements class Microsoft.Office.Interop.Outlook._FormRegionStartup" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.FormRegionStartup" />
+  <TypeSignature Language="VB.NET" Value="Public Interface FormRegionStartup&#xA;Implements _FormRegionStartup" />
+  <TypeSignature Language="C++ CLI" Value="public interface class FormRegionStartup : Microsoft::Office::Interop::Outlook::_FormRegionStartup" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._FormRegionStartup</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.FormRegionStartupClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00063059-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Определяет интерфейс, который позволяет надстройка для указания хранилища и пользовательского интерфейса области формы, получает объект для этой области формы и определяет, когда область формы отображается в форме или в области чтения.</summary>
+    <remarks>
+      <para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._FormRegionStartup" />. </para>
+      <para>
+        <b>FormRegionStartup</b> интерфейс — это абстрактный класс, что означает, что оно не может быть создан напрямую. В Visual Basic, можно использовать ключевое слово <b>Implements</b> для предоставления методы <b>FormRegionStartup</b> в класс надстройки следующим образом:</para>
+      <code>Implements Outlook._FormRegionStartup.BeforeFormRegionShow</code>
+      <para>Добавить в развертывание области формы в форме Outlook на клиентском компьютере должен быть реализован <b> FormRegionStartup</b> интерфейс, который состоит из двух методов <see cref="M:Microsoft.Office.Interop.Outlook._FormRegionStartup.BeforeFormRegionShow(Microsoft.Office.Interop.Outlook.FormRegion)" /> и <see cref="M:Microsoft.Office.Interop.Outlook._FormRegionStartup.GetFormRegionStorage(System.String,System.Object,System.Int32,Microsoft.Office.Interop.Outlook.OlFormRegionMode,Microsoft.Office.Interop.Outlook.OlFormRegionSize)" />. При загрузке Outlook надстройки Outlook запрашивает интерфейса <b>IDTExtensibility2</b><b>FormRegionStartup</b>. </para>
+      <para>Надстройки указывает файл хранилища и макет области формы в <b>GetFormRegionStorage</b>. Путем вызова <b>GetFormRegionStorage</b>Outlook выделяет хранилища и вычисляет макет области формы, создается экземпляр объекта области формы и возвращает значение, представляющее хранилища, используемого для надстройки. При успешном <b>GetFormRegionStorage</b> непосредственно перед отображением области формы в окне инспектора или в области чтения Outlook будет вызвать <b>BeforeFormRegionShow</b> и передать <see cref="T:Microsoft.Office.Interop.Outlook.FormRegion" /> объект области формы для надстройки. Надстройки использует эту возможность, прежде чем обновить все элементы управления в области формы отображается область формы. </para>
+      <para>При надстройки закрывает рамки для области формы, надстройки необходимо освободить объект области формы.</para>
+      <para>Дополнительные сведения о создании надстроек для областей формы <a href="http://go.microsoft.com/fwlink/?LinkId=87930">расширение области формы с помощью надстройки</a><b>FormRegionStartup</b>см пример кода файлы для загрузки на сайте MSDN.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members />
+</Type>
