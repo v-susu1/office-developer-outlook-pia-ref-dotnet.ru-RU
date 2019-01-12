@@ -1,13 +1,5 @@
 <Type Name="_TimeZones" FullName="Microsoft.Office.Interop.Outlook._TimeZones">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dbd437c44a8ba7ecc453acc2c64151bcb6d2a37d" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639865" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _TimeZones : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dbd437c44a8ba7ecc453acc2c64151bcb6d2a37d" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27900930" /></Metadata><TypeSignature Language="C#" Value="public interface _TimeZones : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _TimeZones implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._TimeZones" />
   <TypeSignature Language="VB.NET" Value="Public Interface _TimeZones&#xA;Implements IEnumerable" />
@@ -205,8 +197,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Целое число</b> , представляющее индекс с единицы в <see cref="T:Microsoft.Office.Interop.Outlook.TimeZones" /> семейства сайтов.</param>
+        <param name="Index"><b>Целое число</b> , представляющее индекс с единицы в <see cref="T:Microsoft.Office.Interop.Outlook.TimeZones" /> семейства сайтов.</param>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.TimeZone" /> объект из коллекции.</summary>
         <value>Объект <b>часовой пояс</b> , который представляет указанный объект в коллекции.</value>
         <remarks>To be added.</remarks>
@@ -265,16 +256,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

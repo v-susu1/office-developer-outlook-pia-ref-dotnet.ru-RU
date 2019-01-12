@@ -1,13 +1,5 @@
 <Type Name="OutlookBarShortcut" FullName="Microsoft.Office.Interop.Outlook.OutlookBarShortcut">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5a65f22e3eaa69e1ad0b770928f78d702f831c4a" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20641151" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OutlookBarShortcut" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c4b5b620ecfa5e6e93db716a5fcba064777cf64a" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27896935" /></Metadata><TypeSignature Language="C#" Value="public interface OutlookBarShortcut" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OutlookBarShortcut" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OutlookBarShortcut" />
   <TypeSignature Language="VB.NET" Value="Public Interface OutlookBarShortcut" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Представляет ярлык в группе в области ярлыки.</summary>
-    <remarks>
-      <para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._OutlookBarShortcuts.Item(System.Object)" /> свойство (<b>в этом</b> в C#) для получения объекта <b>OutlookBarShortcut</b> из <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarShortcuts" /> объекта. Так как <see cref="P:Microsoft.Office.Interop.Outlook.OutlookBarShortcut.Name" /> свойство является свойством по умолчанию объекта <b>OutlookBarShortcut</b> , можно определить по имени ярлыка.</para>
-      <para />
-    </remarks>
+    <remarks><para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._OutlookBarShortcuts.Item(System.Object)" /> свойство (<b>в этом</b> в C#) для получения объекта <b>OutlookBarShortcut</b> из <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarShortcuts" /> объекта. Так как <see cref="P:Microsoft.Office.Interop.Outlook.OutlookBarShortcut.Name" /> свойство является свойством по умолчанию объекта <b>OutlookBarShortcut</b> , можно определить по имени ярлыка.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -173,16 +163,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetIcon">
@@ -238,10 +226,8 @@
       <Docs>
         <summary>Возвращает <b>объект</b> , указывающее, целевой указанного ярлыка в группе области сочетаний клавиш. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Тип возвращаемого значения зависит от типа ярлык. Если ярлык представляет папки Outlook, возвращаемый тип — это <b>Папка</b>. Ярлык на панели представляет папку файловой системы, возвращаемый тип является ли <b>объект</b>. Если ярлык представляет путь в файловой системе или URL-адрес, возвращаемый тип — это <b>String</b> (<b>строка</b> в C#).</para>
-          <para />
-        </remarks>
+        <remarks><para>Тип возвращаемого значения зависит от типа ярлык. Если ярлык представляет папки Outlook, возвращаемый тип — это <b>Папка</b>. Ярлык на панели представляет папку файловой системы, возвращаемый тип является ли <b>объект</b>. Если ярлык представляет путь в файловой системе или URL-адрес, возвращаемый тип — это <b>String</b> (<b>строка</b> в C#).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

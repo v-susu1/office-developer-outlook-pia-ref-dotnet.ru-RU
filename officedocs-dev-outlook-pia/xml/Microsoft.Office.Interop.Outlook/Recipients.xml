@@ -1,13 +1,5 @@
 <Type Name="Recipients" FullName="Microsoft.Office.Interop.Outlook.Recipients">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a1f866bf331ae092d59a1e210e16a01c82d526ca" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20641533" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Recipients : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c27dd2e543e6657e2eb0bd16529ca6be9ff7a8d6" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27900323" /></Metadata><TypeSignature Language="C#" Value="public interface Recipients : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Recipients implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Recipients" />
   <TypeSignature Language="VB.NET" Value="Public Interface Recipients&#xA;Implements IEnumerable" />
@@ -31,12 +23,10 @@
   </Attributes>
   <Docs>
     <summary>Содержит коллекцию <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> объекты для элемента Outlook.</summary>
-    <remarks>
-      <para>Используйте свойство <b>получателей</b> для возврата объекта <b>получателей</b> из <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />, <see cref="T:Microsoft.Office.Interop.Outlook.JournalItem" />, <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />, <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />, или <see cref="T:Microsoft.Office.Interop.Outlook.TaskItem" /> объект.</para>
-      <para>Использования <see cref="M:Microsoft.Office.Interop.Outlook.Recipients.Add(System.String)" /> метод для создания объекта <b>получателя</b> и добавить его к объекту <b>получателей</b> . <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.Type" /> Свойство объекта <b>получателя</b> устанавливается значение по умолчанию для связанного объекта <b>AppointmentItem</b>, <b>JournalItem</b>, <b>MailItem</b>или <b>TaskItem</b> и необходимо выполнить сброс для указания другого получателя тип.</para>
-      <para>Использования <b>получателей</b>(<paramref name="index" />), где <paramref name="index" /> — имя или номер индекса, чтобы возвратить объект <b>получателя</b> . Имя может быть строка, представляющая отображаемое имя, псевдоним или полный адрес электронной почты SMTP получателя.</para>
-      <para />
-    </remarks>
+    <remarks><para>Используйте свойство <b>получателей</b> для возврата объекта <b>получателей</b> из <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />, <see cref="T:Microsoft.Office.Interop.Outlook.JournalItem" />, <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />, <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />, или <see cref="T:Microsoft.Office.Interop.Outlook.TaskItem" /> объекта.</para>
+      <para>Использование <see cref="M:Microsoft.Office.Interop.Outlook.Recipients.Add(System.String)" /> метод для создания объекта <b>получателя</b> и добавить его к объекту <b>получателей</b> . <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.Type" /> Свойство объекта <b>получателя</b> устанавливается значение по умолчанию для связанного объекта <b>AppointmentItem</b>, <b>JournalItem</b>, <b>MailItem</b>или <b>TaskItem</b> и необходимо выполнить сброс для указания другой тип получателя.</para>
+      <para>Используйте <b>получателей</b>(<paramref name="index" />), где <paramref name="index" /> — имя или номер индекса, чтобы возвратить объект <b>получателя</b> . Имя может быть строка, представляющая отображаемое имя, псевдоним или полный адрес электронной почты SMTP получателя.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -262,8 +252,7 @@
       <Parameters />
       <Docs>
         <summary>Предпринимается попытка разрешить все <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> объектов в <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> коллекции по адресной книге.</summary>
-        <returns>
-          <b>Значение true,</b> Если все объекты были разрешены, <b>значение False,</b> Если один или несколько не были.</returns>
+        <returns><b>Значение true,</b> Если все объекты были разрешены, <b>значение False,</b> Если один или несколько не были.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,16 +281,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

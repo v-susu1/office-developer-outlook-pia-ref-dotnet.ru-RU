@@ -1,13 +1,5 @@
 <Type Name="_UserDefinedProperties" FullName="Microsoft.Office.Interop.Outlook._UserDefinedProperties">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="24b5b183d8ab727f45fd9782281e0902068419cd" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639861" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _UserDefinedProperties : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="24b5b183d8ab727f45fd9782281e0902068419cd" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27900077" /></Metadata><TypeSignature Language="C#" Value="public interface _UserDefinedProperties : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _UserDefinedProperties implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._UserDefinedProperties" />
   <TypeSignature Language="VB.NET" Value="Public Interface _UserDefinedProperties&#xA;Implements IEnumerable" />
@@ -65,10 +57,8 @@
         <param name="Formula">Формула для расчета значения для нового свойства пользовательских. Этот параметр игнорируется, если <paramref name="Type" /> параметру присвоено значение любого значения, кроме <b>olCombination</b> или <b>olFormula</b>.</param>
         <summary>Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.UserDefinedProperty" /> объекта и добавляет его в коллекцию.</summary>
         <returns>Объект <b>UserDefinedProperty</b> , который представляет новое свойство пользовательских.</returns>
-        <remarks>
-          <para>Можно создать свойство типа, определяемое <see cref="T:Microsoft.Office.Interop.Outlook.OlUserPropertyType" /> перечисление, за исключением следующих типов: <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olEnumeration" />, <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olOutlookInternal" />, и <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olSmartFrom" />.</para>
-          <para />
-        </remarks>
+        <remarks><para>Можно создать свойство типа, определяемое <see cref="T:Microsoft.Office.Interop.Outlook.OlUserPropertyType" /> перечисление, за исключением следующих типов: <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olEnumeration" />, <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olOutlookInternal" />, и <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olSmartFrom" />.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -178,8 +168,7 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <see cref="P:Microsoft.Office.Interop.Outlook._UserDefinedProperty.Name" /> Значение свойства объекта <b>UserDefinedProperty</b> , чтобы найти в коллекции.</param>
+        <param name="Name"><see cref="P:Microsoft.Office.Interop.Outlook._UserDefinedProperty.Name" /> Значение свойства объекта <b>UserDefinedProperty</b> , чтобы найти в коллекции.</param>
         <summary>Найдите <see cref="T:Microsoft.Office.Interop.Outlook.UserDefinedProperty" /> содержащихся в коллекции.</summary>
         <returns>Объект <b>UserDefinedProperty</b> , представляющий объект расположены в случае успешного выполнения; в противном случае — <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</returns>
         <remarks>To be added.</remarks>
@@ -211,8 +200,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Целое число</b> (<b>int</b> в C#) значение, представляющее номер индекса на основе 1 объекта в коллекции или значение <b>String</b> (<b>строка</b> в C#), который представляет <see cref="P:Microsoft.Office.Interop.Outlook._UserDefinedProperty.Name" /> значение свойства объекта в коллекции.</param>
+        <param name="Index"><b>Целое число</b> (<b>int</b> в C#) значение, представляющее номер индекса на основе 1 объекта в коллекции или значение <b>String</b> (<b>строка</b> в C#), который представляет <see cref="P:Microsoft.Office.Interop.Outlook._UserDefinedProperty.Name" /> значение свойства объекта в коллекции.</param>
         <summary>Возвращает <b>объект</b> из коллекции.</summary>
         <value>A <see cref="T:Microsoft.Office.Interop.Outlook.UserDefinedProperty" /> объект, который представляет указанный объект.</value>
         <remarks>To be added.</remarks>
@@ -324,16 +312,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="_JournalModule" FullName="Microsoft.Office.Interop.Outlook._JournalModule">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="56610af43bb71ceb5d575ba50b86e86b91a9b435" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639879" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _JournalModule" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="56610af43bb71ceb5d575ba50b86e86b91a9b435" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27898286" /></Metadata><TypeSignature Language="C#" Value="public interface _JournalModule" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _JournalModule" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._JournalModule" />
   <TypeSignature Language="VB.NET" Value="Public Interface _JournalModule" />
@@ -83,10 +75,8 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Данное свойство возвращает <b>olJournalModule</b> для <see cref="T:Microsoft.Office.Interop.Outlook.JournalModule" /> объекта.</para>
-          <para />
-        </remarks>
+        <remarks><para>Данное свойство возвращает <b>olJournalModule</b> для <see cref="T:Microsoft.Office.Interop.Outlook.JournalModule" /> объекта.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -170,10 +160,8 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlNavigationModuleType" /> константа, представляющий тип модуля навигации для объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Данное свойство возвращает <b>olModuleJournal</b> для <see cref="T:Microsoft.Office.Interop.Outlook.JournalModule" /> объекта.</para>
-          <para />
-        </remarks>
+        <remarks><para>Данное свойство возвращает <b>olModuleJournal</b> для <see cref="T:Microsoft.Office.Interop.Outlook.JournalModule" /> объекта.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -232,19 +220,17 @@
       <Docs>
         <summary>Возвращает или задает значение типа <b>Integer</b> , представляющее порядковый номер <see cref="T:Microsoft.Office.Interop.Outlook.JournalModule" /> объектов при отображении в области навигации. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Этого свойства могут быть установлены только значение в диапазоне от 1 до 8. Ошибка возникает при попытке этому свойству присвоено значение вне диапазона.</para>
-          <para>При изменении значения этого свойства для объекта <b>JournalModule</b> изменяет значения <b>положение</b> другие модули навигации, содержащихся в <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModules" /> семейства сайтов, в зависимости от относительное изменение между новое значение и исходное значение Свойство <b>положения</b> для этого объекта <b>JournalModule</b> : </para>
+        <remarks><para>Это свойство можно задать только значение в диапазоне от 1 до 8. Произошла ошибка при попытке этому свойству присвоено значение вне диапазона.</para>
+          <para>При изменении значения этого свойства для объекта <b>JournalModule</b> изменяет значения других модули навигации, содержащихся в <b>положение</b> <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModules" /> семейства сайтов, в зависимости от относительное изменение между новое значение и исходное значение <b> Положение</b> свойства для этого объекта <b>JournalModule</b> : </para>
           <list type="bullet">
             <item>
-              <para>, если новое значение меньше, чем исходное значение, а затем на указанный объект <b>JournalModule</b> перемещает вверх на новое место и помещает другие модули навигации уже выше или ниже этого новую позицию вниз.</para>
+              <para>Если новое значение меньше, чем исходное значение, указанный объект <b>JournalModule</b> перемещает вверх на новое место и помещает другие модули навигации уже выше или ниже этого новую позицию вниз.</para>
             </item>
             <item>
-              <para>Если новое значение больше, чем исходное значение, а затем на указанный объект <b>JournalModule</b> перемещает вниз на новое место и помещает другие модули навигации между старой и новой позиции копирование, заполнение старый положение.</para>
+              <para>Если новое значение больше, чем исходное значение, указанный объект <b>JournalModule</b> перемещает вниз на новое место и помещает другие модули навигации между старой и новой позиции, заполнения старый положение.</para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -272,16 +258,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">

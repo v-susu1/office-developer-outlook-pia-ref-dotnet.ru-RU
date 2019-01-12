@@ -1,13 +1,5 @@
 <Type Name="_IconView" FullName="Microsoft.Office.Interop.Outlook._IconView">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b6ff21adc4d8ef4b981f070cb8eebd186d37d298" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640215" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _IconView" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b6ff21adc4d8ef4b981f070cb8eebd186d37d298" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901398" /></Metadata><TypeSignature Language="C#" Value="public interface _IconView" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _IconView" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._IconView" />
   <TypeSignature Language="VB.NET" Value="Public Interface _IconView" />
@@ -194,10 +186,8 @@
       <Docs>
         <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет фильтр для представления.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Значение этого свойства — это строка, в синтаксисе поиска DAV и поиск (DASL), представляющий текущий фильтр для представления. Дополнительные сведения об использовании DASL синтаксис для фильтрации элементов в представлении можно <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Фильтрации элементов</a></para>
-          <para />
-        </remarks>
+        <remarks><para>Значение этого свойства — это строка, в синтаксисе поиска DAV и поиск (DASL), представляющий текущий фильтр для представления. Дополнительные сведения об использовании DASL синтаксис для фильтрации элементов в представлении можно <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Фильтрации элементов</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GoToDate">
@@ -256,10 +246,8 @@
       <Docs>
         <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlIconViewPlacement" /> значение, определяющее, как значки помещаются в <see cref="T:Microsoft.Office.Interop.Outlook.IconView" /> объекта. Чтение и запись</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Если значение <see cref="P:Microsoft.Office.Interop.Outlook._IconView.IconViewType" /> свойства имеет значение <b>olIconViewList</b>, значение этого свойства автоматически устанавливается значение <b>olIconSortAndAutoArrange</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Если значение <see cref="P:Microsoft.Office.Interop.Outlook._IconView.IconViewType" /> свойства имеет значение <b>olIconViewList</b>, значение этого свойства автоматически устанавливается значение <b>olIconSortAndAutoArrange</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IconViewType">
@@ -290,10 +278,8 @@
       <Docs>
         <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlIconViewType" /> константа, определяющая способ отображения элементов Outlook в <see cref="T:Microsoft.Office.Interop.Outlook.IconView" /> объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Если значение этого свойства имеет значение <b>olIconSortAndAutoArrange</b>, значение <see cref="P:Microsoft.Office.Interop.Outlook._IconView.IconPlacement" /> свойства автоматически устанавливается значение <b>olIconSortAndAutoArrange</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Если значение этого свойства имеет значение <b>olIconSortAndAutoArrange</b>, значение <see cref="P:Microsoft.Office.Interop.Outlook._IconView.IconPlacement" /> свойства автоматически устанавливается значение <b>olIconSortAndAutoArrange</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Language">
@@ -324,7 +310,9 @@
       <Docs>
         <summary>Возвращает или задает значение типа <b>String</b> (<b>строка</b> в C#), представляющее языка, заданных для представления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>Свойство <para><b>языка</b> для представления тег языка ISO используется <b>String</b> (<b>строка</b> в C#). Например, строка «EN-US» представляет код ISO «США - английский.»</para><para>Если указан допустимый код языка, объект доступна только в меню "Вид" для типа указанного языка. Если значение не указано, элемент object доступен для всех типов языка. Значение по умолчанию для этого свойства — это пустая строка.</para><para /></remarks>
+        <remarks><para>Свойство <b>Language</b> <b>String</b> (<b>строка</b> в C#) используется для представления тег языка ISO. Например строка «EN-US» представляет код ISO «США - английский.»</para>
+          <para>Если указан допустимый код языка, объект доступна только в меню "Вид" для типа указанного языка. Если значение не указано, элемент object доступен для всех типов языка. Значение по умолчанию для этого свойства — это пустая строка.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LockUserChanges">
@@ -355,10 +343,8 @@
       <Docs>
         <summary>Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, указывающее, является ли пользователь может изменять параметры текущего представления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Если <b>значение True</b>, пользователь может изменять параметры текущего представления. Тем не менее изменения, внесенные в интерфейс не будут сохранены. Если <b>значение False</b> (значение по умолчанию), все изменения будут сохранены.</para>
-          <para />
-        </remarks>
+        <remarks><para>Если <b>значение True</b>, пользователь может изменять параметры текущего представления. Тем не менее изменения, внесенные в интерфейс не будут сохранены. Если <b>значение False</b> (значение по умолчанию), все изменения будут сохранены.  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -442,10 +428,8 @@
       <Parameters />
       <Docs>
         <summary>Сбрасывает встроенных представления Microsoft Outlook исходные параметры.</summary>
-        <remarks>
-          <para>Этот метод работает только для встроенных представления Outlook.</para>
-          <para />
-        </remarks>
+        <remarks><para>Этот метод работает только для встроенных представления Outlook.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -498,10 +482,8 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewSaveOption" /> константа, которая указывает папки, в которых доступен указанное представление и разрешения на чтение, подключенного к представления. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Когда задано значение свойства <b>SaveOption</b><see cref="T:Microsoft.Office.Interop.Outlook.IconView" /> объект создается с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> семейства сайтов.</para>
-          <para />
-        </remarks>
+        <remarks><para>Когда задано значение свойства <b>SaveOption</b> <see cref="T:Microsoft.Office.Interop.Outlook.IconView" /> объект создается с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> семейства сайтов. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -529,16 +511,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SortFields">
@@ -594,11 +574,8 @@
       <Docs>
         <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, будет ли <see cref="T:Microsoft.Office.Interop.Outlook.IconView" /> объект является встроенной представления Outlook. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> Метод можно использовать для представления, только если значение этого свойства имеет значение <b>True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> Метод можно использовать для представления, только если значение этого свойства имеет значение <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ViewType">
@@ -657,7 +634,9 @@
       <Docs>
         <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), задающее XML-определение представления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>Определение <para>XML описывает тип представления с помощью ряда теги и ключевых слов в соответствии с различными свойствами представления. При создании представления XML-определение синтаксический анализ для отображения параметров для нового представления.</para><para>Для определения XML структуру при создании представления, можно создать представление с помощью пользовательского интерфейса Outlook и извлекают свойства <b>XML</b> для этого представления.  </para><para /></remarks>
+        <remarks><para>Определение XML описывает тип представления с помощью ряда теги и ключевых слов в соответствии с различными свойствами представления. При создании представления XML-определение анализируется для отображения параметров для нового представления.</para>
+          <para>Для определения XML структуру при создании представления, можно создать представление с помощью пользовательского интерфейса Outlook и затем можно извлечь свойство <b>XML</b> для этого представления.  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

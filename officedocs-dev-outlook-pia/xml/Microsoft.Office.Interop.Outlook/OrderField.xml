@@ -1,13 +1,5 @@
 <Type Name="OrderField" FullName="Microsoft.Office.Interop.Outlook.OrderField">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a141c7a729e401f026f05a32cde85f7730804364" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639681" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OrderField : Microsoft.Office.Interop.Outlook._OrderField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="83e00c147e2cc836d6d3bb41db88d4407efe9b48" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27902119" /></Metadata><TypeSignature Language="C#" Value="public interface OrderField : Microsoft.Office.Interop.Outlook._OrderField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OrderField implements class Microsoft.Office.Interop.Outlook._OrderField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OrderField" />
   <TypeSignature Language="VB.NET" Value="Public Interface OrderField&#xA;Implements _OrderField" />
@@ -31,9 +23,8 @@
   </Attributes>
   <Docs>
     <summary>Представляет поле порядок, используемый для сортировки информации в представлении.</summary>
-    <remarks>
-      <para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._OrderField" />. </para>
-      <para>Использования <see cref="M:Microsoft.Office.Interop.Outlook._ViewFields.Add(System.String)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.OrderFields" /> объект, который требуется добавить свойство элемента Outlook в коллекцию <b>SortFields</b> для следующих объектов, производного от <see cref="T:Microsoft.Office.Interop.Outlook.View" /> объект:</para>
+    <remarks><para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._OrderField" />. </para>
+      <para>Использование <see cref="M:Microsoft.Office.Interop.Outlook._ViewFields.Add(System.String)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.OrderFields" /> объект, который требуется добавить свойство элемента Outlook в коллекцию <b>SortFields</b> для следующих объектов, производного от <see cref="T:Microsoft.Office.Interop.Outlook.View" /> объектов:</para>
       <list type="bullet">
         <item>
           <para>
@@ -50,12 +41,16 @@
             <see cref="T:Microsoft.Office.Interop.Outlook.IconView" />
           </para>
         </item>
+        <item>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Outlook.TableView" />
+          </para>
+        </item>
       </list>
-      <para>использования <see cref="P:Microsoft.Office.Interop.Outlook._OrderField.ViewXMLSchemaName" />свойство для получения имя поля заказа, как указано в XML-определении представления.</para>
+      <para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._OrderField.ViewXMLSchemaName" /> свойство для получения имя поля заказа, как указано в XML-определении представления.</para>
       <para>
-        <b>OrderField</b> объектов, содержащихся в коллекции <b>OrderFields</b> применяются к Outlook элементы, отображаемые в представлении, в том порядке, в котором содержатся объектов в коллекции. Для каждого объекта <b>OrderField</b> используйте <see cref="P:Microsoft.Office.Interop.Outlook._OrderField.IsDescending" /> свойство, чтобы определить, нужно ли сортировать значения поля порядке по возрастанию или убыванию.</para>
-      <para />
-    </remarks>
+        <b>OrderField</b> объектов, содержащихся в коллекции <b>OrderFields</b> применяются к Outlook элементы, отображаемые в представлении, в том порядке, в котором содержатся объектов в коллекции. Для каждого объекта <b>OrderField</b> используйте <see cref="P:Microsoft.Office.Interop.Outlook._OrderField.IsDescending" /> свойство, чтобы определить, нужно ли сортировать значения поля заказа в возрастающем или убывающем порядке.</para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

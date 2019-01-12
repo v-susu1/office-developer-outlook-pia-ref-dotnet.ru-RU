@@ -1,13 +1,5 @@
 <Type Name="_Categories" FullName="Microsoft.Office.Interop.Outlook._Categories">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ea42ac39cad667a54dbf4c84adf7f13ad84a7dd4" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639893" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Categories : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ea42ac39cad667a54dbf4c84adf7f13ad84a7dd4" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27902133" /></Metadata><TypeSignature Language="C#" Value="public interface _Categories : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Categories implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Categories" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Categories&#xA;Implements IEnumerable" />
@@ -176,14 +168,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Целое число</b> (<b>int</b> в C#) значение, представляющее номер индекса объекта или значение <b>String</b> (<b>строка</b> в C#), представляющее либо <see cref="P:Microsoft.Office.Interop.Outlook._Category.Name" /> или <see cref="P:Microsoft.Office.Interop.Outlook._Category.CategoryID" /> значение свойства объекта в коллекции.</param>
+        <param name="Index"><b>Целое число</b> (<b>int</b> в C#) значение, представляющее номер индекса объекта или значение <b>String</b> (<b>строка</b> в C#), представляющее либо <see cref="P:Microsoft.Office.Interop.Outlook._Category.Name" /> или <see cref="P:Microsoft.Office.Interop.Outlook._Category.CategoryID" /> значение свойства объекта в коллекции.</param>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Category" /> объект из коллекции.</summary>
         <value>Объект <b>категории</b> , который представляет указанный объект.</value>
-        <remarks>
-          <para>Если указано имя категории в <paramref name="Index" />, этот метод возвращает первый объект <b>категории</b> , который соответствует указанному значению. Если совпадение не найдено, метод возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#)</para>
-          <para />
-        </remarks>
+        <remarks><para>Если указано имя категории в <paramref name="Index" />, этот метод возвращает первый объект <b>категории</b> , который соответствует указанному значению. Если совпадение не найдено, метод возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#)</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -237,13 +226,10 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Целое число</b> (<b>int</b> в C#) значение, представляющее номер индекса объекта или значение <b>String</b> (<b>строка</b> в C#), представляющее либо <see cref="P:Microsoft.Office.Interop.Outlook._Category.Name" /> или <see cref="P:Microsoft.Office.Interop.Outlook._Category.CategoryID" /> значение свойства объекта в коллекции.</param>
+        <param name="Index"><b>Целое число</b> (<b>int</b> в C#) значение, представляющее номер индекса объекта или значение <b>String</b> (<b>строка</b> в C#), представляющее либо <see cref="P:Microsoft.Office.Interop.Outlook._Category.Name" /> или <see cref="P:Microsoft.Office.Interop.Outlook._Category.CategoryID" /> значение свойства объекта в коллекции.</param>
         <summary>Удаляет объект из коллекции.</summary>
-        <remarks>
-          <para>Если указано имя категории в <paramref name="Index" />, этот метод удаляет первый объект <b>категории</b> , который соответствует указанному значению.</para>
-          <para />
-        </remarks>
+        <remarks><para>Если указано имя категории в <paramref name="Index" />, этот метод удаляет первый объект <b>категории</b> , который соответствует указанному значению.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -271,16 +257,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

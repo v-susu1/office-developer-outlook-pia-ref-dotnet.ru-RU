@@ -1,13 +1,5 @@
 <Type Name="_ExchangeDistributionList" FullName="Microsoft.Office.Interop.Outlook._ExchangeDistributionList">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3175efc5bfb7f609655b29eeb8a6e763f74a99de" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640079" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _ExchangeDistributionList" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3175efc5bfb7f609655b29eeb8a6e763f74a99de" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27900957" /></Metadata><TypeSignature Language="C#" Value="public interface _ExchangeDistributionList" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _ExchangeDistributionList" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._ExchangeDistributionList" />
   <TypeSignature Language="VB.NET" Value="Public Interface _ExchangeDistributionList" />
@@ -58,11 +50,9 @@
       <Docs>
         <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляющее X400 адреса электронной почты <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство предполагается X400-адрес списка рассылки. Чтобы определить основной адрес Интернет, используйте <see cref="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.PrimarySmtpAddress" /> свойство.</para>
-          <para>Свойству <b>адреса</b> необходимо задать до вызова метода <see cref="M:Microsoft.Office.Interop.Outlook._ExchangeUser.Details(System.Object)" /> метод.</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство предполагается X400-адрес списка рассылки. Чтобы определить основной адрес Интернет, используйте <see cref="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.PrimarySmtpAddress" /> свойство.</para>
+          <para>Свойство <b>адреса</b> необходимо задать до вызова метода <see cref="M:Microsoft.Office.Interop.Outlook._ExchangeUser.Details(System.Object)" /> метод. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddressEntryUserType">
@@ -90,10 +80,8 @@
       <Docs>
         <summary>Возвращает <b>olExchangeDistributionListAddressEntry</b> — константа из <see cref="T:Microsoft.Office.Interop.Outlook.OlAddressEntryUserType" /> тип перечисления, представляющий пользователя <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Свойство <b>AddressEntryUserType</b> наследует объект <b>AddressEntry</b> . В случае <b>ExchangeDistributionList</b><b>AddressEntryUserType</b> всегда должна вернуть <b>olExchangeDistributionListAddressEntry</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Свойство <b>AddressEntryUserType</b> наследует объект <b>AddressEntry</b> . В случае <b>ExchangeDistributionList</b> <b>AddressEntryUserType</b> всегда должна вернуть <b>olExchangeDistributionListAddressEntry</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Alias">
@@ -121,11 +109,9 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляет псевдоним для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует свойству MAPI <b>PidTagAccount</b>.</para>
-          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeDistributionList</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagAccount</b>.</para>
+          <para>Если это свойство не реализован или не существует для объекта <b>ExchangeDistributionList</b> возвращает пустую строку. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -212,11 +198,9 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее комментариев для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует параметру свойства MAPI, <b>PidTagComment</b>.</para>
-          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeDistributionList</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI, <b>PidTagComment</b>.</para>
+          <para> Если это свойство не реализован или не существует для объекта <b>ExchangeDistributionList</b> возвращает пустую строку. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -241,10 +225,8 @@
       <Parameters />
       <Docs>
         <summary>Удаляет <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта из <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> объект коллекции, к которой он принадлежит.</summary>
-        <remarks>
-          <para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Объект <b>ExchangeDistributionList</b> — это объект <b>AddressEntry</b> , имеет <b>olExchangeDistributionListAddressEntry</b> как <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.AddressEntryUserType" />; вызов <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntry.GetExchangeDistributionList" /> возвращает соответствующий объект <b>ExchangeDistributionList</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Объект <b>ExchangeDistributionList</b> — это объект <b>AddressEntry</b> , имеет <b>olExchangeDistributionListAddressEntry</b> как <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.AddressEntryUserType" />; вызов <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntry.GetExchangeDistributionList" /> возвращает соответствующий объект <b>ExchangeDistributionList</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Details">
@@ -271,9 +253,9 @@
       <Docs>
         <param name="HWnd">Дескриптор родительского окна для диалоговое окно "Подробности". Нулевое значение (по умолчанию) указывает модального диалогового окна.</param>
         <summary>Отображает модальное диалоговое окно, которое предоставляет подробные сведения о <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта.</summary>
-        <remarks>
-          <para>Метод <b>сведений</b> не выполняется, если <see cref="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.Name" /> оставлено пустым. Необходимо использовать для обработки ошибок во время выполнения, обработку ошибок и при нажатии кнопки "Отмена" в диалоговом окне. </para>Метод 
-          <para><b>сведения о</b> фактически останавливает выполнение во время отображения диалоговое окно кода.   </para><para /></remarks>
+        <remarks><para>Метод <b>сведений</b> не выполняется, если <see cref="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.Name" /> оставлено пустым. Необходимо использовать для обработки ошибок во время выполнения, обработку ошибок и при нажатии кнопки "Отмена" в диалоговом окне. </para>
+          <para>Метод <b>сведения о</b> фактически останавливает выполнение во время отображения диалоговое окно кода.   </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayType">
@@ -301,8 +283,9 @@
       <Docs>
         <summary>Возвращает <b>olDistList</b> — константа из <see cref="T:Microsoft.Office.Interop.Outlook.OlDisplayType" /> перечисление, представляющее природы <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует свойству MAPI <b>PidTagDisplayType</b>.</para> Объект <b>ExchangeDistributionList</b><para>является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Свойство <b>DisplayType</b> наследует объект <b>AddressEntry</b> . В случае <b>ExchangeDistributionList</b><b>DisplayType</b> всегда должна вернуть <b>olDistList</b>.</para><para /></remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagDisplayType</b>.</para>
+          <para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Свойство <b>DisplayType</b> наследует объект <b>AddressEntry</b> . В случае <b>ExchangeDistributionList</b> <b>DisplayType</b> всегда должна вернуть <b>olDistList</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetContact">
@@ -327,12 +310,9 @@
       <Parameters />
       <Docs>
         <summary>Возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), так как <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта не соответствует контакта в адресной книге контакты.</summary>
-        <returns>
-          <b>Значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), так как объект <b>ExchangeDistributionList</b> не соответствует контакта в адресной книге контакты.</returns>
-        <remarks>
-          <para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Метод <b>GetContact</b> оно наследуется от объект <b>AddressEntry</b> , и в случае <b>ExchangeDistributionList</b>, этот метод всегда возвращает <b>значение Nothing</b>.</para>
-          <para />
-        </remarks>
+        <returns><b>Значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), так как объект <b>ExchangeDistributionList</b> не соответствует контакта в адресной книге контакты.</returns>
+        <remarks><para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Метод <b>GetContact</b> оно наследуется от объект <b>AddressEntry</b> , и в случае <b>ExchangeDistributionList</b>, этот метод всегда возвращает <b>значение Nothing</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExchangeDistributionList">
@@ -383,8 +363,7 @@
       <Parameters />
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> коллекции, представляющей членов списка рассылки Exchange.</summary>
-        <returns>
-          <b>AddressEntries</b> коллекция, содержащая <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекты, которые представляют элементы, принадлежащей списку рассылки.</returns>
+        <returns><b>AddressEntries</b> коллекция, содержащая <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекты, которые представляют элементы, принадлежащей списку рассылки.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -410,12 +389,9 @@
       <Parameters />
       <Docs>
         <summary>Возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), так как <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта не соответствует <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" /> объекта.</summary>
-        <returns>
-          <b>Значение NULL</b> (<b>Nothing</b> в Visual Basic), так как объект <b>ExchangeDistributionList</b> не соответствует объект <b>ExchangeUser</b> .</returns>
-        <remarks>
-          <para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Метод <b>GetExchangeUser</b> оно наследуется от объект <b>AddressEntry</b> , и в случае <b>ExchangeDistributionList</b>, этот метод всегда возвращает <b>значение Nothing</b>.</para>
-          <para />
-        </remarks>
+        <returns><b>Значение NULL</b> (<b>Nothing</b> в Visual Basic), так как объект <b>ExchangeDistributionList</b> не соответствует объект <b>ExchangeUser</b> .</returns>
+        <remarks><para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Метод <b>GetExchangeUser</b> оно наследуется от объект <b>AddressEntry</b> , и в случае <b>ExchangeDistributionList</b>, этот метод всегда возвращает <b>значение Nothing</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFreeBusy">
@@ -447,11 +423,9 @@
         <param name="CompleteFormat">To be added.</param>
         <summary>Возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), так как сведения о занятости будет доступно только для отдельных пользователей, а не <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объектов.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Метод <b>GetFreeBusy</b> оно наследуется от объект <b>AddressEntry</b> , а в случае <b>ExchangeDistributionList</b>, независимо от значения параметров, этот метод всегда возвращает <b>значение Nothing</b>.</para>
-          <para>Этот метод не возвращает сведения о занятости отдельных участников <b>ExchangeDistributionList</b>. Чтобы получить сведения о занятости для приглашения на собрание, отправьте запрос для отдельных пользователей. Использование <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.AddressEntryUserType" /> свойства объекта <b>AddressEntry</b> получили от <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.AddressEntry" /> для определения <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> представляет <b>ExchangeDistributionList</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Метод <b>GetFreeBusy</b> оно наследуется от объект <b>AddressEntry</b> , и в случае <b>ExchangeDistributionList</b>, независимо от значения параметров, этот метод всегда возвращает <b>значение Nothing</b>.</para>
+          <para> Этот метод не возвращает сведения о занятости отдельных участников <b>ExchangeDistributionList</b>. Чтобы получить сведения о занятости для приглашения на собрание, отправьте запрос для отдельных пользователей. Использование <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.AddressEntryUserType" /> свойства объекта <b>AddressEntry</b> получили от <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.AddressEntry" /> для определения <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> представляет <b>ExchangeDistributionList</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMemberOfList">
@@ -477,11 +451,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> коллекцию, содержащую объект, который содержит все <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объектов, представляющих списки рассылки Exchange из которых <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> , является участником.</summary>
         <returns>Объект <b>AddressEntries</b> семейства сайтов, который представляет списки рассылки, членом которых является этот объект <b>ExchangeDistributionList</b> . Возвращает объект <b>AddressEntries</b> с количеством нуль (0), если <b>ExchangeDistributionList</b> не должна быть членом любого списка рассылки Exchange.</returns>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>GetMemberOfList</b> — это дорогой операции с точки зрения производительности при наличии медленное подключение к Exchange Server.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetOwners">
@@ -507,11 +479,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> коллекцию, содержащую объект, который содержит все владельцы <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</summary>
         <returns>Объект <b>AddressEntries</b> семейства сайтов, содержащий <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объектов, представляющих всех владельцев <b>ExchangeDistributionList</b>. Возвращает объект <b>AddressEntries</b> с нуля (0), если ни один владелец можно найти для <b>ExchangeDistributionList</b> в текущем сеансе.</returns>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>GetOwners</b> — это дорогой операции с точки зрения производительности при наличии медленное подключение к Exchange Server.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -539,10 +509,8 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее уникальный идентификатор для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Он наследует свойство <b>ID</b> из объект <b>AddressEntry</b> . При создании объект <b>AddressEntry</b> , поставщика транспорта назначает строку постоянная, уникальный идентификатор. Эти идентификаторы не изменяйте из одного сеанса в другую.</para>
-          <para />
-        </remarks>
+        <remarks><para> Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Он наследует свойство <b>ID</b> из объект <b>AddressEntry</b> . При создании объект <b>AddressEntry</b> , поставщика транспорта назначает строку постоянная, уникальный идентификатор. Эти идентификаторы не изменяйте из одного сеанса в другую.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Manager">
@@ -728,11 +696,9 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляет основной адрес Simple Mail Transfer Protocol (SMTP) для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует свойству MAPI <b>PidTagEmailAddress</b>.</para>
-          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeDistributionList</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagEmailAddress</b>.</para>
+          <para>Если это свойство не реализован или не существует для объекта <b>ExchangeDistributionList</b> возвращает пустую строку. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyAccessor">
@@ -788,16 +754,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -828,10 +792,8 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее тип записи для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Свойство <b>Type</b> наследует объект <b>AddressEntry</b> . В случае <b>ExchangeDistributionList</b>тип всегда является строка «EX».</para>
-          <para />
-        </remarks>
+        <remarks><para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Свойство <b>Type</b> наследует объект <b>AddressEntry</b> . В случае <b>ExchangeDistributionList</b>тип всегда является строка «EX».</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -860,11 +822,9 @@
         <param name="MakePermanent">Значение <b>True</b> означает, что при сбросе кэша свойства и все изменения завершены в базовом адресной книги. Значение <b>False</b> указывает, что кэш свойств очищен, но не было зафиксировано постоянное хранилище. Значение по умолчанию — <b>True</b>.</param>
         <param name="Refresh">Значение <b>True</b> указывает, что кэш свойств перезагружается из значений в базовом адресной книги. Значение <b>False</b> указывает, что кэш свойств не загружаются. Значение по умолчанию — <b>False</b>.</param>
         <summary>Внесение изменений в публикации, посвященные <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объект в системе обмена сообщениями.</summary>
-        <remarks>
-          <para>Новые записи или изменения существующих записей, не сохраняются в коллекции до вызова метода <b>Update</b> с его <paramref name="MakePermanent" /> параметра задано значение <b>True</b>.  </para>
-          <para>Для очистки кэша и перезагрузите значения из адресной книги, вызове <b>Update</b> с <paramref name="MakePermanent" /> параметра значение <b>False</b> и <paramref name="Refresh" /> параметра задано значение <b>True</b>.  </para>
-          <para />
-        </remarks>
+        <remarks><para> Новые записи или изменения существующих записей, не сохраняются в коллекции до вызова метода <b>Update</b> с его <paramref name="MakePermanent" /> параметра задано значение <b>True</b>.  </para>
+          <para>Чтобы очистить кэш и перезагрузите значения из адресной книги, вызвать метод <b>обновления</b> с <paramref name="MakePermanent" /> параметра значение <b>False</b> и <paramref name="Refresh" /> параметра задано значение <b>True</b>.  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateFreeBusy">

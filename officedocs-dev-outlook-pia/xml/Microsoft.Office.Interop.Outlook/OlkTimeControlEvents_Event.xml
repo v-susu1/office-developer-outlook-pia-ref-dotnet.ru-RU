@@ -1,13 +1,5 @@
 <Type Name="OlkTimeControlEvents_Event" FullName="Microsoft.Office.Interop.Outlook.OlkTimeControlEvents_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cfbfa60de7a215622018c53101fa4e0701747578" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20641253" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OlkTimeControlEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b3bb8ffef8f60e28419591ef86a7fa3d796ff0b9" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901692" /></Metadata><TypeSignature Language="C#" Value="public interface OlkTimeControlEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OlkTimeControlEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OlkTimeControlEvents_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface OlkTimeControlEvents_Event" />
@@ -49,33 +41,31 @@
       </ReturnValue>
       <Docs>
         <summary>Возникает после изменения данных в элементе управления посредством пользовательского интерфейса.</summary>
-        <remarks>
-          <para>
-            <b>До обновления</b> и <b>после обновления</b> может возникнуть, каждый раз, когда данные в элементе управления сохраняются к элементу.  Типичная последовательность событий, связанных с <b>после обновления</b> для данного элемента управления, как показано ниже:</para>
+        <remarks><para>
+            <b>До обновления</b> и <b>после обновления</b> может возникнуть, каждый раз, когда данные в элементе управления сохраняются к элементу.  Типичная последовательность событий, связанных с <b>после обновления</b> для данного элемента управления выглядит следующим образом:</para>
           <list type="number">
             <item>
-              <description>пользователя в центре внимания элемента управления</description>
+              <description>Пользователь в центре внимания элемента управления</description>
             </item>
             <item>
               <description>
-                <b>до обновления</b>
+                <b>До обновления</b>
               </description>
             </item>
             <item>
-              <description>управления данные обновляются</description>
+              <description>Обновление данных элемента управления</description>
             </item>
             <item>
               <description>
-                <b>после обновления</b>
+                <b>После обновления</b>
               </description>
             </item>
             <item>
               <description>
-                <b>Выход</b>: пользователя Перемещает фокус от элемента управления</description>
+                <b>Выход</b>: пользователь перемещает фокус от элемента управления</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeforeUpdate">
@@ -94,34 +84,32 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит, когда данные в элементе управления изменяются через пользовательский интерфейс и должен быть сохранен к элементу.</summary>
-        <remarks>
-          <para>Отмена это свойство будет вернуться в текущее значение свойства элемента управления и возврата фокуса на элемент управления.</para>
+        <remarks><para>Отмена это свойство вернуться в текущее значение свойства элемента управления и возврата фокуса на элемент управления.</para>
           <para>
-            <b>До обновления</b> и <b>после обновления</b> может возникнуть в любое время, данные в элементе управления сохраняются к элементу.  Типичная последовательность событий, связанных с <b>BeforeUpdate</b> для данного элемента управления, как показано ниже:</para>
+            <b>До обновления</b> и <b>после обновления</b> может возникнуть, каждый раз, когда данные в элементе управления сохраняются к элементу.  Типичная последовательность событий, связанных с <b>BeforeUpdate</b> для данного элемента управления выглядит следующим образом:</para>
           <list type="number">
             <item>
-              <description>пользователя в центре внимания элемента управления</description>
+              <description>Пользователь в центре внимания элемента управления</description>
             </item>
             <item>
               <description>
-                <b>до обновления</b>
+                <b>До обновления</b>
               </description>
             </item>
             <item>
-              <description>управления данные обновляются</description>
+              <description>Обновление данных элемента управления</description>
             </item>
             <item>
               <description>
-                <b>после обновления</b>
+                <b>После обновления</b>
               </description>
             </item>
             <item>
               <description>
-                <b>Выход</b>: пользователя Перемещает фокус от элемента управления</description>
+                <b>Выход</b>: пользователь перемещает фокус от элемента управления</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Change">
@@ -254,10 +242,8 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит, когда пользователь нажимает клавишу.</summary>
-        <remarks>
-          <para>Состояние клавиш (SHIFT, CTRL или ALT), которые нажата во время события <b>KeyDown</b> доступен через <paramref name="Shift" /> параметр.</para>
-          <para />
-        </remarks>
+        <remarks><para>Состояние клавиш (SHIFT, CTRL или ALT), которые нажата во время события <b>KeyDown</b> доступен через <paramref name="Shift" /> параметр.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyPress">
@@ -276,25 +262,23 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит, когда пользователь нажимает клавишу с кодом ANSI.</summary>
-        <remarks>
-          <para>Клавиша ANSI —, которая возвращает typeable символ, когда пользователь нажимает ее. Событие <b>KeyPress</b> происходит, когда пользователь нажимает клавишу с кодом ANSI на выполнение формы в форме при или элемент управления имеет фокус. Событие может возникнуть до или после выпуска ключ.</para>
+        <remarks><para>Клавиша ANSI —, которая возвращает typeable символ, когда пользователь нажимает ее. Событие <b>KeyPress</b> происходит, когда пользователь нажимает клавишу с кодом ANSI на выполнение формы в форме при или элемент управления имеет фокус. Событие может возникнуть до или после выпуска ключ.</para>
           <para>Событие <b>KeyPress</b> не происходит при следующих условиях:</para>
           <list type="bullet">
             <item>
-              <para>При нажатии клавиши TAB</para>
+              <para>Нажатие клавиши TAB</para>
             </item>
             <item>
               <para>При нажатии клавиши ВВОД</para>
             </item>
             <item>
-              <para>клавиш со стрелкой</para>
+              <para>Нажатие клавиши со стрелкой</para>
             </item>
             <item>
-              <para>при нажатии клавиши фокус перемещается с одного элемента управления на другой.</para>
+              <para>если при нажатии клавиши фокус перемещается с одного элемента управления на другой.</para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyUp">
@@ -313,10 +297,8 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит, когда пользователь отпускает клавишу.</summary>
-        <remarks>
-          <para>Состояние клавиш (SHIFT, CTRL или ALT), которые нажата во время события <b>KeyUp</b> доступен через <paramref name="Shift" /> параметр.</para>
-          <para />
-        </remarks>
+        <remarks><para>Состояние клавиш (SHIFT, CTRL или ALT), которые нажата во время события <b>KeyUp</b> доступен через <paramref name="Shift" /> параметр.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseDown">
@@ -354,10 +336,8 @@
       </ReturnValue>
       <Docs>
         <summary>Возникает после регистрации движения мыши на элемент управления.</summary>
-        <remarks>
-          <para>Нажатие клавиши ALT запускает событие <b>MouseMove</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Нажатие клавиши ALT запускает событие <b>MouseMove</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseUp">

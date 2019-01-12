@@ -1,13 +1,5 @@
 <Type Name="ReminderCollectionEvents_Event" FullName="Microsoft.Office.Interop.Outlook.ReminderCollectionEvents_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="82f7e87f4a7c31c6fea7961afdea6e402f53ccb4" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640806" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ReminderCollectionEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c046e68f17198ddfc2900cf348031dac0601e25f" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27898517" /></Metadata><TypeSignature Language="C#" Value="public interface ReminderCollectionEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ReminderCollectionEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.ReminderCollectionEvents_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface ReminderCollectionEvents_Event" />
@@ -68,10 +60,8 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит после добавления напоминание.</summary>
-        <remarks>
-          <para>Напоминание фактически не создается, пока связанный элемент Microsoft Outlook был сохранен. Таким образом это событие не происходит только после сохранения объекта связанного элемента.</para>
-          <para />
-        </remarks>
+        <remarks><para>Напоминание фактически не создается, пока связанный элемент Microsoft Outlook был сохранен. Таким образом это событие не происходит только после сохранения объекта связанного элемента.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReminderChange">
@@ -128,27 +118,25 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит, когда <see cref="T:Microsoft.Office.Interop.Outlook.Reminder" /> объект был удален из коллекции.</summary>
-        <remarks>
-          <para>Напоминание может быть удален из коллекции <b>напоминания</b> по любой из следующих способов:</para>
+        <remarks><para>Напоминание можно удалить из коллекции <b>напоминания</b> с любой из следующих способов:</para>
           <list type="bullet">
             <item>
-              <para>метод Remove коллекции напоминания.</para>
+              <para>Метод Remove коллекции напоминания.</para>
             </item>
             <item>
               <para>Метод прекратить объекта напоминание.</para>
             </item>
             <item>
-              <para>При нажатии пользователем кнопки прекратить.</para>
+              <para>Когда пользователь нажимает кнопку прекратить.</para>
             </item>
             <item>
               <para>При выключении напоминанием в связанный элемент.</para>
             </item>
             <item>
-              <para>При удалении элемента, который содержит напоминание.</para>
+              <para>Если пользователь удаляет элемент, который содержит напоминание.</para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Snooze">
@@ -167,10 +155,8 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит, когда напоминание закрытия с помощью кнопки переноса.</summary>
-        <remarks>
-          <para>Это событие будет срабатывать, когда <see cref="M:Microsoft.Office.Interop.Outlook._Reminder.Snooze(System.Object)" /> выполнения метода, или когда пользователь нажимает кнопку отложить.</para>
-          <para />
-        </remarks>
+        <remarks><para>Это событие будет срабатывать, когда <see cref="M:Microsoft.Office.Interop.Outlook._Reminder.Snooze(System.Object)" /> выполнения метода, или когда пользователь нажимает кнопку отложить.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

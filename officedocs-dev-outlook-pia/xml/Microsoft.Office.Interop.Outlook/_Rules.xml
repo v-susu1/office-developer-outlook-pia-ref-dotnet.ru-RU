@@ -1,13 +1,5 @@
 <Type Name="_Rules" FullName="Microsoft.Office.Interop.Outlook._Rules">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e4a0275af7a8c6faf5c2868ab956b5cb5ba6a601" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640572" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Rules : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e4a0275af7a8c6faf5c2868ab956b5cb5ba6a601" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901713" /></Metadata><TypeSignature Language="C#" Value="public interface _Rules : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Rules implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Rules" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Rules&#xA;Implements IEnumerable" />
@@ -146,10 +138,9 @@
         <param name="RuleType">Константу в перечислении <b>OlRuleType</b> , который определяет, будет ли правило будет применяться для отправки или получения сообщения.</param>
         <summary>Создает <see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> объект с именем, указанным с <paramref name="Name" /> и типа правила, указанного идентификатором <paramref name="RuleType" />.</summary>
         <returns>Объект <b>правила</b> , представляющий только что созданное правило.</returns>
-        <remarks>
-          <para>
-            <paramref name="RuleType" /> Параметр добавленного правила определяет допустимый правила действия, условия правила и правило исключения ситуаций, в которых может быть связано с объектом <b>правила</b> .</para> При добавлении правила в коллекцию 
-          <para><see cref="P:Microsoft.Office.Interop.Outlook._Rule.ExecutionOrder" /> нового правила — 1. <b>ExecutionOrder</b> других правил в коллекцию увеличивается на 1.</para><para /></remarks>
+        <remarks><para><paramref name="RuleType" /> Параметр добавленного правила определяет допустимый правила действия, условия правила и правило исключения ситуаций, в которых может быть связано с объектом <b>правила</b> .</para>
+          <para>При добавлении правила в коллекцию <see cref="P:Microsoft.Office.Interop.Outlook._Rule.ExecutionOrder" /> нового правила — 1. <b>ExecutionOrder</b> других правил в коллекцию увеличивается на 1.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsRssRulesProcessingEnabled">
@@ -180,11 +171,9 @@
       <Docs>
         <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), которое указывает, включены ли RSS-канал правила обработки. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>После установки <b>IsRssRulesProcessingEnabled</b>, необходимо вызвать <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> для сохранения этого параметра. Это свойство сохраняется на уровне почтового ящика параметр, будут перемещаться с этим пользователем.  </para>
-          <para>Если <b>IsRssRulesProcessingEnabled</b> имеет <b>значение False</b>, то без указания условий о RSS-каналы вычисляется во время обработки правила.</para>
-          <para />
-        </remarks>
+        <remarks><para>После установки <b>IsRssRulesProcessingEnabled</b>, необходимо вызвать <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> для сохранения этого параметра. Это свойство сохраняется на уровне почтового ящика параметр, будут перемещаться с этим пользователем.  </para>
+          <para> Если <b>IsRssRulesProcessingEnabled</b> имеет <b>значение False</b>, без указания условий о RSS-каналы оценивается во время обработки правила.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -216,10 +205,8 @@
         <param name="Index">Либо на основе 1 <b>Integer</b> (<b>целое</b> в C#) значение значение, представляющее индекс коллекции <b>правил</b> , либо имя <b>String</b> (<b>строка</b> в C#), представляющее значение свойства по умолчанию правила, <see cref="P:Microsoft.Office.Interop.Outlook._Rule.Name" />.</param>
         <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> объектом, заданным с <paramref name="Index" />, который — это числовой индекс, в <see cref="T:Microsoft.Office.Interop.Outlook.Rules" /> семейства сайтов или имя правила.</summary>
         <value>Объект <b>правила</b> , соответствующего правилу, указанного идентификатором <paramref name="Index" />.</value>
-        <remarks>
-          <para>Возвращает ошибку, если правило не удается найти в коллекции.</para>
-          <para />
-        </remarks>
+        <remarks><para>Возвращает ошибку, если правило не удается найти в коллекции.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -247,10 +234,8 @@
       <Docs>
         <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Родительский объект правила — это <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекта.</para>
-          <para />
-        </remarks>
+        <remarks><para>Родительский объект правила — это <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекта.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -277,11 +262,9 @@
       </Parameters>
       <Docs>
         <param name="Index">Либо <b>целое число</b> (<b>int</b> в C#) значение, представляющее индекс коллекции <b>правил</b> , либо имя <b>String</b> (<b>строка</b> в C#), представляющее значение свойства по умолчанию правила, <see cref="P:Microsoft.Office.Interop.Outlook._Rule.Name" />.</param>
-        <summary>Удаляет из коллекции <b>правил</b><see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> объектом, заданным с <paramref name="Index" />, который — это числовой индекс, в <see cref="T:Microsoft.Office.Interop.Outlook.Rules" /> семейства сайтов или имя правила.</summary>
-        <remarks>
-          <para>Возвращает ошибку, если правило не удается найти в коллекции.</para>
-          <para />
-        </remarks>
+        <summary>Удаляет из коллекции <b>правил</b> <see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> объектом, заданным с <paramref name="Index" />, который — это числовой индекс, в <see cref="T:Microsoft.Office.Interop.Outlook.Rules" /> семейства сайтов или имя правила.</summary>
+        <remarks><para>Возвращает ошибку, если правило не удается найти в коллекции.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -306,17 +289,14 @@
         <Parameter Name="ShowProgress" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ShowProgress">
-          <b>Значение true,</b> чтобы открыть диалоговое окно хода выполнения, <b>значение False,</b> чтобы сохранить правила без отображения хода выполнения обновления.</param>
+        <param name="ShowProgress"><b>Значение true,</b> чтобы открыть диалоговое окно хода выполнения, <b>значение False,</b> чтобы сохранить правила без отображения хода выполнения обновления.</param>
         <summary>Сохраняет все правила в <see cref="T:Microsoft.Office.Interop.Outlook.Rules" /> семейства сайтов.</summary>
-        <remarks>
-          <para>После включения правила, необходимо также сохранить правило с помощью <b>Rules.Save</b> , чтобы правило и его состояние будут сохранены и отобразятся текущего сеанса.  Правило включено только после его успешно сохранен.</para>
+        <remarks><para>После включения правила, необходимо также сохранить правило с помощью <b>Rules.Save</b> , чтобы правило и его состояние будут сохранены и отобразятся текущего сеанса.  Правило доступна только после его успешно сохранен.</para>
           <para>
             <b>Rules.Save</b> может быть дорогим операции с точки зрения производительности при медленном подключении к серверу Exchange. Дополнительные сведения об использовании диалогового окна хода выполнения можно <a href="http://go.microsoft.com/fwlink/?LinkId=87863">Управление правилами в объектной модели Outlook</a></para>
-          <para>сохранения правила, которые несовместимы или неправильно иметь определенные действия или условия (такие как пустая строка для <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Text" />) возвращает ошибку .</para>
-          <para>Exchange server ограничивает максимальное число правил, которые могут поддерживаться в хранилище. <b>Rules.Save</b> возвращает сообщение об ошибке при достижении предела.</para>
-          <para />
-        </remarks>
+          <para>Сохранение правила, которые несовместимы или неправильно имеют определенные действия или условия (такие как пустая строка для <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Text" />) возвращает ошибку.</para>
+          <para>Exchange server ограничивает максимальное число правил, которые могут поддерживаться в хранилище. <b>Rules.Save</b> возвращает ошибку при достижении этого ограничения.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -344,16 +324,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="AddressLists" FullName="Microsoft.Office.Interop.Outlook.AddressLists">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="77b219efecfb4a307ee175bb9ac614ee2b62cef1" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640320" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AddressLists : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="82a19a36cf6ebc75f9dc27931f003230c7ac1d1b" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27897957" /></Metadata><TypeSignature Language="C#" Value="public interface AddressLists : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddressLists implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.AddressLists" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddressLists&#xA;Implements IEnumerable" />
@@ -31,10 +23,8 @@
   </Attributes>
   <Docs>
     <summary>Содержит набор <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> объектов.</summary>
-    <remarks>
-      <para>Коллекция <b>списки адресов</b> предоставляет доступ к корню иерархии адресной книги поставщика транспорта для текущего сеанса.</para>
-      <para />
-    </remarks>
+    <remarks><para>Коллекция <b>списки адресов</b> предоставляет доступ к корню иерархии адресной книги поставщика транспорта для текущего сеанса.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -206,16 +196,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

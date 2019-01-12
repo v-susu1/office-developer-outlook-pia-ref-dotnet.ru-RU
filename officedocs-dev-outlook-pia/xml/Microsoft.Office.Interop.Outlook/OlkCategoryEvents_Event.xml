@@ -1,13 +1,5 @@
 <Type Name="OlkCategoryEvents_Event" FullName="Microsoft.Office.Interop.Outlook.OlkCategoryEvents_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6b5bfb00aa9250de100ae933103dc32bfe1cf197" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640790" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OlkCategoryEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9969fef0204c00347d74f89eb2a59ae1eec65350" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27900831" /></Metadata><TypeSignature Language="C#" Value="public interface OlkCategoryEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OlkCategoryEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OlkCategoryEvents_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface OlkCategoryEvents_Event" />
@@ -144,10 +136,8 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит, когда пользователь нажимает клавишу.</summary>
-        <remarks>
-          <para>Состояние клавиш (SHIFT, CTRL или ALT), которые нажата во время события <b>KeyDown</b> доступен через <paramref name="Shift" /> параметр.</para>
-          <para />
-        </remarks>
+        <remarks><para>Состояние клавиш (SHIFT, CTRL или ALT), которые нажата во время события <b>KeyDown</b> доступен через <paramref name="Shift" /> параметр.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyPress">
@@ -166,25 +156,23 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит, когда пользователь нажимает клавишу с кодом ANSI.</summary>
-        <remarks>
-          <para>Клавиша ANSI —, которая возвращает typeable символ, когда пользователь нажимает ее. Событие <b>KeyPress</b> происходит, когда пользователь нажимает клавишу с кодом ANSI на выполнение формы в форме при или элемент управления имеет фокус. Событие может возникнуть до или после выпуска ключ.</para>
+        <remarks><para>Клавиша ANSI —, которая возвращает typeable символ, когда пользователь нажимает ее. Событие <b>KeyPress</b> происходит, когда пользователь нажимает клавишу с кодом ANSI на выполнение формы в форме при или элемент управления имеет фокус. Событие может возникнуть до или после выпуска ключ.</para>
           <para>Событие <b>KeyPress</b> не происходит при следующих условиях:</para>
           <list type="bullet">
             <item>
-              <para>При нажатии клавиши TAB</para>
+              <para>Нажатие клавиши TAB</para>
             </item>
             <item>
               <para>При нажатии клавиши ВВОД</para>
             </item>
             <item>
-              <para>клавиш со стрелкой</para>
+              <para>Нажатие клавиши со стрелкой</para>
             </item>
             <item>
-              <para>при нажатии клавиши фокус перемещается с одного элемента управления на другой.</para>
+              <para>если при нажатии клавиши фокус перемещается с одного элемента управления на другой.</para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyUp">
@@ -203,10 +191,8 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит, когда пользователь отпускает клавишу.</summary>
-        <remarks>
-          <para>Состояние клавиш (SHIFT, CTRL или ALT), которые нажата во время события <b>KeyUp</b> доступен через <paramref name="Shift" /> параметр.</para>
-          <para />
-        </remarks>
+        <remarks><para>Состояние клавиш (SHIFT, CTRL или ALT), которые нажата во время события <b>KeyUp</b> доступен через <paramref name="Shift" /> параметр.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseDown">
@@ -244,10 +230,8 @@
       </ReturnValue>
       <Docs>
         <summary>Возникает после регистрации движения мыши на элемент управления.</summary>
-        <remarks>
-          <para>Нажатие клавиши ALT запускает событие <b>MouseMove</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Нажатие клавиши ALT запускает событие <b>MouseMove</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseUp">

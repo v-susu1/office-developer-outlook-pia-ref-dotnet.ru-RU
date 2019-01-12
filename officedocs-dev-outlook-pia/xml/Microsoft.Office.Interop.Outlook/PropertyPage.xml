@@ -1,13 +1,5 @@
 <Type Name="PropertyPage" FullName="Microsoft.Office.Interop.Outlook.PropertyPage">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6dbed428a055e97eb67cfd333fb2c6bc9ce4824a" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640173" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PropertyPage" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="48f2f3f7d91d2193670d3d00ba2f1e1b6f744750" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27897600" /></Metadata><TypeSignature Language="C#" Value="public interface PropertyPage" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PropertyPage" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.PropertyPage" />
   <TypeSignature Language="VB.NET" Value="Public Interface PropertyPage" />
@@ -27,10 +19,12 @@
   </Attributes>
   <Docs>
     <summary>Представляет пользовательскую страницу свойств в диалоговом окне Параметры или в диалоговом окне Свойства папки.</summary>
-    <remarks>
-      <para>Outlook использует этот объект, позволяющие пользовательскую страницу свойств для взаимодействия с кнопкой "Применить" в диалоговом окне.</para> Объект 
-      <para><b>PropertyPage</b> — это абстрактный объект. То есть объект <b>PropertyPage</b> в библиотеку объектов Microsoft Outlook не содержит реализации кода. Вместо этого предоставляется в виде шаблона, чтобы помочь реализовывать объект в Microsoft Visual Basic. Это предоставляет набор интерфейсов, которые Outlook можно использовать для определения, изменился ли настраиваемое свойство страницы и для уведомления программа, что пользователь нажатия кнопки Применить или кнопку ОК. (Если страница настраиваемого свойства не зависит от кнопку Применить, а затем необходимо реализовать объект <b>PropertyPage</b> .)</para> Страница настраиваемого свойства 
-      <para>A является элементом управления ActiveX, который отображается в диалоговом окне Параметры или в диалоговом окне Свойства папки Outlook при нажатии кнопки на вкладку страница настраиваемого свойства. Для реализации объекта <b>PropertyPage</b> в Visual Basic .NET, модуль, который содержит код реализации должен содержать следующий оператор Implements.</para><code>Implements Outlook.PropertyPage</code><para>Модуль должен также содержать процедуры, которые реализуют свойства и методы объекта <b>PropertyPage</b> .</para><para /></remarks>
+    <remarks><para>Outlook использует этот объект, позволяющие пользовательскую страницу свойств для взаимодействия с кнопкой "Применить" в диалоговом окне.</para>
+      <para>Объект <b>PropertyPage</b> является абстрактного объекта. То есть объект <b>PropertyPage</b> в библиотеку объектов Microsoft Outlook не содержит реализации кода. Вместо этого предоставляется в виде шаблона, чтобы помочь реализовывать объект в Microsoft Visual Basic. Это предоставляет набор интерфейсов, которые Outlook можно использовать для определения, изменился ли настраиваемое свойство страницы и для уведомления программа, что пользователь нажатия кнопки Применить или кнопку ОК. (Если страница настраиваемого свойства не зависит от кнопку Применить, затем не необходимо реализовать объект <b>PropertyPage</b> .)</para>
+      <para>Страницы настраиваемое свойство является элементом управления ActiveX, который отображается в диалоговом окне Параметры или в диалоговом окне Свойства папки Outlook при нажатии кнопки на вкладку страница настраиваемого свойства. Для реализации объекта <b>PropertyPage</b> в Visual Basic .NET, модуль, который содержит код реализации должен содержать следующий оператор Implements.</para>
+      <code>Implements Outlook.PropertyPage</code>
+      <para>Модуль должен также содержать процедуры, которые реализуют свойства и методы объекта <b>PropertyPage</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Apply">
@@ -50,10 +44,8 @@
       <Parameters />
       <Docs>
         <summary>Применяет изменения, внесенные в настраиваемое свойство страницы.</summary>
-        <remarks>
-          <para>Так как <see cref="T:Microsoft.Office.Interop.Outlook.PropertyPage" /> — это абстрактного объекта, который является реализованы в приложении (, а не с Microsoft Outlook, самого), реализация из <b>Применить</b> метод имеет следующий вид: процедуру события в коде программы. То есть написание кода, реализующего метод точно так же, как можно написать процедуру события. Другими словами Outlook вызывает метод <b>Применить</b> для уведомления программы, которые пользователь выполнения действия в диалоговом окне "" Отображение настраиваемого свойства страницы, который требует программы для применения пользователь изменить значения свойств.</para>
-          <para />
-        </remarks>
+        <remarks><para>Так как <see cref="T:Microsoft.Office.Interop.Outlook.PropertyPage" /> — это абстрактного объекта, который является реализованы в приложении (, а не с Microsoft Outlook, самого), реализация из <b>Применить</b> метод имеет следующий вид: процедуру события в коде программы. То есть написание кода, реализующего метод точно так же, как можно написать процедуру события. Другими словами Outlook вызывает метод <b>Применить</b> для уведомления программы, которые пользователь выполнения действия в диалоговом окне "" Отображение настраиваемого свойства страницы, который требует программы для применения пользователь изменить значения свойств.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Dirty">

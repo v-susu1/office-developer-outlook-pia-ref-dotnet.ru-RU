@@ -1,13 +1,5 @@
 <Type Name="_SelectNamesDialog" FullName="Microsoft.Office.Interop.Outlook._SelectNamesDialog">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3da1cf3261b3db854a70c2e61d5f6fde1afb62c2" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639889" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _SelectNamesDialog" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3da1cf3261b3db854a70c2e61d5f6fde1afb62c2" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27900971" /></Metadata><TypeSignature Language="C#" Value="public interface _SelectNamesDialog" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _SelectNamesDialog" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._SelectNamesDialog" />
   <TypeSignature Language="VB.NET" Value="Public Interface _SelectNamesDialog" />
@@ -58,11 +50,9 @@
       <Docs>
         <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), определяющий, может ли выбрано более одной записи адресов во время в диалоговом окне Выбор имен. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Значение по умолчанию <b>AllowMultipleSelection</b> имеет <b>значение True</b>. Если <b>AllowMultipleSelection</b> имеет значение <b>True</b>, пользователь может выбрать несколько получателей с помощью клавиши CTRL или SHIFT. Если <b>AllowMultipleSelection</b> имеет значение <b>False</b>, отключено несколько фрагментов.   </para>
-          <para>Параметр <b>AllowMultipleSelection</b> значение <b>False</b> не гарантирует можно выбирать только одного получателя. Пользователь может ввести дополнительные получателей в поле ввода или выберите из списка получателей несколько раз. Чтобы убедиться, что только один получатель можно выбирать в диалоговом окне, значение <b>False</b> для <b>AllowMultipleSelect</b> и <see cref="P:Microsoft.Office.Interop.Outlook._SelectNamesDialog.NumberOfRecipientSelectors" /> для <b>olShowNone</b>. </para>
-          <para />
-        </remarks>
+        <remarks><para>Значение по умолчанию <b>AllowMultipleSelection</b> имеет <b>значение True</b>. Если <b>AllowMultipleSelection</b> имеет значение <b>True</b>, пользователь может выбрать несколько получателей с помощью клавиши CTRL или SHIFT. Если <b>AllowMultipleSelection</b> имеет значение <b>False</b>, отключено несколько фрагментов.   </para>
+          <para>Установка для <b>AllowMultipleSelection</b> <b>False</b> не гарантирует, что можно выбирать только одного получателя. Пользователь может ввести дополнительные получателей в поле ввода или выберите из списка получателей несколько раз. Чтобы убедиться, что только один получатель можно выбирать в диалоговом окне, значение <b>False</b> для <b>AllowMultipleSelect</b> и <see cref="P:Microsoft.Office.Interop.Outlook._SelectNamesDialog.NumberOfRecipientSelectors" /> для <b>olShowNone</b>. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -121,11 +111,9 @@
       <Docs>
         <summary>Возвращает или задает текст, отображаемый на кнопке «СК» в диалоговое окно Выбор имен <b>String</b> (<b>строка</b> в C#). Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Чтобы сочетание клавиш для поля ввода получателей, включить амперсанд (&amp;) знаков в строке аргумент метки перед знаком, который выступает в качестве ключа доступа. Например, если <b>BccLabel</b> — это строка «локальный &amp;участников», пользователи могут нажмите ALT + A для перемещения фокуса первое поле ввода получателей. </para>
-          <para>Если <b>BccLabel</b> не задано, то значение по умолчанию будет локализованные строки для «Скрытая копия». Если значение <b>BccLabel</b> пустая строка, а затем отображает кнопки команды скрытой копии -&gt;. Если свойство <b>BccLabel</b> содержит более 32 знаков (включая амперсанд (&amp;) ключом доступа), будет отображаться только первые 32 символа кнопки команды.</para>
-          <para />
-        </remarks>
+        <remarks><para>Чтобы сочетание клавиш для поля ввода получателей, включить амперсанд (&amp;) знаков в строке аргумент метки перед знаком, который выступает в качестве ключа доступа. Например, если <b>BccLabel</b> — это строка «локальный &amp;участников», пользователи могут нажмите ALT + A для перемещения фокуса первое поле ввода получателей. </para>
+          <para>Если <b>BccLabel</b> не задано, по умолчанию будет локализованные строки для «Скрытая копия». Если значение <b>BccLabel</b> пустая строка, а затем отображает кнопки команды скрытой копии -&gt;. Если свойство <b>BccLabel</b> содержит более 32 знаков (включая амперсанд (&amp;) ключом доступа), будет отображаться только первые 32 символа кнопки команды.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -156,11 +144,9 @@
       <Docs>
         <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет заголовок для диалогового окна Выбор имен. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Если <b>заголовок</b>не установлен, заголовок диалоговое окно будет Выбор имен или локализованный вариант. Если значение <b>заголовка</b> пустую строку, поле Заголовок диалогового окна будет пустая строка.</para>
+        <remarks><para>Если <b>заголовок</b>не установлен, заголовок диалоговое окно будет Выбор имен или локализованный вариант. Если значение <b>заголовка</b> пустую строку, поле Заголовок диалогового окна будет пустая строка.</para>
           <para>Установка <b>заголовка</b> для длинной строкой (например, 300 знаков) будет отображено caption усекать и не приведет к ширины диалоговое окно Выбор имен для изменения.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CcLabel">
@@ -191,11 +177,9 @@
       <Docs>
         <summary>Возвращает или задает текст, отображаемый на кнопке «копия» в диалоговое окно Выбор имен <b>String</b> (<b>строка</b> в C#). Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Чтобы сочетание клавиш для поля ввода получателей, включить амперсанд (&amp;) знаков в строке аргумент метки перед знаком, который выступает в качестве ключа доступа. Например, если <b>CcLabel</b> — это строка «локальный &amp;участников», пользователи могут нажмите ALT + A для перемещения фокуса первое поле ввода получателей. </para>
-          <para>Если <b>CcLabel</b> не задано, то значение по умолчанию будет локализованные строки для «Копия». Если значение <b>CcLabel</b> пустая строка, а затем отображает кнопки команды «копия» -&gt;. Если свойство <b>CcLabel</b> содержит более 32 знаков (включая амперсанд (&amp;) ключом доступа), будет отображаться только первые 32 символа кнопки команды.</para>
-          <para />
-        </remarks>
+        <remarks><para>Чтобы сочетание клавиш для поля ввода получателей, включить амперсанд (&amp;) знаков в строке аргумент метки перед знаком, который выступает в качестве ключа доступа. Например, если <b>CcLabel</b> — это строка «локальный &amp;участников», пользователи могут нажмите ALT + A для перемещения фокуса первое поле ввода получателей. </para>
+          <para>Если <b>CcLabel</b> не задано, по умолчанию будет локализованные строки для «Копия». Если значение <b>CcLabel</b> пустая строка, а затем отображает кнопки команды «копия» -&gt;. Если свойство <b>CcLabel</b> содержит более 32 знаков (включая амперсанд (&amp;) ключом доступа), будет отображаться только первые 32 символа кнопки команды.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -248,14 +232,11 @@
       <Parameters />
       <Docs>
         <summary>Отображает диалоговое окно Выбор имен.</summary>
-        <returns>
-          <b>Логическое</b> значение (<b>bool</b> в C#), который имеет <b>значение True</b> , если пользователь щелкнет кнопку ОК, а <b>значение False,</b> Если пользователь нажата кнопка Отмена или щелкнуть значок закрытия.</returns>
-        <remarks>
-          <para>При отображении диалогового окна Выбор имен, <b>отображаемое</b> с помощью предыдущей расположение и размер (указанный в параметре сверху, слева, ширину и высоту) диалогового окна.</para>
-          <para>Является модальным, что означает, что выполнение кода будет приостановить, пока пользователь не нажмет кнопку OK, Отмена или значок закрыть диалоговое окно Выбор имен.</para>
-          <para>Следует определить для ошибок, включая недостаточно памяти или другого сообщения или диалоговым окном open.</para>
-          <para />
-        </remarks>
+        <returns><b>Логическое</b> значение (<b>bool</b> в C#), который имеет <b>значение True</b> , если пользователь щелкнет кнопку ОК, а <b>значение False,</b> Если пользователь нажата кнопка Отмена или щелкнуть значок закрытия.</returns>
+        <remarks><para>При отображении диалогового окна Выбор имен, <b>отображаемое</b> использует предыдущей расположение и размер (указанный в параметре сверху, слева, ширину и высоту) диалогового окна.</para>
+          <para>Диалоговое окно Выбор имен является модальным, что означает, что выполнение кода будет приостановить, пока пользователь не нажмет кнопку OK, Отмена или щелкнуть значок закрытия.</para>
+          <para>Следует определить наличие ошибки, которые включают недостаточно памяти или другое окно сообщения или диалоговое окно Открыть.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ForceResolution">
@@ -286,12 +267,10 @@
       <Docs>
         <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), определяющий, если Outlook необходимо устранить всех получателей в объект, заданный параметром <see cref="P:Microsoft.Office.Interop.Outlook._SelectNamesDialog.Recipients" /> перед пользователь может нажать кнопку ОК, чтобы принять типизированных или выбранных получателей в диалоговом окне Выбор имен. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Значение по умолчанию — <b>True</b>. Если получатель не может быть разрешен, Outlook будет запрашивать пользователя для разрешения неоднозначных имен. Пользователь должен иметь всех получателей в поле ввода получателей, разрешить, прежде чем приступать к нажмите кнопку ОК.</para>
+        <remarks><para>Значение по умолчанию — <b>True</b>. Если получатель не может быть разрешен, Outlook будет запрашивать пользователя для разрешения неоднозначных имен. Пользователь должен иметь всех получателей в получателя изменение в поле Разрешить прежде чем приступать к нажмите кнопку ОК.</para>
           <para>
-            <b>ForceResolution</b> игнорируется, если пользователь нажимает кнопку Отмена или щелкнуть значок закрытия.</para>
-          <para />
-        </remarks>
+            <b>ForceResolution</b> игнорируется, если пользователь нажимает кнопку Отмена или щелкнуть значок закрытия. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InitialAddressList">
@@ -322,11 +301,9 @@
       <Docs>
         <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> объект, который определяет список начальный адрес для отображения в диалоговом окне Выбор имен. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>InitialAddressList</b> — это программный эквивалент для выбора <b>AddressList</b> из раскрывающегося списка для адресной книги в диалоговом окне Выбор имен.</para>
+        <remarks><para>Свойство <b>InitialAddressList</b> — это программный эквивалент для выбора <b>AddressList</b> из раскрывающегося списка для адресной книги в диалоговом окне Выбор имен.</para>
           <para>В состояние по умолчанию <b>InitialAddressList</b> — это <b>AddressList</b> со свойством <see cref="P:Microsoft.Office.Interop.Outlook.AddressList.IsInitialAddressList" /> присвоено <b>значение True</b>. <b>IsInitialAddressList</b> соответствует параметру отображать этот адрес список (первый) в диалоговом окне Addressing, который можно получить, последовательно выбрав пункты Сервис, а затем параметры в диалоговом окне "Адресная книга".  </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberOfRecipientSelectors">
@@ -357,12 +334,10 @@
       <Docs>
         <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlRecipientSelectors" /> константа, которая определяет количество получателей поля (каждого связанного с кнопкой команды) отображается в диалоговом окне Выбор имен. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Поле получателей ввода позволяет введите имена получателей. Каждое поле ввода получателей связан с кнопкой команды, в диалоговом окне Выбор имен; Примеры кнопку для получателей поле являются To и Cc командные кнопки. Значение по умолчанию <b>NumberOfRecipientSelectors</b> — это <b>OlRecipientSelectors.olToCcBcc</b>.</para>
-          <para>Если задать <b>NumberOfRecipientSelectors</b><b>OlRecipientSelectors.olShowTo</b> , а затем задайте текст для <see cref="P:Microsoft.Office.Interop.Outlook._SelectNamesDialog.CcLabel" /> или <see cref="P:Microsoft.Office.Interop.Outlook._SelectNamesDialog.BccLabel" />, <b>NumberOfRecipientSelectors</b> не изменятся.</para>
-          <para>Если значение <b>NumberOfRecipientSelectors</b><b>OlRecipientSelectors.olShowNone</b>, а затем <see cref="P:Microsoft.Office.Interop.Outlook._SelectNamesDialog.AllowMultipleSelection" /> свойство будет игнорироваться.</para>
-          <para />
-        </remarks>
+        <remarks><para>Поле получателей ввода позволяет введите имена получателей. Каждое поле ввода получателей связан с кнопкой команды, в диалоговом окне Выбор имен; Примеры кнопку для получателей поле являются To и Cc командные кнопки. Значение по умолчанию <b>NumberOfRecipientSelectors</b> — <b>OlRecipientSelectors.olToCcBcc</b>.</para>
+          <para>Если задать <b>NumberOfRecipientSelectors</b> <b>OlRecipientSelectors.olShowTo</b> , а затем задайте текст для <see cref="P:Microsoft.Office.Interop.Outlook._SelectNamesDialog.CcLabel" /> или <see cref="P:Microsoft.Office.Interop.Outlook._SelectNamesDialog.BccLabel" />, <b>NumberOfRecipientSelectors</b> не изменятся. </para>
+          <para>Если значение <b>NumberOfRecipientSelectors</b> <b>OlRecipientSelectors.olShowNone</b>, а затем <see cref="P:Microsoft.Office.Interop.Outlook._SelectNamesDialog.AllowMultipleSelection" /> свойство будет игнорироваться.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -421,12 +396,10 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> коллекцию, содержащую объект, который представляет получатели, выбранные в диалоговом окне Выбор имен, или задает <b>получателей</b> коллекцию, содержащую объект, который представляет начальной получателей для отображения в диалоговом окне Выбор имен. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство определяет <b>получателей</b> коллекцию, содержащую объект, который имеет <see cref="P:Microsoft.Office.Interop.Outlook.Recipients.Count" /> равно общее число получателей в поле Кому, копия и СК поля. </para>
-          <para>Если это свойство не задано перед открытием диалогового окна Выбор имен, а затем объект <b>Recipients</b> , представленного <b>SelectNamesDialog.Recipients</b> будут иметь <b>Recipients.Count</b> равно нулю.</para>
-          <para>Если пользователь не выберите имена, в диалоговом окне Выбор имен и нажимает кнопку ОК, <b>SelectNamesDialog.Recipients</b> возвращает объект коллекции <b>получателей</b> с <b>Recipients.Count</b> равно нулю.</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство определяет <b>получателей</b> коллекцию, содержащую объект, который имеет <see cref="P:Microsoft.Office.Interop.Outlook.Recipients.Count" /> равно общее число получателей в поле Кому, копия и СК поля. </para>
+          <para>Если это свойство не задано перед открытием диалогового окна Выбор имен, объект <b>Recipients</b> , представленного <b>SelectNamesDialog.Recipients</b> будут иметь <b>Recipients.Count</b> равно нулю.</para>
+          <para>Если пользователь не выберите имена, в диалоговом окне Выбор имен и нажимает кнопку ОК, <b>SelectNamesDialog.Recipients</b> вернет объект коллекции <b>получателей</b> с <b>Recipients.Count</b> равно нулю. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -454,16 +427,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetDefaultDisplayMode">
@@ -491,13 +462,11 @@
       <Docs>
         <param name="defaultMode">Константу в перечислении <b>OlDefaultSelectNamesDisplayMode</b> , определяющий меток caption и кнопка по умолчанию для диалогового окна Выбор имен.</param>
         <summary>Задает режим отображения по умолчанию для диалоговом окне Выбор имен его заголовок и кнопка метки.</summary>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>SetDefaultDisplayMode</b> не является обязательным. Если не вызывайте <b>SetDefaultDisplayMode</b> до вызова метода <see cref="M:Microsoft.Office.Interop.Outlook._SelectNamesDialog.Display" />, режим отображения по умолчанию будет <b>OlDefaultSelectNamesDisplayMode.olDefaultMail</b>. Чтобы задать режим отображения разные значения, следует вызвать <b>SetDefaultDisplayMode</b> перед вызовом метода <b>отображения</b> . </para>
-          <para>Это метод используется для отображения диалогового окна Выбор имен без использования файл ресурсов для локализации значения для заголовка метку кому Cc label и метка скрытой копии. Встроенное поведение можно переопределить, установив необходимые значения параметров для <see cref="P:Microsoft.Office.Interop.Outlook._SelectNamesDialog.Caption" />, <see cref="P:Microsoft.Office.Interop.Outlook._SelectNamesDialog.ToLabel" />, <see cref="P:Microsoft.Office.Interop.Outlook._SelectNamesDialog.CcLabel" />, и <see cref="P:Microsoft.Office.Interop.Outlook._SelectNamesDialog.BccLabel" />. </para>
-          <para>Можно задавать дополнительные свойства (например, установка <see cref="P:Microsoft.Office.Interop.Outlook._SelectNamesDialog.NumberOfRecipientSelectors" /> для <b>olRecipientSelectors.olToCc</b>) после вызова <b>SetDefaultDisplayMode</b>. Диалоговое окно Выбор имен будет наблюдать параметр последующих.</para>
-          <para />
-        </remarks>
+          <para>Этот метод позволяет отобразить диалоговое окно Выбор имен без использования файл ресурсов для локализации значения для заголовка, метки Кому, копия метки и метка скрытой копии. Встроенное поведение можно переопределить, установив необходимые значения параметров для <see cref="P:Microsoft.Office.Interop.Outlook._SelectNamesDialog.Caption" />, <see cref="P:Microsoft.Office.Interop.Outlook._SelectNamesDialog.ToLabel" />, <see cref="P:Microsoft.Office.Interop.Outlook._SelectNamesDialog.CcLabel" />, и <see cref="P:Microsoft.Office.Interop.Outlook._SelectNamesDialog.BccLabel" />. </para>
+          <para>Можно задавать дополнительные свойства (например, установка <see cref="P:Microsoft.Office.Interop.Outlook._SelectNamesDialog.NumberOfRecipientSelectors" /> для <b>olRecipientSelectors.olToCc</b>) после вызова <b>SetDefaultDisplayMode</b>. Диалоговое окно Выбор имен будет наблюдать последующих параметр.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowOnlyInitialAddressList">
@@ -528,11 +497,9 @@
       <Docs>
         <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), определяющий, если <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> представленный <see cref="P:Microsoft.Office.Interop.Outlook._SelectNamesDialog.InitialAddressList" /> доступна только <b>AddressList</b> в раскрывающемся списке для адресной книги в диалоговом окне Выбор имен. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Значение по умолчанию этого свойства — <b>значение False</b>, что означает, что отображаются все списки адресов. Чтобы ограничить раскрывающегося списка для адресной книги на тот, указанный в параметре <b>InitialAddressList</b>, задайте <b>ShowOnlyInitialAddressList</b> значение <b>True</b>. </para>
-          <para>, Если вы не установите для свойства <b>InitialAddressList</b> и задайте его <b>ShowOnlyInitialAddressList</b> значение <b>True</b>, затем <b>AddressList</b> с <see cref="P:Microsoft.Office.Interop.Outlook.AddressList.IsInitialAddressList" /> равно <b>True,</b> будет только список адресов, доступные в раскрывающийся список для адресной книги.</para>
-          <para />
-        </remarks>
+        <remarks><para>Значение по умолчанию этого свойства — <b>значение False</b>, что означает, что отображаются все списки адресов. Чтобы ограничить раскрывающегося списка для адресной книги на тот, указанный в параметре <b>InitialAddressList</b>, задайте <b>ShowOnlyInitialAddressList</b> значение <b>True</b>. </para>
+          <para>Если вы не установите для свойства <b>InitialAddressList</b> и задайте его <b>ShowOnlyInitialAddressList</b> значение <b>True</b>, затем <b>AddressList</b> с <see cref="P:Microsoft.Office.Interop.Outlook.AddressList.IsInitialAddressList" /> равно <b>True,</b> будет только список адресов, доступные в раскрывающемся списке для адресной книги.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ToLabel">
@@ -563,11 +530,9 @@
       <Docs>
         <summary>Возвращает или задает текст, отображаемый на кнопке кому в диалоговом окне Выбор имен <b>String</b> (<b>строка</b> в C#). Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Чтобы сочетание клавиш для поля ввода получателей, включить амперсанд (&amp;) знаков в строке аргумент метки перед знаком, который выступает в качестве ключа доступа. Например, если <b>ToLabel</b> — это строка «локальный &amp;участников», пользователи могут нажмите ALT + A для перемещения фокуса первое поле ввода получателей. </para>
+        <remarks><para>Чтобы сочетание клавиш для поля ввода получателей, включить амперсанд (&amp;) знаков в строке аргумент метки перед знаком, который выступает в качестве ключа доступа. Например, если <b>ToLabel</b> — это строка «локальный &amp;участников», пользователи могут нажмите ALT + A для перемещения фокуса первое поле ввода получателей. </para>
           <para>Если <b>ToLabel</b> не задано, по умолчанию будет локализованные строки для «Кому». Если значение <b>ToLabel</b> пустая строка, а затем отображает кнопки команды Кому -&gt;. Если свойство <b>ToLabel</b> содержит более 32 знаков (включая амперсанд (&amp;) ключом доступа), будет отображаться только первые 32 символа кнопки команды.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

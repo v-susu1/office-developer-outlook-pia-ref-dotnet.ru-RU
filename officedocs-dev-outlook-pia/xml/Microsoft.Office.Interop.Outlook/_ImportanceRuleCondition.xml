@@ -1,13 +1,5 @@
 <Type Name="_ImportanceRuleCondition" FullName="Microsoft.Office.Interop.Outlook._ImportanceRuleCondition">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a4e2921cacd16586e76fe3f153fd4f95ed2ff4a8" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20641062" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _ImportanceRuleCondition" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a4e2921cacd16586e76fe3f153fd4f95ed2ff4a8" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27898720" /></Metadata><TypeSignature Language="C#" Value="public interface _ImportanceRuleCondition" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _ImportanceRuleCondition" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._ImportanceRuleCondition" />
   <TypeSignature Language="VB.NET" Value="Public Interface _ImportanceRuleCondition" />
@@ -111,10 +103,8 @@
       <Docs>
         <summary>Возвращает константу, <b>olConditionImportance</b>из <see cref="T:Microsoft.Office.Interop.Outlook.OlRuleConditionType" /> перечисление, указывающее тип условия правила. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Условие правила имя формы поддерживается правил для приема сообщений и правила для отправки сообщений. Для получения дополнительных сведений см. <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Указание условия правила</a></para>
-          <para />
-        </remarks>
+        <remarks><para>Условие правила имя формы поддерживается правил для приема сообщений и правила для отправки сообщений. Для получения дополнительных сведений см. <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Указание условия правила</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -145,10 +135,8 @@
       <Docs>
         <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), который определяет, включена ли условие правила. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>После включения условие для правила необходимо сохранить правило с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> , чтобы условие правила и его состояние будут сохранены и отобразятся текущего сеанса.  Условие правила доступна только после его успешно сохранены.</para>
-          <para />
-        </remarks>
+        <remarks><para>После включения условие для правила необходимо сохранить правило с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> , чтобы условие правила и его состояние будут сохранены и отобразятся текущего сеанса.  Условие правила доступна только после его успешно сохранены. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Importance">
@@ -179,10 +167,8 @@
       <Docs>
         <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlImportance" /> константа, относительный уровень важности для сообщения. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует свойству MAPI <b>PidTagImportance</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagImportance</b>. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -210,10 +196,8 @@
       <Docs>
         <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Родительский объект является <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> объекта.</para>
-          <para />
-        </remarks>
+        <remarks><para>Родительский объект является <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> объекта.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -241,16 +225,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

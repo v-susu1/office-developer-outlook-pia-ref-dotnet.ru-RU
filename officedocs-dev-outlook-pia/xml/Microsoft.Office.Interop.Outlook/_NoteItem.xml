@@ -1,13 +1,5 @@
 <Type Name="_NoteItem" FullName="Microsoft.Office.Interop.Outlook._NoteItem">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6eb29a0ab255953d2c83cf99a81bdab3101a0cb6" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640549" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _NoteItem" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6eb29a0ab255953d2c83cf99a81bdab3101a0cb6" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27899028" /></Metadata><TypeSignature Language="C#" Value="public interface _NoteItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _NoteItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._NoteItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface _NoteItem" />
@@ -83,9 +75,9 @@
       <Docs>
         <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), который определяет, является ли элемент автоматического разрешения конфликтов по результатам. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Значение <b>False</b> не обязательно означает, что элемент является проигравший автоматического разрешения конфликтов. Элемент может быть конфликтует с другим элементом.</para> Если у элемента есть 
-          <para><see cref="P:Microsoft.Office.Interop.Outlook.Conflicts.Count" /> из его <see cref="P:Microsoft.Office.Interop.Outlook._NoteItem.Conflicts" /> свойство больше нуля и, если его свойство <b>AutoResolvedWinner</b> имеет <b>значение True</b>, автоматического разрешения конфликтов по результатам. С другой стороны, если элемент конфликтов и его свойство <b>AutoResolvedWinner</b> в <b>значение False</b>, это проигравших в автоматического разрешения конфликтов.</para><para /></remarks>
+        <remarks><para>Значение <b>False</b> не обязательно означает, что элемент является проигравший автоматического разрешения конфликтов. Элемент может быть конфликтует с другим элементом.</para>
+          <para>Если у элемента есть <see cref="P:Microsoft.Office.Interop.Outlook.Conflicts.Count" /> из его <see cref="P:Microsoft.Office.Interop.Outlook._NoteItem.Conflicts" /> свойство больше нуля и, если его свойство <b>AutoResolvedWinner</b> имеет <b>значение True</b>, автоматического разрешения конфликтов по результатам. С другой стороны Если элемент конфликтов и его свойство <b>AutoResolvedWinner</b> в <b>значение False</b>, это проигравших в автоматического разрешения конфликтов.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Body">
@@ -147,11 +139,9 @@
       <Docs>
         <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляющее категории, назначенные элемента Outlook. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>Категории</b> — это строка с разделителями имен категорий, назначенных для элемента Outlook. Это свойство используется символа, указанного в имени sList в разделе Panel\International HKEY_CURRENT_USER\Control в реестре Windows в качестве разделителя для нескольких значений категории. Чтобы преобразовать строку имен категорий массив имен категорий, используйте функцию Microsoft Visual Basic <b>разделения</b>.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -326,10 +316,8 @@
       <Docs>
         <summary>Возвращает <b>даты и времени</b> , которое указывает время создания элемента Outlook. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует свойству MAPI <b>PidTagCreationTime</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagCreationTime</b>. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -354,9 +342,9 @@
       <Parameters />
       <Docs>
         <summary>Удаляет элемент из папки, содержащей элемент.</summary>
-        <remarks>
-          <para>Метод <b>Delete</b> удаляет одного элемента в коллекции. Чтобы удалить все элементы в <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> коллекцию папки, необходимо удалить каждого элемента, начиная с последнего элемента в папке. К примеру, в коллекции элементов папки AllItems, при n число элементов в папке, запуска удаления элемент по AllItems.Item(n), уменьшение индекс каждый раз, пока не будет удален AllItems.Item(1).</para> Метод 
-          <para>Удаление Перемещение элемента в папке, в которой для папки «Удаленные». Если содержащей папки папки «Удаленные», метод <b>Delete</b> удаляет элемент без возможности восстановления.</para><para /></remarks>
+        <remarks><para>Метод <b>Delete</b> удаляет одного элемента в коллекции. Чтобы удалить все элементы в <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> коллекцию папки, необходимо удалить каждого элемента, начиная с последнего элемента в папке. К примеру в коллекции элементов папки AllItems, при n число элементов в папке, запуска удаления элемент по AllItems.Item(n), уменьшение индекс каждый раз, пока не будет удален AllItems.Item(1).</para>
+          <para>Метод Delete Перемещение элемента в папке, в которой для папки «Удаленные». Если содержащей папки папки «Удаленные», метод <b>Delete</b> удаляет элемент без возможности восстановления.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -381,14 +369,11 @@
         <Parameter Name="Modal" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Modal">
-          <b>Значение true,</b> чтобы сделать модальные окна. Значение по умолчанию — <b>False</b>.</param>
+        <param name="Modal"><b>Значение true,</b> чтобы сделать модальные окна. Значение по умолчанию — <b>False</b>.</param>
         <summary>Отображает новый <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объект для элемента.</summary>
-        <remarks>
-          <para>Метод <b>отображения</b> поддерживается для windows explorer и инспектора для обратной совместимости. Чтобы активировать окна проводника или инспектора, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.Activate" /> метод.</para>
-          <para>При попытке открыть объект «небезопасные» файловой системы (или файл «freedoc») с помощью объектной модели Microsoft Outlook, вы получаете код возврата E_FAIL на языках C или C++ программирования. В Outlook 2000 и более ранних версий, то пользователь может открыть объект системы «небезопасных» файлов с помощью метода <b>отображения</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Метод <b>отображения</b> поддерживается для windows explorer и инспектора для обратной совместимости. Чтобы активировать окна проводника или инспектора, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.Activate" /> метод.</para>
+          <para>При попытке открыть объект «небезопасные» файловой системы (или файл «freedoc») с помощью объектной модели Microsoft Outlook, вы получаете код возврата E_FAIL на языках C или C++ программирования. В Outlook 2000 и более ранних версий то пользователь может открыть объекта системы «небезопасных» файлов с помощью метода <b>отображения</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DownloadState">
@@ -444,9 +429,9 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее уникальный идентификатор записи объекта.  Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует свойству MAPI <b>PidTagEntryId</b>.</para> Поставщик хранения 
-          <para>MAPI назначает строка уникального идентификатора при создании элемента в хранилище. Таким образом свойство <b>EntryID</b> не задан для элемента Outlook до отправки или сохранения. Идентификатор записи изменений при перемещении элемента в другом хранилище, например, из папки "Входящие" в общую папку Microsoft Exchange Server или из одного файла личных папок (PST) другой PST-файл. Решения не должны зависеть от <b>EntryID</b> свойство должно быть уникальным, пока не будут перемещаться элементов. Свойство <b>EntryID</b> возвращает MAPI долгосрочного идентификатором записи. Для получения дополнительных сведений о long - и short - term EntryIDs, http://msdn.microsoft.com для <b>PidTagEntryId</b>. </para><para /></remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagEntryId</b>.</para>
+          <para>Поставщик хранилища MAPI назначает строка уникального идентификатора при создании элемента в хранилище. Таким образом свойство <b>EntryID</b> не задан для элемента Outlook до отправки или сохранения. Идентификатор записи изменений при перемещении элемента в другом хранилище, например, из папки "Входящие" в общую папку Microsoft Exchange Server или из одного файла личных папок (PST) другой PST-файл. Решения не должны зависеть от <b>EntryID</b> свойство должно быть уникальным, пока не будут перемещаться элементов. Свойство <b>EntryID</b> возвращает MAPI долгосрочного идентификатором записи. Для получения дополнительных сведений о long - и short - term EntryIDs, http://msdn.microsoft.com для <b>PidTagEntryId</b>. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetInspector">
@@ -474,10 +459,8 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> инициализируется объект, представляющий инспектора наличия указанного элемента. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство можно использовать для возвращения новый объект <b>инспектора</b> для отображения элемента, а не с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Application.ActiveInspector" /> метод и параметр <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.CurrentItem" /> свойство. Если объект <b>инспектора</b> уже существует для элемента, свойство <b>GetInspector</b> возвращает объект <b>инспектора</b> вместо создания новой.</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство можно использовать для возвращения новый объект <b>инспектора</b> для отображения элемента, а не с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Application.ActiveInspector" /> метод и параметр <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.CurrentItem" /> свойство. Если объект <b>инспектора</b> уже существует для элемента, свойство <b>GetInspector</b> возвращает объект <b>инспектора</b> вместо создания новой.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -536,11 +519,9 @@
       <Docs>
         <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), который определяет, является ли элемент конфликта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Того, является ли данный элемент находится в конфликте определяется состояния приложения. Например если пользователь находится в автономном режиме и пытается получить доступ к сетевой папке действие завершится с ошибкой. В этом случае свойство <b>IsConflict</b> возвращает <b>значение True</b>.</para>
-          <para>Если <b>значение True</b>, указанный элемент находится в конфликт.</para>
-          <para />
-        </remarks>
+        <remarks><para>Того, является ли данный элемент находится в конфликте определяется состояния приложения. Например если пользователь находится в автономном режиме и пытается получить доступ к сетевой папке действие завершится с ошибкой. В этом случае свойство <b>IsConflict</b> возвращает <b>значение True</b>.</para>
+          <para>Если <b>значение True</b>, указанный элемент находится в конфликта.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemProperties">
@@ -568,11 +549,8 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ItemProperties" /> коллекции, представляющей все стандартные и пользовательские свойства элемента Outlook. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Набор свойств элементов</b> является с отсчетом от нуля семейства сайтов, что означает, что первый объект в коллекции ссылается индекса 0.</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Набор свойств элементов</b> является с отсчетом от нуля семейства сайтов, что означает, что первый объект в коллекции ссылается индекса 0.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LastModificationTime">
@@ -600,10 +578,8 @@
       <Docs>
         <summary>Возвращает <b>DateTime</b> , определяющее дату и время последнего изменения элемента Outlook.  Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует свойству MAPI <b>PidTagLastModificationTime</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagLastModificationTime</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -696,10 +672,8 @@
       <Docs>
         <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlRemoteStatus" /> константа, которая определяет состояние элемента после получения удаленный пользователь. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство позволяет удаленным пользователям с менее чем идеально подходит передачи данных возможности обмена мгновенными сообщениями большая гибкость.</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство позволяет удаленным пользователям с менее чем идеально подходит передачи данных возможности обмена мгновенными сообщениями большая гибкость.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageClass">
@@ -730,10 +704,8 @@
       <Docs>
         <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляет класс сообщения для элемента Outlook. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует свойству MAPI <b>PidTagMessageClass</b>. Свойство <b>MessageClass</b> элемента ссылки на формы, на котором она основана. При выборе элемента Outlook использует класс сообщения для размещения формы и предоставление доступа к его свойства, такие как команды ответ.</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagMessageClass</b>. Свойство <b>MessageClass</b> элемента ссылки на формы, на котором она основана. При выборе элемента Outlook использует класс сообщения для размещения формы и предоставление доступа к его свойства, такие как команды ответ. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Move">
@@ -895,12 +867,10 @@
       </Parameters>
       <Docs>
         <param name="Path">Путь для сохранения элемента.</param>
-        <param name="Type">Тип файла для сохранения. Может иметь одно из следующих констант <b>OlSaveAsType</b> : <b>olHTML</b>, <b>olMSG</b>, <b>olRTF</b>, <b>olTemplate</b>, <b>olDoc</b>,<b>olTXT</b>, <b>olVCal</b>, <b>olVCard</b><b>olICal</b>, или <b>olMSGUnicode</b>.</param>
+        <param name="Type">Тип файла для сохранения. Может иметь одно из следующих констант <b>OlSaveAsType</b> : <b>olHTML</b>, <b>olMSG</b>, <b>olRTF</b>, <b>olTemplate</b>, <b>olDoc</b>,<b>olTXT</b>, <b>olVCal</b>, <b>olVCard</b> <b>olICal</b>, или <b>olMSGUnicode</b>.</param>
         <summary>Сохраняет элемент Microsoft Outlook, указанному пути и в формате тип указанного файла. Если тип файла не указан, используется формат сообщений (MSG-файл).</summary>
-        <remarks>
-          <para>Также Обратите внимание, что несмотря на то, что <b>olDoc</b> — допустимый константа <b>OlSaveAsType</b> , сообщения в формате HTML не может быть сохранен в формате документа и константу <b>olDoc</b> работает только в том случае, если Microsoft Word настроен как редактор электронной почты по умолчанию.</para>
-          <para />
-        </remarks>
+        <remarks><para>Также Обратите внимание, что несмотря на то, что <b>olDoc</b> — допустимый константа <b>OlSaveAsType</b> , сообщения в формате HTML не может быть сохранен в формате документа и константу <b>olDoc</b> работает только в том случае, если Microsoft Word настроен как редактор электронной почты по умолчанию.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Saved">
@@ -956,16 +926,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -1021,11 +989,9 @@
       <Docs>
         <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#), указывающее, тема для элемента Outlook. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>Subject</b> — это <b>String</b> (<b>строка</b> в C#), рассчитывается основной текст заметки.</para>
+        <remarks><para>Свойство <b>Subject</b> — это <b>String</b> (<b>строка</b> в C#), рассчитывается основной текст заметки.</para>
           <para>Это свойство соответствует свойству MAPI <b>PidTagSubject</b>. Свойство <b>Subject</b> является свойством по умолчанию для элементов Outlook. </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">

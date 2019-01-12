@@ -1,13 +1,5 @@
 <Type Name="_Conversation" FullName="Microsoft.Office.Interop.Outlook._Conversation">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2f5c48eeaf35740be2ed40d2f2a41eb42b099ab3" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639990" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Conversation" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2f5c48eeaf35740be2ed40d2f2a41eb42b099ab3" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27902035" /></Metadata><TypeSignature Language="C#" Value="public interface _Conversation" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Conversation" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Conversation" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Conversation" />
@@ -110,12 +102,10 @@
       <Docs>
         <param name="Store">A <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> необходимо удалить объект, представляющий хранилище из категорий элементов, относящихся к беседе.</param>
         <summary>Удаляет все категории из всех элементов в окне беседы и останавливает действие постоянное назначение категорий элементам в беседе.</summary>
-        <remarks>
-          <para>Если указанный хранилище <paramref name="Store" /> параметр представляет хранилища недоставке например хранилище .pst архива, действие удаления категории будет применяться к элементам беседы в хранилище доставки, по умолчанию. </para>
-          <para>После применения метода <b>ClearAlwaysAssignCategories</b> на беседы, <see cref="M:Microsoft.Office.Interop.Outlook._Conversation.GetAlwaysAssignCategories(Microsoft.Office.Interop.Outlook.Store)" /> метод возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#) для данной беседы. Категории на существующие элементы удаляются и категории не назначены новые элементы в беседе.</para>
+        <remarks><para>Если указанный хранилище <paramref name="Store" /> параметр представляет хранилища недоставке например хранилище .pst архива, действие удаления категории будет применяться к элементам беседы в хранилище доставки, по умолчанию. </para>
+          <para>После применения метода <b>ClearAlwaysAssignCategories</b> на беседы, <see cref="M:Microsoft.Office.Interop.Outlook._Conversation.GetAlwaysAssignCategories(Microsoft.Office.Interop.Outlook.Store)" /> метод возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#) для данной беседы. Категории на существующие элементы удаляются, а не категории назначаются новые элементы в беседе.</para>
           <para>Если <see cref="M:Microsoft.Office.Interop.Outlook._Conversation.SetAlwaysAssignCategories(System.String,Microsoft.Office.Interop.Outlook.Store)" /> метод не была применена к беседе, <b>ClearAlwaysAssignCategories</b> не удаляет все категории.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConversationID">
@@ -143,11 +133,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:System.String" /> (<b>строка</b> в C#), который уникальным образом определяет <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует со свойством MAPI <b>PidTagConversationId</b>.</para>
+        <remarks><para>Это свойство соответствует со свойством MAPI <b>PidTagConversationId</b>.</para>
           <para>Это свойство связывает элементов с беседы. Эти элементы и беседу с таким же значением в своем свойстве <b>ConversationID</b> .</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAlwaysAssignCategories">
@@ -175,13 +163,11 @@
         <param name="Store">A <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объект, представляющий хранилище для категорий элементов, принадлежащих к беседе должны быть возвращены.</param>
         <summary>Возвращает <see cref="T:System.String" /> (<b>строка</b> в C#), который указывает одну или несколько категорий, которые были им назначены все новые элементы, поступающие в беседу.</summary>
         <returns>A <see cref="T:System.String" /> (<b>строка</b> в C#), содержащий одну или несколько категорий, назначенных для элементов в окне беседы.</returns>
-        <remarks>
-          <para>Несколько категорий разделенных запятыми в строку имен категорий, данное свойство возвращает. Чтобы преобразовать строку имен категорий массив имен категорий, используйте функцию Microsoft Visual Basic <b>Split</b> .</para>
-          <para>Если хранилище, заданный параметром <paramref name="Store" /> параметр представляет хранилища недоставке например хранилище .pst архива, метод возвращает строку из категорий, которые применяются к элементам беседы в хранилище доставки, по умолчанию.</para>
+        <remarks><para>Несколько категорий разделенных запятыми в строку имен категорий, данное свойство возвращает. Чтобы преобразовать строку имен категорий массив имен категорий, используйте функцию Microsoft Visual Basic <b>разделения</b> .</para>
+          <para>Если указанный хранилище <paramref name="Store" /> параметр представляет хранилища недоставке например хранилище .pst архива, метод возвращает строку из категорий, которые применяются к элементам беседы в хранилище доставки, по умолчанию.</para>
           <para>Если <see cref="M:Microsoft.Office.Interop.Outlook._Conversation.SetAlwaysAssignCategories(System.String,Microsoft.Office.Interop.Outlook.Store)" /> метод не была применена к беседе, <b>GetAlwaysAssignCategories</b> возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
-          <para>Остановить действие постоянное назначение категорий, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Conversation.ClearAlwaysAssignCategories(Microsoft.Office.Interop.Outlook.Store)" /> метод. После вызова метода <b>ClearAlwaysAssignCategories</b><b>GetAlwaysAssignCategories</b> возвращает пустую строку.</para>
-          <para />
-        </remarks>
+          <para>Чтобы остановить действие постоянное назначение категорий, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Conversation.ClearAlwaysAssignCategories(Microsoft.Office.Interop.Outlook.Store)" /> метод. После вызова метода <b>ClearAlwaysAssignCategories</b> <b>GetAlwaysAssignCategories</b> возвращает пустую строку.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAlwaysDelete">
@@ -209,14 +195,11 @@
         <param name="Store">A <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объект, представляющий хранилище, в котором содержатся папки «Удаленные», на который перемещаются элементам беседы.</param>
         <summary>Возвращает константу в <see cref="T:Microsoft.Office.Interop.Outlook.OlAlwaysDeleteConversation" /> перечисление, указывающее, будет ли для папки «Удаленные» в заданном хранилище доставки всегда перемещаются все новые элементы, присоединиться к беседе.</summary>
         <returns>Константа из перечисления <b>OlAlwaysDeleteConversation</b> , которое указывает, будет ли для папки "Удаленные" заданном хранилище доставки всегда перемещаются все новые элементы беседы.</returns>
-        <remarks>
-          <para>Если <paramref name="Store" /> параметр указывает хранилища недоставке например хранилище .pst архива, метод <b>GetAlwaysDelete</b> возвращает константу из <b>OlAlwaysDeleteConversation</b> , которая применяется к элементам беседы в хранилище доставки, по умолчанию. Элементы в хранилище доставки не перемещается в папки «Удаленные» для хранилища доставки по умолчанию.</para>
-          <para>Если <b>GetAlwaysDelete</b> возвращает <b>olAlwaysDelete</b>, элементам беседы всегда перемещаются в папку «Удаленные» для хранилища, содержащего элементы. Во время беседы кросс хранилища элементы перемещаются папки "Удаленные" для хранилища, содержащего элементы. При возврате <b>GetAlwaysDelete</b><b>olAlwaysDelete</b><see cref="M:Microsoft.Office.Interop.Outlook._Conversation.GetAlwaysMoveToFolder(Microsoft.Office.Interop.Outlook.Store)" /> возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий папки «Удаленные» для хранения по умолчанию.</para>
+        <remarks><para>Если <paramref name="Store" /> параметр указывает хранилища недоставке например хранилище .pst архива, метод <b>GetAlwaysDelete</b> возвращает константу из <b>OlAlwaysDeleteConversation</b> , которая применяется к элементам беседы в хранилище доставки, по умолчанию. Элементов в хранилище доставки не перемещается в папку «Удаленные» для хранилища доставки по умолчанию.</para>
+          <para>Если <b>GetAlwaysDelete</b> возвращает <b>olAlwaysDelete</b>, элементам беседы всегда перемещаются в папку «Удаленные» для хранилища, содержащего элементы. Во время беседы кросс хранилища элементы перемещаются папки "Удаленные" для хранилища, содержащего элементы. При возврате <b>GetAlwaysDelete</b> <b>olAlwaysDelete</b> <see cref="M:Microsoft.Office.Interop.Outlook._Conversation.GetAlwaysMoveToFolder(Microsoft.Office.Interop.Outlook.Store)" /> возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий папки «Удаленные» для хранения по умолчанию.</para>
           <para>Если <b>GetAlwaysDelete</b> возвращает <b>olAlwaysDeleteUnsupported</b>, заданного хранилища не поддерживает действие постоянного перемещения элементов для папки "Удаленные" этого хранилища.</para>
-          <para>
-            <b>GetAlwaysDelete</b> возвращает <b>olDoNotDelete</b>, новые элементы, поступающие в беседу не перемещаются в папку «Удаленные» на заданном хранилище доставки и перемещаются существующих элементов беседы в папке «Удаленные» папки «Входящие».</para>
-          <para />
-        </remarks>
+          <para>Если <b>GetAlwaysDelete</b> возвращает <b>olDoNotDelete</b>, новые элементы, поступающие в беседу не перемещаются в папку «Удаленные» на заданном хранилище доставки и существующих элементов беседы в папке «Удаленные» перемещаются в папке "Входящие".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAlwaysMoveToFolder">
@@ -244,11 +227,9 @@
         <param name="Store">A <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объект, представляющий хранилища, где находится папка, какую беседу, перемещение элементов.</param>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объекта, которое указывает, папки, в заданном хранилище доставки на который всегда перемещаются новые элементы, поступающие в беседу.</summary>
         <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.MAPIFolder" /> объект в указанном хранилище, в который всегда перемещаются все новые элементы, поступающие в беседу.</returns>
-        <remarks>
-          <para>Если <paramref name="Store" /> параметр представляет хранилища недоставке например хранилище .pst архива, метод <b>GetAlwaysMoveToFolder</b> возвращает объект <b>Folder</b> , которая применяется к элементам беседы на хранилище доставки по умолчанию.</para>
-          <para>Если указала сканируются все папки, кроме папки «Удаленные» всегда перемещение элементов беседы в метод <b>GetAlwaysMoveToFolder</b> возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
-          <para />
-        </remarks>
+        <remarks><para>Если <paramref name="Store" /> параметр представляет хранилища недоставке например хранилище .pst архива, метод <b>GetAlwaysMoveToFolder</b> возвращает объект <b>Folder</b> , которая применяется к элементам беседы на хранилище доставки по умолчанию.</para>
+          <para>Если для перемещения элементов беседы в всегда не задано сканируются все папки, кроме папки «Удаленные», метод <b>GetAlwaysMoveToFolder</b> возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetChildren">
@@ -277,11 +258,9 @@
         <param name="Item">To be added.</param>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.SimpleItems" /> коллекция, которая содержит все элементы под узлом указанного беседы.</summary>
         <returns>Коллекция <b>SimpleItems</b> , который представляет набор дочерних элементов в окне беседы в разделе к узлу, указанному с <paramref name="Item" /> параметр.</returns>
-        <remarks>
-          <para>Содержит непосредственные дочерние элементы узла беседы, возвращенной коллекции <b>SimpleItems</b><paramref name="Item" /> параметр. Если указанный узел не существует в окне беседы, метод <b>GetChildren</b> возвращает ошибку.</para>
+        <remarks><para>Содержит непосредственные дочерние элементы узла беседы, возвращенной коллекции <b>SimpleItems</b> <paramref name="Item" /> параметр. Если указанный узел не существует в окне беседы, метод <b>GetChildren</b> возвращает ошибку.</para>
           <para>Если нет дочерних элементов существует, в узле, метод <b>GetChildren</b> возвращает коллекцию <b>SimpleItems</b> без объектов, в противном случае <see cref="P:Microsoft.Office.Interop.Outlook._SimpleItems.Count" /> свойство коллекции <b>SimpleItems</b> возвращает значение 0.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetParent">
@@ -309,13 +288,10 @@
       <Docs>
         <param name="Item">Узел беседы, который является частью беседы.</param>
         <summary>Возвращает родительский элемент указанного узла в окне беседы.</summary>
-        <returns>
-          <see cref="T:System.Object" /> (<b>Объект</b> в C#), который представляет элемент беседы родительского узла, указанного идентификатором <paramref name="Item" /> параметр.</returns>
-        <remarks>
-          <para>Если указанный узел <paramref name="Item" /> параметра не существует в окне беседы, метод <b>GetParent</b> возвращает ошибку.</para>
+        <returns><see cref="T:System.Object" /> (<b>Объект</b> в C#), который представляет элемент беседы родительского узла, указанного идентификатором <paramref name="Item" /> параметр.</returns>
+        <remarks><para>Если указанный узел <paramref name="Item" /> параметра не существует в окне беседы, метод <b>GetParent</b> возвращает ошибку.</para>
           <para>Если указанный узел <paramref name="Item" /> параметр не имеет родительского элемента в окне беседы, метод <b>GetParent</b> возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRootItems">
@@ -341,7 +317,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.SimpleItems" /> коллекция, которая содержит все элементы корневого в окне беседы.</summary>
         <returns>Коллекция <b>SimpleItems</b> , которая включает в себя все элементы корневого беседы или корневого элемента.</returns>
-        <remarks>Беседы A <para>может иметь один или несколько элементов корневого. Например, если корневой элемент беседы содержит три дочерние элементы и корневой элемент удаляется без возможности восстановления, все три дочерние элементы становятся элементов корневого.</para><para>, Если все элементы удаляются из беседы после получения объекта <b>T:Microsoft.Office.Interop.Outlook.Conversation</b> , <b>GetRootItems</b> возвращает коллекцию <b>SimpleItems</b> без объектов. В этом случае <see cref="P:Microsoft.Office.Interop.Outlook._SimpleItems.Count" /> свойство коллекции <b>SimpleItems</b> возвращает значение 0.</para><para /></remarks>
+        <remarks><para>Беседы может иметь один или несколько элементов корневого. Например если корневой элемент беседы содержит три дочерние элементы и корневой элемент удаляется без возможности восстановления, все три дочерние элементы становятся корневых элементов.</para>
+          <para>Если все элементы удаляются из беседы после получения объекта <b>T:Microsoft.Office.Interop.Outlook.Conversation</b> , <b>GetRootItems</b> возвращает коллекцию <b>SimpleItems</b> без объектов. В этом случае <see cref="P:Microsoft.Office.Interop.Outlook._SimpleItems.Count" /> свойство коллекции <b>SimpleItems</b> возвращает значение 0.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTable">
@@ -367,20 +345,18 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> объект, который содержит строки, представляющие все элементы в беседе.</summary>
         <returns>Объект <b>таблицы</b> , которая содержит строки, представляющие все элементы в беседе.</returns>
-        <remarks>
-          <para>
-            <b>Функция GetTable</b> метод возвращает <b>таблицы</b> , которая содержит все элементы беседе как строки. По умолчанию наборы столбцов, показано в следующей таблице. </para>
+        <remarks><para><b>Функция GetTable</b> метод возвращает <b>таблицы</b> , которая содержит все элементы беседе как строки. По умолчанию наборы столбцов, показано в следующей таблице. </para>
           <list type="table">
             <item>
               <description>1</description>
               <description>
-                <b>EntryID</b>
+                <b>Идентификатор записи</b>
               </description>
             </item>
             <item>
               <description>2</description>
               <description>
-                <b>темы</b>
+                <b>Тема</b>
               </description>
             </item>
             <item>
@@ -402,11 +378,10 @@
               </description>
             </item>
           </list>
-          <para>По умолчанию, строки в таблице сортируются по свойству <b>ConversationIndex</b> элементы.</para>
-          <para>Для изменения набор столбцов по умолчанию, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Add(System.String)" />, <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Remove(System.Object)" />, или <see cref="M:Microsoft.Office.Interop.Outlook._Columns.RemoveAll" /> методы <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> семейства.</para>
+          <para>По умолчанию строки в таблице сортируются по свойству <b>ConversationIndex</b> элементы.</para>
+          <para>Чтобы изменить набор столбцов по умолчанию, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Add(System.String)" />, <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Remove(System.Object)" />, или <see cref="M:Microsoft.Office.Interop.Outlook._Columns.RemoveAll" /> методы <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> семейства сайтов. </para>
           <para>Объект <b>таблицы</b> , возвращаемые данным методом <b>Функция GetTable</b> не содержит элементов в беседе, были перемещены в папку «Удаленные».</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MarkAsRead">
@@ -484,11 +459,9 @@
       <Docs>
         <summary>Возвращает родительский <see cref="T:System.Object" /> (<b>объект</b> в C#) указанного <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Родительский объект <b>Conversation</b> — это первый элемент в окне беседы.</para>
+        <remarks><para>Родительский объект <b>Conversation</b> — это первый элемент в окне беседы.</para>
           <para>Если после получения объекта <b>беседы</b> удалены все элементы в окне беседы, свойство <b>Parent</b> возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -516,8 +489,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Данное свойство возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если нет сеанса, находящегося в.</para> Можно использовать свойство <b>сеанса</b><para>и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод поочередно, чтобы получить объект <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. </para><para /></remarks>
+        <remarks><para>Данное свойство возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если нет сеанса, вошедшего в систему.</para>
+          <para>Можно использовать свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод поочередно, чтобы получить объект <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetAlwaysAssignCategories">
@@ -544,18 +518,16 @@
       </Parameters>
       <Docs>
         <param name="Categories">Разделители запятые <see cref="T:System.String" /> (<b>строка</b> в C#) один или несколько имен категорий, назначенных всегда ко всем элементам в беседе.</param>
-        <param name="Store">
-          <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> Элементов беседы должна всегда быть назначена категорий, указанного идентификатором <paramref name="Categories" /> параметр.</param>
+        <param name="Store"><see cref="T:Microsoft.Office.Interop.Outlook.Store" /> Элементов беседы должна всегда быть назначена категорий, указанного идентификатором <paramref name="Categories" /> параметр.</param>
         <summary>Применяет одну или несколько категорий ко всем существующим и будущим элементам беседы.</summary>
-        <remarks>
-          <para>Если указанный хранилище <paramref name="Store" /> параметр представляет хранилища недоставке например хранилище .pst архива, метод возвращает строку из категорий, которые применяются к элементам беседы в хранилище доставки, по умолчанию.</para>
-          <para>
-            <see cref="E:Microsoft.Office.Interop.Outlook.ItemsEvents_Event.ItemChange" /> Событие <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> объекта возникает при вызове метода <b>SetAlwaysAssignCategories</b> беседы.</para>
-          <para>, Чтобы определить существующие главной категории для текущего пользователя, и проверьте <see cref="P:Microsoft.Office.Interop.Outlook._Store.Categories" /> свойство объекта <b>хранилища</b> , который указан с <paramref name="Store" /> параметр. Если один или несколько категорий, заданный параметром <paramref name="Categories" /> параметра не существует в коллекции главных категорий, категорий будет назначен в беседу, но не будет добавлен к коллекции главных категорий.</para>
-          <para>Для определения существующей категории, назначенные всегда элементов беседы в указанном хранилище, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Conversation.GetAlwaysAssignCategories(Microsoft.Office.Interop.Outlook.Store)" /> метод.</para>
-          <para>, Если <b>SetAlwaysAssignCategories</b> вызывается более одного раза, результатом будет накопительный пакет. Например если вызвать <b>SetAlwaysAssignCategories</b> указание категории «Важно» и затем вызвать <b>SetAlwaysAssignCategories</b> еще раз указание категории «Business» и «Социальные», являются категории, для которых всегда» Важные», «Рабочий» и «Социальные».</para>
-          <para>Остановить действие постоянное назначение категорий, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Conversation.ClearAlwaysAssignCategories(Microsoft.Office.Interop.Outlook.Store)" /> метод. После вызова метода <b>ClearAlwaysAssignCategories</b><b>GetAlwaysAssignCategories</b> возвращает пустую <b>строку</b> (<b>string</b> в C#).</para> Метод 
-          <para><b>SetAlwaysAssignToCategories</b> игнорирует любые имена категорий, которые являются пустые строки. Например если <paramref name="Categories" /> параметру присвоено значение строки «Work,, воспроизвести», «Work» и «Воспроизвести» назначаются в беседу и учитывается пустая строка категории.</para><para /></remarks>
+        <remarks><para>Если указанный хранилище <paramref name="Store" /> параметр представляет хранилища недоставке например хранилище .pst архива, метод возвращает строку из категорий, которые применяются к элементам беседы в хранилище доставки, по умолчанию.</para>
+          <para><see cref="E:Microsoft.Office.Interop.Outlook.ItemsEvents_Event.ItemChange" /> Событие <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> объекта возникает при вызове метода <b>SetAlwaysAssignCategories</b> беседы.</para>
+          <para>Чтобы определить существующие главной категории для текущего пользователя, проверьте <see cref="P:Microsoft.Office.Interop.Outlook._Store.Categories" /> свойство объекта <b>хранилища</b> , который указан с <paramref name="Store" /> параметр. Если один или несколько категорий, заданный параметром <paramref name="Categories" /> параметра не существует в коллекции главных категорий, категорий будет назначен в беседу, но не будет добавлен к коллекции главных категорий.</para>
+          <para>Чтобы определить существующие категории, назначенные всегда элементов беседы в указанном хранилище, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Conversation.GetAlwaysAssignCategories(Microsoft.Office.Interop.Outlook.Store)" /> метод.</para>
+          <para>Если <b>SetAlwaysAssignCategories</b> вызван более одного раза, результатом будет накопительный пакет. Например если вызвать <b>SetAlwaysAssignCategories</b> указание категории «Важно» и затем вызвать <b>SetAlwaysAssignCategories</b> еще раз указание категории «Business» и «Социальные», являются категории, для которых всегда» Важные», «Рабочий» и «Социальные».</para>
+          <para>Чтобы остановить действие постоянное назначение категорий, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Conversation.ClearAlwaysAssignCategories(Microsoft.Office.Interop.Outlook.Store)" /> метод. После вызова метода <b>ClearAlwaysAssignCategories</b> <b>GetAlwaysAssignCategories</b> возвращает пустую <b>строку</b> (<b>string</b> в C#).</para>
+          <para>Метод <b>SetAlwaysAssignToCategories</b> игнорирует любые имена категорий, которые являются пустые строки. Например если <paramref name="Categories" /> параметру присвоено значение строки «Work,, воспроизвести», «Work» и «Воспроизвести» назначаются в беседу и учитывается пустая строка категории.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetAlwaysDelete">
@@ -581,14 +553,13 @@
         <Parameter Name="Store" Type="Microsoft.Office.Interop.Outlook.Store" />
       </Parameters>
       <Docs>
-        <param name="AlwaysDelete">
-          <see cref="T:Microsoft.Office.Interop.Outlook.OlAlwaysDeleteConversation" /> Константа, которое указывает, будет ли все существующие и новые элементы, поступающие в беседу всегда перемещаются в папку удаленных хранилища, указанного идентификатором <paramref name="Store" /> параметр.</param>
+        <param name="AlwaysDelete"><see cref="T:Microsoft.Office.Interop.Outlook.OlAlwaysDeleteConversation" /> Константа, которое указывает, будет ли все существующие и новые элементы, поступающие в беседу всегда перемещаются в папку удаленных хранилища, указанного идентификатором <paramref name="Store" /> параметр.</param>
         <param name="Store">A <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объект, представляющий хранилище, которое содержит папки «Удаленные», на который должны быть перемещены существующих и новых элементов беседы.</param>
         <summary>Задает параметр в заданном хранилище доставки, которое указывает, будет ли все существующие и все новые элементы, поступающие в беседу всегда перемещаются в папку удаленных элементов в заданном хранилище доставки.</summary>
-        <remarks>
-          <para>Метод <b>SetAlwaysDelete</b> работает на элементов беседы в хранилище доставки, указанного идентификатором <paramref name="Store" /> параметр. Если указанный хранилище <paramref name="Store" /> параметр представляет хранилища недоставке например хранилище .pst архива, действие применяется к элементам беседы в хранилище доставки, по умолчанию.</para>
-          <para>Если <paramref name="AlwaysDelete" /> параметр — <b>olAlwaysDelete</b>, элементов беседы для заданного хранилища перемещаются в папку «Удаленные». В этом случае элементы, не удаляются, если пользователь указал отдельный параметр, чтобы окончательно удалить элементы при завершении работы Microsoft Outlook.</para> Если <b>SetAlwaysDelete</b> возвращает <b>olDoNotDelete</b>, существующих элементов беседы и новые элементы, поступающие в беседу, не перемещено в папку «Удаленные» в заданном хранилище доставки и в окне беседы элементов в удаленные 
-          <para> Элементы папки перемещаются в папке "Входящие".</para><para /></remarks>
+        <remarks><para>Метод <b>SetAlwaysDelete</b> работает на элементов беседы в хранилище доставки, указанного идентификатором <paramref name="Store" /> параметр. Если указанный хранилище <paramref name="Store" /> параметр представляет хранилища недоставке например хранилище .pst архива, действие применяется к элементам беседы в хранилище доставки, по умолчанию.</para>
+          <para>Если <paramref name="AlwaysDelete" /> параметр — <b>olAlwaysDelete</b>, элементов беседы для заданного хранилища перемещаются в папку «Удаленные». В этом случае элементы не удаляются без возможности восстановления, если пользователь указал отдельный параметр, чтобы окончательно удалить элементы при завершении работы Microsoft Outlook.</para>
+          <para>Если <b>SetAlwaysDelete</b> возвращает <b>olDoNotDelete</b>, существующих элементов беседы и новые элементы, поступающие в беседу, не перемещено в папку «Удаленные» в заданном хранилище доставки и в окне беседы элементов в удаленные Элементы папки перемещаются в папке "Входящие".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetAlwaysMoveToFolder">
@@ -617,16 +588,13 @@
         <param name="MoveToFolder">Папка, в которой все существующие элементы и новые элементы, поступающие в беседу всегда перемещаются.</param>
         <param name="Store">A <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объект, представляющий хранилище, содержащем папку, в котором перемещаются элементам беседы.</param>
         <summary>Наборы <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, который указывает папку, в которой все существующие элементы беседы и новые элементы, поступающие в беседу всегда перемещаются.</summary>
-        <remarks>
-          <para>Метод <b>SetAlwaysMoveToFolder</b> работает на элементов беседы в хранилище доставки, указанного идентификатором <paramref name="Store" /> параметр. Если <paramref name="Store" /> параметр представляет хранилища недоставке например хранилище .pst архива, действие перемещения будут применяться к элементам беседы в хранилище доставки, по умолчанию.</para>
-          <para>Если <paramref name="MoveToFolder" /> параметр указывает недопустимый папки, который не существует, был перемещен или доступен только для чтения, Outlook вызовет ошибку.</para>
+        <remarks><para>Метод <b>SetAlwaysMoveToFolder</b> работает на элементов беседы в хранилище доставки, указанного идентификатором <paramref name="Store" /> параметр. Если <paramref name="Store" /> параметр представляет хранилища недоставке например хранилище .pst архива, действие перемещения будут применяться к элементам беседы в хранилище доставки, по умолчанию.</para>
+          <para>Если <paramref name="MoveToFolder" /> параметр указывает недопустимый папки, который не существует, был перемещен или доступен только для чтения, Outlook вызовет ошибку. </para>
           <para>Чтобы остановить действие всегда move папки для элементов беседы в хранилище, вызовите <see cref="M:Microsoft.Office.Interop.Outlook._Conversation.StopAlwaysMoveToFolder(Microsoft.Office.Interop.Outlook.Store)" /> метод</para>
           <para>
             <b>Примечание</b>: Настройка папки «Удаленные» как <paramref name="MoveToFolder" /> параметр в <b>SetAlwaysMoveToFolder</b> не эквивалентен вызову <see cref="M:Microsoft.Office.Interop.Outlook._Conversation.SetAlwaysDelete(Microsoft.Office.Interop.Outlook.OlAlwaysDeleteConversation,Microsoft.Office.Interop.Outlook.Store)" /> от одного хранилища и беседы. Установка <paramref name="MoveToFolder" /> параметр для папки "Удаленные" приводит к <see cref="M:Microsoft.Office.Interop.Outlook._Conversation.GetAlwaysDelete(Microsoft.Office.Interop.Outlook.Store)" /> метод, возвращающий значение <b>olDoNotDelete</b>.</para>
-          <para>
-            <see cref="E:Microsoft.Office.Interop.Outlook.MAPIFolderEvents_12_Event.BeforeItemMove" /> События объекта <b>Folder</b> происходит при вызове <b>SetAlwaysMoveToFolder</b>.</para>
-          <para />
-        </remarks>
+          <para><see cref="E:Microsoft.Office.Interop.Outlook.MAPIFolderEvents_12_Event.BeforeItemMove" /> При вызове <b>SetAlwaysMoveToFolder</b>происходит событие объекта <b>Folder</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StopAlwaysDelete">
@@ -653,14 +621,12 @@
       <Docs>
         <param name="Store">A <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объект, представляющий хранилища, к которому применяется действие stop всегда delete.</param>
         <summary>Останавливает действие постоянного перемещения элементов беседу в указанном хранилище для папки "Удаленные" этого хранилища.</summary>
-        <remarks>
-          <para>Если действие всегда delete не был включен (путем вызова <see cref="M:Microsoft.Office.Interop.Outlook._Conversation.SetAlwaysDelete(Microsoft.Office.Interop.Outlook.OlAlwaysDeleteConversation,Microsoft.Office.Interop.Outlook.Store)" /> метод), <b>StopAlwaysDelete</b> не имеет никакого эффекта.</para>
-          <para>Включения всегда удаление <b>StopAlwaysDelete</b> перемещения существующих элементов беседы в папки "Удаленные" в папке "Входящие".</para>
+        <remarks><para>Если действие всегда delete не был включен (путем вызова <see cref="M:Microsoft.Office.Interop.Outlook._Conversation.SetAlwaysDelete(Microsoft.Office.Interop.Outlook.OlAlwaysDeleteConversation,Microsoft.Office.Interop.Outlook.Store)" /> метод), <b>StopAlwaysDelete</b> не выполняет никаких действий.</para>
+          <para>Если включено всегда удаление <b>StopAlwaysDelete</b> перемещает существующих элементов беседы в папке «удаленные» папки «Входящие».</para>
           <para>После вызова метода <b>StopAlwaysDelete</b> для беседы в хранилище, вызов <see cref="M:Microsoft.Office.Interop.Outlook._Conversation.GetAlwaysDelete(Microsoft.Office.Interop.Outlook.Store)" /> метод на этой беседы и хранилище возвращает константу <b>olDoNotDelete</b>.</para>
-          <para>Если хранилище, заданный параметром <paramref name="Store" /> параметр представляет хранилища недоставке например хранилище .pst архива, stop всегда удаление применяется к элементам беседы в хранилище доставки, по умолчанию.</para>
+          <para>Если указанный хранилище <paramref name="Store" /> параметр представляет хранилища недоставке например хранилище .pst архива, stop всегда удаление применяется к элементам беседы в хранилище доставки, по умолчанию.</para>
           <para>Возвращает ошибку, вызывая этот метод беседы, уже папки «Удаленные» в указанном хранилище.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StopAlwaysMoveToFolder">
@@ -687,12 +653,10 @@
       <Docs>
         <param name="Store">A <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объект, представляющий хранилища, где размещаются элементов беседы, чтобы очистить.</param>
         <summary>Останавливает действие постоянного перемещения элементов беседу в указанном хранилище в указанную папку.</summary>
-        <remarks>
-          <para>Если действие всегда перемещения не был включен, <b>StopAlwaysMoveToFolder</b> не имеет никакого эффекта.</para>
+        <remarks><para>Если действие всегда перемещения не был включен, <b>StopAlwaysMoveToFolder</b> не имеет никакого эффекта.</para>
           <para>Если <paramref name="Store" /> параметр представляет хранилища недоставке например хранилище .pst архива, действие stop всегда перемещения будут применять к элементам беседы в хранилище доставки, по умолчанию.</para>
           <para>После вызова метода <b>StopAlwaysMoveToFolder</b> вызов <see cref="M:Microsoft.Office.Interop.Outlook._Conversation.GetAlwaysMoveToFolder(Microsoft.Office.Interop.Outlook.Store)" /> метод возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

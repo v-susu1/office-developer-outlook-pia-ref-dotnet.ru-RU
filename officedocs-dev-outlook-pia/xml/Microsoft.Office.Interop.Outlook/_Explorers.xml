@@ -1,13 +1,5 @@
 <Type Name="_Explorers" FullName="Microsoft.Office.Interop.Outlook._Explorers">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="efcf514c6497c472befc921ae5df2f373d72013e" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640068" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Explorers : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="efcf514c6497c472befc921ae5df2f373d72013e" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27897467" /></Metadata><TypeSignature Language="C#" Value="public interface _Explorers : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Explorers implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Explorers" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Explorers&#xA;Implements IEnumerable" />
@@ -60,12 +52,10 @@
         <param name="Folder">Объект для отображения в окне проводника при его создании.</param>
         <param name="DisplayMode">Режим отображения папки. Может иметь одно из <see cref="T:Microsoft.Office.Interop.Outlook.OlFolderDisplayMode" /> константы.</param>
         <summary>Создает новый экземпляр объекта окно проводника.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> Объект, представляющий новый экземпляр объекта окна.</returns>
-        <remarks>
-          <para>
-            <paramref name="Folder" /> Аргумент может представлять либо <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект или URL-адрес для этой папки.</para> Окно 
-          <para>explorer изначально скрыто. Необходимо вызвать <see cref="M:Microsoft.Office.Interop.Outlook._Explorer.Display" /> метод объекта <b>Explorer</b> , чтобы сделать видимой.</para><para /></remarks>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> Объект, представляющий новый экземпляр объекта окна.</returns>
+        <remarks><para><paramref name="Folder" /> Аргумент может представлять либо <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект или URL-адрес для этой папки.</para>
+          <para>Окно проводника изначально скрытым. Необходимо вызвать <see cref="M:Microsoft.Office.Interop.Outlook._Explorer.Display" /> метод объекта <b>Explorer</b> , чтобы сделать видимой.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -237,16 +227,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

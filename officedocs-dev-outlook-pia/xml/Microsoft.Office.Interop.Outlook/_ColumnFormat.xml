@@ -1,13 +1,5 @@
 <Type Name="_ColumnFormat" FullName="Microsoft.Office.Interop.Outlook._ColumnFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ca93c66781144247e55eb34c6eb88cc1c2f08496" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20641044" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _ColumnFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ca93c66781144247e55eb34c6eb88cc1c2f08496" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901797" /></Metadata><TypeSignature Language="C#" Value="public interface _ColumnFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _ColumnFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._ColumnFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface _ColumnFormat" />
@@ -58,10 +50,8 @@
       <Docs>
         <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlAlign" /> константа, которая указывает Выравнивание названия столбцов для свойства, к которому <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> связан объект. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Значение этого свойства игнорируются для свойств, в которых названия столбцов отображается как значок.</para>
-          <para />
-        </remarks>
+        <remarks><para>Значение этого свойства игнорируются для свойств, в которых названия столбцов отображается как значок.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -148,12 +138,11 @@
       <Docs>
         <summary>Возвращает или задает значение <b>Integer</b> (<b>int</b> в C#), который представляет формат отображения свойства, к которому <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> связан объект. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Значение этого свойства — это константа из перечисления, где, зависит от значения перечисления <see cref="P:Microsoft.Office.Interop.Outlook._ColumnFormat.FieldType" /> свойства для объекта <b>ColumnFormat</b> :</para>
+        <remarks><para>Значение этого свойства — это константа из перечисления, где, зависит от значения перечисления <see cref="P:Microsoft.Office.Interop.Outlook._ColumnFormat.FieldType" /> свойства для объекта <b>ColumnFormat</b> :</para>
           <list type="table">
             <item>
-              <description>FieldType значение</description>
-              <description>перечисления FieldFormat</description>
+              <description>Значение FieldType</description>
+              <description>Перечисление FieldFormat</description>
             </item>
             <item>
               <description>
@@ -235,16 +224,17 @@
                 <see cref="T:Microsoft.Office.Interop.Outlook.OlFormatEnumeration" />
               </description>
             </item>
-            <description>
-              <b>olSmartFrom</b>
-            </description>
-            <description>
-              <see cref="T:Microsoft.Office.Interop.Outlook.OlFormatSmartFrom" />
-            </description>
+            <item>
+              <description>
+                <b>olSmartFrom</b>
+              </description>
+              <description>
+                <see cref="T:Microsoft.Office.Interop.Outlook.OlFormatSmartFrom" />
+              </description>
+            </item>
           </list>
-          <para>для типы полей, не указанные в приведенной выше таблице, значение этого свойства игнорируется.</para>
-          <para />
-        </remarks>
+          <para>Для типов полей, не указанные в приведенной выше таблице значение этого свойства игнорируется.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FieldType">
@@ -303,11 +293,9 @@
       <Docs>
         <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет заголовок столбца и подсказка, отображаемая для свойства, к которому <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> связан объект. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Для встроенных свойств Outlook, значение по умолчанию для этого свойства — локализованное имя свойства. Для настраиваемого свойства Outlook, значение по умолчанию для этого свойства — это имя свойства.</para>
+        <remarks><para>Для встроенных свойств Outlook значение по умолчанию для этого свойства — локализованное имя свойства. Для настраиваемого свойства Outlook значение по умолчанию для этого свойства — это имя свойства.</para>
           <para>Значение этого свойства применим только к всплывающей подсказки для свойства Outlook, в которых заголовок столбца представлены в виде значка.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -363,16 +351,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -403,11 +389,9 @@
       <Docs>
         <summary>Возвращает или задает <b>Integer</b> (<b>целое</b> в C#) значение, указывающее приблизительно, например ширина столбца (в знаках). Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Этого свойства может быть присвоено значение в диапазоне от 2 до 1024. Если это свойство задано значение меньше 2, свойство имеет значение 2. Если значение этого свойства больше 1024, свойству 1024.</para>
-          <para>Если значение этого свойства для каждого столбца в представлении меньше, чем общая ширина представления, а затем свойства <b>Width</b><see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> объект для последнего <see cref="T:Microsoft.Office.Interop.Outlook.ViewField" /> в представлении увеличиваются в соответствии с общая ширина представления.</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство можно задать значение в диапазоне от 2 до 1024. Если это свойство задано значение меньше 2, свойство имеет значение 2. Если значение этого свойства больше 1024, свойство имеет значение на 1024.</para>
+          <para>Если значение этого свойства для каждого столбца в представлении меньше, чем общая ширина представления, а затем свойства <b>Width</b> <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> объект для последнего <see cref="T:Microsoft.Office.Interop.Outlook.ViewField" /> в представлении увеличиваются в соответствии с общая ширина представления.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="_FromRssFeedRuleCondition" FullName="Microsoft.Office.Interop.Outlook._FromRssFeedRuleCondition">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5456d3a993ab54560ea591aa3a07476cccd977c7" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639863" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _FromRssFeedRuleCondition" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5456d3a993ab54560ea591aa3a07476cccd977c7" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27898902" /></Metadata><TypeSignature Language="C#" Value="public interface _FromRssFeedRuleCondition" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _FromRssFeedRuleCondition" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._FromRssFeedRuleCondition" />
   <TypeSignature Language="VB.NET" Value="Public Interface _FromRssFeedRuleCondition" />
@@ -111,10 +103,8 @@
       <Docs>
         <summary>Возвращает константу, <b>olConditionFromRssFeed</b>из <see cref="T:Microsoft.Office.Interop.Outlook.OlRuleConditionType" /> перечисление, указывающее тип условия правила. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это условие правила поддерживается правил для получения сообщений. Для получения дополнительных сведений см. <a href="http://go.microsoft.com/fwlink/?LinkID=87803">Указание условия правила</a></para>
-          <para />
-        </remarks>
+        <remarks><para>Это условие правила поддерживается правил для получения сообщений. Для получения дополнительных сведений см. <a href="http://go.microsoft.com/fwlink/?LinkID=87803">Указание условия правила</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -145,10 +135,8 @@
       <Docs>
         <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), который определяет, включена ли условие правила. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>После включения условие для правила необходимо сохранить правило с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> , чтобы условие правила и его состояние будут сохранены и отобразятся текущего сеанса. Условие правила включена только после его успешно сохранен.</para>
-          <para />
-        </remarks>
+        <remarks><para>После включения условие для правила необходимо сохранить правило с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> , чтобы условие правила и его состояние будут сохранены и отобразятся текущего сеанса. Условие правила включена только после его успешно сохранен.   </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FromRssFeed">
@@ -179,12 +167,10 @@
       <Docs>
         <summary>Возвращает или задает массив элементов <b>String</b> (<b>строка</b> в C#), которые представляют подписок RSS-канал, которые вычисляются с условие правила. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Каждый элемент массива является одной подписки на RSS-канал. Несколько подписок на RSS-канал оцениваются как логических условий или.</para>
-          <para>Не удается получить список допустимых имен подписки на RSS-канал через объектную модель Outlook. Список допустимых имен подписки на RSS-канал можно получить из XML-файла Outlook.Sharing.xml.obi, который находится в папке [диск] \Documents and Settings\[имя_пользователя] \Local Settings\Application Data\Microsoft\Outlook\. имя атрибут &lt;локального&gt; тега содержит имя подписки на RSS-канал, который должен быть введен в массив строк, для <b>FromRssFeed</b>. Чтобы перечислить все подписки на RSS-канал, проверьте &lt;привязки&gt; тега where &lt;подтверждение надежности привязки = «{0006F0AF-0000-0000-C000-000000000046}»&gt;. </para>
-          <para>Возвращает ошибку, если один или несколько элементов в массиве содержит пустую строку или недопустимый подписки на RSS-канал.</para>
-          <para />
-        </remarks>
+        <remarks><para>Каждый элемент массива является одной подписки на RSS-канал. Несколько подписок на RSS-канал оцениваются как логических условий или.</para>
+          <para> Не удается получить список допустимых имен подписки на RSS-канал через объектную модель Outlook. Список допустимых имен подписки на RSS-канал можно получить из XML-файла Outlook.Sharing.xml.obi, который находится в папке [диск] \Documents and Settings\[имя_пользователя] \Local Settings\Application Data\Microsoft\Outlook\. Имя атрибута &lt;локального&gt; тега содержит имя подписки на RSS-канал, который должен быть введен в массив строк, для <b>FromRssFeed</b>. Чтобы перечислить все подписки на RSS-канал, проверьте &lt;привязки&gt; тега where &lt;подтверждение надежности привязки = «{0006F0AF-0000-0000-C000-000000000046}»&gt;. </para>
+          <para>Возвращает ошибку, если один или несколько элементов в массиве содержит недопустимый подписки на RSS-канал или пустая строка.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -212,10 +198,8 @@
       <Docs>
         <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Родительский объект является <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> объекта.</para>
-          <para />
-        </remarks>
+        <remarks><para>Родительский объект является <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> объекта.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -243,16 +227,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

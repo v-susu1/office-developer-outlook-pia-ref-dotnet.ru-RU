@@ -1,13 +1,5 @@
 <Type Name="OlkControl" FullName="Microsoft.Office.Interop.Outlook.OlkControl">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5775f16b4f47ab029314c22c5ef7bfb307c13e1f" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639741" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OlkControl" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5939b00a41bad44f31458db50a6e9149c2069729" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901888" /></Metadata><TypeSignature Language="C#" Value="public interface OlkControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OlkControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OlkControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface OlkControl" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Определяет набор общих свойств элемента управления некоторые элементы управления Microsoft Outlook.</summary>
-    <remarks>
-      <para>Члены, предоставляемые <b>OlkControl</b> можно применять к элементы управления Outlook.  <b>OlkControl</b> предоставляет класс, к которому можно легко создавать привести элемент управления Outlook не прибегая к отражения. Несмотря на то, что <b>OlkControl</b> не применяется к элементам управления Microsoft Forms 2.0, аналогичные свойства доступны для элементов управления Microsoft Forms 2.0. Дополнительные сведения можно <a href="http://go.microsoft.com/fwlink/?LinkID=87937">OL98: Дополнительные управления свойства доступны для программирования</a></para>
-      <para />
-    </remarks>
+    <remarks><para>Члены, предоставляемые <b>OlkControl</b> можно применять к элементы управления Outlook.  <b>OlkControl</b> предоставляет класс, к которому можно легко создавать привести элемент управления Outlook не прибегая к отражения. Несмотря на то, что <b>OlkControl</b> не применяется к элементам управления Microsoft Forms 2.0, аналогичные свойства доступны для элементов управления Microsoft Forms 2.0. Дополнительные сведения можно <a href="http://go.microsoft.com/fwlink/?LinkID=87937">OL98: Дополнительные управления свойства доступны для программирования</a></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ControlProperty">
@@ -92,10 +82,8 @@
       <Docs>
         <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), который позволяет автоматической Коррекция макета для элемента управления по отношению к остальной части формы. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Автоматическую настройку макета элемента управления включают горизонтальную или вертикальную выравнивание элемента управления относительно других элементов управления и изменения размера высоту или ширину элемента управления по отношению к длину или ширину формы.</para>
-          <para />
-        </remarks>
+        <remarks><para>Автоматическую настройку макета элемента управления включают горизонтальную или вертикальную выравнивание элемента управления относительно других элементов управления и изменения размера высоту или ширину элемента управления по отношению к длину или ширину формы.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -126,9 +114,9 @@
       <Docs>
         <summary>Возвращает или задает значение типа <b>Integer</b> (<b>целое</b> в C#), указывающее, как значение для отображения в элементе управления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>Format</b> может быть константа перечисления, описывающая способ отображения значения. К примеру, можно указать <b>Формат</b> как константу <b>olFormatCurrencyDecimal</b> , определенный в <see cref="T:Microsoft.Office.Interop.Outlook.OlFormatCurrency" /> перечисления для отображения денежной суммы в <see cref="T:Microsoft.Office.Interop.Outlook.OlkTextBox" /> управления.</para> Свойство 
-          <para><b>Формат</b> специально для свойства в объектной модели Outlook, к которому привязан элемент управления. Последний обозначается <see cref="P:Microsoft.Office.Interop.Outlook.OlkControl.ItemProperty" />. Если элемент управления не привязан к любое свойство, а затем возвращает ошибку, доступ к <b>Формат</b> .</para><para /></remarks>
+        <remarks><para>Свойство <b>Format</b> может быть константа перечисления, описывающая способ отображения значения. К примеру, можно указать <b>Формат</b> как константу <b>olFormatCurrencyDecimal</b> , определенный в <see cref="T:Microsoft.Office.Interop.Outlook.OlFormatCurrency" /> перечисления для отображения денежной суммы в <see cref="T:Microsoft.Office.Interop.Outlook.OlkTextBox" /> элемента управления.</para>
+          <para>Свойство <b>Format</b> специально для свойства в объектной модели Outlook, к которому привязан элемент управления. Последний обозначается <see cref="P:Microsoft.Office.Interop.Outlook.OlkControl.ItemProperty" />. Если элемент управления не привязан к любое свойство, затем доступ к <b>Формат</b> возвращает ошибку.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalLayout">
@@ -221,11 +209,9 @@
       <Docs>
         <summary>Возвращает или задает <b>Integer</b> (<b>int</b> в C#) значение, указывающее минимальную высоту, элемент управления может автоматически размера вниз по. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="P:Microsoft.Office.Interop.Outlook.OlkControl.EnableAutoLayout" />должен иметь значение <b>True,</b> чтобы <b>MinimumLength</b> , чтобы вступили в силу.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimumWidth">
@@ -256,11 +242,9 @@
       <Docs>
         <summary>Возвращает или задает <b>Integer</b> (<b>int</b> в C#) значение, задающее минимальное ширину элемента управления можно автоматически размера вниз до. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="P:Microsoft.Office.Interop.Outlook.OlkControl.EnableAutoLayout" />должен иметь значение <b>True,</b> чтобы <b>MinimumWidth</b> , чтобы вступили в силу.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PossibleValues">
@@ -291,10 +275,8 @@
       <Docs>
         <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#), представляющее список допустимых значений для раскрывающегося списка для элемента управления, разделенных точкой с запятой. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Для элементов управления, которые не поддерживают раскрывающегося списка значение этого свойства — это <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
-          <para />
-        </remarks>
+        <remarks><para>Для элементов управления, которые не поддерживают раскрывающегося списка значение этого свойства — это <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalLayout">

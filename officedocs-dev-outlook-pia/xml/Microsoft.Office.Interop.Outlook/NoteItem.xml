@@ -1,13 +1,5 @@
 <Type Name="NoteItem" FullName="Microsoft.Office.Interop.Outlook.NoteItem">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c3c651b8fa7c6452466bc3e9898b37e5e8be0166" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639664" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface NoteItem : Microsoft.Office.Interop.Outlook._NoteItem" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f03425335f748dee3a57be5302c258bb5ff2355f" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27898608" /></Metadata><TypeSignature Language="C#" Value="public interface NoteItem : Microsoft.Office.Interop.Outlook._NoteItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract NoteItem implements class Microsoft.Office.Interop.Outlook._NoteItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.NoteItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface NoteItem&#xA;Implements _NoteItem" />
@@ -31,16 +23,12 @@
   </Attributes>
   <Docs>
     <summary>Представляет Примечание в папка «заметки».</summary>
-    <remarks>
-      <para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._NoteItem" />. Сведения об элементах события COM-объектом можно <see cref="T:Microsoft.Office.Interop.Outlook.ItemEvents_Event" />. </para>
-      <para>
-        <b>NoteItem</b> не настраивается. Если открыть новое сообщение, можно заметить, что она не поддерживается для размещения в режиме разработки.</para>
-      <para>
-        <see cref="P:Microsoft.Office.Interop.Outlook._NoteItem.Subject" /> Свойства объекта <b>NoteItem</b> доступен только для чтения, так как вычисления из основной текст заметки. Кроме того, <b>NoteItem</b><see cref="P:Microsoft.Office.Interop.Outlook._NoteItem.Body" /> может быть только форматированного текста, свойства, которые соответствуют HTML и Microsoft Word содержимого не применяются. Хотя <see cref="P:Microsoft.Office.Interop.Outlook._NoteItem.GetInspector" /> свойство будет работать на заметки, так как не могут настраивать примечания, некоторые из <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> свойства, методы и события не будут применяться к объектам <b>NoteItem</b> .</para>
-      <para>Использования <see cref="M:Microsoft.Office.Interop.Outlook._Application.CreateItem(Microsoft.Office.Interop.Outlook.OlItemType)" /> метод для создания объекта <b>NoteItem</b> , который представляет новое сообщение.</para>
-      <para>Использования <see cref="P:Microsoft.Office.Interop.Outlook._Items.Item(System.Object)" />(<paramref name="index" />), где <paramref name="index" /> — номер индекса примечание или значение, используемое для сопоставления свойства по умолчанию заметки для возврата объекта <b>NoteItem</b> из папки "заметки".</para>
-      <para />
-    </remarks>
+    <remarks><para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._NoteItem" />. Сведения об элементах события COM-объектом можно <see cref="T:Microsoft.Office.Interop.Outlook.ItemEvents_Event" />. </para>
+      <para><b>NoteItem</b> не настраивается. Если открыть новое сообщение, можно заметить, не является возможность размещать во время разработки.</para>
+      <para><see cref="P:Microsoft.Office.Interop.Outlook._NoteItem.Subject" /> Свойства объекта <b>NoteItem</b> доступен только для чтения, так как вычисления из основной текст заметки. Кроме того, <b>NoteItem</b> <see cref="P:Microsoft.Office.Interop.Outlook._NoteItem.Body" /> может быть только форматированного текста, свойства, которые соответствуют HTML и Microsoft Word содержимого не применяются. Хотя <see cref="P:Microsoft.Office.Interop.Outlook._NoteItem.GetInspector" /> свойство будет работать на заметки, так как не могут настраивать примечания, некоторые из <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> свойства, методы и события не будут применяться к объектам <b>NoteItem</b> .</para>
+      <para>Использование <see cref="M:Microsoft.Office.Interop.Outlook._Application.CreateItem(Microsoft.Office.Interop.Outlook.OlItemType)" /> метод для создания объекта <b>NoteItem</b> , который представляет новое сообщение.</para>
+      <para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._Items.Item(System.Object)" />(<paramref name="index" />), где <paramref name="index" /> — номер индекса примечание или значение, используемое для сопоставления свойства по умолчанию заметки для возврата объекта <b>NoteItem</b> из папки "заметки".</para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

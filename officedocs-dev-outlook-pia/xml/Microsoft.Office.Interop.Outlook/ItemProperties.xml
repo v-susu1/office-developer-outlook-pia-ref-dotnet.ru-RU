@@ -1,13 +1,5 @@
 <Type Name="ItemProperties" FullName="Microsoft.Office.Interop.Outlook.ItemProperties">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="068473e5343109a26ed982c2916e8e99e1bf5182" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640636" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ItemProperties : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2e0b6f765c864178318a6ab735154aa9fb4aa042" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27900281" /></Metadata><TypeSignature Language="C#" Value="public interface ItemProperties : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ItemProperties implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.ItemProperties" />
   <TypeSignature Language="VB.NET" Value="Public Interface ItemProperties&#xA;Implements IEnumerable" />
@@ -31,15 +23,13 @@
   </Attributes>
   <Docs>
     <summary>Коллекция всех свойств, связанный с элементом.</summary>
-    <remarks>
-      <para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ItemProperties" /> свойство возвращает <b>набор свойств элементов</b> . Используйте ItemProperties.Item (<paramref name="index" />), где <paramref name="index" /> — это имя объекта или числовые положение элемента в коллекции, чтобы вернуть объект <see cref="T:Microsoft.Office.Interop.Outlook.ItemProperty" /> объект.</para>
+    <remarks><para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ItemProperties" /> свойство возвращает <b>набор свойств элементов</b> . Используйте ItemProperties.Item (<paramref name="index" />), где <paramref name="index" /> — это имя объекта или числовые положение элемента в коллекции, чтобы вернуть объект <see cref="T:Microsoft.Office.Interop.Outlook.ItemProperty" /> объекта.</para>
       <para>
         <b>Примечание</b>: <b>набор свойств элементов</b> с отсчетом от нуля, что означает, что первый элемент в коллекции ссылается 0.</para>
-      <para>Использования <see cref="M:Microsoft.Office.Interop.Outlook.ItemProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> метод для добавления нового элемента свойства в <b>набор свойств элементов</b> . Использование <see cref="M:Microsoft.Office.Interop.Outlook.ItemProperties.Remove(System.Int32)" /> метод, чтобы удалить свойства элемента из коллекции <b>ItemProperties</b> .</para>
+      <para>Использование <see cref="M:Microsoft.Office.Interop.Outlook.ItemProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> метод для добавления нового элемента свойства в <b>набор свойств элементов</b> . Использование <see cref="M:Microsoft.Office.Interop.Outlook.ItemProperties.Remove(System.Int32)" /> метод, чтобы удалить свойства элемента из коллекции <b>ItemProperties</b> .</para>
       <para>
         <b>Примечание</b>: только вы можете добавить или удалить настраиваемые свойства. С идентификаторами настраиваемые свойства <see cref="P:Microsoft.Office.Interop.Outlook.ItemProperty.IsUserProperty" /> .</para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -71,12 +61,10 @@
         <param name="Type">Тип нового <b>ItemProperty</b>.</param>
         <param name="AddToFolderFields">Определяет, если свойство item будет добавлен в папку поля.</param>
         <param name="DisplayFormat">Определяет формат поля, как оно отображается в указанной папке.</param>
-        <summary>Добавляет объект <b>ItemProperty</b><b>набор свойств элементов</b> .</summary>
+        <summary>Добавляет объект <b>ItemProperty</b> <b>набор свойств элементов</b> .</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Можно создать свойство типа, определяемое <see cref="T:Microsoft.Office.Interop.Outlook.OlUserPropertyType" /> перечисление, за исключением следующих типов: <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olEnumeration" />, <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olOutlookInternal" />, и <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olSmartFrom" />.</para>
-          <para />
-        </remarks>
+        <remarks><para>Можно создать свойство типа, определяемое <see cref="T:Microsoft.Office.Interop.Outlook.OlUserPropertyType" /> перечисление, за исключением следующих типов: <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olEnumeration" />, <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olOutlookInternal" />, и <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olSmartFrom" />.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -308,16 +296,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

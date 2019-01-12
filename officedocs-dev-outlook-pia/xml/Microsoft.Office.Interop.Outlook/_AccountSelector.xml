@@ -1,13 +1,5 @@
 <Type Name="_AccountSelector" FullName="Microsoft.Office.Interop.Outlook._AccountSelector">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="33f6ada9ca53fd6445dfacde4868a898b71da6f5" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639903" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _AccountSelector" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="33f6ada9ca53fd6445dfacde4868a898b71da6f5" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27896746" /></Metadata><TypeSignature Language="C#" Value="public interface _AccountSelector" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _AccountSelector" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._AccountSelector" />
   <TypeSignature Language="VB.NET" Value="Public Interface _AccountSelector" />
@@ -111,10 +103,8 @@
       <Docs>
         <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Возвращает родительский объект <b>AccountSelector</b><see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> объектов.</para>
-          <para />
-        </remarks>
+        <remarks><para>Возвращает родительский объект <b>AccountSelector</b> <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> объектов.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedAccount">
@@ -142,11 +132,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> объект, представляющий выбранной учетной записи в Microsoft Office Backstage в Microsoft Outlook. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>В пользовательском интерфейсе Outlook можно выбрать учетную запись явным образом на вкладке сведения в представлении Backstage или учетной записи можно выбрать неявно при выборе папки в список папок. Свойство <b>SelectedAccount</b> представляет выделенный в текущий момент учетной записи в представлении Backstage для данного экземпляра <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> объекта. Чтобы определить учетную запись, выбранную неявно, определите объект <b>учетной записи</b> , имеющей его <see cref="P:Microsoft.Office.Interop.Outlook._Account.DeliveryStore" /> свойство равно <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Store" /> свойства текущей папки (представленный <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> свойства объекта <b>Explorer</b> ).</para>
-          <para>Данное свойство возвращает <b>значение Null</b> (<b>Nothing</b> в Visual Basic), если нет учетных записей не определены в профиле сеанса, что, <see cref="P:Microsoft.Office.Interop.Outlook._Accounts.Count" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.Accounts" /> 0 — это объект, представляющий все учетные записи текущего профиля.</para>
-          <para />
-        </remarks>
+        <remarks><para>В пользовательском интерфейсе Outlook можно выбрать учетную запись явным образом на вкладке сведения в представлении Backstage или учетной записи можно выбрать неявно при выборе папки в список папок. Свойство <b>SelectedAccount</b> представляет выделенный в текущий момент учетной записи в представлении Backstage для данного экземпляра <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> объекта. Чтобы определить учетную запись, выбранную неявно, определите объект <b>учетной записи</b> , имеющей его <see cref="P:Microsoft.Office.Interop.Outlook._Account.DeliveryStore" /> свойство равно <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Store" /> свойства текущей папки (представленный <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> свойства объекта <b>Explorer</b> ).</para>
+          <para>Это свойство возвращает <b>значение Null</b> (<b>Nothing</b> в Visual Basic) Если учетные записи не определены в сеансе профилю; то есть <see cref="P:Microsoft.Office.Interop.Outlook._Accounts.Count" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.Accounts" /> 0 — это объект, представляющий все учетные записи текущего профиля. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -174,11 +162,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Возвращает <b>значение Null</b> (<b>Nothing</b> в Visual Basic), если нет сеанса, находящегося в.</para>
+        <remarks><para>Возвращает <b>значение Null</b> (<b>Nothing</b> в Visual Basic), если нет сеанса, вошедшего в систему.</para>
           <para>Можно использовать свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объекта, поочередно, чтобы получить объект <b>пространства имен</b> для текущего сеанса.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

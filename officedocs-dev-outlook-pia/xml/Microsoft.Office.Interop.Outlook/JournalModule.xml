@@ -1,13 +1,5 @@
 <Type Name="JournalModule" FullName="Microsoft.Office.Interop.Outlook.JournalModule">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0c4ac2b4ea0698138fa548a4b78a65d6cc4884dd" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639727" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface JournalModule : Microsoft.Office.Interop.Outlook._JournalModule" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e49b64d05e859c3f2928720b4f0b880aed002810" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27897712" /></Metadata><TypeSignature Language="C#" Value="public interface JournalModule : Microsoft.Office.Interop.Outlook._JournalModule" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract JournalModule implements class Microsoft.Office.Interop.Outlook._JournalModule" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.JournalModule" />
   <TypeSignature Language="VB.NET" Value="Public Interface JournalModule&#xA;Implements _JournalModule" />
@@ -31,13 +23,10 @@
   </Attributes>
   <Docs>
     <summary>Представляет модуля навигации "Дневник" в области навигации проводник.</summary>
-    <remarks>
-      <para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._JournalModule" />. </para>
-      <para>
-        <b>JournalModule</b> объекта, производного от <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModule" /> объект, предоставляющий доступ к группам навигации, содержащихся в модуля навигации "Дневник" в области переходов для проводник. Используйте <see cref="M:Microsoft.Office.Interop.Outlook._NavigationModules.GetNavigationModule(Microsoft.Office.Interop.Outlook.OlNavigationModuleType)" /> метод или <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModules.Item(System.Object)" /> свойства (<b>в этом</b> в C#) <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.Modules" /> коллекции для родительского <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> объекта для получения объекта <b>NavigationModule</b> , а затем использовать <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModule.NavigationModuleType" /> свойства объекта <b>NavigationModule</b> Для получения типа модуля. Если свойство <b>NavigationModuleType</b><b>olModuleJournal</b>, затем можно привести ссылку на объект <b>NavigationModule</b> как объект <b>JournalModule</b> для доступа к <see cref="P:Microsoft.Office.Interop.Outlook._JournalModule.NavigationGroups" /> свойства для этого модуля навигации.</para>
+    <remarks><para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._JournalModule" />. </para>
+      <para>Объект <b>JournalModule</b> , производным от <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModule" /> объект, предоставляющий доступ к группам навигации, содержащихся в модуля навигации "Дневник" в области переходов для проводник. Используйте <see cref="M:Microsoft.Office.Interop.Outlook._NavigationModules.GetNavigationModule(Microsoft.Office.Interop.Outlook.OlNavigationModuleType)" /> метод или <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModules.Item(System.Object)" /> свойства (<b>в этом</b> в C#) <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.Modules" /> коллекции для родительского <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> объекта для получения объекта <b>NavigationModule</b> , а затем использовать <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModule.NavigationModuleType" /> свойства объекта <b>NavigationModule</b> для Получение типа модуля. Если свойство <b>NavigationModuleType</b> <b>olModuleJournal</b>, затем можно привести ссылку на объект <b>NavigationModule</b> как объект <b>JournalModule</b> для доступа к <see cref="P:Microsoft.Office.Interop.Outlook._JournalModule.NavigationGroups" /> свойства для этого модуля навигации.</para>
       <para>Можно использовать <see cref="P:Microsoft.Office.Interop.Outlook._JournalModule.Visible" /> свойство, чтобы определить, является ли видимым модуль навигации и <see cref="P:Microsoft.Office.Interop.Outlook._JournalModule.Position" /> свойство для возвращения или задания положение отображения модуля навигации в панели навигации. Можно использовать <see cref="P:Microsoft.Office.Interop.Outlook._JournalModule.Name" /> свойство для возвращения отображаемое имя модуля навигации "Дневник" в области переходов.</para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

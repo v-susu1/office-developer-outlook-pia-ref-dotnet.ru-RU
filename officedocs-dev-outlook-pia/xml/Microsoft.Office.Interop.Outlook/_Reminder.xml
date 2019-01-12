@@ -1,13 +1,5 @@
 <Type Name="_Reminder" FullName="Microsoft.Office.Interop.Outlook._Reminder">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c32220cc6cd2297c2f337e6d7f5f70853a5de7e6" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639870" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Reminder" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c32220cc6cd2297c2f337e6d7f5f70853a5de7e6" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901762" /></Metadata><TypeSignature Language="C#" Value="public interface _Reminder" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Reminder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Reminder" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Reminder" />
@@ -136,10 +128,8 @@
       <Parameters />
       <Docs>
         <summary>Закрывает текущий напоминание.</summary>
-        <remarks>
-          <para>Метод <b>Прекратить</b> завершится ошибкой, если оповещение не видны.</para>
-          <para />
-        </remarks>
+        <remarks><para>Метод <b>Прекратить</b> завершится ошибкой, если оповещение не видны.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVisible">
@@ -167,10 +157,8 @@
       <Docs>
         <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), который определяет, является ли напоминания видны в данный момент.  Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Outlook определяется возвращаемое значение этого свойства на основе состояния текущего напоминание. Отображаются все активные напоминания. Если <b>IsVisible</b> имеет значение True, отображается оповещение.</para>
-          <para />
-        </remarks>
+        <remarks><para> Outlook определяется возвращаемое значение этого свойства на основе состояния текущего напоминание. Отображаются все активные напоминания. Если <b>IsVisible</b> имеет значение True, отображается оповещение.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -226,10 +214,8 @@
       <Docs>
         <summary>Возвращает произойдет <b>даты</b> , которое указывает указанного напоминания о следующем. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Значение свойства <b>NextReminderDate</b> изменяется при каждом объекта <see cref="M:Microsoft.Office.Interop.Outlook._Reminder.Snooze(System.Object)" /> метода или когда пользователь нажимает кнопку отложить.</para>
-          <para />
-        </remarks>
+        <remarks><para>Значение свойства <b>NextReminderDate</b> изменяется при каждом объекта <see cref="M:Microsoft.Office.Interop.Outlook._Reminder.Snooze(System.Object)" /> метода или когда пользователь нажимает кнопку отложить.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OriginalReminderDate">
@@ -257,10 +243,8 @@
       <Docs>
         <summary>Возвращает <b>дату</b> , на который указывает исходный дату и время, заданное указанного напоминание будет выполнена. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это значение соответствует исходное значение даты и времени, прежде чем <see cref="M:Microsoft.Office.Interop.Outlook._Reminder.Snooze(System.Object)" /> метода или нажатии кнопки переноса.</para>
-          <para />
-        </remarks>
+        <remarks><para>Это значение соответствует исходное значение даты и времени, прежде чем <see cref="M:Microsoft.Office.Interop.Outlook._Reminder.Snooze(System.Object)" /> метода или нажатии кнопки переноса.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -316,16 +300,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Snooze">
@@ -352,11 +334,9 @@
       <Docs>
         <param name="SnoozeTime">Указывает количество времени (в минутах) для задержки напоминания. Значение по умолчанию: 5 минут.</param>
         <summary>Задержки напоминания в указанное время.</summary>
-        <remarks>
-          <para>Это эквивалентно пользователя, нажав кнопку отложить.  </para>
+        <remarks><para>Это эквивалентно пользователя, нажав кнопку отложить.  </para>
           <para>Этот метод завершится ошибкой, если текущий напоминание не активен.  </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

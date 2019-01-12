@@ -1,13 +1,5 @@
 <Type Name="UserProperty" FullName="Microsoft.Office.Interop.Outlook.UserProperty">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9b01972ade23a15cfa40aaec742d199b4c5ab4d2" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640761" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface UserProperty" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7fa9c65db165ff886aa519574a59d9d364a004cc" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27896760" /></Metadata><TypeSignature Language="C#" Value="public interface UserProperty" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UserProperty" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.UserProperty" />
   <TypeSignature Language="VB.NET" Value="Public Interface UserProperty" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Представляет настраиваемое свойство элемента Outlook.</summary>
-    <remarks>
-      <para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.UserProperties" />(<paramref name="index" />), где <paramref name="index" /> — это имя или номер индекса, для возврата объекта <b>UserProperty</b> .</para>
-      <para>Использования <see cref="M:Microsoft.Office.Interop.Outlook.UserProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> метод для создания нового <b>UserProperty</b> для элемента и добавить его в <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> объекта. Метод <b>Add</b> позволяет указать имя и тип нового свойства.</para>
-      <b>Примечание</b>
-      <para>: при создании настраиваемых свойств поля будет добавлен в папку, содержащую элемент (с тем же именем, как свойство). Это поле можно использовать в качестве столбцов в представлениях папки.</para>
-      <para />
-    </remarks>
+    <remarks><para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.UserProperties" />(<paramref name="index" />), где <paramref name="index" /> — это имя или номер индекса, для возврата объекта <b>UserProperty</b> .</para>
+      <para>Использование <see cref="M:Microsoft.Office.Interop.Outlook.UserProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> метод для создания нового <b>UserProperty</b> для элемента и добавить его в <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> объекта. Метод <b>Add</b> позволяет указать имя и тип нового свойства.</para>
+      <para>
+        <b>Примечание</b>: для создания настраиваемого свойства поля добавляется в папку, содержащую элемент (с тем же именем, как свойство). Это поле можно использовать в качестве столбцов в представлениях папки.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -260,16 +250,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -328,10 +316,8 @@
       <Docs>
         <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#), указывающее, Формула проверки для свойства пользователя. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Формула для проверки используется Outlook для проверки <see cref="P:Microsoft.Office.Interop.Outlook.UserProperty.Value" /> свойства при сохранении элемента.</para>
-          <para />
-        </remarks>
+        <remarks><para>Формула для проверки используется Outlook для проверки <see cref="P:Microsoft.Office.Interop.Outlook.UserProperty.Value" /> свойства при сохранении элемента.  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidationText">
@@ -362,10 +348,8 @@
       <Docs>
         <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#) указание текста для свойства указанного пользователя для проверки. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Текст проверки — сообщение об ошибке, что пользователь получает при <see cref="P:Microsoft.Office.Interop.Outlook.UserProperty.Value" /> не условиям, указанным в <see cref="P:Microsoft.Office.Interop.Outlook.UserProperty.ValidationFormula" />.</para>
-          <para />
-        </remarks>
+        <remarks><para>Текст проверки — сообщение об ошибке, что пользователь получает при <see cref="P:Microsoft.Office.Interop.Outlook.UserProperty.Value" /> не условиям, указанным в <see cref="P:Microsoft.Office.Interop.Outlook.UserProperty.ValidationFormula" />.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -396,11 +380,9 @@
       <Docs>
         <summary>Возвращает или задает <b>объект</b> , указывающее, значение для указанного настраиваемого свойства. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Для установки в первый раз свойства, созданные <see cref="M:Microsoft.Office.Interop.Outlook.UserProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> метод, используйте свойство <b>Value</b> вместо <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.SetProperties(System.Object,System.Object)" /> или <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.SetProperty(System.String,System.Object)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект.</para>
-          <para>Дополнительные сведения о доступе к свойствам в Outlook просматривать <a href="http://go.microsoft.com/fwlink/?LinkId=87861">Общие сведения о свойствах</a></para>
-          <para />
-        </remarks>
+        <remarks><para>Для установки в первый раз свойства, созданные <see cref="M:Microsoft.Office.Interop.Outlook.UserProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> метод, используйте свойство <b>Value</b> вместо <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.SetProperties(System.Object,System.Object)" /> или <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.SetProperty(System.String,System.Object)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объекта.</para>
+          <para>Дополнительные сведения о доступе к свойств в Outlook можно <a href="http://go.microsoft.com/fwlink/?LinkId=87861">Общие сведения о свойствах</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

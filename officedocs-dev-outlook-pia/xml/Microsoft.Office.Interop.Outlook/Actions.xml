@@ -1,13 +1,5 @@
 <Type Name="Actions" FullName="Microsoft.Office.Interop.Outlook.Actions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d75f395e36ce152cc6b4826a48e313413c953e4d" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20641516" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Actions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="10f6d87c81095476b601aadf1e253c798d425324" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27896844" /></Metadata><TypeSignature Language="C#" Value="public interface Actions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Actions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Actions" />
   <TypeSignature Language="VB.NET" Value="Public Interface Actions&#xA;Implements IEnumerable" />
@@ -31,11 +23,9 @@
   </Attributes>
   <Docs>
     <summary>Содержит коллекцию <see cref="T:Microsoft.Office.Interop.Outlook.Action" /> объекты, которые представляют специальные действия, которые могут быть выполнены для элемента Outlook.</summary>
-    <remarks>
-      <para>Используйте свойство <b>действия</b> любого элемента Outlook, таких как <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />, чтобы возвратить объект <b>действия</b> .</para>
-      <para>Использования <b>действия</b>(<paramref name="index" />), где <paramref name="index" /> — это имя доступного действия, чтобы возвратить объект <b>Действие</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>Используйте свойство <b>действия</b> любого элемента Outlook, таких как <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />, чтобы возвратить объект <b>действия</b> .</para>
+      <para>Использование <b>действий</b>(<paramref name="index" />), где <paramref name="index" /> — это имя доступного действия, чтобы возвратить объект <b>Действие</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -60,8 +50,7 @@
       <Parameters />
       <Docs>
         <summary>Создает новое действие в <see cref="T:Microsoft.Office.Interop.Outlook.Actions" /> семейства сайтов.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Outlook.Action" /> Объект, который представляет новое действие.</returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Action" /> Объект, который представляет новое действие.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,16 +251,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

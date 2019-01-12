@@ -1,13 +1,5 @@
 <Type Name="NavigationModule" FullName="Microsoft.Office.Interop.Outlook.NavigationModule">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e015b6347e2c958056f13943b0fe4e39346e4cb3" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640750" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface NavigationModule : Microsoft.Office.Interop.Outlook._NavigationModule" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6d44a29a3e45557014345a88628ff1abf83edc4d" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27900740" /></Metadata><TypeSignature Language="C#" Value="public interface NavigationModule : Microsoft.Office.Interop.Outlook._NavigationModule" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract NavigationModule implements class Microsoft.Office.Interop.Outlook._NavigationModule" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.NavigationModule" />
   <TypeSignature Language="VB.NET" Value="Public Interface NavigationModule&#xA;Implements _NavigationModule" />
@@ -31,10 +23,8 @@
   </Attributes>
   <Docs>
     <summary>Представляет модуль навигации в области навигации проводник.</summary>
-    <remarks>
-      <para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._NavigationModule" />. </para>
-      <para>
-        <b>NavigationModule</b> объект предоставляет доступ к различным модули навигации, отображаемые в области переходов Microsoft Outlook. Следующие объекты являются производными от объекта <b>NavigationModule</b> :</para>
+    <remarks><para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._NavigationModule" />. </para>
+      <para>Объект <b>NavigationModule</b> предоставляет доступ к различным модули навигации, отображаемые в области переходов Microsoft Outlook. Следующие объекты являются производными от объекта <b>NavigationModule</b> :</para>
       <list type="bullet">
         <item>
           <para>
@@ -61,9 +51,16 @@
             <see cref="T:Microsoft.Office.Interop.Outlook.NotesModule" />
           </para>
         </item>
+        <item>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Outlook.TasksModule" />
+          </para>
+        </item>
       </list>
-      <para> использования <see cref="M:Microsoft.Office.Interop.Outlook._NavigationModules.GetNavigationModule(Microsoft.Office.Interop.Outlook.OlNavigationModuleType)" /> метод или <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModules.Item(System.Object)" /> свойства (<b>в этом</b> в C#) <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModules" /> Семейство сайтов для родительского <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> объекта для получения объекта <b>NavigationModule</b> , а затем использовать <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModule.NavigationModuleType" /> свойства объекта <b>NavigationModule</b> для получения типа модуля. В зависимости от значения свойства <b>NavigationModuleType</b> , затем можно привести ссылку на объект <b>NavigationModule</b> как один из объектов, перечисленных выше для доступа к <see cref="P:Microsoft.Office.Interop.Outlook._CalendarModule.NavigationGroups" /> свойства для этого объекта, таких как <b>CalendarModule </b>объект.</para> Модули 
-      <para>ярлыки и папки списка навигации нет соответствующего объекта, таких как <b>MailModule</b>, так как они не поддерживают программный доступ к группам навигации или папки навигации. Объект <b>NavigationModule</b> можно использовать для доступа к свойствам ярлыки и папки списка модулей.</para><para>Можно использовать <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModule.Visible" /> свойство, чтобы определить, является ли видимым модуль навигации и <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModule.Position" /> свойство для возвращения или задания положение отображения модуля навигации в панели навигации. Вы также можете использовать <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModule.Name" /> свойство для возвращения отображаемое имя модуля навигации в области навигации.</para><para /></remarks>
+      <para> Используйте <see cref="M:Microsoft.Office.Interop.Outlook._NavigationModules.GetNavigationModule(Microsoft.Office.Interop.Outlook.OlNavigationModuleType)" /> метод или <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModules.Item(System.Object)" /> свойства (<b>в этом</b> в C#) <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModules" /> коллекции для родительского <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> объекта для получения объекта <b>NavigationModule</b> , а затем использовать <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModule.NavigationModuleType" /> свойства объекта <b>NavigationModule</b> для Получение типа модуля. В зависимости от значения свойства <b>NavigationModuleType</b> , затем можно привести ссылку на объект <b>NavigationModule</b> как один из объектов, перечисленных выше для доступа к <see cref="P:Microsoft.Office.Interop.Outlook._CalendarModule.NavigationGroups" /> свойства для этого объекта, таких как объект <b>CalendarModule</b> .</para>
+      <para>Сочетания клавиш и список папок модули навигации нет соответствующего объекта, таких как <b>MailModule</b>, так как они не поддерживают программный доступ к группам навигации или папки навигации. Объект <b>NavigationModule</b> можно использовать для доступа к свойствам ярлыки и папки списка модулей.</para>
+      <para>Можно использовать <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModule.Visible" /> свойство, чтобы определить, является ли видимым модуль навигации и <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModule.Position" /> свойство для возвращения или задания положение отображения модуля навигации в панели навигации. Вы также можете использовать <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModule.Name" /> свойство для возвращения отображаемое имя модуля навигации в панели навигации.</para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

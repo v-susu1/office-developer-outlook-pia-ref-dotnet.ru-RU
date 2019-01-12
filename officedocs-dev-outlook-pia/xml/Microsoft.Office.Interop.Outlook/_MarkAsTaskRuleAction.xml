@@ -1,13 +1,5 @@
 <Type Name="_MarkAsTaskRuleAction" FullName="Microsoft.Office.Interop.Outlook._MarkAsTaskRuleAction">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cc08195b87f23ee9598f6fa75d5cd1052320cc84" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640209" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _MarkAsTaskRuleAction" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="cc08195b87f23ee9598f6fa75d5cd1052320cc84" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901769" /></Metadata><TypeSignature Language="C#" Value="public interface _MarkAsTaskRuleAction" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _MarkAsTaskRuleAction" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._MarkAsTaskRuleAction" />
   <TypeSignature Language="VB.NET" Value="Public Interface _MarkAsTaskRuleAction" />
@@ -55,10 +47,8 @@
       <Docs>
         <summary>Возвращает константу, <b>olRuleActionMarkAsTask</b>из <see cref="T:Microsoft.Office.Interop.Outlook.OlRuleActionType" /> перечисление, указывающее тип действия, предпринятые правилом. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Задачи, пометки действие правила поддерживается только правила для получения сообщений. Дополнительные сведения можно <a href="http://go.microsoft.com/fwlink/?LinkId=87797">Указать действия правила</a></para>
-          <para />
-        </remarks>
+        <remarks><para> Задачи, пометки действие правила поддерживается только правила для получения сообщений. Дополнительные сведения можно <a href="http://go.microsoft.com/fwlink/?LinkId=87797">Указать действия правила</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -145,10 +135,8 @@
       <Docs>
         <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), который определяет, включена ли действие правила. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>После включения правила, необходимо сохранить правило с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> , чтобы правило и его состояние будут сохранены и отобразятся текущего сеанса.  Правило доступна только после его успешно сохранен.</para>
-          <para />
-        </remarks>
+        <remarks><para>После включения правила, необходимо сохранить правило с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> , чтобы правило и его состояние будут сохранены и отобразятся текущего сеанса.  Правило доступна только после его успешно сохранен. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FlagTo">
@@ -179,10 +167,8 @@
       <Docs>
         <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#), который представляет метку флаг для сообщения. Чтение и запись</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Возвращает ошибку, если <b>FlagTo</b> представляет собой пустую строку.</para>
-          <para />
-        </remarks>
+        <remarks><para>Возвращает ошибку, если <b>FlagTo</b> представляет собой пустую строку.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MarkInterval">
@@ -241,10 +227,8 @@
       <Docs>
         <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Родительский объект является <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> объекта.</para>
-          <para />
-        </remarks>
+        <remarks><para>Родительский объект является <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> объекта.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -272,16 +256,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

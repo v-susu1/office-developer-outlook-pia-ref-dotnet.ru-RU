@@ -1,13 +1,5 @@
 <Type Name="Category" FullName="Microsoft.Office.Interop.Outlook.Category">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="435e5765b7ec5d5ff26be55adc999086a3415e41" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20641349" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Category : Microsoft.Office.Interop.Outlook._Category" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a7e2734d6e53bd5a1e3e99a9c8084ca598f7964f" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27897446" /></Metadata><TypeSignature Language="C#" Value="public interface Category : Microsoft.Office.Interop.Outlook._Category" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Category implements class Microsoft.Office.Interop.Outlook._Category" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Category" />
   <TypeSignature Language="VB.NET" Value="Public Interface Category&#xA;Implements _Category" />
@@ -31,12 +23,11 @@
   </Attributes>
   <Docs>
     <summary>Представляет пользовательские категории, с помощью которого можно разбить элементов Microsoft Outlook.</summary>
-    <remarks>
-      <para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._Category" />.</para>
-      <para>Outlook предоставляет категоризации системы, с помощью которой элементов Outlook можно легко определить и сгруппированы в пользовательских категорий. Представляет объект <b>категории</b> категории пользовательских.</para>
-      <para>Использования <see cref="M:Microsoft.Office.Interop.Outlook._Categories.Add(System.String,System.Object,System.Object)" /> метод <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.Categories" /> свойства для <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект, который требуется создать новый объект <b>категории</b> , добавления категории в основной список категорий для этого пространства имен.</para>
-      <para>Использования <see cref="P:Microsoft.Office.Interop.Outlook._Category.Name" /> свойство, чтобы указать имя категории, <see cref="P:Microsoft.Office.Interop.Outlook._Category.Color" /> свойство, чтобы указать цвет, отображаемый для этой категории и <see cref="P:Microsoft.Office.Interop.Outlook._Category.ShortcutKey" /> свойство, чтобы указать сочетание клавиш, используемых для назначения этой категории элемента Outlook в Outlook пользовательский интерфейс. Использование <see cref="P:Microsoft.Office.Interop.Outlook._Category.CategoryID" /> свойство для получения уникального идентификатора для категории.</para>
-      <para>Категории могут быть назначены элементов Outlook, указав имена соответствующих объектов <b>категории</b> в строке запятыми в свойстве <b>категорий</b> следующие объекты:</para>
+    <remarks><para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._Category" />.</para>
+      <para>Outlook предоставляет категоризации системы, с помощью которой элементов Outlook можно легко определить и сгруппированы в пользовательских категорий. Объект <b>категории</b> представляет пользовательские категории.</para>
+      <para>Использование <see cref="M:Microsoft.Office.Interop.Outlook._Categories.Add(System.String,System.Object,System.Object)" /> метод <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.Categories" /> свойства для <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект, который требуется создать новый объект <b>категории</b> , добавления категории в основной список категорий для этого пространства имен. </para>
+      <para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._Category.Name" /> свойство, чтобы указать имя категории, <see cref="P:Microsoft.Office.Interop.Outlook._Category.Color" /> свойство, чтобы указать цвет, отображаемый для этой категории и <see cref="P:Microsoft.Office.Interop.Outlook._Category.ShortcutKey" /> свойство, чтобы указать сочетание клавиш, используемых для назначения этой категории элемента Outlook в пользовательском интерфейсе Outlook . Использование <see cref="P:Microsoft.Office.Interop.Outlook._Category.CategoryID" /> свойство для получения уникального идентификатора для категории.</para>
+      <para>Категории могут быть назначены с элементами Outlook, указав имена соответствующих объектов <b>категории</b> в строке запятыми в свойстве <b>категорий</b> следующие объекты:</para>
       <list type="table">
         <item>
           <description>
@@ -109,8 +100,7 @@
           <description />
         </item>
       </list>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

@@ -1,13 +1,5 @@
 <Type Name="AppointmentItem" FullName="Microsoft.Office.Interop.Outlook.AppointmentItem">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dfb07f19af13b577e521c3dd5c487e46f23c189d" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640824" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AppointmentItem : Microsoft.Office.Interop.Outlook._AppointmentItem, Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="cd373b9f5efc79923e5343abaeabdc8e28216e11" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27900085" /></Metadata><TypeSignature Language="C#" Value="public interface AppointmentItem : Microsoft.Office.Interop.Outlook._AppointmentItem, Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AppointmentItem implements class Microsoft.Office.Interop.Outlook._AppointmentItem, class Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface AppointmentItem&#xA;Implements _AppointmentItem, ItemEvents_10_Event" />
@@ -34,15 +26,13 @@
   </Attributes>
   <Docs>
     <summary>Представляет собрания, одноразовый встречи, или повторяющейся встречи или собрания в папке календаря.</summary>
-    <remarks>
-      <para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._AppointmentItem" />. Сведения об элементах события COM-объектом можно <see cref="T:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />.</para>
-      <para>Использования <see cref="M:Microsoft.Office.Interop.Outlook._Application.CreateItem(Microsoft.Office.Interop.Outlook.OlItemType)" /> метод для создания объекта <b>AppointmentItem</b> , представляющего собой новую встречу.</para>
-      <para>Использования <see cref="P:Microsoft.Office.Interop.Outlook._Items.Item(System.Object)" /> (<paramref name="index" />), где <paramref name="index" /> — номер индекса встречи или значение, используемое для сопоставления свойства по умолчанию встречи, для возврата объекта <b>AppointmentItem</b> из папки календаря.</para>
+    <remarks><para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._AppointmentItem" />. Сведения об элементах события COM-объектом можно <see cref="T:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />.</para>
+      <para>Использование <see cref="M:Microsoft.Office.Interop.Outlook._Application.CreateItem(Microsoft.Office.Interop.Outlook.OlItemType)" /> метод для создания объекта <b>AppointmentItem</b> , представляющего собой новую встречу.</para>
+      <para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._Items.Item(System.Object)" /> (<paramref name="index" />), где <paramref name="index" /> — номер индекса встречи или значение, используемое для сопоставления свойства по умолчанию встречи, для возврата объекта <b>AppointmentItem</b> из папки «Календарь».</para>
       <para>Может также возвращать объект <b>AppointmentItem</b> из <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> объектов с помощью <see cref="M:Microsoft.Office.Interop.Outlook._MeetingItem.GetAssociatedAppointment(System.Boolean)" /> метод.</para>
-      <para>При работе с элементами повторяющихся встреч, освобождать любой предыдущий справочные материалы, перед доступ или изменить элемент и удалить эти ссылки сразу по завершении и сохранения получить новые ссылки к повторяющейся встречи изменения. Такой подход применяется к повторяющейся объекта <b>AppointmentItem</b> и любой <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> или <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> объекта. Для удаления ссылки в Visual Basic задано значение <b>Nothing</b>, существующий объект. В C# явно освободить память для этого объекта. </para>
-      <para>Обратите внимание, что даже после освобождения ссылки и попытаться получить ссылку на новый, если по-прежнему активная ссылка, назначенные другой надстройки или Outlook к одному из объектов выше, новая ссылка будет по-прежнему указывают на устаревших копию объект. Таким образом, важно освобождение ссылки сразу же по завершении с повторяющейся встречи.</para>
-      <para />
-    </remarks>
+      <para>При работе с элементами повторяющейся встречи следует удалить все предыдущие ссылки, получить новые ссылки на элемент повторяющейся встречи перед обращением к элементу или его изменением и удалить эти ссылки сразу после завершения работы и сохранения изменений. Такой подход применяется к повторяющейся объекта <b>AppointmentItem</b> и любой <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> или <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> объекта. Для удаления ссылки в Visual Basic задано значение <b>Nothing</b>, существующий объект. В C# явно освободить память для этого объекта. </para>
+      <para>Обратите внимание, что даже после высвобождения ссылки и попытки получения новой ссылки, если по-прежнему существует активная ссылка на любой из вышеупомянутых объектов, удерживаемая другой надстройкой или приложением Outlook, новая ссылка будет указывать на устаревшую копию объекта. В связи с этим важно высвобождать ссылки немедленно после завершения текущей встречи.</para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

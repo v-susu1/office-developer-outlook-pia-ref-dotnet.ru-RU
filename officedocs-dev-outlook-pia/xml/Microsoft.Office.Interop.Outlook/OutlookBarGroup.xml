@@ -1,13 +1,5 @@
 <Type Name="OutlookBarGroup" FullName="Microsoft.Office.Interop.Outlook.OutlookBarGroup">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="85ca0de3e88bd9c5976bfd7505500d389abf4bd8" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20641255" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OutlookBarGroup" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4832de3e6e97658b3771932387a27b9514bc5a81" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901468" /></Metadata><TypeSignature Language="C#" Value="public interface OutlookBarGroup" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OutlookBarGroup" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OutlookBarGroup" />
   <TypeSignature Language="VB.NET" Value="Public Interface OutlookBarGroup" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Представляет группу сочетаний клавиш в области клавиш в окне проводника.</summary>
-    <remarks>
-      <para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._OutlookBarGroups.Item(System.Object)" /> свойство (<b>в этом</b> в C#) для получения объекта <b>OutlookBarGroup</b> из <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarGroups" /> объекта. Так как <see cref="P:Microsoft.Office.Interop.Outlook.OutlookBarGroup.Name" /> свойство является свойством по умолчанию объекта <b>OutlookBarGroup</b> , можно определить группы по имени.</para>
-      <para />
-    </remarks>
+    <remarks><para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._OutlookBarGroups.Item(System.Object)" /> свойство (<b>в этом</b> в C#) для получения объекта <b>OutlookBarGroup</b> из <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarGroups" /> объекта. Так как <see cref="P:Microsoft.Office.Interop.Outlook.OutlookBarGroup.Name" /> свойство является свойством по умолчанию объекта <b>OutlookBarGroup</b> , можно определить группы по имени.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -173,16 +163,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shortcuts">
@@ -241,10 +229,8 @@
       <Docs>
         <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlOutlookBarViewType" /> тип константы, представляющий представление из <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarGroup" /> объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство не имеет никакого влияния на значки, отображаемые в области ярлыки. Большие значки будут удалены, и если это свойство имеет значение <b>olLargeIcon</b>, он не оказывает никакого влияния.  В предыдущих версиях Microsoft Outlook оно возвращает или задает значки, отображаемые в указанную группу панель Outlook.</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство не имеет никакого влияния на значки, отображаемые в области ярлыки. Большие значки будут удалены, и если это свойство имеет значение <b>olLargeIcon</b>, он не оказывает никакого влияния.  В предыдущих версиях Microsoft Outlook оно возвращает или задает значки, отображаемые в указанную группу панель Outlook.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

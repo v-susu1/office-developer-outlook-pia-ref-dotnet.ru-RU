@@ -1,13 +1,5 @@
 <Type Name="Conflict" FullName="Microsoft.Office.Interop.Outlook.Conflict">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cb90976e0ba50952b4a6e695003743dad61b7d0f" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640360" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Conflict" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0dcb31d09da4392777229d9d7b97842c76ace29c" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27897824" /></Metadata><TypeSignature Language="C#" Value="public interface Conflict" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Conflict" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Conflict" />
   <TypeSignature Language="VB.NET" Value="Public Interface Conflict" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Представляет элемент Outlook, которая конфликтует с другой элемент Outlook.</summary>
-    <remarks>
-      <para>У каждого элемента Outlook <see cref="T:Microsoft.Office.Interop.Outlook.Conflicts" /> объект коллекции, связанные с ним, представляющий все элементы, входящие в конфликт данного элемента.</para>
-      <para>Использования <see cref="P:Microsoft.Office.Interop.Outlook.Conflicts.Item(System.Object)" /> свойство (<b>в этом</b> в C#) для получения определенного объекта <b>конфликта</b> из объекта коллекции <b>конфликтов</b> , например:</para>
-      <para />
-    </remarks>
+    <remarks><para> У каждого элемента Outlook <see cref="T:Microsoft.Office.Interop.Outlook.Conflicts" /> объект коллекции, связанные с ним, представляющий все элементы, входящие в конфликт данного элемента.</para>
+      <para>Использование <see cref="P:Microsoft.Office.Interop.Outlook.Conflicts.Item(System.Object)" /> свойство (<b>в этом</b> в C#) для получения определенного объекта <b>конфликта</b> из объекта коллекции <b>конфликтов</b> , например:</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -199,16 +189,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">

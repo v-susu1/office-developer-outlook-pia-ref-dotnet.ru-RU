@@ -1,13 +1,5 @@
 <Type Name="_NavigationFolder" FullName="Microsoft.Office.Interop.Outlook._NavigationFolder">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="47e7c5b285c6b771f04b5e51a758b7299228e1d8" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20641295" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _NavigationFolder" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="47e7c5b285c6b771f04b5e51a758b7299228e1d8" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27897999" /></Metadata><TypeSignature Language="C#" Value="public interface _NavigationFolder" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _NavigationFolder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._NavigationFolder" />
   <TypeSignature Language="VB.NET" Value="Public Interface _NavigationFolder" />
@@ -83,10 +75,8 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Данное свойство возвращает <b>olNavigationFolder</b> для <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolder" /> объекта.</para>
-          <para />
-        </remarks>
+        <remarks><para>Данное свойство возвращает <b>olNavigationFolder</b> для <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolder" /> объекта.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -114,10 +104,8 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляет отображаемое имя <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolder" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте <b>NavigationFolder.DisplayName</b>, а не <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Name" />, чтобы получить имя общей папки.</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте <b>NavigationFolder.DisplayName</b>, а не <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Name" />, чтобы получить имя общей папки.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Folder">
@@ -173,10 +161,8 @@
       <Docs>
         <summary>Возвращает <b>логическое</b> значение (<b>bool</b> в C#), которое указывает, будет ли <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolder" /> можно удалить объект из области переходов. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Только общие или связанных папок можно удалить на панели программными средствами.</para>
-          <para />
-        </remarks>
+        <remarks><para>Только общие или связанных папок можно удалить на панели программными средствами.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSelected">
@@ -207,10 +193,12 @@
       <Docs>
         <summary>Возвращает или задает значение переменной <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, будет ли <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolder" /> объект выбран для отображения. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Навигации папок, содержащихся в модуле навигации календаря рассматриваются по-разному, чем навигации папок в другие модули навигации.</para>
-          <para>, Если active explorer используется день, неделю или месяц или день, неделю или месяц представления с представлением в области просмотра для отображения папок навигации в модуле навигации календаря, это свойство возвращает <b>True</b> , если папка навигации установлен в области навигации (и — Это таким образом отображается в режиме рядом друг с другом или перекрытия в окне active.) Назначить этому свойству значение <b>False</b> удаляет календаря из отображения в окне active. Если это свойство имеет значение <b>True</b> для более 30 папок навигации, возникает ошибка.</para> Если active explorer использует другое представление, таких как представление всех встреч, для отображения папок навигации в модуле навигации календаря или в модули навигации, отличный от навигации модуля "Календарь", это свойство возвращает значение True, если 
-          <para>панели навигации Папка выбран и отображаемых в обозревателе active; в противном случае это свойство возвращает значение False. </para><para>В любом случае возникает ошибка, если значение этого свойства имеет значение <b>False</b> для всех объектов <b>NavigationFolder</b> в родительском <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolders" /> семейства сайтов, или если содержится объект <b>NavigationFolder</b> модулем навигации других чем модуль навигации, отображаемых в области навигации.</para><para><see cref="E:Microsoft.Office.Interop.Outlook.NavigationGroupsEvents_12_Event.SelectedChange" /> Для родительской коллекции <b>NavigationFolders</b> событие при изменении значения этого свойства для объекта <b>NavigationFolder</b> в модуле навигации календаря, вне зависимости от текущего представления.</para><para /></remarks>
+        <remarks><para>Навигация папок, содержащихся в модуле навигации календаря рассматриваются по-разному, чем навигации папок в другие модули навигации.</para>
+          <para>Если active explorer использует день, неделю или месяц или день, неделю или месяц представления с представлением в области просмотра для отображения папок навигации в модуле навигации календаря, это свойство возвращает <b>True</b> , если папка навигации проверяются на левой панели навигации (и является Таким образом отображается в режиме рядом друг с другом или перекрытия в активной explorer.) Назначить этому свойству значение <b>False</b> удаляет календаря из отображения в окне active. Если это свойство имеет значение <b>True</b> для более 30 папок навигации, возникает ошибка.</para>
+          <para>Если active explorer использует другое представление, таких как представление всех встреч, для отображения папок навигации в модуле навигации календаря или в модули навигации, отличный от навигации модуля "Календарь", это свойство возвращает True, если в папке навигации Выбранные и отображаемых в обозревателе active; в противном случае это свойство возвращает значение False. </para>
+          <para>В любом случае возникает ошибка, если значение этого свойства имеет значение <b>False</b> для всех объектов <b>NavigationFolder</b> в родительском <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolders" /> семейства сайтов, или если объект <b>NavigationFolder</b> находится модуль навигации, отличный от Модуль навигации, отображаемых в области навигации.</para>
+          <para><see cref="E:Microsoft.Office.Interop.Outlook.NavigationGroupsEvents_12_Event.SelectedChange" /> Для родительской коллекции <b>NavigationFolders</b> событие при изменении значения этого свойства для объекта <b>NavigationFolder</b> в модуле навигации календаря, вне зависимости от текущего представления. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSideBySide">
@@ -241,13 +229,11 @@
       <Docs>
         <summary>Возвращает или устанавливает <b>логическое</b> значение (<b>bool</b> в C#), которое указывает, будет ли <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolder" /> объект отображается в режиме наложения или рядом друг с другом. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Установка для этого свойства <b>значения True</b> отображает <b>NavigationFolder</b> в режиме рядом друг с другом; в противном случае режиме наложения используется для отображения в папку навигации в текущем представлении active explorer. Значение по умолчанию для этого свойства — <b>True</b>.</para>
-          <para>Этого свойства не оказывает влияния на объект <b>NavigationFolder</b> , который не связан с модулем календаря. Если объект <b>NavigationFolder</b> связан с помощью модуля "Календарь", значение этого свойства, зависит от следующих условий:</para>
-          <para>Если <see cref="P:Microsoft.Office.Interop.Outlook._NavigationFolder.IsSelected" /> свойства объекта <b>NavigationFolder</b> имеет значение <b>False</b>, затем это значение свойства не оказывает влияния пока свойство <b>IsSelected</b> имеет значение <b>True</b>. Если свойство <b>IsSelected</b> имеет значение <b>True</b>, то значение свойства применяется при отображении <b>NavigationFolder</b> .</para>
-          <para>Тем не менее, свойство <b>IsSideBySide</b> автоматически устанавливается значение <b>True,</b> Если свойство <b>IsSelected</b> только один <b>NavigationFolder</b> , связанное с родительским <see cref="T:Microsoft.Office.Interop.Outlook.CalendarModule" /> имеет значение <b>True</b>. Другими словами Если объект <b>NavigationFolder</b> только папки навигации, отображаемые в текущем представлении active explorer, затем свойства <b>IsSideBySide</b> для одного объекта <b>NavigationFolder</b> автоматически устанавливается значение <b>Значение true</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Установка для этого свойства <b>значения True</b> отображает <b>NavigationFolder</b> в режиме рядом друг с другом; в противном случае режиме наложения используется для отображения в папку навигации в текущем представлении active explorer. Значение по умолчанию для этого свойства — <b>True</b>.</para>
+          <para>Установка для этого свойства не оказывает влияния для объекта <b>NavigationFolder</b> , который не связан с модулем календаря. Если объект <b>NavigationFolder</b> связан с помощью модуля "Календарь", значение этого свойства, зависит от следующих условий:</para>
+          <para>Если <see cref="P:Microsoft.Office.Interop.Outlook._NavigationFolder.IsSelected" /> свойства объекта <b>NavigationFolder</b> имеет значение <b>False</b>, то значение этого свойства не оказывает влияния пока свойство <b>IsSelected</b> имеет значение <b>True</b>. Если свойство <b>IsSelected</b> имеет значение <b>True</b>, значение свойства будет применяться при отображении <b>NavigationFolder</b> .</para>
+          <para>Тем не менее, свойство <b>IsSideBySide</b> автоматически устанавливается значение <b>True,</b> Если свойство <b>IsSelected</b> только один <b>NavigationFolder</b> , связанное с родительским <see cref="T:Microsoft.Office.Interop.Outlook.CalendarModule" /> имеет значение <b>True</b>. Другими словами Если объект <b>NavigationFolder</b> только папки навигации, отображаемые в текущем представлении active explorer, затем свойства <b>IsSideBySide</b> для одного объекта <b>NavigationFolder</b> автоматически устанавливается значение <b>значение True </b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -306,20 +292,18 @@
       <Docs>
         <summary>Возвращает или задает значение типа <b>Integer</b> , представляющее порядковый номер <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolder" /> объектов при отображении в области навигации. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство могут быть установлены только в диапазоне от 1 до значение <see cref="P:Microsoft.Office.Interop.Outlook._NavigationFolders.Count" /> свойства для родительского <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolders" /> объекта. Ошибка возникает при попытке этому свойству присвоено значение вне диапазона.</para>
+        <remarks><para>Это свойство могут быть установлены только в диапазоне от 1 до значение <see cref="P:Microsoft.Office.Interop.Outlook._NavigationFolders.Count" /> свойства для родительского <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolders" /> объекта. Произошла ошибка при попытке этому свойству присвоено значение вне диапазона.</para>
           <para>При изменении значения этого свойства для объекта <b>NavigationFolder</b> изменяет значения <b>положение</b> других навигации папок, содержащихся в коллекции <b>NavigationFolders</b> , в зависимости от относительное изменение между новое значение и исходное значение свойства <b>положения</b> для этого объекта <b>NavigationFolder</b> : </para>
           <list type="bullet">
             <item>
-              <para>, если новое значение меньше, чем исходное значение, а затем перемещает вверх на новое место и помещает указанный объект <b>NavigationFolder</b> другие папки навигации уже выше или ниже этого новую позицию вниз.</para>
+              <para>Если новое значение меньше, чем исходное значение, указанный объект <b>NavigationFolder</b> перемещает вверх на новое место и помещает навигации в папках уже выше или ниже этого новую позицию вниз.</para>
             </item>
             <item>
-              <para>Если новое значение больше, чем исходное значение, а затем на указанный объект <b>NavigationFolder</b> перемещает вниз на новое место и помещает в папках навигации между старой и новой позиции копирования, заполнения старый положение.</para>
+              <para>Если новое значение больше, чем исходное значение, указанный объект <b>NavigationFolder</b> перемещает вниз на новое место и помещает другие папки навигации между старой и новой позиции, заполнения старый положение.</para>
             </item>
           </list>
-          <para>Если папка навигации был удален из области навигации, а затем данное свойство возвращает значение -1, чтобы указать, что папка навигации больше не является частью группы навигации.</para>
-          <para />
-        </remarks>
+          <para>Если папка навигации был удален из области переходов, данное свойство возвращает значение -1, чтобы указать, что папка навигации больше не является частью группы навигации.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -347,16 +331,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

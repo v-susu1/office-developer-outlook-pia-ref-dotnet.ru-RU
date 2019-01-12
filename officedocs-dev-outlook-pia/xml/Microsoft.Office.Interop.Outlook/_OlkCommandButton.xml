@@ -1,13 +1,5 @@
 <Type Name="_OlkCommandButton" FullName="Microsoft.Office.Interop.Outlook._OlkCommandButton">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="341bad149d45b4c5c3e83478e06e67918652fecd" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640061" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _OlkCommandButton" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="341bad149d45b4c5c3e83478e06e67918652fecd" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27899189" /></Metadata><TypeSignature Language="C#" Value="public interface _OlkCommandButton" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _OlkCommandButton" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._OlkCommandButton" />
   <TypeSignature Language="VB.NET" Value="Public Interface _OlkCommandButton" />
@@ -58,11 +50,9 @@
       <Docs>
         <summary>Возвращает или задает значение типа <b>String</b> (<b>строка</b> в C#), представляющее accelerator или сочетание клавиш для элемента управления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Значение по умолчанию — это пустая строка, то есть не горячей ключ.  Если свойство имеет значение со строкой более одного символа, значение будет усечено до первого знака.  </para>
-          <para>В сочетание клавиш нельзя использовать цифры.</para>
-          <para />
-        </remarks>
+        <remarks><para>Значение по умолчанию — пустая строка, то есть не горячей ключ.  Если свойство имеет значение со строкой более одного символа, значение будет усечено до первого знака.  </para>
+          <para>Сочетание клавиш нельзя использовать цифры.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoSize">
@@ -93,11 +83,9 @@
       <Docs>
         <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), которая автоматически изменяет размер элемента управления для отображения всего содержимого. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Значение по умолчанию для этого свойства — <b>False</b>.</para>
-          <para>Элемента управления button, это свойство определяет, будет ли элемент управления автоматически изменяется так, чтобы отобразить название полностью значение.</para>
-          <para />
-        </remarks>
+        <remarks><para>  Значение по умолчанию для этого свойства — <b>False</b>.</para>
+          <para>Для элемента управления button это свойство определяет, будет ли элемент управления автоматически изменяется так, чтобы отобразить название полностью значение.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -128,10 +116,8 @@
       <Docs>
         <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#), который отображается на объекте, чтобы определить или описать его.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Значение по умолчанию — пустая строка. Конструктор форм этому свойству присваивается имя элемента управления по умолчанию.</para>
-          <para />
-        </remarks>
+        <remarks><para>Значение по умолчанию — пустая строка. Конструктор форм этому свойству присваивается имя элемента управления по умолчанию.  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayDropArrow">
@@ -162,10 +148,8 @@
       <Docs>
         <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), который позволяет визуализации стрелку вниз на кнопке. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Эту стрелку отображается в правом на кнопке в langauges записи слева направо и в левой части langauges записываются справа налево. <b>Значение true</b> для отображения стрелку на кнопке <b>значение False,</b> Чтобы отключить с отображением.</para>
-          <para />
-        </remarks>
+        <remarks><para>Эту стрелку отображается в правом на кнопке в langauges записи слева направо и в левой части langauges записываются справа налево. <b>Значение true</b> для отображения стрелку на кнопке <b>значение False,</b> Чтобы отключить с отображением.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -196,11 +180,9 @@
       <Docs>
         <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), которое указывает, если элемент управления может работать.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Значение по умолчанию — <b>False</b>.</para>
-          <para>Недоступны при отключении элемента управления для изменения содержимого элемента управления.</para>
-          <para />
-        </remarks>
+        <remarks><para>Значение по умолчанию — <b>False</b>.</para>
+          <para>При отключении элемента управления, содержимое элемента управления будут доступны для изменения. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -259,10 +241,8 @@
       <Docs>
         <summary>Возвращает или задает <b>StdPicture</b> , представляющий настраиваемые изображения курсор мыши для данного элемента управления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Значение по умолчанию — <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
-          <para />
-        </remarks>
+        <remarks><para>Значение по умолчанию — <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MousePointer">
@@ -293,10 +273,8 @@
       <Docs>
         <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> константа, которая определяет тип указателя, который отображается при наведении мыши на элемент управления.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Значение по умолчанию — <b>olMousePointerDefault</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Значение по умолчанию — <b>olMousePointerDefault</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Picture">
@@ -327,12 +305,10 @@
       <Docs>
         <summary>Возвращает или задает <b>StdPicture</b> , представляющий рисунок, который отображается на элементе управления.    Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Значение по умолчанию — <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
+        <remarks><para>Значение по умолчанию — <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
           <para>Изображения и текст не могут отображаться в то же время на элементе управления, если свойство picture, свойство текст будет пропущено.</para>
-          <para>Изображения всегда отображается в центре элемента управления кнопка.  Изображение будет обрезается при необходимости в соответствии со в доступное место.</para>
-          <para />
-        </remarks>
+          <para>Изображение всегда отображается в центре элемента управления кнопка.  Изображение будет обрезается по размерам в доступное место.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureAlignment">
@@ -394,11 +370,9 @@
       <Docs>
         <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> константа, которая указывает способ выравнивания текста в элементе управления.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Значение по умолчанию — <b>olTextAlignLeft</b> на языках справа налево, например, на английском языке.</para>
+        <remarks><para>Значение по умолчанию — <b>olTextAlignLeft</b> на языках справа налево, например, на английском языке.</para>
           <para>Для элемента управления кнопки команды при <b>TextAlign</b> задано значение <b>olTextAlignLeft</b>левое поле — только один пиксель из границы элемента управления.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WordWrap">
@@ -429,10 +403,8 @@
       <Docs>
         <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), указывающее, является ли содержимое элемента управления автоматический перенос в конце строки.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Значение по умолчанию — <b>True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Значение по умолчанию — <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="_ViewFields" FullName="Microsoft.Office.Interop.Outlook._ViewFields">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2fa7e9f0d7874832b1d6dbb48db18e744e8b2a5f" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639891" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _ViewFields : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2fa7e9f0d7874832b1d6dbb48db18e744e8b2a5f" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901601" /></Metadata><TypeSignature Language="C#" Value="public interface _ViewFields : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _ViewFields implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._ViewFields" />
   <TypeSignature Language="VB.NET" Value="Public Interface _ViewFields&#xA;Implements IEnumerable" />
@@ -60,14 +52,12 @@
         <param name="PropertyName">Имя свойства, с которым связана новый объект. Это свойство можно ссылаться по имени поля (отображаемых в окне Выбор поля) или пространством имен (представленный <see cref="P:Microsoft.Office.Interop.Outlook._ViewField.ViewXMLSchemaName" />).</param>
         <summary>Добавляет указанного поля в конце <see cref="T:Microsoft.Office.Interop.Outlook.ViewFields" /> семейства сайтов для представления.</summary>
         <returns>Объект <b>ViewField</b> , который представляет новое поле представления.</returns>
-        <remarks>
-          <para>Ссылки на свойство в <paramref name="PropertyName" /> с полем Имя требует локализованное имя на соответствующем языке. Дополнительные сведения о связывании свойства пространством имен, в разделе <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Создание ссылок на свойства пространством имен</a></para>
-          <para>при добавлении настраиваемых свойств в коллекцию <b>ViewFields</b> , свойство должен существовать в <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.UserDefinedProperties" /> семейство сайтов для Представления родительской папки.  </para>
+        <remarks><para>Ссылки на свойство в <paramref name="PropertyName" /> с полем Имя требует локализованное имя на соответствующем языке. Дополнительные сведения о связывании свойства пространством имен в разделе <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Создание ссылок на свойства пространством имен</a></para>
+          <para>При добавлении настраиваемых свойств в коллекцию <b>ViewFields</b> свойства должен существовать в <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.UserDefinedProperties" /> семейство сайтов для представления родительской папки.  </para>
           <para>Если свойство уже существует в коллекции <b>ViewFields</b> , Outlook вызовет ошибку.</para>
-          <para>Программным путем добавления настраиваемых полей в представление, используйте метод <b>ViewFields.Add</b> . Это рекомендуемый способ динамически изменять представление через параметр <see cref="P:Microsoft.Office.Interop.Outlook.View.XML" /> свойство.</para>
-          <para>Некоторые свойства не могут быть добавлены в представление с помощью <b>ViewFields.Add</b>, включая двоичные свойства вычисляемых свойств, и HTML или RTF основного содержимого. Для получения дополнительных сведений см <a href="http://go.microsoft.com/fwlink/?LinkId=87926">Неподдерживаемые свойства в объекте таблицы или фильтр таблицы</a></para>
-          <para />
-        </remarks>
+          <para>Для программного добавления настраиваемого поля в представлении, используйте метод <b>ViewFields.Add</b> . Это рекомендуемый способ динамически изменять представление через параметр <see cref="P:Microsoft.Office.Interop.Outlook.View.XML" /> свойство.</para>
+          <para>Некоторые свойства нельзя добавить в представление, с помощью <b>ViewFields.Add</b>, включая двоичные свойства, вычисленные свойства и содержимое текста запроса HTML или RTF. Для получения дополнительных сведений см <a href="http://go.microsoft.com/fwlink/?LinkId=87926">Неподдерживаемые свойства в объекте таблицы или фильтр таблицы</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -298,16 +288,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
