@@ -1,13 +1,5 @@
 <Type Name="Selection" FullName="Microsoft.Office.Interop.Outlook.Selection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c546cacfd6888cac8506d614c46b0204cc42399d" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20641267" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Selection : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c7af77512ef69a2ad810f96955f3537afca082e8" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27902574" /></Metadata><TypeSignature Language="C#" Value="public interface Selection : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Selection implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Selection" />
   <TypeSignature Language="VB.NET" Value="Public Interface Selection&#xA;Implements IEnumerable" />
@@ -31,10 +23,8 @@
   </Attributes>
   <Docs>
     <summary>Содержит набор элементов Outlook, выбранных в проводнике.</summary>
-    <remarks>
-      <para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.Selection" /> свойство для возврата коллекции <b>выбора</b> из <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> объекта.</para>
-      <para />
-    </remarks>
+    <remarks><para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.Selection" /> свойство для возврата коллекции <b>выбора</b> из <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> объекта.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -147,8 +137,9 @@
         <param name="SelectionContents">Указывает тип объектов в выделении для возврата.</param>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Selection" /> объект, содержащий тип объектов, указанного идентификатором <paramref name="SelectionContents" /> параметр и, выбранных в данный момент в окне active.</summary>
         <returns>Возвращает объект <b>Selection</b> , который содержит заданный тип объектов, выбранного в обозревателе active.</returns>
-        <remarks>
-          <para>Вызов <b>метода GetSelection</b> с <see cref="F:Microsoft.Office.Interop.Outlook.OlSelectionContents.olConversationHeaders" /> как аргумент возвращает объект <b>Selection</b> , который имеет <see cref="P:Microsoft.Office.Interop.Outlook.Selection.Location" /> свойство равно <see cref="F:Microsoft.Office.Interop.Outlook.OlSelectionLocation.olViewList" />.</para> Если текущее представление не является представление беседы или, если <b>расположение</b> не равно <b>OlSelectionLocation.olViewList</b>, <b>olConversationHeaders</b> в качестве аргумента при вызове <b>метода GetSelection</b> возвращает <b>Выбор</b><para> объект с <see cref="P:Microsoft.Office.Interop.Outlook.Selection.Count" /> равно 0.</para><para /></remarks>
+        <remarks><para>Вызов <b>метода GetSelection</b> с <see cref="F:Microsoft.Office.Interop.Outlook.OlSelectionContents.olConversationHeaders" /> как аргумент возвращает объект <b>Selection</b> , который имеет <see cref="P:Microsoft.Office.Interop.Outlook.Selection.Location" /> свойство равно <see cref="F:Microsoft.Office.Interop.Outlook.OlSelectionLocation.olViewList" />.</para>
+          <para>Если текущее представление не является представление беседы или, если <b>расположение</b> не равно <b>OlSelectionLocation.olViewList</b>, <b>olConversationHeaders</b> в качестве аргумента при вызове <b>метода GetSelection</b> возвращает объект <b>выделения</b> с <see cref="P:Microsoft.Office.Interop.Outlook.Selection.Count" /> равно 0.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -208,11 +199,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlSelectionLocation" /> константа, которая указывает, где в интерфейсе пользователя Microsoft Outlook текущего выделенного фрагмента. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>Location</b> со значением <see cref="F:Microsoft.Office.Interop.Outlook.OlSelectionLocation.olViewList" /> означает, что выделенный фрагмент находится в список элементов в проводнике. Вызов <see cref="M:Microsoft.Office.Interop.Outlook.Selection.GetSelection(Microsoft.Office.Interop.Outlook.OlSelectionContents)" /> с <see cref="F:Microsoft.Office.Interop.Outlook.OlSelectionContents.olConversationHeaders" /> как аргумент <see cref="T:Microsoft.Office.Interop.Outlook.Selection" /> со <see cref="P:Microsoft.Office.Interop.Outlook.Selection.Count" /> равно числу заголовки беседы в текущем выборе.</para>
-          <para>Если свойство <b>Location</b> не равно <b>olViewList</b>, при вызове <b>метода GetSelection</b><b>olConversationHeaders</b> как аргумент возвращает объект <b>Selection</b> со <b>счетчиком</b> равно 0.</para>
-          <para />
-        </remarks>
+        <remarks><para>Свойство <b>Location</b> со значением <see cref="F:Microsoft.Office.Interop.Outlook.OlSelectionLocation.olViewList" /> означает, что выделенный фрагмент находится в список элементов в проводнике. Вызов <see cref="M:Microsoft.Office.Interop.Outlook.Selection.GetSelection(Microsoft.Office.Interop.Outlook.OlSelectionContents)" /> с <see cref="F:Microsoft.Office.Interop.Outlook.OlSelectionContents.olConversationHeaders" /> как аргумент <see cref="T:Microsoft.Office.Interop.Outlook.Selection" /> со <see cref="P:Microsoft.Office.Interop.Outlook.Selection.Count" /> равно числу заголовки беседы в текущем выборе.</para>
+          <para>Если свойство <b>Location</b> не равно <b>olViewList</b>, объект <b>Selection</b> со <b>счетчиком</b> <b>olConversationHeaders</b> в качестве аргумента при вызове <b>метода GetSelection</b> возвращает равно 0.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -268,16 +257,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

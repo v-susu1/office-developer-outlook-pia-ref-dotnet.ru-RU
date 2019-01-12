@@ -1,13 +1,5 @@
 <Type Name="_ExchangeUser" FullName="Microsoft.Office.Interop.Outlook._ExchangeUser">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a9ddbfaff850f514434b04c735be4ebc01664fb1" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639766" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _ExchangeUser" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a9ddbfaff850f514434b04c735be4ebc01664fb1" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27902910" /></Metadata><TypeSignature Language="C#" Value="public interface _ExchangeUser" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _ExchangeUser" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._ExchangeUser" />
   <TypeSignature Language="VB.NET" Value="Public Interface _ExchangeUser" />
@@ -58,11 +50,9 @@
       <Docs>
         <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляющее X400 адреса электронной почты <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство предполагается X400 адрес пользователя. Чтобы определить основной адрес Интернет, используйте <see cref="P:Microsoft.Office.Interop.Outlook._ExchangeUser.PrimarySmtpAddress" /> свойство.</para>
-          <para>Свойству <b>адреса</b> необходимо задать до вызова метода <see cref="M:Microsoft.Office.Interop.Outlook._ExchangeUser.Details(System.Object)" /> метод.</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство предполагается X400 адрес пользователя. Чтобы определить основной адрес Интернет, используйте <see cref="P:Microsoft.Office.Interop.Outlook._ExchangeUser.PrimarySmtpAddress" /> свойство.</para>
+          <para>Свойство <b>адреса</b> необходимо задать до вызова метода <see cref="M:Microsoft.Office.Interop.Outlook._ExchangeUser.Details(System.Object)" /> метод. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddressEntryUserType">
@@ -90,10 +80,8 @@
       <Docs>
         <summary>Возвращает <b>olExchangeUserAddressEntry</b> — константа из <see cref="T:Microsoft.Office.Interop.Outlook.OlAddressEntryUserType" /> тип перечисления, представляющий пользователя <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" />. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Объект <b>ExchangeUser</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Свойство <b>AddressEntryUserType</b> наследует объект <b>AddressEntry</b> . В случае <b>ExchangeUser</b><b>AddressEntryUserType</b> всегда должна вернуть <b>olExchangeUserAddressEntry</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Объект <b>ExchangeUser</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Свойство <b>AddressEntryUserType</b> наследует объект <b>AddressEntry</b> . В случае <b>ExchangeUser</b> <b>AddressEntryUserType</b> всегда должна вернуть <b>olExchangeUserAddressEntry</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Alias">
@@ -121,11 +109,9 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляет псевдоним для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" />. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует свойству MAPI <b>PidTagAccount</b>.</para>
-          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagAccount</b>.</para>
+          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> . </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -184,11 +170,9 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляет имя помощника для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует свойству MAPI <b>PidTagAssistant</b>.</para>
-          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagAssistant</b>.</para>
+          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> . </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BusinessTelephoneNumber">
@@ -219,11 +203,9 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее номера рабочего телефона для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует параметру свойства MAPI, <b>PidTagBusinessTelephoneNumber</b>.</para>
-          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI, <b>PidTagBusinessTelephoneNumber</b>.</para>
+          <para> Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> . </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="City">
@@ -254,11 +236,9 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляет город для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует параметру свойства MAPI, <b>PidTagLocality</b>.</para>
-          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI, <b>PidTagLocality</b>.</para>
+          <para> Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> . </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -317,11 +297,9 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее комментариев для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует параметру свойства MAPI, <b>PidTagComment</b>.</para>
-          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI, <b>PidTagComment</b>.</para>
+          <para> Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> . </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CompanyName">
@@ -352,11 +330,9 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющая название компании для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует параметру свойства MAPI, <b>PidTagCompanyName</b>.</para>
-          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI, <b>PidTagCompanyName</b>.</para>
+          <para> Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> . </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -381,10 +357,8 @@
       <Parameters />
       <Docs>
         <summary>Удаляет <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" /> объекта из <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> объект коллекции, к которой он принадлежит.</summary>
-        <remarks>
-          <para>Объект <b>ExchangeUser</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Объект <b>ExchangeUser</b> — это объект <b>AddressEntry</b> , имеет <b>olExchangeUserAddressEntry</b> как <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.AddressEntryUserType" />; вызов <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntry.GetExchangeUser" /> возвращает соответствующий объект <b>ExchangeUser</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Объект <b>ExchangeUser</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Объект <b>ExchangeUser</b> — это объект <b>AddressEntry</b> , имеет <b>olExchangeUserAddressEntry</b> как <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.AddressEntryUserType" />; вызов <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntry.GetExchangeUser" /> возвращает соответствующий объект <b>ExchangeUser</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Department">
@@ -415,11 +389,9 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляет подразделение для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует параметру свойства MAPI, <b>PidTagDepartmentName</b>.</para>
-          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI, <b>PidTagDepartmentName</b>.</para>
+          <para> Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> . </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Details">
@@ -446,9 +418,9 @@
       <Docs>
         <param name="HWnd">Дескриптор родительского окна для диалоговое окно "Подробности". Нулевое значение (по умолчанию) указывает модального диалогового окна.</param>
         <summary>Отображает модальное диалоговое окно, которое предоставляет подробные сведения о <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" /> объекта.</summary>
-        <remarks>
-          <para>Метод <b>сведений</b> не выполняется, если <see cref="P:Microsoft.Office.Interop.Outlook._ExchangeUser.Name" /> оставлено пустым. Необходимо использовать для обработки ошибок во время выполнения, обработку ошибок и при нажатии кнопки "Отмена" в диалоговом окне. </para>Метод 
-          <para><b>сведения о</b> фактически останавливает выполнение во время отображения диалоговое окно кода.   </para><para /></remarks>
+        <remarks><para>Метод <b>сведений</b> не выполняется, если <see cref="P:Microsoft.Office.Interop.Outlook._ExchangeUser.Name" /> оставлено пустым. Необходимо использовать для обработки ошибок во время выполнения, обработку ошибок и при нажатии кнопки "Отмена" в диалоговом окне. </para>
+          <para>Метод <b>сведения о</b> фактически останавливает выполнение во время отображения диалоговое окно кода.   </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayType">
@@ -476,8 +448,9 @@
       <Docs>
         <summary>Возвращает <b>olUser</b> — константа из <see cref="T:Microsoft.Office.Interop.Outlook.OlDisplayType" /> перечисление, представляющее природы <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" />. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует параметру свойства MAPI, <b>PidTagDisplayType</b>.</para> Объект <b>ExchangeUser</b><para>является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Свойство <b>DisplayType</b> наследует объект <b>AddressEntry</b> . В случае <b>ExchangeUser</b><b>DisplayType</b> всегда должна вернуть <b>olUser</b>.</para><para /></remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI, <b>PidTagDisplayType</b>.</para>
+          <para> Объект <b>ExchangeUser</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Свойство <b>DisplayType</b> наследует объект <b>AddressEntry</b> . В случае <b>ExchangeUser</b> <b>DisplayType</b> всегда должна вернуть <b>olUser</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FirstName">
@@ -508,11 +481,9 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляет имя <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует параметру свойства MAPI, <b>PidTagGivenName</b>.</para>
-          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI, <b>PidTagGivenName</b>.</para>
+          <para> Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> . </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetContact">
@@ -537,12 +508,9 @@
       <Parameters />
       <Docs>
         <summary>Возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), так как <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" /> объекта не соответствует контакта в адресной книге контакты.</summary>
-        <returns>
-          <b>Значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), так как объект <b>ExchangeUser</b> не соответствует контакта в адресной книге контакты.</returns>
-        <remarks>
-          <para>Объект <b>ExchangeUser</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Метод <b>GetContact</b> оно наследуется от объект <b>AddressEntry</b> , и в случае <b>ExchangeUser</b>, этот метод всегда возвращает <b>значение Nothing</b>.</para>
-          <para />
-        </remarks>
+        <returns><b>Значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), так как объект <b>ExchangeUser</b> не соответствует контакта в адресной книге контакты.</returns>
+        <remarks><para>Объект <b>ExchangeUser</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Метод <b>GetContact</b> оно наследуется от объект <b>AddressEntry</b> , и в случае <b>ExchangeUser</b>, этот метод всегда возвращает <b>значение Nothing</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDirectReports">
@@ -568,11 +536,9 @@
       <Docs>
         <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> коллекцию, содержащую объект, который содержит все пользователи, непосредственно отчетов для пользователей Exchange.</summary>
         <returns>Объект <b>AddressEntries</b> семейства сайтов, содержащей пользователей, непосредственно отчетов для пользователей Exchange. Объект <b>AddressEntries</b> будет иметь значение нуль (0) при наличии не прямым подчиненным представленного с <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> в текущем сеансе или если прямых отчетов не были реализованы в каталоге Exchange.</returns>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>GetDirectReports</b> — это дорогой операции с точки зрения производительности при наличии медленное подключение к серверу Exchange.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExchangeDistributionList">
@@ -597,12 +563,9 @@
       <Parameters />
       <Docs>
         <summary>Возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), так как <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" /> объекта не соответствует <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта.</summary>
-        <returns>
-          <b>Значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), так как объект <b>ExchangeUser</b> не соответствует объект <b>ExchangeDistributionList</b> .</returns>
-        <remarks>
-          <para>Объект <b>ExchangeUser</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Метод <b>GetExchangeDistributionList</b> оно наследуется от объект <b>AddressEntry</b> , и в случае <b>ExchangeUser</b>, этот метод всегда возвращает <b>значение Nothing</b>.</para>
-          <para />
-        </remarks>
+        <returns><b>Значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), так как объект <b>ExchangeUser</b> не соответствует объект <b>ExchangeDistributionList</b> .</returns>
+        <remarks><para>Объект <b>ExchangeUser</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Метод <b>GetExchangeDistributionList</b> оно наследуется от объект <b>AddressEntry</b> , и в случае <b>ExchangeUser</b>, этот метод всегда возвращает <b>значение Nothing</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExchangeUser">
@@ -685,8 +648,7 @@
         <param name="MinPerChar">Задает продолжительность каждого промежуток времени в минутах. Значение по умолчанию — 30 минут.</param>
         <param name="CompleteFormat">Значение <b>True</b> указывает, что более детальные время занятости, возвращается в строке сведений о доступности. Значение <b>False</b> указывает, что возвращаются различие между только время недоступны и «занят».</param>
         <summary>Получает <b>String</b> (<b>строка</b> в C#) представляющее доступность <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" /> в течение 30 дней с даты начала, начиная с полуночи указанной даты.</summary>
-        <returns>
-          <b>String</b> (<b>строка</b> в C#), который представляет доступности пользователя Exchange в течение 30 дней с даты начала Приступая к работе в полночь указанной даты. Каждый символ в <b>String</b> (<b>строка</b> в C#) — это значение, указывающее, является ли пользователь доступен (0), и при необходимости ли занят время помечается под вопросом (1), из Microsoft office (3) или другие (2).</returns>
+        <returns><b>String</b> (<b>строка</b> в C#), который представляет доступности пользователя Exchange в течение 30 дней с даты начала Приступая к работе в полночь указанной даты. Каждый символ в <b>String</b> (<b>строка</b> в C#) — это значение, указывающее, является ли пользователь доступен (0), и при необходимости ли занят время помечается под вопросом (1), из Microsoft office (3) или другие (2).</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -713,11 +675,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> коллекцию, содержащую объект, который содержит <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объектов, представляющих все рассылки Exchange приведены к которому принадлежит пользователь.</summary>
         <returns>Объект <b>AddressEntries</b> семейства сайтов, который представляет рассылки Exchange приведены к которому <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" /> принадлежит. Возвращает объект коллекции <b>AddressEntries</b> с количеством нуль (0), если <b>ExchangeUser</b> не является членом любого списка рассылки Exchange.</returns>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>GetMemberOfList</b> — это дорогой операции с точки зрения производительности при наличии медленное подключение к Exchange Server.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPicture">
@@ -743,11 +703,9 @@
       <Docs>
         <summary>Получает <see cref="T:stdole.StdPicture" /> объект, представляющий изображение пользователя Microsoft Exchange, отображаемый в Microsoft Outlook.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Изображение пользователя Exchange в Active Directory и отображаются в различных местах в Outlook, включая диалоговое окно свойств Outlook и Card.If контакт изображение не существует для пользователя, <b>GetPicture</b> возвращает <b>значение Nothing</b> ( NULL ссылка (Nothing в Visual Basic) в C#).</para>
-          <para>Может быть вызван только <b>GetPicture</b> из кода, что выполняется в процессе как Outlook. Объект <b>StdPicture</b> не допускающий через границы процессов. При попытке вызова <b>GetPicture</b> из кода вне процесса, возникает исключение. Для получения дополнительных сведений см <a href="http://support.microsoft.com/kb/150034">сервера автоматизации невозможно передать указатель реализацию IPictureDisp объект изображения через границы процессов</a></para>
-          <para />
-        </remarks>
+        <remarks><para>Изображение пользователя Exchange в Active Directory и отображаются в различных местах в Outlook, включая диалоговое окно свойств Outlook и Card.If контакт изображение не существует для пользователя, <b>GetPicture</b> возвращает <b>значение Nothing</b> ( пустая ссылка (Nothing в Visual Basic) в C#).</para>
+          <para><b>GetPicture</b> можно вызывать только из кода, что выполняется в процессе как Outlook. Объект <b>StdPicture</b> не допускающий через границы процессов. При попытке вызова <b>GetPicture</b> из кода вне процесса, возникает исключение. Для получения дополнительных сведений см <a href="http://support.microsoft.com/kb/150034">сервера автоматизации невозможно передать указатель реализацию IPictureDisp объект изображения через границы процессов</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -775,10 +733,8 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее уникальный идентификатор для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" />. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Объект <b>ExchangeUser</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Он наследует свойство <b>ID</b> из объект <b>AddressEntry</b> . При создании объект <b>AddressEntry</b> , поставщика транспорта назначает строку постоянная, уникальный идентификатор. Эти идентификаторы не изменяйте из одного сеанса в другую.</para>
-          <para />
-        </remarks>
+        <remarks><para> Объект <b>ExchangeUser</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Он наследует свойство <b>ID</b> из объект <b>AddressEntry</b> . При создании объект <b>AddressEntry</b> , поставщика транспорта назначает строку постоянная, уникальный идентификатор. Эти идентификаторы не изменяйте из одного сеанса в другую.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="JobTitle">
@@ -809,11 +765,9 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляет должность <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует параметру свойства MAPI, <b>PidTagTitle</b>.</para>
-          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI, <b>PidTagTitle</b>.</para>
+          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> . </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LastName">
@@ -844,11 +798,9 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее фамилию <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует свойству MAPI, <b>PidTagSurname</b>.</para>
-          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI, <b>PidTagSurname</b>.</para>
+          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> . </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Manager">
@@ -978,11 +930,9 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляет номер мобильного телефона для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует свойству MAPI, <b>PidTagMobileTelephoneNumber</b>.</para>
-          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI, <b>PidTagMobileTelephoneNumber</b>.</para>
+          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> . </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1044,11 +994,9 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее расположение комнаты для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует параметру свойства MAPI, <b>PidTagOfficeLocation</b>.</para>
-          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI, <b>PidTagOfficeLocation</b>.</para>
+          <para> Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> . </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1107,11 +1055,9 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляет почтовый индекс для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует параметру свойства MAPI, <b>PidTagPostalCode</b>.</para>
-          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI, <b>PidTagPostalCode</b>.</para>
+          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> . </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrimarySmtpAddress">
@@ -1139,11 +1085,9 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляет основной адрес Simple Mail Transfer Protocol (SMTP) для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" />. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует параметру свойства MAPI, <b>PidTagEmailAddress</b>.</para>
-          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI, <b>PidTagEmailAddress</b>.</para>
+          <para> Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> . </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyAccessor">
@@ -1199,16 +1143,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StateOrProvince">
@@ -1239,11 +1181,9 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляет область или край для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует параметру свойства MAPI, <b>PidTagStateOrProvince</b>.</para>
-          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI, <b>PidTagStateOrProvince</b>.</para>
+          <para> Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> . </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StreetAddress">
@@ -1274,11 +1214,9 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее почтовый адрес для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует параметру свойства MAPI, <b>PidTagStreetAddress</b>.</para>
-          <para>Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI, <b>PidTagStreetAddress</b>.</para>
+          <para> Возвращает пустую строку, если это свойство не реализован или не существует для объект <b>ExchangeUser</b> . </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -1309,10 +1247,8 @@
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее тип записи для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Объект <b>ExchangeUser</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Свойство <b>Type</b> наследует объект <b>AddressEntry</b> . В случае <b>ExchangeUser</b>тип всегда является строка «EX».</para>
-          <para />
-        </remarks>
+        <remarks><para>Объект <b>ExchangeUser</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Свойство <b>Type</b> наследует объект <b>AddressEntry</b> . В случае <b>ExchangeUser</b>тип всегда является строка «EX».</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -1341,11 +1277,9 @@
         <param name="MakePermanent">Значение <b>True</b> означает, что при сбросе кэша свойства и все изменения завершены в базовом адресной книги. Значение <b>False</b> указывает, что кэш свойств очищен, но не было зафиксировано постоянное хранилище. Значение по умолчанию — <b>True</b>.</param>
         <param name="Refresh">Значение <b>True</b> указывает, что кэш свойств перезагружается из значений в базовом адресной книги. Значение <b>False</b> указывает, что кэш свойств не загружаются. Значение по умолчанию — <b>False</b>.</param>
         <summary>Внесение изменений в публикации, посвященные <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" /> объект в системе обмена сообщениями.</summary>
-        <remarks>
-          <para>Новые записи или изменения существующих записей, не сохраняются в коллекции до вызова метода <b>Update</b> с его <paramref name="MakePermanent" /> параметра задано значение <b>True</b>.  </para>
-          <para>Для очистки кэша и перезагрузите значения из адресной книги, вызове <b>Update</b> с <paramref name="MakePermanent" /> параметра значение <b>False</b> и <paramref name="Refresh" /> параметра задано значение <b>True</b>.  </para>
-          <para />
-        </remarks>
+        <remarks><para>Новые записи или изменения существующих записей, не сохраняются в коллекции до вызова метода <b>Update</b> с его <paramref name="MakePermanent" /> параметра задано значение <b>True</b>.  </para>
+          <para>Чтобы очистить кэш и перезагрузите значения из адресной книги, вызвать метод <b>обновления</b> с <paramref name="MakePermanent" /> параметра значение <b>False</b> и <paramref name="Refresh" /> параметра задано значение <b>True</b>.  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateFreeBusy">

@@ -1,13 +1,5 @@
 <Type Name="_Views" FullName="Microsoft.Office.Interop.Outlook._Views">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="66617b0bde6b97d2cfc7ba1b7b89affe0a7d6251" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640568" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Views : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="66617b0bde6b97d2cfc7ba1b7b89affe0a7d6251" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903939" /></Metadata><TypeSignature Language="C#" Value="public interface _Views : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Views implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Views" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Views&#xA;Implements IEnumerable" />
@@ -63,8 +55,7 @@
         <param name="SaveOption">Сохранить параметр, который задает разрешения нового представления. <b>olViewSaveOptionAllFoldersOfType</b> Представление может осуществляться во всех папках этого типа. <b>olViewSaveOptionThisFolderEveryOne</b> Представление можно недоступной для всех пользователей в только для этой папки. <b>olViewSaveOptionThisFolderOnlyMe</b> Представление может осуществляться в этой папке только пользователем.</param>
         <summary>Создание нового представления в <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> семейства сайтов.</summary>
         <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.View" /> объект, который представляет новое представление.</returns>
-        <remarks>
-          <para>При добавлении <b>представления</b> в коллекцию <b>представлений</b> в папку, которая не является текущей папки, необходимо сначала сохранить копию объект коллекции <b>представлений</b> и добавить в <b>представление</b> для данного объекта коллекции, как показано в следующем примере кода. Это обходной для существующего ошибка, которая в противном случае будет отображено вызов <see cref="M:Microsoft.Office.Interop.Outlook.View.Apply" /> добавлена <b>представление</b> к ошибке.</para>
+        <remarks><para>При добавлении <b>представления</b> в коллекцию <b>представлений</b> в папку, которая не является текущей папки, необходимо сначала сохранить копию объект коллекции <b>представлений</b> и добавить в <b>представление</b> для данного объекта коллекции, как показано в следующем примере кода. Это обходной для существующего ошибка, которая в противном случае будет отображено вызов <see cref="M:Microsoft.Office.Interop.Outlook.View.Apply" /> добавлена <b>представление</b> к ошибке.</para>
           <code>Sub CalendarView()
     Dim calView As Outlook.View
     Dim vws As Outlook.Views
@@ -110,8 +101,7 @@ End Sub</code>
     // This Apply call will be fine.
     calView.Apply();
 }</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -343,16 +333,14 @@ End Sub</code>
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

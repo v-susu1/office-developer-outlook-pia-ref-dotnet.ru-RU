@@ -1,13 +1,5 @@
 <Type Name="_PropertyAccessor" FullName="Microsoft.Office.Interop.Outlook._PropertyAccessor">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="78e2122c80a9c947755c0b2d0a28a1c207ecb94a" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639874" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _PropertyAccessor" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="78e2122c80a9c947755c0b2d0a28a1c207ecb94a" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27906214" /></Metadata><TypeSignature Language="C#" Value="public interface _PropertyAccessor" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _PropertyAccessor" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._PropertyAccessor" />
   <TypeSignature Language="VB.NET" Value="Public Interface _PropertyAccessor" />
@@ -84,10 +76,8 @@
         <param name="Value">Представляет массив байтов для преобразования.</param>
         <summary>Преобразует массив байтов, указанное в <paramref name="Value" /> к типу <b>String</b> (<b>строка</b> в C#).</summary>
         <returns>Шестнадцатеричный <b>String</b> (<b>строка</b> в C#), представляющий преобразованное значение.</returns>
-        <remarks>
-          <para>Дополнительные сведения о преобразовании типа при использовании объект <b>PropertyAccessor</b> см <a href="http://go.microsoft.com/fwlink/?LinkId=87854">Best Practices for получение и установка свойств</a></para>
-          <para />
-        </remarks>
+        <remarks><para>Дополнительные сведения о преобразовании типа при использовании объект <b>PropertyAccessor</b> см <a href="http://go.microsoft.com/fwlink/?LinkId=87854">Best Practices for получение и установка свойств</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -143,12 +133,9 @@
       <Docs>
         <param name="SchemaNames">Массив, содержащий имена свойств, которые должны быть удалены для родительский объект <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объекта. Эти свойства для ссылки на пространство имен. Для получения дополнительных сведений см. <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Создание ссылок на свойства пространством имен</a></param>
         <summary>Удаление свойств, указанных в массиве <paramref name="SchemaNames" />.</summary>
-        <returns>
-          <b>Объект</b> , который является <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если операция выполнена успешно, или массив объектов <b>Err</b> при возникновении ошибки. Если возвращаемым значением является массив, размер массива — это же, как SchemaNames массива. Значение <b>Err</b> в массиве сопоставляется удаление соответствующего свойства с помощью параметра SchemaNames в результате ошибки.</returns>
-        <remarks>
-          <para>Вызывающего должен иметь разрешение на удаление свойства. Метод <b>DeleteProperties</b> удаляет только настраиваемые свойства, которые существуют. Любое свойство встроенных Outlook или любое свойство MAPI при этом не удаляются. Не удаляет пользовательские свойства <see cref="T:Microsoft.Office.Interop.Outlook.DocumentItem" /> объекта.</para>
-          <para />
-        </remarks>
+        <returns><b>Объект</b> , который является <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если операция выполнена успешно, или массив объектов <b>Err</b> при возникновении ошибки. Если возвращаемым значением является массив, размер массива — это же, как SchemaNames массива. Значение <b>Err</b> в массиве сопоставляется удаление соответствующего свойства с помощью параметра SchemaNames в результате ошибки.</returns>
+        <remarks><para>Вызывающего должен иметь разрешение на удаление свойства. Метод <b>DeleteProperties</b> удаляет только настраиваемые свойства, которые существуют. Любое свойство встроенных Outlook или любое свойство MAPI при этом не удаляются. Не удаляет пользовательские свойства <see cref="T:Microsoft.Office.Interop.Outlook.DocumentItem" /> объекта.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteProperty">
@@ -176,10 +163,8 @@
       <Docs>
         <param name="SchemaName">Имя свойства, которое нужно удалить для родительский объект <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объекта. Ссылка на свойство — это пространство имен. Для получения дополнительных сведений см. <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Создание ссылок на свойства пространством имен</a></param>
         <summary>Удаляет указанное свойство с <paramref name="SchemaName" />.</summary>
-        <remarks>
-          <para>Вызывающего должен иметь разрешение на удаление свойства. Метод <b>DeleteProperty</b> удаляет настраиваемые свойства; любое свойство встроенных Outlook или любое свойство MAPI при этом не удаляются. Не удаляет пользовательские свойства <see cref="T:Microsoft.Office.Interop.Outlook.DocumentItem" /> объекта.</para>
-          <para />
-        </remarks>
+        <remarks><para>Вызывающего должен иметь разрешение на удаление свойства. Метод <b>DeleteProperty</b> удаляет настраиваемые свойства; любое свойство встроенных Outlook или любое свойство MAPI при этом не удаляются. Не удаляет пользовательские свойства <see cref="T:Microsoft.Office.Interop.Outlook.DocumentItem" /> объекта.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -207,13 +192,10 @@
       <Docs>
         <param name="SchemaNames">Массив, содержащий имена свойств, значения которых должны быть возвращены. Эти свойства для ссылки на пространство имен. Для получения дополнительных сведений см. <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Создание ссылок на свойства пространством имен</a></param>
         <summary>Получает значения свойств, указанных с одномерный массив <paramref name="SchemaNames" />.</summary>
-        <returns>
-          <b>Объект</b> , представляющий массив значений свойств, указанных в параметре <paramref name="SchemaNames" />. Количество элементов в массиве равно числу элементов в <paramref name="SchemaNames" /> массива.  При возникновении ошибки для получения определенное свойство, значение <b>Err</b> будут возвращены в соответствующем расположении в возвращаемый массив.</returns>
-        <remarks>
-          <para>Массив, возвращенный <b>GetProperties</b> может содержать элементы различных типов, в зависимости от типа запрошенное свойство. Тип элемента массива, возвращенного <b>GetProperties</b> будет совпадать с типом базового свойства. Некоторые типы необработанные свойство таких как <b>PT_OBJECT</b> не поддерживаются и вызовет ошибку. Если требуется преобразования типа необработанные свойства, например из <b>PT_BINARY</b> в строку или из <b>PT_SYSTIME</b> местное время использовать вспомогательные методы <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.BinaryToString(System.Object)" /> и <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.UTCToLocalTime(System.DateTime)" />. </para>
-          <para>Для получения дополнительных сведений о получении свойств с помощью объект <b>PropertyAccessor</b> видеть <a href="http://go.microsoft.com/fwlink/?LinkId=87854">Советы и рекомендации по получение и установка свойств</a></para>
-          <para />
-        </remarks>
+        <returns><b>Объект</b> , представляющий массив значений свойств, указанных в параметре <paramref name="SchemaNames" />. Количество элементов в массиве равно числу элементов в <paramref name="SchemaNames" /> массива.  При возникновении ошибки для получения определенное свойство, значение <b>Err</b> будут возвращены в соответствующем расположении в возвращаемый массив.</returns>
+        <remarks><para>Массив, возвращенный <b>GetProperties</b> может содержать элементы различных типов, в зависимости от типа запрошенное свойство. Тип элемента массива, возвращенного <b>GetProperties</b> будет совпадать с типом базового свойства. Некоторые типы необработанные свойство таких как <b>PT_OBJECT</b> не поддерживаются и вызовет ошибку. Если требуется преобразования типа необработанные свойства, например из <b>PT_BINARY</b> в строку или из <b>PT_SYSTIME</b> местное время использовать вспомогательные методы <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.BinaryToString(System.Object)" /> и <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.UTCToLocalTime(System.DateTime)" />. </para>
+          <para>Дополнительные сведения о получении свойств с помощью объект <b>PropertyAccessor</b> видеть <a href="http://go.microsoft.com/fwlink/?LinkId=87854">Советы и рекомендации по получение и установка свойств</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -242,11 +224,9 @@
         <param name="SchemaName">Имя свойства, значение которого должно быть возвращено. Ссылка на свойство — это пространство имен. Для получения дополнительных сведений см. <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Создание ссылок на свойства пространством имен</a></param>
         <summary>Возвращает <b>объект</b> , представляющий значение свойства, указанного в <paramref name="SchemaName" />.</summary>
         <returns>Значение <b>объекта</b> , который представляет значение запрошенные свойства в соответствии с <paramref name="SchemaName" />.</returns>
-        <remarks>
-          <para>Тип возвращаемого значения будет совпадать с типом базового свойства. Некоторые типы необработанные свойство таких как <b>PT_OBJECT</b> не поддерживаются и вызовет ошибку. Если требуется преобразования типа необработанные свойства, например из <b>PT_BINARY</b> в строку или из <b>PT_SYSTIME</b> местное время использовать вспомогательные методы <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.BinaryToString(System.Object)" /> и <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.UTCToLocalTime(System.DateTime)" />. </para>
-          <para>Для получения дополнительных сведений о получении свойств с помощью объект <b>PropertyAccessor</b> видеть <a href="http://go.microsoft.com/fwlink/?LinkId=87854">Советы и рекомендации по получение и установка свойств</a></para>
-          <para />
-        </remarks>
+        <remarks><para>Тип возвращаемого значения будет совпадать с типом базового свойства. Некоторые типы необработанные свойство таких как <b>PT_OBJECT</b> не поддерживаются и вызовет ошибку. Если требуется преобразования типа необработанные свойства, например из <b>PT_BINARY</b> в строку или из <b>PT_SYSTIME</b> местное время использовать вспомогательные методы <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.BinaryToString(System.Object)" /> и <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.UTCToLocalTime(System.DateTime)" />. </para>
+          <para>Дополнительные сведения о получении свойств с помощью объект <b>PropertyAccessor</b> видеть <a href="http://go.microsoft.com/fwlink/?LinkId=87854">Советы и рекомендации по получение и установка свойств</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LocalTimeToUTC">
@@ -275,10 +255,8 @@
         <param name="Value">Значение даты и времени для преобразования из местного времени в формате UTC.</param>
         <summary>Преобразует значение даты и времени, указанного идентификатором <paramref name="Value" /> из формата местного времени в формате по Гринвичу (UTC).</summary>
         <returns>Значение даты и времени, представляющий <paramref name="Value" /> после выполняется преобразование из местного времени в формате UTC.</returns>
-        <remarks>
-          <para>Дополнительные сведения о преобразовании типа при использовании объект <b>PropertyAccessor</b> см <a href="http://go.microsoft.com/fwlink/?LinkId=87854">Best Practices for получение и установка свойств</a></para>
-          <para />
-        </remarks>
+        <remarks><para>Дополнительные сведения о преобразовании типа при использовании объект <b>PropertyAccessor</b> см <a href="http://go.microsoft.com/fwlink/?LinkId=87854">Best Practices for получение и установка свойств</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -334,16 +312,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса.  Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetProperties">
@@ -373,16 +349,14 @@
         <param name="SchemaNames">Массив имен свойств, значения которых должно быть задано как указано в параметре значений. Эти свойства для ссылки на пространство имен. Для получения дополнительных сведений см. <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Создание ссылок на свойства пространством имен</a></param>
         <param name="Values">Массив значений, которые необходимо задать для свойства, указанного с помощью параметра SchemaNames.</param>
         <summary>Задает свойства, указанные в массиве <paramref name="SchemaNames" /> для значения, указанные в массиве <paramref name="Values" />.</summary>
-        <returns>
-          <b>Объект</b> , который является <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если операция выполнена успешно. Если перед любой задано ошибку, к примеру, число элементов в массиве SchemaNames не совпадает с именем в массиве значений и значение <b>Err</b> будут возвращены. Если во время настройки свойства ошибку, возвращаемое значение — это массив объектов <b>Err</b> числа элементов в массиве выполняется аналогично SchemaNames массива. Значение <b>Err</b> в массиве сопоставляется результат ошибки установки с помощью параметра SchemaNames соответствующего свойства.</returns>
-        <remarks>
-          <para>Если свойство не существует и <paramref name="SchemaNames" /> элемент содержит свойство описателя, а затем <b>SetProperties</b> создает свойство и присваивает свойству со значением, заданным в <paramref name="Values" />. Тип свойства будет тип элемента, который передается в <paramref name="Values" />. Если свойство существует, а затем <b>SetProperties</b> присваивает свойству значение в соответствии с <paramref name="Values" />.</para>
-          <para>Обратите внимание, что настраиваемое свойство, созданные с помощью <b>PropertyAccessor</b> не поддерживается в настраиваемом представлении. Если вы хотите просмотреть настраиваемого свойства элемента, создание свойства с помощью <see cref="M:Microsoft.Office.Interop.Outlook.UserProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> метод.</para>
+        <returns><b>Объект</b> , который является <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если операция выполнена успешно. Если перед любой задано ошибку, к примеру, число элементов в массиве SchemaNames не совпадает с именем в массиве значений и значение <b>Err</b> будут возвращены. Если во время настройки свойства ошибку, возвращаемое значение — это массив объектов <b>Err</b> числа элементов в массиве выполняется аналогично SchemaNames массива. Значение <b>Err</b> в массиве сопоставляется результат ошибки установки с помощью параметра SchemaNames соответствующего свойства.</returns>
+        <remarks><para>Если свойство не существует и <paramref name="SchemaNames" /> элемент содержит свойство описателя, а затем <b>SetProperties</b> создает свойство и присваивает свойству со значением, заданным в <paramref name="Values" />. Тип свойства будет тип элемента, который передается в <paramref name="Values" />. Если свойство существует, а затем <b>SetProperties</b> присваивает свойству значение в соответствии с <paramref name="Values" />.</para>
+          <para>Обратите внимание на то, что настраиваемое свойство, созданные с помощью <b>PropertyAccessor</b> не поддерживается в настраиваемом представлении. Если вы хотите просмотреть настраиваемого свойства элемента, создание свойства с помощью <see cref="M:Microsoft.Office.Interop.Outlook.UserProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> метод.</para>
           <para>Если родительский объект <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> поддерживает явные операции <b>сохранения</b> , а затем свойства должна быть сохранена объекта с явных <b>Сохранить</b> вызова метода. Если объект не поддерживает явные операции <b>сохранения</b> , а затем свойства сохраняются в объекте при вызове <b>SetProperties</b> . </para>
-          <para>Следует соблюдать осторожность и убедитесь, что все исключения обрабатывается правильно. Условия, где возникает ошибка параметр свойства включают:</para>
+          <para>Будьте внимательны и убедитесь, что все исключения обрабатывается правильно. Следующие условия, где происходит сбой Установка свойств:</para>
           <list type="bullet">
             <item>
-              <para>свойство доступно только для чтения, а некоторые Outlook MAPI свойства доступны только для чтения.</para>
+              <para>Свойство только для чтения, как некоторые свойства Outlook и MAPI доступны только для чтения.</para>
             </item>
             <item>
               <para>Свойство, указанное в заданном пространстве имен не найден.</para>
@@ -391,7 +365,7 @@
               <para>Свойство указан недопустимый формат и невозможно выполнить синтаксический анализ.</para>
             </item>
             <item>
-              <para>Свойство не существует и не может быть создан.</para>
+              <para>Это свойство не существует и не может быть создан.</para>
             </item>
             <item>
               <para>Свойство существует, но передается значение неверный тип.</para>
@@ -400,12 +374,11 @@
               <para>Не удается открыть свойство, так как он находится в автономном режиме.</para>
             </item>
             <item>
-              <para>Свойство создается с помощью метода <b>Add</b><see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> объекта. При задании свойства в первый раз, необходимо использовать <see cref="P:Microsoft.Office.Interop.Outlook.UserProperty.Value" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.UserProperty" /> объекта, а не <b>SetProperties</b> или <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.SetProperty(System.String,System.Object)" /> метод объект <b>PropertyAccessor</b> .</para>
+              <para>Свойство создается с помощью метода <b>Add</b> <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> объекта. При задании свойства в первый раз, необходимо использовать <see cref="P:Microsoft.Office.Interop.Outlook.UserProperty.Value" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.UserProperty" /> объекта, а не <b>SetProperties</b> или <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.SetProperty(System.String,System.Object)" /> метод объект <b>PropertyAccessor</b> .</para>
             </item>
           </list>
-          <para>Для получения дополнительных сведений о Установка свойств с помощью объект <b>PropertyAccessor</b> видеть <a href="http://go.microsoft.com/fwlink/?LinkId=87854">Советы и рекомендации по получение и установка свойств</a></para>
-          <para />
-        </remarks>
+          <para>Дополнительные сведения о задании свойств с помощью объект <b>PropertyAccessor</b> см <a href="http://go.microsoft.com/fwlink/?LinkId=87854">Best Practices for получение и установка свойств</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetProperty">
@@ -435,14 +408,13 @@
         <param name="SchemaName">Имя свойства, значение которого равно должно быть задано как указано в <paramref name="Value" />. Ссылка на свойство — это пространство имен. Для получения дополнительных сведений см. <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Создание ссылок на свойства пространством имен</a></param>
         <param name="Value">Значение, которое должно быть задано для свойства, указанного в <paramref name="SchemaName" />.</param>
         <summary>Задает свойства, указанного в <paramref name="SchemaName" /> значению, указанному с <paramref name="Value" />.</summary>
-        <remarks>
-          <para>Если свойство не существует и <paramref name="SchemaName" /> содержит указатель допустимого свойства, затем <b>SetProperty</b> создает свойство и назначает значение, назначаемое <paramref name="Value" />. Если свойство существует и <paramref name="SchemaName" /> является допустимым, а затем <b>SetProperty</b> присваивает свойству со значением, заданным в <paramref name="Value" />.</para>
-          <para>Обратите внимание, что настраиваемое свойство, созданные с помощью <b>PropertyAccessor</b> не поддерживается в настраиваемом представлении. Если вы хотите просмотреть настраиваемого свойства элемента, создание свойства с помощью <see cref="M:Microsoft.Office.Interop.Outlook.UserProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> метод.</para>
-          <para>, Если родительский объект <b>PropertyAccessor</b> поддерживает явные операции <b>сохранения</b> , а затем свойства должна быть сохранена объекта с явных <b>Сохранить</b> вызова метода. Если объект не поддерживает явные операции <b>сохранения</b> , а затем свойства сохраняются в объекте при вызове <b>SetProperties</b> . </para>
-          <para>Следует соблюдать осторожность и убедитесь, что все исключения обрабатывается правильно. Условия, где возникает ошибка параметр свойства включают:</para>
+        <remarks><para>Если свойство не существует и <paramref name="SchemaName" /> содержит указатель допустимого свойства, затем <b>SetProperty</b> создает свойство и назначает значение, назначаемое <paramref name="Value" />. Если свойство существует и <paramref name="SchemaName" /> является допустимым, а затем <b>SetProperty</b> присваивает свойству со значением, заданным в <paramref name="Value" />.</para>
+          <para>Обратите внимание на то, что настраиваемое свойство, созданные с помощью <b>PropertyAccessor</b> не поддерживается в настраиваемом представлении. Если вы хотите просмотреть настраиваемого свойства элемента, создание свойства с помощью <see cref="M:Microsoft.Office.Interop.Outlook.UserProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> метод.</para>
+          <para>Если родительский объект <b>PropertyAccessor</b> поддерживает явные операции <b>сохранения</b> , а затем свойства должна быть сохранена объекта с явных <b>Сохранить</b> вызова метода. Если объект не поддерживает явные операции <b>сохранения</b> , а затем свойства сохраняются в объекте при вызове <b>SetProperties</b> . </para>
+          <para>Будьте внимательны и убедитесь, что все исключения обрабатывается правильно. Следующие условия, где происходит сбой Установка свойств:</para>
           <list type="bullet">
             <item>
-              <para>свойство доступно только для чтения, а некоторые Outlook MAPI свойства доступны только для чтения.</para>
+              <para>Свойство только для чтения, как некоторые свойства Outlook и MAPI доступны только для чтения.</para>
             </item>
             <item>
               <para>Свойство, указанное в заданном пространстве имен не найден.</para>
@@ -451,7 +423,7 @@
               <para>Свойство указан недопустимый формат и невозможно выполнить синтаксический анализ.</para>
             </item>
             <item>
-              <para>Свойство не существует и не может быть создан.</para>
+              <para>Это свойство не существует и не может быть создан.</para>
             </item>
             <item>
               <para>Свойство существует, но передается значение неверный тип.</para>
@@ -460,12 +432,11 @@
               <para>Не удается открыть свойство, так как он находится в автономном режиме.</para>
             </item>
             <item>
-              <para>Свойство создается с помощью метода <b>Add</b><see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> объекта. При задании свойства в первый раз, необходимо использовать <see cref="P:Microsoft.Office.Interop.Outlook.UserProperty.Value" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.UserProperty" /> объекта, а не <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.SetProperties(System.Object,System.Object)" /> или метод <b>SetProperty</b> объект <b>PropertyAccessor</b> .</para>
+              <para>Свойство создается с помощью метода <b>Add</b> <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> объекта. При задании свойства в первый раз, необходимо использовать <see cref="P:Microsoft.Office.Interop.Outlook.UserProperty.Value" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.UserProperty" /> объекта, а не <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.SetProperties(System.Object,System.Object)" /> или метод <b>SetProperty</b> объект <b>PropertyAccessor</b> .</para>
             </item>
           </list>
-          <para>Для получения дополнительных сведений о Установка свойств с помощью объект <b>PropertyAccessor</b> видеть <a href="http://go.microsoft.com/fwlink/?LinkId=87854">Советы и рекомендации по получение и установка свойств</a></para>
-          <para />
-        </remarks>
+          <para>Дополнительные сведения о задании свойств с помощью объект <b>PropertyAccessor</b> см <a href="http://go.microsoft.com/fwlink/?LinkId=87854">Best Practices for получение и установка свойств</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StringToBinary">
@@ -494,10 +465,8 @@
         <param name="Value">Шестнадцатеричное строковое значение, должен быть преобразован в массив байтов.</param>
         <summary>Преобразует строку, указанного идентификатором <paramref name="Value" /> для массива байтов.</summary>
         <returns>Значение <b>объекта</b> , который представляет массив байтов, возвращенных из преобразования.</returns>
-        <remarks>
-          <para>Дополнительные сведения о преобразовании типа при использовании объект <b>PropertyAccessor</b> см <a href="http://go.microsoft.com/fwlink/?LinkId=87854">Best Practices for получение и установка свойств</a></para>
-          <para />
-        </remarks>
+        <remarks><para>Дополнительные сведения о преобразовании типа при использовании объект <b>PropertyAccessor</b> см <a href="http://go.microsoft.com/fwlink/?LinkId=87854">Best Practices for получение и установка свойств</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UTCToLocalTime">
@@ -526,10 +495,8 @@
         <param name="Value">Преобразование времени в формате UTC в местное время значение даты и времени.</param>
         <summary>Преобразует значение даты и времени, заданного с <paramref name="Value" /> и выразить значение в локальном времени в формате UTC.</summary>
         <returns>Значение даты и времени, представляющий <paramref name="Value" /> после выполняется преобразование из UTC в местное время.</returns>
-        <remarks>
-          <para>Дополнительные сведения о преобразовании типа при использовании <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объекта, <a href="http://go.microsoft.com/fwlink/?LinkId=87854">рекомендации</a> по получение и установка свойств</para>
-          <para />
-        </remarks>
+        <remarks><para>Дополнительные сведения о преобразовании типа при использовании <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объекта, <a href="http://go.microsoft.com/fwlink/?LinkId=87854">рекомендации</a> по получение и установка свойств</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

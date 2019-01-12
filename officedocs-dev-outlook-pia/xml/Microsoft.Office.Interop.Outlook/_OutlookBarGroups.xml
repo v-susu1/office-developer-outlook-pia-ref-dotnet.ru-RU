@@ -1,13 +1,5 @@
 <Type Name="_OutlookBarGroups" FullName="Microsoft.Office.Interop.Outlook._OutlookBarGroups">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="871d48a04c6dc0380629f6a888879e79cf5285d6" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639892" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _OutlookBarGroups : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="871d48a04c6dc0380629f6a888879e79cf5285d6" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27904681" /></Metadata><TypeSignature Language="C#" Value="public interface _OutlookBarGroups : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _OutlookBarGroups implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._OutlookBarGroups" />
   <TypeSignature Language="VB.NET" Value="Public Interface _OutlookBarGroups&#xA;Implements IEnumerable" />
@@ -60,8 +52,7 @@
         <param name="Name">Имя создаваемой группы.</param>
         <param name="Index">Позиция, в которой будет вставлена новую группу в области ярлыки. Один располагается в верхней части панели.</param>
         <summary>Добавление новой группы в область Ярлыки.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarGroup" /> Объект, представляющий новую группу.</returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarGroup" /> Объект, представляющий новую группу.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,16 +253,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

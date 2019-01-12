@@ -1,13 +1,5 @@
 <Type Name="AddressEntries" FullName="Microsoft.Office.Interop.Outlook.AddressEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4bda78f2cfac522b2c9037bd4e14d0b6b1213f6c" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640576" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AddressEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="934ec4a81165b2002ddbd25cdf69cfc08184863b" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903155" /></Metadata><TypeSignature Language="C#" Value="public interface AddressEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddressEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.AddressEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddressEntries&#xA;Implements IEnumerable" />
@@ -31,10 +23,8 @@
   </Attributes>
   <Docs>
     <summary>Содержит коллекцию адреса для <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> объекта.</summary>
-    <remarks>
-      <para>Объект может содержать ноль или больше <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объектов и предоставляет доступ к записи в контейнер адресной книги поставщика транспорта.</para>
-      <para />
-    </remarks>
+    <remarks><para>Объект может содержать ноль или больше <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объектов и предоставляет доступ к записи в контейнер адресной книги поставщика транспорта.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -65,12 +55,9 @@
         <param name="Name">Имя новой записи.</param>
         <param name="Address">Адрес.</param>
         <summary>Добавляет новую запись к <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> семейства сайтов.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Объект, представляющий новую запись.</returns>
-        <remarks>
-          <para>Новые записи или изменения существующих записей, не сохраняются в коллекции до и после вызова метода <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntry.Update(System.Object,System.Object)" /> метод.</para>
-          <para />
-        </remarks>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Объект, представляющий новую запись.</returns>
+        <remarks><para>Новые записи или изменения существующих записей, не сохраняются в коллекции до и после вызова метода <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntry.Update(System.Object,System.Object)" /> метод.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -179,12 +166,9 @@
       <Parameters />
       <Docs>
         <summary>Возвращает первый объект в <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> семейства сайтов.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Объект, представляющий первый объект, содержащихся в коллекции.</returns>
-        <remarks>
-          <para>Возвращает <b>значение Nothing</b> , если первый объект не существует, например, если нет объектов в коллекции. Чтобы обеспечить правильную работу <b>GetFirst</b>, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, и <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
-          <para />
-        </remarks>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Объект, представляющий первый объект, содержащихся в коллекции.</returns>
+        <remarks><para>Возвращает <b>значение Nothing</b> , если первый объект не существует, например, если нет объектов в коллекции. Чтобы обеспечить правильную работу <b>GetFirst</b>, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, и <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLast">
@@ -209,12 +193,9 @@
       <Parameters />
       <Docs>
         <summary>Возвращает последний объект в <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> семейства сайтов.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Объекта, представляющего последнего объекта, содержащихся в коллекции.</returns>
-        <remarks>
-          <para>Возвращает <b>значение Nothing</b> Если последний объект не существует, например, если коллекция пуста. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <b>GetLast</b><see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, и <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
-          <para />
-        </remarks>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Объекта, представляющего последнего объекта, содержащихся в коллекции.</returns>
+        <remarks><para>Возвращает <b>значение Nothing</b> Если последний объект не существует, например, если коллекция пуста. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <b>GetLast</b> <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, и <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNext">
@@ -239,12 +220,9 @@
       <Parameters />
       <Docs>
         <summary>Возвращает к следующему объекту в <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> семейства сайтов.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Объект, представляющий следующий объект, содержащихся в коллекции.</returns>
-        <remarks>
-          <para>Возвращает <b>значение Nothing</b> при следующей объект не существует, например, если уже находится в конце коллекции. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <b>GetNext</b>и <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
-          <para />
-        </remarks>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Объект, представляющий следующий объект, содержащихся в коллекции.</returns>
+        <remarks><para>Возвращает <b>значение Nothing</b> при следующей объект не существует, например, если уже находится в конце коллекции. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <b>GetNext</b>и <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPrevious">
@@ -269,12 +247,9 @@
       <Parameters />
       <Docs>
         <summary>Возвращает предыдущему объекту в <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> семейства сайтов.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Объект, представляющий предыдущему объекту, содержащихся в коллекции.</returns>
-        <remarks>
-          <para>Возвращает <b>значение Nothing</b> при предыдущей объект не существует, например, если уже размещен в начало коллекции. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, и методы <b>GetPrevious</b> в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции, а также вызвать <b>GetLast</b> до вызова метода <b> GetPrevious</b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
-          <para />
-        </remarks>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Объект, представляющий предыдущему объекту, содержащихся в коллекции.</returns>
+        <remarks><para>Возвращает <b>значение Nothing</b> при предыдущей объект не существует, например, если уже размещен в начало коллекции. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, и методы <b>GetPrevious</b> в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции, а также вызвать <b>GetLast</b> до вызова метода <b> GetPrevious</b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -393,16 +368,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -431,11 +404,9 @@
         <param name="Property">Имя свойства, по которому выполняется сортировка, который может заключаться в скобки, например, «[CompanyName]». Могут быть пользовательских полей и могут быть многозначные свойства, такие как категории.</param>
         <param name="Order">Приоритет для указанного адреса. Может иметь одно из следующих констант <b>OlSortOrder</b> : <b>olAscending</b>, <b>olDescending</b>или <b>olSortNone</b>.</param>
         <summary>Сортирует коллекцию элементов с указанного свойства. 1 после завершения этого метода для сброса индекса для семейства сайтов.</summary>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>Сортировка</b> влияет только на порядок элементов в семействе сайтов. Он не влияет на порядок элементов в режим обозревателя.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

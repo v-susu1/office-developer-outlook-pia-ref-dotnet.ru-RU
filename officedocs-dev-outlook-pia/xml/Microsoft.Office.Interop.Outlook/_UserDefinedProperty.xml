@@ -1,13 +1,5 @@
 <Type Name="_UserDefinedProperty" FullName="Microsoft.Office.Interop.Outlook._UserDefinedProperty">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d8729233aeddbd5461aab178148b6ab4c140eb82" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640288" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _UserDefinedProperty" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d8729233aeddbd5461aab178148b6ab4c140eb82" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27905171" /></Metadata><TypeSignature Language="C#" Value="public interface _UserDefinedProperty" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _UserDefinedProperty" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._UserDefinedProperty" />
   <TypeSignature Language="VB.NET" Value="Public Interface _UserDefinedProperty" />
@@ -136,18 +128,17 @@
       <Docs>
         <summary>Возвращает значение <b>Integer</b> (<b>int</b> в C#), который представляет формат отображения <see cref="T:Microsoft.Office.Interop.Outlook.UserDefinedProperty" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Значение этого свойства — это константа из перечисления, где, зависит от значения перечисления <see cref="P:Microsoft.Office.Interop.Outlook._UserDefinedProperty.Type" /> свойства для объекта <b>UserDefinedProperty</b> :</para>
+        <remarks><para>Значение этого свойства — это константа из перечисления, где, зависит от значения перечисления <see cref="P:Microsoft.Office.Interop.Outlook._UserDefinedProperty.Type" /> свойства для объекта <b>UserDefinedProperty</b> :</para>
           <list type="table">
             <item>
-              <description>Type, значение</description>
-              <description>перечисления DisplayFormat</description>
+              <description>Значение типа</description>
+              <description>Перечисление DisplayFormat</description>
             </item>
             <item>
               <description>
                 <b>olCombination</b>
               </description>
-              <description>Нет доступных перечисление. Данное свойство всегда возвращает значение 1 для <b>olCombination</b>.</description>
+              <description>Перечисление недоступны. Данное свойство всегда возвращает значение 1 для <b>olCombination</b>.</description>
             </item>
             <item>
               <description>
@@ -185,7 +176,7 @@
               <description>
                 <b>olFormula</b>
               </description>
-              <description>Нет доступных перечисление. Данное свойство всегда возвращает значение 1 для <b>olFormula</b>.</description>
+              <description>Перечисление недоступны. Данное свойство всегда возвращает значение 1 для <b>olFormula</b>.</description>
             </item>
             <item>
               <description>
@@ -215,7 +206,7 @@
               <description>
                 <b>olOutlookInternal</b>
               </description>
-              <description>Нет доступных перечисление. Данное свойство всегда возвращает значение 1 для <b>olOutlookInternal</b>.</description>
+              <description>Перечисление недоступны. Данное свойство всегда возвращает значение 1 для <b>olOutlookInternal</b>.</description>
             </item>
             <item>
               <description>
@@ -241,15 +232,16 @@
                 <see cref="T:Microsoft.Office.Interop.Outlook.OlFormatText" />
               </description>
             </item>
-            <description>
-              <b>olYesNo</b>
-            </description>
-            <description>
-              <see cref="T:Microsoft.Office.Interop.Outlook.OlFormatYesNo" />
-            </description>
+            <item>
+              <description>
+                <b>olYesNo</b>
+              </description>
+              <description>
+                <see cref="T:Microsoft.Office.Interop.Outlook.OlFormatYesNo" />
+              </description>
+            </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Formula">
@@ -361,16 +353,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">

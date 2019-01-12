@@ -1,13 +1,5 @@
 <Type Name="_AddressRuleCondition" FullName="Microsoft.Office.Interop.Outlook._AddressRuleCondition">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="84f193c25f7f01534bbcd631f87bc3b9044e6e05" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640507" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _AddressRuleCondition" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="84f193c25f7f01534bbcd631f87bc3b9044e6e05" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27905108" /></Metadata><TypeSignature Language="C#" Value="public interface _AddressRuleCondition" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _AddressRuleCondition" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._AddressRuleCondition" />
   <TypeSignature Language="VB.NET" Value="Public Interface _AddressRuleCondition" />
@@ -58,11 +50,9 @@
       <Docs>
         <summary>Возвращает или задает массив элементов <b>String</b> (<b>строка</b> в C#), чтобы оценить условие правила адрес. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Можно назначить массив с одним элементом для оценки на один адрес или массив нескольких строк для оценки несколько адресов. Несколько строк адресов, назначенных в массиве вычисляются с помощью логической операции или.</para>
+        <remarks><para>Можно назначить массив с одним элементом для оценки на один адрес или массив нескольких строк для оценки несколько адресов. Несколько строк адресов, назначенных в массиве вычисляются с помощью логической операции или.</para>
           <para>Если строка, заданная <b>адрес</b> содержится в поле адрес отправителя или получателя, условие принимает значение <b>True</b>.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -146,12 +136,9 @@
       <Docs>
         <summary>Возвращает константу из <see cref="T:Microsoft.Office.Interop.Outlook.OlRuleConditionType" /> перечисление, указывающее тип условия правила. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Outlook.AddressRuleCondition" /> Используется объект правила типы <b>olRuleSend</b> и <b>olRuleReceive</b>. Если создается правило <b>olRuleSend</b> правило, — тип связанного объекта <b>AddressRuleCondition</b> будет <b>olConditionSenderAddress</b>. Если создается правило <b>olRuleReceive</b> правило, — тип связанного объекта <b>AddressRuleCondition</b> будет <b>olConditionRecipientAddress</b>. </para>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Outlook.AddressRuleCondition" /> Используется объект правила типы <b>olRuleSend</b> и <b>olRuleReceive</b>. Если создается правило <b>olRuleSend</b> правило, — тип связанного объекта <b>AddressRuleCondition</b> будет <b>olConditionSenderAddress</b>. Если создается правило <b>olRuleReceive</b> правило, — тип связанного объекта <b>AddressRuleCondition</b> будет <b>olConditionRecipientAddress</b>. </para>
           <para>Это тем не менее не означает, что правило всегда имеет определенный условие для адреса отправителя или получателя. Независимо от того, является ли существует условие правила заданные или включено свойство <b>AddressRuleCondition.ConditionType</b> всегда инициализируется, после создания связанного правила. Дополнительные сведения по условиям правила можно <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Указание условия правила</a></para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -182,10 +169,8 @@
       <Docs>
         <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), который определяет, включена ли условие правила. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>После включения условие для правила необходимо сохранить правило с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> , чтобы условие правила и его состояние будут сохранены и отобразятся текущего сеанса.  Условие правила доступна только после его успешно сохранены.</para>
-          <para />
-        </remarks>
+        <remarks><para>После включения условие для правила необходимо сохранить правило с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> , чтобы условие правила и его состояние будут сохранены и отобразятся текущего сеанса.  Условие правила доступна только после его успешно сохранены.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -213,10 +198,8 @@
       <Docs>
         <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Родительский объект является <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> объекта.</para>
-          <para />
-        </remarks>
+        <remarks><para>Родительский объект является <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> объекта.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -244,16 +227,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

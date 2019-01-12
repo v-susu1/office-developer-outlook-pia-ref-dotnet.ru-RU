@@ -1,13 +1,5 @@
 <Type Name="_Stores" FullName="Microsoft.Office.Interop.Outlook._Stores">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1140b6b1b491b9b987703c19f7175944985e3b9b" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639905" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Stores : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1140b6b1b491b9b987703c19f7175944985e3b9b" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903232" /></Metadata><TypeSignature Language="C#" Value="public interface _Stores : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Stores implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Stores" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Stores&#xA;Implements IEnumerable" />
@@ -144,15 +136,12 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Целое число</b> , указывающее на основе одного индекса в коллекцию <b>хранилищ</b> или <b>String</b> (<b>строка</b> в C#) значение, указывающее, <see cref="P:Microsoft.Office.Interop.Outlook._Store.DisplayName" /><b>хранилища</b> в коллекции <b>хранилищ</b> .</param>
+        <param name="Index"><b>Целое число</b> , указывающее на основе одного индекса в коллекцию <b>хранилищ</b> или <b>String</b> (<b>строка</b> в C#) значение, указывающее, <see cref="P:Microsoft.Office.Interop.Outlook._Store.DisplayName" /> <b>хранилища</b> в коллекции <b>хранилищ</b> .</param>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекта, заданного с <paramref name="Index" />. Только для чтения.</summary>
         <value>Объект <b>хранилища</b> в родительском <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> коллекции в соответствии с <paramref name="Index" />.</value>
-        <remarks>
-          <para>Свойство <b>Store.DisplayName</b> является свойством по умолчанию <b>хранилище</b>.</para>
-          <para>Если <paramref name="Index" /> является строкой и может быть найдено ни одного элемента с этим именем будет возвращена ошибка.</para>
-          <para />
-        </remarks>
+        <remarks><para>Свойство <b>Store.DisplayName</b> является свойством по умолчанию из <b>хранилища</b>.</para>
+          <para>Если <paramref name="Index" /> является строкой и может быть найдено ни одного элемента с таким именем, возвращается ошибка.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -180,10 +169,8 @@
       <Docs>
         <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Родительский <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> — это объект <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта.</para>
-          <para />
-        </remarks>
+        <remarks><para>Родительский <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> — это объект <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -211,16 +198,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

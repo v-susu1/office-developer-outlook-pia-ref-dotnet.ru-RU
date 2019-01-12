@@ -1,13 +1,5 @@
 <Type Name="_Rule" FullName="Microsoft.Office.Interop.Outlook._Rule">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0fc7984ff84a0eea00858aa8ce56abf24313ff68" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639869" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Rule" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0fc7984ff84a0eea00858aa8ce56abf24313ff68" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27902798" /></Metadata><TypeSignature Language="C#" Value="public interface _Rule" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Rule" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Rule" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Rule" />
@@ -55,11 +47,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекцию, содержащую объект, представляющий все доступные rule actions для правила. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Можно перечислить и включения правил с действиями правила, правила и оповещения мастер поддержки, но можно программно создавать правила, которые имеют только действия наиболее часто используемые правил, а не любые действия правила, правила и оповещения мастер поддерживает. Дополнительные сведения о поддержке действие правила можно <a href="http://go.microsoft.com/fwlink/?LinkId=87797">Указать действия правил</a></para>
-          <para>через свойство <b>действия</b> в каждом правиле связан с объектом <b>RuleActions</b> . Коллекции <b>RuleActions</b> — это фиксированный объект - невозможно добавление или удаление элементов из коллекции. Действия правил, которые включены в правиле будут иметь действие включено правило в коллекции <b>RuleActions</b> . Действия, которые не включены в правило будет иметь действие правила в этой коллекции, которая содержит правило <see cref="P:Microsoft.Office.Interop.Outlook._RuleAction.Enabled" /> свойства задано значение <b>False</b>. Действия правил, которые не поддерживаются при создании программный правила можно перечислить только в коллекции <b>RuleActions</b> для существующего правила, но поскольку фиксированные коллекции <b>RuleActions</b> не удается создать правило и добавьте такое действие для связанные коллекции <b>RuleActions</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Можно перечислить и включения правил с действиями правила, правила и оповещения мастер поддержки, но можно программно создавать правила, которые имеют только действия наиболее часто используемые правил, а не любые действия правила, правила и оповещения мастер поддерживает. Дополнительные сведения о поддержке действие правила можно <a href="http://go.microsoft.com/fwlink/?LinkId=87797">Указать действия правила</a></para>
+          <para>Через свойство <b>действия</b> каждого правила связан с объектом <b>RuleActions</b> . Коллекции <b>RuleActions</b> — это фиксированный объект - невозможно добавление или удаление элементов из коллекции. Действия правил, которые включены в правиле будут иметь действие включено правило в коллекции <b>RuleActions</b> . Действия, которые не включены в правило будет иметь действие правила в этой коллекции, которая содержит правило <see cref="P:Microsoft.Office.Interop.Outlook._RuleAction.Enabled" /> свойства задано значение <b>False</b>. Действия правил, которые не поддерживаются при создании программный правила можно перечислить только в коллекции <b>RuleActions</b> для существующего правила, но поскольку фиксированные коллекции <b>RuleActions</b> не удается создать правило и добавьте такое действие для связанные коллекции <b>RuleActions</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -143,12 +133,10 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекцию, содержащую объект, представляющий доступных условий для правила. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Условие для правила указывает условие, в котором необходимо применять правило. Оба <b>условия</b> и <see cref="P:Microsoft.Office.Interop.Outlook._Rule.Exceptions" /> свойства совместно использовать тот же самый пул условий и возврата соответствующего объекта коллекции <b>RuleConditions</b> .</para>
-          <para>Программными средствами можно перечислить и включения правил с помощью любого условие правила, правила и оповещения мастер поддержки, но можно создавать правила, которые имеют только наиболее часто используемые условия для правил, и не все правила условием, что правила и оповещения мастера поддерживает. Дополнительные сведения о поддержке условие правила можно <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Указание условия правила</a></para>
-          <para>через свойство <b>условия</b> , связанном с объектом <b>RuleConditions</b> каждого правила. Коллекции <b>RuleConditions</b> — это фиксированный объект - невозможно добавление или удаление элементов из коллекции. Условия для правил, которые включены в правиле будут иметь условие включено правило в коллекции <b>RuleConditions</b> . Условия, которые не включены в правило будет иметь условие для правила в этой коллекции, которая содержит правило <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> свойства задано значение <b>False</b>. Условия для правил, которые не поддерживаются при создании программный правила можно перечислить только в коллекции <b>RuleConditions</b> для существующего правила, но поскольку фиксированные коллекции <b>RuleConditions</b> не удается создать правило и добавьте условие в соответствующую коллекцию <b>RuleConditions</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Условие для правила указывает условие, в котором необходимо применять правило. Оба <b>условия</b> и <see cref="P:Microsoft.Office.Interop.Outlook._Rule.Exceptions" /> свойства совместно использовать тот же самый пул условий и возврата соответствующего объекта коллекции <b>RuleConditions</b> .</para>
+          <para>Программным путем перечисления и включения правил с помощью любого условие правила, правила и оповещения мастер поддержки, но можно создать правила, которые имеют только наиболее часто используемые правила условия и не все условия правила, который поддерживает правила и оповещения мастера. Дополнительные сведения о поддержке условие правила можно <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Указание условия правила</a></para>
+          <para>С помощью свойства <b>условия</b> в каждом правиле связан с объект <b>RuleConditions</b> . Коллекции <b>RuleConditions</b> — это фиксированный объект - невозможно добавление или удаление элементов из коллекции. Условия для правил, которые включены в правиле будут иметь условие включено правило в коллекции <b>RuleConditions</b> . Условия, которые не включены в правило будет иметь условие для правила в этой коллекции, которая содержит правило <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> свойства задано значение <b>False</b>. Условия для правил, которые не поддерживаются при создании программный правила можно перечислить только в коллекции <b>RuleConditions</b> для существующего правила, но поскольку фиксированные коллекции <b>RuleConditions</b> не удается создать правило и добавьте такие условие в соответствующую коллекцию <b>RuleConditions</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -179,11 +167,9 @@
       <Docs>
         <summary>Возвращает или устанавливает <b>логическое</b> значение (<b>bool</b> в C#), который определяет, является ли правило применяется. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Задание для свойства <b>Enabled</b> правило не гарантирует, что правило будет включено. Правило будет включено только после того, как <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> выполнена успешно.</para>
+        <remarks><para>Задание для свойства <b>Enabled</b> правило не гарантирует, что правило будет включено. Правило будет включено только после того, как <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> выполнена успешно.</para>
           <para>С помощью <b>Rule.Enabled</b> и <b>Rules.Save</b> правило применяется постоянно и сохраняет правил текущего сеанса. Включение правила (который был сохранен успешно) гарантирует, что правило будет применяться. Если это правило локальных клиентов, правило будет применяться при с Outlook, а также если правило правила на стороне сервера, он применяется независимо от того, работает ли Outlook. Если не включить правило, затем определяется правило, но не применяются. Тем не менее, можно использовать <see cref="M:Microsoft.Office.Interop.Outlook._Rule.Execute(System.Object,System.Object,System.Object,System.Object)" /> Чтобы применить правило как одноразовых операция независимо от того, включен ли правило.  </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Exceptions">
@@ -211,12 +197,10 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекцию, содержащую объект, представляющий все доступные правила условия исключений для правила. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Условие исключения для правила указывает условие, под которой правило не применяется. Как <see cref="P:Microsoft.Office.Interop.Outlook._Rule.Conditions" /> и свойства <b>исключения</b> совместно использовать тот же самый пул условий и возврата соответствующего объекта коллекции <b>RuleConditions</b> .</para>
-          <para>Можно перечислить и включения правил с помощью любого условие правила исключения, правила и оповещения мастера поддерживают, но можно программно создавать правила, которые имеют только наиболее часто используемые условия правила исключение, и не все правила исключения условием, что поддерживает правила и оповещения мастера. Дополнительные сведения о поддержке условие правила можно <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Указание условия правила</a></para>
-          <para>через свойство <b>условия</b> , связанном с объектом <b>RuleConditions</b> каждого правила. Коллекции <b>RuleConditions</b> — это фиксированный объект - невозможно добавление или удаление элементов из коллекции. Условия исключений правила, для которых включено в правиле будут иметь включенное условие исключения в коллекции <b>RuleConditions</b> . Условия исключений, которые не включены в правиле будут иметь условие для правила исключения в этой коллекции, которая содержит правило <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> свойства задано значение <b>False</b>. Условия исключений правила, которые не поддерживаются при создании программный правила можно перечислить только в коллекции <b>RuleConditions</b> для существующего правила, но поскольку фиксированные коллекции <b>RuleConditions</b> не удается создать правило и добавьте такой условие исключения в соответствующую коллекцию <b>RuleConditions</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Условие исключения для правила указывает условие, под которой правило не применяется. Как <see cref="P:Microsoft.Office.Interop.Outlook._Rule.Conditions" /> и свойства <b>исключения</b> совместно использовать тот же самый пул условий и возврата соответствующего объекта коллекции <b>RuleConditions</b> .</para>
+          <para>Можно перечислить и включения правил с помощью любого условие правила исключения, правила и оповещения мастера поддерживают, но можно программно создавать правила, которые имеют только наиболее часто используемые условия правила исключение, и не все правила исключения условием, что Правила и оповещения мастер поддерживает. Дополнительные сведения о поддержке условие правила можно <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Указание условия правила</a></para>
+          <para>С помощью свойства <b>условия</b> в каждом правиле связан с объект <b>RuleConditions</b> . Коллекции <b>RuleConditions</b> — это фиксированный объект - невозможно добавление или удаление элементов из коллекции. Условия исключений правила, для которых включено в правиле будут иметь включенное условие исключения в коллекции <b>RuleConditions</b> . Условия исключений, которые не включены в правиле будут иметь условие для правила исключения в этой коллекции, которая содержит правило <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> свойства задано значение <b>False</b>. Условия исключений правила, которые не поддерживаются при создании программный правила можно перечислить только в коллекции <b>RuleConditions</b> для существующего правила, но поскольку фиксированные коллекции <b>RuleConditions</b> не удается создать правило и Добавьте такой условие исключения связанной коллекции <b>RuleConditions</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -244,31 +228,28 @@
         <Parameter Name="RuleExecuteOption" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ShowProgress">
-          <b>Значение true,</b> чтобы открыть диалоговое окно хода выполнения при выполнении правила, и <b>значение False</b> для запуска правила без отображения диалогового окна.</param>
+        <param name="ShowProgress"><b>Значение true,</b> чтобы открыть диалоговое окно хода выполнения при выполнении правила, и <b>значение False</b> для запуска правила без отображения диалогового окна.</param>
         <param name="Folder">Представляет папку, где будет применяться это правило.</param>
-        <param name="IncludeSubfolders">
-          <b>Значение true,</b> Чтобы применить правило вложенные папки, указанное с помощью параметра папки; <b>Значение false,</b> Чтобы правило применяется только к этой папке, но не ее вложенных папок.</param>
+        <param name="IncludeSubfolders"><b>Значение true,</b> Чтобы применить правило вложенные папки, указанное с помощью параметра папки; <b>Значение false,</b> Чтобы правило применяется только к этой папке, но не ее вложенных папок.</param>
         <param name="RuleExecuteOption">Представляет ли применить правило для чтения, непрочитанные или все сообщения в папку или папки, указанном с помощью папки и IncludeSubfolders.</param>
         <summary>Правило применяется как одноразовых операция.</summary>
-        <remarks>
-          <para>Использование <see cref="M:Microsoft.Office.Interop.Outlook._Rule.Execute(System.Object,System.Object,System.Object,System.Object)" /> Чтобы применить правило как одноразовых операция независимо от того, требуется ли <see cref="P:Microsoft.Office.Interop.Outlook._Rule.Enabled" /> имеет <b>значение True</b>. Используйте <b>Rule.Enabled</b> и затем <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> требуется применить правило постоянно и сохранение правил текущего сеанса.</para>
-          <para>Параметров для метода <b>Execute</b> являются необязательными. Если не указать параметры, правило будет применяться ко всем сообщениям в папке "Входящие", но не вложенные папки «Входящие». Ниже приведены возможные значения по умолчанию для необязательных аргументов: </para>
+        <remarks><para>Использование <see cref="M:Microsoft.Office.Interop.Outlook._Rule.Execute(System.Object,System.Object,System.Object,System.Object)" /> Чтобы применить правило как одноразовых операция независимо от того, требуется ли <see cref="P:Microsoft.Office.Interop.Outlook._Rule.Enabled" /> имеет <b>значение True</b>. Используйте <b>Rule.Enabled</b> и затем <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> Если вы хотите применить правило постоянно и сохранение правил текущего сеанса.</para>
+          <para>Параметры для метода <b>Execute</b> являются необязательными. Если не указать параметры, правило будет применяться ко всем сообщениям в папке "Входящие", но не вложенные папки «Входящие». Значения по умолчанию для необязательных аргументов, как показано ниже: </para>
           <list type="table">
             <item>
+              <description>Параметр</description>
+              <description>Значение по умолчанию</description>
+            </item>
+            <item>
               <description>ShowProgress</description>
-              <description>значение False,</description>
+              <description>False</description>
             </item>
             <item>
-              <description>параметр</description>
-              <description>По умолчанию</description>
+              <description>Folder</description>
+              <description>Inbox</description>
             </item>
             <item>
-              <description>папки</description>
-              <description>"Входящие"</description>
-            </item>
-            <item>
-              <description> IncludeSubfolders</description>
+              <description>IncludeSubfolders</description>
               <description>False</description>
             </item>
             <item>
@@ -278,10 +259,9 @@
               </description>
             </item>
           </list>
-          <para>Если <paramref name="ShowProgress" /> имеет <b>значение True</b> , а пользователь отменил диалоговом окне Ход выполнения правила выполнение отменяется точно так же, как если бы пользователь отмене выполнения правила через правила и оповещения мастера. Выполнение возвращает ошибку, если пользователь отменил диалогового окна хода выполнения.</para>
-          <para>При планировании для отображения хода выполнения настраиваемого пользовательского интерфейса вместо с помощью диалогового окна хода выполнения следует иметь в виду, что существует не события, которые указывают, когда начинается выполнение правила и останавливает.</para>
-          <para />
-        </remarks>
+          <para>Если <paramref name="ShowProgress" /> имеет <b>значение True</b> и отменяет пользователя, в диалоговом окне Ход выполнения правила отменяется точно так же, как если отменена пользователем правила выполнения правила и оповещения мастера. Выполнение возвращает ошибку, если пользователь отменил диалогового окна хода выполнения.</para>
+          <para>Если вы планируете отображать пользовательский интерфейс настраиваемой хода выполнения вместо с помощью диалогового окна хода выполнения, следует иметь в виду, что нет событий, которые указывают время запуска и остановки выполнения правила. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecutionOrder">
@@ -312,11 +292,9 @@
       <Docs>
         <summary>Возвращает или задает значение типа <b>Integer</b> (<b>int</b> в C#), указывает порядок выполнения правила среди других правил в <see cref="T:Microsoft.Office.Interop.Outlook.Rules" /> семейства сайтов. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>ExecutionOrder</b> непосредственно сопоставляются с числовое значение <paramref name="Index" /> в <see cref="P:Microsoft.Office.Interop.Outlook._Rules.Item(System.Object)" />. Например, Rules.Item(1) представляет правило с <b>ExecutionOrder</b> , 1, Rules.Item(2) представляет правило с <b>ExecutionOrder</b> , 2 и Rules.Item(Rules.Count) представляет правило с <b>ExecutionOrder</b> , <see cref="P:Microsoft.Office.Interop.Outlook._Rules.Count" />.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLocalRule">
@@ -344,12 +322,10 @@
       <Docs>
         <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, если правило выполняет как правило со стороны клиента. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Клиентские правила выполняет, только если запущены Outlook. Если <b>IsLocalRule</b> имеет <b>значение False</b>, то правило выполняет как правила на сервере.</para>
-          <para>При наличии учетной записи электронной почты Microsoft Exchange Server, на сервере правила применяются в сообщения даже в том случае, если у вас нет Outlook при работе. Правила должен иметь значение применяться к сообщениям, когда они будут доставляться в папку "Входящие" на сервере и правила должно иметь возможность выполнить до завершения на сервере. Например правило не может запускать завершения на сервере при действие указывает, что сообщение печать. Если правило не может применяться на сервере, оно применяется при запуске Outlook.</para>
-          <para>Если коллекции правил для хранилища содержит сервер и клиентские правила, правила на сервере, применяются во-первых, следуют правила клиентской стороны.</para>
-          <para />
-        </remarks>
+        <remarks><para>Клиентские правила выполняет, только если запущены Outlook. Если <b>IsLocalRule</b> имеет <b>значение False</b>, правило выполняет как правила на сервере.</para>
+          <para>При наличии учетной записи электронной почты Microsoft Exchange Server на сервере правила применяются в сообщения даже в том случае, если у вас нет Outlook при работе. Правила должен иметь значение применяться к сообщениям, когда они будут доставляться в папку "Входящие" на сервере и правила должно иметь возможность выполнить до завершения на сервере. Например правило не может запускать завершения на сервере при действие указывает, что сообщение печать. Если правило не может применяться на сервере, оно применяется при запуске Outlook.</para>
+          <para>Если сервер и клиентские правила, содержащимися в семействе правила для хранилища, на сервере правила применяются во-первых, следуют правила клиентской стороны.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -380,12 +356,10 @@
       <Docs>
         <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляет имя правила. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Имя</b> является свойством по умолчанию и индексатор для правила в <see cref="T:Microsoft.Office.Interop.Outlook.Rules" /> объекта collection. Он соответствует <b>PidTagRuleMsgName</b> (0x65EC001E).</para>
+        <remarks><para>
+            <b>Имя</b> — это свойство по умолчанию и индексатор для правила в <see cref="T:Microsoft.Office.Interop.Outlook.Rules" /> объекта collection. Оно соответствует <b>PidTagRuleMsgName</b> (0x65EC001E).</para>
           <para>Имена правил не являются уникальными среди правил в одном семействе.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -413,10 +387,8 @@
       <Docs>
         <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Родительский <see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> — это объект <see cref="T:Microsoft.Office.Interop.Outlook.Rules" /> объекта.</para>
-          <para />
-        </remarks>
+        <remarks><para>Родительский <see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> — это объект <see cref="T:Microsoft.Office.Interop.Outlook.Rules" /> объекта.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RuleType">
@@ -472,16 +444,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

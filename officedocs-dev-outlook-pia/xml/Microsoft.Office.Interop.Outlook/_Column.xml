@@ -1,13 +1,5 @@
 <Type Name="_Column" FullName="Microsoft.Office.Interop.Outlook._Column">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="adbe9af5926d15b27b9c5b30432c3473b39e888c" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639882" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Column" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="adbe9af5926d15b27b9c5b30432c3473b39e888c" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27905423" /></Metadata><TypeSignature Language="C#" Value="public interface _Column" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Column" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Column" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Column" />
@@ -111,11 +103,9 @@
       <Docs>
         <summary>Возвращает значение <b>String</b> (<b>строка</b> в C#), который представляет имя <see cref="T:Microsoft.Office.Interop.Outlook.Column" />. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>Name</b> является элементом по умолчанию объекта <b>столбца</b> . </para>
-          <para>, Если <b>столбец</b> является по умолчанию в <see cref="T:Microsoft.Office.Interop.Outlook.Table" />, или если она была добавлена <b>Таблица</b> с явных встроенное имя свойства, значение <b>Name</b> — это явные встроенное имя (без любого заключающего скобки) для свойство. Если <b>столбец</b> был добавлен к <b>таблице</b> с именем свойства, создание ссылок на пространства имен, значение <b>имени</b> будет имя свойства, ссылка на пространство имен.  Дополнительные сведения о связывании свойства пространством имен, в разделе <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Создание ссылок на свойства пространством имен</a></para>
-          <para />
-        </remarks>
+        <remarks><para>Свойство <b>Name</b> является элементом по умолчанию объекта <b>столбца</b> . </para>
+          <para>Если <b>столбец</b> является столбец по умолчанию в <see cref="T:Microsoft.Office.Interop.Outlook.Table" />, или если она была добавлена <b>Таблица</b> с явных встроенное имя свойства, значение <b>Name</b> — это явные встроенное имя (без любого заключающего скобки) для свойства. Если <b>столбец</b> был добавлен к <b>таблице</b> с именем свойства, создание ссылок на пространства имен, значение <b>имени</b> будет имя свойства, ссылка на пространство имен.  Дополнительные сведения о связывании свойства пространством имен в разделе <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Создание ссылок на свойства пространством имен</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -171,16 +161,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

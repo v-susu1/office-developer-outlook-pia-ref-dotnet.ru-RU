@@ -1,13 +1,5 @@
 <Type Name="View" FullName="Microsoft.Office.Interop.Outlook.View">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b10e73e5691c861b2adb03a1f9002fa391a33274" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640530" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface View" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="87b0e2f941bfdd33517182275daf75a85449684a" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903169" /></Metadata><TypeSignature Language="C#" Value="public interface View" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract View" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.View" />
   <TypeSignature Language="VB.NET" Value="Public Interface View" />
@@ -27,18 +19,29 @@
   </Attributes>
   <Docs>
     <summary>Представляет настраиваемые представления, используемый для сортировки, группы и просмотр данных.</summary>
-    <remarks>
-      <para>Объект <b>View</b> позволяет создавать настраиваемые представления, позволяющие лучше сортировки, группировки и в конечном счете просматривать данные для всех типов. Существует множество различных типов представлений, которые обеспечивают гибкость, необходимые для создания и обслуживания важных данных.</para>
+    <remarks><para>Объект <b>View</b> позволяет создавать настраиваемые представления, позволяющие лучше сортировки, группировки и в конечном счете просматривать данные для всех типов. Существует много различных типов представлений, которые обеспечивают гибкость, необходимые для создания и обслуживания важных данных.</para>
       <list type="bullet">
         <item>
-          <para>Представление в виде таблицы (olTableView) позволяет просматривать данные в простой таблице на основе полей.</para>
+          <para>Представление в виде таблицы (olTableView) позволяет просматривать данные в простой таблице на основе поля. </para>
         </item>
         <item>
-          <para>Тип представления календаря (olCalendarView) позволяет просматривать данные в формате календаря.</para>
-        </item> Тип 
-        <item><para>представлении карточками (olCardView) позволяет просматривать данные в виде ряда карт. Каждая карточка отображаются сведения, содержащиеся в элементе и можно сортировать. </para></item>Тип 
-        <item><para>значок представления (olIconView) позволяет отобразить данные в виде значков, аналогичная папка Windows или explorer.  </para></item><item><para>Представление временной шкалой (olTimelineView) используется для просмотра данных, получаемых в строке линейного времени.</para></item></list> Представления 
-      <para>определены и настроить с помощью объекта <b>View</b><see cref="P:Microsoft.Office.Interop.Outlook.View.XML" /> свойство. Свойство <b>XML</b> позволяет создавать и установка настраиваемой XML-схему, определяющую различных функций представления.</para><para>Использования <b>представлений</b>(<paramref name="index" />), где <paramref name="index" /> — это имя <b>представления</b> объекта или его порядковый номер, чтобы возвратить объект <b>представления</b> .</para><para>Использования <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> методу коллекции <b>представлений</b> для создания нового представления.</para><para>Всегда <see cref="M:Microsoft.Office.Interop.Outlook.View.Save" /> для сохранения представления после изменения любого свойства представления.</para><para /></remarks>
+          <para> Тип представления календаря (olCalendarView) позволяет просматривать данные в формате календаря. </para>
+        </item>
+        <item>
+          <para> Тип представления карты (olCardView) позволяет просматривать данные в виде ряда карт. Каждая карточка отображаются сведения, содержащиеся в элементе и можно сортировать. </para>
+        </item>
+        <item>
+          <para> Тип представления значок (olIconView) позволяет отобразить данные в виде значков, аналогичная папка Windows или explorer.  </para>
+        </item>
+        <item>
+          <para> Представление временной шкалой (olTimelineView) позволяет просматривать данные, получаемых в строке линейного времени. </para>
+        </item>
+      </list>
+      <para>Представления определяются и настроить с помощью объекта <b>View</b> <see cref="P:Microsoft.Office.Interop.Outlook.View.XML" /> свойство. Свойство <b>XML</b> позволяет создавать и установка настраиваемой XML-схему, определяющую различных функций представления.</para>
+      <para>Использование <b>представлений</b>(<paramref name="index" />), где <paramref name="index" /> — это имя <b>представления</b> объекта или его порядковый номер, чтобы возвратить объект <b>представления</b> .</para>
+      <para>Использование <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> методу коллекции <b>представлений</b> для создания нового представления. </para>
+      <para>По возможности всегда использовать <see cref="M:Microsoft.Office.Interop.Outlook.View.Save" /> для сохранения представления после изменения любого свойства представления.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -91,8 +94,7 @@
       <Parameters />
       <Docs>
         <summary>Применение представления в интерфейсе пользователя Microsoft Outlook.</summary>
-        <remarks>
-          <para>Чтобы должным образом восстановить текущее представление, необходимо выполнить <see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> и затем <b>View.Apply</b>. В следующем примере показан порядок вызовов:</para>
+        <remarks><para>Чтобы должным образом восстановить текущее представление, необходимо выполнить <see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> и затем <b>View.Apply</b>. В следующем примере показан порядок вызовов:</para>
           <code>Sub ResetView()
     Dim v As Outlook.View
     ' Save a reference to the current view object
@@ -111,8 +113,7 @@ End Sub</code>
     v.Reset();
     v.Apply();
 }</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -226,10 +227,8 @@ End Sub</code>
       <Docs>
         <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет фильтр для представления.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Значение этого свойства — это строка, в синтаксисе поиска DAV и поиск (DASL), представляющий текущий фильтр для представления. Дополнительные сведения об использовании DASL синтаксис для фильтрации элементов в представлении можно <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Фильтрации элементов</a></para>
-          <para />
-        </remarks>
+        <remarks><para>Значение этого свойства — это строка, в синтаксисе поиска DAV и поиск (DASL), представляющий текущий фильтр для представления. Дополнительные сведения об использовании DASL синтаксис для фильтрации элементов в представлении можно <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Фильтрации элементов</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GoToDate">
@@ -257,8 +256,7 @@ End Sub</code>
       <Docs>
         <param name="Date">Дата, к которой следует изменить представление.</param>
         <summary>Изменение даты, используемых текущим представлением для отображения информации.</summary>
-        <remarks>
-          <para>Для указания даты для перехода в текущем представлении, таких как <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объект, вы должны получить <see cref="T:Microsoft.Office.Interop.Outlook.View" /> объект для текущего представления с помощью <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentView" /> вместо <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.CurrentView" />. В следующем примере кода показано, как выполнить это действие.</para>
+        <remarks><para>Для указания даты для перехода в текущем представлении, таких как <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объект, вы должны получить <see cref="T:Microsoft.Office.Interop.Outlook.View" /> объект для текущего представления с помощью <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentView" /> вместо <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.CurrentView" />. В следующем примере кода показано, как выполнить это действие. </para>
           <code>Sub TestGoToDate()
     Dim oCV As Outlook.CalendarView
     Dim oExpl As Outlook.Explorer
@@ -313,8 +311,7 @@ End Sub</code>
     // for which information is displayed in the view.
     oCV.GoToDate(datGoTo);
 }</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Language">
@@ -345,7 +342,9 @@ End Sub</code>
       <Docs>
         <summary>Возвращает или задает значение типа <b>String</b> (<b>строка</b> в C#), представляющее языка, заданных для объекта, который определяет язык, используемый в меню. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>Свойство <para><b>языка</b> для представления тег языка ISO используется <b>String</b> (<b>строка</b> в C#). Например, строка «EN-US» представляет код ISO «США - английский.»</para><para>Если указан допустимый код языка, объект доступна только в меню "Вид" для типа указанного языка. Если значение не указано, элемент object доступен для всех типов языка. Значение по умолчанию для этого свойства — это пустая строка.</para><para /></remarks>
+        <remarks><para>Свойство <b>Language</b> <b>String</b> (<b>строка</b> в C#) используется для представления тег языка ISO. Например строка «EN-US» представляет код ISO «США - английский.»</para>
+          <para>Если указан допустимый код языка, объект доступна только в меню "Вид" для типа указанного языка. Если значение не указано, элемент object доступен для всех типов языка. Значение по умолчанию для этого свойства — это пустая строка.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LockUserChanges">
@@ -376,10 +375,8 @@ End Sub</code>
       <Docs>
         <summary>Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, указывающее, является ли пользователь может изменять параметры текущего представления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Если <b>значение True</b>, пользователь может изменять параметры текущего представления. Тем не менее изменения, внесенные в интерфейс не будут сохранены. Если <b>значение False</b> (значение по умолчанию), все изменения будут сохранены.</para>
-          <para />
-        </remarks>
+        <remarks><para>Если <b>значение True</b>, пользователь может изменять параметры текущего представления. Тем не менее изменения, внесенные в интерфейс не будут сохранены. Если <b>значение False</b> (значение по умолчанию), все изменения будут сохранены.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -463,9 +460,8 @@ End Sub</code>
       <Parameters />
       <Docs>
         <summary>Сбрасывает встроенных представления Microsoft Outlook исходные параметры.</summary>
-        <remarks>
-          <para>Этот метод можно устанавливать только в встроенных представления Outlook.</para>
-          <para>Должным образом Сброс текущего представления, необходимо выполнить <b>View.Reset</b> и затем <see cref="M:Microsoft.Office.Interop.Outlook.View.Apply" />. В следующем примере показан порядок вызовов:</para>
+        <remarks><para>Этот метод работает только для встроенных представления Outlook.</para>
+          <para>Сброс текущего представления должным образом, необходимо выполнить <b>View.Reset</b> и затем <see cref="M:Microsoft.Office.Interop.Outlook.View.Apply" />. В следующем примере показан порядок вызовов:</para>
           <code>Sub ResetView()
     Dim v as Outlook.View
     ' Save a reference to the current view object
@@ -484,8 +480,7 @@ End Sub</code>
     v.Reset();
     v.Apply();
 }</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -510,10 +505,8 @@ End Sub</code>
       <Parameters />
       <Docs>
         <summary>Сохраняет представления или сохраняет изменения в представлении.</summary>
-        <remarks>
-          <para>Всегда используйте <b>Сохранить</b> для сохранения представления после изменения любого свойства представления.</para>
-          <para />
-        </remarks>
+        <remarks><para>Всегда используйте <b>Сохранить</b> для сохранения представления после изменения любого свойства представления.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveOption">
@@ -541,10 +534,8 @@ End Sub</code>
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewSaveOption" /> константа, которая указывает папки, в которых доступен указанное представление и разрешения на чтение, подключенного к представления.  Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Когда установлено свойство <b>SaveOption</b><see cref="T:Microsoft.Office.Interop.Outlook.View" /> объект создается с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> метод.</para>
-          <para />
-        </remarks>
+        <remarks><para>Когда установлено свойство <b>SaveOption</b> <see cref="T:Microsoft.Office.Interop.Outlook.View" /> объект создается с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> метод.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -572,16 +563,14 @@ End Sub</code>
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Standard">
@@ -637,10 +626,8 @@ End Sub</code>
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewType" /> тип константы, представляющий представление из <see cref="T:Microsoft.Office.Interop.Outlook.View" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство не имеет никакого влияния на значки, отображаемые в области ярлыки. Большие значки будут удалены, и если это свойство имеет значение <b>olLargeIcon</b>, он не оказывает никакого влияния.</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство не имеет никакого влияния на значки, отображаемые в области ярлыки. Большие значки будут удалены, и если это свойство имеет значение <b>olLargeIcon</b>, он не оказывает никакого влияния.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="XML">
@@ -671,7 +658,10 @@ End Sub</code>
       <Docs>
         <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), задающее XML-определение текущего представления.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>Определение <para>XML описывает тип представления с помощью ряда теги и ключевых слов в соответствии с различными свойствами представления. При создании представления XML-определение синтаксический анализ для отображения параметров для нового представления.</para><para>Для определения XML структуру при создании представления, можно создать представление с помощью пользовательского интерфейса Outlook и извлекают свойства XML для этого представления.</para><para>Для программного добавления настраиваемых полей в представлении использования <see cref="M:Microsoft.Office.Interop.Outlook._ViewFields.Add(System.String)" /> метод. Это рекомендуемый способ динамически изменять представление через свойство <b>View.XML</b> .</para><para /></remarks>
+        <remarks><para>Определение XML описывает тип представления с помощью ряда теги и ключевых слов в соответствии с различными свойствами представления. При создании представления XML-определение анализируется для отображения параметров для нового представления.</para>
+          <para>Для определения XML структуру при создании представления, можно создать представление с помощью пользовательского интерфейса Outlook и затем можно извлечь свойство XML для этого представления.</para>
+          <para>Для программного добавления настраиваемого поля в представлении, используйте <see cref="M:Microsoft.Office.Interop.Outlook._ViewFields.Add(System.String)" /> метод. Это рекомендуемый способ динамически изменять представление через свойство <b>View.XML</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

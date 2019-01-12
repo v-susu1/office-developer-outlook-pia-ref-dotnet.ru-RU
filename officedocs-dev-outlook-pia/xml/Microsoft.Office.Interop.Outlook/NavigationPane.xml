@@ -1,13 +1,5 @@
 <Type Name="NavigationPane" FullName="Microsoft.Office.Interop.Outlook.NavigationPane">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d3c5a11a93d132b99135088c4f284cf16e2dd2c5" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20641409" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface NavigationPane : Microsoft.Office.Interop.Outlook._NavigationPane, Microsoft.Office.Interop.Outlook.NavigationPaneEvents_12_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="605b928699843ba2dbfb61a2517029cc5be68043" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27906459" /></Metadata><TypeSignature Language="C#" Value="public interface NavigationPane : Microsoft.Office.Interop.Outlook._NavigationPane, Microsoft.Office.Interop.Outlook.NavigationPaneEvents_12_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract NavigationPane implements class Microsoft.Office.Interop.Outlook._NavigationPane, class Microsoft.Office.Interop.Outlook.NavigationPaneEvents_12_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.NavigationPane" />
   <TypeSignature Language="VB.NET" Value="Public Interface NavigationPane&#xA;Implements _NavigationPane, NavigationPaneEvents_12_Event" />
@@ -34,13 +26,11 @@
   </Attributes>
   <Docs>
     <summary>Представляет область навигации, отображаемые активного <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> объекта.</summary>
-    <remarks>
-      <para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._NavigationPane" />. Сведения об элементах события COM-объектом можно <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPaneEvents_12_Event" />.</para>
-      <para>Использования <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.NavigationPane" /> свойство объекта <b>Explorer</b> , чтобы получить объект <b>NavigationPane</b> , если он существует для обозревателя. Обратите внимание, некоторые объекты <b>Explorer</b> может навигации Pane.Use <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.IsCollapsed" /> свойство для возвращения или задания режим отображения области переходов.</para>
-      <para>Использования <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.Modules" /> свойство для возвращения <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModules" /> объект, представляющий коллекцию модулей навигации, содержащихся в области навигации. Использование <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.DisplayedModuleCount" /> для возврата числа <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModule" /> объектов, которые в данный момент отображаются в области навигации и <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.CurrentModule" /> свойство для возвращения или задания текущего выбранного объекта <b>NavigationModule</b> .</para>
-      <para>Использования <see cref="E:Microsoft.Office.Interop.Outlook.NavigationPaneEvents_12_Event.ModuleSwitch" /> события, чтобы определить, когда изменяется выбранный объект <b>NavigationModule</b> на левой панели навигации.</para>
-      <para />
-    </remarks>
+    <remarks><para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._NavigationPane" />. Сведения об элементах события COM-объектом можно <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPaneEvents_12_Event" />.</para>
+      <para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.NavigationPane" /> свойство объекта <b>Explorer</b> , чтобы получить объект <b>NavigationPane</b> , если он существует для обозревателя. Обратите внимание, некоторые объекты <b>Explorer</b> может навигации Pane.Use <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.IsCollapsed" /> свойство для возвращения или задания режим отображения области переходов.</para>
+      <para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.Modules" /> свойство для возвращения <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModules" /> объект, представляющий коллекцию модулей навигации, содержащихся в области навигации. Использование <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.DisplayedModuleCount" /> для возврата числа <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModule" /> объектов, которые в данный момент отображаются в области навигации и <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.CurrentModule" /> свойство для возвращения или задания текущего выбранного объекта <b>NavigationModule</b> .</para>
+      <para>Использование <see cref="E:Microsoft.Office.Interop.Outlook.NavigationPaneEvents_12_Event.ModuleSwitch" /> события, чтобы определить, когда изменяется выбранный объект <b>NavigationModule</b> на левой панели навигации.</para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

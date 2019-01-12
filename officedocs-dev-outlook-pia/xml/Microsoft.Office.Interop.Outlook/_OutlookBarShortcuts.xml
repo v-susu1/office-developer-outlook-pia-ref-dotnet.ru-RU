@@ -1,13 +1,5 @@
 <Type Name="_OutlookBarShortcuts" FullName="Microsoft.Office.Interop.Outlook._OutlookBarShortcuts">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6cbf1a4e95de620f5f8d707b2f10726f32b00b95" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640064" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _OutlookBarShortcuts : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6cbf1a4e95de620f5f8d707b2f10726f32b00b95" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27904394" /></Metadata><TypeSignature Language="C#" Value="public interface _OutlookBarShortcuts : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _OutlookBarShortcuts implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._OutlookBarShortcuts" />
   <TypeSignature Language="VB.NET" Value="Public Interface _OutlookBarShortcuts&#xA;Implements IEnumerable" />
@@ -62,8 +54,7 @@
         <param name="Name">Имя создаваемого ярлыка.</param>
         <param name="Index">Позиция, в которой новый ярлык будет вставлена в группе области сочетаний клавиш. Один располагается в верхней части группы. Тип <b>объекта</b> зависит от типа ярлык. Если тип — <b>Папка</b>, ярлык представляет папку Microsoft Outlook. Если тип <b>String</b> (<b>строка</b> в C#), ярлык представляет пути файловой системы или URL-адрес.</param>
         <summary>Добавляет новый ярлык в группу в области ярлыки.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarShortcut" /> Объект, представляющий новый ярлык.</returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarShortcut" /> Объект, представляющий новый ярлык.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,16 +255,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

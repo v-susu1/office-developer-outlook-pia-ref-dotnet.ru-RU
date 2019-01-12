@@ -1,13 +1,5 @@
 <Type Name="_Table" FullName="Microsoft.Office.Interop.Outlook._Table">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f3622358929b16ec4cf2cb1b6f8e806f59c4d317" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640562" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Table" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f3622358929b16ec4cf2cb1b6f8e806f59c4d317" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903897" /></Metadata><TypeSignature Language="C#" Value="public interface _Table" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Table" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Table" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Table" />
@@ -111,12 +103,10 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> коллекцию, содержащую объект, содержащий столбцы, определенных для <see cref="T:Microsoft.Office.Interop.Outlook.Table" />. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Объект коллекции <b>столбцы</b> — это элемент по умолчанию для объекта <b>таблицы</b> .  </para>
-          <para>Во время строки в <b>таблице</b> , соответствуют элементы в родительском <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> или <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> объект в <b>таблице</b>, <b>столбцы</b> в <b>таблице</b> соответствуют свойствам этих элементов. Определенные столбцы по умолчанию для всех папок в зависимости от родительской папки объекта <b>таблицы</b> . Например, являются свойства по умолчанию для папки "Входящие": <b>EntryID</b>, <b>тему</b>, <b>CreationTime</b>, <b>LastModificationTime</b>и <b>MessageClass</b>. Дополнительные сведения о свойствах по умолчанию для <b>таблицы</b>в разделе <a href="http://go.microsoft.com/fwlink/?LinkId=87925">Свойства по умолчанию, отображаемые в объекте таблицы</a></para>
-          <para>для добавления <see cref="T:Microsoft.Office.Interop.Outlook.Column" /> объекты в коллекцию <b>столбцов</b><b>в таблице</b>, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Add(System.String)" />. Чтобы удалить набор столбцов по умолчанию, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Columns.RemoveAll" />. Дополнительные сведения о настройке столбцов <b>в таблице</b>можно <a href="http://go.microsoft.com/fwlink/?LinkID=87935">Добавления столбцов в объекте таблицы</a></para>
-          <para />
-        </remarks>
+        <remarks><para>Объект коллекции <b>столбцы</b> — это элемент по умолчанию для объекта <b>таблицы</b> .  </para>
+          <para>Хотя строки в <b>таблице</b> , соответствуют элементы в родительском <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> или <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> объект в <b>таблице</b>, <b>столбцы</b> в <b>таблице</b> соответствуют свойствам этих элементов. Определенные столбцы по умолчанию для всех папок в зависимости от родительской папки объекта <b>таблицы</b> . Например, являются свойства по умолчанию для папки "Входящие": <b>EntryID</b>, <b>тему</b>, <b>CreationTime</b>, <b>LastModificationTime</b>и <b>MessageClass</b>. Дополнительные сведения о свойствах по умолчанию для <b>таблицы</b>в разделе <a href="http://go.microsoft.com/fwlink/?LinkId=87925">Свойства по умолчанию, отображаемые в объекте таблицы</a></para>
+          <para>Чтобы добавить <see cref="T:Microsoft.Office.Interop.Outlook.Column" /> объекты в коллекцию <b>столбцов</b> <b>в таблице</b>, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Add(System.String)" />. Чтобы удалить набор столбцов по умолчанию, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Columns.RemoveAll" />. Дополнительные сведения о настройке столбцов <b>в таблице</b>можно <a href="http://go.microsoft.com/fwlink/?LinkID=87935">Добавления столбцов в объекте таблицы</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndOfTable">
@@ -144,12 +134,10 @@
       <Docs>
         <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, находится ли текущей строки после последней строки в <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>При открытии <b>таблицы</b> с помощью <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.GetTable(System.Object,System.Object)" />, <see cref="M:Microsoft.Office.Interop.Outlook.Search.GetTable" />, или <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" />, значение <b>EndOfTable</b> зависит от количество строк в <b>таблице</b>. Если нет ни одной строки, <b>EndOfTable</b> возвращает значение True. Если имеются строки, <b>EndOfTable</b> возвращает <b>значение False</b> , пока курсор выходит за пределы последней строки в таблице.  </para>
+        <remarks><para>При открытии <b>таблицы</b> с помощью <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.GetTable(System.Object,System.Object)" />, <see cref="M:Microsoft.Office.Interop.Outlook.Search.GetTable" />, или <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" />, значение <b>EndOfTable</b> зависит от количество строк в <b>таблице</b>. Если нет ни одной строки, <b>EndOfTable</b> возвращает значение True. Если имеются строки, <b>EndOfTable</b> возвращает <b>значение False</b> , пока курсор выходит за пределы последней строки в таблице.  </para>
           <para>В <b>таблице</b> имеет два виртуальных <b>значение Null,</b> строки, прежде чем первой строки и после последней строки в <b>таблице</b>. Для каждого вызова <see cref="M:Microsoft.Office.Interop.Outlook._Table.GetNextRow" /> перемещает текущей строки на следующую строку в <b>таблице</b> и возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> объект, представляющий текущую строку.   </para>
-          <para>Свойство <b>EndOfTable</b> возвращает <b>значение True</b> , если текущей строки после последней строки и <b>значение False</b> , если текущей строки не позднее последней строки.</para>
-          <para />
-        </remarks>
+          <para>Свойство <b>EndOfTable</b> возвращает <b>значение True</b> , если текущей строки после последней строки и <b>значение False</b> , если текущей строки не позднее последней строки. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FindNextRow">
@@ -175,12 +163,10 @@
       <Docs>
         <summary>Находит следующую строку в <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> , условиям, указанным в предыдущих <see cref="M:Microsoft.Office.Interop.Outlook._Table.FindRow(System.String)" />.</summary>
         <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> объект, представляющий следующую строку в <b>таблице</b> , которая соответствует условия фильтра в предыдущем вызове <b>метода FindRow</b>. Возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если <b>FindNextRow</b> не удается найти другую строку, в которой условиям, указанным в <b>FindRow</b>. Также возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если не был вызван <b>FindRow</b> перед <b>FindNextRow</b>.</returns>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>FindNextRow</b> находит следующую строку на основании строки, возвращаемой выше <b>FindRow</b> или <b>FindNextRow</b>. Он не зависит от текущей строки (как текущей строки был перемещен с момента предыдущего <b>FindRow</b> или <b>FindNextRow</b>, например, с <see cref="M:Microsoft.Office.Interop.Outlook._Table.MoveToStart" />).</para>
-          <para>, Если <b>FindNextRow</b> находит строку, будут размещены текущей строки в этой строке. Если не удается найти другую строку, он будет не перемещает текущей строки.</para>
-          <para />
-        </remarks>
+          <para>Если <b>FindNextRow</b> находит строку, они обеспечивают размещение текущей строки в этой строке. Если не удается найти другую строку, он будет не перемещает текущей строки.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FindRow">
@@ -209,16 +195,14 @@
         <param name="Filter">Указывает условие, должен соответствовать строка в <b>таблице</b> .</param>
         <summary>Поиск в первой строке <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> , соответствующие условиям, указанного в <paramref name="Filter" />.</summary>
         <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> объект, представляющий первой строки в <b>таблице</b> с заданным критериям фильтра. Возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если строка может быть найдена или в <b>таблице</b> не содержит каких-либо строк.</returns>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>FindRow</b> всегда начинается с первой строки в <b>таблице</b>.  </para>
           <para>
-            <b>FindRow</b> возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если свойство в <paramref name="Filter" /> не существует в указанном пространстве имен. Свойство считается именованного свойства в набор свойств MAPI, PS_PUBLIC_STRINGS. <b>FindRow</b> не возвращает ошибку, в данном случае.</para>
+            <b>FindRow</b> возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если свойство в <paramref name="Filter" /> не существует в указанном пространстве имен. Свойство считается именованного свойства в набор свойств MAPI, PS_PUBLIC_STRINGS. <b>FindRow</b> в данном случае не возвращает ошибку.</para>
           <para>
-            <b>FindRow</b> возвращает ошибку, если <paramref name="Filter" /> — это пустая строка или недопустимое ограничение. В тех случаях, где <b>FindRow</b> не находит любой строке, текущей строки не будет перемещен к которой он был до вызова <b>метода FindRow</b>.</para>
-          <para>Для использования контента индексирования поиска в <b>таблице</b>, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> метод. <b>FindRow</b> возвращает ошибку, если <paramref name="Filter" /> содержит ключевые слова содержимого индексации. </para>
-          <para />
-        </remarks>
+            <b>FindRow</b> возвращает ошибку, если <paramref name="Filter" /> — это пустая строка или недопустимое ограничение. В тех случаях, где <b>FindRow</b> не находит любой строке текущей строки не ли перемещать к которой он был до вызова <b>метода FindRow</b>.</para>
+          <para>Для использования содержимого индексации поиска в <b>таблице</b>, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> метод. <b>FindRow</b> возвращает ошибку, если <paramref name="Filter" /> содержит ключевые слова содержимого индексации. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetArray">
@@ -247,14 +231,12 @@
         <param name="MaxRows">Указывает максимальное число строк, возвращаемых в <b>таблице</b>.</param>
         <summary>Получает двухмерный массив, содержащий набор строк и столбцов значений из <see cref="T:Microsoft.Office.Interop.Outlook.Table" />.</summary>
         <returns>Значение <b>объекта</b> , который является двумерного массива, представляющий набор значений строк и столбцов в <b>таблице</b>. Массив с отсчетом от нуля; Индекс (i, j) индексов массива в строке i го столбца и j ое в массиве. Столбцы в массиве, соответствующие столбцы в <b>таблице</b>и строк в массиве соответствуют строкам в <b>таблице</b>. Количество строк в массиве является меньшим значением <paramref name="MaxRows" /> и фактическое число строк в <b>таблице</b>.</returns>
-        <remarks>
-          <para>Метод <b>GetArray</b> предлагает концептуально простых средств для получения значений из <b>таблицы</b> , копирование или его часть данных в <b>таблице</b> (на основании текущей строки) в массив и индексации в массиве.</para>
+        <remarks><para>Метод <b>GetArray</b> предлагает концептуально простых средств для получения значений из <b>таблицы</b> , копирование или его часть данных в <b>таблице</b> (на основании текущей строки) в массив и индексации в массиве.</para>
           <para>
-            <b>GetArray</b> всегда начинается с текущей строки в <b>таблице</b>. Возвращает массив с <paramref name="MaxRows" /> число строк, если имеется по крайней мере <paramref name="MaxRows" /> число строк в <b>таблице</b> , начиная с текущей позиции. Если <paramref name="MaxRows" /> не превышает общее число строк в <b>таблице</b>, и меньше <paramref name="MaxRows" /> количество элементов в <b>таблице</b> , начиная с текущей строки, он возвращает массив, содержащий только оставшиеся строки в <b> В таблице</b>. При вызове <b>GetArray</b> нет оставшихся строк, затем <b>GetArray</b> возвращает пустой массив нулей.</para>
+            <b>GetArray</b> всегда начинается с текущей строки в <b>таблице</b>. Возвращает массив с <paramref name="MaxRows" /> число строк, если имеется по крайней мере <paramref name="MaxRows" /> число строк в <b>таблице</b> , начиная с текущей позиции. Если <paramref name="MaxRows" /> не превышает общее число строк в <b>таблице</b>, и меньше <paramref name="MaxRows" /> количество элементов в <b>таблице</b> , начиная с текущей строки, он возвращает массив, содержащий только оставшиеся строки в <b>таблице</b>. Если вызывается <b>GetArray</b> и нет оставшихся строк, <b>GetArray</b> возвращает пустой массив нулей.</para>
           <para>После получения соответствующих строк в <b>таблице</b> и перед возвращением, <b>GetArray</b> всегда перемещает текущей строки на следующую строку в <b>таблице</b>, если существует следующей строке. GetArray(n) работает как если бы <see cref="M:Microsoft.Office.Interop.Outlook._Table.GetNextRow" /> является именем n раз.</para>
           <para>Значения в столбцах сопоставления столбцов в <b>таблице</b>и таким образом определяется формат имени свойства, используемые для столбца. Для получения дополнительных сведений см <a href="http://go.microsoft.com/fwlink/?LinkId=87858">Факторы влияния на свойство представление значений в таблице и классов представления</a></para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNextRow">
@@ -305,13 +287,10 @@
       <Parameters />
       <Docs>
         <summary>Получает количество строк в <see cref="T:Microsoft.Office.Interop.Outlook.Table" />.</summary>
-        <returns>
-          <b>Целое число</b> (<b>int</b> в C#) значение, представляющее количество строк в таблице.</returns>
-        <remarks>
-          <para>
-            <b>GetRowCount</b> для большой таблицы приведет к сказаться на производительности.  Из-за ограничений MAPI (например, доступной памяти для больших таблиц, одновременных операций в <b>таблице</b>) <b>GetRowCount</b> не удается определить число строк в <b>таблице</b>или он может возвращать только только приблизительно, например строки счетчик. В таких случаях <b>GetRowCount</b> возвращает ошибку. Обнаружение соответствующих ошибок для <b>GetRowCount</b> следует использовать для определения, если вызов возвращает ошибку.</para>
-          <para />
-        </remarks>
+        <returns><b>Целое число</b> (<b>int</b> в C#) значение, представляющее количество строк в таблице.</returns>
+        <remarks><para>
+            <b>GetRowCount</b> для большой таблицы приведет к сказаться на производительности.  Из-за ограничений MAPI (например, доступной памяти для больших таблиц, одновременных операций в <b>таблице</b>) <b>GetRowCount</b> не удается определить число строк в <b>таблице</b>или он может возвращать только только приблизительно, например строки счетчик. В таких случаях <b>GetRowCount</b> возвращает ошибку. Обнаружение соответствующих ошибок для <b>GetRowCount</b> следует использовать для определения, если вызов возвращает ошибку. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveToStart">
@@ -336,11 +315,9 @@
       <Parameters />
       <Docs>
         <summary>Перемещение текущей строки <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> для перед первой строки в <b>таблице</b>.</summary>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>MoveToStart</b> эквивалентно Сброс в <b>таблице</b>. При вызове <see cref="M:Microsoft.Office.Interop.Outlook._Table.GetNextRow" /> после вызова <b>MoveToStart</b>возвращает строку, представляющее первой строки в <b>таблице</b>.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -397,12 +374,16 @@
         <param name="Filter">Задает условия для строк в объекте <b>таблицы</b> .</param>
         <summary>Применяет фильтр для строки в <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> и получает новый объект <b>таблицы</b> .</summary>
         <returns>Объект <b>таблицы</b> , который возвращается с применением <paramref name="Filter" /> для строки в <b>таблице</b> родительский объект.</returns>
-        <remarks>
-          <para>Чтобы применить другой фильтр для этой <b>таблицы</b> , если родительский объект в <b>таблице</b> можно использовать только <b>Table.Restrict</b><see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объектов. Если родительский объект является <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> объекта <b>Restrict</b> возвратит ошибку.</para>
-          <para>С момента строкам в объекте таблицы применяется фильтр, это эквивалентно применение фильтра, который является логического и с <paramref name="Filter" /> и все выше фильтров, применяемых на тот же объект <b>таблицы</b> .</para>
+        <remarks><para>Чтобы применить другой фильтр для этой <b>таблицы</b> , если родительский объект в <b>таблице</b> можно использовать только <b>Table.Restrict</b> <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объектов. Если родительский объект является <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> объекта <b>Restrict</b> возвращает ошибку.</para>
+          <para>Так как для строк в объекте таблицы применяется фильтр, это эквивалентно применение фильтра, который является логического и с <paramref name="Filter" /> и все выше фильтров, применяемых на тот же объект <b>в таблице</b> .</para>
           <para>
-            <paramref name="Filter" /> — это запрос на определенные свойства, представленные в виде строки в <b>таблице</b>родительских элементов. В запросе используется синтаксис Microsoft Jet или синтаксис DAV поиска и поиск (DASL). К примеру, следующие Jet фильтр и фильтр DASL укажите тем же условиям для элементов с <b>LastModificationTime</b> более ранних чем 3:30 по 12 июня 2005:</para>критерии
-          <para>= «[LastModificationTime] &lt; "» &amp; формат $(" 6/12 / 2005 3:30 PM «,» даты») &amp; «"»</para><para>критерии = «@SQL =» &amp; Chr(34) &amp; «DAV:getlastmodified» &amp; Chr(34) &amp; " &lt; "» &amp; формат $(" 6/12/2005 3:30 по "," даты ") &amp; «"» </para><para>Для получения дополнительных сведений о задании фильтры для объекта <b>в таблице</b><a href="http://go.microsoft.com/fwlink/?LinkId=87855">Фильтрации элементы</a>отображаются</para><para>Если <paramref name="Filter" /> содержит пользовательские свойства этих свойств должен существовать в родительской папке объекта <b>таблицы</b> в приоритет для ограничения для правильной работы.  Некоторые свойства не поддерживаются в <b>таблице</b> фильтра, включая двоичные свойства, вычисленные свойства и содержимое текста запроса HTML или RTF. Для получения дополнительных сведений см <a href="http://go.microsoft.com/fwlink/?LinkId=87926">Неподдерживаемые свойства в объекте таблицы или фильтр таблицы</a></para><para>Если <paramref name="Filter" /> — это пустая строка <b>Restrict</b> возвращает объект <b>таблицы</b> , идентичный родительский объект <b>в таблице</b> .  </para><para /></remarks>
+            <paramref name="Filter" />— Это запрос на определенные свойства, представленные в виде строки в <b>таблице</b>родительских элементов. В запросе используется синтаксис Microsoft Jet или синтаксис DAV поиска и поиск (DASL). К примеру следующие Jet фильтр и фильтр DASL указывать тем же условиям для элементов более ранних чем 3:30 по 12 июня 2005 с <b>LastModificationTime</b> :</para>
+          <para>критерии = «[LastModificationTime] &lt; "» &amp; формат $(" 6/12/2005 3:30 PM "," даты ") &amp; «"»</para>
+          <para>критерии = «@SQL =» &amp; Chr(34) &amp; «DAV:getlastmodified» &amp; Chr(34) &amp; " &lt; "» &amp; формат $("6/12/2005 3:30 PM","даты") &amp; «"» </para>
+          <para>Дополнительные сведения о задании фильтры для объекта <b>в таблице</b> можно <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Фильтрации элементов</a></para>
+          <para>Если <paramref name="Filter" /> содержит пользовательские свойства этих свойств должен существовать в родительской папке объект <b>таблицы</b> в порядке для ограничения для правильной работы.  Некоторые свойства не поддерживаются в <b>таблице</b> фильтра, включая двоичные свойства, вычисленные свойства и содержимое текста запроса HTML или RTF. Для получения дополнительных сведений см <a href="http://go.microsoft.com/fwlink/?LinkId=87926">Неподдерживаемые свойства в объекте таблицы или фильтр таблицы</a></para>
+          <para>Если <paramref name="Filter" /> — это пустая строка <b>Restrict</b> возвращает объект <b>таблицы</b> , идентичный родительский объект <b>в таблице</b> .  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -430,16 +411,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -468,15 +447,13 @@
         <param name="SortProperty">Свойство требуется использовать для сортировки строк в <b>таблице</b>.</param>
         <param name="Descending">Следует ли сортировка в <b>таблице</b> в убывающем порядке.</param>
         <summary>Сортирует строки <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> , свойство, указанное в <paramref name="SortProperty" /> и сбрасывает текущую строку перед первой строки в <b>таблице</b>.</summary>
-        <remarks>
-          <para>
-            <paramref name="SortProperty" /> может быть любой явных встроенных свойств или настраиваемые свойства, за исключением двоичных и многозначных свойств. Ссылка на свойство должно его явного строковое имя. не могут быть созданы пространством имен. О дальнейших Указание свойств сортировки, см <a href="http://go.microsoft.com/fwlink/?LinkId=87936">Сортировка элементов в папке</a></para>
+        <remarks><para>
+            <paramref name="SortProperty" />может быть любой явных встроенных свойств или настраиваемые свойства, за исключением двоичных и многозначных свойств. Ссылка на свойство должно его явного строковое имя. не могут быть созданы пространством имен. О дальнейших Указание свойств сортировки см <a href="http://go.microsoft.com/fwlink/?LinkId=87936">Сортировка элементов в папке</a></para>
           <para>Сортировка в таблице эквивалентно вызову метода <see cref="M:Microsoft.Office.Interop.Outlook._Table.MoveToStart" /> метод. Курсор будет расположена в начало таблицы.  </para>
           <para>Если <b>Table.Sort</b> и затем <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> вызываются, отфильтрованных элементов в новой <b>таблицы</b> будут упорядочены по же <paramref name="SortProperty" /> и <paramref name="SortOrder" />.</para>
           <para>
-            <b>Table.Sort</b> поддерживает только сортировку по одному столбцу.</para>
-          <para />
-        </remarks>
+            <b>Table.Sort</b> поддерживает только сортировка на один столбец.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

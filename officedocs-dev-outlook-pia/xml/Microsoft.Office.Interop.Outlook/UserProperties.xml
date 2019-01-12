@@ -1,13 +1,5 @@
 <Type Name="UserProperties" FullName="Microsoft.Office.Interop.Outlook.UserProperties">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d3a7c0f8bc2420670a3ec194bc7e78528d011617" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20641324" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface UserProperties : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a015e90dd8fce2e19aee37071f10dc87ff9382a4" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27902707" /></Metadata><TypeSignature Language="C#" Value="public interface UserProperties : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UserProperties implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.UserProperties" />
   <TypeSignature Language="VB.NET" Value="Public Interface UserProperties&#xA;Implements IEnumerable" />
@@ -31,14 +23,12 @@
   </Attributes>
   <Docs>
     <summary>Содержит <see cref="T:Microsoft.Office.Interop.Outlook.UserProperty" /> объекты, которые представляют пользовательские свойства элемента Outlook.</summary>
-    <remarks>
-      <para>Свойство <b>UserProperties</b> возвращает объект <b>UserProperties</b> для элемента Outlook. Это применимо ко всем элементам Outlook, за исключением <see cref="T:Microsoft.Office.Interop.Outlook.NoteItem" />.</para>
-      <para>Использования <see cref="M:Microsoft.Office.Interop.Outlook.UserProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> метод для создания нового <b>UserProperty</b> для элемента и добавьте его в объект <b>UserProperties</b> . Метод <b>Add</b> позволяет указать имя и тип нового свойства. При создании нового свойства, он может также добавлен в качестве настраиваемого поля в папку, содержащую элемент (с тем же именем, как свойство) путем установки <paramref name="AddToFolderFields" /> параметра значение <b>True</b> при вызове метода <b>Add</b> . Это поле можно использовать в качестве столбцов в представлениях папки. </para>
-      <para>Использования <b>UserProperties</b>(<paramref name="index" />), где <paramref name="index" /> — это имя или на основе один номер индекса, чтобы вернуть объект <see cref="T:Microsoft.Office.Interop.Outlook.UserProperty" /> объект.</para>
+    <remarks><para>Свойство <b>UserProperties</b> возвращает объект <b>UserProperties</b> для элемента Outlook. Это применимо ко всем элементам Outlook, за исключением <see cref="T:Microsoft.Office.Interop.Outlook.NoteItem" />.</para>
+      <para>Использование <see cref="M:Microsoft.Office.Interop.Outlook.UserProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> метод для создания нового <b>UserProperty</b> для элемента и добавьте его в объект <b>UserProperties</b> . Метод <b>Add</b> позволяет указать имя и тип нового свойства. При создании нового свойства, он может также добавлен в качестве настраиваемого поля в папку, содержащую элемент (с тем же именем, как свойство) путем установки <paramref name="AddToFolderFields" /> параметра значение <b>True</b> при вызове метода <b>Add</b> . Это поле можно использовать в качестве столбцов в представлениях папки. </para>
+      <para>Используйте <b>UserProperties</b>(<paramref name="index" />), где <paramref name="index" /> — это имя или на основе один номер индекса, чтобы вернуть объект <see cref="T:Microsoft.Office.Interop.Outlook.UserProperty" /> объекта.</para>
       <para>Можно использовать <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.UserDefinedProperties" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объектов для извлечения и просмотрите определения настраиваемых свойств на уровне элементов, которые можно отобразить папки в представлении.</para>
-      <para>Для получения или задания значений нескольких настраиваемых свойств, используйте объект <b>PropertyAccessor</b> , а не <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> объекта для повышения производительности.</para>
-      <para />
-    </remarks>
+      <para>Чтобы получить или задать значений нескольких настраиваемых свойств, используйте объект <b>PropertyAccessor</b> , а не <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> объекта для повышения производительности.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -68,19 +58,16 @@
       <Docs>
         <param name="Name">Имя свойства. Максимальная длина составляет 64 символов. Символы "[", "]", «_» и «#» не допускается в имени.</param>
         <param name="Type">Тип нового свойства.</param>
-        <param name="AddToFolderFields">
-          <b>Значение true,</b> Если свойство добавляются как настраиваемого поля к папке, где он находится. В этом поле может отображаться в представлении папки. <b>Значение false,</b> Если свойство будет добавлен в качестве настраиваемого поля, элемент, но не в папку. Значение по умолчанию — <b>True</b>.</param>
+        <param name="AddToFolderFields"><b>Значение true,</b> Если свойство добавляются как настраиваемого поля к папке, где он находится. В этом поле может отображаться в представлении папки. <b>Значение false,</b> Если свойство будет добавлен в качестве настраиваемого поля, элемент, но не в папку. Значение по умолчанию — <b>True</b>.</param>
         <param name="DisplayFormat">Указывает, как свойство будет отображаться в пользовательском интерфейсе Outlook. Этот параметр может быть присвоено значение из одного из несколько разных перечислений, зависят от типа свойство, указанное в <paramref name="Type" /> параметр. Для получения дополнительных сведений о том, как <paramref name="Type" /> и <paramref name="DisplayFormat" /> взаимодействия, см <see cref="P:Microsoft.Office.Interop.Outlook._UserDefinedProperty.DisplayFormat" />.</param>
         <summary>Создает новое свойство пользователя в <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> семейства сайтов.</summary>
         <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.UserProperty" /> объект, который представляет новое свойство.</returns>
-        <remarks>
-          <para>Можно определить пользовательские свойства путем вызова метода <b>UserProperties.Add</b> для элемента Outlook или папки, или <see cref="M:Microsoft.Office.Interop.Outlook._UserDefinedProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> метод для папки.</para>
+        <remarks><para>Можно определить пользовательские свойства путем вызова метода <b>UserProperties.Add</b> для элемента Outlook или папки, или <see cref="M:Microsoft.Office.Interop.Outlook._UserDefinedProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> метод для папки.</para>
           <para>Можно создать свойство типа, определяемое <see cref="T:Microsoft.Office.Interop.Outlook.OlUserPropertyType" /> перечисление, за исключением следующих типов: <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olEnumeration" />, <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olOutlookInternal" />, и <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olSmartFrom" />.</para>
-          <para>Чтобы задать свойства, созданные с помощью метода <b>Add</b> в первый раз, используйте <see cref="P:Microsoft.Office.Interop.Outlook.UserProperty.Value" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.UserProperty" /> объекта вместо <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.SetProperties(System.Object,System.Object)" /> или <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.SetProperty(System.String,System.Object)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект.</para>
-          <para>, Если вы хотите просмотреть настраиваемого свойства элемента, необходимо использовать метод <b>UserProperties.Add</b> для создания этого свойства. Настраиваемые свойства, созданные <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> не поддерживаются в настраиваемом представлении.</para>
-          <para>Нельзя добавлять настраиваемые свойства в элементы документов Office, например файлов Word, Excel и PowerPoint. Появится сообщение об ошибке при попытке программного добавления пользовательского поля для <see cref="T:Microsoft.Office.Interop.Outlook.DocumentItem" /> объект.</para>
-          <para />
-        </remarks>
+          <para>Чтобы задать свойства, созданные с помощью метода <b>Add</b> в первый раз, используйте <see cref="P:Microsoft.Office.Interop.Outlook.UserProperty.Value" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.UserProperty" /> объекта вместо <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.SetProperties(System.Object,System.Object)" /> или <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.SetProperty(System.String,System.Object)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объекта.</para>
+          <para>Если вы хотите просмотреть настраиваемого свойства элемента, необходимо использовать метод <b>UserProperties.Add</b> для создания этого свойства. Настраиваемые свойства, созданные <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> не поддерживаются в настраиваемом представлении.</para>
+          <para>Нельзя добавлять настраиваемые свойства на элементы документа Office, например файлов Word, Excel и PowerPoint. Появится сообщение об ошибке при попытке программного добавления пользовательского поля для <see cref="T:Microsoft.Office.Interop.Outlook.DocumentItem" /> объекта.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -191,14 +178,11 @@
       </Parameters>
       <Docs>
         <param name="Name">Имя запрошенного свойства.</param>
-        <param name="Custom">
-          <b>Значение true,</b> если следует искать настраиваемые свойства для элемента, <b>значение False,</b> если следует искать встроенных свойств.</param>
+        <param name="Custom"><b>Значение true,</b> если следует искать настраиваемые свойства для элемента, <b>значение False,</b> если следует искать встроенных свойств.</param>
         <summary>Находит и возвращает <see cref="T:Microsoft.Office.Interop.Outlook.UserProperty" /> объект для имени запрошенного свойства, если он существует.</summary>
         <returns>При использовании <b>UserProperties.Find</b> следует искать настраиваемое свойство и вызова завершается успешно, возвращается объект <b>UserProperty</b> . Если не удается, он возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#). Если вы используете <b>UserProperties.Find</b> следует искать встроенных свойств, задать <b>значение False</b> для <paramref name="Custom" /> параметр. Если вызов выполняется успешно, он возвращает свойство как объект <b>UserProperty</b> . В случае сбоя вызова, она возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#). Если указать <b>значение True</b> для <paramref name="Custom" />, вызов не найдете встроенных свойств и возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</returns>
-        <remarks>
-          <para>Если <paramref name="Custom" /> параметр имеет <b>значение True</b>, будет осуществляться только настраиваемого пользовательского свойства. Значение по умолчанию — <b>True</b>. Чтобы найти не настраиваемое свойство таких как <b>темы</b>, укажите <paramref name="Custom" /> параметр как <b>значение False</b>, в противном случае возвращает <b>значение Nothing</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Если <paramref name="Custom" /> параметр имеет <b>значение True</b>, будет осуществляться только настраиваемого пользовательского свойства. Значение по умолчанию — <b>True</b>. Чтобы найти не настраиваемое свойство таких как <b>темы</b>, укажите <paramref name="Custom" /> параметр как <b>значение False</b>, в противном случае возвращает <b>значение Nothing</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -314,16 +298,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

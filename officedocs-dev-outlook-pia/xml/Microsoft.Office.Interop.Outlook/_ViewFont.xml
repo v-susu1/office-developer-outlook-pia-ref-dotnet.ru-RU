@@ -1,13 +1,5 @@
 <Type Name="_ViewFont" FullName="Microsoft.Office.Interop.Outlook._ViewFont">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dce221fa9294212037ac54a826838b60f072a320" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20641488" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _ViewFont" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dce221fa9294212037ac54a826838b60f072a320" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903596" /></Metadata><TypeSignature Language="C#" Value="public interface _ViewFont" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _ViewFont" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._ViewFont" />
   <TypeSignature Language="VB.NET" Value="Public Interface _ViewFont" />
@@ -176,10 +168,8 @@
       <Docs>
         <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlCategoryColor" /> константу как цвет шрифта представления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Можно использовать <see cref="P:Microsoft.Office.Interop.Outlook._ViewFont.Color" /> свойство или свойство <b>ExtendedColor</b> , чтобы задать цвет текста в представлении. Для представления календаря в частности, необходимо использовать свойство <b>ExtendedColor</b> Установка цвет шрифта.</para>
-          <para />
-        </remarks>
+        <remarks><para>Можно использовать <see cref="P:Microsoft.Office.Interop.Outlook._ViewFont.Color" /> свойство или свойство <b>ExtendedColor</b> , чтобы задать цвет текста в представлении. Для представления календаря в частности, необходимо использовать свойство <b>ExtendedColor</b> Установка цвет шрифта.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Italic">
@@ -297,16 +287,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -337,11 +325,9 @@
       <Docs>
         <summary>Возвращает или задает значение <b>Integer</b> (<b>int</b> в C#), представляющее размер (в пунктах) шрифта, в представлении. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Этого свойства может быть присвоено значение в диапазоне от 1 до 127. Если это свойство задано значение меньше 1, свойство имеет значение 1. Если значение этого свойства больше 127, свойству 127.</para>
-          <para>Значение по умолчанию для этого свойства определяется операционной системой.</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство может иметь значение в диапазоне от 1 до 127. Если это свойство задано значение меньше 1, свойство имеет значение 1. Если значение этого свойства больше 127, 127 значение свойства.</para>
+          <para>Значение по умолчанию для данного свойства, определяется в операционной системе.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Strikethrough">
