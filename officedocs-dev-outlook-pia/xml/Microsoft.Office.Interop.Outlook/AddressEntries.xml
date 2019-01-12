@@ -1,13 +1,5 @@
 <Type Name="AddressEntries" FullName="Microsoft.Office.Interop.Outlook.AddressEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4bda78f2cfac522b2c9037bd4e14d0b6b1213f6c" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640576" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AddressEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="934ec4a81165b2002ddbd25cdf69cfc08184863b" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903155" /></Metadata><TypeSignature Language="C#" Value="public interface AddressEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddressEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.AddressEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddressEntries&#xA;Implements IEnumerable" />
@@ -30,24 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="79951-101">Содержит коллекцию адреса для <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> объекта.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="79951-101">Contains a collection of addresses for an <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" />  object.</span>
-      </span>
-    </summary>
-    <remarks>
-      <span data-ttu-id="79951-102">
-        <para>Объект может содержать ноль или больше <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объектов и предоставляет доступ к записи в контейнер адресной книги поставщика транспорта.</para>
-        <para />
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="79951-102">
-          <para>The object may contain zero or more <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" />  objects and provides access to the entries in a transport provider's address book container.</para>
-          <para />
-        </span>
-      </span>
-    </remarks>
+    <summary><span data-ttu-id="2b2a9-101">Содержит коллекцию адреса для <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> объекта.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-101">Contains a collection of addresses for an <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" />  object.</span></span></summary>
+    <remarks><para><span data-ttu-id="2b2a9-102">Объект может содержать ноль или больше <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объектов и предоставляет доступ к записи в контейнер адресной книги поставщика транспорта.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-102">The object may contain zero or more <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" />  objects and provides access to the entries in a transport provider's address book container.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -74,49 +51,13 @@
         <Parameter Name="Address" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">
-          <span data-ttu-id="79951-103">Тип новая запись.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-103">The type of the new entry.</span>
-          </span>
-        </param>
-        <param name="Name">
-          <span data-ttu-id="79951-104">Имя новой записи.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-104">The name of the new entry.</span>
-          </span>
-        </param>
-        <param name="Address">
-          <span data-ttu-id="79951-105">Адрес.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-105">The address.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="79951-106">Добавляет новую запись к <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> семейства сайтов.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-106">Adds a new entry to the <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> collection.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="79951-107">
-            <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Объект, представляющий новую запись.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-107">An <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object that represents the new entry.</span>
-          </span>
-        </returns>
-        <remarks>
-          <span data-ttu-id="79951-108">
-            <para>Новые записи или изменения существующих записей, не сохраняются в коллекции до и после вызова метода <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntry.Update(System.Object,System.Object)" /> метод.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-108">
-              <para>New entries or changes to existing entries are not persisted in the collection until after calling the <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntry.Update(System.Object,System.Object)" /> method.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <param name="Type"><span data-ttu-id="2b2a9-103">Тип новая запись.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-103">The type of the new entry.</span></span></param>
+        <param name="Name"><span data-ttu-id="2b2a9-104">Имя новой записи.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-104">The name of the new entry.</span></span></param>
+        <param name="Address"><span data-ttu-id="2b2a9-105">Адрес.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-105">The address.</span></span></param>
+        <summary><span data-ttu-id="2b2a9-106">Добавляет новую запись к <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> семейства сайтов.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-106">Adds a new entry to the <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> collection.</span></span></summary>
+        <returns><span data-ttu-id="2b2a9-107"><see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Объект, представляющий новую запись.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-107">An <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object that represents the new entry.</span></span></returns>
+        <remarks><para><span data-ttu-id="2b2a9-108">Новые записи или изменения существующих записей, не сохраняются в коллекции до и после вызова метода <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntry.Update(System.Object,System.Object)" /> метод.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-108">New entries or changes to existing entries are not persisted in the collection until after calling the <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntry.Update(System.Object,System.Object)" /> method.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -142,16 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="79951-109">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-109">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span>
-          </span>
-          <span data-ttu-id="79951-110">Только для чтения.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-110">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="2b2a9-109">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-109">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span></span> <span data-ttu-id="2b2a9-110">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-110">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -179,16 +111,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="79951-111">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-111">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span>
-          </span>
-          <span data-ttu-id="79951-112">Только для чтения.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-112">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="2b2a9-111">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-111">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span></span> <span data-ttu-id="2b2a9-112">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-112">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -216,16 +139,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="79951-113">Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее число объектов в указанном семействе сайтов.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-113">Returns an <b>Integer</b> (<b>int</b> in C#) value indicating the count of objects in the specified collection.</span>
-          </span>
-          <span data-ttu-id="79951-114">Только для чтения.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-114">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="2b2a9-113">Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее число объектов в указанном семействе сайтов.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-113">Returns an <b>Integer</b> (<b>int</b> in C#) value indicating the count of objects in the specified collection.</span></span> <span data-ttu-id="2b2a9-114">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-114">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -251,31 +165,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="79951-115">Возвращает первый объект в <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> семейства сайтов.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-115">Returns the first object in the <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> collection.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="79951-116">
-            <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Объект, представляющий первый объект, содержащихся в коллекции.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-116">An <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object that represents the first object contained by the collection.</span>
-          </span>
-        </returns>
-        <remarks>
-          <span data-ttu-id="79951-117">
-            <para>Возвращает <b>значение Nothing</b> , если первый объект не существует, например, если нет объектов в коллекции. Чтобы обеспечить правильную работу <b>GetFirst</b>, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, и <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-117">
-              <para>Returns <b>Nothing</b> if no first object exists, for example, if there are no objects in the collection. To ensure correct operation of the <b>GetFirst</b>, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, and <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> methods in a large collection, call <b>GetFirst</b> before calling <b>GetNext</b> on that collection and call <b>GetLast</b> before calling <b>GetPrevious</b>. To ensure that you are always making the calls on the same collection, create an explicit variable that refers to that collection before entering the loop.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="2b2a9-115">Возвращает первый объект в <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> семейства сайтов.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-115">Returns the first object in the <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> collection.</span></span></summary>
+        <returns><span data-ttu-id="2b2a9-116"><see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Объект, представляющий первый объект, содержащихся в коллекции.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-116">An <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object that represents the first object contained by the collection.</span></span></returns>
+        <remarks><para><span data-ttu-id="2b2a9-117">Возвращает <b>значение Nothing</b> , если первый объект не существует, например, если нет объектов в коллекции.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-117">Returns <b>Nothing</b> if no first object exists, for example, if there are no objects in the collection.</span></span> <span data-ttu-id="2b2a9-118">Чтобы обеспечить правильную работу <b>GetFirst</b>, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, и <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-118">To ensure correct operation of the <b>GetFirst</b>, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, and <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> methods in a large collection, call <b>GetFirst</b> before calling <b>GetNext</b> on that collection and call <b>GetLast</b> before calling <b>GetPrevious</b>.</span></span> <span data-ttu-id="2b2a9-119">Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-119">To ensure that you are always making the calls on the same collection, create an explicit variable that refers to that collection before entering the loop.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLast">
@@ -299,31 +192,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="79951-118">Возвращает последний объект в <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> семейства сайтов.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-118">Returns the last object in the <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> collection.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="79951-119">
-            <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Объекта, представляющего последнего объекта, содержащихся в коллекции.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-119">An <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object that represents the last object contained by the collection.</span>
-          </span>
-        </returns>
-        <remarks>
-          <span data-ttu-id="79951-120">
-            <para>Возвращает <b>значение Nothing</b> Если последний объект не существует, например, если коллекция пуста. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <b>GetLast</b><see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, и <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-120">
-              <para>It returns <b>Nothing</b> if no last object exists, for example, if the collection is empty. To ensure correct operation of the <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <b>GetLast</b>, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, and <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> methods in a large collection, call <b>GetFirst</b> before calling <b>GetNext</b> on that collection, and call <b>GetLast</b> before calling <b>GetPrevious</b>. To ensure that you are always making the calls on the same collection, create an explicit variable that refers to that collection before entering the loop.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="2b2a9-120">Возвращает последний объект в <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> семейства сайтов.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-120">Returns the last object in the <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> collection.</span></span></summary>
+        <returns><span data-ttu-id="2b2a9-121"><see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Объекта, представляющего последнего объекта, содержащихся в коллекции.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-121">An <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object that represents the last object contained by the collection.</span></span></returns>
+        <remarks><para><span data-ttu-id="2b2a9-122">Возвращает <b>значение Nothing</b> Если последний объект не существует, например, если коллекция пуста.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-122">It returns <b>Nothing</b> if no last object exists, for example, if the collection is empty.</span></span> <span data-ttu-id="2b2a9-123">Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <b>GetLast</b> <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, и <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-123">To ensure correct operation of the <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <b>GetLast</b>, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, and <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> methods in a large collection, call <b>GetFirst</b> before calling <b>GetNext</b> on that collection, and call <b>GetLast</b> before calling <b>GetPrevious</b>.</span></span> <span data-ttu-id="2b2a9-124">Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-124">To ensure that you are always making the calls on the same collection, create an explicit variable that refers to that collection before entering the loop.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNext">
@@ -347,31 +219,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="79951-121">Возвращает к следующему объекту в <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> семейства сайтов.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-121">Returns the next object in the <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> collection.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="79951-122">
-            <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Объект, представляющий следующий объект, содержащихся в коллекции.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-122">An <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object that represents the next object contained by the collection.</span>
-          </span>
-        </returns>
-        <remarks>
-          <span data-ttu-id="79951-123">
-            <para>Возвращает <b>значение Nothing</b> при следующей объект не существует, например, если уже находится в конце коллекции. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <b>GetNext</b>и <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-123">
-              <para>It returns <b>Nothing</b> if no next object exists, for example, if already positioned at the end of the collection.To ensure correct operation of the <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <b>GetNext</b>, and <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> methods in a large collection, call <b>GetFirst</b> before calling <b>GetNext</b> on that collection, and call <b>GetLast</b> before calling <b>GetPrevious</b>. To ensure that you are always making the calls on the same collection, create an explicit variable that refers to that collection before entering the loop.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="2b2a9-125">Возвращает к следующему объекту в <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> семейства сайтов.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-125">Returns the next object in the <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> collection.</span></span></summary>
+        <returns><span data-ttu-id="2b2a9-126"><see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Объект, представляющий следующий объект, содержащихся в коллекции.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-126">An <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object that represents the next object contained by the collection.</span></span></returns>
+        <remarks><para><span data-ttu-id="2b2a9-127">Возвращает <b>значение Nothing</b> при следующей объект не существует, например, если уже находится в конце коллекции. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <b>GetNext</b>и <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-127">It returns <b>Nothing</b> if no next object exists, for example, if already positioned at the end of the collection.To ensure correct operation of the <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <b>GetNext</b>, and <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> methods in a large collection, call <b>GetFirst</b> before calling <b>GetNext</b> on that collection, and call <b>GetLast</b> before calling <b>GetPrevious</b>.</span></span> <span data-ttu-id="2b2a9-128">Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-128">To ensure that you are always making the calls on the same collection, create an explicit variable that refers to that collection before entering the loop.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPrevious">
@@ -395,31 +246,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="79951-124">Возвращает предыдущему объекту в <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> семейства сайтов.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-124">Returns the previous object in the <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> collection.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="79951-125">
-            <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Объект, представляющий предыдущему объекту, содержащихся в коллекции.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-125">An <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object that represents the previous object contained by the collection.</span>
-          </span>
-        </returns>
-        <remarks>
-          <span data-ttu-id="79951-126">
-            <para>Возвращает <b>значение Nothing</b> при предыдущей объект не существует, например, если уже размещен в начало коллекции. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, и методы <b>GetPrevious</b> в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции, а также вызвать <b>GetLast</b> до вызова метода <b> GetPrevious</b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-126">
-              <para>It returns <b>Nothing</b> if no previous object exists, for example, if already positioned at the beginning of the collection.To ensure correct operation of the <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, and <b>GetPrevious</b> methods in a large collection, call <b>GetFirst</b> before calling <b>GetNext</b> on that collection, and call <b>GetLast</b> before calling <b>GetPrevious</b>. To ensure that you are always making the calls on the same collection, create an explicit variable that refers to that collection before entering the loop.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="2b2a9-129">Возвращает предыдущему объекту в <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> семейства сайтов.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-129">Returns the previous object in the <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> collection.</span></span></summary>
+        <returns><span data-ttu-id="2b2a9-130"><see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Объект, представляющий предыдущему объекту, содержащихся в коллекции.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-130">An <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object that represents the previous object contained by the collection.</span></span></returns>
+        <remarks><para><span data-ttu-id="2b2a9-131">Возвращает <b>значение Nothing</b> при предыдущей объект не существует, например, если уже размещен в начало коллекции. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, и методы <b>GetPrevious</b> в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции, а также вызвать <b>GetLast</b> до вызова метода <b> GetPrevious</b>.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-131">It returns <b>Nothing</b> if no previous object exists, for example, if already positioned at the beginning of the collection.To ensure correct operation of the <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, and <b>GetPrevious</b> methods in a large collection, call <b>GetFirst</b> before calling <b>GetNext</b> on that collection, and call <b>GetLast</b> before calling <b>GetPrevious</b>.</span></span> <span data-ttu-id="2b2a9-132">Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-132">To ensure that you are always making the calls on the same collection, create an explicit variable that refers to that collection before entering the loop.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -448,24 +278,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="79951-127">Либо индекс объекта, или значение, используемое для сопоставления свойства по умолчанию объекта в коллекции.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-127">Either the index number of the object, or a value used to match the default property of an object in the collection.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="79951-128">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объект из коллекции.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-128">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object from the collection.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="79951-129">Объект <b>AddressEntry</b> , представляющий указанный объект.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-129">An <b>AddressEntry</b> object that represents the specified object.</span>
-          </span>
-        </value>
+        <param name="Index"><span data-ttu-id="2b2a9-133">Либо индекс объекта, или значение, используемое для сопоставления свойства по умолчанию объекта в коллекции.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-133">Either the index number of the object, or a value used to match the default property of an object in the collection.</span></span></param>
+        <summary><span data-ttu-id="2b2a9-134">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объект из коллекции.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-134">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object from the collection.</span></span></summary>
+        <value><span data-ttu-id="2b2a9-135">Объект <b>AddressEntry</b> , представляющий указанный объект.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-135">An <b>AddressEntry</b> object that represents the specified object.</span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -492,16 +307,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="79951-130">Возвращает родительский <b>объект</b> заданного объекта.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-130">Returns the parent <b>Object</b> of the specified object.</span>
-          </span>
-          <span data-ttu-id="79951-131">Только для чтения.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-131">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="2b2a9-136">Возвращает родительский <b>объект</b> заданного объекта.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-136">Returns the parent <b>Object</b> of the specified object.</span></span> <span data-ttu-id="2b2a9-137">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-137">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -532,12 +338,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="79951-132">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-132">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="2b2a9-138">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-138">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -565,41 +366,16 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="79951-133">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-133">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span>
-          </span>
-          <span data-ttu-id="79951-134">Только для чтения.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-134">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="2b2a9-139">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-139">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span></span> <span data-ttu-id="2b2a9-140">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-140">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="79951-135">
-            <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
-            <code>Dim objNamespace As Outlook.NameSpace = _
+        <remarks><para><span data-ttu-id="2b2a9-141">Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-141">The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session.</span></span> <span data-ttu-id="2b2a9-142">Члены по своему назначению.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-142">Both members serve the same purpose.</span></span> <span data-ttu-id="2b2a9-143">Например следующие пары операторов выполнить те же функции.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-143">For example, the following pairs of statements perform the same function:</span></span></para>
+          <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
-            <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
-            <code>Outlook.NameSpace objNamespace = 
+          <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+          <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
-            <code>Outlook.NameSpace objSession = Application.Session;</code>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-135">
-              <para>The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session. Both members serve the same purpose. For example, the following pairs of statements perform the same function:</para>
-              <code>Dim objNamespace As Outlook.NameSpace = _
-    Application.GetNamespace("MAPI")</code>
-              <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
-              <code>Outlook.NameSpace objNamespace = 
-    Application.GetNamespace("MAPI");</code>
-              <code>Outlook.NameSpace objSession = Application.Session;</code>
-              <para />
-            </span>
-          </span>
-        </remarks>
+          <code>Outlook.NameSpace objSession = Application.Session;</code>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -625,50 +401,13 @@
         <Parameter Name="Order" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Property">
-          <span data-ttu-id="79951-136">Имя свойства, по которому выполняется сортировка, который может заключаться в скобки, например, «[CompanyName]».</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-136">The name of the property by which to sort, which may be enclosed in brackets, for example, "[CompanyName]".</span>
-          </span>
-          <span data-ttu-id="79951-137">Могут быть пользовательских полей и могут быть многозначные свойства, такие как категории.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-137">May not be a user-defined field, and may not be a multi-valued property, such as a category.</span>
-          </span>
-        </param>
-        <param name="Order">
-          <span data-ttu-id="79951-138">Приоритет для указанного адреса.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-138">The order for the specified address entries.</span>
-          </span>
-          <span data-ttu-id="79951-139">Может иметь одно из следующих констант <b>OlSortOrder</b> : <b>olAscending</b>, <b>olDescending</b>или <b>olSortNone</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-139">Can be one of these <b>OlSortOrder</b> constants: <b>olAscending</b>, <b>olDescending</b>, or <b>olSortNone</b>.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="79951-140">Сортирует коллекцию элементов с указанного свойства.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-140">Sorts the collection of items by the specified property.</span>
-          </span>
-          <span data-ttu-id="79951-141">1 после завершения этого метода для сброса индекса для семейства сайтов.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-141">The index for the collection is reset to 1 upon completion of this method.</span>
-          </span>
-        </summary>
-        <remarks>
-          <span data-ttu-id="79951-142">
-            <para>
-              <b>Сортировка</b> влияет только на порядок элементов в семействе сайтов. Он не влияет на порядок элементов в режим обозревателя.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="79951-142">
-              <para>
-                <b>Sort</b> only affects the order of items in a collection. It does not affect the order of items in an explorer view.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <param name="Property"><span data-ttu-id="2b2a9-144">Имя свойства, по которому выполняется сортировка, который может заключаться в скобки, например, «[CompanyName]».</span><span class="sxs-lookup"><span data-stu-id="2b2a9-144">The name of the property by which to sort, which may be enclosed in brackets, for example, "[CompanyName]".</span></span> <span data-ttu-id="2b2a9-145">Могут быть пользовательских полей и могут быть многозначные свойства, такие как категории.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-145">May not be a user-defined field, and may not be a multi-valued property, such as a category.</span></span></param>
+        <param name="Order"><span data-ttu-id="2b2a9-146">Приоритет для указанного адреса.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-146">The order for the specified address entries.</span></span> <span data-ttu-id="2b2a9-147">Может иметь одно из следующих констант <b>OlSortOrder</b> : <b>olAscending</b>, <b>olDescending</b>или <b>olSortNone</b>.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-147">Can be one of these <b>OlSortOrder</b> constants: <b>olAscending</b>, <b>olDescending</b>, or <b>olSortNone</b>.</span></span></param>
+        <summary><span data-ttu-id="2b2a9-148">Сортирует коллекцию элементов с указанного свойства.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-148">Sorts the collection of items by the specified property.</span></span> <span data-ttu-id="2b2a9-149">1 после завершения этого метода для сброса индекса для семейства сайтов.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-149">The index for the collection is reset to 1 upon completion of this method.</span></span></summary>
+        <remarks><para><span data-ttu-id="2b2a9-150">
+            <b>Сортировка</b> влияет только на порядок элементов в семействе сайтов.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-150">
+            <b>Sort</b> only affects the order of items in a collection.</span></span> <span data-ttu-id="2b2a9-151">Он не влияет на порядок элементов в режим обозревателя.</span><span class="sxs-lookup"><span data-stu-id="2b2a9-151">It does not affect the order of items in an explorer view.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

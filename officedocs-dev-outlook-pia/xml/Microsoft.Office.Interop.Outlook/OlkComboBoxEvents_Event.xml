@@ -1,13 +1,5 @@
 <Type Name="OlkComboBoxEvents_Event" FullName="Microsoft.Office.Interop.Outlook.OlkComboBoxEvents_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3d2abb9b29c8c464f15ae99e580a708aca2dbeae" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640809" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OlkComboBoxEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ac506b761fd1bb015bfc986bbb95fd9a3cea4bb0" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27906186" /></Metadata><TypeSignature Language="C#" Value="public interface OlkComboBoxEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OlkComboBoxEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OlkComboBoxEvents_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface OlkComboBoxEvents_Event" />
@@ -29,12 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="5a404-p101">Это интерфейс .NET, созданный при обработке компонентного класса COM, который требуется управляемому коду для взаимодействия с соответствующим объектом COM. Этот интерфейс реализует все события предыдущих интерфейсов и новые события. Используйте его, только если имя нужного события совпадает с именем метода объекта COM. В этом случае выполните приведение типов к этому интерфейсу, чтобы подключиться к событию, и выполните приведение типов к первичному интерфейсу, вызвать метод. В противном случае используйте интерфейс .NET, производный от компонентного класса COM, для доступа к методам, свойствам и событиям объекта COM.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="5a404-p101">This is a .NET interface created when processing a COM coclass that is required by managed code for interoperability with the corresponding COM object. This interface implements all events of earlier interfaces and any additional new events. Use this interface only when the event you want to use shares the same name as a method of the COM object; in this case, cast to this interface to connect to the event, and cast to the primary interface to call the method. Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span>
-      </span>
-    </summary>
+    <summary><span data-ttu-id="96ef4-p101">Это интерфейс .NET, созданный при обработке компонентного класса COM, который требуется управляемому коду для взаимодействия с соответствующим объектом COM. Этот интерфейс реализует все события предыдущих интерфейсов и новые события. Используйте его, только если имя нужного события совпадает с именем метода объекта COM. В этом случае выполните приведение типов к этому интерфейсу, чтобы подключиться к событию, и выполните приведение типов к первичному интерфейсу, вызвать метод. В противном случае используйте интерфейс .NET, производный от компонентного класса COM, для доступа к методам, свойствам и событиям объекта COM.</span><span class="sxs-lookup"><span data-stu-id="96ef4-p101">This is a .NET interface created when processing a COM coclass that is required by managed code for interoperability with the corresponding COM object. This interface implements all events of earlier interfaces and any additional new events. Use this interface only when the event you want to use shares the same name as a method of the COM object; in this case, cast to this interface to connect to the event, and cast to the primary interface to call the method. Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span></span></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,70 +40,38 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkComboBoxEvents_AfterUpdateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5a404-105">Возникает после изменения данных в элементе управления посредством пользовательского интерфейса.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5a404-105">Occurs after the data in the control has been changed through the user interface.</span>
-          </span>
-        </summary>
-        <remarks>
-          <span data-ttu-id="5a404-106">
-            <para>
-              <b>До обновления</b> и <b>после обновления</b> может возникнуть, каждый раз, когда данные в элементе управления сохраняются к элементу.  Типичная последовательность событий, связанных с <b>после обновления</b> для данного элемента управления, как показано ниже:</para>
-            <list type="number">
-              <item>
-                <description>пользователя в центре внимания элемента управления</description>
-              </item>
-              <item>
-                <description>
-                  <b>до обновления</b>
-                </description>
-              </item>
-              <item>
-                <description>управления данные обновляются</description>
-              </item>
-              <item>
-                <description>
-                  <b>после обновления</b>
-                </description>
-              </item>
-              <item>
-                <description>
-                  <b>Выход</b>: пользователя Перемещает фокус от элемента управления</description>
-              </item>
-            </list>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5a404-106">
-              <para>
-                <b>BeforeUpdate</b> and <b>AfterUpdate</b> can occur any time the data in the control is being saved to the item.  The typical sequence of events involving <b>AfterUpdate</b> for this control is as follows:</para>
-              <list type="number">
-                <item>
-                  <description>User focuses on the control</description>
-                </item>
-                <item>
-                  <description>
-                    <b>BeforeUpdate</b>
-                  </description>
-                </item>
-                <item>
-                  <description>Control data is updated</description>
-                </item>
-                <item>
-                  <description>
-                    <b>AfterUpdate</b>
-                  </description>
-                </item>
-                <item>
-                  <description>
-                    <b>Exit</b>: User moves focus away from control</description>
-                </item>
-              </list>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="96ef4-105">Возникает после изменения данных в элементе управления посредством пользовательского интерфейса.</span><span class="sxs-lookup"><span data-stu-id="96ef4-105">Occurs after the data in the control has been changed through the user interface.</span></span></summary>
+        <remarks><para><span data-ttu-id="96ef4-106">
+            <b>До обновления</b> и <b>после обновления</b> может возникнуть, каждый раз, когда данные в элементе управления сохраняются к элементу.</span><span class="sxs-lookup"><span data-stu-id="96ef4-106">
+            <b>BeforeUpdate</b> and <b>AfterUpdate</b> can occur any time the data in the control is being saved to the item.</span></span>  <span data-ttu-id="96ef4-107">Типичная последовательность событий, связанных с <b>после обновления</b> для данного элемента управления выглядит следующим образом:</span><span class="sxs-lookup"><span data-stu-id="96ef4-107">The typical sequence of events involving <b>AfterUpdate</b> for this control is as follows:</span></span></para>
+          <list type="number">
+            <item>
+              <description><span data-ttu-id="96ef4-108">Пользователь в центре внимания элемента управления</span><span class="sxs-lookup"><span data-stu-id="96ef4-108">User focuses on the control</span></span></description>
+            </item>
+            <item>
+              <description><span data-ttu-id="96ef4-109">
+                <b>До обновления</b>
+              </span><span class="sxs-lookup"><span data-stu-id="96ef4-109">
+                <b>BeforeUpdate</b>
+              </span></span></description>
+            </item>
+            <item>
+              <description><span data-ttu-id="96ef4-110">Обновление данных элемента управления</span><span class="sxs-lookup"><span data-stu-id="96ef4-110">Control data is updated</span></span></description>
+            </item>
+            <item>
+              <description><span data-ttu-id="96ef4-111">
+                <b>После обновления</b>
+              </span><span class="sxs-lookup"><span data-stu-id="96ef4-111">
+                <b>AfterUpdate</b>
+              </span></span></description>
+            </item>
+            <item>
+              <description><span data-ttu-id="96ef4-112">
+                <b>Выход</b>: пользователь перемещает фокус от элемента управления</span><span class="sxs-lookup"><span data-stu-id="96ef4-112">
+                <b>Exit</b>: User moves focus away from control</span></span></description>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeforeUpdate">
@@ -134,72 +89,39 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkComboBoxEvents_BeforeUpdateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5a404-107">Происходит, когда данные в элементе управления изменяются через пользовательский интерфейс и должен быть сохранен к элементу.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5a404-107">Occurs when  the data in the control is changed through the user interface and is about to be saved to the item.</span>
-          </span>
-        </summary>
-        <remarks>
-          <span data-ttu-id="5a404-108">
-            <para>Отмена это свойство будет вернуться в текущее значение свойства элемента управления и возврата фокуса на элемент управления.</para>
-            <para>
-              <b>До обновления</b> и <b>после обновления</b> может возникнуть в любое время, данные в элементе управления сохраняются к элементу.  Типичная последовательность событий, связанных с <b>BeforeUpdate</b> для данного элемента управления, как показано ниже:</para>
-            <list type="number">
-              <item>
-                <description>пользователя в центре внимания элемента управления</description>
-              </item>
-              <item>
-                <description>
-                  <b>до обновления</b>
-                </description>
-              </item>
-              <item>
-                <description>управления данные обновляются</description>
-              </item>
-              <item>
-                <description>
-                  <b>после обновления</b>
-                </description>
-              </item>
-              <item>
-                <description>
-                  <b>Выход</b>: пользователя Перемещает фокус от элемента управления</description>
-              </item>
-            </list>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5a404-108">
-              <para>Canceling this property will revert the control to the current value of the property and return the focus to the control.</para>
-              <para>
-                <b>BeforeUpdate</b> and <b>AfterUpdate</b> can occur any time the data in the control is being saved to the item.  The typical sequence of events involving <b>BeforeUpdate</b> for this control is as follows:</para>
-              <list type="number">
-                <item>
-                  <description>User focuses on the control</description>
-                </item>
-                <item>
-                  <description>
-                    <b>BeforeUpdate</b>
-                  </description>
-                </item>
-                <item>
-                  <description>Control data is updated</description>
-                </item>
-                <item>
-                  <description>
-                    <b>AfterUpdate</b>
-                  </description>
-                </item>
-                <item>
-                  <description>
-                    <b>Exit</b>: User moves focus away from control</description>
-                </item>
-              </list>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="96ef4-113">Происходит, когда данные в элементе управления изменяются через пользовательский интерфейс и должен быть сохранен к элементу.</span><span class="sxs-lookup"><span data-stu-id="96ef4-113">Occurs when  the data in the control is changed through the user interface and is about to be saved to the item.</span></span></summary>
+        <remarks><para><span data-ttu-id="96ef4-114">Отмена это свойство вернуться в текущее значение свойства элемента управления и возврата фокуса на элемент управления.</span><span class="sxs-lookup"><span data-stu-id="96ef4-114">Canceling this property will revert the control to the current value of the property and return the focus to the control.</span></span></para>
+          <para><span data-ttu-id="96ef4-115">
+            <b>До обновления</b> и <b>после обновления</b> может возникнуть, каждый раз, когда данные в элементе управления сохраняются к элементу.</span><span class="sxs-lookup"><span data-stu-id="96ef4-115">
+            <b>BeforeUpdate</b> and <b>AfterUpdate</b> can occur any time the data in the control is being saved to the item.</span></span>  <span data-ttu-id="96ef4-116">Типичная последовательность событий, связанных с <b>BeforeUpdate</b> для данного элемента управления выглядит следующим образом:</span><span class="sxs-lookup"><span data-stu-id="96ef4-116">The typical sequence of events involving <b>BeforeUpdate</b> for this control is as follows:</span></span></para>
+          <list type="number">
+            <item>
+              <description><span data-ttu-id="96ef4-117">Пользователь в центре внимания элемента управления</span><span class="sxs-lookup"><span data-stu-id="96ef4-117">User focuses on the control</span></span></description>
+            </item>
+            <item>
+              <description><span data-ttu-id="96ef4-118">
+                <b>До обновления</b>
+              </span><span class="sxs-lookup"><span data-stu-id="96ef4-118">
+                <b>BeforeUpdate</b>
+              </span></span></description>
+            </item>
+            <item>
+              <description><span data-ttu-id="96ef4-119">Обновление данных элемента управления</span><span class="sxs-lookup"><span data-stu-id="96ef4-119">Control data is updated</span></span></description>
+            </item>
+            <item>
+              <description><span data-ttu-id="96ef4-120">
+                <b>После обновления</b>
+              </span><span class="sxs-lookup"><span data-stu-id="96ef4-120">
+                <b>AfterUpdate</b>
+              </span></span></description>
+            </item>
+            <item>
+              <description><span data-ttu-id="96ef4-121">
+                <b>Выход</b>: пользователь перемещает фокус от элемента управления</span><span class="sxs-lookup"><span data-stu-id="96ef4-121">
+                <b>Exit</b>: User moves focus away from control</span></span></description>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Change">
@@ -217,12 +139,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkComboBoxEvents_ChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5a404-109">Происходит, когда элемент, выбранный в списке отображается путем изменения элемента управления.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5a404-109">Occurs when the selection in the list displayed by the control changes.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="96ef4-122">Происходит, когда элемент, выбранный в списке отображается путем изменения элемента управления.</span><span class="sxs-lookup"><span data-stu-id="96ef4-122">Occurs when the selection in the list displayed by the control changes.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,12 +158,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkComboBoxEvents_ClickEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5a404-110">Происходит, когда пользователь нажимает внутри элемента управления.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5a404-110">Occurs when the user clicks inside the control.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="96ef4-123">Происходит, когда пользователь нажимает внутри элемента управления.</span><span class="sxs-lookup"><span data-stu-id="96ef4-123">Occurs when the user clicks inside the control.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,12 +177,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkComboBoxEvents_DoubleClickEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5a404-111">Возникает при двойном щелчке внутри элемента управления.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5a404-111">Occurs when the user double-clicks inside the control.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="96ef4-124">Возникает при двойном щелчке внутри элемента управления.</span><span class="sxs-lookup"><span data-stu-id="96ef4-124">Occurs when the user double-clicks inside the control.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,12 +196,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkComboBoxEvents_DropButtonClickEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5a404-112">Происходит, когда пользователь нажимает кнопку раскрывающегося разверните раскрывающегося списка в поле со списком или <see cref="M:Microsoft.Office.Interop.Outlook._OlkComboBox.DropDown" /> программным путем вызова метода.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5a404-112">Occurs when the user clicks the drop button to expand the drop-down list in the combo box control, or when the <see cref="M:Microsoft.Office.Interop.Outlook._OlkComboBox.DropDown" /> method is called programmatically.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="96ef4-125">Происходит, когда пользователь нажимает кнопку раскрывающегося разверните раскрывающегося списка в поле со списком или <see cref="M:Microsoft.Office.Interop.Outlook._OlkComboBox.DropDown" /> программным путем вызова метода.</span><span class="sxs-lookup"><span data-stu-id="96ef4-125">Occurs when the user clicks the drop button to expand the drop-down list in the combo box control, or when the <see cref="M:Microsoft.Office.Interop.Outlook._OlkComboBox.DropDown" /> method is called programmatically.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,24 +215,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkComboBoxEvents_EnterEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5a404-113">Происходит, когда элемент управления получает фокус, сразу после <b>выхода</b> события предыдущего элемента управления.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5a404-113">Occurs when the control receives focus, immediately after the previous control's <b>Exit</b> event.</span>
-          </span>
-        </summary>
-        <remarks>
-          <span data-ttu-id="5a404-114">
-            <para>Это событие <b>Получение фокуса</b> , предоставляемые с управляемым кодом элементы управления или в Microsoft Visual Basic 6.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5a404-114">
-              <para>This is similar to the <b>GotFocus</b> event exposed by managed-code controls or in Microsoft Visual Basic 6.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="96ef4-126">Происходит, когда элемент управления получает фокус, сразу после <b>выхода</b> события предыдущего элемента управления.</span><span class="sxs-lookup"><span data-stu-id="96ef4-126">Occurs when the control receives focus, immediately after the previous control's <b>Exit</b> event.</span></span></summary>
+        <remarks><para><span data-ttu-id="96ef4-127">Это событие <b>Получение фокуса</b> , предоставляемые с управляемым кодом элементы управления или в Microsoft Visual Basic 6.</span><span class="sxs-lookup"><span data-stu-id="96ef4-127">This is similar to the <b>GotFocus</b> event exposed by managed-code controls or in Microsoft Visual Basic 6.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Exit">
@@ -348,12 +235,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkComboBoxEvents_ExitEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5a404-115">Происходит после передает фокус из этого элемента управления на другой элемент управления в той же форме.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5a404-115">Occurs just after the focus passes from this control  to another control on the same form.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="96ef4-128">Происходит после передает фокус из этого элемента управления на другой элемент управления в той же форме.</span><span class="sxs-lookup"><span data-stu-id="96ef4-128">Occurs just after the focus passes from this control  to another control on the same form.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -372,24 +254,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkComboBoxEvents_KeyDownEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5a404-116">Происходит, когда пользователь нажимает клавишу.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5a404-116">Occurs when a user presses a key.</span>
-          </span>
-        </summary>
-        <remarks>
-          <span data-ttu-id="5a404-117">
-            <para>Состояние клавиш (SHIFT, CTRL или ALT), которые нажата во время события <b>KeyDown</b> доступен через <paramref name="Shift" /> параметр.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5a404-117">
-              <para>The state of the modifier keys (SHIFT, CTRL, or ALT) that are pressed during the <b>KeyDown</b> event is accessible through the <paramref name="Shift" /> parameter.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="96ef4-129">Происходит, когда пользователь нажимает клавишу.</span><span class="sxs-lookup"><span data-stu-id="96ef4-129">Occurs when a user presses a key.</span></span></summary>
+        <remarks><para><span data-ttu-id="96ef4-130">Состояние клавиш (SHIFT, CTRL или ALT), которые нажата во время события <b>KeyDown</b> доступен через <paramref name="Shift" /> параметр.</span><span class="sxs-lookup"><span data-stu-id="96ef4-130">The state of the modifier keys (SHIFT, CTRL, or ALT) that are pressed during the <b>KeyDown</b> event is accessible through the <paramref name="Shift" /> parameter.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyPress">
@@ -407,54 +274,24 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkComboBoxEvents_KeyPressEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5a404-118">Происходит, когда пользователь нажимает клавишу с кодом ANSI.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5a404-118">Occurs when the user presses an ANSI key.</span>
-          </span>
-        </summary>
-        <remarks>
-          <span data-ttu-id="5a404-119">
-            <para>Клавиша ANSI —, которая возвращает typeable символ, когда пользователь нажимает ее. Событие <b>KeyPress</b> происходит, когда пользователь нажимает клавишу с кодом ANSI на выполнение формы в форме при или элемент управления имеет фокус. Событие может возникнуть до или после выпуска ключ.</para>
-            <para>Событие <b>KeyPress</b> не происходит при следующих условиях:</para>
-            <list type="bullet">
-              <item>
-                <para>При нажатии клавиши TAB</para>
-              </item>
-              <item>
-                <para>При нажатии клавиши ВВОД</para>
-              </item>
-              <item>
-                <para>клавиш со стрелкой</para>
-              </item>
-              <item>
-                <para>при нажатии клавиши фокус перемещается с одного элемента управления на другой.</para>
-              </item>
-            </list>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5a404-119">
-              <para>An ANSI key is one that produces a typeable character when the user presses it. The <b>KeyPress</b> event occurs when the user presses an ANSI  key on a running form while the form or a control on it has the focus. The event can occur either before or after the key is released.</para>
-              <para>A <b>KeyPress</b> event does not occur under the following conditions:</para>
-              <list type="bullet">
-                <item>
-                  <para>Pressing TAB</para>
-                </item>
-                <item>
-                  <para>Pressing ENTER</para>
-                </item>
-                <item>
-                  <para>Pressing an arrow key</para>
-                </item>
-                <item>
-                  <para>When a keystroke causes the focus to move from one control to another. </para>
-                </item>
-              </list>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="96ef4-131">Происходит, когда пользователь нажимает клавишу с кодом ANSI.</span><span class="sxs-lookup"><span data-stu-id="96ef4-131">Occurs when the user presses an ANSI key.</span></span></summary>
+        <remarks><para><span data-ttu-id="96ef4-132">Клавиша ANSI —, которая возвращает typeable символ, когда пользователь нажимает ее.</span><span class="sxs-lookup"><span data-stu-id="96ef4-132">An ANSI key is one that produces a typeable character when the user presses it.</span></span> <span data-ttu-id="96ef4-133">Событие <b>KeyPress</b> происходит, когда пользователь нажимает клавишу с кодом ANSI на выполнение формы в форме при или элемент управления имеет фокус.</span><span class="sxs-lookup"><span data-stu-id="96ef4-133">The <b>KeyPress</b> event occurs when the user presses an ANSI  key on a running form while the form or a control on it has the focus.</span></span> <span data-ttu-id="96ef4-134">Событие может возникнуть до или после выпуска ключ.</span><span class="sxs-lookup"><span data-stu-id="96ef4-134">The event can occur either before or after the key is released.</span></span></para>
+          <para><span data-ttu-id="96ef4-135">Событие <b>KeyPress</b> не происходит при следующих условиях:</span><span class="sxs-lookup"><span data-stu-id="96ef4-135">A <b>KeyPress</b> event does not occur under the following conditions:</span></span></para>
+          <list type="bullet">
+            <item>
+              <para><span data-ttu-id="96ef4-136">Нажатие клавиши TAB</span><span class="sxs-lookup"><span data-stu-id="96ef4-136">Pressing TAB</span></span></para>
+            </item>
+            <item>
+              <para><span data-ttu-id="96ef4-137">При нажатии клавиши ВВОД</span><span class="sxs-lookup"><span data-stu-id="96ef4-137">Pressing ENTER</span></span></para>
+            </item>
+            <item>
+              <para><span data-ttu-id="96ef4-138">Нажатие клавиши со стрелкой</span><span class="sxs-lookup"><span data-stu-id="96ef4-138">Pressing an arrow key</span></span></para>
+            </item>
+            <item>
+              <para><span data-ttu-id="96ef4-p105">если при нажатии клавиши фокус перемещается с одного элемента управления на другой.</span><span class="sxs-lookup"><span data-stu-id="96ef4-p105">When a keystroke causes the focus to move from one control to another. </span></span></para>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyUp">
@@ -472,24 +309,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkComboBoxEvents_KeyUpEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5a404-120">Происходит, когда пользователь отпускает клавишу.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5a404-120">Occurs when the user releases a key.</span>
-          </span>
-        </summary>
-        <remarks>
-          <span data-ttu-id="5a404-121">
-            <para>Состояние клавиш (SHIFT, CTRL или ALT), которые нажата во время события <b>KeyUp</b> доступен через <paramref name="Shift" /> параметр.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5a404-121">
-              <para>The state of the modifier keys (SHIFT, CTRL, or ALT) that are pressed during the <b>KeyUp</b> event is accessible through the <paramref name="Shift" /> parameter.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="96ef4-140">Происходит, когда пользователь отпускает клавишу.</span><span class="sxs-lookup"><span data-stu-id="96ef4-140">Occurs when the user releases a key.</span></span></summary>
+        <remarks><para><span data-ttu-id="96ef4-141">Состояние клавиш (SHIFT, CTRL или ALT), которые нажата во время события <b>KeyUp</b> доступен через <paramref name="Shift" /> параметр.</span><span class="sxs-lookup"><span data-stu-id="96ef4-141">The state of the modifier keys (SHIFT, CTRL, or ALT) that are pressed during the <b>KeyUp</b> event is accessible through the <paramref name="Shift" /> parameter.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseDown">
@@ -507,12 +329,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkComboBoxEvents_MouseDownEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5a404-122">Происходит, когда пользователь нажимает кнопку мыши на элементе управления.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5a404-122">Occurs when the user presses a mouse button on the control.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="96ef4-142">Происходит, когда пользователь нажимает кнопку мыши на элементе управления.</span><span class="sxs-lookup"><span data-stu-id="96ef4-142">Occurs when the user presses a mouse button on the control.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -531,24 +348,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkComboBoxEvents_MouseMoveEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5a404-123">Возникает после регистрации движения мыши на элемент управления.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5a404-123">Occurs after a mouse movement has been registered over the control.</span>
-          </span>
-        </summary>
-        <remarks>
-          <span data-ttu-id="5a404-124">
-            <para>Нажатие клавиши ALT запускает событие <b>MouseMove</b> .</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5a404-124">
-              <para>Pressing the ALT key fires the <b>MouseMove</b> event.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="96ef4-143">Возникает после регистрации движения мыши на элемент управления.</span><span class="sxs-lookup"><span data-stu-id="96ef4-143">Occurs after a mouse movement has been registered over the control.</span></span></summary>
+        <remarks><para><span data-ttu-id="96ef4-144">Нажатие клавиши ALT запускает событие <b>MouseMove</b> .</span><span class="sxs-lookup"><span data-stu-id="96ef4-144">Pressing the ALT key fires the <b>MouseMove</b> event.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseUp">
@@ -566,12 +368,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkComboBoxEvents_MouseUpEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5a404-125">Возникает после отпускании кнопки мыши, которые были нажаты на элементе управления.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5a404-125">Occurs after the user releases a mouse button that has been pressed on the control.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="96ef4-145">Возникает после отпускании кнопки мыши, которые были нажаты на элементе управления.</span><span class="sxs-lookup"><span data-stu-id="96ef4-145">Occurs after the user releases a mouse button that has been pressed on the control.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
