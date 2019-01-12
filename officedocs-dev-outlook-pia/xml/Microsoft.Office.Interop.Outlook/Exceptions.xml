@@ -1,13 +1,5 @@
 <Type Name="Exceptions" FullName="Microsoft.Office.Interop.Outlook.Exceptions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="520fadd96b8362d70a9b5a030b8ffe9075c071ff" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20641544" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Exceptions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7f68233838899e145d387aa0eb20809a1521e737" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903211" /></Metadata><TypeSignature Language="C#" Value="public interface Exceptions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Exceptions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Exceptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface Exceptions&#xA;Implements IEnumerable" />
@@ -31,12 +23,10 @@
   </Attributes>
   <Docs>
     <summary>Группа <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> объектов.</summary>
-    <remarks>
-      <para>Если у вас есть повторяющейся <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> , <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> объект определяет повторения встречи. Объект <b>исключения</b> содержит группе объектов <b>исключения</b> , которые определяют исключения для ряда встреч.</para>
+    <remarks><para>Если у вас есть повторяющейся <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> , <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> объект определяет повторения встречи. Объект <b>исключения</b> содержит группе объектов <b>исключения</b> , которые определяют исключения для ряда встреч.</para>
       <para>Объекты 
-        <b>исключений</b> добавляются в объект <b>исключения</b> каждый раз, когда изменяется свойство в соответствующего объекта <b>AppointmentItem</b> .</para>
-      <para />
-    </remarks>
+        <b>исключений</b> добавляются к объекту <b>исключения</b> каждый раз, когда изменяется свойство в соответствующего объекта <b>AppointmentItem</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -208,16 +198,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
