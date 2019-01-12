@@ -1,13 +1,5 @@
 <Type Name="_Folders" FullName="Microsoft.Office.Interop.Outlook._Folders">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="65a8db10f5e9c75a72a6d9f58667845ef9c39629" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639745" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Folders : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="65a8db10f5e9c75a72a6d9f58667845ef9c39629" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27898062" /></Metadata><TypeSignature Language="C#" Value="public interface _Folders : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Folders implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Folders" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Folders&#xA;Implements IEnumerable" />
@@ -30,24 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="2e2fd-101">Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="2e2fd-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span>
-      </span>
-      <span data-ttu-id="2e2fd-102">Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="2e2fd-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span>
-      </span>
-      <span data-ttu-id="2e2fd-103">В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="2e2fd-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span>
-      </span>
-      <span data-ttu-id="2e2fd-104">Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Folders" />.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="2e2fd-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.Folders" />.</span>
-      </span>
-    </summary>
+    <summary><span data-ttu-id="b753e-101">Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом.</span><span class="sxs-lookup"><span data-stu-id="b753e-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span></span> <span data-ttu-id="b753e-102">Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию.</span><span class="sxs-lookup"><span data-stu-id="b753e-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span></span> <span data-ttu-id="b753e-103">В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом.</span><span class="sxs-lookup"><span data-stu-id="b753e-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span></span> <span data-ttu-id="b753e-104">Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Folders" />.</span><span class="sxs-lookup"><span data-stu-id="b753e-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.Folders" />.</span></span></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -74,42 +49,10 @@
         <Parameter Name="Type" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <span data-ttu-id="2e2fd-105">Отображаемое имя для новой папки.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-105">The display name for the new folder.</span>
-          </span>
-        </param>
-        <param name="Type">
-          <span data-ttu-id="2e2fd-106">Тип папки Outlook для новой папки.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-106">The Outlook folder type for the new folder.</span>
-          </span>
-          <span data-ttu-id="2e2fd-107">Если не указан тип папки, новую папку по умолчанию совпадает с типом папки, в котором он создается.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-107">If the folder type is not specified, the new folder will default to the same type as the folder in which it is created.</span>
-          </span>
-          <span data-ttu-id="2e2fd-108">Может иметь одно из следующих значений <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultFolders" /> констант: <b>olFolderCalendar</b>, <b>olFolderContacts</b>, <b>olFolderDrafts</b>, <b>olFolderInbox</b>, <b>olFolderJournal</b>, <b>olFolderNotes</b>или <b>olFolderTasks</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-108">Can be one of the following <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultFolders" /> constants: <b>olFolderCalendar</b>, <b>olFolderContacts</b>, <b>olFolderDrafts</b>, <b>olFolderInbox</b>, <b>olFolderJournal</b>, <b>olFolderNotes</b>,  or <b>olFolderTasks</b>.</span>
-          </span>
-          <span data-ttu-id="2e2fd-109">Константы <b>olFolderConflicts</b>, <b>olFolderDeletedItems</b>, <b>olFolderJunk</b>, <b>olFolderLocalFailures</b>, <b>olFolderManagedEmail</b>, <b>olFolderOutbox</b>, <b>olFolderRssSubscriptions</b>, <b> olFolderSentMail</b>, <b>olFolderServerFailures</b>, <b>olFolderSyncIssues</b>, <b>olFolderToDo</b>и <b>olPublicFoldersAllPublicFolders</b> нельзя использовать для этого аргумента.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-109">The constants <b>olFolderConflicts</b>, <b>olFolderDeletedItems</b>, <b>olFolderJunk</b>, <b>olFolderLocalFailures</b>, <b>olFolderManagedEmail</b>, <b>olFolderOutbox</b>, <b>olFolderRssSubscriptions</b>, <b>olFolderSentMail</b>, <b>olFolderServerFailures</b>, <b>olFolderSyncIssues</b>, <b>olFolderToDo</b>, and <b>olPublicFoldersAllPublicFolders</b> cannot be specified for this argument.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="2e2fd-110">Создает новую папку в <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> семейства сайтов.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-110">Creates a new folder in the <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> collection.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="2e2fd-111">A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий новую папку.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-111">A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> object that represents  the new folder.</span>
-          </span>
-        </returns>
+        <param name="Name"><span data-ttu-id="b753e-105">Отображаемое имя для новой папки.</span><span class="sxs-lookup"><span data-stu-id="b753e-105">The display name for the new folder.</span></span></param>
+        <param name="Type"><span data-ttu-id="b753e-106">Тип папки Outlook для новой папки.</span><span class="sxs-lookup"><span data-stu-id="b753e-106">The Outlook folder type for the new folder.</span></span> <span data-ttu-id="b753e-107">Если не указан тип папки, новую папку по умолчанию совпадает с типом папки, в котором он создается.</span><span class="sxs-lookup"><span data-stu-id="b753e-107">If the folder type is not specified, the new folder will default to the same type as the folder in which it is created.</span></span> <span data-ttu-id="b753e-108">Может иметь одно из следующих значений <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultFolders" /> констант: <b>olFolderCalendar</b>, <b>olFolderContacts</b>, <b>olFolderDrafts</b>, <b>olFolderInbox</b>, <b>olFolderJournal</b>, <b>olFolderNotes</b>или <b>olFolderTasks</b>.</span><span class="sxs-lookup"><span data-stu-id="b753e-108">Can be one of the following <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultFolders" /> constants: <b>olFolderCalendar</b>, <b>olFolderContacts</b>, <b>olFolderDrafts</b>, <b>olFolderInbox</b>, <b>olFolderJournal</b>, <b>olFolderNotes</b>,  or <b>olFolderTasks</b>.</span></span> <span data-ttu-id="b753e-109">Константы <b>olFolderConflicts</b>, <b>olFolderDeletedItems</b>, <b>olFolderJunk</b>, <b>olFolderLocalFailures</b>, <b>olFolderManagedEmail</b>, <b>olFolderOutbox</b>, <b>olFolderRssSubscriptions</b>, <b> olFolderSentMail</b>, <b>olFolderServerFailures</b>, <b>olFolderSyncIssues</b>, <b>olFolderToDo</b>и <b>olPublicFoldersAllPublicFolders</b> нельзя использовать для этого аргумента.</span><span class="sxs-lookup"><span data-stu-id="b753e-109">The constants <b>olFolderConflicts</b>, <b>olFolderDeletedItems</b>, <b>olFolderJunk</b>, <b>olFolderLocalFailures</b>, <b>olFolderManagedEmail</b>, <b>olFolderOutbox</b>, <b>olFolderRssSubscriptions</b>, <b>olFolderSentMail</b>, <b>olFolderServerFailures</b>, <b>olFolderSyncIssues</b>, <b>olFolderToDo</b>, and <b>olPublicFoldersAllPublicFolders</b> cannot be specified for this argument.</span></span></param>
+        <summary><span data-ttu-id="b753e-110">Создает новую папку в <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> семейства сайтов.</span><span class="sxs-lookup"><span data-stu-id="b753e-110">Creates a new folder in the <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> collection.</span></span></summary>
+        <returns><span data-ttu-id="b753e-111">A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий новую папку.</span><span class="sxs-lookup"><span data-stu-id="b753e-111">A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> object that represents  the new folder.</span></span></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,16 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2e2fd-112">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-112">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span>
-          </span>
-          <span data-ttu-id="2e2fd-113">Только для чтения.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-113">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="b753e-112">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта.</span><span class="sxs-lookup"><span data-stu-id="b753e-112">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span></span> <span data-ttu-id="b753e-113">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b753e-113">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -173,16 +107,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2e2fd-114">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-114">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span>
-          </span>
-          <span data-ttu-id="2e2fd-115">Только для чтения.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-115">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="b753e-114">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта.</span><span class="sxs-lookup"><span data-stu-id="b753e-114">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span></span> <span data-ttu-id="b753e-115">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b753e-115">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -210,16 +135,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2e2fd-116">Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее число объектов в указанном семействе сайтов.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-116">Returns an <b>Integer</b> (<b>int</b> in C#) value indicating the count of objects in the specified collection.</span>
-          </span>
-          <span data-ttu-id="2e2fd-117">Только для чтения.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-117">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="b753e-116">Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее число объектов в указанном семействе сайтов.</span><span class="sxs-lookup"><span data-stu-id="b753e-116">Returns an <b>Integer</b> (<b>int</b> in C#) value indicating the count of objects in the specified collection.</span></span> <span data-ttu-id="b753e-117">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b753e-117">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -245,30 +161,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="2e2fd-118">Возвращает первый объект в <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> семейства сайтов.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-118">Returns the first object in the <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> collection.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="2e2fd-119">A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий первый объект, содержащихся в коллекции.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-119">A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> object that represents the first object contained by the collection.</span>
-          </span>
-        </returns>
-        <remarks>
-          <span data-ttu-id="2e2fd-120">
-            <para>Возвращает <b>значение Nothing</b> , если первый объект не существует, например, если нет объектов в коллекции. Чтобы обеспечить правильную работу <b>GetFirst</b>, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetNext" />, и <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-120">
-              <para>Returns <b>Nothing</b> if no first object exists, for example, if there are no objects in the collection.To ensure correct operation of the <b>GetFirst</b>, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetNext" />, and <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetPrevious" /> methods in a large collection, call <b>GetFirst</b> before calling <b>GetNext</b> on that collection and call <b>GetLast</b> before calling <b>GetPrevious</b>. To ensure that you are always making the calls on the same collection, create an explicit variable that refers to that collection before entering the loop.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="b753e-118">Возвращает первый объект в <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> семейства сайтов.</span><span class="sxs-lookup"><span data-stu-id="b753e-118">Returns the first object in the <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> collection.</span></span></summary>
+        <returns><span data-ttu-id="b753e-119">A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий первый объект, содержащихся в коллекции.</span><span class="sxs-lookup"><span data-stu-id="b753e-119">A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> object that represents the first object contained by the collection.</span></span></returns>
+        <remarks><para><span data-ttu-id="b753e-120">Возвращает <b>значение Nothing</b> , если первый объект не существует, например, если нет объектов в коллекции. Чтобы обеспечить правильную работу <b>GetFirst</b>, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetNext" />, и <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>.</span><span class="sxs-lookup"><span data-stu-id="b753e-120">Returns <b>Nothing</b> if no first object exists, for example, if there are no objects in the collection.To ensure correct operation of the <b>GetFirst</b>, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetNext" />, and <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetPrevious" /> methods in a large collection, call <b>GetFirst</b> before calling <b>GetNext</b> on that collection and call <b>GetLast</b> before calling <b>GetPrevious</b>.</span></span> <span data-ttu-id="b753e-121">Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</span><span class="sxs-lookup"><span data-stu-id="b753e-121">To ensure that you are always making the calls on the same collection, create an explicit variable that refers to that collection before entering the loop.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLast">
@@ -292,30 +188,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="2e2fd-121">Возвращает последний объект в <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> семейства сайтов.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-121">Returns the last object in the <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> collection.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="2e2fd-122">A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объекта, представляющего последнего объекта, содержащихся в коллекции.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-122">A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> object that represents the last object contained by the collection.</span>
-          </span>
-        </returns>
-        <remarks>
-          <span data-ttu-id="2e2fd-123">
-            <para>Возвращает <b>значение Nothing</b> Если последний объект не существует, например, если коллекция пуста. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetFirst" />, <b>GetLast</b><see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetNext" />, и <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-123">
-              <para>It returns <b>Nothing</b> if no last object exists, for example, if the collection is empty.To ensure correct operation of the <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetFirst" />, <b>GetLast</b>, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetNext" />, and <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetPrevious" /> methods in a large collection, call <b>GetFirst</b> before calling <b>GetNext</b> on that collection, and call <b>GetLast</b> before calling <b>GetPrevious</b>. To ensure that you are always making the calls on the same collection, create an explicit variable that refers to that collection before entering the loop.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="b753e-122">Возвращает последний объект в <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> семейства сайтов.</span><span class="sxs-lookup"><span data-stu-id="b753e-122">Returns the last object in the <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> collection.</span></span></summary>
+        <returns><span data-ttu-id="b753e-123">A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объекта, представляющего последнего объекта, содержащихся в коллекции.</span><span class="sxs-lookup"><span data-stu-id="b753e-123">A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> object that represents the last object contained by the collection.</span></span></returns>
+        <remarks><para><span data-ttu-id="b753e-124">Возвращает <b>значение Nothing</b> Если последний объект не существует, например, если коллекция пуста. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetFirst" />, <b>GetLast</b> <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetNext" />, и <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>.</span><span class="sxs-lookup"><span data-stu-id="b753e-124">It returns <b>Nothing</b> if no last object exists, for example, if the collection is empty.To ensure correct operation of the <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetFirst" />, <b>GetLast</b>, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetNext" />, and <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetPrevious" /> methods in a large collection, call <b>GetFirst</b> before calling <b>GetNext</b> on that collection, and call <b>GetLast</b> before calling <b>GetPrevious</b>.</span></span> <span data-ttu-id="b753e-125">Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</span><span class="sxs-lookup"><span data-stu-id="b753e-125">To ensure that you are always making the calls on the same collection, create an explicit variable that refers to that collection before entering the loop.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNext">
@@ -339,30 +215,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="2e2fd-124">Возвращает к следующему объекту в <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> семейства сайтов.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-124">Returns the next object in the <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> collection.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="2e2fd-125">A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий следующий объект, содержащихся в коллекции.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-125">A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> object that represents the next object contained by the collection.</span>
-          </span>
-        </returns>
-        <remarks>
-          <span data-ttu-id="2e2fd-126">
-            <para>Возвращает <b>значение Nothing</b> при следующей объект не существует, например, если уже находится в конце коллекции. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetLast" />, <b>GetNext</b>и <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-126">
-              <para>It returns <b>Nothing</b> if no next object exists, for example, if already positioned at the end of the collection.To ensure correct operation of the <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetLast" />, <b>GetNext</b>, and <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetPrevious" /> methods in a large collection, call <b>GetFirst</b> before calling <b>GetNext</b> on that collection, and call <b>GetLast</b> before calling <b>GetPrevious</b>. To ensure that you are always making the calls on the same collection, create an explicit variable that refers to that collection before entering the loop.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="b753e-126">Возвращает к следующему объекту в <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> семейства сайтов.</span><span class="sxs-lookup"><span data-stu-id="b753e-126">Returns the next object in the <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> collection.</span></span></summary>
+        <returns><span data-ttu-id="b753e-127">A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий следующий объект, содержащихся в коллекции.</span><span class="sxs-lookup"><span data-stu-id="b753e-127">A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> object that represents the next object contained by the collection.</span></span></returns>
+        <remarks><para><span data-ttu-id="b753e-128">Возвращает <b>значение Nothing</b> при следующей объект не существует, например, если уже находится в конце коллекции. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetLast" />, <b>GetNext</b>и <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>.</span><span class="sxs-lookup"><span data-stu-id="b753e-128">It returns <b>Nothing</b> if no next object exists, for example, if already positioned at the end of the collection.To ensure correct operation of the <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetLast" />, <b>GetNext</b>, and <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetPrevious" /> methods in a large collection, call <b>GetFirst</b> before calling <b>GetNext</b> on that collection, and call <b>GetLast</b> before calling <b>GetPrevious</b>.</span></span> <span data-ttu-id="b753e-129">Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</span><span class="sxs-lookup"><span data-stu-id="b753e-129">To ensure that you are always making the calls on the same collection, create an explicit variable that refers to that collection before entering the loop.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPrevious">
@@ -386,30 +242,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="2e2fd-127">Возвращает предыдущему объекту в <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> семейства сайтов.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-127">Returns the previous object in the <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> collection.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="2e2fd-128">A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий предыдущему объекту, содержащихся в коллекции.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-128">A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> object that represents the previous object contained by the collection.</span>
-          </span>
-        </returns>
-        <remarks>
-          <span data-ttu-id="2e2fd-129">
-            <para>Возвращает <b>значение Nothing</b> при предыдущей объект не существует, например, если уже размещен в начало коллекции. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetNext" />, и методы <b>GetPrevious</b> в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции, а также вызвать <b>GetLast</b> до вызова метода <b> GetPrevious</b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-129">
-              <para>It returns <b>Nothing</b> if no previous object exists, for example, if already positioned at the beginning of the collection.To ensure correct operation of the <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetNext" />, and <b>GetPrevious</b> methods in a large collection, call <b>GetFirst</b> before calling <b>GetNext</b> on that collection, and call <b>GetLast</b> before calling <b>GetPrevious</b>. To ensure that you are always making the calls on the same collection, create an explicit variable that refers to that collection before entering the loop.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="b753e-130">Возвращает предыдущему объекту в <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> семейства сайтов.</span><span class="sxs-lookup"><span data-stu-id="b753e-130">Returns the previous object in the <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> collection.</span></span></summary>
+        <returns><span data-ttu-id="b753e-131">A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий предыдущему объекту, содержащихся в коллекции.</span><span class="sxs-lookup"><span data-stu-id="b753e-131">A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> object that represents the previous object contained by the collection.</span></span></returns>
+        <remarks><para><span data-ttu-id="b753e-132">Возвращает <b>значение Nothing</b> при предыдущей объект не существует, например, если уже размещен в начало коллекции. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetNext" />, и методы <b>GetPrevious</b> в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции, а также вызвать <b>GetLast</b> до вызова метода <b> GetPrevious</b>.</span><span class="sxs-lookup"><span data-stu-id="b753e-132">It returns <b>Nothing</b> if no previous object exists, for example, if already positioned at the beginning of the collection.To ensure correct operation of the <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetNext" />, and <b>GetPrevious</b> methods in a large collection, call <b>GetFirst</b> before calling <b>GetNext</b> on that collection, and call <b>GetLast</b> before calling <b>GetPrevious</b>.</span></span> <span data-ttu-id="b753e-133">Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</span><span class="sxs-lookup"><span data-stu-id="b753e-133">To ensure that you are always making the calls on the same collection, create an explicit variable that refers to that collection before entering the loop.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -438,24 +274,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="2e2fd-130">Либо индекс объекта, или значение, используемое для сопоставления свойства по умолчанию объекта в коллекции.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-130">Either the index number of the object, or a value used to match the default property of an object in the collection.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="2e2fd-131">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект из коллекции.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-131">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> object from the collection.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="2e2fd-132">Объект <b>папки</b> , который представляет указанный объект.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-132">A <b>Folder</b> object that represents the specified object.</span>
-          </span>
-        </value>
+        <param name="Index"><span data-ttu-id="b753e-134">Либо индекс объекта, или значение, используемое для сопоставления свойства по умолчанию объекта в коллекции.</span><span class="sxs-lookup"><span data-stu-id="b753e-134">Either the index number of the object, or a value used to match the default property of an object in the collection.</span></span></param>
+        <summary><span data-ttu-id="b753e-135">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект из коллекции.</span><span class="sxs-lookup"><span data-stu-id="b753e-135">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> object from the collection.</span></span></summary>
+        <value><span data-ttu-id="b753e-136">Объект <b>папки</b> , который представляет указанный объект.</span><span class="sxs-lookup"><span data-stu-id="b753e-136">A <b>Folder</b> object that represents the specified object.</span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -482,16 +303,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2e2fd-133">Возвращает родительский <b>объект</b> заданного объекта.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-133">Returns the parent <b>Object</b> of the specified object.</span>
-          </span>
-          <span data-ttu-id="2e2fd-134">Только для чтения.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-134">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="b753e-137">Возвращает родительский <b>объект</b> заданного объекта.</span><span class="sxs-lookup"><span data-stu-id="b753e-137">Returns the parent <b>Object</b> of the specified object.</span></span> <span data-ttu-id="b753e-138">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b753e-138">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -522,12 +334,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2e2fd-135">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-135">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="b753e-139">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span><span class="sxs-lookup"><span data-stu-id="b753e-139">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -555,18 +362,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="2e2fd-136">Значение индекса на основе 1 объекта в коллекции.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-136">The 1-based index value of the object within the collection.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="2e2fd-137">Удаляет объект из коллекции.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-137">Removes an object from the collection.</span>
-          </span>
-        </summary>
+        <param name="Index"><span data-ttu-id="b753e-140">Значение индекса на основе 1 объекта в коллекции.</span><span class="sxs-lookup"><span data-stu-id="b753e-140">The 1-based index value of the object within the collection.</span></span></param>
+        <summary><span data-ttu-id="b753e-141">Удаляет объект из коллекции.</span><span class="sxs-lookup"><span data-stu-id="b753e-141">Removes an object from the collection.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -593,41 +390,16 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2e2fd-138">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-138">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span>
-          </span>
-          <span data-ttu-id="2e2fd-139">Только для чтения.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-139">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="b753e-142">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса.</span><span class="sxs-lookup"><span data-stu-id="b753e-142">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span></span> <span data-ttu-id="b753e-143">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b753e-143">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="2e2fd-140">
-            <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
-            <code>Dim objNamespace As Outlook.NameSpace = _
+        <remarks><para><span data-ttu-id="b753e-144">Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса.</span><span class="sxs-lookup"><span data-stu-id="b753e-144">The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session.</span></span> <span data-ttu-id="b753e-145">Члены по своему назначению.</span><span class="sxs-lookup"><span data-stu-id="b753e-145">Both members serve the same purpose.</span></span> <span data-ttu-id="b753e-146">Например следующие пары операторов выполнить те же функции.</span><span class="sxs-lookup"><span data-stu-id="b753e-146">For example, the following pairs of statements perform the same function:</span></span></para>
+          <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
-            <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
-            <code>Outlook.NameSpace objNamespace = 
+          <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+          <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
-            <code>Outlook.NameSpace objSession = Application.Session;</code>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2e2fd-140">
-              <para>The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session. Both members serve the same purpose. For example, the following pairs of statements perform the same function:</para>
-              <code>Dim objNamespace As Outlook.NameSpace = _
-    Application.GetNamespace("MAPI")</code>
-              <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
-              <code>Outlook.NameSpace objNamespace = 
-    Application.GetNamespace("MAPI");</code>
-              <code>Outlook.NameSpace objSession = Application.Session;</code>
-              <para />
-            </span>
-          </span>
-        </remarks>
+          <code>Outlook.NameSpace objSession = Application.Session;</code>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

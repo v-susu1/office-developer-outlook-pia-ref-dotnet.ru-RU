@@ -1,13 +1,5 @@
 <Type Name="_Categories" FullName="Microsoft.Office.Interop.Outlook._Categories">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ea42ac39cad667a54dbf4c84adf7f13ad84a7dd4" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639893" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Categories : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ea42ac39cad667a54dbf4c84adf7f13ad84a7dd4" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27902133" /></Metadata><TypeSignature Language="C#" Value="public interface _Categories : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Categories implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Categories" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Categories&#xA;Implements IEnumerable" />
@@ -30,24 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="7071a-101">Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="7071a-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span>
-      </span>
-      <span data-ttu-id="7071a-102">Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="7071a-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span>
-      </span>
-      <span data-ttu-id="7071a-103">В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="7071a-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span>
-      </span>
-      <span data-ttu-id="7071a-104">Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Categories" />.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="7071a-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.Categories" />.</span>
-      </span>
-    </summary>
+    <summary><span data-ttu-id="a248b-101">Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом.</span><span class="sxs-lookup"><span data-stu-id="a248b-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span></span> <span data-ttu-id="a248b-102">Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию.</span><span class="sxs-lookup"><span data-stu-id="a248b-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span></span> <span data-ttu-id="a248b-103">В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом.</span><span class="sxs-lookup"><span data-stu-id="a248b-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span></span> <span data-ttu-id="a248b-104">Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Categories" />.</span><span class="sxs-lookup"><span data-stu-id="a248b-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.Categories" />.</span></span></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -75,48 +50,11 @@
         <Parameter Name="ShortcutKey" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <span data-ttu-id="7071a-105">Имя новой категории.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-105">The name of the new category.</span>
-          </span>
-        </param>
-        <param name="Color">
-          <span data-ttu-id="7071a-106">Цвет для новой категории.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-106">The color for the new category.</span>
-          </span>
-          <span data-ttu-id="7071a-107">Если значение не указано, новой категории присваивается первый цвет (как указано в порядке от <see cref="T:Microsoft.Office.Interop.Outlook.OlCategoryColor" /> перечисление), который является редко используемые, то есть, если неиспользуемые цвета, новой категории имеет значение первого неиспользуемые цвета в <b>OlCategoryColor</b> перечисление.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-107">If no value is specified, the new category is set to the first color (as specified in the order of the <see cref="T:Microsoft.Office.Interop.Outlook.OlCategoryColor" /> enumeration) that is the least used, That is, if there are unused colors, the new category is set to the first unused color in the <b>OlCategoryColor</b> enumeration.</span>
-          </span>
-          <span data-ttu-id="7071a-108">При использовании все цвета в перечислении <b>OlCategoryColor</b> затем новой категории присваивается первый цвет, используемый как минимум в перечислении <b>OlCategoryColor</b> .</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-108">If all colors in the <b>OlCategoryColor</b> enumeration have been used, then the new category is set to the first color that is used least in the <b>OlCategoryColor</b> enumeration.</span>
-          </span>
-        </param>
-        <param name="ShortcutKey">
-          <span data-ttu-id="7071a-109">Сочетание клавиш для новой категории.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-109">The shortcut key for the new category.</span>
-          </span>
-          <span data-ttu-id="7071a-110">Если значение не указано, значением по умолчанию является <b>OlCategoryShortcutKeyNone</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-110">If no value is specified, the default value is <b>OlCategoryShortcutKeyNone</b>.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="7071a-111">Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.Category" /> объекта и добавляет его к <see cref="T:Microsoft.Office.Interop.Outlook.Categories" /> семейства сайтов.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-111">Creates a new <see cref="T:Microsoft.Office.Interop.Outlook.Category" /> object and appends it to the <see cref="T:Microsoft.Office.Interop.Outlook.Categories" /> collection.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="7071a-112">Объект <b>категории</b> , который представляет новой категории.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-112">A <b>Category</b> object that represents the new category.</span>
-          </span>
-        </returns>
+        <param name="Name"><span data-ttu-id="a248b-105">Имя новой категории.</span><span class="sxs-lookup"><span data-stu-id="a248b-105">The name of the new category.</span></span></param>
+        <param name="Color"><span data-ttu-id="a248b-106">Цвет для новой категории.</span><span class="sxs-lookup"><span data-stu-id="a248b-106">The color for the new category.</span></span> <span data-ttu-id="a248b-107">Если значение не указано, новой категории присваивается первый цвет (как указано в порядке от <see cref="T:Microsoft.Office.Interop.Outlook.OlCategoryColor" /> перечисление), который является редко используемые, то есть, если неиспользуемые цвета, новой категории имеет значение первого неиспользуемые цвета в <b>OlCategoryColor</b> перечисление.</span><span class="sxs-lookup"><span data-stu-id="a248b-107">If no value is specified, the new category is set to the first color (as specified in the order of the <see cref="T:Microsoft.Office.Interop.Outlook.OlCategoryColor" /> enumeration) that is the least used, That is, if there are unused colors, the new category is set to the first unused color in the <b>OlCategoryColor</b> enumeration.</span></span> <span data-ttu-id="a248b-108">При использовании все цвета в перечислении <b>OlCategoryColor</b> затем новой категории присваивается первый цвет, используемый как минимум в перечислении <b>OlCategoryColor</b> .</span><span class="sxs-lookup"><span data-stu-id="a248b-108">If all colors in the <b>OlCategoryColor</b> enumeration have been used, then the new category is set to the first color that is used least in the <b>OlCategoryColor</b> enumeration.</span></span></param>
+        <param name="ShortcutKey"><span data-ttu-id="a248b-109">Сочетание клавиш для новой категории.</span><span class="sxs-lookup"><span data-stu-id="a248b-109">The shortcut key for the new category.</span></span> <span data-ttu-id="a248b-110">Если значение не указано, значением по умолчанию является <b>OlCategoryShortcutKeyNone</b>.</span><span class="sxs-lookup"><span data-stu-id="a248b-110">If no value is specified, the default value is <b>OlCategoryShortcutKeyNone</b>.</span></span></param>
+        <summary><span data-ttu-id="a248b-111">Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.Category" /> объекта и добавляет его к <see cref="T:Microsoft.Office.Interop.Outlook.Categories" /> семейства сайтов.</span><span class="sxs-lookup"><span data-stu-id="a248b-111">Creates a new <see cref="T:Microsoft.Office.Interop.Outlook.Category" /> object and appends it to the <see cref="T:Microsoft.Office.Interop.Outlook.Categories" /> collection.</span></span></summary>
+        <returns><span data-ttu-id="a248b-112">Объект <b>категории</b> , который представляет новой категории.</span><span class="sxs-lookup"><span data-stu-id="a248b-112">A <b>Category</b> object that represents the new category.</span></span></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,16 +81,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="7071a-113">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-113">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span>
-          </span>
-          <span data-ttu-id="7071a-114">Только для чтения.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-114">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="a248b-113">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта.</span><span class="sxs-lookup"><span data-stu-id="a248b-113">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span></span> <span data-ttu-id="a248b-114">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="a248b-114">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -180,16 +109,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="7071a-115">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-115">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span>
-          </span>
-          <span data-ttu-id="7071a-116">Только для чтения.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-116">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="a248b-115">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта.</span><span class="sxs-lookup"><span data-stu-id="a248b-115">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span></span> <span data-ttu-id="a248b-116">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="a248b-116">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -217,16 +137,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="7071a-117">Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее число <see cref="T:Microsoft.Office.Interop.Outlook.Category" /> объекты в указанном семействе сайтов.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-117">Returns an <b>Integer</b> (<b>int</b> in C#) value indicating the count of <see cref="T:Microsoft.Office.Interop.Outlook.Category" /> objects in the specified collection.</span>
-          </span>
-          <span data-ttu-id="7071a-118">Только для чтения.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-118">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="a248b-117">Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее число <see cref="T:Microsoft.Office.Interop.Outlook.Category" /> объекты в указанном семействе сайтов.</span><span class="sxs-lookup"><span data-stu-id="a248b-117">Returns an <b>Integer</b> (<b>int</b> in C#) value indicating the count of <see cref="T:Microsoft.Office.Interop.Outlook.Category" /> objects in the specified collection.</span></span> <span data-ttu-id="a248b-118">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="a248b-118">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -257,37 +168,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="7071a-119">
-            <b>Целое число</b> (<b>int</b> в C#) значение, представляющее номер индекса объекта или значение <b>String</b> (<b>строка</b> в C#), представляющее либо <see cref="P:Microsoft.Office.Interop.Outlook._Category.Name" /> или <see cref="P:Microsoft.Office.Interop.Outlook._Category.CategoryID" /> значение свойства объекта в коллекции.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-119">Either an <b>Integer</b> (<b>int</b> in C#) value representing the index number of the object, or a <b>String</b> (<b>string</b> in C#) value representing either the <see cref="P:Microsoft.Office.Interop.Outlook._Category.Name" /> or <see cref="P:Microsoft.Office.Interop.Outlook._Category.CategoryID" /> property value of an object in the collection.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="7071a-120">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Category" /> объект из коллекции.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-120">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Category" /> object from the collection.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="7071a-121">Объект <b>категории</b> , который представляет указанный объект.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-121">A <b>Category</b> object that represents the specified object.</span>
-          </span>
-        </value>
-        <remarks>
-          <span data-ttu-id="7071a-122">
-            <para>Если указано имя категории в <paramref name="Index" />, этот метод возвращает первый объект <b>категории</b> , который соответствует указанному значению. Если совпадение не найдено, метод возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#)</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-122">
-              <para>If the name of a category  is specified in <paramref name="Index" />, this method returns the first <b>Category</b> object that matches the specified value. If a match cannot be found, the method returns <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#)</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <param name="Index"><span data-ttu-id="a248b-119"><b>Целое число</b> (<b>int</b> в C#) значение, представляющее номер индекса объекта или значение <b>String</b> (<b>строка</b> в C#), представляющее либо <see cref="P:Microsoft.Office.Interop.Outlook._Category.Name" /> или <see cref="P:Microsoft.Office.Interop.Outlook._Category.CategoryID" /> значение свойства объекта в коллекции.</span><span class="sxs-lookup"><span data-stu-id="a248b-119">Either an <b>Integer</b> (<b>int</b> in C#) value representing the index number of the object, or a <b>String</b> (<b>string</b> in C#) value representing either the <see cref="P:Microsoft.Office.Interop.Outlook._Category.Name" /> or <see cref="P:Microsoft.Office.Interop.Outlook._Category.CategoryID" /> property value of an object in the collection.</span></span></param>
+        <summary><span data-ttu-id="a248b-120">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Category" /> объект из коллекции.</span><span class="sxs-lookup"><span data-stu-id="a248b-120">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Category" /> object from the collection.</span></span></summary>
+        <value><span data-ttu-id="a248b-121">Объект <b>категории</b> , который представляет указанный объект.</span><span class="sxs-lookup"><span data-stu-id="a248b-121">A <b>Category</b> object that represents the specified object.</span></span></value>
+        <remarks><para><span data-ttu-id="a248b-122">Если указано имя категории в <paramref name="Index" />, этот метод возвращает первый объект <b>категории</b> , который соответствует указанному значению.</span><span class="sxs-lookup"><span data-stu-id="a248b-122">If the name of a category  is specified in <paramref name="Index" />, this method returns the first <b>Category</b> object that matches the specified value.</span></span> <span data-ttu-id="a248b-123">Если совпадение не найдено, метод возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#)</span><span class="sxs-lookup"><span data-stu-id="a248b-123">If a match cannot be found, the method returns <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#)</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -313,16 +198,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="7071a-123">Возвращает родительский <b>объект</b> заданного объекта.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-123">Returns the parent <b>Object</b> of the specified object.</span>
-          </span>
-          <span data-ttu-id="7071a-124">Только для чтения.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-124">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="a248b-124">Возвращает родительский <b>объект</b> заданного объекта.</span><span class="sxs-lookup"><span data-stu-id="a248b-124">Returns the parent <b>Object</b> of the specified object.</span></span> <span data-ttu-id="a248b-125">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="a248b-125">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -350,31 +226,10 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="7071a-125">
-            <b>Целое число</b> (<b>int</b> в C#) значение, представляющее номер индекса объекта или значение <b>String</b> (<b>строка</b> в C#), представляющее либо <see cref="P:Microsoft.Office.Interop.Outlook._Category.Name" /> или <see cref="P:Microsoft.Office.Interop.Outlook._Category.CategoryID" /> значение свойства объекта в коллекции.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-125">Either an <b>Integer</b> (<b>int</b> in C#) value representing the index number of the object, or a <b>String</b> (<b>string</b> in C#) value representing either the <see cref="P:Microsoft.Office.Interop.Outlook._Category.Name" /> or <see cref="P:Microsoft.Office.Interop.Outlook._Category.CategoryID" /> property value of an object in the collection.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="7071a-126">Удаляет объект из коллекции.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-126">Removes an object from the collection.</span>
-          </span>
-        </summary>
-        <remarks>
-          <span data-ttu-id="7071a-127">
-            <para>Если указано имя категории в <paramref name="Index" />, этот метод удаляет первый объект <b>категории</b> , который соответствует указанному значению.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-127">
-              <para>If the name of a category  is specified in <paramref name="Index" />, this method removes the first <b>Category</b> object that matches the specified value.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <param name="Index"><span data-ttu-id="a248b-126"><b>Целое число</b> (<b>int</b> в C#) значение, представляющее номер индекса объекта или значение <b>String</b> (<b>строка</b> в C#), представляющее либо <see cref="P:Microsoft.Office.Interop.Outlook._Category.Name" /> или <see cref="P:Microsoft.Office.Interop.Outlook._Category.CategoryID" /> значение свойства объекта в коллекции.</span><span class="sxs-lookup"><span data-stu-id="a248b-126">Either an <b>Integer</b> (<b>int</b> in C#) value representing the index number of the object, or a <b>String</b> (<b>string</b> in C#) value representing either the <see cref="P:Microsoft.Office.Interop.Outlook._Category.Name" /> or <see cref="P:Microsoft.Office.Interop.Outlook._Category.CategoryID" /> property value of an object in the collection.</span></span></param>
+        <summary><span data-ttu-id="a248b-127">Удаляет объект из коллекции.</span><span class="sxs-lookup"><span data-stu-id="a248b-127">Removes an object from the collection.</span></span></summary>
+        <remarks><para><span data-ttu-id="a248b-128">Если указано имя категории в <paramref name="Index" />, этот метод удаляет первый объект <b>категории</b> , который соответствует указанному значению.</span><span class="sxs-lookup"><span data-stu-id="a248b-128">If the name of a category  is specified in <paramref name="Index" />, this method removes the first <b>Category</b> object that matches the specified value.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -400,41 +255,16 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="7071a-128">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-128">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span>
-          </span>
-          <span data-ttu-id="7071a-129">Только для чтения.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-129">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="a248b-129">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса.</span><span class="sxs-lookup"><span data-stu-id="a248b-129">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span></span> <span data-ttu-id="a248b-130">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="a248b-130">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="7071a-130">
-            <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
-            <code>Dim objNamespace As Outlook.NameSpace = _
+        <remarks><para><span data-ttu-id="a248b-131">Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса.</span><span class="sxs-lookup"><span data-stu-id="a248b-131">The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session.</span></span> <span data-ttu-id="a248b-132">Члены по своему назначению.</span><span class="sxs-lookup"><span data-stu-id="a248b-132">Both members serve the same purpose.</span></span> <span data-ttu-id="a248b-133">Например следующие пары операторов выполнить те же функции.</span><span class="sxs-lookup"><span data-stu-id="a248b-133">For example, the following pairs of statements perform the same function:</span></span></para>
+          <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
-            <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
-            <code>Outlook.NameSpace objNamespace = 
+          <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+          <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
-            <code>Outlook.NameSpace objSession = Application.Session;</code>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="7071a-130">
-              <para>The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session. Both members serve the same purpose. For example, the following pairs of statements perform the same function:</para>
-              <code>Dim objNamespace As Outlook.NameSpace = _
-    Application.GetNamespace("MAPI")</code>
-              <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
-              <code>Outlook.NameSpace objNamespace = 
-    Application.GetNamespace("MAPI");</code>
-              <code>Outlook.NameSpace objSession = Application.Session;</code>
-              <para />
-            </span>
-          </span>
-        </remarks>
+          <code>Outlook.NameSpace objSession = Application.Session;</code>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
