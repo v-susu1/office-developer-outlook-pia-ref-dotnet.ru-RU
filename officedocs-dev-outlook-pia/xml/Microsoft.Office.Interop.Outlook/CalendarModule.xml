@@ -1,13 +1,5 @@
 <Type Name="CalendarModule" FullName="Microsoft.Office.Interop.Outlook.CalendarModule">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9a3d15cfa73586cd3f386ded09d5d37fa3c49cdf" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639712" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CalendarModule : Microsoft.Office.Interop.Outlook._CalendarModule" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="146f7fab977da4445ed3ce80af4320155145f8c1" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27898531" /></Metadata><TypeSignature Language="C#" Value="public interface CalendarModule : Microsoft.Office.Interop.Outlook._CalendarModule" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalendarModule implements class Microsoft.Office.Interop.Outlook._CalendarModule" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.CalendarModule" />
   <TypeSignature Language="VB.NET" Value="Public Interface CalendarModule&#xA;Implements _CalendarModule" />
@@ -31,13 +23,10 @@
   </Attributes>
   <Docs>
     <summary>Представляет модуля навигации "Календарь" в области навигации проводник.</summary>
-    <remarks>
-      <para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._CalendarModule" />.</para>
-      <para>
-        <b>CalendarModule</b> объекта, производного от <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModule" /> объект, предоставляющий доступ к группам навигации, содержащихся в модуле навигации календаря в области переходов для проводник. Используйте <see cref="M:Microsoft.Office.Interop.Outlook._NavigationModules.GetNavigationModule(Microsoft.Office.Interop.Outlook.OlNavigationModuleType)" /> метод или <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModules.Item(System.Object)" /> свойства (<b>в этом</b> в C#) <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.Modules" /> коллекции для родительского <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> объекта для получения объекта <b>NavigationModule</b> , а затем использовать <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModule.NavigationModuleType" /> свойства объекта <b>NavigationModule</b> Для получения типа модуль навигации. Если свойство <b>NavigationModuleType</b><b>olModuleCalendar</b>, затем можно привести ссылку на объект <b>NavigationModule</b> как объект <b>CalendarModule</b> для доступа к <see cref="P:Microsoft.Office.Interop.Outlook._CalendarModule.NavigationGroups" /> свойства для этого модуля навигации .</para>
+    <remarks><para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._CalendarModule" />.</para>
+      <para>Объект <b>CalendarModule</b> , производным от <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModule" /> объект, предоставляющий доступ к группам навигации, содержащихся в модуле навигации календаря в области переходов для проводник. Используйте <see cref="M:Microsoft.Office.Interop.Outlook._NavigationModules.GetNavigationModule(Microsoft.Office.Interop.Outlook.OlNavigationModuleType)" /> метод или <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModules.Item(System.Object)" /> свойства (<b>в этом</b> в C#) <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.Modules" /> коллекции для родительского <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> объекта для получения объекта <b>NavigationModule</b> , а затем использовать <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModule.NavigationModuleType" /> свойства объекта <b>NavigationModule</b> для Получение типа модуль навигации. Если свойство <b>NavigationModuleType</b> <b>olModuleCalendar</b>, затем можно привести ссылку на объект <b>NavigationModule</b> как объект <b>CalendarModule</b> для доступа к <see cref="P:Microsoft.Office.Interop.Outlook._CalendarModule.NavigationGroups" /> свойства для этого модуля навигации.</para>
       <para>Можно использовать <see cref="P:Microsoft.Office.Interop.Outlook._CalendarModule.Visible" /> свойство, чтобы определить, является ли видимым модуль навигации и <see cref="P:Microsoft.Office.Interop.Outlook._CalendarModule.Position" /> свойство для возвращения или задания положение отображения модуля навигации в панели навигации. Можно использовать <see cref="P:Microsoft.Office.Interop.Outlook._CalendarModule.Name" /> свойство для возвращения отображаемое имя модуля навигации "Календарь" в области переходов.</para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

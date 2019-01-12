@@ -1,13 +1,5 @@
 <Type Name="_NavigationPane" FullName="Microsoft.Office.Interop.Outlook._NavigationPane">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b0971992678e056bef3b026b53553b66b4d8b318" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20641015" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _NavigationPane" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b0971992678e056bef3b026b53553b66b4d8b318" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27896767" /></Metadata><TypeSignature Language="C#" Value="public interface _NavigationPane" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _NavigationPane" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._NavigationPane" />
   <TypeSignature Language="VB.NET" Value="Public Interface _NavigationPane" />
@@ -83,10 +75,8 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Данное свойство возвращает <b>olNavigationPane</b> для <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> объекта.</para>
-          <para />
-        </remarks>
+        <remarks><para>Данное свойство возвращает <b>olNavigationPane</b> для <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> объекта.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentModule">
@@ -148,12 +138,10 @@
       <Docs>
         <summary>Возвращает или задает значение типа <b>Integer</b> (<b>int</b> в C#), показывает, сколько <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModule" /> объектов, которые отображаются в области навигации. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство могут быть установлены только в диапазоне от 0 до значение <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModules.Count" /> свойства для <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.Modules" /> коллекции объект <b>NavigationPane</b> . Если значение этого свойства больше максимально допустимое значение, чтобы максимально допустимое значение автоматически устанавливается значение свойства. Если это свойство имеет значение меньше 0, возникает ошибка.</para>
-          <para>Если <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.IsCollapsed" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> имеет значение <b>False</b>, а затем значение этого свойства представляет число модули навигации, для которых значки и имена отображаются в области навигации. Если <b>IsCollapsed</b> имеет значение <b>True</b>, то значение свойства <b>DisplayedModuleCount</b> представляет число модули навигации, для которых отображается значок на панели переходов.</para>
+        <remarks><para>Это свойство могут быть установлены только в диапазоне от 0 до значение <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModules.Count" /> свойства для <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.Modules" /> коллекции объект <b>NavigationPane</b> . Если значение этого свойства больше максимально допустимое значение, чтобы максимально допустимое значение автоматически устанавливается значение свойства. Если это свойство имеет значение меньше 0, возникает ошибка.</para>
+          <para> Если <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.IsCollapsed" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> имеет значение <b>False</b>, а затем значение этого свойства представляет число модули навигации, для которых значки и имена отображаются в области навигации. Если <b>IsCollapsed</b> имеет значение <b>True</b>, значение свойства <b>DisplayedModuleCount</b> представляет номер модули навигации, для которых отображается значок на левой панели навигации.</para>
           <para>Установка значения для этого свойства изменяет размер раздела модулей области переходов для отображения большего или меньшего числа <b>NavigationModule</b> объектов при необходимости.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCollapsed">
@@ -268,16 +256,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

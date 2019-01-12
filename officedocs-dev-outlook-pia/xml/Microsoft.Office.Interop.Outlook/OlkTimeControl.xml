@@ -1,13 +1,5 @@
 <Type Name="OlkTimeControl" FullName="Microsoft.Office.Interop.Outlook.OlkTimeControl">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4bfe7f2f9831d7ca1eabf6f748b796fed585d49a" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640987" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OlkTimeControl : Microsoft.Office.Interop.Outlook._OlkTimeControl, Microsoft.Office.Interop.Outlook.OlkTimeControlEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bdd03d01a4201fbe2a80f20e350f0cd6a3e48bba" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901174" /></Metadata><TypeSignature Language="C#" Value="public interface OlkTimeControl : Microsoft.Office.Interop.Outlook._OlkTimeControl, Microsoft.Office.Interop.Outlook.OlkTimeControlEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OlkTimeControl implements class Microsoft.Office.Interop.Outlook._OlkTimeControl, class Microsoft.Office.Interop.Outlook.OlkTimeControlEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OlkTimeControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface OlkTimeControl&#xA;Implements _OlkTimeControl, OlkTimeControlEvents_Event" />
@@ -34,16 +26,14 @@
   </Attributes>
   <Docs>
     <summary>Элемент управления, который отображает раскрывающееся меню Outlook времени.</summary>
-    <remarks>
-      <para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._OlkTimeControl" />. Сведения об элементах события COM-объектом можно <see cref="T:Microsoft.Office.Interop.Outlook.OlkTimeControlEvents_Event" />.</para>
-      <para>, Прежде чем использовать этот элемент управления в первый раз в конструкторе форм, добавьте элемент управления Microsoft Outlook времени на панель элементов управления. Этот элемент управления можно добавить только к области формы в форме Outlook с помощью конструктора форм; не удается добавить этот элемент управления Visual Basic <b>UserForm</b> объект в редакторе Visual Basic.</para>
-      <para>Время элемент управления имеет несколько различных режимах, которые предоставляются с помощью свойства элемента управления.  Его можно привязать любое свойство <b>даты и времени</b> и могут быть привязаны к одному свойству, как элемент управления даты для предоставления возможности для выбора даты и времени.</para>
-      <para>Ниже приводится пример элемента управления времени во время выполнения. Этот элемент управления поддерживает темы Microsoft Windows.</para>
+    <remarks><para>Это интерфейс .NET, производные от компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Используйте этот производный интерфейс для доступа всем членам метод, свойств и событий COM-объектом. Тем не менее если метод или события, которое будет использоваться совместно использует то же имя в разделе же COM-объектом, преобразовывается соответствующий основной интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. Найти в данном разделе приведены сведения о COM-объектом. Сведения о членах методов и свойств объекта COM можно <see cref="T:Microsoft.Office.Interop.Outlook._OlkTimeControl" />. Сведения об элементах события COM-объектом можно <see cref="T:Microsoft.Office.Interop.Outlook.OlkTimeControlEvents_Event" />.</para>
+      <para>Прежде чем использовать этот элемент управления в первый раз в конструкторе форм, добавьте элемент управления Microsoft Outlook времени элементы управления. Этот элемент управления можно добавить только к области формы в форме Outlook с помощью конструктора форм; Этот элемент управления нельзя добавить в объект Visual Basic <b>пользовательской формы</b> в редакторе Visual Basic.</para>
+      <para>Элемент управления времени имеет несколько различных режимах, которые предоставляются с помощью свойства элемента управления.  Можно привязать любое свойство <b>даты и времени</b> и могут быть привязаны к одному свойству, как элемент управления даты для предоставления возможности для выбора даты и времени.</para>
+      <para>Ниже приведен пример элемента управления времени во время выполнения. Этот элемент управления поддерживает темы Microsoft Windows.</para>
       <para>Если <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeControlEvents_Event.Click" /> реализации событий, но <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeControlEvents_Event.DropButtonClick" /> события не реализованы, а затем нажав кнопку размещения будет выполняться только событие <b>Click</b> .</para>
-      <para>, Чтобы выполнить привязку элемента управления времени время начала и время окончания встречи, необходимо использовать надстройку для управления Включение и отключение элемента управления времени. В частности, когда пользователь устанавливает встреча событием на целый день, необходимо использовать код для отключения элементов управления времени для времени начала и время окончания и включите элементы управления только в том случае, если пользователь удаляет этот параметр.</para>
+      <para>Если привязки элемента управления времени время начала и время окончания встречи, необходимо использовать надстройку для управления Включение и отключение элемента управления времени. В частности когда пользователь устанавливает встреча событием на целый день, необходимо использовать код для отключения элементов управления времени для времени начала и время окончания и включите элементы управления только в том случае, если пользователь удаляет этот параметр.</para>
       <para>Дополнительные сведения об элементах управления Outlook можно <a href="http://go.microsoft.com/fwlink/?LinkId=87823">элементов управления в форме Custom</a></para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

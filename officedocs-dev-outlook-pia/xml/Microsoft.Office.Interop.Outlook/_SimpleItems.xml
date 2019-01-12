@@ -1,13 +1,5 @@
 <Type Name="_SimpleItems" FullName="Microsoft.Office.Interop.Outlook._SimpleItems">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d86021a7f901451e7d4f548b758b4fb5fb10168e" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640536" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _SimpleItems : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d86021a7f901451e7d4f548b758b4fb5fb10168e" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903365" /></Metadata><TypeSignature Language="C#" Value="public interface _SimpleItems : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _SimpleItems implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._SimpleItems" />
   <TypeSignature Language="VB.NET" Value="Public Interface _SimpleItems&#xA;Implements IEnumerable" />
@@ -147,10 +139,8 @@
         <param name="Index">Отсчитываемый от нуля индекс объекта в коллекции <b>SimpleItems</b> .</param>
         <summary>Возвращает <see cref="T:System.Object" /> (<b>объект</b> в C#) в <see cref="T:Microsoft.Office.Interop.Outlook.SimpleItems" /> семейства сайтов.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Если это свойство не возвращает объект в коллекцию в качестве заданный <paramref name="Index" /> параметр, метод возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
-          <para />
-        </remarks>
+        <remarks><para>Если это свойство не возвращает объект в коллекцию в качестве заданный <paramref name="Index" /> параметр, метод возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -178,10 +168,8 @@
       <Docs>
         <summary>Возвращает родительский <see cref="T:System.Object" /> (<b>объект</b> в C#) из <see cref="T:Microsoft.Office.Interop.Outlook.SimpleItems" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Родительский объект объекта <b>SimpleItems</b><see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объектов.</para>
-          <para />
-        </remarks>
+        <remarks><para>Родительский объект объекта <b>SimpleItems</b> <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объектов.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -209,8 +197,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Данное свойство возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если нет сеанса, находящегося в.</para> Можно использовать свойство <b>сеанса</b><para>и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод попеременно для получения <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Члены по своему назначению.</para><para /></remarks>
+        <remarks><para>Данное свойство возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если нет сеанса, вошедшего в систему.</para>
+          <para>Можно использовать свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод попеременно для получения <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Члены по своему назначению.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

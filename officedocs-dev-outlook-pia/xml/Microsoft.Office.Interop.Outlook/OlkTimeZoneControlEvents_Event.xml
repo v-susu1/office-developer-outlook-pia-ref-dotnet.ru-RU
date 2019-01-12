@@ -1,13 +1,5 @@
 <Type Name="OlkTimeZoneControlEvents_Event" FullName="Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ace53552d870de047458ea4d3f31ae51e1131a0d" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20641293" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OlkTimeZoneControlEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ffd4b13a2783277c17f8b79a4ac7a06cf6e5fb22" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27897726" /></Metadata><TypeSignature Language="C#" Value="public interface OlkTimeZoneControlEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OlkTimeZoneControlEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface OlkTimeZoneControlEvents_Event" />
@@ -49,10 +41,29 @@
       </ReturnValue>
       <Docs>
         <summary>Возникает после изменения данных в элементе управления посредством пользовательского интерфейса.</summary>
-        <remarks>
-          <para>
-            <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.BeforeUpdate" />и <b>после обновления</b> может возникнуть каждый раз, когда данные в элементе управления сохраняются к элементу. Типичная последовательность событий, связанных с <b>после обновления</b> для данного элемента управления, как показано ниже: </para>возникает 
-          <list type="number"><item><description>пользователя в центре внимания элемента управления</description></item><item><description><b>до обновления</b> происходит</description></item><item><description>обновления данных управления</description></item><item><description><b>после обновления</b></description></item><item><description><see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.Exit" /> возникает: пользователь перемещает фокус от элемента управления</description></item></list><para /></remarks>
+        <remarks><para>
+            <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.BeforeUpdate" />и <b>после обновления</b> может возникнуть каждый раз, когда данные в элементе управления сохраняются к элементу. Типичная последовательность событий, связанных с <b>после обновления</b> для данного элемента управления выглядит следующим образом:  </para>
+          <list type="number">
+            <item>
+              <description>Пользователь в центре внимания элемента управления</description>
+            </item>
+            <item>
+              <description>Возникает 
+                <b>до обновления</b></description>
+            </item>
+            <item>
+              <description>Обновление данных элемента управления</description>
+            </item>
+            <item>
+              <description>Возникает 
+                <b>после обновления</b></description>
+            </item>
+            <item>
+              <description>
+                <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.Exit" />возникает: пользователь перемещает фокус от элемента управления </description>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeforeUpdate">
@@ -71,11 +82,30 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит, когда данные в элементе управления изменяются через пользовательский интерфейс и должен быть сохранен к элементу.</summary>
-        <remarks>
-          <para>Отмена это свойство будет вернуться в текущее значение свойства элемента управления и возврата фокуса на элемент управления.</para>
+        <remarks><para>Отмена это свойство вернуться в текущее значение свойства элемента управления и возврата фокуса на элемент управления.</para>
           <para>
-            <b>До обновления</b> и <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.AfterUpdate" /> может возникнуть в любое время, данные в элементе управления сохраняются к элементу. Типичная последовательность событий, связанных с <b>после обновления</b> для данного элемента управления, как показано ниже: </para>возникает 
-          <list type="number"><item><description>пользователя в центре внимания элемента управления</description></item><item><description><b>до обновления</b> происходит</description></item><item><description>обновления данных управления</description></item><item><description><b>после обновления</b></description></item><item><description><see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.Exit" /> возникает: пользователь перемещает фокус от элемента управления</description></item></list><para /></remarks>
+            <b>До обновления</b> и <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.AfterUpdate" /> может возникнуть в любое время, данные в элементе управления сохраняются к элементу. Типичная последовательность событий, связанных с <b>после обновления</b> для данного элемента управления выглядит следующим образом:  </para>
+          <list type="number">
+            <item>
+              <description>Пользователь в центре внимания элемента управления</description>
+            </item>
+            <item>
+              <description>Возникает 
+                <b>до обновления</b></description>
+            </item>
+            <item>
+              <description>Обновление данных элемента управления</description>
+            </item>
+            <item>
+              <description>Возникает 
+                <b>после обновления</b></description>
+            </item>
+            <item>
+              <description>
+                <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.Exit" />возникает: пользователь перемещает фокус от элемента управления</description>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Change">
@@ -170,10 +200,8 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит, когда элемент управления получает фокус, сразу после <b>выхода</b> события предыдущего элемента управления.</summary>
-        <remarks>
-          <para>Это событие <b>Получение фокуса</b> , предоставляемые с управляемым кодом элементы управления или в Microsoft Visual Basic 6.</para>
-          <para />
-        </remarks>
+        <remarks><para>Это событие <b>Получение фокуса</b> , предоставляемые с управляемым кодом элементы управления или в Microsoft Visual Basic 6.  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Exit">
@@ -211,10 +239,8 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит, когда пользователь нажимает клавишу.</summary>
-        <remarks>
-          <para>Состояние клавиш (SHIFT, CTRL или ALT), которые нажата во время события <b>KeyDown</b> доступен через <paramref name="Shift" /> параметр.</para>
-          <para />
-        </remarks>
+        <remarks><para>Состояние клавиш (SHIFT, CTRL или ALT), которые нажата во время события <b>KeyDown</b> доступен через <paramref name="Shift" /> параметр.  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyPress">
@@ -233,25 +259,23 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит, когда пользователь нажимает клавишу с кодом ANSI.</summary>
-        <remarks>
-          <para>Клавиша ANSI —, которая возвращает typeable символ, когда пользователь нажимает ее. Событие <b>KeyPress</b> происходит, когда пользователь нажимает клавишу с кодом ANSI на выполнение формы в форме при или элемент управления имеет фокус. Событие может возникнуть до или после выпуска ключ.</para>
-          <para>Событие <b>KeyPress</b> не происходит при следующих условиях:</para>
+        <remarks><para>Клавиша ANSI —, которая возвращает typeable символ, когда пользователь нажимает ее. Событие <b>KeyPress</b> происходит, когда пользователь нажимает клавишу с кодом ANSI на выполнение формы в форме при или элемент управления имеет фокус. Событие может возникнуть до или после выпуска ключ.</para>
+          <para>Событие <b>KeyPress</b> не происходит при следующих условиях:  </para>
           <list type="bullet">
             <item>
-              <para>При нажатии клавиши TAB </para>
+              <para>Нажатие клавиши TAB </para>
             </item>
             <item>
               <para>При нажатии клавиши ВВОД </para>
             </item>
             <item>
-              <para>клавиш со стрелкой </para>
+              <para>Нажатие клавиши со стрелкой </para>
             </item>
             <item>
-              <para>при нажатии клавиши фокус перемещается с одного элемента управления на другой</para>
+              <para>При нажатии клавиши фокус перемещается с одного элемента управления на другой</para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyUp">
@@ -270,10 +294,8 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит, когда пользователь отпускает клавишу.</summary>
-        <remarks>
-          <para>Состояние клавиш (SHIFT, CTRL или ALT), которые нажата во время события <b>KeyUp</b> доступен через параметр Shift.</para>
-          <para />
-        </remarks>
+        <remarks><para>Состояние клавиш (SHIFT, CTRL или ALT), которые нажата во время события <b>KeyUp</b> доступен через параметр Shift.  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseDown">
@@ -311,10 +333,8 @@
       </ReturnValue>
       <Docs>
         <summary>Возникает после регистрации движения мыши на элемент управления.</summary>
-        <remarks>
-          <para>Нажатие клавиши ALT запускает событие <b>MouseMove</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Нажатие клавиши ALT запускает событие <b>MouseMove</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseUp">

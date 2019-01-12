@@ -1,13 +1,5 @@
 <Type Name="_AutoFormatRule" FullName="Microsoft.Office.Interop.Outlook._AutoFormatRule">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="19dc5ad8c7bc39e582d4a0b17fb3ef3ffbb0ac86" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20641046" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _AutoFormatRule" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="19dc5ad8c7bc39e582d4a0b17fb3ef3ffbb0ac86" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27904555" /></Metadata><TypeSignature Language="C#" Value="public interface _AutoFormatRule" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _AutoFormatRule" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._AutoFormatRule" />
   <TypeSignature Language="VB.NET" Value="Public Interface _AutoFormatRule" />
@@ -145,12 +137,10 @@
       <Docs>
         <summary>Возвращает или задает значение типа <b>String</b> (<b>строка</b> в C#), представляющее фильтра для настраиваемого правила форматирования.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Значение этого свойства — это DAV поиска и поиск (DASL) строку, представляющую текущий фильтр для настраиваемого правила форматирования. Дополнительные сведения об использовании DASL для фильтрации элементов, отформатированный с правила форматирования, можно <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Фильтрации элементов</a></para>
+        <remarks><para>Значение этого свойства — это DAV поиска и поиск (DASL) строку, представляющую текущий фильтр для настраиваемого правила форматирования. Дополнительные сведения об использовании DASL для фильтрации элементов, отформатированный с правила форматирования можно <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Фильтрации элементов</a></para>
           <para>
-            <b>Примечание</b>: это свойство возвращает пустую строку для стандартных правила форматирования ( <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> со <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Standard" /> свойство значение <b>True</b>). Ошибка возникает при попытке присвоить значение этого свойства для правила форматирования стандартных.</para>
-          <para />
-        </remarks>
+            <b>Примечание</b>: это свойство возвращает пустую строку для стандартных правила форматирования ( <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Standard" /> свойство значение <b>True</b>). Попытка присвоить значение этого свойства для стандартных правила форматирования, возникает ошибка.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -268,16 +258,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Standard">
@@ -305,10 +293,8 @@
       <Docs>
         <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, будет ли <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> объектов представляет встроенные правила форматирования Outlook. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Если значение этого свойства имеет значение <b>True</b>, а затем <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Filter" /> и <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Name" /> пользователи не могут менять свойства объекта <b>AutoFormatRule</b> . Аналогично, нельзя использовать <see cref="M:Microsoft.Office.Interop.Outlook._AutoFormatRules.Remove(System.Object)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRules" /> правила семейства сайтов для удаления встроенных форматирования Outlook, а также использовать <see cref="M:Microsoft.Office.Interop.Outlook._AutoFormatRules.Insert(System.String,System.Object)" /> метода <b>AutoFormatRules</b> коллекции для вставки настраиваемого правила форматирования выше или между в этой коллекции правил форматирования встроенных Outlook.</para>
-          <para />
-        </remarks>
+        <remarks><para>Если значение этого свойства имеет значение <b>True</b>, а затем <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Filter" /> и <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Name" /> пользователи не могут менять свойства объекта <b>AutoFormatRule</b> . Аналогично, нельзя использовать <see cref="M:Microsoft.Office.Interop.Outlook._AutoFormatRules.Remove(System.Object)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRules" /> правила семейства сайтов для удаления встроенных форматирования Outlook, а также использовать <see cref="M:Microsoft.Office.Interop.Outlook._AutoFormatRules.Insert(System.String,System.Object)" /> метода <b>AutoFormatRules</b> коллекции для вставки настраиваемого правила форматирования выше или между в этой коллекции правил форматирования встроенных Outlook.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

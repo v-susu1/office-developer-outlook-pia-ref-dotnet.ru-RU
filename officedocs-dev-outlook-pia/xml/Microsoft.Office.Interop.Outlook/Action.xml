@@ -1,13 +1,5 @@
 <Type Name="Action" FullName="Microsoft.Office.Interop.Outlook.Action">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="17596c00726166fb08d75936fec79e91f1a60b4f" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20641529" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Action" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d6062d8975646fc20d49a63e5b13512f4b7f4c11" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27897369" /></Metadata><TypeSignature Language="C#" Value="public interface Action" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Action" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Action" />
   <TypeSignature Language="VB.NET" Value="Public Interface Action" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Представляет специализированных действие (например, голосования параметры ответа), который может выполняться для элемента Outlook.</summary>
-    <remarks>
-      <para>Объект <b>действия</b> должна быть членом <see cref="T:Microsoft.Office.Interop.Outlook.Actions" /> семейства.</para>
-      <para>Использования <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Actions" /> (<paramref name="index" />), где <paramref name="index" /> — это имя действие доступно для возврата объекта <b>Действие</b> из объекта коллекции <b>действия</b> элемента Outlook, таких как <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />.</para>
-      <para />
-    </remarks>
+    <remarks><para>Объект <b>действия</b> должна быть членом <see cref="T:Microsoft.Office.Interop.Outlook.Actions" /> семейства сайтов.</para>
+      <para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Actions" /> (<paramref name="index" />), где <paramref name="index" /> — это имя действие доступно для возврата объекта <b>Действие</b> из объекта коллекции <b>действия</b> элемента Outlook, таких как <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -118,10 +108,8 @@
       <Docs>
         <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlActionCopyLike" /> константа, стиль наследования свойств для действия.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Стиль наследования используется при выполнении действия для элемента управления, как свойства копируются в новый элемент, созданный действие.</para>
-          <para />
-        </remarks>
+        <remarks><para>Стиль наследования используется при выполнении действия для элемента управления, как свойства копируются в новый элемент, созданный действие.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -234,10 +222,8 @@
       <Docs>
         <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляет класс сообщения для <see cref="T:Microsoft.Office.Interop.Outlook.Action" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует свойству MAPI <b>PidTagMessageClass</b>. Свойство <b>MessageClass</b> элемента ссылки на формы, на котором она основана. При выборе элемента Outlook использует класс сообщения для размещения формы и предоставление доступа к его свойства, такие как команды ответ.</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagMessageClass</b>. Свойство <b>MessageClass</b> элемента ссылки на формы, на котором она основана. При выборе элемента Outlook использует класс сообщения для размещения формы и предоставление доступа к его свойства, такие как команды ответ. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -327,10 +313,8 @@
       <Docs>
         <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#) указание префикс (например, «Re») для использования с темой элемента при выполнении действия. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Outlook автоматически добавляет двоеточие (:) значение свойства <b>префиксов</b> при задании тему элемента.</para>
-          <para />
-        </remarks>
+        <remarks><para>Outlook автоматически добавляет двоеточие (:) значение свойства <b>префиксов</b> при задании тему элемента.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReplyStyle">
@@ -420,16 +404,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowOn">

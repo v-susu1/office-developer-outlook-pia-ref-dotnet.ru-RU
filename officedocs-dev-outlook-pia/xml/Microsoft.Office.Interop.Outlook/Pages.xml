@@ -1,13 +1,5 @@
 <Type Name="Pages" FullName="Microsoft.Office.Interop.Outlook.Pages">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3a39316f31c31dd7d14073362c6ea96a307b3e63" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20641033" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Pages : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ee2ae6b5fa0a95a49e5a94e7b8a64a924c28cab9" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27905619" /></Metadata><TypeSignature Language="C#" Value="public interface Pages : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Pages implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Pages" />
   <TypeSignature Language="VB.NET" Value="Public Interface Pages&#xA;Implements IEnumerable" />
@@ -31,13 +23,11 @@
   </Attributes>
   <Docs>
     <summary>Содержит страницы, которые представляют страниц в окне инспектора.</summary>
-    <remarks>
-      <para>Каждый <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объект имеет <b>страниц</b> объект определен, пустой (число 0) Если элемент Outlook никогда не были настроены перед.</para>
-      <para>Использования <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.ModifiedFormPages" /> свойство для возврата объекта <b>страниц</b> из объекта <b>инспектора</b> .</para>
-      <para>Использования <see cref="M:Microsoft.Office.Interop.Outlook.Pages.Add(System.Object)" /> метод для создания настраиваемой страницы (можно добавить до 5 настраиваемых страниц). Чтобы задать отображаемое имя возвращаемой страницы используйте имя аргумента метода <b>Add</b> . Дополнение к добавлению настраиваемых страниц, можно использовать <paramref name="Name" /> аргумент, чтобы вернуться на главную страницу объект <b>инспектора</b> для внесения изменений.</para>
-      <para>Использования <b>ModifiedFormPages</b>(<paramref name="index" />), где <paramref name="index" /> — имя или номер индекса, для возврата одной страницы из объекта <b>страниц</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>Каждый <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объект имеет <b>страниц</b> объект определен, пустой (число 0) Если элемент Outlook никогда не были настроены перед.</para>
+      <para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.ModifiedFormPages" /> свойство для возврата объекта <b>страниц</b> из объекта <b>инспектора</b> .</para>
+      <para>Использование <see cref="M:Microsoft.Office.Interop.Outlook.Pages.Add(System.Object)" /> метод для создания настраиваемой страницы (можно добавить до 5 настраиваемых страниц). Чтобы задать отображаемое имя возвращаемой страницы используйте имя аргумента метода <b>Add</b> . Дополнение к добавлению настраиваемых страниц, можно использовать <paramref name="Name" /> аргумент, чтобы вернуться на главную страницу объект <b>инспектора</b> для внесения изменений.</para>
+      <para>Используйте <b>ModifiedFormPages</b>(<paramref name="index" />), где <paramref name="index" /> — имя или номер индекса, для возврата одной страницы из объекта <b>страницы</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -65,10 +55,8 @@
         <param name="Name">Имя страницы.</param>
         <summary>Создает новую страницу в <see cref="T:Microsoft.Office.Interop.Outlook.Pages" /> семейства сайтов.</summary>
         <returns>На <a href="http://go.microsoft.com/fwlink/?LinkId=87950">странице</a></returns>
-        <remarks>
-          <para>Коллекция <b>Pages</b> изначально пуста и не более 5 настраиваемых страниц в коллекции.</para>
-          <para />
-        </remarks>
+        <remarks><para>Коллекция <b>Pages</b> изначально пуста и не более 5 настраиваемых страниц в коллекции.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -268,16 +256,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

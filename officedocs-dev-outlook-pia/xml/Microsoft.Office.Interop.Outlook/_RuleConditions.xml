@@ -1,13 +1,5 @@
 <Type Name="_RuleConditions" FullName="Microsoft.Office.Interop.Outlook._RuleConditions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ee9e9cd5e60909dd8c8b2a0698b75286f18e83ac" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640879" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _RuleConditions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ee9e9cd5e60909dd8c8b2a0698b75286f18e83ac" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27905465" /></Metadata><TypeSignature Language="C#" Value="public interface _RuleConditions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _RuleConditions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._RuleConditions" />
   <TypeSignature Language="VB.NET" Value="Public Interface _RuleConditions&#xA;Implements IEnumerable" />
@@ -59,11 +51,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AccountRuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._AccountRuleCondition.ConditionType" /> из <b>olConditionAccount</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>AccountRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, что сообщение отправку и получение через указанной учетной записи. </para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>AccountRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._AccountRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>AccountRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, что сообщение отправку и получение через указанной учетной записи. </para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>AccountRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._AccountRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AnyCategory">
@@ -91,11 +81,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> из <b>olConditionAnyCategory</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>RuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании правила, которое указывает условие или условие исключения, назначенной сообщения для каждой категории.  </para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>RuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.  </para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>RuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании правила, которое указывает условие или условие исключения, назначенной сообщения для каждой категории.  </para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>RuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -151,11 +139,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /> из <b>olConditionBody</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>TextRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, определенного текста в теле сообщения. </para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>TextRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>TextRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, определенного текста в теле сообщения. </para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>TextRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BodyOrSubject">
@@ -183,11 +169,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /> из <b>olConditionBodyOrSubject</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>TextRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, определенного текста в текст сообщения или темы . </para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>TextRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>TextRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, определенного текста в текст сообщения или темы . </para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>TextRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Category">
@@ -215,11 +199,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.CategoryRuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._CategoryRuleCondition.ConditionType" /> из <b>olConditionCategory</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>CategoryRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, назначенная сообщения определенного категории. </para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>CategoryRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._CategoryRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>CategoryRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, назначенная сообщения определенного категории. </para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>CategoryRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._CategoryRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CC">
@@ -247,11 +229,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> из <b>olConditionCc</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>RuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, свое имя в поле "Копия".</para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>RuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>RuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, свое имя в поле "Копия".</para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>RuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -307,10 +287,8 @@
       <Docs>
         <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее число объектов в указанном семействе сайтов. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Можно перечислить <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции от 1 до <b>RuleConditions.Count</b> для определения всех условий правила для существующего правила. Несмотря на то, что поддерживает объектную модель правил, создание правил с помощью только наиболее часто используемые условия правила и поддерживаемые правила и оповещения мастер не все условия для правил, коллекция <b>RuleConditions</b> включает все правила условия правила. Поэтому всегда можно перечислить объект <b>RuleConditions</b> семейства сайтов, чтобы определить, какие условия правила включены для существующего правила.</para>
-          <para />
-        </remarks>
+        <remarks><para>Можно перечислить <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции от 1 до <b>RuleConditions.Count</b> для определения всех условий правила для существующего правила. Несмотря на то, что поддерживает объектную модель правил, создание правил с помощью только наиболее часто используемые условия правила и поддерживаемые правила и оповещения мастер не все условия для правил, коллекция <b>RuleConditions</b> включает все правила условия правила. Поэтому всегда можно перечислить объект <b>RuleConditions</b> семейства сайтов, чтобы определить, какие условия правила включены для существующего правила.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormName">
@@ -338,11 +316,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.FormNameRuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._FormNameRuleCondition.ConditionType" /> из <b>olConditionFormName</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>FormNameRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, что сообщение использует указанную форму.</para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>FormNameRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._FormNameRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>FormNameRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, что сообщение использует указанную форму.</para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>FormNameRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._FormNameRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="From">
@@ -370,11 +346,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.ConditionType" /> из <b>olConditionFrom</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>ToOrFromRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, отправителя сообщения  Указанный список <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" />.</para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>ToOrFromRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>ToOrFromRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, отправителя сообщения  Указанный список <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" />.</para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>ToOrFromRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FromAnyRSSFeed">
@@ -402,11 +376,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> из <b>olConditionFromAnyRssFeed</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>RuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании правила, которое указывает условие или условие исключения, подписка на RSS-канал сообщение.</para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>RuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.  </para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>RuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании правила, которое указывает условие или условие исключения, подписка на RSS-канал сообщение.</para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>RuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FromRssFeed">
@@ -434,11 +406,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.FromRssFeedRuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._FromRssFeedRuleCondition.ConditionType" /> из <b>olConditionFromRssFeed</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>FromRSSFeedRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, сообщение из определенного RSS-канал подписка.</para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>FromRSSFeedRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._FromRssFeedRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.  </para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>FromRSSFeedRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, сообщение из определенного RSS-канал подписки.</para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>FromRSSFeedRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._FromRssFeedRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasAttachment">
@@ -466,11 +436,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> из <b>olConditionHasAttachment</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>RuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, что сообщение имеет вложение.</para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>RuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>RuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, что сообщение имеет вложение.</para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>RuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Importance">
@@ -498,11 +466,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ImportanceRuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._ImportanceRuleCondition.ConditionType" /> из <b>olConditionImportance</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>ImportanceRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, сообщение из указанного уровня важности.</para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>ImportanceRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._ImportanceRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>ImportanceRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, сообщение из указанного уровня важности.</para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>ImportanceRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._ImportanceRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -534,10 +500,8 @@
         <param name="Index">На основе 1 числовое значение, отражает порядковый номер условие правила в коллекции <b>RuleConditions</b> . Например 1 — это значение индекса первого условие правила в коллекции и имеет значение индекса второе условие правила 2.</param>
         <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> объектом, заданным с <paramref name="Index" /> которого является числового индекса в <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> семейства сайтов.</summary>
         <value>Объект <b>RuleCondition</b> , который представляет указанный объект.</value>
-        <remarks>
-          <para>Объект <b>RuleConditions</b> семейства сайтов — это набор основных. Он содержит объекты, производные от <b>RuleCondition</b>или <b>RuleCondition</b> объектов. Не удается добавить или удалить элементы из этой коллекции, но можно индекс в коллекцию для перечисления элементов условие правила и задания <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> свойство условия правила. При использовании <b>элемента</b> для перечисления коллекции, можно перечислить <paramref name="Index" /> от 1 до <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.Count" />.</para>
-          <para />
-        </remarks>
+        <remarks><para>Объект <b>RuleConditions</b> семейства сайтов — это набор основных. Он содержит объекты, производные от <b>RuleCondition</b>или <b>RuleCondition</b> объектов. Не удается добавить или удалить элементы из этой коллекции, но можно индекс в коллекцию для перечисления элементов условие правила и задания <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> свойство условия правила. При использовании <b>элемента</b> для перечисления коллекции, можно перечислить <paramref name="Index" /> от 1 до <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.Count" />.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MeetingInviteOrUpdate">
@@ -565,11 +529,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> из <b>olConditionMeetingInviteOrUpdate</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>RuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, что сообщение является приглашения на собрание или собрания Обновите.</para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>RuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>RuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, что сообщение является приглашения на собрание или собрания обновление.</para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>RuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageHeader">
@@ -597,11 +559,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /> из <b>olConditionMessageHeader</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>TextRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, содержит заданный заголовок сообщения текст.</para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>TextRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>TextRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, содержит заданный заголовок сообщения текст.</para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>TextRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NotTo">
@@ -629,11 +589,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> из <b>olConditionNotTo</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>RuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, который не является свое имя в поле "Кому".</para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>RuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>RuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, который не является свое имя в поле "Кому".</para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>RuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLocalMachine">
@@ -661,11 +619,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> из <b>olConditionLocalMachineOnly</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>RuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или исключение условие, правило может выполняться только на данном компьютере. При выполнении того же правила на другом компьютере правило покажут, что включено условие <b>olConditionOtherMachine</b> .</para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>RuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Можно программно включить условие для правила этого типа. В некоторых случаях <b>olConditionLocalMachine</b> автоматически устанавливается из-за предоставление другим условие правила, такие как <b>olConditionAccount</b>. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>RuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или исключение условие, правило может выполняться только на данном компьютере. При выполнении того же правила на другом компьютере, правило покажут, что условие <b>olConditionOtherMachine</b> включено.</para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>RuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Можно программно включить условие для правила этого типа. В некоторых случаях <b>olConditionLocalMachine</b> автоматически устанавливается из-за предоставление другим условие правила, такие как <b>olConditionAccount</b>. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OnlyToMe">
@@ -693,11 +649,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> из <b>olConditionOnlyToMe</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>RuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, сообщение отправляется только к вашему.</para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>RuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>RuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, сообщение отправляется только к вашему.</para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>RuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OnOtherMachine">
@@ -725,12 +679,10 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> из <b>olConditionOtherMachine</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>RuleCondition</b> при перечислении условия правила или условия исключений существующего правила. Это условие правила указывает, что правило можно выполнять только на некоторые машине, отличный от локального компьютера.</para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>RuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила.</para>
-          <para>Нельзя программным путем включения или отключения условие типа <b>olConditionOtherMachine</b>. Этот тип условия правила указывает, что правило можно выполнить только на определенном компьютере, который не является текущей. Это происходит при создании правила на том, что компьютер и условие правила <b>olConditionLocalMachineOnly</b> включен, указывающего на то, что правило можно выполнить только на этом компьютере. При выполнении того же правила на другом компьютере правило покажут, что включено условие <b>olConditionOtherMachine</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>RuleCondition</b> при перечислении условия правила или условия исключений существующего правила. Это условие правила указывает, что правило можно выполнять только на некоторые машине, отличный от локального компьютера.</para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>RuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила.</para>
+          <para>Программная невозможно включить или отключить условие типа <b>olConditionOtherMachine</b>. Этот тип условия правила указывает, что правило можно выполнить только на определенном компьютере, который не является текущей. Это происходит при создании правила на том, что компьютер и условие правила <b>olConditionLocalMachineOnly</b> включен, указывающего на то, что правило можно выполнить только на этом компьютере. При выполнении того же правила на другом компьютере, правило покажут, что условие <b>olConditionOtherMachine</b> включено.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -758,10 +710,8 @@
       <Docs>
         <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Родительский <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> — это объект <see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> объекта.</para>
-          <para />
-        </remarks>
+        <remarks><para>Родительский <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> — это объект <see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> объекта.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RecipientAddress">
@@ -789,11 +739,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressRuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.ConditionType" /> из <b>olConditionRecipientAddress</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>AddressRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, который содержит адрес получателя Указанный текст. </para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>AddressRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>AddressRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, который содержит адрес получателя Указанный текст. </para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>AddressRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SenderAddress">
@@ -821,11 +769,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressRuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.ConditionType" /> из <b>olConditionSenderAddress</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>AddressRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или исключение условие, содержащее адрес отправителя Указанный текст. </para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>AddressRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>AddressRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или исключение условие, содержащее адрес отправителя Указанный текст. </para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>AddressRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SenderInAddressList">
@@ -853,11 +799,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.SenderInAddressListRuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._SenderInAddressListRuleCondition.ConditionType" /> из <b>olConditionAccount</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>SenderInAddressListRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или исключение условие, отправитель входит в указанном список адресов.</para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>SenderInAddressListRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._SenderInAddressListRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>SenderInAddressListRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или исключение условие, отправитель входит в указанном список адресов.</para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>SenderInAddressListRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._SenderInAddressListRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SentTo">
@@ -885,11 +829,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.ConditionType" /> из <b>olConditionSentTo</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>ToOrFromRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или исключение условием, что получателей (в To и Cc текста поля) сообщения находятся в указанный список <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" />.</para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>ToOrFromRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>ToOrFromRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или исключение условием, что получателей (в To и Cc текста поля) сообщения находятся в указанный список <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" />.</para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>ToOrFromRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -917,16 +859,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Subject">
@@ -954,11 +894,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /> из <b>olConditionSubject</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>TextRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, что тема сообщения содержит указанный текст.</para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>TextRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>TextRuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, что тема сообщения содержит указанный текст.</para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>TextRuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ToMe">
@@ -986,11 +924,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> из <b>olConditionTo</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>RuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, свое имя в поле "Кому".</para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>RuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>RuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, свое имя в поле "Кому".</para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>RuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ToOrCc">
@@ -1018,11 +954,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> со <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> из <b>olConditionToOrCc</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Используйте возвращенного объекта <b>RuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, свое имя в поле Кому или копия полем.</para>
-          <para>Этого свойства <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>RuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Используйте возвращенного объекта <b>RuleCondition</b> при перечислении условия правила или условия исключений существующего правила или при создании нового правила, которое указывает условие или условие исключения, свое имя в поле Кому или копия поля.</para>
+          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> коллекции всегда возвращает объект <b>RuleCondition</b> независимо от того, является ли правило, связанное с этой коллекции <b>RuleConditions</b> определенное условие правила. Если правило определенные и поддержкой таких условие для правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

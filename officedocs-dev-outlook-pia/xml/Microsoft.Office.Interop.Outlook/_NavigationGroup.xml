@@ -1,13 +1,5 @@
 <Type Name="_NavigationGroup" FullName="Microsoft.Office.Interop.Outlook._NavigationGroup">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f9f5a339656c6e155227a160682fb61bd64884b8" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640540" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _NavigationGroup" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f9f5a339656c6e155227a160682fb61bd64884b8" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27902350" /></Metadata><TypeSignature Language="C#" Value="public interface _NavigationGroup" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _NavigationGroup" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._NavigationGroup" />
   <TypeSignature Language="VB.NET" Value="Public Interface _NavigationGroup" />
@@ -83,10 +75,8 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Данное свойство возвращает <b>olNavigationGroup</b> для <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> объекта.</para>
-          <para />
-        </remarks>
+        <remarks><para>Данное свойство возвращает <b>olNavigationGroup</b> для <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> объекта.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupType">
@@ -145,11 +135,9 @@
       <Docs>
         <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет отображаемое имя для <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство ограничено 127 символов. Строковые значения больше времени, чем 127 знаков усекаются.</para>
-          <para>Возникает ошибка при попытке задать значение этого свойства для любого объекта <b>NavigationGroup</b> , связанные с <see cref="T:Microsoft.Office.Interop.Outlook.MailModule" /> объект.</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство ограничено 127 символов. Строковые значения 127 знаков усекаются.</para>
+          <para>Произошла ошибка при попытке задать значение этого свойства для любого объекта <b>NavigationGroup</b> , связанные с <see cref="T:Microsoft.Office.Interop.Outlook.MailModule" /> объекта.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NavigationFolders">
@@ -236,20 +224,18 @@
       <Docs>
         <summary>Возвращает или задает значение типа <b>Integer</b> (<b>целое</b> в C#), представляющее порядковый номер <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> объектов при отображении в области навигации. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство могут быть установлены только в диапазоне от 1 до значение <see cref="P:Microsoft.Office.Interop.Outlook._NavigationGroups.Count" /> свойства для родительского <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroups" /> объекта. Ошибка возникает при попытке этому свойству присвоено значение вне диапазона.</para>
+        <remarks><para>Это свойство могут быть установлены только в диапазоне от 1 до значение <see cref="P:Microsoft.Office.Interop.Outlook._NavigationGroups.Count" /> свойства для родительского <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroups" /> объекта. Произошла ошибка при попытке этому свойству присвоено значение вне диапазона.</para>
           <para>При изменении значения этого свойства для объекта <b>NavigationGroup</b> изменяет значения других групп навигации в коллекции <b>NavigationGroups</b> , в зависимости от относительное изменение между новое значение <b>положение</b> и исходное значение свойства <b>положения</b> для этого объекта <b>NavigationGroup</b> :</para>
           <list type="bullet">
             <item>
-              <para>, если новое значение меньше, чем исходное значение, а затем на указанный объект <b>NavigationGroup</b> перемещает вверх на новое место и помещает другое группы навигации уже выше или ниже этого новую позицию вниз.</para>
+              <para>Если новое значение меньше, чем исходное значение, указанный объект <b>NavigationGroup</b> перемещает вверх на новое место и помещает другие навигации группы уже выше или ниже этого новую позицию вниз.</para>
             </item>
             <item>
-              <para>Если новое значение больше, чем исходное значение, а затем на указанный объект <b>NavigationGroup</b> перемещает вниз на новое место и помещает других групп навигации между старой и новой позиции копирование, заполнение старый положение.</para>
+              <para>Если новое значение больше, чем исходное значение, указанный объект <b>NavigationGroup</b> перемещает вниз на новое место и помещает других групп навигации между старой и новой позиции, заполнения старый положение.</para>
             </item>
           </list>
-          <para>Если группа навигации не в области навигации, а затем данное свойство возвращает значение -1.</para>
-          <para />
-        </remarks>
+          <para>Если группа навигации не на панели переходов, данное свойство возвращает значение -1.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -277,16 +263,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

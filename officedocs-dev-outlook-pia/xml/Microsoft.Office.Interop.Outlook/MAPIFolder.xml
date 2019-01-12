@@ -1,13 +1,5 @@
 <Type Name="MAPIFolder" FullName="Microsoft.Office.Interop.Outlook.MAPIFolder">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d8a333f159d3a63a23c2b19913ea1f7e5b666bcb" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20639765" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MAPIFolder" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5ff194f3b28d1408ede7525b7b91a1471bd5eb41" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901090" /></Metadata><TypeSignature Language="C#" Value="public interface MAPIFolder" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MAPIFolder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.MAPIFolder" />
   <TypeSignature Language="VB.NET" Value="Public Interface MAPIFolder" />
@@ -58,10 +50,8 @@
       <Docs>
         <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#), которое указывает имя адресной книги для <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объекта, представляющего папку Контакты. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>При попытке задать свойство <b>AddressBookName</b> в папке не контакты, будет возвращена ошибка.</para>
-          <para />
-        </remarks>
+        <remarks><para>При попытке задать свойство <b>AddressBookName</b> в папке не контакты, будет возвращена ошибка.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddToFavorites">
@@ -203,10 +193,8 @@
         <param name="DestinationFolder">Требуемые <b>папки</b> объект, представляющий папки назначения.</param>
         <summary>Копирует текущую папку целиком в папке назначения.</summary>
         <returns>Объект <b>Folder</b> , представляющий новую копию текущей папки.</returns>
-        <remarks>
-          <para>Установка значения REG_MULTI_SZ DisableCrossAccountCopy, в HKCU\Software\Microsoft\Office\14.0\Outlook в реестре Windows действует как со стороны отключение этот метод.</para>
-          <para />
-        </remarks>
+        <remarks><para>Установка значения REG_MULTI_SZ DisableCrossAccountCopy, в HKCU\Software\Microsoft\Office\14.0\Outlook в реестре Windows действует как со стороны отключение этот метод.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentView">
@@ -234,10 +222,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.View" /> объект, представляющий текущее представление. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Чтобы получить объект <b>представления</b> для просмотра текущего <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" />, используйте <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentView" /> вместо свойства <b>CurrentView</b> текущего <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, возвращенный свойством <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" />. </para>
+        <remarks><para>Чтобы получить объект <b>представления</b> для просмотра текущего <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" />, используйте <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentView" /> вместо свойства <b>CurrentView</b> текущего <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, возвращенный свойством <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" />. </para>
           <para>Необходимо сохранить ссылку на объект <b>представления</b> , возвращенный свойством <b>CurrentView</b> , прежде чем продолжить использовать для целей.</para>
-          <para>Должным образом Сброс текущего представления, необходимо выполнить <see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> и затем <see cref="M:Microsoft.Office.Interop.Outlook.View.Apply" />. В следующем примере показан порядок вызовов:</para>
+          <para>Чтобы должным образом восстановить текущее представление, необходимо выполнить <see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> и затем <see cref="M:Microsoft.Office.Interop.Outlook.View.Apply" />. В следующем примере показан порядок вызовов:</para>
           <code>Sub ResetView()
     Dim v as Outlook.View
     ' Save a reference to the current view object
@@ -256,8 +243,7 @@ End Sub</code>
     v.Reset();
     v.Apply();
 }</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomViewsOnly">
@@ -288,11 +274,9 @@ End Sub</code>
       <Docs>
         <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), который определяет, какие представления отображаются в меню Вид для указанной папки. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Если задано значение <b>True</b>, только представления, созданные пользователем будет отображаться в меню.</para>
-          <para>Это свойство действует только в меню Вид. Не влияет на отображение представления в области переходов.</para>
-          <para />
-        </remarks>
+        <remarks><para>Если задано значение <b>True</b>, только представления, созданные пользователем будет отображаться в меню. </para>
+          <para>Это свойство действует только в меню Вид. Он не влияет на отображение представления в области переходов.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultItemType">
@@ -404,10 +388,8 @@ End Sub</code>
       <Docs>
         <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляет описание папки.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует свойству MAPI <b>PidTagComment</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagComment</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -460,9 +442,9 @@ End Sub</code>
       <Docs>
         <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее уникальный идентификатор записи объекта.  Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Это свойство соответствует свойству MAPI <b>PidTagEntryId</b>.</para> Поставщик хранения 
-          <para>MAPI назначает строка уникального идентификатора при создании элемента в хранилище. Таким образом свойство <b>EntryID</b> не задан для элемента Outlook до отправки или сохранения. Идентификатор записи изменений при перемещении элемента в другом хранилище, например, из папки "Входящие" в общую папку Microsoft Exchange Server или из одного файла личных папок (PST) другой PST-файл. Решения не должны зависеть от <b>EntryID</b> свойство должно быть уникальным, пока не будут перемещаться элементов. Свойство <b>EntryID</b> возвращает MAPI долгосрочного идентификатором записи. Для получения дополнительных сведений о long - и short - term EntryIDs, http://msdn.microsoft.com для <b>PidTagEntryId</b>. </para><para /></remarks>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagEntryId</b>.</para>
+          <para>Поставщик хранилища MAPI назначает строка уникального идентификатора при создании элемента в хранилище. Таким образом свойство <b>EntryID</b> не задан для элемента Outlook до отправки или сохранения. Идентификатор записи изменений при перемещении элемента в другом хранилище, например, из папки "Входящие" в общую папку Microsoft Exchange Server или из одного файла личных папок (PST) другой PST-файл. Решения не должны зависеть от <b>EntryID</b> свойство должно быть уникальным, пока не будут перемещаться элементов. Свойство <b>EntryID</b> возвращает MAPI долгосрочного идентификатором записи. Для получения дополнительных сведений о long - и short - term EntryIDs, http://msdn.microsoft.com для <b>PidTagEntryId</b>. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FolderPath">
@@ -518,11 +500,8 @@ End Sub</code>
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> коллекции, представляющей все папки, содержащиеся в указанном <see cref="T:Microsoft.Office.Interop.Outlook.Folder" />. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> Объект является корневой папки всех папок для места заданным именем.</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> Объект является корневой папки всех папок для места заданным именем. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FullFolderPath">
@@ -579,12 +558,10 @@ End Sub</code>
       <Docs>
         <summary>Создает <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> для указанного <see cref="T:Microsoft.Office.Interop.Outlook.Folder" />.</summary>
         <returns>Объект <b>CalendarSharing</b> для указанной папки.</returns>
-        <remarks>
-          <para>Метод <b>GetCalendarExporter</b> автоматически устанавливает значения по умолчанию для класса <b>CalendarSharing</b> параметры по умолчанию, используемых объектом <b>папки</b> . Метод <b>GetCalendarExporter</b> можно использовать только для папок календаря. Ошибка возникает при использовании метода в <b>папке</b> объекты, которые представляют другие типы папки.</para>
+        <remarks><para>Метод <b>GetCalendarExporter</b> автоматически устанавливает значения по умолчанию для класса <b>CalendarSharing</b> параметры по умолчанию, используемых объектом <b>папки</b> . Метод <b>GetCalendarExporter</b> можно использовать только для папок календаря. При использовании метода в <b>папке</b> объекты, которые представляют типы другие папки, возникает ошибка.</para>
           <para>
             <b>Примечание</b>: объекта <b>CalendarSharing</b> поддерживает только экспорт в формат файлов iCalendar (ICS).</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCustomIcon">
@@ -610,30 +587,28 @@ End Sub</code>
       <Docs>
         <summary>Возвращает <see cref="T:stdole.StdPicture" /> объект, представляющий пользовательский значок папки.</summary>
         <returns>Возвращает объект, представляющий пользовательский значок папки на <b>StdPicture</b> .</returns>
-        <remarks>
-          <para>Свойство <b>типа</b> равно <b>PICTYPE_ICON</b> или <b>PICTYPE_BITMAP</b>имеет возвращенного объекта <b>StdPicture</b> .</para>
+        <remarks><para>Возвращаемый объект <b>StdPicture</b> имеет свойство <b>типа</b> равно <b>PICTYPE_ICON</b> или <b>PICTYPE_BITMAP</b>.</para>
           <para>
             <b>GetCustomIcon</b> возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если не заданы значок папки или папку принадлежит к одной из следующих групп папок:</para>
           <list type="bullet">
             <item>
-              <para>Папки по умолчанию (как перечисленные по <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultFolders" /> перечисление)</para>
+              <para>Значение по умолчанию папок (как перечисленные по <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultFolders" /> перечисления)</para>
             </item>
             <item>
-              <para>специальные папки (как перечисленные по <see cref="T:Microsoft.Office.Interop.Outlook.OlSpecialFolders" /> перечисление)</para>
+              <para>Специальные папки (как перечисленные по <see cref="T:Microsoft.Office.Interop.Outlook.OlSpecialFolders" /> перечисления)</para>
             </item>
             <item>
-              <para>общих папок Exchange</para>
+              <para>Общие папки Exchange</para>
             </item>
             <item>
-              <para>корневую папку из любого почтового ящика Exchange</para>
+              <para>Корневую папку из любого почтового ящика Exchange</para>
             </item>
             <item>
-              <para>скрытые папки</para>
+              <para>Скрытые папки</para>
             </item>
           </list>
-          <para>Может быть вызван только <b>GetCustomIcon</b> из кода, что выполняется в процессе как Outlook. Объект <b>StdPicture</b> не допускающий через границы процессов. При попытке вызова <b>GetCustomIcon</b> из кода вне процесса, возникает исключение. Для получения дополнительных сведений см <a href="http://support.microsoft.com/kb/150034">сервера автоматизации невозможно передать указатель реализацию IPictureDisp объект изображения через границы процессов</a></para>
-          <para />
-        </remarks>
+          <para><b>GetCustomIcon</b> можно вызывать только из кода, что выполняется в процессе как Outlook. Объект <b>StdPicture</b> не допускающий через границы процессов. При попытке вызова <b>GetCustomIcon</b> из кода вне процесса, возникает исключение. Для получения дополнительных сведений см <a href="http://support.microsoft.com/kb/150034">сервера автоматизации невозможно передать указатель реализацию IPictureDisp объект изображения через границы процессов</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExplorer">
@@ -660,18 +635,14 @@ End Sub</code>
       <Docs>
         <param name="DisplayMode">Режим отображения папки. Может быть одной из констант в <see cref="T:Microsoft.Office.Interop.Outlook.OlFolderDisplayMode" /> перечисления.</param>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> объект, представляющий новый, неактивных <b>Обозреватель</b> объектов, инициализируется в указанную папку, что и текущая папка.</summary>
-        <returns>
-          <b>Обозреватель</b> object, представляющий новый, неактивных Explorer инициализируется в указанную папку, что и текущая папка.</returns>
-        <remarks>
-          <para>Этот метод используется для возврата новый объект <b>Explorer</b> , в котором будет отображаться в папку, а не с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer" /> метод и параметр <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> свойство.</para>
-          <para>
-            <see cref="M:Microsoft.Office.Interop.Outlook._Explorer.Display" /> Метод можно использовать для активации или Показать <b>Обозреватель</b>.</para>
+        <returns><b>Обозреватель</b> object, представляющий новый, неактивных Explorer инициализируется в указанную папку, что и текущая папка.</returns>
+        <remarks><para>Этот метод используется для возврата новый объект <b>Explorer</b> , в котором будет отображаться в папку, а не с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer" /> метод и параметр <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> свойство.</para>
+          <para><see cref="M:Microsoft.Office.Interop.Outlook._Explorer.Display" /> Метод можно использовать для активации или Показать <b>Explorer</b>.</para>
           <para>Метод <b>GetExplorer</b> принимает необязательный аргумент <b>OlFolderDisplayMode</b> константу.</para>
           <para>По умолчанию новые <b>Explorer</b> отображается в обычном режиме (<b>olFolderDisplayNormal</b>) со всеми элементами интерфейса: панель сообщений справа и на левой панели навигации. К этому правилу исключение при вызове <b>GetExplorer</b> для делегированных папок, которые находятся в режиме навигации No (<b>olFolderDisplayNoNavigation</b> ) по умолчанию. Дополнительные ограничения можно применять к режим по умолчанию, но не могут снизить ограничения, изменив <b>OlFolderDisplayMode</b>.</para>
-          <para>Explorer также отображаются в режиме только для папок (<b>olFolderDisplayFolderOnly</b>). В этом режиме практически не отличается в обычном режиме (<b>olFolderDisplayNormal</b> ), то есть слишком отображаются на панели навигации слева.</para>
-          <para>Наиболее строгими режима, которые можно использовать — режим навигации No (<b>olFolderDisplayNoNavigation</b>). В этом режиме <b>Explorer</b> будут отображаться с не список папок, список не раскрывающийся список папок и любые параметры должны быть отключены панель меню и команды «Перейти "-type. По сути пользователь не должна появиться возможность перейдите на любую другую папку в пределах этого окно <b>проводника</b> . По умолчанию делегированные папки (Общие) отображается в режиме навигации No.</para>
-          <para />
-        </remarks>
+          <para>Окно также может отображаться в режиме только для папок (<b>olFolderDisplayFolderOnly</b>). В этом режиме практически не отличается в обычном режиме (<b>olFolderDisplayNormal</b> ), то есть слишком отображаются на панели навигации слева.</para>
+          <para> Наиболее строгими режима, которые можно использовать — режим навигации No (<b>olFolderDisplayNoNavigation</b>). В этом режиме <b>Explorer</b> будут отображаться с не список папок, список не раскрывающийся список папок и любые параметры должны быть отключены панель меню и команды «Перейти "-type. По сути пользователь не должна появиться возможность перейдите на любую другую папку в пределах этого окно <b>проводника</b> . По умолчанию делегированные папки (Общие) отображается в режиме No навигации.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStorage">
@@ -702,11 +673,29 @@ End Sub</code>
         <param name="StorageIdentifierType">Указывает тип идентификатор объекта <b>элемент для хранения</b> .</param>
         <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.StorageItem" /> на родительский объект <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> для хранения данных для решения для приложения Outlook.</summary>
         <returns>Объект <b>StorageItem</b> , который используется для хранения данных для решения.</returns>
-        <remarks>
-          <para>Получает <b>элемент для хранения</b> на объект <b>Folder</b> , идентификатор, указанный с помощью метода <b>GetStorage</b><paramref name="StorageIdentifier" /> и имеет указанный тип идентификатора с <paramref name="StorageIdentifierType" />.    <b>Элемент для хранения</b> — это скрытый элемент в <b>папке</b>, в которой перемещается с учетной записью и доступен автономная и интерактивная.</para>
-          <para>При указании <see cref="P:Microsoft.Office.Interop.Outlook._StorageItem.EntryID" /> для <b>элемент для хранения</b> с помощью значения <b>olIdentifyByEntryID</b> для <paramref name="StorageIdentifierType" />, а затем метод <b>GetStorage</b> возвращает <b>элемент для хранения</b> с указанным <b>EntryID</b>. Если не <b>элемент для хранения</b> можно найти с помощью этого <b>EntryID</b> или если <b>элемент для хранения</b> не существует, затем <b>GetStorage</b> метод вызовет ошибку.</para> При указании класса сообщения для <b>элемент для хранения</b> с помощью значения <b>olIdentifyByMessageClass</b> для 
-          <para><paramref name="StorageIdentifierType" />, а затем метод <b>GetStorage</b> возвращает <b>элемент для хранения</b> с помощью указанного класса сообщений. При наличии нескольких элементов с этим же классом сообщения, метод <b>GetStorage</b> возвращает элемент с самыми последними <b>PidTagLastModificationTime</b>. Если <b>элемент для хранения</b> не существует с указанного класса сообщений, то метод <b>GetStorage</b> создает новый <b>элемент для хранения</b> с классом сообщения, указанный с <paramref name="StorageIdentifier" />.</para> При указании 
-          <para><see cref="P:Microsoft.Office.Interop.Outlook._StorageItem.Subject" /><b>элемент для хранения</b>, а затем <b>GetStorage</b> метод возвращает <b>элемент для хранения</b> с <b>темы</b> , указанный в вызове <b>GetStorage</b> . При наличии нескольких элементов с одной <b>темы</b>, метод <b>GetStorage</b> возвращает элемент с самыми последними <b>PidTagLastModificationTime</b>. Если <b>элемент для хранения</b> не существует с указанным <b>темы</b>, а затем метод <b>GetStorage</b> создает новый <b>элемент для хранения</b> с <b>темы</b> , указанного идентификатором <paramref name="StorageIdentifier" />.</para><para><b>GetStorage</b> возвращает ошибку, если тип хранилища папки не поддерживается. Следующие хранилищ возвращает ошибку при вызове <b>GetStorage</b> :</para><list type="bullet"><item><para>хранения Hotmail</para></item><item><para>хранит протокола доступа сообщения Интернета (IMAP)</para></item><item><para>сохраняет</para></item><item><para>хранит общей папки</para></item></list><para><see cref="P:Microsoft.Office.Interop.Outlook._StorageItem.Size" /><b>элемент для хранения</b> , вновь созданный является нуль (0) до внесения явно вызывать на <see cref="M:Microsoft.Office.Interop.Outlook._StorageItem.Save" /> от метода.</para><para>Дополнительные сведения о хранении данных для решения можно <a href="http://go.microsoft.com/fwlink/?LinkId=87931">Хранение данных для решений</a></para><para /></remarks>
+        <remarks><para>Получает <b>элемент для хранения</b> на объект <b>Folder</b> , идентификатор, указанный с помощью метода <b>GetStorage</b> <paramref name="StorageIdentifier" /> и имеет указанный тип идентификатора с <paramref name="StorageIdentifierType" />.    <b>Элемент для хранения</b> — это скрытый элемент в <b>папке</b>, в которой перемещается с учетной записью и доступен через Интернет и в автономном режиме.</para>
+          <para>При указании <see cref="P:Microsoft.Office.Interop.Outlook._StorageItem.EntryID" /> для <b>элемент для хранения</b> с помощью значения <b>olIdentifyByEntryID</b> для <paramref name="StorageIdentifierType" />, а затем метод <b>GetStorage</b> возвращает <b>элемент для хранения</b> с указанным <b>EntryID</b>. Если не <b>элемент для хранения</b> можно найти с помощью этого <b>EntryID</b> или <b>элемент для хранения</b> не существует, метод <b>GetStorage</b> вызовет ошибку.</para>
+          <para>При указании класса сообщения для <b>элемент для хранения</b> с помощью значения <b>olIdentifyByMessageClass</b> для <paramref name="StorageIdentifierType" />, а затем метод <b>GetStorage</b> возвращает <b>элемент для хранения</b> с помощью указанного класса сообщений. При наличии нескольких элементов с этим же классом сообщения, метод <b>GetStorage</b> возвращает элемент с самыми последними <b>PidTagLastModificationTime</b>. Если <b>элемент для хранения</b> не существует с указанного класса сообщений, то метод <b>GetStorage</b> создает новый <b>элемент для хранения</b> с классом сообщения, указанный с <paramref name="StorageIdentifier" />.</para>
+          <para>При указании <see cref="P:Microsoft.Office.Interop.Outlook._StorageItem.Subject" /> <b>элемент для хранения</b>, а затем <b>GetStorage</b> метод возвращает <b>элемент для хранения</b> с <b>темы</b> , указанный в вызове <b>GetStorage</b> . При наличии нескольких элементов с одной <b>темы</b>, метод <b>GetStorage</b> возвращает элемент с самыми последними <b>PidTagLastModificationTime</b>. Если <b>элемент для хранения</b> не существует с указанным <b>темы</b>, а затем метод <b>GetStorage</b> создает новый <b>элемент для хранения</b> с <b>темы</b> , указанного идентификатором <paramref name="StorageIdentifier" />.</para>
+          <para>
+            <b>GetStorage</b> возвращает ошибку, если тип хранилища папки не поддерживается. Следующие хранилищ возвращает ошибку при вызове <b>GetStorage</b> :</para>
+          <list type="bullet">
+            <item>
+              <para>Хранилище Hotmail</para>
+            </item>
+            <item>
+              <para>Сохранение протокола доступа сообщения Интернета (IMAP)</para>
+            </item>
+            <item>
+              <para>Делегирование хранилища</para>
+            </item>
+            <item>
+              <para>Общих папок</para>
+            </item>
+          </list>
+          <para><see cref="P:Microsoft.Office.Interop.Outlook._StorageItem.Size" /> <b>StorageItem</b> , вновь созданный является нуль (0) до внесения явно вызывать на <see cref="M:Microsoft.Office.Interop.Outlook._StorageItem.Save" /> метод элемента.</para>
+          <para>Дополнительные сведения о хранении данных для решения можно <a href="http://go.microsoft.com/fwlink/?LinkId=87931">Хранение данных для решений</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTable">
@@ -735,16 +724,13 @@ End Sub</code>
         <param name="Filter">Фильтр в синтаксис Microsoft Jet или поиск DAV и поиск (DASL), задающее условия для элементов в родительской <b>папке</b>.</param>
         <param name="TableContents">Указывает тип элементов в папке, которая возвращает <b>Функция GetTable</b> . Значение по умолчанию — <b>olUserItems</b>.</param>
         <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> объект, который содержит элементы, отфильтрованные по <paramref name="Filter" />.</summary>
-        <returns>
-          <b>В таблице</b> , содержащей элементы в родительском <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> , соответствующие критериям в <paramref name="Filter" />. По умолчанию <paramref name="TableContents" /><b>olUserItems</b> и возвращаемой <b>таблицы</b> содержит только отфильтрованные элементы, которые не являются скрытыми.</returns>
-        <remarks>
-          <para>Если <paramref name="Filter" /> — это пустая строка или <paramref name="Filter" /> параметр указан, <b>Функция GetTable</b> возвращает <b>таблицы</b> с помощью строки, представляющие все элементы в <b>папке</b>. Если <paramref name="Filter" /> — это пустая строка или <paramref name="Filter" /> параметр указан и <paramref name="TableContents" /> — это <b>olHiddenItems</b>, <b>Функция GetTable</b> возвращает <b>таблицы</b> с помощью строки, представляющие все скрытые элементы в <b>папке</b>.</para>
-          <para>Дополнительные сведения о фильтрах в разделе Создание ссылок на свойства пространством имен и фильтрации элементов.</para>
+        <returns><b>В таблице</b> , содержащей элементы в родительском <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> , соответствующие критериям в <paramref name="Filter" />. По умолчанию <paramref name="TableContents" /> <b>olUserItems</b> и возвращаемой <b>таблицы</b> содержит только отфильтрованные элементы, которые не являются скрытыми.</returns>
+        <remarks><para>Если <paramref name="Filter" /> — это пустая строка или <paramref name="Filter" /> параметр указан, <b>Функция GetTable</b> возвращает <b>таблицы</b> с помощью строки, представляющие все элементы в <b>папке</b>. Если <paramref name="Filter" /> — это пустая строка или <paramref name="Filter" /> параметр указан и <paramref name="TableContents" /> — это <b>olHiddenItems</b>, <b>Функция GetTable</b> возвращает <b>таблицы</b> с помощью строки, представляющие все скрытые элементы в <b>папке</b>.</para>
+          <para>Дополнительные сведения о фильтрах можно создание ссылок на свойства пространством имен и фильтрации элементов.</para>
           <para>
-            <b>Функция GetTable</b> возвращает <b>таблицу</b> со столбцом по умолчанию для типа папки из родительской <b>папки</b>. Чтобы изменить набор столбцов по умолчанию, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Add(System.String)" />, <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Remove(System.Object)" />, или <see cref="M:Microsoft.Office.Interop.Outlook._Columns.RemoveAll" /> методы <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> объекта collection.  При <paramref name="TableContents" /><b>olHiddenItems</b>— это набор столбцов по умолчанию всегда используется набор для почтовых папок, несмотря на то, что родительской <b>папки</b> может быть, например, в папку Контакты столбцов по умолчанию.  Дополнительные сведения о наборах столбец по умолчанию в разделе <a href="http://go.microsoft.com/fwlink/?LinkId=87925">Свойства по умолчанию, отображаемые в объекте таблицы</a></para>
-          <para>можно использовать <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> для применения последующие фильтров к <b>таблице</b> , основанный на объект <b>папки</b> .</para>
-          <para />
-        </remarks>
+            <b>Функция GetTable</b> возвращает <b>таблицу</b> со столбцом по умолчанию для типа папки из родительской <b>папки</b>. Чтобы изменить набор столбцов по умолчанию, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Add(System.String)" />, <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Remove(System.Object)" />, или <see cref="M:Microsoft.Office.Interop.Outlook._Columns.RemoveAll" /> методы <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> объекта collection.  При <paramref name="TableContents" /> <b>olHiddenItems</b>— это набор столбцов по умолчанию всегда используется набор для почтовых папок, несмотря на то, что родительской <b>папки</b> может быть, например, в папку Контакты столбцов по умолчанию.  Дополнительные сведения о наборах столбец по умолчанию в разделе <a href="http://go.microsoft.com/fwlink/?LinkId=87925">Свойства по умолчанию, отображаемые в объекте таблицы</a></para>
+          <para>Можно использовать <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> для применения последующие фильтров к <b>таблице</b> , основанный на объект <b>папки</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InAppFolderSyncObject">
@@ -775,12 +761,10 @@ End Sub</code>
       <Docs>
         <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), определяющий, если указанная папка будет синхронизирован с сервером электронной почты. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Если <b>значение True</b>, эта папка будут синхронизированы при «Папки приложения» <see cref="T:Microsoft.Office.Interop.Outlook.SyncObject" /> синхронизируется. Если <b>значение False</b>, папки, не будут синхронизированы. </para>
-          <para>Это эквивалентно установив флажки для этой папки в группе папок приложения на диалоговое окно отправки и получения.</para>
-          <para>, Если этому свойству присвоено <b>значение True</b>, а «Папки приложения» <b>SyncObject</b> еще не существует, <b>SyncObject</b> будет создана автоматически. «Приложение папки» <b>SyncObject</b> является единственным группы отправки и получения, могут быть изменены программным способом.</para>
-          <para />
-        </remarks>
+        <remarks><para>Если <b>значение True</b>, эта папка будут синхронизированы при «Папки приложения» <see cref="T:Microsoft.Office.Interop.Outlook.SyncObject" /> синхронизируется. Если <b>значение False</b>, папки, не будут синхронизированы. </para>
+          <para>Это эквивалентно, установив флажки для этой папки в группе папок приложения на диалоговое окно отправки и получения.</para>
+          <para>Если этому свойству присвоено <b>значение True,</b>и «Папки приложения» <b>SyncObject</b> выполняет еще не существует, <b>SyncObject</b> будет создана автоматически. «Папки приложения» <b>SyncObject</b> является единственным группы отправки и получения, могут быть изменены программным способом.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSharePointFolder">
@@ -808,9 +792,11 @@ End Sub</code>
       <Docs>
         <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), который определяет, является ли папка папок Microsoft SharePoint Foundation. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>Папка <para>SharePoint Foundation — это настраиваемые папки в Outlook, которая содержит активная копия списка контактов или список событий, который находится на сайте SharePoint Foundation. Сопоставляет список контактов в папке контактов в Outlook и в списке событие сопоставляет в папку календаря. </para><para>SharePoint Foundation автоматически создаются папки в области навигации в узле папок SharePoint при экспорте списка контактов или списка событий из сайта SharePoint Foundation Web.</para> Папки 
-          <para>на то, что SharePoint Foundation работают так же, как другие папки, существует несколько исключений. SharePoint Foundation папки доступны только для чтения и любая попытка изменения свойств папки или добавление, изменение, или удаление существующих элементов завершится с ошибкой. </para>Папка 
-          <para>A в Microsoft Exchange server папки никогда не будет папки SharePoint Foundation и нет папки пользователя по умолчанию файл личных папок (.pst) никогда не будет папкой SharePoint Foundation. Как правило будет папок SharePoint Foundation в узле папок SharePoint в области навигации.</para><para /></remarks>
+        <remarks><para>Папки SharePoint Foundation — это настраиваемые папки в Outlook, которая содержит активная копия списка контактов или список событий, который находится на сайте SharePoint Foundation. Сопоставляет список контактов в папке контактов в Outlook и в списке событие сопоставляет в папку календаря. </para>
+          <para>Папок SharePoint Foundation автоматически создаются в области навигации в узле папок SharePoint при экспорте списка контактов или списка событий из SharePoint Foundation, веб-сайта.</para>
+          <para>Хотя папок SharePoint Foundation работает так же, как другие папки, существует несколько исключений. SharePoint Foundation папки доступны только для чтения и любая попытка изменения свойств папки или добавление, изменение, или удаление существующих элементов завершится с ошибкой. </para>
+          <para>Папки в Microsoft Exchange server папки никогда не будет папкой SharePoint Foundation и нет папки пользователя по умолчанию файл личных папок (.pst) никогда не будет папкой SharePoint Foundation. Обычно папок SharePoint Foundation будет в узле папок SharePoint в области навигации.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -838,10 +824,8 @@ End Sub</code>
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> коллекцию, содержащую объект в коллекцию элементов Outlook в указанной папке. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Индекс для коллекции <b>элементов</b> начинается с 1 и элементы в объекте коллекции <b>элементов</b> не гарантируется в любом порядке.</para>
-          <para />
-        </remarks>
+        <remarks><para>Индекс для коллекции <b>элементов</b> начинается с 1 и элементы в объекте коллекции <b>элементов</b> не гарантируется в любом порядке.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MAPIOBJECT">
@@ -898,13 +882,10 @@ End Sub</code>
         <Parameter Name="DestinationFolder" Type="Microsoft.Office.Interop.Outlook.MAPIFolder" />
       </Parameters>
       <Docs>
-        <param name="DestinationFolder">
-          <b>Папка</b> назначения для <b>папки</b> , в который перемещается.</param>
+        <param name="DestinationFolder"><b>Папка</b> назначения для <b>папки</b> , в который перемещается.</param>
         <summary>Перемещает папку в указанную папку.</summary>
-        <remarks>
-          <para>Установка значения REG_MULTI_SZ DisableCrossAccountCopy, в HKCU\Software\Microsoft\Office\14.0\Outlook в реестре Windows действует как со стороны отключение этот метод.</para>
-          <para />
-        </remarks>
+        <remarks><para>Установка значения REG_MULTI_SZ DisableCrossAccountCopy, в HKCU\Software\Microsoft\Office\14.0\Outlook в реестре Windows действует как со стороны отключение этот метод.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -963,10 +944,8 @@ End Sub</code>
       <Docs>
         <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Родительский <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> — это объект <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> объекта collection.</para>
-          <para />
-        </remarks>
+        <remarks><para>Родительский <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> — это объект <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> объекта collection.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyAccessor">
@@ -1022,16 +1001,14 @@ End Sub</code>
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetCustomIcon">
@@ -1059,29 +1036,29 @@ End Sub</code>
       <Docs>
         <param name="Picture">Задает пользовательский значок папки.</param>
         <summary>Задает пользовательский значок, определяемый <paramref name="Picture" /> для папки.</summary>
-        <remarks>
-          <para>
-            <see cref="T:stdole.StdPicture" /> Объектом, заданным с <paramref name="Picture" /> свойство <b>типа</b> равно <b>PICTYPE_ICON</b> или <b>PICTYPE_BITMAP</b>должно быть. Значок или рисунок ресурс может иметь максимальный размер 32 x 32. Также поддерживаются значки, которые являются 16 x 16 или 24 x 24 и Microsoft Outlook может вертикальное масштабирование 16 x 16 пикселей, если Outlook работает в режиме высокой точек на дюйм (т/д). Значки других размеров вызвать <b>SetCustomIcon</b> возвращает ошибку.</para>
+        <remarks><para><see cref="T:stdole.StdPicture" /> Объектом, заданным с <paramref name="Picture" /> свойство <b>типа</b> равно <b>PICTYPE_ICON</b> или <b>PICTYPE_BITMAP</b>должно быть. Значок или рисунок ресурс может иметь максимальный размер 32 x 32. Также поддерживаются значки, которые являются 16 x 16 или 24 x 24 и Microsoft Outlook может вертикальное масштабирование 16 x 16 пикселей, если Outlook работает в режиме высокой точек на дюйм (т/д). Значки других размеров вызвать <b>SetCustomIcon</b> возвращает ошибку.</para>
           <para>Можно задать пользовательский значок для папки поиска и для всех папок, которые не представляют по умолчанию или специальную папку. При попытке задать пользовательский значок для папки, к которой относится к одной из следующих групп папок <b>SetCustomIcon</b> возвратит ошибку:</para>
           <list type="bullet">
             <item>
-              <para>папки по умолчанию (как перечисленные по <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultFolders" /> перечисление)</para>
+              <para>Значение по умолчанию папок (как перечисленные по <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultFolders" /> перечисления)</para>
             </item>
             <item>
-              <para>специальные папки (как перечисленные по <see cref="T:Microsoft.Office.Interop.Outlook.OlSpecialFolders" /> перечисление)</para>
+              <para>Специальные папки (как перечисленные по <see cref="T:Microsoft.Office.Interop.Outlook.OlSpecialFolders" /> перечисления)</para>
             </item>
             <item>
-              <para>общих папок Exchange</para>
+              <para>Общие папки Exchange</para>
             </item>
             <item>
-              <para>корневую папку из любого почтового ящика Exchange</para>
+              <para>Корневую папку из любого почтового ящика Exchange</para>
             </item>
             <item>
-              <para>скрытые папки</para>
+              <para>Скрытые папки</para>
             </item>
           </list>
-          <para>может быть вызван только <b>GetCustomIcon</b> из кода, что выполняется в процессе как Outlook. Объект <b>StdPicture</b> не допускающий через границы процессов. При попытке вызова <b>GetCustomIcon</b> из кода вне процесса, возникает исключение. Для получения дополнительных сведений см <a href="http://support.microsoft.com/kb/150034">сервера автоматизации невозможно передать указатель реализацию IPictureDisp объект изображения через границы процессов</a></para>значок
-          <para>Настраиваемые папки, который предоставляет этот метод не сохраняется после выполнения Сеанс Outlook. Надстройки таким образом необходимо задать значок настраиваемой папки, каждый раз при загрузке Outlook. </para><para>Значок настраиваемые папки не отображается в других клиентов Exchange, таких как веб-клиент Outlook, а также отображаются в Outlook при работе на устройстве Windows Mobile.</para><para /></remarks>
+          <para><b>GetCustomIcon</b> можно вызывать только из кода, что выполняется в процессе как Outlook. Объект <b>StdPicture</b> не допускающий через границы процессов. При попытке вызова <b>GetCustomIcon</b> из кода вне процесса, возникает исключение. Для получения дополнительных сведений см <a href="http://support.microsoft.com/kb/150034">сервера автоматизации невозможно передать указатель реализацию IPictureDisp объект изображения через границы процессов</a></para>
+          <para>Значок настраиваемой папки, который предоставляет этот метод не сохраняется после завершения выполнения сеанса Outlook. Надстройки таким образом необходимо задать значок настраиваемой папки, каждый раз при загрузке Outlook. </para>
+          <para>Значок настраиваемой папки не отображается в других клиентов Exchange, таких как веб-клиент Outlook, а также отображаются в Outlook при работе на устройстве Windows Mobile.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowAsOutlookAB">
@@ -1112,12 +1089,10 @@ End Sub</code>
       <Docs>
         <summary>Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, указывающее, отображается ли папка элементов контактов как список адресов в адресной книге Outlook. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Если свойство <b>ShowAsOutlookAB</b> папки с элементами контактов задано значение <b>False</b>, оно не будет доступно в раскрывающемся списке в разделе адресной книги в диалоговом окне Адресная книга.</para>
+        <remarks><para>Если свойство <b>ShowAsOutlookAB</b> папки с элементами контактов задано значение <b>False</b>, оно не будет доступно в раскрывающемся списке в разделе адресной книги в диалоговом окне "Адресная книга".</para>
           <para>
-            <b>ShowAsOutlookAB</b> не поддерживает папок в Exchange почтового ящика другого пользователя, например, папку контактов, которая совместно используется другим пользователем. Получение или задание этого свойства для таких папок не приводят к любой требуемых результатов.</para>
-          <para />
-        </remarks>
+            <b>ShowAsOutlookAB</b> не поддерживает папок в Exchange почтового ящика другого пользователя, например, папку контактов, которая совместно используется другим пользователем. Получения и установки этого свойства на такие папки не будут создавать любой требуемых результатов.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowItemCount">
@@ -1148,10 +1123,8 @@ End Sub</code>
       <Docs>
         <summary>Задает или возвращает константу в <see cref="T:Microsoft.Office.Interop.Outlook.OlShowItemCount" /> перечисление, указывающее, следует ли отображать количество непрочитанных сообщений в папке или общее число элементов в папке на левой панели навигации. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>ShowItemCount</b> не работает с общедоступными папками.</para>
-          <para />
-        </remarks>
+        <remarks><para>Свойство <b>ShowItemCount</b> не работает с общедоступными папками.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Store">
@@ -1179,10 +1152,8 @@ End Sub</code>
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объект, представляющий хранилище, которое содержит <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Данное свойство возвращает объект <b>хранилища</b> , за исключением в случая, когда <b>Папка</b> является общей папки (возвращаемые <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetSharedDefaultFolder(Microsoft.Office.Interop.Outlook.Recipient,Microsoft.Office.Interop.Outlook.OlDefaultFolders)" />). В этом случае один пользователь делегированный доступ в папку по умолчанию на другого пользователя; вызов <b>Folder.Store</b> возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
-          <para />
-        </remarks>
+        <remarks><para>Данное свойство возвращает объект <b>хранилища</b> , за исключением в случая, когда <b>Папка</b> является общей папки (возвращаемые <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetSharedDefaultFolder(Microsoft.Office.Interop.Outlook.Recipient,Microsoft.Office.Interop.Outlook.OlDefaultFolders)" />). В этом случае один пользователь делегированный доступ в папку по умолчанию на другого пользователя; вызов <b>Folder.Store</b> возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StoreID">
@@ -1393,13 +1364,11 @@ End Sub</code>
       <Docs>
         <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), указывающее состояние просмотра Web для папки.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Возвращает <b>значение True</b> для отображения веб-страницы, указанного идентификатором <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.WebViewURL" /> свойство.</para>
-          <para>Microsoft Outlook с помощью механизма визуализации версии Windows Internet Explorer, установленные на клиентском компьютере для отображения веб-страницы. Если на клиентском компьютере не установлен Internet Explorer, Outlook не будет отображаться в веб-странице.</para>
+        <remarks><para>Возвращает <b>значение True</b> для отображения веб-страницы, указанного идентификатором <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.WebViewURL" /> свойство.</para>
+          <para>Microsoft Outlook с помощью механизма визуализации версии Windows Internet Explorer, установленные на клиентском компьютере для отображения веб-страницы. Если на клиентском компьютере не установлен Internet Explorer, Outlook не будет отображаться веб-страницы.</para>
           <para>Это свойство всегда имеет <b>значение False</b> , если значение свойства <b>WebViewURL</b> пуст.</para>
-          <para>Также свойства <b>WebViewOn</b> значение <b>True</b> перед установкой <b>WebViewURL</b> будет отображаться на домашнюю страницу, указанных в свойстве <b>WebViewURL</b> .</para>
-          <para />
-        </remarks>
+          <para>Кроме того параметр <b>WebViewOn</b> свойство значение <b>True,</b> перед установкой <b>WebViewURL</b> не будет отображаться на домашнюю страницу, указанных в свойстве <b>WebViewURL</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WebViewURL">

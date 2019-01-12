@@ -1,13 +1,5 @@
 <Type Name="Attachments" FullName="Microsoft.Office.Interop.Outlook.Attachments">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2b8b26dcc7340ad097dbcab31fa6b4722b3b19e2" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640094" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Attachments : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6f34c001cfd4c3278473ca2d66f73650667d3c4b" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27898734" /></Metadata><TypeSignature Language="C#" Value="public interface Attachments : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Attachments implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Attachments" />
   <TypeSignature Language="VB.NET" Value="Public Interface Attachments&#xA;Implements IEnumerable" />
@@ -31,12 +23,10 @@
   </Attributes>
   <Docs>
     <summary>Содержит набор <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> объекты, которые представляют вложения в элемент Outlook.</summary>
-    <remarks>
-      <para>Использование <see cref="P:Microsoft.Office.Interop.Outlook.Attachments.Item(System.Object)" /> свойство для возвращения коллекции <b>вложений</b> для любого элемента Outlook (за исключением заметки).</para>
-      <para>Использования <see cref="M:Microsoft.Office.Interop.Outlook.Attachments.Add(System.Object,System.Object,System.Object,System.Object)" /> метод, чтобы добавить вложение элемента.</para>
-      <para>Чтобы обеспечить согласованность результатов, всегда сохранить элемент перед Добавление или удаление объектов в коллекции <b>вложений</b> элемента.</para>
-      <para />
-    </remarks>
+    <remarks><para>Использование <see cref="P:Microsoft.Office.Interop.Outlook.Attachments.Item(System.Object)" /> свойство для возвращения коллекции <b>вложений</b> для любого элемента Outlook (за исключением примечания).</para>
+      <para>Использование <see cref="M:Microsoft.Office.Interop.Outlook.Attachments.Add(System.Object,System.Object,System.Object,System.Object)" /> метод, чтобы добавить вложение элемента.</para>
+      <para>Чтобы обеспечить согласованность результатов, всегда сохраните элемент перед Добавление или удаление объектов в коллекции <b>вложений</b> элемента.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -69,12 +59,9 @@
         <param name="Position">Этот параметр применяется только к электронной почте сообщения в формате RTF Microsoft Outlook: это положение, где должны размещаться вложения в тексте сообщения. Значение 1 для <paramref name="Position" /> параметр указывает, что вложение должен располагаться в начале текста сообщения. Значение 'n' быстрее, чем количество символов в тело элемента электронной почты указывает, что вложение следует поместить в конце. Значение 0 делает скрытым вложение.</param>
         <param name="DisplayName">Этот параметр применяется только в том случае, если элемент электронной почты в формате RTF и <b>olByValue</b>задается тип: имя отображается в объекте <b>инспектора</b> вложения или при просмотре свойств вложения. Если элемент электронной почты в формате обычного текста или HTML, то вложение отображается в качестве имени файла <paramref name="Source" /> параметр.</param>
         <summary>Создает новое вложение в <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" /> семейства сайтов.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> Объект, который представляет новое вложение.</returns>
-        <remarks>
-          <para>При добавлении <b>вложения</b> в коллекцию <b>вложений</b> элемента, свойство <b>Type</b><b>вложения</b> всегда будет возвращать <b>olOLE</b> (6) до сохранения элемента. Чтобы обеспечить согласованность результатов, всегда сохраните элемент перед Добавление или удаление объектов в коллекции <b>вложений</b> .</para>
-          <para />
-        </remarks>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> Объект, который представляет новое вложение.</returns>
+        <remarks><para>При добавлении <b>вложения</b> в коллекцию <b>вложений</b> элемента, свойство <b>Type</b> <b>вложения</b> всегда будет возвращать <b>olOLE</b> (6) до сохранения элемента. Чтобы обеспечить согласованность результатов, всегда сохраните элемент перед Добавление или удаление объектов в коллекции <b>вложений</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -274,16 +261,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

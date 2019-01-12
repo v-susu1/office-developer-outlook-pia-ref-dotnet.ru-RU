@@ -1,13 +1,5 @@
 <Type Name="Exception" FullName="Microsoft.Office.Interop.Outlook.Exception">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9b115b7a385cbe53cefdab4d3a549f6f64635e72" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ru-RU" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20640601" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Exception" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="47943f3ce7b614b555767c32ad8d514efe3bf2b1" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27899987" /></Metadata><TypeSignature Language="C#" Value="public interface Exception" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Exception" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Exception" />
   <TypeSignature Language="VB.NET" Value="Public Interface Exception" />
@@ -27,14 +19,12 @@
   </Attributes>
   <Docs>
     <summary>Представляет сведения о один экземпляр <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объект, который является исключением из серии повторяющихся.</summary>
-    <remarks>
-      <para>В отличие от большинства других объектов Microsoft Outlook объект <b>исключения</b> — это объект только для чтения. Это означает, что не удается создать объект <b>исключения</b> , но вместо создания объекта при изменении свойства <b>AppointmentItem</b> . Например, если вы измените <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.Start" /> свойство один <b>AppointmentItem</b>, создания <b>исключений</b> в <b>AppointmentItem.RecurrencePattern.Exceptions</b>.</para>
+    <remarks><para> В отличие от большинства других объектов Microsoft Outlook объект <b>исключения</b> — это объект только для чтения. Это означает, что не удается создать объект <b>исключения</b> , но вместо создания объекта при изменении свойства <b>AppointmentItem</b> . Например, если вы измените <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.Start" /> свойство один <b>AppointmentItem</b>, создания <b>исключений</b> в <b>AppointmentItem.RecurrencePattern.Exceptions</b>.</para>
       <para>
         <b>Примечание</b>: <see cref="T:Microsoft.Office.Interop.Outlook.Exceptions" /> объект находится на <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> , не самого объекта <b>AppointmentItem</b> .</para>
-      <para>При работе с элементами повторяющихся встреч, освобождать любой предыдущий справочные материалы, перед доступ или изменить элемент и удалить эти ссылки сразу по завершении и сохранения получить новые ссылки к повторяющейся встречи изменения. Такой подход применяется к регулярное <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объекта и какие-либо <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> или <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> объекта. Для удаления ссылки в Visual Basic задано значение <b>Nothing</b>, существующий объект. В C# явно освободить память для этого объекта. </para>
-      <para>Обратите внимание, что даже после освобождения ссылки и попытаться получить ссылку на новый, если по-прежнему активная ссылка, назначенные другой надстройки или Outlook к одному из объектов выше, новая ссылка будет по-прежнему указывают на устаревших копию объект. Таким образом, важно освобождение ссылки сразу же по завершении с повторяющейся встречи.</para>
-      <para />
-    </remarks>
+      <para>При работе с элементами повторяющейся встречи следует удалить все предыдущие ссылки, получить новые ссылки на элемент повторяющейся встречи перед обращением к элементу или его изменением и удалить эти ссылки сразу после завершения работы и сохранения изменений. Такой подход применяется к регулярное <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объекта и какие-либо <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> или <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> объекта. Для удаления ссылки в Visual Basic задано значение <b>Nothing</b>, существующий объект. В C# явно освободить память для этого объекта. </para>
+      <para>Обратите внимание, что даже после высвобождения ссылки и попытки получения новой ссылки, если по-прежнему существует активная ссылка на любой из вышеупомянутых объектов, удерживаемая другой надстройкой или приложением Outlook, новая ссылка будет указывать на устаревшую копию объекта. В связи с этим важно высвобождать ссылки немедленно после завершения текущей встречи.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -90,11 +80,9 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> , представляющий исключение. Недопустимо для удаленных встреч. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>При работе с элементами повторяющихся встреч, освобождать любой предыдущий справочные материалы, перед доступ или изменить элемент и удалить эти ссылки сразу по завершении и сохранения получить новые ссылки к повторяющейся встречи изменения. Такой подход применяется к регулярное <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объекта и какие-либо <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> или <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> объекта. Для удаления ссылки в Visual Basic задано значение <b>Nothing</b>, существующий объект. В C# явно освободить память для этого объекта. </para>
-          <para>Обратите внимание, что даже после освобождения ссылки и попытаться получить ссылку на новый, если по-прежнему активная ссылка, назначенные другой надстройки или Outlook к одному из объектов выше, новая ссылка будет по-прежнему указывать на устаревшую копию объекта . Таким образом, важно освобождение ссылки сразу же по завершении с повторяющейся встречи.</para>
-          <para />
-        </remarks>
+        <remarks><para>При работе с элементами повторяющейся встречи следует удалить все предыдущие ссылки, получить новые ссылки на элемент повторяющейся встречи перед обращением к элементу или его изменением и удалить эти ссылки сразу после завершения работы и сохранения изменений. Такой подход применяется к регулярное <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объекта и какие-либо <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> или <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> объекта. Для удаления ссылки в Visual Basic задано значение <b>Nothing</b>, существующий объект. В C# явно освободить память для этого объекта. </para>
+          <para>Обратите внимание, что даже после высвобождения ссылки и попытки получения новой ссылки, если по-прежнему существует активная ссылка на любой из вышеупомянутых объектов, удерживаемая другой надстройкой или приложением Outlook, новая ссылка будет указывать на устаревшую копию объекта. В связи с этим важно высвобождать ссылки немедленно после завершения текущей встречи.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -265,16 +253,14 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
