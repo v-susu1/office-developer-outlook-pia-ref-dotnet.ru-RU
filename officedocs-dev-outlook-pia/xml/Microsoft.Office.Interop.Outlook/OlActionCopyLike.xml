@@ -12,8 +12,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Указывает, как элемент будет копировать свойства.</summary>
-    <remarks><para>Используемые <see cref="P:Microsoft.Office.Interop.Outlook.Action.CopyLike" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.Action" /> для указания того, как элемент свойства копируются в новый элемент, который создается при выполнении <b>действия</b> .</para>
+    <summary>Указывает, как будут копироваться свойства элементов.</summary>
+    <remarks><para>Используется <see cref="P:Microsoft.Office.Interop.Outlook.Action.CopyLike" /> свойством, <see cref="T:Microsoft.Office.Interop.Outlook.Action" /> чтобы указать, как свойства элемента будут скопированы в новый элемент, создаваемый при выполнении <b>действия</b> .</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Таким образом, что новый элемент является прямого исходного элемента устанавливаются свойства нового элемента.  При создании нового <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />, значение свойства <b> <b>Кому</b> и</b> в нового элемента будет пустым и свойство <b>Subject</b> нового элемента будет исходного <b>тему</b> с префиксом таких как «встроенного по:» (просмотреть <see cref="P:Microsoft.Office.Interop.Outlook.Action.Prefix" /> свойство) добавлена.    Вложения исходного элемента копируются в новый элемент.</summary>
+        <summary>Свойства нового элемента задаются таким, что новый элемент передается вперед от исходного элемента.  При <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />создании нового значения свойств <b>to</b> и <b>CC</b> в новом элементе будут пустыми, а свойство <b>subject</b> нового элемента будет исходной <b>темой</b> с префиксом, таким как "FW:" (см <see cref="P:Microsoft.Office.Interop.Outlook.Action.Prefix" /> . свойство).    Вложения исходного элемента будут скопированы в новый элемент.</summary>
       </Docs>
     </Member>
     <Member MemberName="olReply">
@@ -52,7 +52,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Таким образом, что новый элемент — это ответ на исходный элемент устанавливаются свойства нового элемента.    При создании нового <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />, значение исходного поля <b>для</b> предстоит скопировать в свойство <b>SenderEmailAddress</b> новый элемент, поле «копия» будет пустым и поле <b>темы</b> нового элемента будет исходного <b>темы</b> префикс, такие как «RE:» (просмотреть <see cref="P:Microsoft.Office.Interop.Outlook.Action.Prefix" /> свойство) добавлена.</summary>
+        <summary>Свойства нового элемента задаются так, что новый элемент будет отвечать на исходный элемент.    При создании <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />нового значение поля <b>"исходное значение</b> " будет скопировано в свойство <b>SenderEmailAddress</b> нового элемента, поле "копия" будет пустым, а поле " <b>Тема</b> " нового элемента будет исходной <b>темой</b> с префиксом, таким как "Re:" (см <see cref="P:Microsoft.Office.Interop.Outlook.Action.Prefix" /> . свойство).</summary>
       </Docs>
     </Member>
     <Member MemberName="olReplyAll">
@@ -71,7 +71,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Таким образом, что новый элемент — это ответ на всех отправителей исходного элемента устанавливаются свойства нового элемента.  При создании нового <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />, значение свойства <b>SenderEmailAddress</b> и <b>«копия»</b> , копируются в свойства <b>для</b> нового элемента и свойство <b>Subject</b> нового элемента будет тему исходного элемента с помощью префикса Например, «RE:» (просмотреть <see cref="P:Microsoft.Office.Interop.Outlook.Action.Prefix" /> свойство) добавлена.</summary>
+        <summary>Свойства нового элемента задаются так, что новый элемент будет отвечать всем отправителям исходного элемента.  При <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />создании нового значения свойств <b>SenderEmailAddress</b> и <b>CC</b> будут скопированы в свойство <b>to</b> нового элемента, а свойство <b>subject</b> нового элемента будет ТЕМОЙ исходного элемента с префиксом, таким как "Re:" (см <see cref="P:Microsoft.Office.Interop.Outlook.Action.Prefix" /> . свойство).</summary>
       </Docs>
     </Member>
     <Member MemberName="olReplyFolder">
@@ -90,7 +90,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>При создании нового <see cref="T:Microsoft.Office.Interop.Outlook.PostItem" /> в зависимости от старой свойство Post для нового элемента будет содержать адрес активной папкой, свойство <b>ConversationTopic</b> нового элемента и <b>копируются свойство <b>Subject</b> исходного элемента. Тема</b> свойства нового элемента будет пустым.</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Outlook.PostItem" /> При создании нового элемента, созданного на основе старого, свойство Post to нового элемента будет содержать адрес активной папки, свойство <b>subject</b> исходного элемента будет скопировано в свойство <b>ConversationTopic</b> нового элемента, а свойство <b>subject</b> нового элемента будет пустым.</summary>
       </Docs>
     </Member>
     <Member MemberName="olRespond">
@@ -109,7 +109,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Используется только для голосования действиях кнопок.</summary>
+        <summary>Используется исключительно для действий по кнопке "голосование".</summary>
       </Docs>
     </Member>
   </Members>

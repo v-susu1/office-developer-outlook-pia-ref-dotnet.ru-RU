@@ -22,10 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Содержит набор <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> объекты, которые представляют вложения в элемент Outlook.</summary>
-    <remarks><para>Использование <see cref="P:Microsoft.Office.Interop.Outlook.Attachments.Item(System.Object)" /> свойство для возвращения коллекции <b>вложений</b> для любого элемента Outlook (за исключением примечания).</para>
-      <para>Использование <see cref="M:Microsoft.Office.Interop.Outlook.Attachments.Add(System.Object,System.Object,System.Object,System.Object)" /> метод, чтобы добавить вложение элемента.</para>
-      <para>Чтобы обеспечить согласованность результатов, всегда сохраните элемент перед Добавление или удаление объектов в коллекции <b>вложений</b> элемента.</para>
+    <summary>Содержит набор <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> объектов, представляющих вложения в элементе Outlook.</summary>
+    <remarks><para>Используйте <see cref="P:Microsoft.Office.Interop.Outlook.Attachments.Item(System.Object)" /> свойство, чтобы возвратить коллекцию <b>вложений</b> для любого элемента Outlook (кроме заметок).</para>
+      <para>Используйте <see cref="M:Microsoft.Office.Interop.Outlook.Attachments.Add(System.Object,System.Object,System.Object,System.Object)" /> метод, чтобы добавить вложение в элемент.</para>
+      <para>Чтобы обеспечить согласованность результатов, всегда сохраняйте элемент перед добавлением или удалением объектов в коллекции <b>вложений</b> элемента.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -54,13 +54,13 @@
         <Parameter Name="DisplayName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">Источник вложения. Это может быть (представленное полный путь с именем файла) файла или элемента Outlook, который представляет вложение.</param>
-        <param name="Type">Тип вложения. Может иметь одно из <see cref="T:Microsoft.Office.Interop.Outlook.OlAttachmentType" /> константы.</param>
-        <param name="Position">Этот параметр применяется только к электронной почте сообщения в формате RTF Microsoft Outlook: это положение, где должны размещаться вложения в тексте сообщения. Значение 1 для <paramref name="Position" /> параметр указывает, что вложение должен располагаться в начале текста сообщения. Значение 'n' быстрее, чем количество символов в тело элемента электронной почты указывает, что вложение следует поместить в конце. Значение 0 делает скрытым вложение.</param>
-        <param name="DisplayName">Этот параметр применяется только в том случае, если элемент электронной почты в формате RTF и <b>olByValue</b>задается тип: имя отображается в объекте <b>инспектора</b> вложения или при просмотре свойств вложения. Если элемент электронной почты в формате обычного текста или HTML, то вложение отображается в качестве имени файла <paramref name="Source" /> параметр.</param>
-        <summary>Создает новое вложение в <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" /> семейства сайтов.</summary>
-        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> Объект, который представляет новое вложение.</returns>
-        <remarks><para>При добавлении <b>вложения</b> в коллекцию <b>вложений</b> элемента, свойство <b>Type</b> <b>вложения</b> всегда будет возвращать <b>olOLE</b> (6) до сохранения элемента. Чтобы обеспечить согласованность результатов, всегда сохраните элемент перед Добавление или удаление объектов в коллекции <b>вложений</b> .</para>
+        <param name="Source">Источник вложения. Это может быть файл (представленный в виде полного пути файловой системы с именем файла) или элемент Outlook, который составляет вложение.</param>
+        <param name="Type">Тип вложения. Может быть одной из <see cref="T:Microsoft.Office.Interop.Outlook.OlAttachmentType" /> констант.</param>
+        <param name="Position">Этот параметр применяется только к сообщениям электронной почты в формате RTF Microsoft Outlook: это позиция, в которой вложение должно быть размещено в тексте сообщения. Значение 1 для <paramref name="Position" /> параметра указывает на то, что вложение должно быть размещено в начале текста сообщения. Значение "n", превышающее число символов в тексте элемента электронной почты, указывает, что вложение следует поместить в конец. Значение 0 делает вложение скрытым.</param>
+        <param name="DisplayName">Этот параметр применяется только в том случае, если для почтового элемента в формате RTF задано значение <b>olByValue</b>: имя отображается в объекте <b>инспектора</b> для вложения или при просмотре свойств вложения. Если почтовый элемент находится в формате обычного текста или в формате HTML, то вложение отображается с использованием имени файла в <paramref name="Source" /> параметре.</param>
+        <summary>Создает новое вложение в <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" /> коллекции.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> Объект, представляющий новое вложение.</returns>
+        <remarks><para>Когда <b>вложение</b> добавляется в коллекцию <b>вложений</b> элемента, свойство <b>Type</b> объекта <b>вложения</b> всегда возвращает <b>ололе</b> (6), пока не будет сохранен элемент. Чтобы обеспечить согласованность результатов, всегда сохраняйте элемент перед добавлением или удалением объектов в коллекции <b>вложений</b> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -87,7 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -115,7 +115,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -143,7 +143,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее число объектов в указанном семействе сайтов. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее количество объектов в указанной коллекции. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -174,9 +174,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Либо индекс объекта, или значение, используемое для сопоставления свойства по умолчанию объекта в коллекции.</param>
+        <param name="Index">Номер индекса объекта или значение, используемое для сравнения со свойством по умолчанию объекта в коллекции.</param>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> объект из коллекции.</summary>
-        <value>Объект <b>вложения</b> , который представляет указанный объект.</value>
+        <value>Объект <b>вложения</b> , представляющий указанный объект.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,7 +203,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -231,7 +231,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Значение индекса на основе 1 объекта в коллекции.</param>
+        <param name="Index">Значение индекса объекта в коллекции (от 1).</param>
         <summary>Удаляет объект из коллекции.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -259,9 +259,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>

@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Row" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Row" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение (для Outlook) для <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение (Outlook) для <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,10 +73,10 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Значение индекса 1, может быть либо <b>целое число</b> (<b>int</b> в C#) значение, представляющее индекс столбца для <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> семейства сайтов или <b>String</b> (<b>строка</b> в C#), представляющая <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> <b>столбца</b>.</param>
-        <summary>Получает <b>String</b> (<b>строка</b> в C#) представляет значение, преобразованное из двоичное значение для родительского <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> в столбце, заданное свойством <paramref name="Index" />.</summary>
-        <returns>Шестнадцатеричное значение <b>String</b> (<b>строка</b> в C#), которую можно преобразовать в PT_BINARY значение для родительской <b>строки</b> в столбце, заданное свойством <paramref name="Index" />. Возвращает ошибку, «невозможно преобразовать столбец, заданный по его индексу строки» Если значение, заданное <paramref name="Index" /> не является PT_BINARY.</returns>
-        <remarks><para>Используйте вспомогательные функции <b>Row.BinaryToString</b> <see cref="M:Microsoft.Office.Interop.Outlook._Row.LocalTimeToUTC(System.Object)" />, и <see cref="M:Microsoft.Office.Interop.Outlook._Row.UTCToLocalTime(System.Object)" /> для облегчения преобразования типов значений столбцов в конкретной строке. Для получения дополнительных сведений о представление значение свойства в <see cref="T:Microsoft.Office.Interop.Outlook.Table" />, видеть <a href="http://go.microsoft.com/fwlink/?LinkId=87858">Факторы влияния на свойство представление значений в таблице и классов представления</a></para>
+        <param name="Index">Значение индекса (от 1), которое может быть <b>целым числом</b> (<b>int</b> в C#), представляющим индекс столбца для <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> коллекции, или <b>строка</b> (<b>строка</b> в C#), <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> представляющая <b>столбец</b>.</param>
+        <summary>Получает <b>строку</b> (<b>строку</b> в C#), представляющую значение, которое было преобразовано из двоичного значения родительского объекта <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> в столбец, заданный параметром. <paramref name="Index" /></summary>
+        <returns>Значение шестнадцатеричной <b>строки</b> (<b>String</b> в C#), которое было преобразовано из значения PT_BINARY для родительской <b>строки</b> в столбце, заданном <paramref name="Index" />параметром. Возвращает сообщение об ошибке "не удается преобразовать столбец, указанный по индексу, в строку", <paramref name="Index" /> если значение, заданное параметром, не PT_BINARY.</returns>
+        <remarks><para>Используйте вспомогательные функции <b>Row. бинаритостринг</b>, <see cref="M:Microsoft.Office.Interop.Outlook._Row.LocalTimeToUTC(System.Object)" />and <see cref="M:Microsoft.Office.Interop.Outlook._Row.UTCToLocalTime(System.Object)" /> для упрощения преобразования значений столбцов в определенную строку. Для получения дополнительных сведений о представлении значения свойства в <see cref="T:Microsoft.Office.Interop.Outlook.Table" />разделе <a href="http://go.microsoft.com/fwlink/?LinkId=87858">факторы, влияющие на представление значений свойств в классах Table и View</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -103,7 +103,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает константу в <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> перечисление, указывающее, класс <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает константу в <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> перечислении, указывающую класс <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,12 +129,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Получает одномерный массив, содержащий значения для всех столбцов в <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> в родительском <see cref="T:Microsoft.Office.Interop.Outlook.Table" />.</summary>
-        <returns><b>Объект</b> , который представляет массив значений для всех столбцов в эту <b>строку</b> в <b>таблице</b>.</returns>
-        <remarks><para>
-            <b>GetValues</b> — это вспомогательный метод, который упрощает получение значения всех столбцов в <b>строке</b> в одном вызове.</para>
-          <para>Так как массив с отсчетом от нуля, длина массива — число столбцов в <b>строке</b> минус 1.</para>
-          <para>Значения, возвращаемые в массиве являются одного типа значений в родительской <b>таблицы</b>. Это означает, что свойства двоичных файлов в <b>таблице</b> возвращаются в виде массива байтов. Для свойства даты и времени если <see cref="T:Microsoft.Office.Interop.Outlook.Column" /> столбец по умолчанию, или если оно было добавлено с помощью имени явных встроенных свойств, его значение в <b>таблице</b> и в массиве, выражаются в локальном времени. Если <b>столбец</b> был добавлен к <b>таблице</b> , с помощью ссылку на пространство имен, его значение в таблице и в массиве выражаются в формате UTC. Дополнительные сведения о связывании свойства пространством имен в разделе <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Создание ссылок на свойства пространством имен</a></para>
+        <summary>Получает одномерный массив со значениями для всех столбцов <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> в родительском объекте. <see cref="T:Microsoft.Office.Interop.Outlook.Table" /></summary>
+        <returns><b>Объект</b> , представляющий массив значений для всех столбцов в этой <b>строке</b> <b>таблицы</b>.</returns>
+        <remarks><para>Методические 
+            <b>значения</b> — это вспомогательный метод, который облегчает извлечение всех значений столбца в <b>строке</b> в отдельном вызове.</para>
+          <para>Так как массив отсчитывается от нуля, длина массива равна количеству столбцов в <b>строке</b> минус единица.</para>
+          <para>Значения, возвращаемые в массиве, имеют тот же тип, что и значения в родительской <b>таблице</b>. Это означает, что двоичные свойства в <b>таблице</b> возвращаются в виде массивов байтов. Для свойств даты и времени, если a <see cref="T:Microsoft.Office.Interop.Outlook.Column" /> — это столбец по умолчанию или он был добавлен с помощью явного имени встроенного свойства, то его значение в <b>таблице</b> и в массиве выражается в локальном времени. Если <b>столбец</b> был добавлен в <b>таблицу</b> с помощью ссылки на пространство имен, то его значение в таблице и в массиве задается в формате всемирного координированного времени (UTC). Дополнительные сведения о ссылках на свойства по пространству имен приведены в разделе <a href="http://go.microsoft.com/fwlink/?LinkId=87860">ссылки на свойства по пространству имен</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -164,10 +164,10 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Значение индекса 1, может быть либо <b>целое число</b> (<b>int</b> в C#) значение, представляющее индекс столбца для <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> семейства сайтов или <b>String</b> (<b>строка</b> в C#), представляющая <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> из <see cref="T:Microsoft.Office.Interop.Outlook.Column" />.</param>
-        <summary>Получает <b>объект</b> , представляющий значение для <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> объект в столбце, заданное свойством <paramref name="Index" />.</summary>
-        <value><b>Объект</b> , представляющий значение свойства (как указано в <paramref name="Index" />) элемента (в соответствии с родительской <b>строки</b>).</value>
-        <remarks><para>Если <b>столбец</b> был добавлен к <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> используется имя свойства, создание ссылок на пространства имен, должен ссылаться <b>столбца</b> в свойстве <b>Row.Item</b> (<b>в этом</b> в C#) с помощью одной ссылки на пространство имен. Если вы используете ссылку на явные встроенное имя в <b>Row.Item</b>, произойдет ошибка.</para>
+        <param name="Index">Значение индекса, которое может быть равно 1, которое может <b>быть целым числом</b> (<b>int</b> в C#), представляющим индекс <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> столбца для коллекции, или <b>String</b> (<b>строка</b> в C#) <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> , представляющая объект <see cref="T:Microsoft.Office.Interop.Outlook.Column" />.</param>
+        <summary>Получает <b>объект</b> , представляющий значение для <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> объекта в столбце, заданном параметром. <paramref name="Index" /></summary>
+        <value><b>Объект</b> , представляющий значение свойства (как указано <paramref name="Index" />) элемента (как указано в родительской <b>строке</b>).</value>
+        <remarks><para>Если <b>столбец</b> был <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> добавлен в имя свойства, ссылающегося на пространство имен, необходимо добавить ссылку на <b>столбец</b> в свойстве <b>Row. Item</b> (<b>this</b> в C#) на ту же ссылку на пространство имен. Если вы используете явную встроенную ссылку на имя в <b>строке. Item</b>, возникнет ошибка.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -194,11 +194,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Значение индекса 1, может быть либо <b>целое число</b> (<b>int</b> в C#) значение, представляющее индекс столбца для <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> семейства сайтов или <b>String</b> (<b>строка</b> в C#), представляющая <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> из <see cref="T:Microsoft.Office.Interop.Outlook.Column" />.</param>
-        <summary>Получает значение <b>даты и времени</b> в <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> определяется <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> объекта в <paramref name="Index" />, преобразования местного времени в формате UTC.</summary>
-        <returns>Значение типа Date, преобразованное из представления в локальном времени в формате UTC. Если возвращается сообщение об ошибке <paramref name="Index" /> : недопустимый или значение строки обозначается <paramref name="Index" /> не является значением даты.</returns>
-        <remarks><para>Используйте вспомогательные функции <see cref="M:Microsoft.Office.Interop.Outlook._Row.BinaryToString(System.Object)" />, <b>Row.LocalTimeToUTC</b>и <see cref="M:Microsoft.Office.Interop.Outlook._Row.UTCToLocalTime(System.Object)" /> для облегчения преобразования типов значений столбцов в конкретной строке.</para>
-          <para>Сведения о представление значение свойства в <b>таблице</b> <a href="http://go.microsoft.com/fwlink/?LinkId=87858">Факторы влияния на свойство представление значений в таблице и классов представления</a><b>таблицы</b> фильтры см <a href="http://go.microsoft.com/fwlink/?LinkId=87929">Фильтрации элементов с помощью сравнения даты и времени</a></para>
+        <param name="Index">Значение индекса, которое может быть равно 1, которое может <b>быть целым числом</b> (<b>int</b> в C#), представляющим индекс <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> столбца для коллекции, или <b>String</b> (<b>строка</b> в C#) <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> , представляющая объект <see cref="T:Microsoft.Office.Interop.Outlook.Column" />.</param>
+        <summary>Получает значение <b>DateTime</b> в <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> указанном <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> объекте <paramref name="Index" />, которое было ПРЕОБРАЗОВАНО из местного времени в время в формате UTC.</summary>
+        <returns>Значение даты, преобразованное из представления в местное время в UTC. Ошибка возвращается, если <paramref name="Index" /> значение не является допустимым, или значение строки <paramref name="Index" /> , указанное в параметре, не является значением даты.</returns>
+        <remarks><para>Использование вспомогательных функций <see cref="M:Microsoft.Office.Interop.Outlook._Row.BinaryToString(System.Object)" />, <b>строк. LocalTimeToUTC</b>и <see cref="M:Microsoft.Office.Interop.Outlook._Row.UTCToLocalTime(System.Object)" /> упрощение преобразования значений столбцов в определенную строку.</para>
+          <para>Сведения о представлении значения свойства в <b>таблице</b>приведены <a href="http://go.microsoft.com/fwlink/?LinkId=87858">в разделе факторы, влияющие на представление значений свойств в таблицах и представлениях</a><b>таблицы</b> , а также фильтры таблицы, в статье <a href="http://go.microsoft.com/fwlink/?LinkId=87929">Фильтрация элементов с использованием сравнения даты и времени</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -253,9 +253,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -288,11 +288,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Значение индекса 1, может быть либо <b>целое число</b> (<b>int</b> в C#) значение, представляющее индекс столбца для <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> семейства сайтов или <b>String</b> (<b>строка</b> в C#), представляющая <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> из <see cref="T:Microsoft.Office.Interop.Outlook.Column" />.</param>
-        <summary>Получает значение даты и времени в <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> определяется <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> объекта в <paramref name="Index" />, которую можно преобразовать в формате UTC в местное время.</summary>
-        <returns>Значение типа Date, преобразованное из представления в формате UTC в местное время. Если возвращается сообщение об ошибке <paramref name="Index" /> : недопустимый или значение строки обозначается <paramref name="Index" /> не является значением даты.</returns>
-        <remarks><para>Используйте вспомогательные функции <see cref="M:Microsoft.Office.Interop.Outlook._Row.BinaryToString(System.Object)" />, <see cref="M:Microsoft.Office.Interop.Outlook._Row.LocalTimeToUTC(System.Object)" />и <b>Row.UTCToLocalTime</b> для облегчения преобразования типов значений столбцов в конкретной строке. </para>
-          <para>Сведения о представление значение свойства в <b>таблице</b> <a href="http://go.microsoft.com/fwlink/?LinkId=87858">Факторы влияния на свойство представление значений в таблице и классов представления</a><b>таблицы</b> фильтры см <a href="http://go.microsoft.com/fwlink/?LinkId=87929">Фильтрации элементов с помощью сравнения даты и времени</a></para>
+        <param name="Index">Значение индекса, которое может быть равно 1, которое может <b>быть целым числом</b> (<b>int</b> в C#), представляющим индекс <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> столбца для коллекции, или <b>String</b> (<b>строка</b> в C#) <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> , представляющая объект <see cref="T:Microsoft.Office.Interop.Outlook.Column" />.</param>
+        <summary>Получает значение DateTime в <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> указанном <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> объекте <paramref name="Index" />, которое было преобразовано из времени в формате UTC в местное время.</summary>
+        <returns>Значение даты, преобразованное из представления в формате UTC в местное время. Ошибка возвращается, если <paramref name="Index" /> значение не является допустимым, или значение строки <paramref name="Index" /> , указанное в параметре, не является значением даты.</returns>
+        <remarks><para>Используйте вспомогательные функции <see cref="M:Microsoft.Office.Interop.Outlook._Row.BinaryToString(System.Object)" />, <see cref="M:Microsoft.Office.Interop.Outlook._Row.LocalTimeToUTC(System.Object)" />и <b>Row. утктолокалтиме</b> для упрощения преобразования значений столбцов в определенную строку. </para>
+          <para>Сведения о представлении значения свойства в <b>таблице</b>приведены <a href="http://go.microsoft.com/fwlink/?LinkId=87858">в разделе факторы, влияющие на представление значений свойств в таблицах и представлениях</a><b>таблицы</b> , а также фильтры таблицы, в статье <a href="http://go.microsoft.com/fwlink/?LinkId=87929">Фильтрация элементов с использованием сравнения даты и времени</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.UserDefinedProperties" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.UserDefinedProperties" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -51,13 +51,13 @@
         <Parameter Name="Formula" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">Имя нового свойства пользовательских.</param>
-        <param name="Type">Тип нового пользовательские свойства.</param>
-        <param name="DisplayFormat">Формат отображения новые пользовательские свойства. Этот параметр может быть присвоено значение из одного из несколько разных перечислений, зависят от типа свойство, указанное в <paramref name="Type" /> параметр. Для получения дополнительных сведений о том, как <paramref name="Type" /> и <paramref name="DisplayFormat" /> взаимодействия, см <see cref="P:Microsoft.Office.Interop.Outlook._UserDefinedProperty.DisplayFormat" />.</param>
-        <param name="Formula">Формула для расчета значения для нового свойства пользовательских. Этот параметр игнорируется, если <paramref name="Type" /> параметру присвоено значение любого значения, кроме <b>olCombination</b> или <b>olFormula</b>.</param>
-        <summary>Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.UserDefinedProperty" /> объекта и добавляет его в коллекцию.</summary>
-        <returns>Объект <b>UserDefinedProperty</b> , который представляет новое свойство пользовательских.</returns>
-        <remarks><para>Можно создать свойство типа, определяемое <see cref="T:Microsoft.Office.Interop.Outlook.OlUserPropertyType" /> перечисление, за исключением следующих типов: <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olEnumeration" />, <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olOutlookInternal" />, и <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olSmartFrom" />.</para>
+        <param name="Name">Имя нового свойства, определяемого пользователем.</param>
+        <param name="Type">Тип нового свойства, определяемого пользователем.</param>
+        <param name="DisplayFormat">Формат отображения нового пользовательского свойства. Этому параметру может быть присвоено значение из одного или нескольких различных перечислений, определяемых типом свойства, указанным <paramref name="Type" /> в параметре. Дополнительные сведения о том, <paramref name="Type" /> как <paramref name="DisplayFormat" /> и как работать <see cref="P:Microsoft.Office.Interop.Outlook._UserDefinedProperty.DisplayFormat" />, см.</param>
+        <param name="Formula">Формула, используемая для вычисления значений для нового свойства, определяемого пользователем. Этот параметр игнорируется, если <paramref name="Type" /> для параметра задано любое значение, отличное от <b>олкомбинатион</b> или <b>олформула</b>.</param>
+        <summary>Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.UserDefinedProperty" /> объект и добавляет его в коллекцию.</summary>
+        <returns>Объект <b>UserDefinedProperty</b> , представляющий новое свойство, определенное пользователем.</returns>
+        <remarks><para>Можно создать свойство типа, <see cref="T:Microsoft.Office.Interop.Outlook.OlUserPropertyType" /> определяемое перечислением, за исключением следующих типов: <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olEnumeration" />, <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olOutlookInternal" />и. <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olSmartFrom" /></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -84,7 +84,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -112,7 +112,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -140,7 +140,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее число объектов в указанном семействе сайтов. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), которое указывает количество объектов в указанной коллекции. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -168,9 +168,9 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name"><see cref="P:Microsoft.Office.Interop.Outlook._UserDefinedProperty.Name" /> Значение свойства объекта <b>UserDefinedProperty</b> , чтобы найти в коллекции.</param>
-        <summary>Найдите <see cref="T:Microsoft.Office.Interop.Outlook.UserDefinedProperty" /> содержащихся в коллекции.</summary>
-        <returns>Объект <b>UserDefinedProperty</b> , представляющий объект расположены в случае успешного выполнения; в противном случае — <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</returns>
+        <param name="Name">Значение <see cref="P:Microsoft.Office.Interop.Outlook._UserDefinedProperty.Name" /> свойства объекта <b>UserDefinedProperty</b> , которое требуется найти в коллекции.</param>
+        <summary>Расположение элемента <see cref="T:Microsoft.Office.Interop.Outlook.UserDefinedProperty" /> , содержащегося в коллекции.</summary>
+        <returns>Объект <b>UserDefinedProperty</b> , представляющий найденный объект, если он успешно выполнен; в противном случае — <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,9 +200,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index"><b>Целое число</b> (<b>int</b> в C#) значение, представляющее номер индекса на основе 1 объекта в коллекции или значение <b>String</b> (<b>строка</b> в C#), который представляет <see cref="P:Microsoft.Office.Interop.Outlook._UserDefinedProperty.Name" /> значение свойства объекта в коллекции.</param>
+        <param name="Index">Значение <b>типа Integer</b> (<b>int</b> в C#), представляющее номер индекса, основанного на 1, объекта в коллекции или значение <b>типа String</b> (<b>строка</b> в C#), представляющее значение <see cref="P:Microsoft.Office.Interop.Outlook._UserDefinedProperty.Name" /> свойства объекта в коллекции.</param>
         <summary>Возвращает <b>объект</b> из коллекции.</summary>
-        <value>A <see cref="T:Microsoft.Office.Interop.Outlook.UserDefinedProperty" /> объект, который представляет указанный объект.</value>
+        <value><see cref="T:Microsoft.Office.Interop.Outlook.UserDefinedProperty" /> Объект, представляющий указанный объект.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,7 +229,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -255,7 +255,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Обновляет содержимое коллекции из хранилища, извлечение любые изменения, выполненные в удаленных обозреватели.</summary>
+        <summary>Обновляет содержимое коллекции из хранилища, извлекая все изменения, выполненные в удаленных проводниках.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,7 +282,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Значение индекса на основе 1 объекта в коллекции.</param>
+        <param name="Index">Значение индекса объекта в коллекции (от 1).</param>
         <summary>Удаляет объект из коллекции.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -310,9 +310,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>

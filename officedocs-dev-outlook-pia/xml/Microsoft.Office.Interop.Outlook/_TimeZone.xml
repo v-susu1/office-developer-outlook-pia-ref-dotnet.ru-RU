@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.TimeZone" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.TimeZone" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,12 +73,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, которое представляет разницу в минутах между local time в данном часовом поясе и по Гринвичу (UTC). Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), представляющее разницу в минутах между местным временем в этом часовом поясе и временем в формате UTC. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это значение сохраняется как часть значения TZI для этого часового пояса в реестре Windows. Значение TZI сопоставляется с Windows <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
-          <para>
-            <b>Смещение</b> учитывает смещения времени для перехода на летнее время или стандартное время в часовом поясе. С учетом смещения перехода на летнее время, используйте <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.DaylightBias" />. В общем случае при локальный часовой пояс использует перехода на летнее время, время в формате UTC производится в результате добавления <b>смещения</b> и <b>DaylightBias</b> местного времени. С учетом смещения (зима), используйте <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.StandardBias" />. В общем случае при локальный часовой пояс использует стандартное время, время в формате UTC производится в результате добавления <b>смещения</b> и <b>StandardBias</b> местного времени. </para>
-          <para>К примеру в состоянии осваивает перехода на летнее время в зоне Тихоокеанское время, <b>смещение</b> — 480 минут и <b>DaylightBias</b> является-60 минут. Чтобы определить время в формате UTC 11 июня 2: 00. PST-файлов, добавьте <b>Bias</b> часов (480/60) и <b>DaylightBias</b> -(60/60) часов местного времени 11 июня 2: 00. Время в формате UTC — 11 июня, 9: 00</para>
+        <remarks><para>Это значение хранится как часть значения для ТЗИ для этого часового пояса в реестре Windows. Значение ТЗИ сопоставлено с Windows <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
+          <para>Смещение 
+            <b>не учитывает</b> время на летнее время или стандартное время в часовом поясе. Чтобы учитывать любое смещение летнего времени, используйте <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.DaylightBias" />. Как правило, когда местный часовой пояс принимает летнее время, время в формате UTC — это результат добавления <b>смещения</b> и <b>DaylightBias</b> в местное время. Чтобы учитывать любое стандартное смещение времени, используйте <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.StandardBias" />. Как правило, когда местный часовой пояс принимает стандартное время, время в формате UTC — это результат добавления <b>смещения</b> и <b>стандардбиас</b> в местное время. </para>
+          <para>Например, при переходе на летнее время в тихоокеанском часовом поясе значение <b>смещения</b> составляет 480 минут, а <b>DaylightBias</b> — 60 минут. Чтобы определить время в формате UTC для 11 июня, 2 утра PST, добавить <b>сдвиг</b> (480/60) часов и <b>DaylightBias</b> (60/60) часов на местное время 11 июня 2 часа утра. Время в формате UTC — 11 июня 9 июня.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -105,7 +105,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, которая представляет класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, представляющую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -133,10 +133,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, представляющее смещение времени в минутах из <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.Bias" /> для учетной записи для перехода на летнее время в данном часовом поясе. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), представляющее смещение времени в минутах со значения <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.Bias" /> летнего времени в данном часовом поясе. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это значение сохраняется как часть значения TZI для этого часового пояса в реестре Windows. Значение TZI сопоставляется с Windows <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
-          <para>При использовании время в формате UTC и местного времени часовой пояс времени UTC производится в результате добавления <b>смещения</b> и <b>DaylightBias</b> местного времени. К примеру в состоянии осваивает перехода на летнее время в зоне Тихоокеанское время, <b>смещение</b> — 480 минут и <b>DaylightBias</b> является-60 минут. Чтобы определить время в формате UTC 11 июня 2: 00. PST-файлов, добавьте <b>Bias</b> часов (480/60) и <b>DaylightBias</b> -(60/60) часов местного времени 11 июня 2: 00. Время в формате UTC — 11 июня, 9: 00</para>
+        <remarks><para>Это значение хранится как часть значения для ТЗИ для этого часового пояса в реестре Windows. Значение ТЗИ сопоставлено с Windows <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
+          <para>В связи с временем в формате UTC и местным временем часового пояса время в формате UTC — это результат добавления <b>смещения</b> и <b>DaylightBias</b> в местное время. Например, при переходе на летнее время в тихоокеанском часовом поясе значение <b>смещения</b> составляет 480 минут, а <b>DaylightBias</b> — 60 минут. Чтобы определить время в формате UTC для 11 июня, 2 утра PST, добавить <b>сдвиг</b> (480/60) часов и <b>DaylightBias</b> (60/60) часов на местное время 11 июня 2 часа утра. Время в формате UTC — 11 июня 9 июня.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -163,9 +163,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>даты и времени</b> , представляющий дату и время в данном часовом поясе при изменении времени для перехода на летнее время в текущем году. Только для чтения.</summary>
+        <summary>Возвращает значение <b>DateTime</b> , которое представляет дату и время в этом часовом поясе при изменении времени до летнего времени в текущем году. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это значение сохраняется как часть TZI значения для часового пояса в реестре Windows. Значение TZI сопоставляется с Windows <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
+        <remarks><para>Это значение хранится как часть значения ТЗИ для часового пояса в реестре Windows. Значение ТЗИ сопоставлено с Windows <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -192,9 +192,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), который определяет часовой пояс летнего времени. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), которая определяет часовой пояс в летнем времени. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство сохраняется как значение ленточного для часового пояса в реестре.</para>
+        <remarks><para>Это свойство хранится в виде значения DLT для часового пояса в реестре.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -221,9 +221,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), который уникальным образом определяет часовой пояс. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), уникально определяющую часовой пояс. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para><b>Идентификатор</b> часового пояса аналогична глобально для этого часового пояса.  Это имя раздела реестра Windows, который содержит данные часового пояса. В отличие от <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.Name" /> свойства, значение <b>идентификатора</b> не локализованы.</para>
+        <remarks><para><b>Идентификатор</b> часового пояса глобально одинаков для этого часового пояса.  Это имя раздела реестра Windows, содержащего сведения о часовом поясе. В отличие от <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.Name" /> свойства, значение <b>ID</b> не локализуется.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -250,9 +250,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), который представляет идентификатор часового пояса. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>String</b> в C#), представляющую идентификатор часового пояса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para><b>Имя</b> обычно включает в себя значение смещения из по Гринвичу (UTC), имя официальная часовой пояс и области, где используется часового пояса. Он сохраняется как отображаемое значение раздела реестра для данного часового пояса.</para>
+        <remarks><para><b>Имя</b> обычно включает значение смещения в формате UTC, официальное название часового пояса и регионы, в которых используется часовой пояс. Он сохраняется в качестве значения отображения в разделе реестра для часового пояса.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -279,7 +279,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -307,9 +307,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -342,10 +342,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, представляющее смещение времени в минутах из <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.Bias" /> с учетом стандартное время в данном часовом поясе. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), представляющее смещение времени в минутах от учетной записи <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.Bias" /> до стандартного времени в этом часовом поясе. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это значение сохраняется как часть значения TZI для часового пояса в реестре Windows. Значение TZI сопоставляется с Windows <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
-          <para>При использовании время в формате UTC и местного времени часовой пояс времени UTC производится в результате добавления <b>смещения</b> и <b>StandardBias</b> местного времени. К примеру в состоянии осваивает зимнего тихоокеанского часового пояса, <b>Bias</b> — 480 минут и <b>StandardBias</b> равно 0 минут. Чтобы определить время в формате UTC 11 июня 2: 00. PST-файлов, добавьте <b>Bias</b> часов (480/60) и <b>StandardBias</b> 0 часов местного времени 11 июня 2: 00. Время в формате UTC — 11 июня по 10</para>
+        <remarks><para>Это значение хранится как часть значения для ТЗИ для часового пояса в реестре Windows. Значение ТЗИ сопоставлено с Windows <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
+          <para>В связи с временем в формате UTC и местным временем часового пояса время в формате UTC — это результат добавления <b>смещения</b> и <b>стандардбиас</b> в местное время. Например, при переходе на зимнее время в тихоокеанском часовом поясе <b>сдвиг</b> равен 480 минутам, а <b>стандардбиас</b> — 0 минутам. Чтобы определить время в формате UTC для 11 июня, 2 утра PST, добавить <b>сдвиг</b> (480/60) часов и <b>стандардбиас</b> от 0 до 11 часов в местное время, 2 июня утра. Время в формате UTC — 11 июня, 10 A.M.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -372,9 +372,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>даты и времени</b> , представляющий дату и время в данном часовом поясе при изменении стандартного времени. Только для чтения.</summary>
+        <summary>Возвращает значение <b>DateTime</b> , представляющее дату и время в этом часовом поясе при изменении времени до стандартного времени. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это значение сохраняется как часть TZI значения для часового пояса в реестре Windows. Значение TZI сопоставляется с Windows <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
+        <remarks><para>Это значение хранится как часть значения ТЗИ для часового пояса в реестре Windows. Значение ТЗИ сопоставлено с Windows <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -401,9 +401,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), который определяет часовой пояс в стандартное время. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), которая определяет часовой пояс в стандартном времени. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство хранится как стандартное значение для часового пояса в реестре.</para>
+        <remarks><para>Это свойство хранится в виде значения STD для часового пояса в реестре.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

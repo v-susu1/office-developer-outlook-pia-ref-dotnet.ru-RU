@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.SolutionsModule" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.SolutionsModule" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,30 +46,30 @@
         <Parameter Name="Scope" Type="Microsoft.Office.Interop.Outlook.OlSolutionScope" />
       </Parameters>
       <Docs>
-        <param name="Solution">A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, который представляет корневую папку решения для добавления <b>SolutionsModule</b>.</param>
-        <param name="Scope"><see cref="T:Microsoft.Office.Interop.Outlook.OlSolutionScope" /> Перечисления, которое указывает, следует ли для отображения папок, расположенных в решения только в модуль <b>решений</b> и список <b>папок</b> или для отображения их в своих модулей по умолчанию в <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> также.</param>
-        <summary>Добавляет корневую папку решения и вложенные в нее папки для <see cref="T:Microsoft.Office.Interop.Outlook.SolutionsModule" /> модуль.</summary>
-        <remarks><para>При успешном применении метода <b>AddSolution</b> и не корневую папку решения было ранее в разделе модуля " <b>решения</b> ", Microsoft Outlook отображает <b>решений</b> в модуль решений в области навигации.</para>
-          <para>Нельзя добавить следующие папки для модуля " <b>решения</b> " как корневую папку решения:</para>
+        <param name="Solution"><see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> Объект, представляющий корневую папку решения, которую необходимо добавить в <b>SolutionsModule</b>.</param>
+        <param name="Scope">Перечисление, указывающее, отображаются ли папки, которые находятся в решении, только в модуле " <b>решения</b> " и в списке папок, а также для отображения их в соответствующих модулях <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> по умолчанию. <b>Folder</b> <see cref="T:Microsoft.Office.Interop.Outlook.OlSolutionScope" /></param>
+        <summary>Добавляет в <see cref="T:Microsoft.Office.Interop.Outlook.SolutionsModule" /> модуль корневую папку решения и вложенные в нее папки.</summary>
+        <remarks><para>Если метод <b>addsolution</b> выполняется успешно, а корневая папка решения не существовала в модуле <b>решений</b> , Microsoft Outlook отображает модуль " <b>решения</b> " в области навигации.</para>
+          <para>Следующие папки невозможно добавить в модуль <b>решений</b> в качестве корневой папки решения:</para>
           <list type="bullet">
             <item>
-              <para>Папка, которая отображает Outlook на панели переходов в соответствии с определением <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultFolders" /> перечисления.</para>
+              <para>Папка, которая отображается в Outlook в области навигации, как определено в <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultFolders" /> перечислении.</para>
             </item>
             <item>
-              <para>Специальные папки, в соответствии с <see cref="T:Microsoft.Office.Interop.Outlook.OlSpecialFolders" /> перечисления.</para>
+              <para>Особая папка, определенная в <see cref="T:Microsoft.Office.Interop.Outlook.OlSpecialFolders" /> перечислении.</para>
             </item>
             <item>
-              <para>Хранить в любой папке на общедоступных папок Microsoft Exchange Server. <see cref="P:Microsoft.Office.Interop.Outlook._Store.ExchangeStoreType" /> Свойство <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объект для этой папки, <b>olExchangePublicFolder</b>.</para>
+              <para>Любая папка в хранилище общедоступных папок Microsoft Exchange Server. <see cref="P:Microsoft.Office.Interop.Outlook._Store.ExchangeStoreType" /> Свойство <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекта для этой папки — <b>олексчанжепубликфолдер</b>.</para>
             </item>
             <item>
-              <para>Скрытые папки. Скрытые папки — это одно, для свойства MAPI, <b>PR_ATTR_HIDDEN</b>имеет <b>значение True</b> или она не поддерева IPM.</para>
+              <para>Скрытая папка. Скрытой папкой является свойство MAPI, <b>PR_ATTR_HIDDEN</b>, равно <b>true</b> или оно не находится в поддереве IPM.</para>
             </item>
           </list>
-          <para>Этот метод также возвращает ошибку, если к папке, где уже существует как корневую папку или вложенную папку в модуль <b>решений</b> , или если папка является родительской папки в папку в модуль <b>решений</b> .</para>
-          <para>Если <paramref name="Scope" /> параметру присвоено значение <b>olShowInDefaultModules</b> перечисления <b>OlSolutionScope</b> , решение корневые папки и вложенные в нее папки отображаются в своих модулей по умолчанию, а также <b>решений</b> в модуль. Если <paramref name="Scope" /> параметр имеет значение <b>olHideInDefaultModules</b>, решение корневые папки и вложенные в нее папки отображаются в модуля " <b>решения</b> ".</para>
+          <para>Этот метод также возвращает ошибку, если указанная папка уже существует в качестве корневой папки или вложенной папки в модуле " <b>решения</b> ", или если эта папка является родительской папкой папки в модуле " <b>решения</b> ".</para>
+          <para>Если <paramref name="Scope" /> параметру присвоено значение <b>олшовиндефаултмодулес</b> перечисления <b>OlSolutionScope</b> , корневой каталог решения и его подпапки отображаются в соответствующих модулях по умолчанию, а также в модуле <b>решений</b> . Если <paramref name="Scope" /> параметр имеет значение <b>олхидеиндефаултмодулес</b>, корневой каталог решения и вложенные в него папки отображаются в модуле " <b>решения</b> ".</para>
           <para>Папки 
-            <b>решений</b> всегда отображается в <b>Списке папок</b> модуль.</para>
-          <para>По умолчанию Outlook отображает модуля " <b>решения</b> " после в модуль <b>задач</b> , при условии, что модули навигации, в том порядке по умолчанию — почту, календарь, контакты и задачи. Если развернут на панели переходов, <b>решений</b> в модуль также сначала отображается как расширенное модуль. Если в модуль <b>задач</b> не отображается, модуля " <b>решения</b> " отображается после последнего расширенное модуля на левой панели навигации.</para>
+            <b>решений</b> всегда отображаются в модуле <b>списка папок</b> .</para>
+          <para>По умолчанию в Outlook отображается модуль " <b>решения</b> " после модуля " <b>задачи</b> " при условии, что модули навигации находятся в порядке по умолчанию — "почта", "Календарь", "Контакты" и "задачи". Если область навигации развернута, то модуль " <b>решения</b> " также изначально отображается в виде расширенного модуля. Если модуль <b>tasks</b> не отображается, модуль <b>Solutions</b> отображается после последнего расширенного модуля в области навигации.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -96,7 +96,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -124,7 +124,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, которая указывает класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, которая указывает класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,9 +152,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:System.String" /> значение (<b>строка</b> в C#), который представляет локализованное отображаемое имя для <see cref="T:Microsoft.Office.Interop.Outlook.SolutionsModule" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:System.String" /> значение (<b>строка</b> в C#), представляющее локализованное отображаемое имя для <see cref="T:Microsoft.Office.Interop.Outlook.SolutionsModule" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Отображаемое имя модуля " <b>решения</b> " можно настроить, если имеется только один корневой папки решения в области модуля " <b>решения</b> ". При наличии нескольких корневые папки решения, имя возвращается <b>решений</b>.</para>
+        <remarks><para>Отображаемое имя модуля " <b>решения</b> " можно изменить, если в модуле " <b>решения</b> " имеется только одна корневая папка решения. При наличии нескольких корневых папок решения имя возвращается к <b>решению</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -181,9 +181,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlNavigationModuleType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlNavigationModuleType" /> константа, представляющий тип модуля навигации для <see cref="T:Microsoft.Office.Interop.Outlook.SolutionsModule" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlNavigationModuleType" /> константу, представляющую тип модуля навигации для <see cref="T:Microsoft.Office.Interop.Outlook.SolutionsModule" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Объект <b>SolutionsModule</b> это свойство возвращает значение <b>olModuleSolutions</b>.</para>
+        <remarks><para>Для объекта <b>SolutionsModule</b> это свойство возвращает значение <b>олмодулесолутионс</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -210,9 +210,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <see cref="T:System.Object" /> (<b>объект</b> в C#) указанного <see cref="T:Microsoft.Office.Interop.Outlook.SolutionsModule" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <see cref="T:System.Object" /> объект (<b>объект</b> в C#) указанного <see cref="T:Microsoft.Office.Interop.Outlook.SolutionsModule" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Возвращает родительский объект <b>SolutionsModule</b> <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> объектов.</para>
+        <remarks><para>Родительский объект объекта <b>SolutionsModule</b> возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> объект.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -242,16 +242,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает тип <b>Integer</b> (<b>целое</b> в C#), представляющий порядковый номер <see cref="T:Microsoft.Office.Interop.Outlook.SolutionsModule" /> объекта при его отображении в <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>целое число</b> (<b>int</b> в C#), представляющее порядковый номер <see cref="T:Microsoft.Office.Interop.Outlook.SolutionsModule" /> объекта при его отображении в файле <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство можно задать только значение в диапазоне от 1 до 9. Произошла ошибка при попытке этому свойству присвоено значение вне диапазона. Если решения не существует в модуль <b>решений</b> , задание или получение свойства <b>положение</b> вызывает ошибку.</para>
-          <para>При изменении значения этого свойства для того или иного объекта <b>SolutionsModule</b> изменяет значения других модули навигации в <b>положение</b> <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModules" /> семейства сайтов, в зависимости от относительное изменение между новое значение и исходное значение. </para>
+        <remarks><para>Этому свойству можно присвоить значение от 1 до 9. При попытке присвоить этому свойству значение, которое находится за пределами этого диапазона, возникает ошибка. Если в модуле <b>Solutions</b> не существует решений, то при установке или возврате свойства <b>position</b> также возникает ошибка.</para>
+          <para>Изменение значения этого свойства для данного объекта <b>SolutionsModule</b> изменяет значения <b>позиции</b> других модулей навигации в <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModules" /> коллекции, в зависимости от относительных изменений между новым значением и исходным значением. </para>
           <list type="bullet">
             <item>
-              <para>Если новое значение меньше, чем исходное значение, указанный объект <b>SolutionsModule</b> перемещает вверх на новое место и другие модули навигации, которые уже выше или ниже, новые расположения переместить вниз.</para>
+              <para>Если новое значение меньше исходного значения, указанный объект <b>SolutionsModule</b> перемещается вверх до новой позиции и других модулей навигации, которые уже находятся на месте или ниже этого нового положения.</para>
             </item>
             <item>
-              <para>Если новое значение больше, чем исходное значение на указанный объект <b>SolutionsModule</b> перемещает вниз на новое место, и другие модули навигации, которые находятся в диапазоне от старой и новой позиции вверх, заполнения старый положение.</para>
+              <para>Если новое значение больше исходного значения, указанный объект <b>SolutionsModule</b> перемещается вниз в новое положение, а другие модули навигации, расположенные между старой позицией и новым положением, перемещаются вверх, заполняя старую позицию вверх.</para>
             </item>
           </list>
           <para> </para></remarks>
@@ -280,10 +280,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если нет сеанса, вошедшего в систему.</para>
-          <para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению.</para>
+        <remarks><para>Возвращает значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#) при отсутствии сеанса, выполнившего вход в систему.</para>
+          <para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -313,9 +313,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:System.Boolean" /> (<b>bool</b> в C#) значение, указывающее, отображается ли <b>решений</b> в модуль решений в области навигации. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <see cref="T:System.Boolean" /> (<b>логическое</b> значение в C#), которое указывает, отображается ли модуль <b>решений</b> в области навигации. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Если нет решений в области модуля " <b>решения</b> ", параметр или получение свойства <b>Visible</b> возникает ошибка.</para>
+        <remarks><para>Если в модуле <b>Solutions</b> нет решений, то установка или извлечение свойства <b>Visible</b> вызывает ошибку.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

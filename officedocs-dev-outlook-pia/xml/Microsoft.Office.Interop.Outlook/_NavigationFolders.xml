@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolders" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolders" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,10 +49,10 @@
         <Parameter Name="Folder" Type="Microsoft.Office.Interop.Outlook.MAPIFolder" />
       </Parameters>
       <Docs>
-        <param name="Folder">Папка для добавления.</param>
-        <summary>Добавляет указанный <see cref="T:Microsoft.Office.Interop.Outlook.Folder" />, как <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolder" /> объект в конец <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolders" /> семейства сайтов.</summary>
+        <param name="Folder">Добавляемая папка.</param>
+        <summary>Добавляет указанный <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolder" /> объект в конец <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolders" /> коллекции в качестве объекта.</summary>
         <returns>Объект <b>NavigationFolder</b> , представляющий новую папку навигации.</returns>
-        <remarks><para>Папки может использоваться только в одной группе навигации. При добавлении объект <b>Folder</b> в новую группу навигации, все ссылки на эту <b>папку</b> , удаляются из любой другой группе навигации, из которых он был ранее участником.</para>
+        <remarks><para>Папка может находиться только в одной группе навигации. При добавлении объекта <b>Folder</b> в новую группу навигации все ссылки на эту <b>папку</b> удаляются из любой другой группы навигации, в которой она ранее была участником.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -79,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -107,9 +107,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Данное свойство возвращает <b>olNavigationFolders</b> для <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolders" /> объекта.</para>
+        <remarks><para>Это свойство возвращает <b>олнавигатионфолдерс</b> для <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolders" /> объекта.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -136,7 +136,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее число объектов в указанном семействе сайтов. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее количество объектов в указанной коллекции. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -167,10 +167,10 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Либо индекс объекта, или значение, используемое для сопоставления свойства по умолчанию объекта в коллекции.</param>
+        <param name="Index">Номер индекса объекта или значение, используемое для сравнения со свойством по умолчанию объекта в коллекции.</param>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolder" /> объект из коллекции.</summary>
-        <value>Объект <b>NavigationFolder</b> , который представляет указанный объект.</value>
-        <remarks><para>Значение индекса <b>NavigationFolder</b> в коллекции представляет порядковый номер папки в группе навигация при отображении в области навигации. Изменение положения папками навигации в группе Навигация также изменяет значения индекса папок, содержащихся в <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolders" /> семейства сайтов, которые <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> объекта.</para>
+        <value>Объект <b>NavigationFolder</b> , представляющий указанный объект.</value>
+        <remarks><para>Значение индекса объекта <b>NavigationFolder</b> в коллекции представляет порядковый номер папки в группе навигации, отображаемой в области навигации. При изменении положения папок навигации в группе навигации также изменяются значения индекса папок, содержащихся в <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolders" /> коллекции для этого <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> объекта.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -197,7 +197,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -225,9 +225,9 @@
         <Parameter Name="RemovableFolder" Type="Microsoft.Office.Interop.Outlook.NavigationFolder" />
       </Parameters>
       <Docs>
-        <param name="RemovableFolder">К папке навигации.</param>
+        <param name="RemovableFolder">Папка навигации, которую необходимо удалить.</param>
         <summary>Удаляет объект из коллекции.</summary>
-        <remarks><para>Только съемный папок, <b>NavigationFolder</b> объекты с <see cref="P:Microsoft.Office.Interop.Outlook._NavigationFolder.IsRemovable" /> задано значение <b>True</b>, значение свойства может быть удален из коллекции <b>NavigationFolders</b> . Это означает, что <b>NavigationFolders.Remove</b> можно использовать для удаления общих папок, общих папок и связанных папок. Тем не менее, необходимо использовать <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.Delete" /> для удаления папки, созданные пользователем.</para>
+        <remarks><para>Только съемные папки, объекты <b>NavigationFolder</b> со <see cref="P:Microsoft.Office.Interop.Outlook._NavigationFolder.IsRemovable" /> значением свойства, равным <b>true</b>, можно удалить из коллекции <b>NavigationFolders</b> . Это означает, что вы можете использовать <b>NavigationFolders. Remove</b> для удаления общих папок, общедоступных папок и связанных папок. Однако для удаления всех папок <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.Delete" /> , созданных пользователями, необходимо использовать эту возможность.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -254,9 +254,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>

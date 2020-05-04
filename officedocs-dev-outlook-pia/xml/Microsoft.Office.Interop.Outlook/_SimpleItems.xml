@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.SimpleItems" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.SimpleItems" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительского приложения Microsoft Outlook для <see cref="T:Microsoft.Office.Interop.Outlook.SimpleItems" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Microsoft Outlook для <see cref="T:Microsoft.Office.Interop.Outlook.SimpleItems" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -77,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, которая указывает класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, которая указывает класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -105,7 +105,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает аргумент <b>Integer</b> (<b>целое</b> в C#), указывающее число объектов в <see cref="T:Microsoft.Office.Interop.Outlook.SimpleItems" /> семейства сайтов. Только для чтения.</summary>
+        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#), которое указывает количество объектов в <see cref="T:Microsoft.Office.Interop.Outlook.SimpleItems" /> коллекции. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -136,10 +136,10 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Отсчитываемый от нуля индекс объекта в коллекции <b>SimpleItems</b> .</param>
-        <summary>Возвращает <see cref="T:System.Object" /> (<b>объект</b> в C#) в <see cref="T:Microsoft.Office.Interop.Outlook.SimpleItems" /> семейства сайтов.</summary>
+        <param name="Index">Порядковый номер объекта в коллекции <b>SimpleItems</b> (с отсчетом от нуля).</param>
+        <summary>Возвращает объект <see cref="T:System.Object" /> в<b>object</b> <see cref="T:Microsoft.Office.Interop.Outlook.SimpleItems" /> коллекции (объект в C#).</summary>
         <value>To be added.</value>
-        <remarks><para>Если это свойство не возвращает объект в коллекцию в качестве заданный <paramref name="Index" /> параметр, метод возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
+        <remarks><para>Если это свойство не возвращает объект в коллекции, как указано в <paramref name="Index" /> параметре, метод возвращает значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -166,9 +166,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <see cref="T:System.Object" /> (<b>объект</b> в C#) из <see cref="T:Microsoft.Office.Interop.Outlook.SimpleItems" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <see cref="T:System.Object" /> <see cref="T:Microsoft.Office.Interop.Outlook.SimpleItems" /> объект (<b>объект</b> в C#). Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Родительский объект объекта <b>SimpleItems</b> <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объектов.</para>
+        <remarks><para>Родительским объектом объекта <b>SimpleItems</b> является <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объект.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -195,10 +195,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Данное свойство возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если нет сеанса, вошедшего в систему.</para>
-          <para>Можно использовать свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод попеременно для получения <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Члены по своему назначению.</para>
+        <remarks><para>Это свойство не возвращает значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#) при отсутствии входного сеанса.</para>
+          <para>Вы можете использовать свойство <b>Session</b> и метод, <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> чтобы получить <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Оба участника выполняют одну и ту же задачу.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

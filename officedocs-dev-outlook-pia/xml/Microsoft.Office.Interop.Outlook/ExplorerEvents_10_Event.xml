@@ -40,7 +40,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_ActivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда проводник становится активным окном, в результате действий пользователя или через программный код.</summary>
+        <summary>Происходит, когда обозреватель становится активным окном в результате действия пользователя или кода программы.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,8 +59,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_AttachmentSelectionChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда пользователь выбирает другой или дополнительных вложений в окне active программно или с которым взаимодействует с пользовательским интерфейсом.</summary>
-        <remarks><para>Событие <b>AttachmentSelectionChange</b> вызывается при выборе различных или дополнительные вложения любого элемента в окне active.</para>
+        <summary>Происходит, когда пользователь выбирает другое или дополнительное вложение в активном проводнике программным путем или взаимодействует с пользовательским интерфейсом.</summary>
+        <remarks><para>Событие <b>AttachmentSelectionChange</b> запускается, когда в активном проводнике выбрано другое или дополнительное вложение какого-либо элемента.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -79,8 +79,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeFolderSwitchEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает перед explorer входит в новую папку, в результате действий пользователя или через программный код.</summary>
-        <remarks><para>Если папка была отключена, чтобы в пространстве имен, которое не поддерживает автоматизацию (например, файловая система), <paramref name="NewFolder" /> имеет <b>значение Nothing</b>.</para>
+        <summary>Возникает перед тем, как проводник переходит к новой папке, как результат действия пользователя или с помощью программного кода.</summary>
+        <remarks><para>Если папка, для которой выполняется переключение, находится в пространстве имен, которое не поддерживает автоматизацию (например, файловая <paramref name="NewFolder" /> система), <b>ничего</b>не происходит.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -99,7 +99,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeItemCopyEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда сообщение скопировано Outlook.</summary>
+        <summary>Возникает при копировании элемента Outlook.</summary>
         <remarks><para>Это событие можно отменить после его запуска.</para>
           <para> </para></remarks>
       </Docs>
@@ -119,8 +119,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeItemCutEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда элемент Outlook — это вырезать из папки.</summary>
-        <remarks><para>Это событие можно отменить после его запуска. При отмене события элемент не будет удален.</para>
+        <summary>Возникает при вырезании элемента Outlook из папки.</summary>
+        <remarks><para>Это событие можно отменить после его запуска. Если событие отменено, элемент не будет удален.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -159,7 +159,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeMaximizeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда проводник развернуто пользователем.</summary>
+        <summary>Происходит, когда Проводник разворачивается пользователем.</summary>
         <remarks><para>Это событие можно отменить после его запуска.</para>
           <para> </para></remarks>
       </Docs>
@@ -179,7 +179,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeMinimizeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда active explorer свернута пользователем.</summary>
+        <summary>Происходит, когда пользователь сворачивает активный проводник.</summary>
         <remarks><para>Это событие можно отменить после его запуска.</para>
           <para> </para></remarks>
       </Docs>
@@ -199,7 +199,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeMoveEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> перемещается пользователем.</summary>
+        <summary>Возникает, когда <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> пользователь перемещается.</summary>
         <remarks><para>Это событие можно отменить после его запуска.</para>
           <para> </para></remarks>
       </Docs>
@@ -220,7 +220,7 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит, когда пользователь изменяет размер текущего <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" />.</summary>
-        <remarks><para>Это событие можно отменить после его запуска. При отмене события окна не изменяется.</para>
+        <remarks><para>Это событие можно отменить после его запуска. Если событие отменено, размер окна не изменяется.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -239,7 +239,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeViewSwitchEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает перед explorer изменяется на новое представление, в результате действий пользователя или через программный код.</summary>
+        <summary>Возникает перед внесением изменений в новое представление в результате действия пользователя или кода программы.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,8 +258,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_CloseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает при закрытии проводник.</summary>
-        <remarks><para>Если вы используете <see cref="M:Microsoft.Office.Interop.Outlook._Explorer.Close" /> метод должно срабатывать, это событие, он может быть отменена, только если метод <b>Close</b> используется аргумент <b>olPromptForSave</b> .</para>
+        <summary>Возникает при закрытии проводника.</summary>
+        <remarks><para>Если вы используете <see cref="M:Microsoft.Office.Interop.Outlook._Explorer.Close" /> метод для запуска этого события, его можно отменить только в том случае, если метод <b>Close</b> использует аргумент <b>олпромптфорсаве</b> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -278,7 +278,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_DeactivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда проводник перестает быть активного окна, в результате действий пользователя или через программный код.</summary>
+        <summary>Происходит, когда обозреватель завершает работу в активном окне, как результат действия пользователя или с помощью программного кода.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -297,7 +297,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_FolderSwitchEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда explorer входит в новую папку, в результате действий пользователя или через программный код.</summary>
+        <summary>Возникает, когда Проводник переходит к новой папке в результате действия пользователя или кода программы.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,8 +316,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_InlineResponseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда пользователь выполняет действие, которое вызывает встроенный ответ отображаться в области чтения.</summary>
-        <remarks><para>Это событие возвращает объект элемента, представляющий элемент встроенного ответа.</para>
+        <summary>Происходит, когда пользователь выполняет действие, которое вызывает отображение встроенного ответа в области чтения.</summary>
+        <remarks><para>Это событие возвращает объект Item, представляющий элемент встроенного ответа.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -336,26 +336,26 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_InlineResponseCloseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда пользователь выполняет действие, которое вызывает active встроенный ответ закрыть в области чтения.</summary>
-        <remarks><para>Это событие вызывается при новый встроенный ответ или закрытии черновиков встроенный ответ по следующим причинам:</para>
+        <summary>Происходит, когда пользователь выполняет действие, которое вызывает закрытие активного встроенного отклика в области чтения.</summary>
+        <remarks><para>Это событие вызывается при закрытии нового встроенного ответа или встроенного отклика по следующим причинам:</para>
           <list type="bullet">
             <item>
-              <para>Пользователь выбирает команду <b>Pop в работе</b> .</para>
+              <para>Пользователь выбирает команду <b>выделять из выступающего</b> .</para>
             </item>
             <item>
-              <para>Пользователь выбирает команду <b>Отменить</b> .</para>
+              <para>Пользователь выбирает команду " <b>Удалить</b> ".</para>
             </item>
             <item>
-              <para>Пользователь отправляет встроенный ответ.</para>
+              <para>Пользователь отправляет встроенные ответы.</para>
             </item>
             <item>
-              <para>Пользователь переходит на другое сообщение в списке сообщений.</para>
+              <para>Пользователь переходит к другому сообщению в списке сообщений.</para>
             </item>
             <item>
               <para>Пользователь переходит в другую папку.</para>
             </item>
             <item>
-              <para>Пользователи могут переключаться модули, например от модуль почты в модуль календаря.</para>
+              <para>Пользователь переключает модули, например из почтового модуля в модуль календаря.</para>
             </item>
           </list>
           <para> </para></remarks>
@@ -376,8 +376,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_SelectionChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда пользователь переходит к другой элемент в папке с помощью пользовательского интерфейса (UI) или программными средствами.</summary>
-        <remarks><para>Это событие также возникает при пользователя, либо программными средствами или с помощью inerface пользователя, щелкает или переключает в другую папку, которая содержит элементы, как Outlook автоматически выбирает первый элемент в этой папке. Тем не менее это событие не возникает, если папка является файловой системы или любая папка с текущего представления Web отображается. </para>
+        <summary>Возникает, когда пользователь переключается на другой элемент в папке с помощью пользовательского интерфейса или программным способом.</summary>
+        <remarks><para>Это событие также возникает, если пользователь программным способом или с помощью инерфаце пользователь щелкает или переключается на другую папку, содержащую элементы, так как Outlook автоматически выбирает первый элемент в этой папке. Однако это событие не возникает, если папка является папкой файловой системы или отображается любая папка с текущим представлением веб-сайта. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -396,7 +396,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_ViewSwitchEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает при изменении представления в обозревателе, в результате действий пользователя или через программный код.</summary>
+        <summary>Возникает при изменении представления в проводнике или в результате действия пользователя или кода программы.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

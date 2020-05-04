@@ -40,16 +40,16 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkOptionButtonEvents_AfterUpdateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает после изменения данных в элементе управления посредством пользовательского интерфейса.</summary>
+        <summary>Возникает после изменения данных в элементе управления с помощью пользовательского интерфейса.</summary>
         <remarks><para>
-            <b>До обновления</b> и <b>после обновления</b> может возникнуть, каждый раз, когда данные в элементе управления сохраняются к элементу.  Типичная последовательность событий, связанных с <b>после обновления</b> для данного элемента управления выглядит следующим образом:</para>
+            <b>Обновления до обновления</b> <b>до обновления могут</b> возникать при сохранении данных в элементе управления.  Для этого элемента управления типичная последовательность событий, включающая <b>в себя</b> , выглядит следующим образом:</para>
           <list type="number">
             <item>
-              <description>Пользователь в центре внимания элемента управления</description>
+              <description>Пользователь фокусируется на элементе управления</description>
             </item>
             <item>
               <description>
-                <b>До обновления</b>
+                <b>Условие</b>
               </description>
             </item>
             <item>
@@ -57,12 +57,12 @@
             </item>
             <item>
               <description>
-                <b>После обновления</b>
+                <b>AfterUpdate</b>
               </description>
             </item>
             <item>
               <description>
-                <b>Выход</b>: пользователь перемещает фокус от элемента управления</description>
+                <b>Выход</b>: пользователь перемещает фокус из элемента управления</description>
             </item>
           </list>
           <para> </para></remarks>
@@ -83,17 +83,17 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkOptionButtonEvents_BeforeUpdateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда данные в элементе управления изменяются через пользовательский интерфейс и должен быть сохранен к элементу.</summary>
-        <remarks><para>Отмена это свойство вернуться в текущее значение свойства элемента управления и возврата фокуса на элемент управления.</para>
+        <summary>Происходит, когда данные в элементе управления изменяются с помощью пользовательского интерфейса и сохранятся в элементе.</summary>
+        <remarks><para>Отмена этого свойства приведет к возврату элемента управления к текущему значению свойства и возврату фокуса элементу управления.</para>
           <para>
-            <b>До обновления</b> и <b>после обновления</b> может возникнуть, каждый раз, когда данные в элементе управления сохраняются к элементу.  Типичная последовательность событий, связанных с <b>BeforeUpdate</b> для данного элемента управления выглядит следующим образом:</para>
+            <b>Обновления до обновления</b> <b>до обновления могут</b> возникать при сохранении данных в элементе управления.  Типичная последовательность событий, включающих в себя <b>обновления до обновления</b> для этого элемента управления, выглядит следующим образом:</para>
           <list type="number">
             <item>
-              <description>Пользователь в центре внимания элемента управления</description>
+              <description>Пользователь фокусируется на элементе управления</description>
             </item>
             <item>
               <description>
-                <b>До обновления</b>
+                <b>Условие</b>
               </description>
             </item>
             <item>
@@ -101,12 +101,12 @@
             </item>
             <item>
               <description>
-                <b>После обновления</b>
+                <b>AfterUpdate</b>
               </description>
             </item>
             <item>
               <description>
-                <b>Выход</b>: пользователь перемещает фокус от элемента управления</description>
+                <b>Выход</b>: пользователь перемещает фокус из элемента управления</description>
             </item>
           </list>
           <para> </para></remarks>
@@ -127,7 +127,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkOptionButtonEvents_ChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда <see cref="P:Microsoft.Office.Interop.Outlook._OlkOptionButton.Value" /> изменения свойств.</summary>
+        <summary>Возникает при изменении <see cref="P:Microsoft.Office.Interop.Outlook._OlkOptionButton.Value" /> свойства.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,7 +146,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkOptionButtonEvents_ClickEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда пользователь нажимает внутри элемента управления.</summary>
+        <summary>Происходит, когда пользователь щелкает внутри элемента управления.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,7 +165,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkOptionButtonEvents_DoubleClickEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает при двойном щелчке внутри элемента управления.</summary>
+        <summary>Происходит, когда пользователь дважды щелкает внутри элемента управления.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,8 +184,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkOptionButtonEvents_EnterEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда элемент управления получает фокус, сразу после <b>выхода</b> события предыдущего элемента управления.</summary>
-        <remarks><para>Это событие <b>Получение фокуса</b> , предоставляемые с управляемым кодом элементы управления или в Microsoft Visual Basic 6.</para>
+        <summary>Возникает, когда элемент управления получает фокус, сразу после события <b>выхода</b> предыдущего элемента управления.</summary>
+        <remarks><para>Это аналогично событию <b>Получение фокуса</b> , предоставленному элементами управления управляемого кода или в Microsoft Visual Basic 6.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -204,7 +204,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkOptionButtonEvents_ExitEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит после передает фокус из этого элемента управления на другой элемент управления в той же форме.</summary>
+        <summary>Возникает сразу после того, как фокус перейдет от этого элемента управления к другому элементу управления в той же форме.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,7 +224,7 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит, когда пользователь нажимает клавишу.</summary>
-        <remarks><para>Состояние клавиш (SHIFT, CTRL или ALT), которые нажата во время события <b>KeyDown</b> доступен через <paramref name="Shift" /> параметр.</para>
+        <remarks><para>Состояние клавиш-модификаторов (SHIFT, CTRL или ALT), нажатых во время события <b>KeyDown</b> , можно получить с помощью <paramref name="Shift" /> параметра.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -244,20 +244,20 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит, когда пользователь нажимает клавишу с кодом ANSI.</summary>
-        <remarks><para>Клавиша ANSI —, которая возвращает typeable символ, когда пользователь нажимает ее. Событие <b>KeyPress</b> происходит, когда пользователь нажимает клавишу с кодом ANSI на выполнение формы в форме при или элемент управления имеет фокус. Событие может возникнуть до или после выпуска ключ.</para>
+        <remarks><para>Клавиша ANSI — это элемент, который создает типизированный символ, когда пользователь нажимает его. Событие <b>KeyPress</b> возникает, когда пользователь нажимает клавишу ANSI в работающей форме, пока в форме или элементе управления на ней находится фокус. Событие может произойти до или после того, как клавиша отпущена.</para>
           <para>Событие <b>KeyPress</b> не происходит при следующих условиях:</para>
           <list type="bullet">
             <item>
               <para>Нажатие клавиши TAB</para>
             </item>
             <item>
-              <para>При нажатии клавиши ВВОД</para>
+              <para>Нажатие клавиши ВВОД</para>
             </item>
             <item>
               <para>Нажатие клавиши со стрелкой</para>
             </item>
             <item>
-              <para>если при нажатии клавиши фокус перемещается с одного элемента управления на другой.</para>
+              <para>если при нажатии клавиши фокус перемещается с одного элемента управления на другой. </para>
             </item>
           </list>
           <para> </para></remarks>
@@ -279,7 +279,7 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит, когда пользователь отпускает клавишу.</summary>
-        <remarks><para>Состояние клавиш (SHIFT, CTRL или ALT), которые нажата во время события <b>KeyUp</b> доступен через <paramref name="Shift" /> параметр.</para>
+        <remarks><para>Состояние клавиш-модификаторов (SHIFT, CTRL или ALT), нажатых во время события <b>KeyUp</b> , можно получить с помощью <paramref name="Shift" /> параметра.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -317,8 +317,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkOptionButtonEvents_MouseMoveEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает после регистрации движения мыши на элемент управления.</summary>
-        <remarks><para>Нажатие клавиши ALT запускает событие <b>MouseMove</b> .</para>
+        <summary>Возникает после регистрации движения мыши над элементом управления.</summary>
+        <remarks><para>Нажатие клавиши ALT вызывает событие <b>MouseMove</b> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -337,7 +337,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkOptionButtonEvents_MouseUpEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает после отпускании кнопки мыши, которые были нажаты на элементе управления.</summary>
+        <summary>Возникает после того, как пользователь отпускает кнопку мыши, нажатую на элементе управления.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

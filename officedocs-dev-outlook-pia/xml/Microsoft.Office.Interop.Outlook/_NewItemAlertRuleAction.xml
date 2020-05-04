@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.NewItemAlertRuleAction" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.NewItemAlertRuleAction" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,9 +45,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlRuleActionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает константу, <b>olRuleActionNewItemAlert</b>из <see cref="T:Microsoft.Office.Interop.Outlook.OlRuleActionType" /> перечисление, указывающее тип действия, предпринятые правилом. Только для чтения.</summary>
+        <summary>Возвращает константу <b>олрулеактионневитемалерт</b>из <see cref="T:Microsoft.Office.Interop.Outlook.OlRuleActionType" /> перечисления, указывающую тип действия, выполняемого правилом. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para> Новые действия правила оповещения элемента поддерживается только правила для получения сообщений. Дополнительные сведения можно <a href="http://go.microsoft.com/fwlink/?LinkId=87797">Указать действия правила</a></para>
+        <remarks><para> Действие правила оповещения о новых элементах поддерживается только правилами для получения сообщений. Дополнительные сведения см в разделе <a href="http://go.microsoft.com/fwlink/?LinkId=87797">Определение действий правил</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -74,7 +74,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -102,7 +102,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -133,9 +133,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), который определяет, включена ли действие правила. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), определяющее, включено ли действие правила. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>После включения правила, необходимо сохранить правило с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> , чтобы правило и его состояние будут сохранены и отобразятся текущего сеанса.  Правило доступна только после его успешно сохранен. </para>
+        <remarks><para>После включения правила необходимо также сохранить правило, используя <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> таким образом, чтобы правило и его включенное состояние не сохранялись за пределами текущего сеанса.  Правило включается только после успешного сохранения. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -162,9 +162,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Родительский объект является <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> объекта.</para>
+        <remarks><para>Родительский объект — это <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> объект.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -191,9 +191,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -229,7 +229,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>строку</b> (<b>строка</b> в C#), который представляет текст, отображаемый в диалоговом окне Создание элемента оповещения. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> (<b>String</b> в C#), которая представляет текст, отображаемый в диалоговом окне "оповещение о новом элементе". Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks><para>Возвращает ошибку, если текст представляет собой пустую строку.</para>
           <para> </para></remarks>

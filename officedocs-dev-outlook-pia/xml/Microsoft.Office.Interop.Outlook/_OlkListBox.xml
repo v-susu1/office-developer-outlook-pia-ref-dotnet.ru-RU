@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.OlkListBox" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.OlkListBox" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,10 +45,10 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ItemText">Значение, которое будет добавлено в список в элементе списка.</param>
-        <param name="Index">Значение 0, задающее порядок нового элемента в списке.</param>
-        <summary>Добавляет элемент в список, при необходимости указания индекса для нового элемента в списке.</summary>
-        <remarks><para>Если значение <paramref name="Index" /> равно или больше числа элементов в списке, будет добавлен новый элемент в конец списка.</para>
+        <param name="ItemText">Значение, добавляемое в список элемента управления "список".</param>
+        <param name="Index">Значение от 0, указывающее порядок нового элемента в списке.</param>
+        <summary>Добавляет элемент в список, при необходимости указывая индекс для нового элемента, который будет отображаться в списке.</summary>
+        <remarks><para>Если значение <paramref name="Index" /> равно или больше, чем число элементов в списке, новый элемент будет добавлен в конец списка.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -83,7 +83,7 @@
       <Docs>
         <summary>Возвращает или задает значение <b>UInteger</b> (<b>uint</b> в C#), которое указывает цвет фона элемента управления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство имеет тип <b>OLE_COLOR</b> , которое является значением <b>UInteger</b> (<b>uint</b> в C#). Значение по умолчанию для этого свойства — 0x80000005 «Окна». </para>
+        <remarks><para>Это свойство имеет тип <b>OLE_COLOR</b> который является значением <b>UInteger</b> (<b>uint</b> в C#). По умолчанию для этого свойства задано значение 0x80000005, "Window". </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -113,9 +113,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlBorderStyle" /> константа, который определяет стиль границы вокруг элемента управления.   Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlBorderStyle" /> константу, определяющую стиль границы вокруг элемента управления.   Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>olBorderStyleSingle</b>.</para>
+        <remarks><para>Значение по умолчанию — <b>олбордерстилесингле</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -165,7 +165,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Копирует текущее выделение в раскрывающемся списке в буфер обмена.</summary>
+        <summary>Копирует текущий выделенный фрагмент из раскрывающегося списка в буфер обмена.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,9 +195,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), которое указывает, если элемент управления может работать.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, может ли элемент управления работать.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>True</b>.</para>
+        <remarks><para>Значение по умолчанию — <b>True</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -224,7 +224,7 @@
         <ReturnType>stdole.StdFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>StdFont</b> , который представляет шрифт, используемый для отображения текста в элементе управления.  Только для чтения.</summary>
+        <summary>Возвращает объект <b>стдфонт</b> , который представляет шрифт, используемый для отображения текста в элементе управления.  Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -258,9 +258,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>UInteger</b> (<b>uint</b> в C#), которое указывает, цвет переднего плана элемента управления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>UInteger</b> (<b>uint</b> в C#), которое указывает цвет переднего плана для элемента управления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство имеет тип <b>OLE_COLOR</b> , которое является значением <b>UInteger</b> (<b>uint</b> в C#). Значение по умолчанию для этого свойства — 0x80000008, «Окно текст».  </para>
+        <remarks><para>Это свойство имеет тип <b>OLE_COLOR</b> который является значением <b>UInteger</b> (<b>uint</b> в C#). Значение этого свойства по умолчанию — 0x80000008, "текст окна".  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -287,10 +287,10 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Отсчитываемый от нуля значение, задающее расположение элемента в списке.</param>
-        <summary>Получает <b>String</b> (<b>строка</b> в C#), который представляет элемент в указанном расположении в списке.</summary>
-        <returns>Значение <b>String</b> (<b>строка</b> в C#), который представляет элемент в указанном расположении в списке.</returns>
-        <remarks><para>Если <paramref name="Index" /> не входит в диапазон допустимых значений (от нуля и <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), а затем выполняющиеся вне диапазона будет возвращена ошибка.</para>
+        <param name="Index">Значение с отсчетом от нуля, задающее расположение элемента в списке.</param>
+        <summary>Получает <b>строку</b> (<b>строку</b> в C#), которая представляет элемент в указанном расположении в списке.</summary>
+        <returns>Значение <b>типа String</b> (<b>строка</b> в C#), представляющее элемент в указанном расположении в списке.</returns>
+        <remarks><para>Если <paramref name="Index" /> параметр находится за пределами диапазона допустимых значений (от <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />0 до-1), будет возвращена ошибка за пределами.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -317,10 +317,10 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Отсчитываемый от нуля значение, задающее расположение элемента в списке.</param>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, если индексированный элемент выбран.</summary>
-        <returns>Логическое значение (<b>bool</b> в C#), который имеет <b>значение True</b> , если указанный элемент выбран, <b>значение False</b> в противном случае.</returns>
-        <remarks><para>Если <paramref name="Index" /> не входит в диапазон допустимых значений (от нуля и <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), а затем выполняющиеся вне диапазона будет возвращена ошибка. </para>
+        <param name="Index">Значение с отсчетом от нуля, задающее расположение элемента в списке.</param>
+        <summary>Возвращает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, выбран ли в данный момент индексированный элемент.</summary>
+        <returns>Логическое значение (<b>логическое</b> значение в C#), которое равно <b>true</b> , если указанный элемент в данный момент выбран, и <b>false</b> в противном случае.</returns>
+        <remarks><para>Если <paramref name="Index" /> параметр находится за пределами диапазона допустимых значений (от <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />0 до-1), будет возвращена ошибка за пределами. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -347,9 +347,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, задающее число элементов в раскрывающемся списке элемента управления списка. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), которое указывает количество элементов в раскрывающемся списке элемента управления "список". Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию равно нулю, указывающего на то, что в списке нет элементов.</para>
+        <remarks><para>Значение по умолчанию равно нулю, что означает, что в списке нет элементов.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -379,10 +379,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reurns или задает значение типа <b>Integer</b> (<b>int</b> в C#), указывает расположение выделенный в текущий момент элемент в списке поле со списком управления. Для чтения и записи.</summary>
+        <summary>Или задает значение <b>Integer</b> (<b>int</b> в C#), которое указывает расположение выбранного в текущий момент элемента в списке элемента управления "поле со списком". Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Отсчитываемый от нуля значение 
-            <b>ListIndex</b> индексации в массиве элементов в списке.  Значение по умолчанию равно -1, указывающего на то, что элемент не выбран.</para>
+        <remarks><para>
+            <b>ListIndex</b> — это индексация значений с отсчетом от нуля в массиве элементов списка.  Значение по умолчанию —-1, указывающее на то, что элемент не выбран.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -412,10 +412,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), указывающее, заблокирован ли элемент управления от изменений.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, будет ли элемент управления заблокирован для изменения.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>False</b>.</para>
-          <para>Когда элемент управления заблокирован, элемент управления не имеет вид «отключено», но пользователь не может изменять содержимое элемента управления.  </para>
+        <remarks><para>Значение по умолчанию — <b>False</b>.</para>
+          <para>Если элемент управления заблокирован, то элемент управления не имеет отключенного внешнего вида, но пользователь не может редактировать содержимое этого элемента управления.  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -445,9 +445,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMatchEntry</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlMatchEntry" /> константа, которая указывает, как элемент управления выполняют поиск в списке как введенных пользователем. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlMatchEntry" /> константу, показывающую, как элемент управления выполняет поиск в списке в виде пользовательских типов. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>olMatchEntryComplete</b>.</para>
+        <remarks><para>Значение по умолчанию — <b>олматчентрикомплете</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -477,9 +477,9 @@
         <ReturnType>stdole.StdPicture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>StdPicture</b> , представляющий настраиваемые изображения курсор мыши для данного элемента управления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>стдпиктуре</b> , представляющий настраиваемый рисунок курсора мыши для этого элемента управления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
+        <remarks><para>Значение по умолчанию — <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -509,9 +509,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMousePointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> константа, которая определяет тип указателя, который отображается при наведении мыши на элемент управления.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> константу, определяющую тип указателя, отображаемого при наведении указателя мыши на элемент управления.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>olMousePointerDefault</b>.</para>
+        <remarks><para>Значение по умолчанию — <b>олмаусепоинтердефаулт</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -541,7 +541,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMultiSelect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlMultiSelect" /> константа, которая указывает диапазон элементов, которые могут быть выбраны в элементе списка. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlMultiSelect" /> константу, определяющую диапазон элементов, которые могут быть выбраны в элементе управления "список". Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -569,9 +569,9 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Отсчитываемый от нуля значение индексации в массиве элементов в списке.</param>
+        <param name="Index">Индексация значений с отсчетом от нуля в массиве элементов списка.</param>
         <summary>Удаляет указанный элемент из списка.</summary>
-        <remarks><para>Если <paramref name="Index" /> не входит в диапазон допустимых значений (от нуля и <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), а затем выполняющиеся вне диапазона будет возвращена ошибка. </para>
+        <remarks><para>Если <paramref name="Index" /> параметр находится за пределами диапазона допустимых значений (от <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />0 до-1), будет возвращена ошибка за пределами. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -599,10 +599,10 @@
         <Parameter Name="Item" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Index">Отсчитываемый от нуля значение, задающее расположение элемента в списке.</param>
-        <param name="Item">Значение, которое используется для обновления списка в указанном расположении.</param>
-        <summary>Задает элемент в указанном расположении в списке до указанного значения.</summary>
-        <remarks><para>Если <paramref name="Index" /> не входит в диапазон допустимых значений (от нуля и <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), а затем выполняющиеся вне диапазона будет возвращена ошибка. </para>
+        <param name="Index">Значение с отсчетом от нуля, задающее расположение элемента в списке.</param>
+        <param name="Item">Значение, которое будет использоваться для обновления списка в указанном расположении.</param>
+        <summary>Задает указанное значение для элемента в указанном расположении в списке.</summary>
+        <remarks><para>Если <paramref name="Index" /> параметр находится за пределами диапазона допустимых значений (от <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />0 до-1), будет возвращена ошибка за пределами. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -630,10 +630,10 @@
         <Parameter Name="Selected" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Index">Отсчитываемый от нуля значение, задающее расположение элемента в списке.</param>
-        <param name="Selected"><b>Значение true,</b> чтобы указать, что элемент должен быть установлен, <b>значение False,</b> чтобы указать элемент не выбран.</param>
-        <summary>Задает состояние выбранного элемента в указанном расположении в списке, чтобы данного <paramref name="Selected" /> значение.</summary>
-        <remarks><para>Если <paramref name="Index" /> не входит в диапазон допустимых значений (от нуля и <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), а затем выполняющиеся вне диапазона будет возвращена ошибка. </para>
+        <param name="Index">Значение с отсчетом от нуля, задающее расположение элемента в списке.</param>
+        <param name="Selected"><b>Значение true</b> , чтобы указать, что элемент должен быть выбран, <b>значение false</b> , чтобы указать, что элемент не должен быть выбран.</param>
+        <summary>Задает указанное <paramref name="Selected" /> значение для выбранного состояния элемента в указанном расположении в списке.</summary>
+        <remarks><para>Если <paramref name="Index" /> параметр находится за пределами диапазона допустимых значений (от <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />0 до-1), будет возвращена ошибка за пределами. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -663,10 +663,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#), который является текст, отображаемый в элементе управления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), которая представляет собой текст, отображаемый в элементе управления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию из свойства <b>Text</b> — это пустая строка.</para>
-          <para>Свойство <b>Text</b> предоставляет совпадает со значением <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.Value" /> свойство, однако значение строго типизированных как <b>String</b> (<b>строка</b> в C#).</para>
+        <remarks><para>Значение по умолчанию свойства <b>Text</b> — пустая строка.</para>
+          <para>Свойство <b>Text</b> предоставляет то же значение, что и <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.Value" /> свойство, но значение строго типизировано как <b>String</b> (<b>строка</b> в C#).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -696,9 +696,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlTextAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> константа, которая указывает способ выравнивания текста в элементе управления.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> константу, определяющую выравнивание текста в элементе управления.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>olTextAlignLeft</b> на языках справа налево, например, на английском языке.</para>
+        <remarks><para>По умолчанию используется значение <b>олтексталигнлефт</b> в языках с письмом слева направо, например, на английском языке.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -728,10 +728,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение типа <b>Integer</b> (<b>целое</b> в C#), представляющий индекс элемента в верхней части отображаемого списка. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), представляющее индекс элемента в верхней части отображаемой части списка. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Как прокрутки, измените элемент в верхней части списка, и значение этого свойства изменится в соответствии с элементов, отображаемых в верхней части списка.</para>
-          <para>Значение индекса с отсчетом от нуля. Значение по умолчанию равно -1, указывающего на то, что необходимо применять специальные порядок не.</para>
+        <remarks><para>При прокрутке списка элемент, расположенный в начале списка, изменится, и значение этого свойства изменится в соответствии с элементом, который в данный момент отображается в верхней части списка.</para>
+          <para>Значение индекса отсчитывается от нуля. Значение по умолчанию равно-1, что указывает на то, что особый порядок не должен быть применен.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -761,9 +761,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>объект</b> , представляющий содержимого, выбранного в списке, отображаемые элементом управления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>объект</b> , представляющий контент, выбранный в списке, отображаемом элементом управления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение — это то же, что значение <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.Text" />, за исключением того, что это свойство является <b>объектом</b> и <b>текст</b> строго типизированные как <b>String</b> (<b>строка</b> в C#).  </para>
+        <remarks><para>Значение <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.Text" />совпадает со значением, за исключением того, что это свойство является <b>Object</b> , а <b>текст</b> строго типизирован как <b>String</b> (<b>строка</b> в C#).  </para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -12,8 +12,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Указывает реестра формы (библиотека), где хранится <b>формы</b> .</summary>
-    <remarks><para>Использовать в качестве параметра для <see cref="M:Microsoft.Office.Interop.Outlook.FormDescription.PublishForm(Microsoft.Office.Interop.Outlook.OlFormRegistry,System.Object)" /> метод, чтобы задать форму реестра (библиотека) для регистрации <b>формы</b>.</para>
+    <summary>Указывает реестр формы (библиотеку), в которой хранится <b>форма</b> .</summary>
+    <remarks><para>Используется в качестве параметра <see cref="M:Microsoft.Office.Interop.Outlook.FormDescription.PublishForm(Microsoft.Office.Interop.Outlook.OlFormRegistry,System.Object)" /> метода для указания реестра формы (библиотеки), в котором регистрируется <b>форма</b>.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Форма зарегистрирован в реестре формы пользователя по умолчанию.</summary>
+        <summary>Форма регистрируется в реестре форм пользователя по умолчанию.</summary>
       </Docs>
     </Member>
     <Member MemberName="olFolderRegistry">
@@ -52,7 +52,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>Форма зарегистрирован в реестре формы, относящиеся к определенной папки и может осуществляться только из этой папки.</summary>
+        <summary>Форма регистрируется в реестре форм, характерной для определенной папки, и к ней можно получить доступ только из этой папки.</summary>
       </Docs>
     </Member>
     <Member MemberName="olOrganizationRegistry">
@@ -71,7 +71,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Форма зарегистрирован в реестре организационных форм.  Форма доступна для всех пользователей.</summary>
+        <summary>Форма регистрируется в реестре организационной формы.  Форма доступна всем пользователям.</summary>
       </Docs>
     </Member>
     <Member MemberName="olPersonalRegistry">
@@ -90,7 +90,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Формы зарегистрирован в реестр пользователя личные и доступен только для этого пользователя.</summary>
+        <summary>Форма регистрируется в личном реестре пользователя и доступна только для этого пользователя.</summary>
       </Docs>
     </Member>
   </Members>

@@ -22,10 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Содержит коллекцию <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> объекты для элемента Outlook.</summary>
-    <remarks><para>Используйте свойство <b>получателей</b> для возврата объекта <b>получателей</b> из <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />, <see cref="T:Microsoft.Office.Interop.Outlook.JournalItem" />, <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />, <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />, или <see cref="T:Microsoft.Office.Interop.Outlook.TaskItem" /> объекта.</para>
-      <para>Использование <see cref="M:Microsoft.Office.Interop.Outlook.Recipients.Add(System.String)" /> метод для создания объекта <b>получателя</b> и добавить его к объекту <b>получателей</b> . <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.Type" /> Свойство объекта <b>получателя</b> устанавливается значение по умолчанию для связанного объекта <b>AppointmentItem</b>, <b>JournalItem</b>, <b>MailItem</b>или <b>TaskItem</b> и необходимо выполнить сброс для указания другой тип получателя.</para>
-      <para>Используйте <b>получателей</b>(<paramref name="index" />), где <paramref name="index" /> — имя или номер индекса, чтобы возвратить объект <b>получателя</b> . Имя может быть строка, представляющая отображаемое имя, псевдоним или полный адрес электронной почты SMTP получателя.</para>
+    <summary>Содержит коллекцию <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> объектов для элемента Outlook.</summary>
+    <remarks><para>Используйте свойство <b>Recipients</b> , чтобы вернуть объект <b>Recipients</b> объекта <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />, <see cref="T:Microsoft.Office.Interop.Outlook.JournalItem" />, <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />, <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />или <see cref="T:Microsoft.Office.Interop.Outlook.TaskItem" /> объекта.</para>
+      <para>С помощью <see cref="M:Microsoft.Office.Interop.Outlook.Recipients.Add(System.String)" /> метода создайте новый объект <b>Recipient</b> и добавьте его в объект <b>Recipients</b> . Для <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.Type" /> свойства нового объекта <b>Recipient</b> задано значение по умолчанию для связанного объекта <b>AppointmentItem</b>, <b>JournalItem</b>, <b>MailItem</b>или <b>TaskItem</b> , и его необходимо сбросить, чтобы указать другой тип получателя.</para>
+      <para>Используйте <b>Recipients</b>(<paramref name="index" />), <paramref name="index" /> где — это имя или номер индекса, чтобы вернуть один объект <b>Recipient</b> . Имя может представлять собой строку, представляющую отображаемое имя, псевдоним или полный SMTP-адрес электронной почты получателя.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -52,9 +52,9 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">Имя получателя, она может быть строка, представляющая отображаемое имя, псевдоним или полный адрес электронной почты SMTP получателя.</param>
-        <summary>Создает новый получателя в <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> семейства сайтов.</summary>
-        <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> объект, представляющий новый получателя.</returns>
+        <param name="Name">Имя получателя; Это может быть строка, представляющая отображаемое имя, псевдоним или полный SMTP-адрес электронной почты получателя.</param>
+        <summary>Создает нового получателя в <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> коллекции.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> Объект, представляющий нового получателя.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,7 +81,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -109,7 +109,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,7 +137,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее число объектов в указанном семействе сайтов. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее количество объектов в указанной коллекции. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -168,9 +168,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Либо индекс объекта, или значение, используемое для сопоставления свойства по умолчанию объекта в коллекции.</param>
+        <param name="Index">Номер индекса объекта или значение, используемое для сравнения со свойством по умолчанию объекта в коллекции.</param>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> объект из коллекции.</summary>
-        <value>Объект <b>получателя</b> , который представляет указанный объект.</value>
+        <value>Объект <b>Recipient</b> , представляющий указанный объект.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,7 +197,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -225,7 +225,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Значение индекса на основе 1 объекта в коллекции.</param>
+        <param name="Index">Значение индекса объекта в коллекции (от 1).</param>
         <summary>Удаляет объект из коллекции.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -251,8 +251,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Предпринимается попытка разрешить все <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> объектов в <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> коллекции по адресной книге.</summary>
-        <returns><b>Значение true,</b> Если все объекты были разрешены, <b>значение False,</b> Если один или несколько не были.</returns>
+        <summary>Пытается разрешить все <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> объекты в <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> коллекции по адресной книге.</summary>
+        <returns><b>Имеет значение true</b> , если все объекты были разрешены, и <b>false</b> , если их нет.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -279,9 +279,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>

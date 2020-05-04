@@ -12,8 +12,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Указывает ограничения разрешений на элемент.</summary>
-    <remarks><para>Используется с <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.Permission" /> и <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Permission" /> свойства для указания разрешений, которые будут иметь получателей для элемента.</para>
+    <summary>Указывает ограничения разрешений для элемента.</summary>
+    <remarks><para>Используется свойствами <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.Permission" /> и <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Permission" /> для указания разрешений, которые будут иметь получатели для элемента.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Элемент нельзя переслать.</summary>
+        <summary>Элемент не может быть переадресован.</summary>
       </Docs>
     </Member>
     <Member MemberName="olPermissionTemplate">
@@ -52,7 +52,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Outlook будет использовать шаблон управления правами на доступ к данным (IRM) для определения доступа и использования разрешения для элемента.  Просмотреть <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.PermissionService" /> и <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.PermissionService" /> свойства.</summary>
+        <summary>Outlook будет использовать шаблон управления правами на доступ к данным (IRM) для определения разрешений доступа и использования для элемента.  Просмотр <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.PermissionService" /> и <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.PermissionService" /> свойства.</summary>
       </Docs>
     </Member>
     <Member MemberName="olUnrestricted">
@@ -71,7 +71,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Элемент не имеет разрешений ограничений.</summary>
+        <summary>Элемент не имеет ограничений разрешений.</summary>
       </Docs>
     </Member>
   </Members>

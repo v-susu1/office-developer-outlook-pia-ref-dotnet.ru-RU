@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Folders" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Folders" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,10 +49,10 @@
         <Parameter Name="Type" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">Отображаемое имя для новой папки.</param>
-        <param name="Type">Тип папки Outlook для новой папки. Если не указан тип папки, новую папку по умолчанию совпадает с типом папки, в котором он создается. Может иметь одно из следующих значений <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultFolders" /> констант: <b>olFolderCalendar</b>, <b>olFolderContacts</b>, <b>olFolderDrafts</b>, <b>olFolderInbox</b>, <b>olFolderJournal</b>, <b>olFolderNotes</b>или <b>olFolderTasks</b>. Константы <b>olFolderConflicts</b>, <b>olFolderDeletedItems</b>, <b>olFolderJunk</b>, <b>olFolderLocalFailures</b>, <b>olFolderManagedEmail</b>, <b>olFolderOutbox</b>, <b>olFolderRssSubscriptions</b>, <b> olFolderSentMail</b>, <b>olFolderServerFailures</b>, <b>olFolderSyncIssues</b>, <b>olFolderToDo</b>и <b>olPublicFoldersAllPublicFolders</b> нельзя использовать для этого аргумента.</param>
-        <summary>Создает новую папку в <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> семейства сайтов.</summary>
-        <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий новую папку.</returns>
+        <param name="Name">Отображаемое имя новой папки.</param>
+        <param name="Type">Тип папки Outlook для новой папки. Если тип папки не указан, для новой папки будет использоваться тот же тип, что и у папки, в которой она создана. Может быть одной из следующих <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultFolders" /> констант: <b>олфолдеркалендар</b>, <b>олфолдерконтактс</b>, <b>олфолдердрафтс</b>, <b>олфолдеринбокс</b>, <b>олфолдержаурнал</b>, <b>олфолдернотес</b>или <b>olFolderTasks</b>. Константы <b>олфолдерконфликтс</b>, <b>олфолдерделетедитемс</b>, <b>олфолдержунк</b>, <b>олфолдерлокалфаилурес</b>, <b>олфолдерманажедемаил</b>, <b>olFolderOutbox</b>, <b>olFolderRssSubscriptions</b>, <b>olFolderSentMail</b>, <b>olFolderServerFailures</b>, <b>olFolderSyncIssues</b>, <b>olFolderToDo</b>и <b>olPublicFoldersAllPublicFolders</b> не могут быть указаны для этого аргумента.</param>
+        <summary>Создает новую папку в <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> коллекции.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> Объект, представляющий новую папку.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -107,7 +107,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -135,7 +135,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее число объектов в указанном семействе сайтов. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее количество объектов в указанной коллекции. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -161,9 +161,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает первый объект в <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> семейства сайтов.</summary>
-        <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий первый объект, содержащихся в коллекции.</returns>
-        <remarks><para>Возвращает <b>значение Nothing</b> , если первый объект не существует, например, если нет объектов в коллекции. Чтобы обеспечить правильную работу <b>GetFirst</b>, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetNext" />, и <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
+        <summary>Возвращает первый объект в <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> коллекции.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> Объект, представляющий первый объект, содержащийся в коллекции.</returns>
+        <remarks><para>Возвращает <b>значение Nothing</b> , если первый объект не существует, например, если в коллекции нет объектов. Чтобы обеспечить правильную работу методов <b>GetNext,</b> <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetLast" /> <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetNext" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetPrevious" /> и методов в большом семействе, <b>сначала</b> вызовите метод GetNext перед вызовом метода GetNext для этой коллекции и перед вызовом метода <b>GetNext</b> <b>вызовите метод</b> <b>GetNext.</b> Чтобы обеспечить постоянное выполнение вызовов в одной коллекции, создайте явную переменную, которая ссылается на эту коллекцию перед входом в цикл.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -188,9 +188,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает последний объект в <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> семейства сайтов.</summary>
-        <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объекта, представляющего последнего объекта, содержащихся в коллекции.</returns>
-        <remarks><para>Возвращает <b>значение Nothing</b> Если последний объект не существует, например, если коллекция пуста. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetFirst" />, <b>GetLast</b> <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetNext" />, и <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
+        <summary>Возвращает последний объект в <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> коллекции.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> Объект, представляющий последний объект, содержащийся в коллекции.</returns>
+        <remarks><para>Он возвращает <b>Nothing</b> , если не существует последнего объекта, например, если коллекция пуста. Чтобы обеспечить правильную работу методов <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetFirst" />, <b>GetLast</b> <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetNext" />методов и <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetPrevious" /> методов в большом семействе, <b>сначала</b> вызовите метод GetNext <b>перед вызовом</b>метода GetNext для этой коллекции, а затем вызовите метод GetNext перед вызовом <b>метода</b> <b>GetNext</b> . Чтобы обеспечить постоянное выполнение вызовов в одной коллекции, создайте явную переменную, которая ссылается на эту коллекцию перед входом в цикл.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -215,9 +215,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает к следующему объекту в <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> семейства сайтов.</summary>
-        <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий следующий объект, содержащихся в коллекции.</returns>
-        <remarks><para>Возвращает <b>значение Nothing</b> при следующей объект не существует, например, если уже находится в конце коллекции. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetLast" />, <b>GetNext</b>и <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
+        <summary>Возвращает следующий объект в <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> коллекции.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> Объект, представляющий следующий объект, содержащийся в коллекции.</returns>
+        <remarks><para>Он возвращает <b>Nothing</b> , если следующий объект не существует, например, если он уже расположен в конце коллекции. Чтобы обеспечить правильную работу методов <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetLast" />, <b>GetNext</b>и <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetPrevious" /> методов в большом семействе, <b>сначала</b> вызовите метод GetNext <b>перед вызовом</b>метода GetNext для этой коллекции, а затем вызовите метод GetNext перед вызовом <b>метода</b> <b>GetNext</b> . Чтобы обеспечить постоянное выполнение вызовов в одной коллекции, создайте явную переменную, которая ссылается на эту коллекцию перед входом в цикл.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -242,9 +242,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает предыдущему объекту в <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> семейства сайтов.</summary>
-        <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий предыдущему объекту, содержащихся в коллекции.</returns>
-        <remarks><para>Возвращает <b>значение Nothing</b> при предыдущей объект не существует, например, если уже размещен в начало коллекции. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetNext" />, и методы <b>GetPrevious</b> в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции, а также вызвать <b>GetLast</b> до вызова метода <b> GetPrevious</b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
+        <summary>Возвращает предыдущий объект в <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> коллекции.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> Объект, представляющий предыдущий объект, содержащийся в коллекции.</returns>
+        <remarks><para>Он возвращает <b>значение Nothing</b> , если не существует предыдущего объекта, например, если он уже расположен в начале коллекции. Чтобы обеспечить правильную работу методов <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook._Folders.GetNext" />, и <b>Previous</b> в большой коллекции, <b>сначала</b> вызовите метод GetNext <b>перед вызовом</b>метода <b>GetNext</b> для этой коллекции, а затем вызовите метод GetNext перед вызовом <b>метода GetNext</b> . Чтобы обеспечить постоянное выполнение вызовов в одной коллекции, создайте явную переменную, которая ссылается на эту коллекцию перед входом в цикл.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -274,9 +274,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Либо индекс объекта, или значение, используемое для сопоставления свойства по умолчанию объекта в коллекции.</param>
+        <param name="Index">Номер индекса объекта или значение, используемое для сравнения со свойством по умолчанию объекта в коллекции.</param>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект из коллекции.</summary>
-        <value>Объект <b>папки</b> , который представляет указанный объект.</value>
+        <value>Объект <b>Folder</b> , представляющий указанный объект.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,7 +303,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -362,7 +362,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Значение индекса на основе 1 объекта в коллекции.</param>
+        <param name="Index">Значение индекса объекта в коллекции (от 1).</param>
         <summary>Удаляет объект из коллекции.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -390,9 +390,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>

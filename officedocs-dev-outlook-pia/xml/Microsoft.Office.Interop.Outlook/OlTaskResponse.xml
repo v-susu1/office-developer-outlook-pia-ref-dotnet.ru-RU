@@ -13,7 +13,7 @@
   </Base>
   <Docs>
     <summary>Указывает ответ на запрос задачи.</summary>
-    <remarks><para>Используемые <see cref="P:Microsoft.Office.Interop.Outlook._TaskItem.ResponseState" /> свойство и в качестве параметра <see cref="M:Microsoft.Office.Interop.Outlook._TaskItem.Respond(Microsoft.Office.Interop.Outlook.OlTaskResponse,System.Object,System.Object)" /> метод.</para>
+    <remarks><para>Используется <see cref="P:Microsoft.Office.Interop.Outlook._TaskItem.ResponseState" /> свойством и в качестве параметра для <see cref="M:Microsoft.Office.Interop.Outlook._TaskItem.Respond(Microsoft.Office.Interop.Outlook.OlTaskResponse,System.Object,System.Object)" /> метода.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -52,7 +52,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Задача переназначить.</summary>
+        <summary>Задача переназначена.</summary>
       </Docs>
     </Member>
     <Member MemberName="olTaskDecline">
@@ -71,7 +71,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>Отклоненные задачи.</summary>
+        <summary>Задача отклонена.</summary>
       </Docs>
     </Member>
     <Member MemberName="olTaskSimple">
@@ -90,7 +90,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Задача не представляет труда и не может принять, отклонено или назначен.  В этом константа не допустимый параметр для метода <b>TaskItem.Respond</b> .</summary>
+        <summary>Задача является простой задачей и не может быть принята, отклонена или назначена.  Эта константа не является допустимым параметром для метода <b>TaskItem. ответчик</b> .</summary>
       </Docs>
     </Member>
   </Members>

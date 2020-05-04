@@ -22,13 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Коллекция всех свойств, связанный с элементом.</summary>
-    <remarks><para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ItemProperties" /> свойство возвращает <b>набор свойств элементов</b> . Используйте ItemProperties.Item (<paramref name="index" />), где <paramref name="index" /> — это имя объекта или числовые положение элемента в коллекции, чтобы вернуть объект <see cref="T:Microsoft.Office.Interop.Outlook.ItemProperty" /> объекта.</para>
+    <summary>Коллекция всех свойств, связанных с элементом.</summary>
+    <remarks><para>Используйте <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ItemProperties" /> свойство, чтобы возвратить коллекцию <b>ItemProperties</b> . Используйте ItemProperties. Item (<paramref name="index" />), где <paramref name="index" /> — это имя объекта или числового положения элемента в коллекции, чтобы вернуть один <see cref="T:Microsoft.Office.Interop.Outlook.ItemProperty" /> объект.</para>
       <para>
-        <b>Примечание</b>: <b>набор свойств элементов</b> с отсчетом от нуля, что означает, что первый элемент в коллекции ссылается 0.</para>
-      <para>Использование <see cref="M:Microsoft.Office.Interop.Outlook.ItemProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> метод для добавления нового элемента свойства в <b>набор свойств элементов</b> . Использование <see cref="M:Microsoft.Office.Interop.Outlook.ItemProperties.Remove(System.Int32)" /> метод, чтобы удалить свойства элемента из коллекции <b>ItemProperties</b> .</para>
+        <b>Note</b>: коллекция <b>ItemProperties</b> с отсчетом от нуля, что означает, что первый элемент в коллекции ссылается на 0.</para>
+      <para>Используйте <see cref="M:Microsoft.Office.Interop.Outlook.ItemProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> метод, чтобы добавить новое свойство элемента в коллекцию <b>ItemProperties</b> . Используйте <see cref="M:Microsoft.Office.Interop.Outlook.ItemProperties.Remove(System.Int32)" /> метод, чтобы удалить свойство Item из коллекции <b>ItemProperties</b> .</para>
       <para>
-        <b>Примечание</b>: только вы можете добавить или удалить настраиваемые свойства. С идентификаторами настраиваемые свойства <see cref="P:Microsoft.Office.Interop.Outlook.ItemProperty.IsUserProperty" /> .</para>
+        <b>Note</b>: вы можете добавлять и удалять только настраиваемые свойства. Настраиваемые свойства обозначаются свойством <see cref="P:Microsoft.Office.Interop.Outlook.ItemProperty.IsUserProperty" /> .</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -59,11 +59,11 @@
       <Docs>
         <param name="Name">Имя нового объекта свойства элемента.</param>
         <param name="Type">Тип нового <b>ItemProperty</b>.</param>
-        <param name="AddToFolderFields">Определяет, если свойство item будет добавлен в папку поля.</param>
-        <param name="DisplayFormat">Определяет формат поля, как оно отображается в указанной папке.</param>
-        <summary>Добавляет объект <b>ItemProperty</b> <b>набор свойств элементов</b> .</summary>
+        <param name="AddToFolderFields">Определяет, будет ли свойство Item Добавлено в поля папки.</param>
+        <param name="DisplayFormat">Определяет формат поля в том виде, в котором оно отображается в заданной папке.</param>
+        <summary>Добавляет объект <b>ItemProperty</b> в коллекцию <b>ItemProperties</b> .</summary>
         <returns>To be added.</returns>
-        <remarks><para>Можно создать свойство типа, определяемое <see cref="T:Microsoft.Office.Interop.Outlook.OlUserPropertyType" /> перечисление, за исключением следующих типов: <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olEnumeration" />, <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olOutlookInternal" />, и <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olSmartFrom" />.</para>
+        <remarks><para>Можно создать свойство типа, <see cref="T:Microsoft.Office.Interop.Outlook.OlUserPropertyType" /> определяемое перечислением, за исключением следующих типов: <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olEnumeration" />, <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olOutlookInternal" />и. <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olSmartFrom" /></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -90,7 +90,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,7 +118,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,7 +146,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее число объектов в указанном семействе сайтов. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее количество объектов в указанной коллекции. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -209,9 +209,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Либо отсчитываемый от нуля индекс объект или значение, используемое для сопоставления свойства по умолчанию объекта в коллекции.</param>
+        <param name="Index">Номер индекса объекта (с отсчетом от нуля) или значение, используемое для сравнения свойства по умолчанию объекта в коллекции.</param>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ItemProperty" /> объект из коллекции.</summary>
-        <value>Объект <b>ItemProperty</b> , который представляет указанный объект.</value>
+        <value>Объект <b>ItemProperty</b> , представляющий указанный объект.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,7 +238,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -266,7 +266,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Отсчитываемый от нуля индекс значение объекта в коллекции.</param>
+        <param name="Index">Значение индекса объекта в коллекции (с отсчетом от нуля).</param>
         <summary>Удаляет объект из коллекции.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -294,9 +294,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>

@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.IconView" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.IconView" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -71,7 +71,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Область применения <see cref="T:Microsoft.Office.Interop.Outlook.IconView" /> объекта к текущему представлению.</summary>
+        <summary>Применяет <see cref="T:Microsoft.Office.Interop.Outlook.IconView" /> объект к текущему представлению.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,7 +98,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,8 +128,8 @@
       <Docs>
         <param name="Name">Имя нового представления.</param>
         <param name="SaveOption">Параметр Сохранить для нового представления.</param>
-        <summary>Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.View" /> объекта на основании существующих <see cref="T:Microsoft.Office.Interop.Outlook.IconView" /> объекта.</summary>
-        <returns>Объект <b>представления</b> , который представляет новое представление.</returns>
+        <summary>Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.View" /> объект на основе существующего <see cref="T:Microsoft.Office.Interop.Outlook.IconView" /> объекта.</summary>
+        <returns>Объект <b>View</b> , представляющий новое представление.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,9 +184,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет фильтр для представления.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее фильтр для представления.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение этого свойства — это строка, в синтаксисе поиска DAV и поиск (DASL), представляющий текущий фильтр для представления. Дополнительные сведения об использовании DASL синтаксис для фильтрации элементов в представлении можно <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Фильтрации элементов</a></para>
+        <remarks><para>Значением этого свойства является строка в синтаксисе поиска по протоколу DAV (DASL), которая представляет текущий фильтр для представления. Дополнительные сведения об использовании синтаксиса DASL для фильтрации элементов в представлении можно узнать в статье <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Фильтрация элементов</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -213,8 +213,8 @@
         <Parameter Name="Date" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="Date">Дата, к которой следует изменить представление.</param>
-        <summary>Изменение даты, используемых текущим представлением для отображения информации.</summary>
+        <param name="Date">Дата, до которой должно быть изменено представление.</param>
+        <summary>Изменяет дату, используемую текущим представлением, для отображения сведений.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,9 +244,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlIconViewPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlIconViewPlacement" /> значение, определяющее, как значки помещаются в <see cref="T:Microsoft.Office.Interop.Outlook.IconView" /> объекта. Чтение и запись</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlIconViewPlacement" /> значение, определяющее, как значки помещаются в <see cref="T:Microsoft.Office.Interop.Outlook.IconView" /> объект. Чтение и запись</summary>
         <value>To be added.</value>
-        <remarks><para>Если значение <see cref="P:Microsoft.Office.Interop.Outlook._IconView.IconViewType" /> свойства имеет значение <b>olIconViewList</b>, значение этого свойства автоматически устанавливается значение <b>olIconSortAndAutoArrange</b>.</para>
+        <remarks><para>Если для <see cref="P:Microsoft.Office.Interop.Outlook._IconView.IconViewType" /> свойства задано значение <b>оликонвиевлист</b>, значение этого свойства автоматически задается равным <b>оликонсортандаутоарранже</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -276,9 +276,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlIconViewType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlIconViewType" /> константа, определяющая способ отображения элементов Outlook в <see cref="T:Microsoft.Office.Interop.Outlook.IconView" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlIconViewType" /> константу, определяющую способ отображения элементов Outlook в <see cref="T:Microsoft.Office.Interop.Outlook.IconView" /> объекте. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Если значение этого свойства имеет значение <b>olIconSortAndAutoArrange</b>, значение <see cref="P:Microsoft.Office.Interop.Outlook._IconView.IconPlacement" /> свойства автоматически устанавливается значение <b>olIconSortAndAutoArrange</b>.</para>
+        <remarks><para>Если для этого свойства задано значение <b>оликонсортандаутоарранже</b>, значение <see cref="P:Microsoft.Office.Interop.Outlook._IconView.IconPlacement" /> свойства автоматически задается равным <b>оликонсортандаутоарранже</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -308,10 +308,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение типа <b>String</b> (<b>строка</b> в C#), представляющее языка, заданных для представления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее параметр языка для представления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>Language</b> <b>String</b> (<b>строка</b> в C#) используется для представления тег языка ISO. Например строка «EN-US» представляет код ISO «США - английский.»</para>
-          <para>Если указан допустимый код языка, объект доступна только в меню "Вид" для типа указанного языка. Если значение не указано, элемент object доступен для всех типов языка. Значение по умолчанию для этого свойства — это пустая строка.</para>
+        <remarks><para>Свойство <b>Language</b> использует <b>строку</b> (<b>строка</b> в C#) для представления тега языка ISO. Например, строка "EN-US" представляет код ISO для "США-английский".</para>
+          <para>Если указан допустимый код языка, объект будет доступен только в меню Вид для указанного типа языка. Если значение не указано, элемент объекта доступен для всех типов языка. Значение по умолчанию для этого свойства — пустая строка.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -341,9 +341,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, указывающее, является ли пользователь может изменять параметры текущего представления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>логического</b> значения (<b>bool</b> в C#), которое указывает, может ли пользователь изменять параметры текущего представления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Если <b>значение True</b>, пользователь может изменять параметры текущего представления. Тем не менее изменения, внесенные в интерфейс не будут сохранены. Если <b>значение False</b> (значение по умолчанию), все изменения будут сохранены.  </para>
+        <remarks><para>Если <b>имеет значение true</b>, пользователь может изменять параметры текущего представления. Однако изменения, внесенные в интерфейс, не будут сохранены. Если задано <b>значение false</b> (значение по умолчанию), все изменения будут сохранены.  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -373,7 +373,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет отображаемое имя для объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее отображаемое имя объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -401,7 +401,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -427,8 +427,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Сбрасывает встроенных представления Microsoft Outlook исходные параметры.</summary>
-        <remarks><para>Этот метод работает только для встроенных представления Outlook.</para>
+        <summary>Восстанавливает исходные параметры встроенного представления Microsoft Outlook.</summary>
+        <remarks><para>Этот метод работает только со встроенными представлениями Outlook.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -453,7 +453,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Сохраняет представления или сохраняет изменения в представлении.</summary>
+        <summary>Сохранение представления или сохранение изменений в представлении.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -480,9 +480,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlViewSaveOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewSaveOption" /> константа, которая указывает папки, в которых доступен указанное представление и разрешения на чтение, подключенного к представления. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewSaveOption" /> константу, указывающую папки, в которых доступно указанное представление и разрешения на чтение, присоединенные к представлению. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Когда задано значение свойства <b>SaveOption</b> <see cref="T:Microsoft.Office.Interop.Outlook.IconView" /> объект создается с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> семейства сайтов. </para>
+        <remarks><para>Значение свойства <b>SaveOption</b> задается при создании <see cref="T:Microsoft.Office.Interop.Outlook.IconView" /> объекта с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> метода <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> коллекции. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -509,9 +509,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -544,7 +544,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OrderFields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OrderFields" /> объект, представляющий набор полей, по которым элементы отображаются в <see cref="T:Microsoft.Office.Interop.Outlook.IconView" /> упорядочены в объект. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OrderFields" /> объект, представляющий набор полей, по которым упорядочиваются элементы, отображаемые в <see cref="T:Microsoft.Office.Interop.Outlook.IconView" /> объекте. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -572,9 +572,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, будет ли <see cref="T:Microsoft.Office.Interop.Outlook.IconView" /> объект является встроенной представления Outlook. Только для чтения.</summary>
+        <summary>Возвращает логическое<b>значение (</b> <b>логическое</b> значение в C#), которое указывает, <see cref="T:Microsoft.Office.Interop.Outlook.IconView" /> является ли объект встроенным представлением Outlook. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para><see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> Метод можно использовать для представления, только если значение этого свойства имеет значение <b>True</b>.</para>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> Метод можно использовать только для представления, если для этого свойства задано значение <b>true</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -601,7 +601,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlViewType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewType" /> константа, которая указывает тип представления представления. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewType" /> константу, указывающую тип представления. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -632,10 +632,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), задающее XML-определение представления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), задающее XML-определение представления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Определение XML описывает тип представления с помощью ряда теги и ключевых слов в соответствии с различными свойствами представления. При создании представления XML-определение анализируется для отображения параметров для нового представления.</para>
-          <para>Для определения XML структуру при создании представления, можно создать представление с помощью пользовательского интерфейса Outlook и затем можно извлечь свойство <b>XML</b> для этого представления.  </para>
+        <remarks><para>В XML-определении описывается тип представления с помощью ряда тегов и ключевых слов, соответствующих различным свойствам представления. При создании представления XML-определение анализируется для отображения параметров нового представления.</para>
+          <para>Чтобы определить структуру XML при создании представлений, можно создать представление с помощью пользовательского интерфейса Outlook, а затем можно получить свойство <b>XML</b> для этого представления.  </para>
           <para> </para></remarks>
       </Docs>
     </Member>

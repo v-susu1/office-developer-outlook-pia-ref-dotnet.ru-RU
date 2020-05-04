@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Reminder" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Reminder" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,7 +73,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющая название. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую название. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -101,7 +101,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -127,8 +127,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Закрывает текущий напоминание.</summary>
-        <remarks><para>Метод <b>Прекратить</b> завершится ошибкой, если оповещение не видны.</para>
+        <summary>Закрывает текущее напоминание.</summary>
+        <remarks><para>При <b>Dismiss</b> отсутствии видимого напоминания метод unзавершается с ошибками.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -155,9 +155,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), который определяет, является ли напоминания видны в данный момент.  Только для чтения.</summary>
+        <summary>Возвращает <b>логическое значение</b> (<b>bool</b> в C#), которое определяет, отображается ли напоминание в данный момент.  Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para> Outlook определяется возвращаемое значение этого свойства на основе состояния текущего напоминание. Отображаются все активные напоминания. Если <b>IsVisible</b> имеет значение True, отображается оповещение.</para>
+        <remarks><para> Outlook определяет возвращаемое значение этого свойства на основе состояния текущего напоминания. Отображаются все активные напоминания. Если параметру <b>Visible</b> присвоено значение true, напоминание отображается.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -184,7 +184,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>объект</b> , соответствующий указанного элемента Outlook. Только для чтения.</summary>
+        <summary>Возвращает <b>объект</b> , соответствующий указанному элементу Outlook. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -212,9 +212,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает произойдет <b>даты</b> , которое указывает указанного напоминания о следующем. Только для чтения.</summary>
+        <summary>Возвращает <b>дату</b> , указывающую на следующее время выполнения указанного напоминания. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение свойства <b>NextReminderDate</b> изменяется при каждом объекта <see cref="M:Microsoft.Office.Interop.Outlook._Reminder.Snooze(System.Object)" /> метода или когда пользователь нажимает кнопку отложить.</para>
+        <remarks><para>Значение свойства <b>некстреминдердате</b> изменяется каждый раз, когда выполняется <see cref="M:Microsoft.Office.Interop.Outlook._Reminder.Snooze(System.Object)" /> метод объекта, или когда пользователь нажимает кнопку "отложить".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -241,9 +241,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>дату</b> , на который указывает исходный дату и время, заданное указанного напоминание будет выполнена. Только для чтения.</summary>
+        <summary>Возвращает <b>дату</b> , указывающую исходную дату и время, когда задано указанное напоминание. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это значение соответствует исходное значение даты и времени, прежде чем <see cref="M:Microsoft.Office.Interop.Outlook._Reminder.Snooze(System.Object)" /> метода или нажатии кнопки переноса.</para>
+        <remarks><para>Это значение соответствует исходному значению даты и времени перед выполнением <see cref="M:Microsoft.Office.Interop.Outlook._Reminder.Snooze(System.Object)" /> метода, а пользователь нажимает кнопку "проложить".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -270,7 +270,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -298,9 +298,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -332,10 +332,10 @@
         <Parameter Name="SnoozeTime" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SnoozeTime">Указывает количество времени (в минутах) для задержки напоминания. Значение по умолчанию: 5 минут.</param>
-        <summary>Задержки напоминания в указанное время.</summary>
-        <remarks><para>Это эквивалентно пользователя, нажав кнопку отложить.  </para>
-          <para>Этот метод завершится ошибкой, если текущий напоминание не активен.  </para>
+        <param name="SnoozeTime">Указывает период времени (в минутах), в течение которого будет откладываться напоминание. Значение по умолчанию — 5 минут.</param>
+        <summary>Задерживает напоминание на заданное время.</summary>
+        <remarks><para>Это эквивалентно пользователю нажатия кнопки "отложить".  </para>
+          <para>Этот метод завершится с ошибками, если текущее напоминание неактивно.  </para>
           <para> </para></remarks>
       </Docs>
     </Member>

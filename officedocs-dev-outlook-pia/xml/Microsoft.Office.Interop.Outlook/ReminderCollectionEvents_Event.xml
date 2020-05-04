@@ -40,7 +40,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ReminderCollectionEvents_BeforeReminderShowEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает перед отображением диалоговое окно напоминание.</summary>
+        <summary>Возникает перед отображением диалогового окна напоминания.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,8 +59,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ReminderCollectionEvents_ReminderAddEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит после добавления напоминание.</summary>
-        <remarks><para>Напоминание фактически не создается, пока связанный элемент Microsoft Outlook был сохранен. Таким образом это событие не происходит только после сохранения объекта связанного элемента.</para>
+        <summary>Возникает после добавления напоминания.</summary>
+        <remarks><para>Напоминание не создается до тех пор, пока не будет сохранен соответствующий элемент Microsoft Outlook. Таким образом, это событие не произойдет, пока не будет сохранен связанный объект Item.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -79,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ReminderCollectionEvents_ReminderChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает после изменения напоминание.</summary>
+        <summary>Возникает после изменения напоминания.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,7 +98,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ReminderCollectionEvents_ReminderFireEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает перед выполнением напоминания.</summary>
+        <summary>Происходит перед выполнением напоминания.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,23 +117,23 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ReminderCollectionEvents_ReminderRemoveEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда <see cref="T:Microsoft.Office.Interop.Outlook.Reminder" /> объект был удален из коллекции.</summary>
-        <remarks><para>Напоминание можно удалить из коллекции <b>напоминания</b> с любой из следующих способов:</para>
+        <summary>Возникает при удалении <see cref="T:Microsoft.Office.Interop.Outlook.Reminder" /> объекта из коллекции.</summary>
+        <remarks><para>Напоминание можно удалить из коллекции <b>напоминаний</b> одним из следующих средств:</para>
           <list type="bullet">
             <item>
-              <para>Метод Remove коллекции напоминания.</para>
+              <para>Метод remind коллекции напоминаний.</para>
             </item>
             <item>
-              <para>Метод прекратить объекта напоминание.</para>
+              <para>Метод метода отклонения объекта напоминания.</para>
             </item>
             <item>
-              <para>Когда пользователь нажимает кнопку прекратить.</para>
+              <para>Когда пользователь нажимает кнопку "Закрыть".</para>
             </item>
             <item>
-              <para>При выключении напоминанием в связанный элемент.</para>
+              <para>Когда пользователь отключает напоминание о собрании в связанном элементе.</para>
             </item>
             <item>
-              <para>Если пользователь удаляет элемент, который содержит напоминание.</para>
+              <para>Когда пользователь удаляет элемент, содержащий напоминание.</para>
             </item>
           </list>
           <para> </para></remarks>
@@ -154,8 +154,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ReminderCollectionEvents_SnoozeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда напоминание закрытия с помощью кнопки переноса.</summary>
-        <remarks><para>Это событие будет срабатывать, когда <see cref="M:Microsoft.Office.Interop.Outlook._Reminder.Snooze(System.Object)" /> выполнения метода, или когда пользователь нажимает кнопку отложить.</para>
+        <summary>Происходит, когда напоминание закрывается с помощью кнопки "отложить".</summary>
+        <remarks><para>Это событие будет срабатывать при выполнении <see cref="M:Microsoft.Office.Interop.Outlook._Reminder.Snooze(System.Object)" /> метода или когда пользователь нажимает кнопку "отложить".</para>
           <para> </para></remarks>
       </Docs>
     </Member>

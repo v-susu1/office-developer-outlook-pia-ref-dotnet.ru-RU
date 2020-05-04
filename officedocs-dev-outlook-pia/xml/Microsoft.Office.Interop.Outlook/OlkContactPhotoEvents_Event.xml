@@ -40,7 +40,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkContactPhotoEvents_ChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит при изменении изображение контакта.</summary>
+        <summary>Возникает при изменении фотографии контакта.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,7 +59,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkContactPhotoEvents_ClickEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает при нажатии элемента управления, через действие пользователя или программными средствами.</summary>
+        <summary>Возникает при щелчке элемента управления либо с помощью действия пользователя, либо программным способом.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkContactPhotoEvents_DoubleClickEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает при двойном щелчке элемента управления через действие пользователя или программными средствами.</summary>
+        <summary>Возникает при двойном щелчке элемента управления через действие пользователя или программным способом.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +97,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkContactPhotoEvents_EnterEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает перед фактически фокус Получает элемент управления из элемента управления в той же форме.</summary>
-        <remarks><para>Это событие происходит только когда элемент управления отображается кнопка изображение контакта и было определено не изображение контакта.</para>
+        <summary>Возникает перед тем, как элемент управления фактически получает фокус от элемента управления в той же форме.</summary>
+        <remarks><para>Это событие возникает только в том случае, если элемент управления отображает кнопку аватара, а фотография контакта не определена.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -117,8 +117,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkContactPhotoEvents_ExitEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит после передает фокус из этого элемента управления на другой элемент управления в той же форме.</summary>
-        <remarks><para>Это событие происходит только когда элемент управления отображается кнопка изображение контакта и было определено не изображение контакта.</para>
+        <summary>Возникает сразу после того, как фокус перейдет от этого элемента управления к другому элементу управления в той же форме.</summary>
+        <remarks><para>Это событие возникает только в том случае, если элемент управления отображает кнопку аватара, а фотография контакта не определена.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -138,7 +138,7 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит, когда пользователь нажимает клавишу.</summary>
-        <remarks><para>Состояние клавиш (SHIFT, CTRL или ALT), которые нажата во время события <b>KeyDown</b> доступен через <paramref name="Shift" /> параметр.</para>
+        <remarks><para>Состояние клавиш-модификаторов (SHIFT, CTRL или ALT), нажатых во время события <b>KeyDown</b> , можно получить с помощью <paramref name="Shift" /> параметра.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -158,20 +158,20 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит, когда пользователь нажимает клавишу с кодом ANSI.</summary>
-        <remarks><para>Клавиша ANSI —, которая возвращает typeable символ, когда пользователь нажимает ее. Событие <b>KeyPress</b> происходит, когда пользователь нажимает клавишу с кодом ANSI на выполнение формы в форме при или элемент управления имеет фокус. Событие может возникнуть до или после выпуска ключ.</para>
+        <remarks><para>Клавиша ANSI — это элемент, который создает типизированный символ, когда пользователь нажимает его. Событие <b>KeyPress</b> возникает, когда пользователь нажимает клавишу ANSI в работающей форме, пока в форме или элементе управления на ней находится фокус. Событие может произойти до или после того, как клавиша отпущена.</para>
           <para>Событие <b>KeyPress</b> не происходит при следующих условиях:</para>
           <list type="bullet">
             <item>
               <para>Нажатие клавиши TAB</para>
             </item>
             <item>
-              <para>При нажатии клавиши ВВОД</para>
+              <para>Нажатие клавиши ВВОД</para>
             </item>
             <item>
               <para>Нажатие клавиши со стрелкой</para>
             </item>
             <item>
-              <para>если при нажатии клавиши фокус перемещается с одного элемента управления на другой.</para>
+              <para>если при нажатии клавиши фокус перемещается с одного элемента управления на другой. </para>
             </item>
           </list>
           <para> </para></remarks>
@@ -193,7 +193,7 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит, когда пользователь отпускает клавишу.</summary>
-        <remarks><para>Состояние клавиш (SHIFT, CTRL или ALT), которые нажата во время события <b>KeyUp</b> доступен через <paramref name="Shift" /> параметр.</para>
+        <remarks><para>Состояние клавиш-модификаторов (SHIFT, CTRL или ALT), нажатых во время события <b>KeyUp</b> , можно получить с помощью <paramref name="Shift" /> параметра.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -231,8 +231,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkContactPhotoEvents_MouseMoveEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает после регистрации движения мыши на элемент управления.</summary>
-        <remarks><para>Нажатие клавиши ALT запускает событие <b>MouseMove</b> .</para>
+        <summary>Возникает после регистрации движения мыши над элементом управления.</summary>
+        <remarks><para>Нажатие клавиши ALT вызывает событие <b>MouseMove</b> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -251,7 +251,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlkContactPhotoEvents_MouseUpEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает после отпускании кнопки мыши, которые были нажаты на элементе управления.</summary>
+        <summary>Возникает после того, как пользователь отпускает кнопку мыши, нажатую на элементе управления.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,10 +48,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляющее X400 адреса электронной почты <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), представляющую адрес электронной почты X400 для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство предполагается X400-адрес списка рассылки. Чтобы определить основной адрес Интернет, используйте <see cref="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.PrimarySmtpAddress" /> свойство.</para>
-          <para>Свойство <b>адреса</b> необходимо задать до вызова метода <see cref="M:Microsoft.Office.Interop.Outlook._ExchangeUser.Details(System.Object)" /> метод. </para>
+        <remarks><para>В этом свойстве предполагается, что X400 адрес списка рассылки. Чтобы определить основной Интернет адрес, используйте <see cref="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.PrimarySmtpAddress" /> свойство.</para>
+          <para>Перед <b>Address</b> вызовом <see cref="M:Microsoft.Office.Interop.Outlook._ExchangeUser.Details(System.Object)" /> метода необходимо задать свойство Address. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -78,9 +78,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlAddressEntryUserType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>olExchangeDistributionListAddressEntry</b> — константа из <see cref="T:Microsoft.Office.Interop.Outlook.OlAddressEntryUserType" /> тип перечисления, представляющий пользователя <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Только для чтения.</summary>
+        <summary>Возвращает <b>олексчанжедистрибутионлистаддрессентри</b> , который является константой из <see cref="T:Microsoft.Office.Interop.Outlook.OlAddressEntryUserType" /> перечисления, <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />представляющего тип пользователя. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Свойство <b>AddressEntryUserType</b> наследует объект <b>AddressEntry</b> . В случае <b>ExchangeDistributionList</b> <b>AddressEntryUserType</b> всегда должна вернуть <b>olExchangeDistributionListAddressEntry</b>.</para>
+        <remarks><para>Объект <b>метод exchangedistributionlist</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Он наследует свойство <b>аддрессентрюсертипе</b> из объекта <b>AddressEntry</b> . В случае <b>метод exchangedistributionlist</b> <b>аддрессентрюсертипе</b> должен всегда возвращать <b>олексчанжедистрибутионлистаддрессентри</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -107,10 +107,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляет псевдоним для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую псевдоним для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagAccount</b>.</para>
-          <para>Если это свойство не реализован или не существует для объекта <b>ExchangeDistributionList</b> возвращает пустую строку. </para>
+          <para>Возвращает пустую строку, если это свойство не реализовано или не существует для объекта <b>метод exchangedistributionlist</b> . </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -137,7 +137,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение (для Outlook) для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение (Outlook) для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -165,7 +165,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает константу в <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> перечисление, указывающее, класс <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает константу в <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> перечислении, указывающую класс <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -196,10 +196,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее комментариев для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Для чтения и записи.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую комментарии для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks><para>Это свойство соответствует свойству MAPI, <b>PidTagComment</b>.</para>
-          <para> Если это свойство не реализован или не существует для объекта <b>ExchangeDistributionList</b> возвращает пустую строку. </para>
+          <para> Возвращает пустую строку, если это свойство не реализовано или не существует для объекта <b>метод exchangedistributionlist</b> . </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -224,8 +224,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Удаляет <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта из <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> объект коллекции, к которой он принадлежит.</summary>
-        <remarks><para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Объект <b>ExchangeDistributionList</b> — это объект <b>AddressEntry</b> , имеет <b>olExchangeDistributionListAddressEntry</b> как <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.AddressEntryUserType" />; вызов <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntry.GetExchangeDistributionList" /> возвращает соответствующий объект <b>ExchangeDistributionList</b> .</para>
+        <summary>Удаляет <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объект из объекта <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> Collection, к которому он принадлежит.</summary>
+        <remarks><para>Объект <b>метод exchangedistributionlist</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Объект <b>метод exchangedistributionlist</b> — это объект <b>AddressEntry</b> , который имеет <b>олексчанжедистрибутионлистаддрессентри</b> в <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.AddressEntryUserType" />качестве объекта; вызов <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntry.GetExchangeDistributionList" /> возвращает соответствующий объект <b>метод exchangedistributionlist</b> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -251,10 +251,10 @@
         <Parameter Name="HWnd" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="HWnd">Дескриптор родительского окна для диалоговое окно "Подробности". Нулевое значение (по умолчанию) указывает модального диалогового окна.</param>
-        <summary>Отображает модальное диалоговое окно, которое предоставляет подробные сведения о <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта.</summary>
-        <remarks><para>Метод <b>сведений</b> не выполняется, если <see cref="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.Name" /> оставлено пустым. Необходимо использовать для обработки ошибок во время выполнения, обработку ошибок и при нажатии кнопки "Отмена" в диалоговом окне. </para>
-          <para>Метод <b>сведения о</b> фактически останавливает выполнение во время отображения диалоговое окно кода.   </para>
+        <param name="HWnd">Дескриптор родительского окна для диалогового окна "сведения". Нулевое значение (по умолчанию) указывает модальное диалоговое окно.</param>
+        <summary>Отображает модальное диалоговое окно, содержащее подробные сведения об <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекте.</summary>
+        <remarks><para>Если <see cref="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.Name" /> свойство не задано, метод <b>Details</b> завершается с ошибкой. Для обработки ошибок во время выполнения необходимо использовать обработку ошибок, а когда пользователь нажимает кнопку Cancel (Отмена) в диалоговом окне. </para>
+          <para>Метод <b>Details</b> фактически прерывает выполнение кода при отображении диалогового окна.   </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -281,10 +281,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlDisplayType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>olDistList</b> — константа из <see cref="T:Microsoft.Office.Interop.Outlook.OlDisplayType" /> перечисление, представляющее природы <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Только для чтения.</summary>
+        <summary>Возвращает <b>олдистлист</b> , который является константой из <see cref="T:Microsoft.Office.Interop.Outlook.OlDisplayType" /> перечисления, <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />представляющего природу объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagDisplayType</b>.</para>
-          <para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Свойство <b>DisplayType</b> наследует объект <b>AddressEntry</b> . В случае <b>ExchangeDistributionList</b> <b>DisplayType</b> всегда должна вернуть <b>olDistList</b>.</para>
+          <para>Объект <b>метод exchangedistributionlist</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Он наследует свойство <b>дисплайтипе</b> из объекта <b>AddressEntry</b> . В случае <b>метод exchangedistributionlist</b> <b>дисплайтипе</b> должен всегда возвращать <b>олдистлист</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -309,9 +309,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), так как <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта не соответствует контакта в адресной книге контакты.</summary>
-        <returns><b>Значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), так как объект <b>ExchangeDistributionList</b> не соответствует контакта в адресной книге контакты.</returns>
-        <remarks><para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Метод <b>GetContact</b> оно наследуется от объект <b>AddressEntry</b> , и в случае <b>ExchangeDistributionList</b>, этот метод всегда возвращает <b>значение Nothing</b>.</para>
+        <summary>Возвращает <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), так <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> как объект не соответствует контакту в адресной книге Contacts.</summary>
+        <returns><b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), так как объект <b>метод exchangedistributionlist</b> не соответствует контакту в адресной книге Contacts.</returns>
+        <remarks><para>Объект <b>метод exchangedistributionlist</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Он наследует метод GetObject от объекта <b>AddressEntry</b> , а в случае <b>метод exchangedistributionlist</b> <b>этот метод всегда</b> возвращает <b>значение Nothing</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -336,8 +336,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта.</summary>
-        <returns>Родительский объект <b>ExchangeDistributionList</b> .</returns>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объект.</summary>
+        <returns>Родительский объект <b>метод exchangedistributionlist</b> .</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -362,8 +362,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> коллекции, представляющей членов списка рассылки Exchange.</summary>
-        <returns><b>AddressEntries</b> коллекция, содержащая <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекты, которые представляют элементы, принадлежащей списку рассылки.</returns>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> коллекцию, представляющую участников списка рассылки Exchange.</summary>
+        <returns>Коллекция <b>AddressEntries</b> , содержащая <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекты, представляющие членов, принадлежащих списку рассылки.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -388,9 +388,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), так как <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта не соответствует <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" /> объекта.</summary>
-        <returns><b>Значение NULL</b> (<b>Nothing</b> в Visual Basic), так как объект <b>ExchangeDistributionList</b> не соответствует объект <b>ExchangeUser</b> .</returns>
-        <remarks><para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Метод <b>GetExchangeUser</b> оно наследуется от объект <b>AddressEntry</b> , и в случае <b>ExchangeDistributionList</b>, этот метод всегда возвращает <b>значение Nothing</b>.</para>
+        <summary>Возвращает <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), так <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> как объект не соответствует <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" /> объекту.</summary>
+        <returns><b>Null</b> (<b>Nothing</b> в Visual Basic), так как объект <b>метод exchangedistributionlist</b> не соответствует объекту <b>ExchangeUser</b> .</returns>
+        <remarks><para>Объект <b>метод exchangedistributionlist</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Он наследует метод <b>GetExchangeUser</b> из объекта <b>AddressEntry</b> , а в случае <b>метод exchangedistributionlist</b>этот метод всегда возвращает <b>значение Nothing</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -421,10 +421,10 @@
         <param name="Start">To be added.</param>
         <param name="MinPerChar">To be added.</param>
         <param name="CompleteFormat">To be added.</param>
-        <summary>Возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), так как сведения о занятости будет доступно только для отдельных пользователей, а не <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объектов.</summary>
+        <summary>Возвращает <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#) из-за того, что сведения о занятости доступны только отдельным пользователям <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> , а не объектам.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Метод <b>GetFreeBusy</b> оно наследуется от объект <b>AddressEntry</b> , и в случае <b>ExchangeDistributionList</b>, независимо от значения параметров, этот метод всегда возвращает <b>значение Nothing</b>.</para>
-          <para> Этот метод не возвращает сведения о занятости отдельных участников <b>ExchangeDistributionList</b>. Чтобы получить сведения о занятости для приглашения на собрание, отправьте запрос для отдельных пользователей. Использование <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.AddressEntryUserType" /> свойства объекта <b>AddressEntry</b> получили от <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.AddressEntry" /> для определения <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> представляет <b>ExchangeDistributionList</b>.</para>
+        <remarks><para>Объект <b>метод exchangedistributionlist</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Он наследует метод <b>жетфрибуси</b> из объекта <b>AddressEntry</b> , а в случае <b>метод exchangedistributionlist</b>независимо от значений параметров этот метод всегда возвращает <b>значение Nothing</b>.</para>
+          <para> Этот метод не возвращает сведения о занятости отдельных членов <b>метод exchangedistributionlist</b>. Чтобы получить сведения о занятости для приглашения на собрание, отправьте запрос отдельным пользователям. Используйте <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.AddressEntryUserType" /> свойство объекта <b>AddressEntry</b> , полученное из <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.AddressEntry" /> , чтобы определить, представляет <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> ли объект a <b>метод exchangedistributionlist</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -449,10 +449,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> коллекцию, содержащую объект, который содержит все <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объектов, представляющих списки рассылки Exchange из которых <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> , является участником.</summary>
-        <returns>Объект <b>AddressEntries</b> семейства сайтов, который представляет списки рассылки, членом которых является этот объект <b>ExchangeDistributionList</b> . Возвращает объект <b>AddressEntries</b> с количеством нуль (0), если <b>ExchangeDistributionList</b> не должна быть членом любого списка рассылки Exchange.</returns>
+        <summary>Возвращает объект <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> Collection, который содержит все <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекты, представляющие списки рассылки Exchange, членом которых <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> является.</summary>
+        <returns>Объект коллекции <b>AddressEntries</b> , представляющий списки рассылки, членом которых является этот объект <b>метод exchangedistributionlist</b> . Возвращает объект <b>AddressEntries</b> с нулевым значением (0), если <b>метод exchangedistributionlist</b> не является членом какого-либо списка рассылки Exchange.</returns>
         <remarks><para>
-            <b>GetMemberOfList</b> — это дорогой операции с точки зрения производительности при наличии медленное подключение к Exchange Server.</para>
+            <b>GetMemberOfList</b> является дорогостоящей операцией с точки зрения производительности при медленном подключении к Exchange Server.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -477,10 +477,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> коллекцию, содержащую объект, который содержит все владельцы <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</summary>
-        <returns>Объект <b>AddressEntries</b> семейства сайтов, содержащий <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объектов, представляющих всех владельцев <b>ExchangeDistributionList</b>. Возвращает объект <b>AddressEntries</b> с нуля (0), если ни один владелец можно найти для <b>ExchangeDistributionList</b> в текущем сеансе.</returns>
-        <remarks><para>
-            <b>GetOwners</b> — это дорогой операции с точки зрения производительности при наличии медленное подключение к Exchange Server.</para>
+        <summary>Возвращает объект <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> Collection, который содержит всех владельцев объекта <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</summary>
+        <returns>Объект коллекции <b>AddressEntries</b> , который содержит <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекты, представляющие всех владельцев <b>метод exchangedistributionlist</b>. Возвращает объект <b>AddressEntries</b> с нулевым значением (0), если не удается найти владельцев для <b>метод exchangedistributionlist</b> в текущем сеансе.</returns>
+        <remarks><para>В плане производительности при наличии медленного подключения к Exchange Server у сервера- 
+            <b>владельца</b> есть затратные операции.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -507,9 +507,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее уникальный идентификатор для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую уникальный идентификатор для объекта <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para> Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Он наследует свойство <b>ID</b> из объект <b>AddressEntry</b> . При создании объект <b>AddressEntry</b> , поставщика транспорта назначает строку постоянная, уникальный идентификатор. Эти идентификаторы не изменяйте из одного сеанса в другую.</para>
+        <remarks><para> Объект <b>метод exchangedistributionlist</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Он наследует свойство <b>ID</b> от объекта <b>AddressEntry</b> . При создании объекта <b>AddressEntry</b> поставщик транспорта назначает постоянный уникальный идентификатор строки. Эти идентификаторы не меняются от одного сеанса к другому.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -638,7 +638,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет отображаемое имя для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее отображаемое имя <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -666,7 +666,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> из <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -694,10 +694,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляет основной адрес Simple Mail Transfer Protocol (SMTP) для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Только для чтения.</summary>
+        <summary>Возвращает значение типа <b>String</b> (<b>строка</b> в C#), представляющее основной SMTP-адрес для протокола <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagEmailAddress</b>.</para>
-          <para>Если это свойство не реализован или не существует для объекта <b>ExchangeDistributionList</b> возвращает пустую строку. </para>
+          <para>Возвращает пустую строку, если это свойство не реализовано или не существует для объекта <b>метод exchangedistributionlist</b> . </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -724,7 +724,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.PropertyAccessor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект, который поддерживает создание, получение, Установка и удаление свойств родительского <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект, который поддерживает создание, получение, настройку и удаление свойств родительского <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -752,9 +752,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -790,9 +790,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее тип записи для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Для чтения и записи.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую тип записи для <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Объект <b>ExchangeDistributionList</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Свойство <b>Type</b> наследует объект <b>AddressEntry</b> . В случае <b>ExchangeDistributionList</b>тип всегда является строка «EX».</para>
+        <remarks><para>Объект <b>метод exchangedistributionlist</b> является производным от <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Он наследует свойство <b>Type</b> из объекта <b>AddressEntry</b> . В случае <b>метод exchangedistributionlist</b>типом всегда является строка "ex".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -819,11 +819,11 @@
         <Parameter Name="Refresh" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="MakePermanent">Значение <b>True</b> означает, что при сбросе кэша свойства и все изменения завершены в базовом адресной книги. Значение <b>False</b> указывает, что кэш свойств очищен, но не было зафиксировано постоянное хранилище. Значение по умолчанию — <b>True</b>.</param>
-        <param name="Refresh">Значение <b>True</b> указывает, что кэш свойств перезагружается из значений в базовом адресной книги. Значение <b>False</b> указывает, что кэш свойств не загружаются. Значение по умолчанию — <b>False</b>.</param>
-        <summary>Внесение изменений в публикации, посвященные <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объект в системе обмена сообщениями.</summary>
-        <remarks><para> Новые записи или изменения существующих записей, не сохраняются в коллекции до вызова метода <b>Update</b> с его <paramref name="MakePermanent" /> параметра задано значение <b>True</b>.  </para>
-          <para>Чтобы очистить кэш и перезагрузите значения из адресной книги, вызвать метод <b>обновления</b> с <paramref name="MakePermanent" /> параметра значение <b>False</b> и <paramref name="Refresh" /> параметра задано значение <b>True</b>.  </para>
+        <param name="MakePermanent">Значение <b>true</b> указывает на то, что кэш свойств очищается и все изменения фиксируются в соответствующей адресной книге. Значение <b>false</b> указывает на то, что кэш свойств очищается, но не фиксируется в постоянном хранилище. Значение по умолчанию — <b>True</b>.</param>
+        <param name="Refresh">Значение <b>true</b> указывает на то, что кэш свойств перегружается из значений в базовой адресной книге. Значение <b>false</b> указывает на то, что кэш свойств не перегружается. Значение по умолчанию — <b>False</b>.</param>
+        <summary>Отправляет изменение <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объекта в систему обмена сообщениями.</summary>
+        <remarks><para> Новые записи или изменения, внесенные в существующие записи, не сохраняются в коллекции до <b>Update</b> тех пор, пока не будет вызван <paramref name="MakePermanent" /> метод Update, для которого параметру присвоено значение <b>true</b>.  </para>
+          <para>Чтобы очистить кэш и повторно загрузить значения из адресной книги, вызовите метод <b>Update</b> с <paramref name="MakePermanent" /> параметром <b>false</b> , а для <paramref name="Refresh" /> параметра задано значение <b>true</b>.  </para>
           <para> </para></remarks>
       </Docs>
     </Member>

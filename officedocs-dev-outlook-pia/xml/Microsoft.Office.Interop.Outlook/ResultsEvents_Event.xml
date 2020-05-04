@@ -40,8 +40,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ResultsEvents_ItemAddEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда один или несколько элементов добавляются для указанного семейства сайтов.</summary>
-        <remarks><para>Это событие не выполняется большое число элементов добавляются к папке за один раз. </para>
+        <summary>Возникает при добавлении одного или нескольких элементов в указанную коллекцию.</summary>
+        <remarks><para>Это событие не выполняется при одновременном добавлении большого количества элементов в папку. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -60,7 +60,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ResultsEvents_ItemChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает при изменении элемента в указанном семействе сайтов.</summary>
+        <summary>Возникает при изменении элемента в указанной коллекции.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +79,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ResultsEvents_ItemRemoveEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда элемент удаляется из указанного семейства сайтов.</summary>
-        <remarks><para>Это событие не выполняется при удалении последнего элемента в файл личных папок (PST) или 16 или более элементов, одновременно удаляются из PST-файл, почтовых ящиков Microsoft Exchange или общую папку Exchange.</para>
+        <summary>Происходит при удалении элемента из указанной коллекции.</summary>
+        <remarks><para>Это событие не выполняется при удалении последнего элемента в файле личных папок (PST) или при удалении 16 или более элементов из PST-файла, почтового ящика Microsoft Exchange или общедоступной папки Exchange.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

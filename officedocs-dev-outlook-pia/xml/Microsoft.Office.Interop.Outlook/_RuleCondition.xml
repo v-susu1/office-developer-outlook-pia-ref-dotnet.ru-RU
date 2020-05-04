@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,7 +73,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -101,9 +101,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlRuleConditionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает константу в <see cref="T:Microsoft.Office.Interop.Outlook.OlRuleConditionType" /> перечисление, указывающее тип условия для <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает константу в <see cref="T:Microsoft.Office.Interop.Outlook.OlRuleConditionType" /> перечислении, указывающую тип условия для <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Дополнительные сведения по условиям правила, поддерживаемые для создания правила программный имена, поддерживаемые для правил для приема сообщений и поддерживаемых для правил для отправки сообщений, можно <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Указание условия правила</a></para>
+        <remarks><para>Дополнительные сведения о условиях правил, поддерживаемых при создании программного правила, которые поддерживаются правилами для получения сообщения и которые поддерживаются правилами для отправки сообщений, см в разделе <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Задание условий правил</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -133,12 +133,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), определяющий, если <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> включен. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), определяющее, <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> включена ли функция. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>После включения условие для правила необходимо сохранить правило с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> , чтобы условие правила и его состояние будут сохранены и отобразятся текущего сеанса.  Условие правила доступна только после его успешно сохранен. </para>
-          <para>Возвращает ошибку при попытке настроить условие для правила, которое поддерживается только в правиле типа <b>olRuleSend</b> для правила типа <b>olRuleReceive</b>, или наоборот.  Дополнительные сведения о suppport правилами для приема сообщений или правила для отправки сообщений видеть <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Указание условия правила</a></para>
-          <para>Не удается включить или отключить условие типа <b>olConditionOtherMachine</b>. Этот тип условия правила указывает, что правило можно выполнить только на определенном компьютере, который не является текущей. Это происходит при создании правила на том, что компьютер и условие правила <b>olConditionLocalMachineOnly</b> включен, указывающего на то, что правило можно выполнить только на этом компьютере. При выполнении того же правила на другом компьютере, правило покажут, что условие <b>olConditionOtherMachine</b> включено.</para>
-          <para>Возвращает ошибку при попытке настроить условие исключения типа <b>olConditionLocalMachineOnly</b>.</para>
+        <remarks><para>После включения условия для правила необходимо также сохранить правило, указав <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> , что условие правила и его включенное состояние не будут сохраняться за текущий сеанс.  Условие правила включается только после успешного сохранения. </para>
+          <para>Возвращает ошибку, если вы попытаетесь включить условие правила, которое поддерживается только для правила типа <b>олрулесенд</b> для правила типа <b>олрулерецеиве</b>или наоборот.  Дополнительные сведения о супппорт с помощью правил для получения сообщений или правил для отправки сообщений можно узнать в статье <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Определение условий правил</a></para>
+          <para>Вы не можете включить или отключить условие типа <b>олкондитионосермачине</b>. Этот тип условия правила указывает на то, что правило может выполняться только на определенном компьютере, который не является текущим. Это происходит, когда правило создается на этом компьютере, а условие правила <b>олкондитионлокалмачинеонли</b> включено, указывая, что правило может выполняться только на этом компьютере. При выполнении того же правила на другом компьютере правило будет показывать, что условие <b>олкондитионосермачине</b> включено.</para>
+          <para>Возвращает ошибку, если вы попытаетесь включить условие исключения типа <b>олкондитионлокалмачинеонли</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -165,9 +165,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Родительский <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> — это объект <see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> объекта.</para>
+        <remarks><para>Родительским <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> объектом объекта является <see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> объект.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -194,9 +194,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>

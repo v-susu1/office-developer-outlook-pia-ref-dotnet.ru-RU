@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.JournalModule" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.JournalModule" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,9 +73,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Данное свойство возвращает <b>olJournalModule</b> для <see cref="T:Microsoft.Office.Interop.Outlook.JournalModule" /> объекта.</para>
+        <remarks><para>Это свойство возвращает <b>олжаурналмодуле</b> для <see cref="T:Microsoft.Office.Interop.Outlook.JournalModule" /> объекта.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -102,7 +102,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение типа <b>String</b> (<b>строка</b> в C#), представляющее локализованное отображаемое имя для <see cref="T:Microsoft.Office.Interop.Outlook.JournalModule" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа String</b> (<b>строка</b> в C#), представляющее локализованное отображаемое имя <see cref="T:Microsoft.Office.Interop.Outlook.JournalModule" /> для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -130,7 +130,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NavigationGroups</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroups" /> объект, который содержит набор групп навигации, связанный с <see cref="T:Microsoft.Office.Interop.Outlook.JournalModule" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroups" /> объект, который содержит набор групп навигации, связанных с <see cref="T:Microsoft.Office.Interop.Outlook.JournalModule" /> объектом. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -158,9 +158,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlNavigationModuleType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlNavigationModuleType" /> константа, представляющий тип модуля навигации для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlNavigationModuleType" /> константу, представляющую тип модуля навигации для объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Данное свойство возвращает <b>olModuleJournal</b> для <see cref="T:Microsoft.Office.Interop.Outlook.JournalModule" /> объекта.</para>
+        <remarks><para>Это свойство возвращает <b>олмодулежаурнал</b> для <see cref="T:Microsoft.Office.Interop.Outlook.JournalModule" /> объекта.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -187,7 +187,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -218,16 +218,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение типа <b>Integer</b> , представляющее порядковый номер <see cref="T:Microsoft.Office.Interop.Outlook.JournalModule" /> объектов при отображении в области навигации. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>целое</b> значение, представляющее порядковый номер <see cref="T:Microsoft.Office.Interop.Outlook.JournalModule" /> объекта при его отображении в области навигации. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство можно задать только значение в диапазоне от 1 до 8. Произошла ошибка при попытке этому свойству присвоено значение вне диапазона.</para>
-          <para>При изменении значения этого свойства для объекта <b>JournalModule</b> изменяет значения других модули навигации, содержащихся в <b>положение</b> <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModules" /> семейства сайтов, в зависимости от относительное изменение между новое значение и исходное значение <b> Положение</b> свойства для этого объекта <b>JournalModule</b> : </para>
+        <remarks><para>Этому свойству можно присвоить значение от 1 до 8. При попытке присвоить этому свойству значение, которое находится за пределами этого диапазона, возникает ошибка.</para>
+          <para>Изменение значения этого свойства для объекта <b>JournalModule</b> изменяет значения <b>позиции</b> других модулей навигации, которые содержит <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModules" /> коллекция, в зависимости от относительных изменений между новым значением и исходным значением свойства <b>position</b> для этого объекта <b>JournalModule</b> : </para>
           <list type="bullet">
             <item>
-              <para>Если новое значение меньше, чем исходное значение, указанный объект <b>JournalModule</b> перемещает вверх на новое место и помещает другие модули навигации уже выше или ниже этого новую позицию вниз.</para>
+              <para>Если новое значение меньше исходного значения, то указанный объект <b>JournalModule</b> перемещается вверх на новое место и помещает другие модули навигации, которые уже находятся на новой позиции вниз или ниже нее.</para>
             </item>
             <item>
-              <para>Если новое значение больше, чем исходное значение, указанный объект <b>JournalModule</b> перемещает вниз на новое место и помещает другие модули навигации между старой и новой позиции, заполнения старый положение.</para>
+              <para>Если новое значение больше исходного значения, указанный объект <b>JournalModule</b> перемещается вниз в новое положение и помещает другие модули навигации между старой позицией и новой позицией вверх, заполняя старую позицию вверх.</para>
             </item>
           </list>
           <para> </para></remarks>
@@ -256,9 +256,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -294,7 +294,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или устанавливает <b>логическое</b> значение (<b>bool</b> в C#), который определяет, будет ли <see cref="T:Microsoft.Office.Interop.Outlook.JournalModule" /> объект отображается в области навигации. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>логическое</b> значение (<b>bool</b> в C#), которое определяет, отображается <see cref="T:Microsoft.Office.Interop.Outlook.JournalModule" /> ли объект в области навигации. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

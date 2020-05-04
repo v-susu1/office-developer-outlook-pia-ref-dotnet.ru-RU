@@ -12,8 +12,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Указывает, является ли любое ограничение на тип вложений в элементе.</summary>
-    <remarks><para>Вложения с <see cref="P:Microsoft.Office.Interop.Outlook.Attachment.BlockLevel" /> , равное <b>olAttachmentBlockLevelOpen</b> содержатся в списке 2-го уровня для вложений, которые администраторы обслуживания для обеспечения безопасности вложений. Дополнительные сведения о безопасности вложений в Outlook посетите сайт веб-пакет ресурсов Office.</para>
+    <summary>Указывает, есть ли какие-либо ограничения на тип вложений для элемента.</summary>
+    <remarks><para>Вложения со <see cref="P:Microsoft.Office.Interop.Outlook.Attachment.BlockLevel" /> значением <b>олаттачментблокклевелопен</b> — это список вложений уровня 2, которые администраторы поддерживают для обеспечения безопасности вложений. Дополнительные сведения о безопасности вложений в Outlook можно найти на веб-сайте Office Resource Kit.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Отсутствуют ограничения на тип вложения на основании расширения файла.</summary>
+        <summary>Не существует ограничений на тип вложения в зависимости от его расширения имени файла.</summary>
       </Docs>
     </Member>
     <Member MemberName="olAttachmentBlockLevelOpen">
@@ -52,7 +52,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Нет ограничений на тип вложения на основании расширения файла таким образом, пользователям необходимо сохранить вложение на диске до его открытия.</summary>
+        <summary>Существует ограничение на тип вложения на основе расширения файла, в котором пользователи должны сначала сохранить вложение на диске перед открытием.</summary>
       </Docs>
     </Member>
   </Members>

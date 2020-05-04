@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -77,10 +77,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.AssignToCategoryRuleAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AssignToCategoryRuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._AssignToCategoryRuleAction.ActionType" /> , <b>olRuleAssignToCategory</b>. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AssignToCategoryRuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._AssignToCategoryRuleAction.ActionType" /> <b>олрулеассигнтокатегори</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Используйте возвращенного объекта <b>AssignToCategoryRuleAction</b> при перечислении действия правил существующего правила или при создании нового правила, предназначенного для назначения категорий к сообщению.</para>
-          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>AssignToCategoryRuleAction</b> независимо от того, имеет ли правило, связанное с этой коллекции <b>RuleActions</b> определенные действия правила. Если правило определенные и поддержкой такие действия правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._AssignToCategoryRuleAction.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+        <remarks><para>Используйте возвращенный объект <b>AssignToCategoryRuleAction</b> при перечислении действий правил существующего правила или при создании нового правила, которое назначает категории сообщению.</para>
+          <para>Это свойство <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>AssignToCategoryRuleAction</b> , независимо от того, определил ли правило, связанное с этой коллекцией <b>RuleActions</b> , такое действие правила. Если правило определило и включило такое действие правила, то <see cref="P:Microsoft.Office.Interop.Outlook._AssignToCategoryRuleAction.Enabled" /> будет <b>истинно</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -107,10 +107,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.SendRuleAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.SendRuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._SendRuleAction.ActionType" /> , <b>olRuleActionCcMessage</b>. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.SendRuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._SendRuleAction.ActionType" /> <b>олрулеактионккмессаже</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Используйте возвращенного объекта <b>SendRuleAction</b> при перечислении действия правил существующего правила или при создании нового правила, которое указывает копия сообщения определенным получателям в следующей как действие. </para>
-          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>SendRuleAction</b> независимо от того, имеет ли правило, связанное с этой коллекции <b>RuleActions</b> определенные действия правила. Если правило определенные и поддержкой такие действия правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._SendRuleAction.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+        <remarks><para>Используйте возвращенный объект <b>SendRuleAction</b> при перечислении действий правил существующего правила или при создании нового правила, которое указывает, что в качестве действия требуется отправить сообщение для определенных получателей. </para>
+          <para>Это свойство <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>SendRuleAction</b> , независимо от того, определил ли правило, связанное с этой коллекцией <b>RuleActions</b> , такое действие правила. Если правило определило и включило такое действие правила, то <see cref="P:Microsoft.Office.Interop.Outlook._SendRuleAction.Enabled" /> будет <b>истинно</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -137,7 +137,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -165,10 +165,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.RuleAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> со <see cref="P:Microsoft.Office.Interop.Outlook._RuleAction.ActionType" /> из <b>olRuleActionClearCategories</b>. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> объект с параметром <see cref="P:Microsoft.Office.Interop.Outlook._RuleAction.ActionType" /> <b>олрулеактионклеаркатегориес</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Используйте возвращенного объекта <b>RuleAction</b> при перечислении действия правил существующего правила или при создании правила, которое указывает, удаление всех категорий сообщение как действие.   </para>
-          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>RuleAction</b> независимо от того, имеет ли правило, связанное с этой коллекции <b>RuleActions</b> определенные действия правила. Если правило определенные и поддержкой такие действия правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._RuleAction.Enabled" /> будет иметь <b>положительный ответ</b>.  </para>
+        <remarks><para>Используйте возвращенный объект <b>RuleAction</b> при перечислении действий правил существующего правила или при создании правила, которое указывает на удаление всех категорий сообщения в качестве действия.   </para>
+          <para>Это свойство <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>RuleAction</b> , независимо от того, определил ли правило, связанное с этой коллекцией <b>RuleActions</b> , такое действие правила. Если правило определило и включило такое действие правила, то <see cref="P:Microsoft.Office.Interop.Outlook._RuleAction.Enabled" /> будет <b>истинно</b>.  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -195,10 +195,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.MoveOrCopyRuleAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.MoveOrCopyRuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._MoveOrCopyRuleAction.ActionType" /> , <b>olRuleActionCopyToFolder</b>. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.MoveOrCopyRuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._MoveOrCopyRuleAction.ActionType" /> <b>олрулеактионкопитофолдер</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Используйте возвращенного объекта <b>MoveOrCopyRuleAction</b> при перечислении действия правил существующего правила или при создании нового правила, которое указывает, копирование сообщения в указанную папку, как действие. </para>
-          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>MoveOrCopyRuleAction</b> независимо от того, имеет ли правило, связанное с этой коллекции <b>RuleActions</b> определенные действия правила. Если правило определенные и поддержкой такие действия правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._MoveOrCopyRuleAction.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+        <remarks><para>Используйте возвращенный объект <b>MoveOrCopyRuleAction</b> при перечислении действий правил существующего правила или при создании нового правила, которое указывает на копирование сообщения в определенную папку в качестве действия. </para>
+          <para>Это свойство <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>MoveOrCopyRuleAction</b> , независимо от того, определил ли правило, связанное с этой коллекцией <b>RuleActions</b> , такое действие правила. Если правило определило и включило такое действие правила, то <see cref="P:Microsoft.Office.Interop.Outlook._MoveOrCopyRuleAction.Enabled" /> будет <b>истинно</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -225,9 +225,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее число объектов в указанном семействе сайтов. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее количество объектов в указанной коллекции. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Можно перечислить <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции от 1 до <b>RuleActions.Count</b> , чтобы определить все действия правила для существующего правила. Хотя объектная модель правил поддерживает создание правила с помощью только наиболее часто используемых не все действия правила, поддерживаемый правила и оповещения мастера и действия правил, коллекция <b>RuleActions</b> включает все действия правила правила. Поэтому всегда можно перечислить объект <b>RuleActions</b> семейства сайтов, чтобы определить, какие действия правила включены для существующего правила.</para>
+        <remarks><para>Можно перечислить <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекцию от 1 до <b>RuleActions. Count</b> , чтобы определить все действия правил для существующего правила. Несмотря на то, что объектная модель правил поддерживает создание правил с использованием только наиболее часто используемых действий правил, а не всех действий правил, поддерживаемых мастером правил и оповещений, коллекция <b>RuleActions</b> включает все действия правил правила. Таким образом, вы всегда можете перечислить объект коллекции <b>RuleActions</b> , чтобы определить, какие действия правил включены для существующего правила.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -254,10 +254,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.RuleAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._RuleAction.ActionType" /> , <b>olRuleActionDelete</b>. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._RuleAction.ActionType" /> <b>олрулеактионделете</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Используйте возвращенного объекта <b>RuleAction</b> при перечислении действия правил существующего правила или при создании нового правила, которое указывает, удаление сообщения как действие. </para>
-          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>RuleAction</b> независимо от того, имеет ли правило, связанное с этой коллекции <b>RuleActions</b> определенные действия правила. Если правило определенные и поддержкой такие действия правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._MoveOrCopyRuleAction.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+        <remarks><para>Используйте возвращенный объект <b>RuleAction</b> при перечислении действий правил существующего правила или при создании нового правила, которое указывает на удаление сообщения в качестве действия. </para>
+          <para>Это свойство <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>RuleAction</b> , независимо от того, определил ли правило, связанное с этой коллекцией <b>RuleActions</b> , такое действие правила. Если правило определило и включило такое действие правила, то <see cref="P:Microsoft.Office.Interop.Outlook._MoveOrCopyRuleAction.Enabled" /> будет <b>истинно</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -284,10 +284,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.RuleAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._RuleAction.ActionType" /> , <b>olRuleActionDeletePermanently</b>. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._RuleAction.ActionType" /> <b>олрулеактионделетеперманентли</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Используйте возвращенного объекта <b>RuleAction</b> при перечислении действия правил существующего правила или при создании нового правила, которое указывает удаления сообщения без возможности восстановления как действие. </para>
-          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>RuleAction</b> независимо от того, имеет ли правило, связанное с этой коллекции <b>RuleActions</b> определенные действия правила. Если правило определенные и поддержкой такие действия правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._MoveOrCopyRuleAction.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+        <remarks><para>Используйте возвращенный объект <b>RuleAction</b> при перечислении действий правил существующего правила или при создании нового правила, которое указывает, следует ли окончательно удалять сообщение в качестве действия. </para>
+          <para>Это свойство <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>RuleAction</b> , независимо от того, определил ли правило, связанное с этой коллекцией <b>RuleActions</b> , такое действие правила. Если правило определило и включило такое действие правила, то <see cref="P:Microsoft.Office.Interop.Outlook._MoveOrCopyRuleAction.Enabled" /> будет <b>истинно</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -314,10 +314,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.RuleAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._RuleAction.ActionType" /> , <b>olRuleActionDesktopAlert</b>. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._RuleAction.ActionType" /> <b>олрулеактиондесктопалерт</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Используйте возвращенного объекта <b>RuleAction</b> при перечислении действия правил существующего правила или при создании нового правила, который задает отображение уведомление на рабочем столе как действие. </para>
-          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>RuleAction</b> независимо от того, имеет ли правило, связанное с этой коллекции <b>RuleActions</b> определенные действия правила. Если правило определенные и поддержкой такие действия правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._MoveOrCopyRuleAction.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+        <remarks><para>Используйте возвращенный объект <b>RuleAction</b> при перечислении действий правил существующего правила или при создании нового правила, которое указывает на отображение оповещения на рабочем столе в качестве действия. </para>
+          <para>Это свойство <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>RuleAction</b> , независимо от того, определил ли правило, связанное с этой коллекцией <b>RuleActions</b> , такое действие правила. Если правило определило и включило такое действие правила, то <see cref="P:Microsoft.Office.Interop.Outlook._MoveOrCopyRuleAction.Enabled" /> будет <b>истинно</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -344,10 +344,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.SendRuleAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.SendRuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._SendRuleAction.ActionType" /> , <b>olRuleActionForward</b>. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.SendRuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._SendRuleAction.ActionType" /> <b>олрулеактионфорвард</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Используйте возвращенного объекта <b>SendRuleAction</b> при перечислении действия правил существующего правила или при создании нового правила, которое указывает пересылке сообщения определенным получателям как действие. </para>
-          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>SendRuleAction</b> независимо от того, имеет ли правило, связанное с этой коллекции <b>RuleActions</b> определенные действия правила. Если правило определенные и поддержкой такие действия правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._SendRuleAction.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+        <remarks><para>Используйте возвращенный объект <b>SendRuleAction</b> при перечислении действий правил существующего правила или при создании нового правила, которое указывает, что сообщение пересылается определенным получателям в качестве действия. </para>
+          <para>Это свойство <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>SendRuleAction</b> , независимо от того, определил ли правило, связанное с этой коллекцией <b>RuleActions</b> , такое действие правила. Если правило определило и включило такое действие правила, то <see cref="P:Microsoft.Office.Interop.Outlook._SendRuleAction.Enabled" /> будет <b>истинно</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -374,10 +374,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.SendRuleAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.SendRuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._SendRuleAction.ActionType" /> , <b>olRuleActionForwardAsAttachment</b>. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.SendRuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._SendRuleAction.ActionType" /> <b>олрулеактионфорвардасаттачмент</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Используйте возвращенного объекта <b>SendRuleAction</b> при перечислении действия правил существующего правила или при создании нового правила, которое указывает переадресации сообщение как вложение определенным получателям как действие. </para>
-          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>SendRuleAction</b> независимо от того, имеет ли правило, связанное с этой коллекции <b>RuleActions</b> определенные действия правила. Если правило определенные и поддержкой такие действия правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._SendRuleAction.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+        <remarks><para>Используйте возвращенный объект <b>SendRuleAction</b> при перечислении действий правил существующего правила или при создании нового правила, которое указывает, что сообщение пересылается как вложение определенным получателям в качестве действия. </para>
+          <para>Это свойство <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>SendRuleAction</b> , независимо от того, определил ли правило, связанное с этой коллекцией <b>RuleActions</b> , такое действие правила. Если правило определило и включило такое действие правила, то <see cref="P:Microsoft.Office.Interop.Outlook._SendRuleAction.Enabled" /> будет <b>истинно</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -407,10 +407,10 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">На основе 1 числовое значение, отражает порядковый номер действие правила в коллекции <b>RuleActions</b> . К примеру 1 — это значение индекса первого действие правила в коллекции и имеет значение индекса второе действие правила 2.</param>
-        <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> объектом, заданным с <paramref name="Index" /> которого является числового индекса в <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> семейства сайтов.</summary>
-        <value>Объект <b>RuleAction</b> , соответствующий действие правила, указанного идентификатором <paramref name="Index" />.</value>
-        <remarks><para>Объект <b>RuleActions</b> семейства сайтов — это набор основных. Он содержит объекты, производные от <b>RuleAction</b>или <b>RuleAction</b> объектов. Не удается добавить или удалить элементы из этой коллекции, но <b>элемент</b> можно использовать для перечисления элементов действие правила и задания <see cref="P:Microsoft.Office.Interop.Outlook._RuleAction.Enabled" /> свойство действие правила. При использовании <b>элемента</b> для перечисления коллекции, можно перечислить <paramref name="Index" /> от 1 до <see cref="P:Microsoft.Office.Interop.Outlook._RuleActions.Count" />.</para>
+        <param name="Index">Числовое значение, которое соответствует порядковому номеру действия правила в коллекции <b>RuleActions</b> . Например, значение индекса первого действия правила в коллекции равно 1, а значение индекса второго действия правила равно 2.</param>
+        <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> объект, заданный с <paramref name="Index" /> помощью числового индекса в <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции.</summary>
+        <value>Объект <b>RuleAction</b> , соответствующий действию правила, заданному <paramref name="Index" />параметром.</value>
+        <remarks><para>Объект коллекции <b>RuleActions</b> является фиксированной коллекцией. Он содержит объекты <b>RuleAction</b> или объекты, производные от <b>RuleAction</b>. Вы не можете добавлять и удалять элементы из этой коллекции, но вы можете использовать <b>элемент</b> для перечисления элементов действий правил и задания <see cref="P:Microsoft.Office.Interop.Outlook._RuleAction.Enabled" /> свойства действия правила. При использовании <b>элемента</b> для перечисления коллекции можно перечислить значение <paramref name="Index" /> от 1 до. <see cref="P:Microsoft.Office.Interop.Outlook._RuleActions.Count" /></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -437,10 +437,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.MarkAsTaskRuleAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.MarkAsTaskRuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._MarkAsTaskRuleAction.ActionType" /> , <b>olRuleActionMarkAsTask</b>. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.MarkAsTaskRuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._MarkAsTaskRuleAction.ActionType" /> <b>олрулеактионмаркастаск</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Используйте возвращенного объекта <b>MarkAsTaskRuleAction</b> при перечислении действия правил существующего правила или при создании нового правила, которое определяет действие пометки сообщения как задача. </para>
-          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>MarkAsTaskRuleAction</b> независимо от того, имеет ли правило, связанное с этой коллекции <b>RuleActions</b> определенные действия правила. Если правило определенные и поддержкой такие действия правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._MarkAsTaskRuleAction.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+        <remarks><para>Используйте возвращенный объект <b>MarkAsTaskRuleAction</b> при перечислении действий правил существующего правила или при создании нового правила, которое указывает действие пометки сообщения как задачи. </para>
+          <para>Это свойство <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>MarkAsTaskRuleAction</b> , независимо от того, определил ли правило, связанное с этой коллекцией <b>RuleActions</b> , такое действие правила. Если правило определило и включило такое действие правила, то <see cref="P:Microsoft.Office.Interop.Outlook._MarkAsTaskRuleAction.Enabled" /> будет <b>истинно</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -467,10 +467,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.MoveOrCopyRuleAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.MoveOrCopyRuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._MoveOrCopyRuleAction.ActionType" /> , <b>olRuleActionMoveToFolder</b>. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.MoveOrCopyRuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._MoveOrCopyRuleAction.ActionType" /> <b>олрулеактионмоветофолдер</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Используйте возвращенного объекта <b>MoveOrCopyRuleAction</b> при перечислении действия правил существующего правила или при создании нового правила, которое указывает, копирование сообщения в указанную папку, как действие. </para>
-          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>MoveOrCopyRuleAction</b> независимо от того, имеет ли правило, связанное с этой коллекции <b>RuleActions</b> определенные действия правила. Если правило определенные и поддержкой такие действия правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._MoveOrCopyRuleAction.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+        <remarks><para>Используйте возвращенный объект <b>MoveOrCopyRuleAction</b> при перечислении действий правил существующего правила или при создании нового правила, которое указывает на копирование сообщения в определенную папку в качестве действия. </para>
+          <para>Это свойство <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>MoveOrCopyRuleAction</b> , независимо от того, определил ли правило, связанное с этой коллекцией <b>RuleActions</b> , такое действие правила. Если правило определило и включило такое действие правила, то <see cref="P:Microsoft.Office.Interop.Outlook._MoveOrCopyRuleAction.Enabled" /> будет <b>истинно</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -497,10 +497,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NewItemAlertRuleAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NewItemAlertRuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._NewItemAlertRuleAction.ActionType" /> , <b>olRuleActionNewItemAlert</b>. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NewItemAlertRuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._NewItemAlertRuleAction.ActionType" /> <b>олрулеактионневитемалерт</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Используйте возвращенного объекта <b>NewItemAlertRuleAction</b> при перечислении действия правил существующего правила или при создании нового правила, которое указывает, выводя уведомления для нового элемента, как действие. </para>
-          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>NewItemAlertRuleAction</b> независимо от того, имеет ли правило, связанное с этой коллекции <b>RuleActions</b> определенные действия правила. Если правило определенные и поддержкой такие действия правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._NewItemAlertRuleAction.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+        <remarks><para>Используйте возвращенный объект <b>NewItemAlertRuleAction</b> при перечислении действий правил существующего правила или при создании нового правила, которое задает отображение оповещения для нового элемента в качестве действия. </para>
+          <para>Это свойство <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>NewItemAlertRuleAction</b> , независимо от того, определил ли правило, связанное с этой коллекцией <b>RuleActions</b> , такое действие правила. Если правило определило и включило такое действие правила, то <see cref="P:Microsoft.Office.Interop.Outlook._NewItemAlertRuleAction.Enabled" /> будет <b>истинно</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -527,10 +527,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.RuleAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._RuleAction.ActionType" /> , <b>olRuleActionNotifyDelivery</b>. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._RuleAction.ActionType" /> <b>олрулеактионнотифиделивери</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Используйте возвращенного объекта <b>RuleAction</b> при перечислении действия правил существующего правила или при создании нового правила, которое указывает уведомление доставки сообщения как действие. </para>
-          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>RuleAction</b> независимо от того, имеет ли правило, связанное с этой коллекции <b>RuleActions</b> определенные действия правила. Если правило определенные и поддержкой такие действия правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._MoveOrCopyRuleAction.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+        <remarks><para>Используйте возвращенный объект <b>RuleAction</b> при перечислении действий правил существующего правила или при создании нового правила, указывающего уведомление о доставке сообщения в качестве действия. </para>
+          <para>Это свойство <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>RuleAction</b> , независимо от того, определил ли правило, связанное с этой коллекцией <b>RuleActions</b> , такое действие правила. Если правило определило и включило такое действие правила, то <see cref="P:Microsoft.Office.Interop.Outlook._MoveOrCopyRuleAction.Enabled" /> будет <b>истинно</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -557,10 +557,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.RuleAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._RuleAction.ActionType" /> , <b>olRuleActionNotifyRead</b>. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._RuleAction.ActionType" /> <b>олрулеактионнотифиреад</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Используйте возвращенного объекта <b>RuleAction</b> при перечислении действия правил существующего правила или при создании нового правила, которое указывает отправки уведомления о Открытие сообщения как действие. </para>
-          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>RuleAction</b> независимо от того, имеет ли правило, связанное с этой коллекции <b>RuleActions</b> определенные действия правила. Если правило определенные и поддержкой такие действия правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._MoveOrCopyRuleAction.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+        <remarks><para>Используйте возвращенный объект <b>RuleAction</b> при перечислении действий правил существующего правила или при создании нового правила, которое указывает на отправку уведомления об открытии сообщения в качестве действия. </para>
+          <para>Это свойство <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>RuleAction</b> , независимо от того, определил ли правило, связанное с этой коллекцией <b>RuleActions</b> , такое действие правила. Если правило определило и включило такое действие правила, то <see cref="P:Microsoft.Office.Interop.Outlook._MoveOrCopyRuleAction.Enabled" /> будет <b>истинно</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -587,9 +587,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Родительский <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> — это объект <see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> объекта.</para>
+        <remarks><para>Родительским <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> объектом объекта является <see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> объект.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -616,10 +616,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.PlaySoundRuleAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.PlaySoundRuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._PlaySoundRuleAction.ActionType" /> , <b>olRuleActionNotifyRead</b>. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.PlaySoundRuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._PlaySoundRuleAction.ActionType" /> <b>олрулеактионнотифиреад</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Используйте возвращенного объекта <b>PlaySoundRuleAction</b> при перечислении действия правил существующего правила или при создании нового правила, которое указывает воспроизведения звукового файла, как нужное действие. </para>
-          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>PlaySoundRuleAction</b> независимо от того, имеет ли правило, связанное с этой коллекции <b>RuleActions</b> определенные действия правила. Если правило определенные и поддержкой такие действия правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._PlaySoundRuleAction.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+        <remarks><para>Используйте возвращенный объект <b>PlaySoundRuleAction</b> при перечислении действий правил существующего правила или при создании нового правила, которое указывает воспроизведение звукового файла в качестве действия. </para>
+          <para>Это свойство <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>PlaySoundRuleAction</b> , независимо от того, определил ли правило, связанное с этой коллекцией <b>RuleActions</b> , такое действие правила. Если правило определило и включило такое действие правила, то <see cref="P:Microsoft.Office.Interop.Outlook._PlaySoundRuleAction.Enabled" /> будет <b>истинно</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -646,10 +646,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.SendRuleAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.SendRuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._SendRuleAction.ActionType" /> , <b>olRuleActionRedirect</b>. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.SendRuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._SendRuleAction.ActionType" /> <b>олрулеактионредирект</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Используйте возвращенного объекта <b>SendRuleAction</b> при перечислении действия правил существующего правила или при создании нового правила, которое определяет перенаправление сообщения определенным получателям как действие. </para>
-          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>SendRuleAction</b> независимо от того, имеет ли правило, связанное с этой коллекции <b>RuleActions</b> определенные действия правила. Если правило определенные и поддержкой такие действия правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._SendRuleAction.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+        <remarks><para>Используйте возвращенный объект <b>SendRuleAction</b> при перечислении действий правил существующего правила или при создании нового правила, которое определяет перенаправление сообщения определенным получателям в качестве действия. </para>
+          <para>Это свойство <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>SendRuleAction</b> , независимо от того, определил ли правило, связанное с этой коллекцией <b>RuleActions</b> , такое действие правила. Если правило определило и включило такое действие правила, то <see cref="P:Microsoft.Office.Interop.Outlook._SendRuleAction.Enabled" /> будет <b>истинно</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -676,9 +676,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -711,10 +711,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.RuleAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._RuleAction.ActionType" /> , <b>olRuleActionStop</b>. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._RuleAction.ActionType" /> <b>олрулеактионстоп</b>. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Используйте возвращенного объекта <b>RuleAction</b> при перечислении действия правил существующего правила или при создании нового правила, которое указывает, Остановка обработки дополнительных правил как действие. </para>
-          <para>Это свойство из <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>RuleAction</b> независимо от того, имеет ли правило, связанное с этой коллекции <b>RuleActions</b> определенные действия правила. Если правило определенные и поддержкой такие действия правила, затем <see cref="P:Microsoft.Office.Interop.Outlook._MoveOrCopyRuleAction.Enabled" /> будет иметь <b>положительный ответ</b>.</para>
+        <remarks><para>Используйте возвращенный объект <b>RuleAction</b> при перечислении действий правил существующего правила или при создании нового правила, которое указывает остановку обработки других правил в качестве действия. </para>
+          <para>Это свойство <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> коллекции всегда возвращает объект <b>RuleAction</b> , независимо от того, определил ли правило, связанное с этой коллекцией <b>RuleActions</b> , такое действие правила. Если правило определило и включило такое действие правила, то <see cref="P:Microsoft.Office.Interop.Outlook._MoveOrCopyRuleAction.Enabled" /> будет <b>истинно</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -17,8 +17,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Указывает способ отображения значения времени и интерпретацию записи значения времени элементом управления времени.</summary>
-    <remarks><para>Использование элемента управления времени в стиле <b>olTimeStyleShortDuration</b> для поля длительности, таких как <see cref="P:Microsoft.Office.Interop.Outlook._JournalItem.Duration" /> из <see cref="T:Microsoft.Office.Interop.Outlook.JournalItem" />. Использование элемента управления времени в стиле <b>olTimeStyleTimeDuration</b> времени окончания встречи. Используйте элемент управления времени в стиле <b>olTimeStyleTimeOnly</b> для времени начала встречи.</para>
+    <summary>Указывает, как отображаются значения времени и как записи времени интерпретируются с помощью элемента управления "время".</summary>
+    <remarks><para>Используйте элемент управления "время" с полями "стиль <b>олтиместилешортдуратион</b> " для "Длительность <see cref="P:Microsoft.Office.Interop.Outlook._JournalItem.Duration" /> ", <see cref="T:Microsoft.Office.Interop.Outlook.JournalItem" />например, "a". Использование элемента управления времени с стилем <b>олтиместилетимедуратион</b> для времени окончания элемента встречи. Используйте элемент управления времени с стилем <b>олтиместилетимеонли</b> для времени начала элемента встречи.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Раскрывающийся список кнопки элемента управления времени отображаются только те значения длительности с интервалом, задание с <see cref="P:Microsoft.Office.Interop.Outlook._OlkTimeControl.IntervalTime" /> свойство.</summary>
+        <summary>Раскрывающийся часть элемента управления "время" отображает только значения времени с интервалом, заданным <see cref="P:Microsoft.Office.Interop.Outlook._OlkTimeControl.IntervalTime" /> свойством.</summary>
       </Docs>
     </Member>
     <Member MemberName="olTimeStyleTimeDuration">
@@ -57,7 +57,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Раскрывающийся список кнопки элемента управления времени отображает значения времени, начиная с <see cref="P:Microsoft.Office.Interop.Outlook._OlkTimeControl.ReferenceTime" /> и использует свойство <b>OlkTimeControl.IntervalTime</b> в качестве порядкового номера.  Поле ввода элемента управления времени длительность из <b>ReferenceTime</b> в указанное время.</summary>
+        <summary>В раскрывающейся части элемента управления "время" отображаются значения времени, начиная <see cref="P:Microsoft.Office.Interop.Outlook._OlkTimeControl.ReferenceTime" /> с с, и используется свойство <b>OlkTimeControl. интервалтиме</b> в качестве инкремента.  В поле редактирования элемента управления времени отображается продолжительность от <b>референцетиме</b> до выбранного времени.</summary>
       </Docs>
     </Member>
     <Member MemberName="olTimeStyleTimeOnly">
@@ -76,7 +76,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Раскрывающийся список кнопки элемента управления времени отображаются только те значения времени с интервалом, заданной свойством <b>OlkTimeControl.IntervalTime</b> .</summary>
+        <summary>Раскрывающийся часть элемента управления "время" отображает только значения времени с интервалом, заданным свойством <b>OlkTimeControl. интервалтиме</b> .</summary>
       </Docs>
     </Member>
   </Members>

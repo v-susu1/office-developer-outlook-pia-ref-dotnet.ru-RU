@@ -18,8 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Представляет группу сочетаний клавиш в области клавиш в окне проводника.</summary>
-    <remarks><para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._OutlookBarGroups.Item(System.Object)" /> свойство (<b>в этом</b> в C#) для получения объекта <b>OutlookBarGroup</b> из <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarGroups" /> объекта. Так как <see cref="P:Microsoft.Office.Interop.Outlook.OutlookBarGroup.Name" /> свойство является свойством по умолчанию объекта <b>OutlookBarGroup</b> , можно определить группы по имени.</para>
+    <summary>Представляет группу ярлыков в области ярлыков в окне проводника.</summary>
+    <remarks><para>Используйте <see cref="P:Microsoft.Office.Interop.Outlook._OutlookBarGroups.Item(System.Object)" /> свойство (<b>this</b> в C#), чтобы получить объект <b>OutlookBarGroup</b> из <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarGroups" /> объекта. Так как <see cref="P:Microsoft.Office.Interop.Outlook.OutlookBarGroup.Name" /> свойство является свойством по умолчанию объекта <b>OutlookBarGroup</b> , вы можете определить группу по имени.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -46,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -74,7 +74,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -105,7 +105,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет отображаемое имя для объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее отображаемое имя объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -133,7 +133,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -161,9 +161,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -196,7 +196,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OutlookBarShortcuts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarShortcuts" /> коллекцию сочетаний клавиш, содержащиеся в области ярлыки. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarShortcuts" /> коллекцию ярлыков, содержащихся в области ярлыки. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -227,9 +227,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlOutlookBarViewType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlOutlookBarViewType" /> тип константы, представляющий представление из <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarGroup" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlOutlookBarViewType" /> константу, представляющую тип представления <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarGroup" /> объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство не имеет никакого влияния на значки, отображаемые в области ярлыки. Большие значки будут удалены, и если это свойство имеет значение <b>olLargeIcon</b>, он не оказывает никакого влияния.  В предыдущих версиях Microsoft Outlook оно возвращает или задает значки, отображаемые в указанную группу панель Outlook.</para>
+        <remarks><para>Это свойство не влияет на значки, отображаемые в области ярлыки. Крупные значки удалены, и если для этого свойства задано значение <b>олларжеикон</b>, это никак не оказывает никакого действия.  В предыдущих версиях Microsoft Outlook он возвращает или задает представление значков, отображаемое указанной группой панелей Outlook.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -40,7 +40,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.FormRegionEvents_CloseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Представляет рамки для области формы, которая происходит непосредственно перед закрывающим тегом <see cref="E:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close" /> событие инспектора, связанное с элемента Outlook.</summary>
+        <summary>Представляет закрытие фрейма для области формы, которое возникает непосредственно перед <see cref="E:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close" /> событием инспектора, связанным с элементом Outlook.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,9 +59,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.FormRegionEvents_ExpandedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда область формы развертывание или свертывание</summary>
-        <remarks><para>Не удается отменить это событие.</para>
-          <para>Outlook всегда сначала загружает области формы в развернутом состоянии и задает <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.IsExpanded" /> значение <b>True</b>. Если исходное состояние области формы должен быть свернут, а затем сразу же закрытии области формы Outlook, вызывается <b>событию с</b> <paramref name="Expand" /> параметра <b>False</b>и устанавливает <b>IsExpanded</b> значение <b>False</b>. </para>
+        <summary>Происходит при разворачивании или сворачивании области формы</summary>
+        <remarks><para>Это событие не может быть отменено.</para>
+          <para>Outlook всегда сначала загружает область формы в развернутом состоянии и <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.IsExpanded" /> задает <b>значение true</b>. Если начальное состояние области формы должно быть свернуто, Outlook сразу закрывает область формы, <b>развернутое</b> <paramref name="Expand" /> событие с параметром <b>false</b>и задает для свойства <b>NOEXPAND</b> <b>значение false</b>. </para>
           <para> </para></remarks>
       </Docs>
     </Member>

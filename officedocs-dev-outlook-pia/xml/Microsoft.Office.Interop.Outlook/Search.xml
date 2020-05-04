@@ -18,10 +18,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Содержит сведения об отдельных операций поиска, выполненные с элементами Outlook.</summary>
-    <remarks><para>Объект <b>поиска</b> содержит свойства, которые определяют тип поиска и параметров поиска.</para>
-      <para>Использование <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объекта <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> метод, возвращающий объект <b>поиска</b> .</para>
-      <para>Использование <see cref="E:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.AdvancedSearchComplete" /> события, чтобы определить, когда данного поиска.</para>
+    <summary>Содержит сведения об индивидуальных операциях поиска, выполняемых с элементами Outlook.</summary>
+    <remarks><para>Объект <b>Search</b> содержит свойства, которые определяют тип поиска и параметры самого поиска.</para>
+      <para>Используйте <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объекта для возврата объекта <b>поиска</b> .</para>
+      <para>Используйте <see cref="E:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.AdvancedSearchComplete" /> событие, чтобы определить, когда заданный Поиск завершен.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -76,7 +76,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -104,10 +104,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение типа <b>String</b> (<b>строка</b> в C#), представляющее DASL оператор, используемый для ограничения поиска до указанного подмножества данных.  Только для чтения</summary>
+        <summary>Возвращает значение <b>типа String</b> (<b>строка</b> в C#), представляющее оператор DASL, используемый для ограничения поиска указанным подмножеством данных.  Только для чтения</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство задано как <paramref name="Filter" /> аргумент в <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объекта <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> метод. </para>
-          <para>При поиске <b>текстовых</b> полей, можно использовать апостроф (') или двойные кавычки ("») для разделения значения, которые являются частью фильтра. Например все следующие функции строки правильно, если поле введите <b>String </b>(<b>строка</b> в C#): </para>
+        <remarks><para>Это свойство задается в <paramref name="Filter" /> качестве аргумента <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> в <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> методе объекта. </para>
+          <para>При поиске <b>текстовых</b> полей можно использовать апостроф (') или двойные кавычки (""), чтобы разделить значения, которые являются частью фильтра. Например, все приведенные ниже строки работают правильно, если поле имеет тип <b>String </b>(<b>строка</b> в C#). </para>
           <code>sFilter = "[CompanyName] = 'Microsoft'"</code>
           <code>sFilter = "[CompanyName] = 'Microsoft'";</code>
           <code>sFilter = "[CompanyName] = ""Microsoft"""</code>
@@ -138,13 +138,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> объект, который содержит элементы, отфильтрованные по <paramref name="Filter" /> параметр в предыдущих <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> вызова метода.</summary>
-        <returns>Содержит элементы, которые соответствуют условиям, указанным <b>в таблице</b> <paramref name="Filter" /> параметр в предыдущем вызове метода <b>Application.AdvancedSearch</b> .</returns>
-        <remarks><para>В отличие от <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.GetTable(System.Object,System.Object)" />, <b>Search.GetTable</b> не принимает <paramref name="Filter" /> параметр. Фильтр для <b>таблицы</b> , определяется <see cref="P:Microsoft.Office.Interop.Outlook.Search.Filter" />. Поскольку <b>Search.Filter</b> является свойством только для чтения, <paramref name="Filter" /> параметра для метода <b>Application.AdvancedSearch</b> устанавливает фильтр для <b>таблицы</b> объект, возвращенный свойством <b>Search.GetTable</b>.</para>
-          <para><paramref name="Filter" /> Указано Application.AdvancedSearch параметр должен быть запроса DASL. Фильтр для <b>AdvancedSearch</b> не принимает запрос JET. Не префиксов запроса DASL для <b>AdvancedSearch</b> с «@SQL =». Если вы добавляете «@SQL =» префикс, запрос вызовет ошибку. Дополнительные сведения о фильтрах можно <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Фильтрации элементов</a></para>
+        <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> объект, который содержит элементы, отфильтрованные с <paramref name="Filter" /> помощью параметра, в <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> предыдущем вызове метода.</summary>
+        <returns><b>Таблица</b> , содержащая элементы, которые удовлетворяют критериям, указанным в <paramref name="Filter" /> параметре, в предыдущем вызове метода <b>Application. AdvancedSearch</b> .</returns>
+        <remarks><para>В отличие <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.GetTable(System.Object,System.Object)" />от функции <b>Search. DataTable</b> не принимается <paramref name="Filter" /> параметр. Фильтр для <b>таблицы</b> определяется по параметру <see cref="P:Microsoft.Office.Interop.Outlook.Search.Filter" />. Так как метод <b>Search. Filter</b> является свойством только для чтения <paramref name="Filter" /> , параметр метода <b>Application. AdvancedSearch</b> устанавливает фильтр для объекта <b>Table</b> , возвращаемого функцией <b>Search.</b>GetObject.</para>
+          <para><paramref name="Filter" /> Параметр Application. AdvancedSearch должен быть запросом DASL. Фильтр для <b>AdvancedSearch</b> не будет принимать запрос Jet. Не следует помечать запрос DASL для <b>AdvancedSearch</b> с помощью "@SQL =". При добавлении префикса "@SQL =" запрос вызовет ошибку. Дополнительные сведения о фильтрах приведены в разделе <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Фильтрация элементов</a></para>
           <para>
-            <b>Search.GetTable</b> возвращает <b>таблицу</b> со столбцом по умолчанию для типа папки из родительской <b>папки</b>. Чтобы изменить набор столбцов по умолчанию, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Add(System.String)" />, <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Remove(System.Object)" />, или <see cref="M:Microsoft.Office.Interop.Outlook._Columns.RemoveAll" /> методы <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> объекта collection.  Дополнительные сведения о наборах столбец по умолчанию в разделе <a href="http://go.microsoft.com/fwlink/?LinkId=87925">Свойства по умолчанию, отображаемые в объекте таблицы</a></para>
-          <para>В отличие от <b>Folder.GetTable</b>нельзя использовать <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> для применения последующие фильтров к <b>таблице</b> , основанный на объект <b>поиска</b> . Указание нового фильтра в <b>Application.AdvancedSearch</b> повторно применить фильтр.</para>
+            <b>Search. DataTable</b> возвращает <b>таблицу</b> со стандартным набором столбцов для типа папки родительской <b>папки</b>. Чтобы изменить набор столбцов по умолчанию, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Add(System.String)" />методы <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Remove(System.Object)" />, или <see cref="M:Microsoft.Office.Interop.Outlook._Columns.RemoveAll" /> , объекта <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> Collection.  Дополнительные сведения о наборах столбцов по умолчанию приведены <a href="http://go.microsoft.com/fwlink/?LinkId=87925">в разделе Свойства по умолчанию, отображаемые в объекте Table</a></para>
+          <para>В отличие от <b>Table.</b>GetObject, вы не можете применять последующие фильтры к <b>таблице</b> , основанной на объекте поиска. <b>Search</b> <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> Укажите новый фильтр в <b>Application. AdvancedSearch</b> , чтобы повторно применить фильтр.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -171,9 +171,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>логическое</b> (<b>bool</b> в C#), указывающее, является ли поиска синхронные. Только для чтения.</summary>
+        <summary>Возвращает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, является ли поиск синхронным. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Поиск может быть синхронными и асинхронными. Если поиск синхронные, выполнение кода возникнет Пауза до завершения поиска. С другой стороны Если поиск является асинхронным, выполнение кода будет предоставляться несмотря на то, что поиск не завершено. В этом случае используйте <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> объекта <see cref="M:Microsoft.Office.Interop.Outlook.Search.Stop" /> метод для остановки поиска.  Чтобы получить достоверные результаты из асинхронного поиска, используйте <see cref="E:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.AdvancedSearchComplete" /> событий для уведомления о завершении поиска.</para>
+        <remarks><para>Поиск может выполняться синхронно или асинхронно. Если поиск выполняется в синхронном режиме, выполнение кода будет приостановлено до завершения поиска. И наоборот, если поиск является асинхронным, выполнение кода продолжится, даже если поиск не будет выполнен. В этом случае используйте <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> <see cref="M:Microsoft.Office.Interop.Outlook.Search.Stop" /> метод объекта, чтобы остановить поиск.  Чтобы получить осмысленные результаты асинхронного поиска, используйте <see cref="E:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.AdvancedSearchComplete" /> событие, чтобы уведомить о завершении поиска.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -200,7 +200,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -228,7 +228,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Results</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Results" /> семейства сайтов, которое указывает, что результаты поиска. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Results" /> коллекцию, которая определяет результаты поиска. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -257,9 +257,9 @@
       </Parameters>
       <Docs>
         <param name="Name">Строка, представляющая имя папки поиска.</param>
-        <summary>Сохраняет результаты поиска в папку поиска.</summary>
+        <summary>Сохраняет результаты поиска в папке поиска.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Метод <b>Save</b> выводится сообщение об ошибке, если папка поиска с тем же именем уже существует.</para>
+        <remarks><para>Метод <b>Save</b> выводит сообщение об ошибке, если папка поиска с таким именем уже существует.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -286,9 +286,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), который определяет область поиска. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>String</b> в C#), которая определяет область действия указанного поиска. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Область поиска определяется при запуске поиска. Дополнительные сведения можно <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> метод.</para>
+        <remarks><para>Область поиска определяется при запуске поиска. Для получения дополнительных сведений обратитесь к <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> методу.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -315,9 +315,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>логическое</b> (<b>bool</b> в C#), указывающее, является ли область поиска указанного Включить вложенные папки поиска. Только для чтения.</summary>
+        <summary>Возвращает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, включены ли в область указанного поиска вложенные папки всех найденных папок. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство определяет, какие <paramref name="SearchSubfolders" /> аргумент <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> метод и указывается при запуске поиска. Если <b>значение True</b>, <b>поиска</b> объект выполняет поиск вложенные папки в поле путь указанного фильтра.</para>
+        <remarks><para>Это свойство определяется <paramref name="SearchSubfolders" /> аргументом <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> метода и указывается при запуске поиска. Если этот параметр <b>имеет значение true</b>, объект <b>поиска</b> выполняет поиск по всем вложенным папкам в указанном пути фильтра.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -344,9 +344,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -377,7 +377,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Немедленно завершает поиска, который выполняется в настоящее время.</summary>
+        <summary>Немедленно завершает поиск, который выполняется в данный момент.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -404,9 +404,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) с именем текущего поиска. Свойство <b>Tag</b> используется для идентификации определенного поиска. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) с указанием имени текущего поиска. Свойство <b>Tag</b> используется для идентификации определенного поиска. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>Tag</b> задано с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> метод при <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> создается объект.</para>
+        <remarks><para>Свойство <b>Tag</b> задается с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> метода при создании <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> объекта.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

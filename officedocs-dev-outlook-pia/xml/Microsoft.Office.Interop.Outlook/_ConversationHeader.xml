@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.ConversationHeader" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.ConversationHeader" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительского приложения Outlook для <see cref="T:Microsoft.Office.Interop.Outlook.ConversationHeader" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для <see cref="T:Microsoft.Office.Interop.Outlook.ConversationHeader" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,7 +73,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, которая указывает класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -101,9 +101,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), который уникальным образом определяет <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объекта, к которому принадлежит этот заголовок беседы. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), однозначно определяющую <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объект, к которому относится этот заголовок беседы. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство связывает заголовка беседы с другими элементами в одной беседе. Эти элементы и беседу с таким же значением в своем свойстве <b>ConversationID</b> . </para>
+        <remarks><para>Это свойство связывает заголовок беседы с другими элементами в той же беседе. Эти элементы и беседа имеют одно и то же значение в свойстве <b>ConversationID</b> . </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -130,7 +130,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющий раздел предмету элемента Outlook. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую раздел цепочки бесед элемента Outlook. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks><para>Соответствует свойству MAPI PidTagConversationTopic.</para>
           <para> </para></remarks>
@@ -157,22 +157,22 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объект, представляющий беседы, которому принадлежит этот заголовок беседы.</summary>
-        <returns>Возвращает объект <b>беседы</b> , представляющий беседы, которому принадлежит этот заголовок беседы.</returns>
+        <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объект, представляющий беседу, к которой относится этот заголовок беседы.</summary>
+        <returns>Возвращает объект <b>CONVERSATION</b> , представляющий беседу, к которой относится заголовок беседы.</returns>
         <remarks><para>
-            <b>GetConversation</b> возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если беседы не существует для элемента. Беседы не существует для элемента в следующих сценариях:</para>
+            <b>GetConversation</b> Параметр GetItem возвращает <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если для элемента не существует беседы. Не существует беседы для элемента в следующих сценариях:</para>
           <list type="bullet">
             <item>
-              <para>Элемент не был сохранен. Элемент можно сохранить программным способом, с помощью пользовательских действий или путем автоматического сохранения. </para>
+              <para>Элемент не был сохранен. Элемент можно сохранить программным способом, действием пользователя или автоматическим сохранением. </para>
             </item>
             <item>
-              <para>В элементе, которое можно отправить (для примера, почтовый элемент, элемента встречи или элемента контакта) не было отправлено элемента.</para>
+              <para>Для элемента, который может быть отправлен (например, почтового элемента, элемента встречи или элемента контакта), элемент не был отправлен.</para>
             </item>
             <item>
-              <para>Беседы будут отключены с помощью реестра Windows.</para>
+              <para>Беседы отключены в реестре Windows.</para>
             </item>
             <item>
-              <para>Хранилище не поддерживает представление беседы (например, Outlook может работать в классическом режиме online для версии Microsoft Exchange, который является более ранней, чем Microsoft Exchange Server 2010). Использование <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsConversationEnabled" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекта, чтобы определить, поддерживает ли хранилище представление беседы.</para>
+              <para>Хранилище не поддерживает представление беседы (например, Outlook работает в классическом режиме в Интернете для более ранней версии Microsoft Exchange, чем Microsoft Exchange Server 2010). Используйте <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsConversationEnabled" /> свойство <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекта, чтобы определить, поддерживает ли хранилище представление беседы.</para>
             </item>
           </list>
           <para> </para></remarks>
@@ -199,9 +199,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.SimpleItems" /> коллекция, которая содержит все элементы в окне беседы, которые находятся в той же папке, как заголовок выбранной беседы.</summary>
-        <returns>Возвращает коллекцию <b>SimpleItems</b> элементов, которые относятся к одной беседы и находятся в той же папке, как заголовок беседы.</returns>
-        <remarks><para>Коллекция <b>SimpleItems</b> содержит только элементов беседы в папке, которая содержит заголовок беседы. Коллекция <b>SimpleItems</b> не возвращает элементов беседы кросс папку. Если необходимо получить доступ к содержимое нескольких папок, используйте <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" />объекта. Если элементов беседы не существует в той же папке, как заголовок беседы, <b>GetItems</b> возвращает коллекцию <b>SimpleItems</b> с <see cref="P:Microsoft.Office.Interop.Outlook._SimpleItems.Count" /> свойство равно 0.</para>
+        <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.SimpleItems" /> коллекцию, содержащую все элементы беседы, которые находятся в той же папке, что и выбранный заголовок беседы.</summary>
+        <returns>Возвращает коллекцию элементов <b>SimpleItems</b> , относящихся к одной беседе и находящиеся в той же папке, что и заголовок беседы.</returns>
+        <remarks><para>Коллекция <b>SimpleItems</b> содержит только элементы беседы в папке, которая содержит заголовок беседы. Коллекция <b>SimpleItems</b> не возвращает элементы беседы между папками. Если необходимо получить доступ к содержимому нескольких папок, используйте <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" />объект. Если в папке, где находится заголовок беседы, отсутствуют элементы беседы, то <b>Items</b> Возвращает коллекцию <b>SimpleItems</b> со <see cref="P:Microsoft.Office.Interop.Outlook._SimpleItems.Count" /> свойством, равным 0.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -228,10 +228,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <see cref="T:System.Object" /> указанного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <see cref="T:System.Object" /> объект указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Родительский <see cref="T:Microsoft.Office.Interop.Outlook.ConversationHeader" /> — это объект <see cref="T:Microsoft.Office.Interop.Outlook.Selection" /> объекта.</para>
-          <para>Возвращаемый объект <b>выбора</b> содержит только <b>ConversationHeader</b> объекты. Начало свойство <b>Parent</b> эквивалентно вызову метода <see cref="M:Microsoft.Office.Interop.Outlook.Selection.GetSelection(Microsoft.Office.Interop.Outlook.OlSelectionContents)" /> метод с <see cref="F:Microsoft.Office.Interop.Outlook.OlSelectionContents.olConversationHeaders" /> аргумент.</para>
+        <remarks><para>Родительским <see cref="T:Microsoft.Office.Interop.Outlook.ConversationHeader" /> объектом объекта является <see cref="T:Microsoft.Office.Interop.Outlook.Selection" /> объект.</para>
+          <para>Возвращенный объект <b>Selection</b> содержит только объекты <b>ConversationHeader</b> . Вызов свойства <b>Parent</b> эквивалентно вызову <see cref="M:Microsoft.Office.Interop.Outlook.Selection.GetSelection(Microsoft.Office.Interop.Outlook.OlSelectionContents)" /> метода с <see cref="F:Microsoft.Office.Interop.Outlook.OlSelectionContents.olConversationHeaders" /> аргументом.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -258,10 +258,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если нет сеанса, вошедшего в систему. </para>
-          <para>Можно использовать свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод поочередно, чтобы получить объект <b>пространства имен</b> для текущего сеанса. </para>
+        <remarks><para>Возвращает значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#) при отсутствии сеанса, выполнившего вход в систему. </para>
+          <para>Вы можете использовать свойство <b>Session</b> и метод, <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> чтобы получить объект <b>пространства имен</b> для текущего сеанса. </para>
           <para> </para></remarks>
       </Docs>
     </Member>

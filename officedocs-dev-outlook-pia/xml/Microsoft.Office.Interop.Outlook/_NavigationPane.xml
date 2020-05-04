@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,9 +73,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Данное свойство возвращает <b>olNavigationPane</b> для <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> объекта.</para>
+        <remarks><para>Это свойство возвращает <b>олнавигатионпане</b> для <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> объекта.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -105,7 +105,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NavigationModule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModule" /> объект, представляющий модуль выделенный в текущий момент навигации на левой панели навигации. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModule" /> объект, представляющий выбранный в данный момент модуль навигации в области навигации. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -136,11 +136,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение типа <b>Integer</b> (<b>int</b> в C#), показывает, сколько <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModule" /> объектов, которые отображаются в области навигации. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), которое указывает количество <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModule" /> объектов, отображаемых в области навигации. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство могут быть установлены только в диапазоне от 0 до значение <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModules.Count" /> свойства для <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.Modules" /> коллекции объект <b>NavigationPane</b> . Если значение этого свойства больше максимально допустимое значение, чтобы максимально допустимое значение автоматически устанавливается значение свойства. Если это свойство имеет значение меньше 0, возникает ошибка.</para>
-          <para> Если <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.IsCollapsed" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> имеет значение <b>False</b>, а затем значение этого свойства представляет число модули навигации, для которых значки и имена отображаются в области навигации. Если <b>IsCollapsed</b> имеет значение <b>True</b>, значение свойства <b>DisplayedModuleCount</b> представляет номер модули навигации, для которых отображается значок на левой панели навигации.</para>
-          <para>Установка значения для этого свойства изменяет размер раздела модулей области переходов для отображения большего или меньшего числа <b>NavigationModule</b> объектов при необходимости.</para>
+        <remarks><para>Этому свойству может быть присвоено значение от 0 до значения <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModules.Count" /> свойства для <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.Modules" /> коллекции объекта <b>NavigationPane</b> . Если для этого свойства задано значение, превышающее максимально допустимое значение, то значение свойства автоматически задается максимально допустимое значение. Если для этого свойства задано значение меньше 0, возникает ошибка.</para>
+          <para> Если <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.IsCollapsed" /> свойству <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> объекта присвоено значение <b>false</b>, то значение этого свойства представляет количество модулей навигации, для которых значок и имя отображаются в области навигации. Если <b>для свойства GetProperty задано</b> значение <b>true</b>, то значение свойства <b>дисплайедмодулекаунт</b> указывает количество модулей навигации, для которых значок отображается в области навигации.</para>
+          <para>Установка значения этого свойства изменяет размер раздела modules в области навигации для отображения большего или меньшего числа объектов <b>NavigationModule</b> по мере необходимости.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -170,7 +170,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или устанавливает <b>логическое</b> значение (<b>bool</b> в C#), который определяет, будет ли свернута на панели переходов. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>логическое</b> значение (<b>bool</b> в C#), которое определяет, свернута ли область навигации. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -198,7 +198,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NavigationModules</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModules" /> объект, представляющий набор модули навигации, содержащихся в области навигации. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModules" /> объект, представляющий набор модулей навигации, содержащийся в области навигации. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -226,7 +226,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -254,9 +254,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>

@@ -12,8 +12,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Определяет константы, которые определяют, будет ли новые элементы беседы всегда перемещаются в папку Deleted Items заданном хранилище доставки.</summary>
-    <remarks><para>Это перечисление используется с <see cref="M:Microsoft.Office.Interop.Outlook._Conversation.GetAlwaysDelete(Microsoft.Office.Interop.Outlook.Store)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объекта.</para>
+    <summary>Задает константы, определяющие, всегда ли новые элементы беседы перемещаются в папку "Удаленные" указанного хранилища доставки.</summary>
+    <remarks><para>Это перечисление используется <see cref="M:Microsoft.Office.Interop.Outlook._Conversation.GetAlwaysDelete(Microsoft.Office.Interop.Outlook.Store)" /> методом <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объекта.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Новые элементы беседы всегда перемещаются в папку «Удаленные» для хранилища, содержащего элементы</summary>
+        <summary>Новые элементы беседы всегда перемещаются в папку "Удаленные" для хранилища, содержащего элементы</summary>
       </Docs>
     </Member>
     <Member MemberName="olAlwaysDeleteUnsupported">
@@ -52,7 +52,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Заданного хранилища не поддерживает действие постоянного перемещения элементов для папки "Удаленные" этого хранилища.</summary>
+        <summary>Указанное хранилище не поддерживает действие "всегда перемещать элементы" в папку "Удаленные" этого хранилища.</summary>
       </Docs>
     </Member>
     <Member MemberName="olDoNotDelete">
@@ -71,7 +71,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Новые элементы, присоединении к беседе не перемещаются в папку «Удаленные» на заданном хранилище доставки, а существующие элементы беседы в папке «Удаленные» перемещаются в папке "Входящие".</summary>
+        <summary>Новые элементы, присоединяющиеся к беседе, не перемещаются в папку "Удаленные" в указанном хранилище доставки, а существующие элементы беседы в папке "Удаленные" перемещаются в папку "Входящие".</summary>
       </Docs>
     </Member>
   </Members>

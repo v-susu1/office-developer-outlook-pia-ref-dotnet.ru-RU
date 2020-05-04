@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.OlkTimeZone" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.OlkTimeZone" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,9 +48,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlAppointmentTimeField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlAppointmentTimeField" /> константа, которая определяет поле время встречи, привязывается элемент управления.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlAppointmentTimeField" /> константу, определяющую поле времени для встречи, с которой связан элемент управления.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Этот элемент управления не поддерживает Стандартная привязка данных.</para>
+        <remarks><para>Этот элемент управления не поддерживает стандартную привязку данных.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -80,9 +80,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlBorderStyle" /> константа, который определяет стиль границы вокруг элемента управления.   Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlBorderStyle" /> константу, определяющую стиль границы вокруг элемента управления.   Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>olBorderStyleSingle</b>.</para>
+        <remarks><para>Значение по умолчанию — <b>олбордерстилесингле</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -107,8 +107,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>При развертывании элемента раскрывающегося списка управления часового пояса.</summary>
-        <remarks><para>Моделирует пользователя, нажав кнопку размещения в элементе управления. Этот метод вызывает <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.DropButtonClick" /> событие.</para>
+        <summary>Разворачивает раскрывающийся часть элемента управления "часовой пояс".</summary>
+        <remarks><para>Имитирует пользователя нажатием кнопки раскрытия на элементе управления. Этот метод приводит к <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.DropButtonClick" /> срабатыванию события.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -138,9 +138,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), которое указывает, если элемент управления может работать. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, может ли элемент управления работать. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>True</b>.</para>
+        <remarks><para>Значение по умолчанию — <b>True</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -170,10 +170,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), указывающее, заблокирован ли элемент управления от изменений. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, будет ли элемент управления заблокирован для изменения. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>False</b>.  </para>
-          <para>Когда элемент управления заблокирован, элемент управления не имеет вид «отключено», но пользователь не может изменять содержимое элемента управления.   </para>
+        <remarks><para>Значение по умолчанию — <b>False</b>.  </para>
+          <para>Если элемент управления заблокирован, то элемент управления не имеет отключенного внешнего вида, но пользователь не может редактировать содержимое этого элемента управления.   </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -203,9 +203,9 @@
         <ReturnType>stdole.StdPicture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>StdPicture</b> , представляющий настраиваемые изображения курсор мыши для данного элемента управления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>стдпиктуре</b> , представляющий настраиваемый рисунок курсора мыши для этого элемента управления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
+        <remarks><para>Значение по умолчанию — <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -235,9 +235,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMousePointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> константа, которая определяет тип указателя, который отображается при наведении мыши на элемент управления.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> константу, определяющую тип указателя, отображаемого при наведении указателя мыши на элемент управления.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>olMousePointerDefault</b>.</para>
+        <remarks><para>Значение по умолчанию — <b>олмаусепоинтердефаулт</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -267,10 +267,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает тип <b>Integer</b> (<b>int</b> в C#), представляющий индекс в <see cref="P:Microsoft.Office.Interop.Outlook._Application.TimeZones" /> семейства сайтов, который определяет выбранный часового пояса. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>целое число</b> (<b>int</b> в C#), представляющее индекс <see cref="P:Microsoft.Office.Interop.Outlook._Application.TimeZones" /> в коллекции, который определяет выбранный часовой пояс. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>SelectedTimeZoneIndex</b> на основе 1 и значение нуль (0) означает, что не выбран без часового пояса.</para>
+            <b>Селектедтимезонеиндекс</b> имеет значение, равное 1, а нулевое значение (0) означает, что часовой пояс не выбран.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

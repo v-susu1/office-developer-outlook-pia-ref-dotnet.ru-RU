@@ -18,9 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Представляет к адресной книге, содержащее набор <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объектов.</summary>
-    <remarks><para>Объект <b>AddressList</b> — к адресной книге, содержащее набор <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объектов.</para>
-      <para>Объект <b>AddressList</b> предоставляет список записей адресов, к которым системы обмена сообщениями может доставлять сообщения. Объект <b>AddressList</b> представляет один контейнер адресной книги доступными в иерархии адресной книги поставщика транспорта для текущего сеанса. Всей иерархии доступен через родительский <see cref="T:Microsoft.Office.Interop.Outlook.AddressLists" /> объекта.</para>
+    <summary>Представляет адресную книгу, которая содержит набор <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объектов.</summary>
+    <remarks><para>Объект <b>AddressList</b> — это адресная книга, содержащая набор <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объектов.</para>
+      <para>Объект <b>AddressList</b> предоставляет список записей адресов, на которые система обмена сообщениями может доставить сообщения. Объект <b>AddressList</b> представляет один контейнер адресной книги, доступный в иерархии адресной книги поставщика транспорта для текущего сеанса. Вся иерархия доступна через родительский <see cref="T:Microsoft.Office.Interop.Outlook.AddressLists" /> объект.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -47,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.AddressEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> семейства сайтов для указанного объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> коллекцию для указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -75,7 +75,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlAddressListType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает константу из <see cref="T:Microsoft.Office.Interop.Outlook.OlAddressListType" /> , представляющий тип перечисления <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" />. Только для чтения.</summary>
+        <summary>Возвращает константу из <see cref="T:Microsoft.Office.Interop.Outlook.OlAddressListType" /> перечисления, представляющего тип объекта <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" />. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -103,7 +103,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,7 +131,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -157,9 +157,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, который представляет папку «Контакты» <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> объекта.</summary>
-        <returns>Объект <b>папки</b> , который представляет папки Контакты программы Outlook для <b>AddressList</b>. Возвращает <b>значение Null</b> (<b>Nothing</b> в Visual Basic), если нет папки Контакты Outlook не найден.</returns>
-        <remarks><para>Этот метод позволяет быстро найти <b>AddressList</b> для этой папки, который вы хотите настроить в качестве начального адреса списка в диалоговом окне Выбор имен.</para>
+        <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий папку контактов для <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> объекта.</summary>
+        <returns>Объект <b>Folder</b> , представляющий папку контактов Outlook для <b>AddressList</b>. Возвращает <b>значение NULL</b> (<b>Nothing</b> в Visual Basic), если не найдено ни одной папки контактов Outlook.</returns>
+        <remarks><para>Этот метод позволяет сопоставлять <b>AddressList</b> для папки "Контакты", которую вы хотите настроить в качестве начального списка адресов в диалоговом окне Выбор имен.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -186,9 +186,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее уникальный идентификатор для объекта. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую уникальный идентификатор объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>При создании объекта отдельным элементом, поставщика транспорта назначает свойство строки постоянная, уникальный <b>идентификатор</b> . Эти идентификаторы не изменяйте из одного сеанса в другую. </para>
+        <remarks><para>Поставщик транспорта назначает свойство постоянного уникального <b>идентификатора</b> строки при создании отдельного объекта члена. Эти идентификаторы не меняются от одного сеанса к другому. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -215,9 +215,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее положение объекта в коллекции.  Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), которое указывает положение объекта в коллекции.  Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>Index</b> допустимо только во время текущего сеанса и можно изменить, как объекты добавлен и удален из коллекции. Первый объект в коллекции имеет значение <b>индекса</b> 1.</para>
+        <remarks><para>Свойство <b>index</b> является допустимым только во время текущего сеанса и может изменяться при добавлении и удалении объектов из коллекции. Значение <b>индекса</b> первого объекта в коллекции равно 1.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -244,10 +244,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, если <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> — это начальное <b>AddressList</b> показано диалоговое окно Выбор имен. Только для чтения.</summary>
+        <summary>Возвращает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> является ли начальное <b>AddressList</b> , отображаемое в диалоговом окне Выбор имен. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>IsInitialAddressList</b> соответствует параметру отображать этот адрес список (первый) в диалоговом окне Addressing, который можно получить, последовательно выбрав пункты Сервис, а затем параметры в диалоговом окне "Адресная книга".  </para>
+            <b>IsInitialAddressList</b> соответствует параметру отображать этот список адресов первым в диалоговом окне адресация, которое доступно в меню Сервис, а затем в диалоговом окне Адресная книга.  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -276,7 +276,7 @@
       <Docs>
         <summary>Возвращает <b>логическое</b> значение (<b>bool</b> в C#), которое указывает, что <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> объект не может быть изменен. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>IsReadOnly</b> ссылается на добавление и удаление записей в контейнер адресной книги, представленного объектом <b>AddressList</b> . Свойство имеет <b>значение True</b> , если записи не может быть добавлено или удалено. Свойство имеет <b>значение False</b> , если контейнер можно изменить, то есть, если записей адреса можно добавить в и удалены из контейнера. Он ссылается на адресной книги в контексте контейнер адресной книги. Указывает, можно ли изменить содержимое самих отдельных элементов.</para>
+        <remarks><para>Свойство <b>IsReadOnly</b> относится к добавлению и удалению записей в контейнере адресной книги, представленном объектом <b>AddressList</b> . Свойство имеет <b>значение true</b> , если невозможно добавить или удалить записи. Свойство имеет <b>значение false</b> , если можно изменить контейнер, то есть если записи адресов можно добавлять в контейнер и удалять из него. Она ссылается на записи адресной книги в контексте контейнера адресной книги. Он не указывает, можно ли изменять содержимое отдельных записей.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -303,7 +303,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>String</b> (<b>строка</b> в C#), который представляет отображаемое имя для объекта. Только для чтения.</summary>
+        <summary>Возвращает <b>строковое</b> значение (<b>String</b> в C#), представляющее отображаемое имя объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -331,7 +331,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -359,7 +359,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.PropertyAccessor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект, который поддерживает создание, получение, Установка и удаление свойств родительского <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект, который поддерживает создание, получение, настройку и удаление свойств родительского <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -387,10 +387,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> , представляющее о порядке <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> в списке настраиваемых прокрутки в диалоговом окне Addressing. Только для чтения.</summary>
+        <summary>Возвращает <b>целое число</b> , которое представляет порядок этого <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> в настраиваемом списке прокрутки в диалоговом окне "обработка адресов". Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>ResolutionOrder</b> соответствует позиции <b>AddressList</b> в списке, который называется при отправке сообщений, проверьте адрес перечислены в следующем порядке в диалоговом окне Addressing и доступен, нажав кнопку Сервис и выберите параметры в диалоговое окно адресной книги. Обратите внимание на то, что это поведение не зависит от ли выбрано в диалоговом окне Addressing. Например при выборе начинаются с глобальным списком адресов и как первый элемент в списке прокрутки отображаются контакты, свойство <b>ResolutionOrder</b> списка адресов контактов — это по-прежнему 1, несмотря на то, что при разрешении получатели Outlook использует глобальных адресов Список (первый).</para>
-          <para>Если выбрано в диалоговом окне Addressing, свойство <b>ResolutionOrder</b> отражает порядок, в котором используется в Outlook при разрешение имен получателей. Значение <b>ResolutionOrder</b> индексацией. В этом случае первого списка адресов, которое будет использоваться для разрешение имен получателей имеет <b>ResolutionOrder</b> равное 1, второй — список 2 адресов и т. д. Если список адресов не используется для разрешения адреса, его <b>ResolutionOrder</b> имеет значение -1. Программными средствами, если выбрано в диалоговом окне Addressing, свойство <b>ResolutionOrder</b> отражает фактический решение заказ, <see cref="M:Microsoft.Office.Interop.Outlook.Recipients.ResolveAll" /> или <see cref="M:Microsoft.Office.Interop.Outlook.Recipient.Resolve" /> использует.</para>
+        <remarks><para>Свойство <b>ResolutionOrder</b> соответствует позиции объекта <b>AddressList</b> в списке, который отмечен при отправке почты, проверяйте списки адресов в указанном порядке в диалоговом окне "обработка адресов" и доступны с помощью меню "Сервис" и затем параметров в диалоговом окне "Адресная книга". Обратите внимание, что это поведение не зависит от того, выбран ли пользователь в диалоговом окне адресация. Например, если выбран параметр начать с глобального списка адресов, а в списке прокрутки отображаются контакты в качестве первого элемента, свойство <b>ResolutionOrder</b> списка адресов Contacts остается равным 1, хотя при разрешении получателей в Outlook используется глобальный список адресов.</para>
+          <para>Если в диалоговом окне "обработка адресов" выбран параметр "настраиваемый", свойство <b>ResolutionOrder</b> отражает порядок, который Outlook использует при разрешении имен получателей. Значение <b>ResolutionOrder</b> — единица. В этом случае, первый список адресов, используемый для разрешения имен получателей, имеет значение <b>ResolutionOrder</b> , равное 1, второй список адресов 2 и т. д. Если список адресов не используется для разрешения адресов, то его <b>ResolutionOrder</b> имеет значение-1. Программным способом при выборе в диалоговом окне "обработка адресов" свойство <b>ResolutionOrder</b> отражает фактический порядок разрешения, <see cref="M:Microsoft.Office.Interop.Outlook.Recipients.ResolveAll" /> который <see cref="M:Microsoft.Office.Interop.Outlook.Recipient.Resolve" /> используется или используется.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -417,9 +417,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>

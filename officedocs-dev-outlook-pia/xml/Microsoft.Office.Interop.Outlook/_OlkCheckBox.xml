@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.OlkCheckBox" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.OlkCheckBox" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,10 +48,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение типа <b>String</b> (<b>строка</b> в C#), представляющее accelerator или сочетание клавиш для элемента управления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее ускоритель или сочетание клавиш для элемента управления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — пустая строка, то есть не горячей ключ.  Если свойство имеет значение со строкой более одного символа, значение будет усечено до первого знака.  </para>
-          <para>Сочетание клавиш нельзя использовать цифры.</para>
+        <remarks><para>Значение по умолчанию — пустая строка, означающее отсутствие сочетания клавиш.  Если для свойства задана строка из нескольких символов, значение будет укорочено до первого символа.  </para>
+          <para>В ускорителе нельзя использовать цифры.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -81,9 +81,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlAlignment" /> константа, которая указывает положение элемента управления относительно его заголовка.    Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlAlignment" /> константу, которая указывает положение элемента управления относительно его заголовка.    Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>olAlignmentLeft</b>.</para>
+        <remarks><para>Значение по умолчанию — <b>олалигнментлефт</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -118,7 +118,7 @@
       <Docs>
         <summary>Возвращает или задает значение <b>UInteger</b> (<b>uint</b> в C#), которое указывает цвет фона элемента управления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство имеет тип <b>OLE_COLOR</b> , которое является значением <b>UInteger</b> (<b>uint</b> в C#). Значение по умолчанию для этого свойства — 0x8000000F, «Кнопка». </para>
+        <remarks><para>Это свойство имеет тип <b>OLE_COLOR</b> который является значением <b>UInteger</b> (<b>uint</b> в C#). По умолчанию для этого свойства задано значение 0x8000000F, "Face Button". </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -148,9 +148,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlBackStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlBackStyle" /> константа, изменяется стиль фона элемента управления между прозрачный и непрозрачный. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlBackStyle" /> константу, которая изменяет стиль фона элемента управления прозрачным и непрозрачным. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>olBackStyleOpaque</b>.  </para>
+        <remarks><para>Значение по умолчанию — <b>олбаккстилеопакуе</b>.  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -180,9 +180,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#), который отображается на объекте, чтобы определить или описать его.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), которая отображается в объекте для идентификации или описания.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>  Значение по умолчанию основано на имя элемента управления.  Положение подписи относительно флажок определяется <see cref="P:Microsoft.Office.Interop.Outlook._OlkCheckBox.Alignment" /> свойство.</para>
+        <remarks><para>  Значение по умолчанию основано на имени элемента управления.  Положение заголовка относительно этого флажка определяется <see cref="P:Microsoft.Office.Interop.Outlook._OlkCheckBox.Alignment" /> свойством.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -212,9 +212,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), которое указывает, если элемент управления может работать.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, может ли элемент управления работать.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>True</b>.</para>
+        <remarks><para>Значение по умолчанию — <b>True</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -241,9 +241,9 @@
         <ReturnType>stdole.StdFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>StdFont</b> , который представляет шрифт, используемый для отображения текста в элементе управления.  Только для чтения.</summary>
+        <summary>Возвращает объект <b>стдфонт</b> , представляющий шрифт, используемый для отображения текста в элементе управления.  Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Шрифт выражается в виде тип Microsoft Windows <b>stdfont</b>.</para>
+        <remarks><para>Шрифт выражается в качестве типа Microsoft Windows <b>стдфонт</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -276,9 +276,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>UInteger</b> (<b>uint</b> в C#), которое указывает, цвет переднего плана элемента управления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>UInteger</b> (<b>uint</b> в C#), которое указывает цвет переднего плана для элемента управления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство имеет тип <b>OLE_COLOR</b> , которое является значением <b>UInteger</b> (<b>uint</b> в C#). Значение по умолчанию для этого свойства — 0x80000008, «Окно текст».  </para>
+        <remarks><para>Это свойство имеет тип <b>OLE_COLOR</b> который является значением <b>UInteger</b> (<b>uint</b> в C#). Значение этого свойства по умолчанию — 0x80000008, "текст окна".  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -308,9 +308,9 @@
         <ReturnType>stdole.StdPicture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>StdPicture</b> , представляющий настраиваемые изображения курсор мыши для данного элемента управления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>стдпиктуре</b> , представляющий пользовательское изображение курсора мыши для этого элемента управления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
+        <remarks><para>Значение по умолчанию — <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -340,9 +340,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMousePointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> константа, которая определяет тип указателя, который отображается при наведении мыши на элемент управления.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> константу, определяющую тип указателя, отображаемого при наведении указателя мыши на элемент управления.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>olMousePointerDefault</b>.</para>
+        <remarks><para>Значение по умолчанию — <b>олмаусепоинтердефаулт</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -372,9 +372,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), указывающее, является ли пользователь может указать в пользовательском интерфейсе при <b>нулевом</b> состоянии для элемента управления.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, может ли пользователь указать в пользовательском интерфейсе состояние <b>null</b> для этого элемента управления.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Если это свойство имеет <b>значение True</b>, флажок щелкает поддерживает три состояния. Если это свойство имеет <b>значение False</b>, флажок поддерживает только состояния <b>True</b> и <b>False</b> . Значение по умолчанию — <b>False</b>.  </para>
+        <remarks><para>Если это свойство имеет <b>значение true</b>, то флажок щелкает три состояния. Если это свойство имеет <b>значение false</b>, то флажок поддерживает только состояния <b>true</b> и <b>false</b> . Значение по умолчанию — <b>False</b>.  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -406,7 +406,7 @@
       <Docs>
         <summary>Возвращает или задает <b>объект</b> , указывающий состояние элемента управления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Для управления "флажок", это свойство является <b>True</b> или <b>False</b>, или, если <see cref="P:Microsoft.Office.Interop.Outlook._OlkCheckBox.TripleState" /> значение свойства, <b>значение</b> свойства также может быть <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#). Значение по умолчанию — <b>False</b>.</para>
+        <remarks><para>Для элемента управления "флажок" это свойство имеет <b>значение true</b> или <b>false</b>, или если <see cref="P:Microsoft.Office.Interop.Outlook._OlkCheckBox.TripleState" /> свойство задано, свойство <b>value</b> также может иметь значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#). Значение по умолчанию — <b>False</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -436,9 +436,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), указывающее, является ли содержимое элемента управления автоматический перенос в конце строки.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, будет ли содержимое элемента управления автоматически переноситься в конце строки.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>True</b>.</para>
+        <remarks><para>Значение по умолчанию — <b>True</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

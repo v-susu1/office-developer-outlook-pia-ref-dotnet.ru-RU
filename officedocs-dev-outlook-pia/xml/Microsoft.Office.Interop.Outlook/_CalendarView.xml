@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -71,7 +71,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Область применения <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекта к текущему представлению.</summary>
+        <summary>Применяет <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объект к текущему представлению.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,7 +98,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.AutoFormatRules</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRules" /> объект, представляющий набор форматирования правила применимы к <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRules" /> объект, представляющий набор правил форматирования, <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> применяемых к объекту. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,7 +129,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, указывающее, отображаются ли дни, содержащие элементы Outlook в полужирным шрифтом в окне выбора даты для <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> in C#), которое указывает, должны ли дни, содержащие элементы Outlook, отображаться жирным шрифтом в календарике для <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -160,7 +160,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, указывающее, отображается ли сведения о тему для элементов Outlook в полужирным шрифтом в пределах <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекта. Чтение и запись</summary>
+        <summary>Возвращает или задает значение <b>логического</b> значения (<b>bool</b> в C#), которое указывает, отображаются ли сведения о теме для элементов Outlook полужирным шрифтом в <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекте. Чтение и запись</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -191,7 +191,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlCalendarViewMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlCalendarViewMode" /> , который определяет текущий режим представления <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <see cref="T:Microsoft.Office.Interop.Outlook.OlCalendarViewMode" /> , определяющее текущий режим представления <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -219,7 +219,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -249,8 +249,8 @@
       <Docs>
         <param name="Name">Имя нового представления.</param>
         <param name="SaveOption">Параметр Сохранить для нового представления.</param>
-        <summary>Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.View" /> объекта на основании существующих <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекта.</summary>
-        <returns>Объект <b>представления</b> , который представляет новое представление.</returns>
+        <summary>Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.View" /> объект на основе существующего <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекта.</summary>
+        <returns>Объект <b>View</b> , представляющий новое представление.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -280,9 +280,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>Integer</b> (<b>int</b> в C#), представляющее количество последовательных дней, отображаемых в <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекта. Чтение и запись</summary>
+        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), представляющее количество последовательных дней, отображаемых <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> в объекте. Чтение и запись</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство может иметь значение в диапазоне от 2 до 14. Если это свойство задано значение меньше 2, свойство имеет значение 2. Если значение этого свойства больше 14, свойство имеет значение 14. Значение по умолчанию для этого свойства — 5.</para>
+        <remarks><para>Для этого свойства может быть задано значение от 2 до 14. Если для этого свойства задано значение меньше 2, свойству присвоено значение 2. Если для этого свойства задано значение больше 14, свойству присвоено значение 14. Значение этого свойства по умолчанию — 5.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -374,7 +374,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlDayWeekTimeScale</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlDayWeekTimeScale" /> константа, которая представляет масштаба, используемый для представления периодов времени в <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlDayWeekTimeScale" /> константу, представляющую шкалу, используемую для представления периодов времени в <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекте. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -427,9 +427,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает массив <b>объектов</b> , содержащий строки, представляющие дни, отображаемые в <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает массив <b>объектов</b> , содержащий строки, которые представляют дни, отображаемые <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> в объекте. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Данное свойство возвращает массив строк даты, в которых каждой строки даты представляет день, отображаемые в объекте <b>представления календаря</b> . Форматирование строк даты с использованием краткого формата даты формат параметров для операционной системы.</para>
+        <remarks><para>Это свойство возвращает массив строк даты, в которых каждая строка даты представляет день, отображаемый в объекте <b>CalendarView</b> Строки даты форматируются с использованием параметров краткого формата даты для операционной системы.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -459,9 +459,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет имя свойства, название которого заканчивается промежуток времени для элементов Outlook, отображаемые в <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее имя свойства, которое завершает период времени для элементов Outlook, отображаемых в <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекте. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значения <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.StartField" /> и <b>EndField</b> свойства указывают, какие свойства элемента Outlook используются объектом <b>представления календаря</b> для представления длительность элемента Outlook. Можно указать настраиваемых и встроенных свойств, но допускается только свойства даты и времени.</para>
+        <remarks><para>Значения свойств <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.StartField" /> и <b>ендфиелд</b> указывают, какие свойства элемента Outlook используются объектом <b>CalendarView</b> для представления длительности элемента Outlook. Можно указать как настраиваемые, так и встроенные свойства, но разрешены только свойства даты и времени.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -491,9 +491,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет фильтр для представления.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее фильтр для представления.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение этого свойства — это строка, в синтаксисе поиска DAV и поиск (DASL), представляющий текущий фильтр для представления. Дополнительные сведения об использовании DASL синтаксис для фильтрации элементов в представлении можно <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Фильтрации элементов</a></para>
+        <remarks><para>Значением этого свойства является строка в синтаксисе поиска по протоколу DAV (DASL), которая представляет текущий фильтр для представления. Дополнительные сведения об использовании синтаксиса DASL для фильтрации элементов в представлении можно узнать в статье <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Фильтрация элементов</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -520,8 +520,8 @@
         <Parameter Name="Date" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="Date">Дата, к которой следует изменить представление.</param>
-        <summary>Изменение даты, используемых текущим представлением для отображения информации.</summary>
+        <param name="Date">Дата, до которой должно быть изменено представление.</param>
+        <summary>Изменяет дату, используемую текущим представлением, для отображения сведений.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -551,10 +551,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение типа <b>String</b> (<b>строка</b> в C#), представляющее языка, заданных для представления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее параметр языка для представления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>Language</b> <b>String</b> (<b>строка</b> в C#) используется для представления тег языка ISO. Например строка «EN-US» представляет код ISO «США - английский.»</para>
-          <para>Если указан допустимый код языка, объект доступна только в меню "Вид" для типа указанного языка. Если значение не указано, элемент object доступен для всех типов языка. Значение по умолчанию для этого свойства — это пустая строка.</para>
+        <remarks><para>Свойство <b>Language</b> использует <b>строку</b> (<b>строка</b> в C#) для представления тега языка ISO. Например, строка "EN-US" представляет код ISO для "США-английский".</para>
+          <para>Если указан допустимый код языка, объект будет доступен только в меню Вид для указанного типа языка. Если значение не указано, элемент объекта доступен для всех типов языка. Значение по умолчанию для этого свойства — пустая строка.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -584,9 +584,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, указывающее, является ли пользователь может изменять параметры представления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>логического</b> значения (<b>bool</b> в C#), которое указывает, может ли пользователь изменять параметры представления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Если <b>значение True</b>, пользователь может изменить параметры указанное представление. Тем не менее изменения, внесенные в интерфейс не будут сохранены. Если <b>значение False</b> (значение по умолчанию), все изменения будут сохранены.  </para>
+        <remarks><para>Если <b>имеет значение true</b>, пользователь может изменять параметры указанного представления. Однако изменения, внесенные в интерфейс, не будут сохранены. Если задано <b>значение false</b> (значение по умолчанию), все изменения будут сохранены.  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -647,9 +647,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, указывающее, отображаются ли время окончания для элементов Outlook в <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> в C#), которое указывает, отображается ли в <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекте время окончания для элементов Outlook. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение этого свойства — это применимо только тогда, когда <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.CalendarViewMode" /> свойства объекта <b>представления календаря</b> задано значение <b>olCalendarViewMonth</b>.</para>
+        <remarks><para>Значение этого свойства применяется только в том случае, <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.CalendarViewMode" /> если свойству объекта <b>CalendarView</b> присвоено значение <b>олкалендарвиевмонс</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -679,7 +679,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет отображаемое имя для объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее отображаемое имя объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -707,7 +707,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -733,8 +733,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Сбрасывает встроенных представления Microsoft Outlook исходные параметры.</summary>
-        <remarks><para>Этот метод работает только для встроенных представления Outlook.</para>
+        <summary>Восстанавливает исходные параметры встроенного представления Microsoft Outlook.</summary>
+        <remarks><para>Этот метод работает только со встроенными представлениями Outlook.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -759,7 +759,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Сохраняет представления или сохраняет изменения в представлении.</summary>
+        <summary>Сохранение представления или сохранение изменений в представлении.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -786,9 +786,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlViewSaveOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewSaveOption" /> константа, которая указывает папки, в которых доступен указанное представление и разрешения на чтение, подключенного к представления. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewSaveOption" /> константу, указывающую папки, в которых доступно указанное представление и разрешения на чтение, присоединенные к представлению. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Когда задано значение свойства <b>SaveOption</b> <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объект создается с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> семейства сайтов. </para>
+        <remarks><para>Значение свойства <b>SaveOption</b> задается при создании <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекта с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> метода <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> коллекции. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -815,12 +815,12 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>даты и времени</b> , представляющее время окончания выделения в <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает значение <b>DateTime</b> , представляющее время окончания выделенного фрагмента в <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекте. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Назначение <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.SelectedStartTime" /> , а свойства <b>SelectedEndTime</b> — для репликации, программным способом, способом, что пользователи создать встречу в интерфейсе пользователя Microsoft Outlook. Как правило пользователь выбирает диапазон времени в представлении календаря и затем создает новую встречу, дважды щелкнув выделение или щелкните Создать встречу в панели инструментов "Главная" на ленте Microsoft Office Fluent. Эти два свойства объекта <b>представления календаря</b> позволяет получить время начала и время окончания все параметры, выбранные в данном представлении программными средствами. Затем можно программно создавать <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объекта, присвоив <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.Start" /> и <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.End" /> свойства объекта <b>AppointmentItem</b> для свойства <b>SelectedStartTime</b> и <b>SelectedEndTime</b> соответственно в соответствии с любым пользователем Выбор в представлении календаря.</para>
-          <para>При выделении в представлении календаря — интервал времени и не является элементом, <b>SelectedEndTime</b> возвращает значение <b>DateTime</b> время окончания текущего выбора.</para>
-          <para>Если один или несколько элементов выбранных в представлении календаря, <b>SelectedEndTime</b> возвращает равно время окончания первый элемент значения <b>даты и времени</b> в выделении в проводнике, который отображает представление "Календарь". Выбор определяется <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.Selection" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> объекта.</para>
-          <para>Чтобы использовать это свойство в объекте <b>представления календаря</b> , получить объект <b>представления календаря</b> из <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentView" /> свойства объекта active <b>Explorer</b> (которой можно получить с <see cref="M:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer" /> метод). Существует известная проблема с использованием этого свойства для получения объекта <b>представления календаря</b> , в противном случае — с помощью <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.CurrentView" /> текущего элемента <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объекта (возвращаемые <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> свойства объекта, представленного <b>Application.ActiveExplorer </b>).</para>
+        <remarks><para>Цель свойств <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.SelectedStartTime" /> и свойств <b>селектедендтиме</b> — репликация программным способом, способ создания встречи пользователями в пользовательском интерфейсе Microsoft Outlook. Как правило, пользователь выбирает диапазон времени в представлении календаря и создает новую встречу, дважды щелкнув выделенный фрагмент или нажав кнопку Создать встречу на вкладке Главная ленты Microsoft Office Fluent. С помощью этих двух свойств объекта <b>CalendarView</b> можно получить время начала и время окончания любого выбора в этом представлении программным способом. Затем можно программным способом создать <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объект, задав свойства <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.Start" /> и <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.End" /> свойства объекта <b>AppointmentItem</b> для свойств <b>селектедстарттиме</b> и <b>селектедендтиме</b> соответственно, чтобы отразить выбор пользователя в представлении календаря.</para>
+          <para>Если выделенный фрагмент в представлении календаря является диапазоном времени и не является элементом, <b>селектедендтиме</b> возвращает значение <b>DateTime</b> , равное времени окончания выделенного фрагмента.</para>
+          <para>Если в представлении календаря выбран один или несколько элементов, <b>селектедендтиме</b> возвращает значение <b>DateTime</b> , равное времени окончания первого элемента в выборе проводника, в котором отображается представление календаря. Этот выбор определяется <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.Selection" /> свойством <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> объекта.</para>
+          <para>Чтобы использовать это свойство для объекта <b>CalendarView</b> , получите объект <b>CalendarView</b> из <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentView" /> свойства объекта Active <b>Explorer</b> (которое может быть возвращено <see cref="M:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer" /> методом). Существует известная проблема, связанная с использованием этого свойства для объекта <b>CalendarView</b> , полученного другим <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.CurrentView" /> способом, с использованием <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> свойства текущего объекта (возвращаемого <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> свойством объекта, представленного <b>приложением Application. ActiveExplorer</b>).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -847,12 +847,12 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>даты и времени</b> , представляющее время начала выделения в <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает значение <b>DateTime</b> , представляющее время начала выделенного фрагмента в <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекте. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Назначение <b>SelectedStartTime</b> <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.SelectedEndTime" /> — это свойства для репликации, программным способом, способом, что пользователи создать встречу в интерфейсе пользователя Microsoft Outlook. Как правило пользователь выбирает диапазон времени в представлении календаря и затем создает новую встречу, дважды щелкнув выделение или щелкните Создать встречу в панели инструментов "Главная" на ленте Microsoft Office Fluent. Эти два свойства объекта <b>представления календаря</b> позволяет получить время начала и время окончания все параметры, выбранные в данном представлении программными средствами. Затем можно программно создавать <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объекта, присвоив <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.Start" /> и <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.End" /> свойства объекта <b>AppointmentItem</b> для свойства <b>SelectedStartTime</b> и <b>SelectedEndTime</b> соответственно в соответствии с любым пользователем Выбор в представлении календаря.</para>
-          <para>При выделении в представлении календаря — интервал времени и не является элементом, <b>SelectedStartTime</b> возвращает значение <b>DateTime</b> время начала текущего выбора.</para>
-          <para>Если один или несколько элементов выбранных в представлении календаря, <b>SelectedStartTime</b> возвращает равно время начала первого элемента значение <b>даты и времени</b> в выделении в проводнике, который отображает представление "Календарь". Выбор определяется <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.Selection" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> объекта.</para>
-          <para>Чтобы использовать это свойство в объекте <b>представления календаря</b> , получить объект <b>представления календаря</b> из <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentView" /> свойства объекта active <b>Explorer</b> (которой можно получить с <see cref="M:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer" /> метод). Существует известная проблема с использованием этого свойства для получения объекта <b>представления календаря</b> , в противном случае — с помощью <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.CurrentView" /> текущего элемента <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объекта (возвращаемые <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> свойства объекта, представленного <b>Application.ActiveExplorer </b>).</para>
+        <remarks><para>Цель свойств <b>селектедстарттиме</b> <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.SelectedEndTime" /> — репликация программным способом, способ создания встречи пользователями в пользовательском интерфейсе Microsoft Outlook. Как правило, пользователь выбирает диапазон времени в представлении календаря и создает новую встречу, дважды щелкнув выделенный фрагмент или нажав кнопку Создать встречу на вкладке Главная ленты Microsoft Office Fluent. С помощью этих двух свойств объекта <b>CalendarView</b> можно получить время начала и время окончания любого выбора в этом представлении программным способом. Затем можно программным способом создать <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объект, задав свойства <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.Start" /> и <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.End" /> свойства объекта <b>AppointmentItem</b> для свойств <b>селектедстарттиме</b> и <b>селектедендтиме</b> соответственно, чтобы отразить выбор пользователя в представлении календаря.</para>
+          <para>Если в представлении календаря выбран диапазон времени и он не является элементом, <b>селектедстарттиме</b> возвращает значение <b>DateTime</b> , равное времени начала выделенного фрагмента.</para>
+          <para>Если в представлении календаря выбран один или несколько элементов, <b>селектедстарттиме</b> возвращает значение <b>DateTime</b> , равное времени начала первого элемента в выборе проводника, в котором отображается представление календаря. Этот выбор определяется <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.Selection" /> свойством <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> объекта.</para>
+          <para>Чтобы использовать это свойство для объекта <b>CalendarView</b> , получите объект <b>CalendarView</b> из <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentView" /> свойства объекта Active <b>Explorer</b> (которое может быть возвращено <see cref="M:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer" /> методом). Существует известная проблема, связанная с использованием этого свойства для объекта <b>CalendarView</b> , полученного другим <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.CurrentView" /> способом, с использованием <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> свойства текущего объекта (возвращаемого <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> свойством объекта, представленного <b>приложением Application. ActiveExplorer</b>).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -879,9 +879,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -914,9 +914,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, будет ли <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объект является встроенной представления Outlook. Только для чтения.</summary>
+        <summary>Возвращает логическое<b>значение (</b> <b>логическое</b> значение в C#), которое указывает, <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> является ли объект встроенным представлением Outlook. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para><see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> Метод можно использовать для представления, только если значение этого свойства имеет значение <b>True</b>.</para>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> Метод можно использовать только для представления, если для этого свойства задано значение <b>true</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -946,9 +946,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет имя свойства, который запускает промежуток времени для элементов Outlook, отображаемые в <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее имя свойства, которое запускает период времени для элементов Outlook, отображаемых в <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> объекте. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значения <b>StartField</b> и <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.EndField" /> свойства указывают, какие свойства элемента Outlook используются объектом <b>представления календаря</b> для представления длительность элемента Outlook. Можно указать настраиваемых и встроенных свойств, но допускается только свойства даты и времени.</para>
+        <remarks><para>Значения свойств <b>стартфиелд</b> и <see cref="P:Microsoft.Office.Interop.Outlook._CalendarView.EndField" /> Properties указывают, какие свойства элементов Outlook используются объектом <b>CalendarView</b> для представления длительности элемента Outlook. Можно указать как настраиваемые, так и встроенные свойства, но разрешены только свойства даты и времени.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -975,7 +975,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlViewType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewType" /> константа, которая указывает тип представления представления. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewType" /> константу, указывающую тип представления. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1006,10 +1006,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), задающее XML-определение представления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), задающее XML-определение представления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Определение XML описывает тип представления с помощью ряда теги и ключевых слов в соответствии с различными свойствами представления. При создании представления XML-определение анализируется для отображения параметров для нового представления.</para>
-          <para>Для определения XML структуру при создании представления, можно создать представление с помощью пользовательского интерфейса Outlook и затем можно извлечь свойство <b>XML</b> для этого представления.  </para>
+        <remarks><para>В XML-определении описывается тип представления с помощью ряда тегов и ключевых слов, соответствующих различным свойствам представления. При создании представления XML-определение анализируется для отображения параметров нового представления.</para>
+          <para>Чтобы определить структуру XML при создании представлений, можно создать представление с помощью пользовательского интерфейса Outlook, а затем можно получить свойство <b>XML</b> для этого представления.  </para>
           <para> </para></remarks>
       </Docs>
     </Member>

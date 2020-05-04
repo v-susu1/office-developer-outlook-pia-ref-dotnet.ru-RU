@@ -18,9 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Представляет пользователя или ресурса в Outlook, обычно Адресат почтового сообщения.</summary>
-    <remarks><para>Использование <see cref="P:Microsoft.Office.Interop.Outlook.Recipients.Item(System.Object)" />(<paramref name="index" />), где <paramref name="index" /> — имя или номер индекса, чтобы возвратить объект <b>получателя</b> . Имя может быть строка, представляющая отображаемое имя, псевдоним или полный адрес электронной почты SMTP получателя.</para>
-      <para>Использование <see cref="M:Microsoft.Office.Interop.Outlook.Recipients.Add(System.String)" /> метода создания объекта <b>получателя</b> и добавляет его к <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> объекта. <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.Type" /> Объекта <b>получателя</b> задано значение по умолчанию для соответствующего <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />, <see cref="T:Microsoft.Office.Interop.Outlook.JournalItem" />, <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />, <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> или <see cref="T:Microsoft.Office.Interop.Outlook.TaskItem" /> объекта и необходимо выполнить сброс для указания другой тип получателя.</para>
+    <summary>Представляет пользователя или ресурс в Outlook, как правило, адрес почтового сообщения.</summary>
+    <remarks><para>Используйте <see cref="P:Microsoft.Office.Interop.Outlook.Recipients.Item(System.Object)" />(<paramref name="index" />), где <paramref name="index" /> — это имя или номер индекса, чтобы вернуть один объект <b>Recipient</b> . Имя может представлять собой строку, представляющую отображаемое имя, псевдоним или полный SMTP-адрес электронной почты получателя.</para>
+      <para>С помощью <see cref="M:Microsoft.Office.Interop.Outlook.Recipients.Add(System.String)" /> метода создайте новый объект <b>Recipient</b> и добавьте его в <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> объект. <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.Type" /> Свойство нового объекта <b>Recipient</b> задается значением по умолчанию для <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />связанного <see cref="T:Microsoft.Office.Interop.Outlook.JournalItem" /> <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />объекта, <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> или <see cref="T:Microsoft.Office.Interop.Outlook.TaskItem" /> объекта, и его необходимо сбросить, чтобы указать другой тип получателя.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -47,7 +47,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее адрес электронной почты <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" />. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую адрес электронной почты <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" />. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -78,9 +78,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.AddressEntry</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> соответствующий букве Разрешить получателя. Для чтения и записи.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объект, соответствующий разрешенному получателю. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Доступ к свойству <b>AddressEntry</b> принудительно решение неизвестное имя получателя. Если не удается разрешить имя, возвращается ошибка. Если получатель устранена, <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.Resolved" /> свойство имеет <b>значение True</b>.</para>
+        <remarks><para>Доступ к свойству <b>AddressEntry</b> заставляет разрешение неизвестного имени получателя. Если имя не удается разрешить, возвращается ошибка. Если получатель разрешен, <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.Resolved" /> свойство имеет <b>значение true</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -107,7 +107,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -138,7 +138,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляющий текст автоматического ответа для <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), представляющую текст автоматического ответа для <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" />. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -166,7 +166,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -219,9 +219,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlDisplayType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает константу, относящегося к <see cref="T:Microsoft.Office.Interop.Outlook.OlDisplayType" /> перечисления, которое описывает характер <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" />. Только для чтения.</summary>
+        <summary>Возвращает константу, принадлежащую <see cref="T:Microsoft.Office.Interop.Outlook.OlDisplayType" /> перечислению, описывающую природу <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" />объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Можно использовать свойство <b>DisplayType</b> для фильтрации получателей. Свойство <b>DisplayType</b> соответствует свойств MAPI <b>PidTagDisplayType</b>.</para>
+        <remarks><para>Для фильтрации получателей можно использовать свойство <b>дисплайтипе</b> . Свойство <b>дисплайтипе</b> соответствует свойству MAPI <b>PidTagDisplayType</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -248,10 +248,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее уникальный идентификатор записи объекта.  Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую уникальный идентификатор записи объекта.  Только для чтения.</summary>
         <value>To be added.</value>
         <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagEntryId</b>.</para>
-          <para>Поставщик хранилища MAPI назначает строка уникального идентификатора при создании элемента в хранилище. Таким образом свойство <b>EntryID</b> не задан для элемента Outlook до отправки или сохранения. Идентификатор записи изменений при перемещении элемента в другом хранилище, например, из папки "Входящие" в общую папку Microsoft Exchange Server или из одного файла личных папок (PST) другой PST-файл. Решения не должны зависеть от <b>EntryID</b> свойство должно быть уникальным, пока не будут перемещаться элементов. Свойство <b>EntryID</b> возвращает MAPI долгосрочного идентификатором записи. Для получения дополнительных сведений о long - и short - term EntryIDs, http://msdn.microsoft.com для <b>PidTagEntryId</b>. </para>
+          <para>Поставщик хранилища MAPI назначает строку уникального идентификатора при создании элемента в хранилище. Таким образом, свойство <b>EntryID</b> не задается для элемента Outlook, пока он не будет сохранен или отправлен. Идентификатор записи изменяется при перемещении элемента в другое хранилище, например из папки "Входящие" в общую папку Microsoft Exchange Server или из одного PST-файла личных папок в другой PST-файл. Решения не должны зависеть от уникальности свойства <b>EntryID</b> , если не перемещение элементов не будет выполняться. Свойство <b>EntryID</b> возвращает идентификатор записи долгосрочного термина MAPI. Для получения дополнительных сведений о долгосрочных и краткосрочных идентификаторами EntryID выполните поиск http://msdn.microsoft.com по <b>PidTagEntryId</b>. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -279,14 +279,14 @@
         <Parameter Name="CompleteFormat" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Start">Дата начала для возвращаемых периода сведения о доступности.</param>
-        <param name="MinPerChar">Число минут на символ, представленный в Возвращенная строка сведений о доступности.</param>
-        <param name="CompleteFormat"><b>Значение true,</b> Если Возвращенная строка должна содержать не только сведения о доступности, но значения для всех символов в соответствии с <see cref="T:Microsoft.Office.Interop.Outlook.OlBusyStatus" /> константы.</param>
-        <summary>Возвращает сведения о доступности для получателя.</summary>
-        <returns>Значение <b>String</b> (<b>строка</b> в C#), который представляет сведения о доступности.</returns>
-        <remarks><para> Значение по умолчанию — возвращает строку, представляющую один месяц сведения о доступности совместимого с помощью автоматизации Microsoft Schedule+ формата (то есть, строка содержит один знак для каждого из них <paramref name="MinPerChar" /> минуты до текущего месяца в указанном <paramref name="Start" />дата).</para>
-          <para>Если необязательный аргумент <paramref name="CompleteFormat" /> указан или <b>значение False</b>, затем «свободен» указывает символ 0 и все другие состояния символом 1.</para>
-          <para>Если <paramref name="CompleteFormat" /> <b>значение True</b>, а затем ту же строку длина возвращается, как было сказано выше, но знаки, теперь соответствуют <see cref="T:Microsoft.Office.Interop.Outlook.OlBusyStatus" /> константы.</para>
+        <param name="Start">Дата начала возвращаемого периода сведений о доступности.</param>
+        <param name="MinPerChar">Количество минут в символе, представленное в возвращенной строке занятости.</param>
+        <param name="CompleteFormat"><b>Имеет значение true</b> , если возвращаемая строка не должна содержать только сведения о занятости, а также значения для каждого знака в <see cref="T:Microsoft.Office.Interop.Outlook.OlBusyStatus" /> соответствии с константами.</param>
+        <summary>Возвращает сведения о доступности получателя.</summary>
+        <returns>Значение типа <b>String</b> (<b>строка</b> в C#), представляющее сведения о доступности.</returns>
+        <remarks><para> По умолчанию возвращается строка, представляющая один месяц сведений о занятости, совместимый с форматом Microsoft Schedule + Automation (то есть строка содержит один символ для каждой <paramref name="MinPerChar" /> минуты, до одного месяца информации с указанной <paramref name="Start" /> даты).</para>
+          <para>Если необязательный <paramref name="CompleteFormat" /> аргумент опущен или <b>имеет значение false</b>, то "Free" обозначается символом 0 и всеми остальными состояниями с помощью знака 1.</para>
+          <para>Если <paramref name="CompleteFormat" /> имеет <b>значение true</b>, то та же строка длины возвращается, как определено выше, но символы теперь соответствуют <see cref="T:Microsoft.Office.Interop.Outlook.OlBusyStatus" /> константам.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -313,9 +313,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее положение объекта в коллекции.  Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), которое указывает положение объекта в коллекции.  Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>Index</b> допустимо только во время текущего сеанса и можно изменить, как объекты добавлен и удален из коллекции. Первый объект в коллекции имеет значение <b>индекса</b> 1.</para>
+        <remarks><para>Свойство <b>index</b> является допустимым только во время текущего сеанса и может изменяться при добавлении и удалении объектов из коллекции. Значение <b>индекса</b> первого объекта в коллекции равно 1.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -342,7 +342,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlResponseStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlResponseStatus" /> константа, общего состояния ответа на запрос на собрание для получателя. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlResponseStatus" /> константу, показывающую общий статус ответа на приглашение на собрание для получателя. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -370,7 +370,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), который представляет отображаемое имя для объекта. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>String</b> в C#), представляющую отображаемое имя объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -398,7 +398,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -426,7 +426,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.PropertyAccessor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект, который поддерживает создание, получение, Установка и удаление свойств родительского <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект, который поддерживает создание, получение, настройку и удаление свойств родительского <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -452,8 +452,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Предпринимается попытка разрешить <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> объекта по адресной книге.</summary>
-        <returns><b>Значение true,</b> Если объект был разрешен; в противном случае — <b>False</b>.</returns>
+        <summary>Пытается разрешить <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> объект в адресной книге.</summary>
+        <returns><b>Значение true</b> , если объект был разрешен; в противном случае — <b>false</b>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -480,9 +480,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает <b>значение True</b> , если получатель проверены по адресной книге. Только для чтения.</summary>
+        <summary>Возвращает <b>логическое</b> значение (<b>bool</b> в C#), которое <b>указывает,</b> является ли получатель проверенным для адресной книги. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Если же имена существует для получателя в адресной книге, можно разрешить получателя, указав получателя полный адрес электронной почты SMTP. </para>
+        <remarks><para>Если для получателя в адресной книге Существуют похожие имена, можно разрешить получателя, указав полный SMTP-адрес электронной почты получателя. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -512,10 +512,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:System.Boolean" /> (<b>bool</b> для языка C#) значение, указывающее, можно ли отправить приглашения на собрание <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <see cref="T:System.Boolean" /> (<b>логическое</b> значение для C#), которое указывает, можно ли отправить приглашение на собрание в <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство соответствует свойству MAPI PidTagRecipientFlags. Она возвращает <b>значение True</b> , если <b>PidTagRecipientFlags</b> равен 0x00000001. Свойство <b>PidTagRecipientFlags</b> изменяется соответствующим образом. </para>
-          <para>Это свойство применяется только к получателя приглашения на собрание. Если получатель не на приглашения на собрание, получение и задание этого свойства не делает ничего.</para>
+        <remarks><para>Это свойство соответствует свойству MAPI PidTagRecipientFlags. Возвращает <b>значение true</b> , если <b>PidTagRecipientFlags</b> равно 0x00000001. Установка изменений свойства <b>PidTagRecipientFlags</b> соответствующим образом. </para>
+          <para>Это свойство применяется только к получателю приглашения на собрание. Если получатель не находится в приглашении на собрание, получение и задание этого свойства не выполняет никаких действий.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -542,9 +542,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -580,7 +580,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlTrackingStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlTrackingStatus" /> константа, отслеживания состояния для получателя. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlTrackingStatus" /> константу, указывающую состояние отслеживания получателя. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -611,7 +611,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>даты и времени</b> , указывающее, отслеживания состояния даты и времени для получателя. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>значение</b> даты и времени, указывающее дату и время отслеживания состояния для получателя. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -642,29 +642,29 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>Integer</b> (<b>целое</b> в C#) значение, представляющее тип получателя. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Integer</b> (<b>int</b> в C#), представляющее тип получателя. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>В зависимости от типа получателя это свойство Возвращает или задает значение <b>Integer</b> (<b>int</b> в C#), соответствующий числовой эквивалент одной из следующих констант:</para>
+        <remarks><para>В зависимости от типа получателя это свойство возвращает или задает значение <b>Integer</b> (<b>int</b> в C#), соответствующее числовому эквиваленту одной из следующих констант:</para>
           <list type="bullet">
             <item>
               <para>
-                <see cref="T:Microsoft.Office.Interop.Outlook.JournalItem" />получатель: <see cref="T:Microsoft.Office.Interop.Outlook.OlJournalRecipientType" /> константу olAssociatedContact.</para>
+                <see cref="T:Microsoft.Office.Interop.Outlook.JournalItem" />Recipient: <see cref="T:Microsoft.Office.Interop.Outlook.OlJournalRecipientType" /> константа олассоЦиатедконтакт.</para>
             </item>
             <item>
               <para>
-                <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />получатель: один из следующих <see cref="T:Microsoft.Office.Interop.Outlook.OlMailRecipientType" /> констант: olBCC, olCC, olOriginator, или olTo.</para>
+                <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />Получатель: одна из следующих <see cref="T:Microsoft.Office.Interop.Outlook.OlMailRecipientType" /> констант: Олбкк, ОЛКК, Олоригинатор или олто.</para>
             </item>
             <item>
               <para>
-                <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />получатель: один из следующих <see cref="T:Microsoft.Office.Interop.Outlook.OlMeetingRecipientType" /> констант: olOptional, olOrganizer, olRequired, или olResource.</para>
+                <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />Получатель: одна из следующих <see cref="T:Microsoft.Office.Interop.Outlook.OlMeetingRecipientType" /> констант: Олоптионал, Олорганизер, Олрекуиред или олресаурце.</para>
             </item>
             <item>
               <para>
-                <see cref="T:Microsoft.Office.Interop.Outlook.TaskItem" />получатель: одна из следующих <see cref="T:Microsoft.Office.Interop.Outlook.OlTaskRecipientType" /> констант: olFinalStatus, или olUpdate.</para>
+                <see cref="T:Microsoft.Office.Interop.Outlook.TaskItem" />Получатель: любая из следующих <see cref="T:Microsoft.Office.Interop.Outlook.OlTaskRecipientType" /> констант: Олфиналстатус или олупдате.</para>
             </item>
           </list>
-          <para>Это свойство не всегда может возвращать соответствующий тип получателя для конференц-зала. Например конференц-зала может быть указано как обязательные получателя в приглашении на собрание, в этом случае это свойство не возвращает olResource конференц-зала.</para>
-          <para>Чтобы точно определить, если получатель является конференц-зала, воспользуйтесь свойством системы обмена сообщениями API (MAPI), pidtagdisplaytypeex задан, из <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> объекта. Доступ к этой свойства с помощью <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект в объектной модели Outlook. Свойство <b>pidtagdisplaytypeex задан</b> представлен как "http://schemas.microsoft.com/mapi/proptag/0x39050003" в пространстве имен важный параметр proptag MAPI. Обратите внимание на то, что свойство <b>pidtagdisplaytypeex задан</b> недоступно в версиях Microsoft Exchange Server до Microsoft Exchange Server 2007; в таких более ранних версиях Exchange Server можно использовать свойство <b>Recipient.Type</b> и Предположим, что получатель, создавая типа, отличающегося от olResource не конференц-зала.</para>
+          <para>Это свойство не всегда возвращает соответствующий тип получателя для конференц-зала. Например, комната конференц-связи может быть указана в качестве обязательного получателя в приглашении на собрание, в этом случае это свойство не будет возвращать Олресаурце для этой конференц-зала.</para>
+          <para>Для надежной проверки того, является ли получатель Конференц-зал, используйте свойство PidTagDisplayTypeEx <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> объекта Messaging API (MAPI) объекта. Доступ к этому свойству можно получить <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> с помощью объекта в объектной модели Outlook. Свойство <b>PidTagDisplayTypeEx</b> представляется в пространстве именhttp://schemas.microsoft.com/mapi/proptag/0x39050003MAPI proptag как "". Обратите внимание, что свойство <b>PidTagDisplayTypeEx</b> недоступно в версиях Microsoft Exchange Server, предшествующих Microsoft exchange Server 2007; в предыдущих версиях Exchange Server можно использовать свойство <b>Recipient. Type</b> и предполагать, что получатель, имеющий тип, отличный от олресаурце, не является комнатой конференц-связи.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

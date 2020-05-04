@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Store" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Store" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,10 +73,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Categories</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Categories" /> коллекции, представляющей всех категорий, определенных для <see cref="T:Microsoft.Office.Interop.Outlook.Store" />. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Categories" /> коллекцию, которая представляет все категории, определенные для <see cref="T:Microsoft.Office.Interop.Outlook.Store" />. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство аналогично <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.Categories" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта, за исключением, это свойство применяется в профиле сеанса, который определяет одну или несколько учетных записей и определение категорий для хранилища, связана учетной записи, в то время как <b> Категории</b> применяется свойство объекта <b>пространства имен</b> в профиле сеанса, который определяет только одну учетную запись и задает главный список категорий для данного сеанса.</para>
-          <para>Для определенных хранилищ дополнительного доставки, такие как хранилище IMAP свойства <b>Categories</b> возвращает набор <b>категорий</b> для основного хранилища. Хранилища IMAP фактически не поддерживают коллекцию отдельные категории.</para>
+        <remarks><para>Это свойство <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.Categories" /> аналогично свойству <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта, за исключением того, что данное свойство применяется к профилю сеанса, которое определяет одну или несколько учетных записей, а также указывает категории для хранилища, с которым связана учетная запись, а свойство <b>Categories</b> объекта <b>Namespace</b> применяется к профилю сеанса, который определяет только одну учетную запись, и указывает главный список категорий для этого сеанса.</para>
+          <para>Для некоторых дополнительных хранилищ доставки, таких как хранилище IMAP, свойство <b>Categories</b> Возвращает коллекцию <b>Categories</b> для основного хранилища. Хранилища IMAP на самом деле не поддерживают отдельный набор категорий.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -103,7 +103,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,12 +131,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляет отображаемое имя <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую отображаемое имя <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>Отображаемое имя</b> является свойством по умолчанию объекта <b>хранилища</b> . Это свойство соответствует свойству MAPI, <b>PidTagDisplayName</b>. </para>
+            <b>DisplayName</b> является свойством объекта <b>Store</b> по умолчанию. Это свойство соответствует свойству MAPI, <b>PidTagDisplayName</b>. </para>
           <para>
-            <b>DisplayName</b> — только для чтения. Чтобы изменить параметр <b>DisplayName</b> файл личных папок (.pst), используйте <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объекта и <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.SetProperty(System.String,System.Object)" /> метод.</para>
+            <b>DisplayName</b> доступен только для чтения. Чтобы изменить <b>Отображаемое</b> значение файла личных папок (PST), используйте <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект и <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.SetProperty(System.String,System.Object)" /> метод.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -163,9 +163,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlExchangeStoreType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает константу в <see cref="T:Microsoft.Office.Interop.Outlook.OlExchangeStoreType" /> перечисление, указывающее тип хранилища Exchange. Только для чтения.</summary>
+        <summary>Возвращает константу в <see cref="T:Microsoft.Office.Interop.Outlook.OlExchangeStoreType" /> перечислении, указывающую тип хранилища Exchange. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>ExchangeStoreType</b> отличает между различными типами хранилища Exchange, таких как основной почтовый ящик Exchange, почтовый ящик Exchange, хранилище общих папок или не Exchange. Это свойство не различать каждый тип хранилища, включая Hotmail, HTTP, IMAP и т. д. Использование <see cref="P:Microsoft.Office.Interop.Outlook._Account.AccountType" /> для типа сервера, связанные с использованием учетной записи электронной почты, например, Exchange, HTTP, IMAP или POP3.</para>
+        <remarks><para>Свойство <b>ексчанжесторетипе</b> различает различные типы хранилищ Exchange, такие как основной почтовый ящик Exchange, почтовый ящик Exchange, хранилище общих папок или хранилище не Exchange. Это свойство не различает все типы хранилищ, в том числе Hotmail, HTTP, IMAP и т. д. Используется <see cref="P:Microsoft.Office.Interop.Outlook._Account.AccountType" /> для типа сервера, связанного с учетной записью электронной почты, например Exchange, HTTP, IMAP или POP3.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -192,9 +192,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющий полный путь к файлу для файл личных папок (.pst) или в хранилище автономной папки файла (OST). Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую полный путь к файлу личных папок (PST) или хранилищу файлов автономных папок (OST). Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство поддерживает Exchange и хранилищ не Exchange. Если хранилище не .pst или .ost хранилища, <b>FilePath</b> возвращает пустую строку.</para>
+        <remarks><para>Это свойство поддерживает хранилища как в Exchange, так и не в Exchange. Если хранилище не является PST-или OST-хранилищем, <b>FilePath</b> возвращает пустую строку.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -221,11 +221,11 @@
         <Parameter Name="FolderType" Type="Microsoft.Office.Interop.Outlook.OlDefaultFolders" />
       </Parameters>
       <Docs>
-        <param name="FolderType">Указывает тип папки запрошенного по умолчанию.</param>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.MAPIFolder" /> объект, представляющий папки по умолчанию в хранилище и, которое имеет тип, указанный с <paramref name="FolderType" /> аргумент.</summary>
-        <returns>Возвращает объект <b>Folder</b> , представляющий папки по умолчанию требуемого типа. Если папка по умолчанию требуемого типа не существует, <b>GetDefaultFolder</b> возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</returns>
-        <remarks><para>Этот метод аналогичен <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetDefaultFolder(Microsoft.Office.Interop.Outlook.OlDefaultFolders)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта. Отличие заключается в том, что этот метод получает папки по умолчанию в хранилище доставки, связанный с учетной записью, тогда как <b>GetDefaultFolder</b> объекта <b>пространство имен</b> возвращает папки по умолчанию в хранилище по умолчанию для текущего профиля.</para>
-          <para>Один пример при <b>GetDefaultFolder</b> возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#) — это когда <see cref="F:Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderManagedEmail" /> указан как <paramref name="FolderType" /> , но не был развернут группе управляемых папок.</para>
+        <param name="FolderType">Указывает тип запрошенной папки по умолчанию.</param>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.MAPIFolder" /> объект, представляющий папку по умолчанию в хранилище и тип, заданный <paramref name="FolderType" /> аргументом.</summary>
+        <returns>Возвращает объект <b>Folder</b> , представляющий папку по умолчанию для запрошенного типа. Если папка по умолчанию запрашиваемого типа не существует, <b>метода GetDefaultFolder</b> возвращает <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</returns>
+        <remarks><para>Этот метод аналогичен <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetDefaultFolder(Microsoft.Office.Interop.Outlook.OlDefaultFolders)" /> методу <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта. Разница заключается в том, что этот метод получает папку по умолчанию в хранилище доставки, связанную с учетной записью, а <b>метода GetDefaultFolder</b> объекта <b>Namespace</b> Возвращает папку по умолчанию в хранилище по умолчанию для текущего профиля.</para>
+          <para>Один из примеров, когда <b>метода GetDefaultFolder</b> возвращает значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#) <see cref="F:Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderManagedEmail" /> , когда задано <paramref name="FolderType" /> , но группа Managed Folders не была развернута.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -250,13 +250,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий в корневой папке <see cref="T:Microsoft.Office.Interop.Outlook.Store" />. Только для чтения.</summary>
-        <returns>Объект <b>папки</b> , который представляет папку в корне этого <b>хранилища</b>.</returns>
-        <remarks><para>Перечисление вложенных папок в корневой папке в <b>хранилище</b>можно использовать метод <b>GetRootFolder</b> . В отличие от <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.Folders" /> которого содержит все папках для всех хранилищ текущего профиля, <b>Store.GetRootFolder.Folders</b> позволяет перечислить все папки для данного объекта <b>хранилища</b> текущего профиля.</para>
-          <para><see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Parent" /> Свойство корневой папки хранилища возвращает строку «Mapi».</para>
-          <para>Корневой папки для хранения общих папок Exchange — это папка общих папок. Эта папка возвращается при вызове Application.Session.GetDefaultFolder(olPublicFoldersAllPublicFolders).</para>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий папку корневого уровня в <see cref="T:Microsoft.Office.Interop.Outlook.Store" />файле. Только для чтения.</summary>
+        <returns>Объект <b>Folder</b> , представляющий папку в корне этого <b>хранилища</b>.</returns>
+        <remarks><para>С помощью метода <b>GetRootFolder</b> можно перечислить вложенные папки корневой папки в <b>хранилище</b>. В отличие <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.Folders" /> от того, что содержит все папки для всех магазинов в текущем профиле, <b>Store. GetRootFolder. Folders</b> позволяет перечислять все папки для данного объекта <b>Store</b> в текущем профиле.</para>
+          <para><see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Parent" /> Свойство корневой папки хранилища возвращает строку "MAPI".</para>
+          <para>Корневой папкой для хранилища общедоступных папок Exchange является папка "Общие папки". Эта папка возвращается при вызове Application. Session. метода GetDefaultFolder (Олпубликфолдерсаллпубликфолдерс).</para>
           <para>
-            <b>GetRootFolder</b> возвращает ошибку, если поставщик услуг поддерживает корневые папки.</para>
+            <b>GetRootFolder</b> возвращает ошибку, если поставщик услуг не поддерживает корневые папки.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -281,10 +281,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Rules" /> коллекцию, содержащую объект, который содержит <see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> объектов, определенных для текущего сеанса.</summary>
-        <returns>Объект коллекции <b>правил</b> , который представляет набор <b>правил,</b> определенных для текущего сеанса.</returns>
-        <remarks><para>Вызов <b>GetRules</b> может быть дорогим операции с точки зрения производительности при медленном подключении к серверу Exchange.</para>
-          <para>Порядок объектов в коллекции, возвращаемой из <b>GetRules</b> <b>правило</b> следует, <see cref="P:Microsoft.Office.Interop.Outlook._Rule.ExecutionOrder" /> с <b>ExecutionOrder</b> равно 1 является первое <b>правило</b> в коллекции и <b>ExecutionOrder</b> равно <see cref="P:Microsoft.Office.Interop.Outlook._Rules.Count" /> время последнего <b>Правила</b> в коллекции.</para>
+        <summary>Возвращает объект <see cref="T:Microsoft.Office.Interop.Outlook.Rules" /> Collection, содержащий <see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> объекты, определенные для текущего сеанса.</summary>
+        <returns>Объект коллекции <b>Rules</b> , представляющий набор <b>правил</b> , определенных для текущего сеанса.</returns>
+        <remarks><para>Вызов <b>методов с помощью метода</b> , который может быть дорогостоящей операцией, с точки зрения производительности при медленных подключениях к серверу Exchange Server.</para>
+          <para>Порядок объектов <b>правил</b> в коллекции, возвращаемом методом <b>ексекутионордер</b> , <b>который</b> <see cref="P:Microsoft.Office.Interop.Outlook._Rule.ExecutionOrder" /> имеет значение 1 равно 1, является первым <b>правилом</b> в коллекции, а <b>ексекутионордер</b> равен <see cref="P:Microsoft.Office.Interop.Outlook._Rules.Count" /> последнему <b>правилу</b> в коллекции.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -309,13 +309,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> коллекцию, содержащую объект, представляющий папок поиска определенных для <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекта.</summary>
-        <returns>Объект коллекции <b>папок</b> , представляющий все папки поиска для объекта <b>хранилища</b> .</returns>
+        <summary>Возвращает объект <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> Collection, представляющий папки поиска, определенные для <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекта.</summary>
+        <returns>Объект коллекции <b>Folders</b> , который представляет все папки поиска для объекта <b>Store</b> .</returns>
         <remarks><para>
-            <b>GetSearchFolders</b> возвращает все папки видимым active поиска для <b>хранилища</b>. Он не возвращает неинициализированный или устаревания выходной параметр папки поиска.</para>
+            <b>Жетсеарчфолдерс</b> возвращает все видимые активные папки поиска для <b>хранилища</b>. Она не возвращает неинициализированные или устаревшие папки поиска.</para>
           <para>
-            <b>GetSearchFolders</b> возвращает объект коллекции <b>папок</b> с <see cref="P:Microsoft.Office.Interop.Outlook._Folders.Count" /> равно нуль (0), если нет папки поиска не определено для <b>хранилища</b>.</para>
-          <para>Для <b>папок</b> коллекцию, содержащую объект, представляющий коллекцию папок поиска <see cref="P:Microsoft.Office.Interop.Outlook._Folders.Parent" /> возвращает тот же объект, что <see cref="M:Microsoft.Office.Interop.Outlook._Store.GetRootFolder" />. <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Folders" />Возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
+            <b>Жетсеарчфолдерс</b> возвращает объект коллекции <b>Folders</b> <see cref="P:Microsoft.Office.Interop.Outlook._Folders.Count" /> равно нулю (0), если для <b>хранилища</b>не заданы папки поиска.</para>
+          <para>Для объекта коллекции <b>Folders</b> , представляющего коллекцию папок поиска, <see cref="P:Microsoft.Office.Interop.Outlook._Folders.Parent" /> возвращается тот же объект, что <see cref="M:Microsoft.Office.Interop.Outlook._Store.GetRootFolder" />и. <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Folders" />Возвращает <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -342,10 +342,10 @@
         <Parameter Name="FolderType" Type="Microsoft.Office.Interop.Outlook.OlSpecialFolders" />
       </Parameters>
       <Docs>
-        <param name="FolderType">Константу в перечислении <b>OlSpecialFolders</b> , которая определяет тип специальную папку в хранилище.</param>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект для отдельной папки, указанного идентификатором <paramref name="FolderType" /> в заданного хранилища.</summary>
-        <returns>Объект <b>Folder</b> , который представляет особой папкой, указанного идентификатором <paramref name="FolderType" />.</returns>
-        <remarks><para>Не все специальные папки существует во всех хранилищах.  Если запрошенный специальную папку не существует, <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#) будут возвращены.</para>
+        <param name="FolderType">Константа в перечислении <b>OlSpecialFolders</b> , определяющая тип особой папки в хранилище.</param>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект для специальной папки, <paramref name="FolderType" /> указанной в заданном хранилище.</summary>
+        <returns>Объект <b>Folder</b> , представляющий особую папку, указанную параметром <paramref name="FolderType" />.</returns>
+        <remarks><para>Не все специальные папки существуют во всех магазинах.  Если запрашиваемая особая папка не существует, будет возвращено значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -372,10 +372,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, если <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> является хранилищем кэширования данных Exchange. Только для чтения.</summary>
+        <summary>Возвращает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> является ли хранилище Exchange кэшированным. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>IsCachedExchange</b> возвращает <b>значение True,</b> Если <see cref="P:Microsoft.Office.Interop.Outlook._Store.ExchangeStoreType" /> — это основной почтовый ящик Exchange (<b>Store.ExchangeStoreType</b> — <b>olExchangePrimaryMailbox</b>) и почтовый ящик настроен режим использования кэширования данных Exchange. Возвращает <b>значение False</b> в противном случае. В частности возвращается <b>значение False</b> для хранилища общих папок Exchange, который настроен для кэша общей папки "Избранное".</para>
+            <b>Искачедексчанже</b> возвращает <b>значение true</b> , когда <see cref="P:Microsoft.Office.Interop.Outlook._Store.ExchangeStoreType" /> основной почтовый ящик Exchange (<b>Store. ексчанжесторетипе</b> — <b>олексчанжепримаримаилбокс</b>), а почтовый ящик настроен на использование режима кэширования Exchange. В противном случае возвращается <b>значение false</b> . В частности, он возвращает <b>значение false</b> для хранилища общедоступных папок Exchange, настроенного на кэширование избранной общедоступной папки.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -402,10 +402,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:System.Boolean" /> (<b>bool</b> для языка C#) значение, равное <b>True</b> , если хранилище поддерживает представление беседы. Только для чтения.</summary>
+        <summary>Возвращает значение <see cref="T:System.Boolean" /> (<b>bool</b> для C#), которое имеет значение <b>true</b> , если хранилище поддерживает представление беседы. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Хранилище поддерживает представление беседы, если хранилище является хранилищем POP, IMAP или PST-файлов или при запуске версии Microsoft Exchange Server, чем Microsoft Exchange Server 2010. Хранилище также поддерживает представление беседы, если хранилище работает под управлением Microsoft Exchange Server 2007, версии Outlook — по крайней мере Microsoft Outlook 2010 и Outlook работает в режиме кэширования.</para>
-          <para>Если хранилище поддерживает бесед, вызов метода <b>GetConversation</b> элемента в хранилище возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объект для элемента. Если хранилище не поддерживает бесед, <b>GetConversation</b> возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#) для элементов в хранилище.</para>
+        <remarks><para>Хранилище поддерживает представление беседы, если это хранилище POP, IMAP или PST, или если на нем работает версия Microsoft Exchange Server, по крайней мере Microsoft Exchange Server 2010. Кроме того, хранилище поддерживает представление беседы, если в магазине работает Microsoft Exchange Server 2007, версия Outlook не ниже Microsoft Outlook 2010, а Outlook работает в режиме кэширования.</para>
+          <para>Если хранилище поддерживает беседы, <b>вызов метода GetItem</b> элемента в хранилище возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объект для элемента. Если хранилище не поддерживает беседы, то параметр- <b>CONVERSATION</b> возвращает <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#) для элементов в хранилище.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -432,14 +432,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, если <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> — это хранилище для файла данных Outlook, который является файл личных папок (.pst) или автономной папки файл (OST). Только для чтения.</summary>
+        <summary>Возвращает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> является ли хранилищем файла данных Outlook, который представляет собой файл личных папок (PST) или файл автономных папок (OST). Только для чтения.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>IsDataFileStore</b> поддерживает только хранилища Exchange и возвращает <b>значение False</b> для хранилищ тип HTTP, таких как Hotmail и MSN, а также для хранилища IMAP.</para>
-          <para>Для хранилищ Exchange <b>IsDataFileStore</b> возвращает <b>значение False,</b> Если профиль пользователя не использует режим кэширования данных Exchange. Когда хранилище является общей папке <b>IsDataFileStore</b> также вернет <b>значение False</b> (то есть, <see cref="P:Microsoft.Office.Interop.Outlook._Store.ExchangeStoreType" /> — <b>olExchangePublicFolder</b>).</para>
+            <b>IsDataFileStore</b> поддерживает только хранилища Exchange и возвращает <b>false</b> для хранилищ HTTP, таких как Hotmail и MSN, а также для хранилищ IMAP.</para>
+          <para>Для хранилищ Exchange <b>IsDataFileStore</b> будет возвращать <b>значение false</b> , если в профиле пользователя не используется режим кэширования данных Exchange. <b>IsDataFileStore</b> также возвращает <b>значение false</b> , если хранилищем является общедоступной папкой Exchange ( <see cref="P:Microsoft.Office.Interop.Outlook._Store.ExchangeStoreType" /> то есть <b>олексчанжепубликфолдер</b>).</para>
           <para>
-            <b>IsDataFileStore</b> не указывает, находится ли хранилище на локальный жесткий диск. Например в PST-файл может находиться на сетевого диска и <b>IsDataFileStore</b> по-прежнему возвращает <b>значение True</b>.</para>
-          <para>Возвращаемое значение <b>IsDataFileStore</b> можно изменить, если он настроен классический автономный режим Exchange. Когда пользователь отключен от сети и с помощью классический автономный режим Exchange, <b>IsDataFileStore</b> возвращает <b>значение True</b>. Когда пользователь находится в сети и с помощью классического режима Exchange online, <b>IsDataFileStore</b> возвращает <b>значение False</b>.</para>
+            <b>IsDataFileStore</b> не указывает, находится ли хранилище на локальном жестком диске. Например, PST-файл может располагаться на сопоставленном сетевом диске, а <b>IsDataFileStore</b> будет возвращать <b>значение true</b>.</para>
+          <para>Возвращаемое значение <b>IsDataFileStore</b> может измениться, если пользователь настроен для работы с классическим автономным режимом Exchange. Если пользователь работает в автономном режиме и использует классическое автономный режим Exchange, <b>IsDataFileStore</b> возвратит <b>значение true</b>. Если пользователь подключен к сети и использует классический режим Exchange Online, <b>IsDataFileStore</b> возвратит <b>значение false</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -466,9 +466,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, является ли мгновенного поиска включено и работает в хранилище. Только для чтения.</summary>
+        <summary>Возвращает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, включен ли мгновенный поиск и работает ли он в хранилище. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Используйте <b>IsInstantSearchEnabled</b> , чтобы оценить необходимость использования операторов <b>ci_startswith</b> или <b>ci_phrasematch</b> в запросе. Если вы используете <b>ci_startswith</b> или <b>ci_phrasematch</b> в мгновенного поиска и запросов не включено, Outlook возвращает ошибку. </para>
+        <remarks><para>Используйте <b>IsInstantSearchEnabled</b> , чтобы определить, следует ли использовать операторы <b>ci_startswith</b> или <b>ci_phrasematch</b> в запросе. Если вы используете <b>ci_startswith</b> или <b>ci_phrasematch</b> в запросе и функция быстрого поиска не включена, Outlook возвратит ошибку. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -495,12 +495,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, если <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> открыта. Только для чтения.</summary>
+        <summary>Возвращает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> открыто ли окно. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство поддерживает Exchange и хранилищ не Exchange.</para>
-          <para>
-            <b>IsOpen</b> только указывает, открыт ли хранилище. Не обеспечивает Если хранилище находится в автономном режиме, или если почтовый ящик Exchange или общую папку Exchange и хранилища сервера не работает.</para>
-          <para>Поскольку Открытие хранилища может применяться к снижению производительности и <see cref="M:Microsoft.Office.Interop.Outlook._Store.GetRootFolder" /> и <see cref="M:Microsoft.Office.Interop.Outlook._Store.GetSearchFolders" /> будет открыть хранилище если она еще не открыта, можно использовать <b>IsOpen</b> перед принятием решения для вызова <b>GetRootFolder</b> или <b>GetSearchFolders</b> для сведения к минимуму производительности Дополнительная нагрузка. </para>
+        <remarks><para>Это свойство поддерживает хранилища как в Exchange, так и не в Exchange.</para>
+          <para>Параметр "только для 
+            <b>открытия</b> " указывает, открыто ли хранилище. Он не указывает, находится ли хранилище в автономном режиме или является почтовым ящиком Exchange или общедоступной папкой Exchange, а сервер магазина не работает.</para>
+          <para>Так как открытие хранилища может наложить нагрузку на производительность и <see cref="M:Microsoft.Office.Interop.Outlook._Store.GetRootFolder" /> <see cref="M:Microsoft.Office.Interop.Outlook._Store.GetSearchFolders" /> открыть магазин, если он еще не открыт, можно использовать функцию <b>OnOpen</b> , прежде чем выполнять вызов <b>GetRootFolder</b> или <b>жетсеарчфолдерс</b> для минимизации нагрузки на производительность. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -558,9 +558,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Родительский <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> — это объект <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта.</para>
+        <remarks><para>Родительским <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объектом объекта является <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -587,7 +587,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.PropertyAccessor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект, который поддерживает создание, получение, Установка и удаление свойств родительского <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект, который поддерживает создание, получение, настройку и удаление свойств родительского <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -613,8 +613,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Обновляет сведения о квотах хранилища, который отображается в строке состояния в окне проводника.</summary>
-        <remarks><para>Если хранилище не поддерживает отображение сведений о квотах, этот метод не имеет никакого эффекта.</para>
+        <summary>Обновляет сведения о квотах хранилища, которые отображаются в строке состояния в окне проводника.</summary>
+        <remarks><para>Если хранилище не поддерживает отображение сведений о квотах, этот метод не выполняет никаких действий.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -641,9 +641,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -676,10 +676,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), определяющая <see cref="T:Microsoft.Office.Interop.Outlook.Store" />. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), <see cref="T:Microsoft.Office.Interop.Outlook.Store" />определяющую. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>StoreID</b> является уникальным для профиля. Это эквивалентно свойству MAPI <b>PidTagStoreEntryId</b>.</para>
+            <b>StoreID</b> является уникальным для профиля. Оно эквивалентно свойству MAPI <b>PidTagStoreEntryId</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

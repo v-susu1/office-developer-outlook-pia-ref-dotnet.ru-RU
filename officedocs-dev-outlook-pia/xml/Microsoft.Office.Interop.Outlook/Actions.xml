@@ -22,9 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Содержит коллекцию <see cref="T:Microsoft.Office.Interop.Outlook.Action" /> объекты, которые представляют специальные действия, которые могут быть выполнены для элемента Outlook.</summary>
-    <remarks><para>Используйте свойство <b>действия</b> любого элемента Outlook, таких как <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />, чтобы возвратить объект <b>действия</b> .</para>
-      <para>Использование <b>действий</b>(<paramref name="index" />), где <paramref name="index" /> — это имя доступного действия, чтобы возвратить объект <b>Действие</b> .</para>
+    <summary>Содержит коллекцию <see cref="T:Microsoft.Office.Interop.Outlook.Action" /> объектов, представляющих все специализированные действия, которые можно выполнять над элементом Outlook.</summary>
+    <remarks><para>Используйте свойство <b>Actions</b> любого элемента Outlook, например <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />, для возврата объекта <b>Actions</b> .</para>
+      <para>Используйте <b>Actions</b>(<paramref name="index" />), <paramref name="index" /> где — это имя доступного действия, чтобы вернуть один объект <b>Action</b> .</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -49,8 +49,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Создает новое действие в <see cref="T:Microsoft.Office.Interop.Outlook.Actions" /> семейства сайтов.</summary>
-        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Action" /> Объект, который представляет новое действие.</returns>
+        <summary>Создает новое действие в <see cref="T:Microsoft.Office.Interop.Outlook.Actions" /> коллекции.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Action" /> Объект, представляющий новое действие.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -105,7 +105,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -133,7 +133,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее число объектов в указанном семействе сайтов. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее количество объектов в указанной коллекции. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -164,9 +164,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Либо индекс объекта, или значение, используемое для сопоставления свойства по умолчанию объекта в коллекции.</param>
+        <param name="Index">Номер индекса объекта или значение, используемое для сравнения со свойством по умолчанию объекта в коллекции.</param>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Action" /> объект из коллекции.</summary>
-        <value>Объект <b>Действие</b> , который представляет указанный объект.</value>
+        <value>Объект <b>Action</b> , представляющий указанный объект.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,7 +193,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -221,7 +221,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Значение индекса на основе 1 объекта в коллекции.</param>
+        <param name="Index">Значение индекса объекта в коллекции (от 1).</param>
         <summary>Удаляет объект из коллекции.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -249,9 +249,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>

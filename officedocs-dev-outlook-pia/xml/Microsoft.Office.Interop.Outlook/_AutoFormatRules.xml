@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRules" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRules" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -50,9 +50,9 @@
       </Parameters>
       <Docs>
         <param name="Name">Имя нового правила форматирования.</param>
-        <summary>Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> объекта и добавляет его к <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRules" /> семейства сайтов.</summary>
-        <returns>Объект <b>AutoFormatRule</b> , который представляет новое правило форматирования.</returns>
-        <remarks><para>Дублирующиеся имена объектов <b>AutoFormatRule</b> разрешены в коллекции <b>AutoFormatRules</b> . Не более 25 настраиваемые правила форматирования можно добавить в коллекцию. Встроенные правила форматирования не учитываются для этот предел.</para>
+        <summary>Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> объект и добавляет его в <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRules" /> коллекцию.</summary>
+        <returns>Объект <b>AutoFormatRule</b> , представляющий новое правило форматирования.</returns>
+        <remarks><para>В семействе <b>AutoFormatRules</b> разрешены повторяющиеся имена объектов <b>AutoFormatRule</b> . В коллекцию можно добавить не более 25 настраиваемых правил форматирования. Встроенные правила форматирования не учитываются для этого ограничения.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -79,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -107,7 +107,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -135,7 +135,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее число <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> объекты в указанном семействе сайтов. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее количество <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> объектов в указанной коллекции. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -165,11 +165,11 @@
       </Parameters>
       <Docs>
         <param name="Name">Имя нового объекта.</param>
-        <param name="Index">Номер индекса для вставки нового объекта, или значение, используемое в соответствии с <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Name" /> значение свойства объекта в коллекции, в котором новый объект для вставки.</param>
-        <summary>Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> объекта и вставляет его по указанному индексу в пределах <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRules" /> семейства сайтов.</summary>
-        <returns>Объект <b>AutoFormatRule</b> , который представляет новое правило форматирования.</returns>
-        <remarks><para>Этот метод не может использоваться для вставки настраиваемого правила форматирования между или до встроенных правил форматирования.</para>
-          <para>Дублирующиеся имена объектов <b>AutoFormatRule</b> разрешены в коллекции <b>AutoFormatRules</b> . Не более 25 настраиваемые правила форматирования можно добавить в коллекцию. Встроенные правила форматирования не учитываются для этот предел.</para>
+        <param name="Index">Номер индекса, на который вставляется новый объект, или значение, используемое для сравнения значения <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Name" /> свойства объекта в коллекции, в которую будет вставлен новый объект.</param>
+        <summary>Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> объект и вставляет его по указанному индексу в <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRules" /> коллекции.</summary>
+        <returns>Объект <b>AutoFormatRule</b> , представляющий новое правило форматирования.</returns>
+        <remarks><para>Этот метод невозможно использовать для вставки настраиваемых правил форматирования между или впереди встроенных правил форматирования.</para>
+          <para>В семействе <b>AutoFormatRules</b> разрешены повторяющиеся имена объектов <b>AutoFormatRule</b> . В коллекцию можно добавить не более 25 настраиваемых правил форматирования. Встроенные правила форматирования не учитываются для этого ограничения.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -199,9 +199,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Номер индекса объекта, или значение, используемое в соответствии с <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Name" /> значение свойства объекта в коллекции.</param>
+        <param name="Index">Номер индекса объекта или значение, используемое для сравнения значения <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Name" /> свойства объекта в коллекции.</param>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> объект из коллекции.</summary>
-        <value>Объект <b>AutoFormatRule</b> , который представляет указанный объект.</value>
+        <value>Объект <b>AutoFormatRule</b> , представляющий указанный объект.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,7 +228,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -256,10 +256,10 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Номер индекса объекта, или значение, используемое в соответствии с <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Name" /> значение свойства объекта в коллекции.</param>
+        <param name="Index">Номер индекса объекта или значение, используемое для сравнения значения <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Name" /> свойства объекта в коллекции.</param>
         <summary>Удаляет объект из коллекции.</summary>
-        <remarks><para>Если указано имя правила форматирования снимается в <paramref name="Index" />, этот метод удаляет первый <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> объект, совпадает с заданным именем.</para>
-          <para>Встроенных правил форматирования не может быть удален из коллекции.</para>
+        <remarks><para>Если имя правила форматирования, которое требуется удалить, указано в <paramref name="Index" />, этот метод удаляет первый <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> объект, который соответствует заданному имени.</para>
+          <para>Встроенные правила форматирования невозможно удалить из коллекции.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -284,8 +284,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Удаляет все настраиваемые правила форматирования из <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRules" /> семейства сайтов.</summary>
-        <remarks><para>Этот метод удаляет каждые <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> со <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Standard" /> значение <b>False</b>.</para>
+        <summary>Удаляет все настраиваемые правила форматирования из <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRules" /> коллекции.</summary>
+        <remarks><para>Этот метод удаляет каждый <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> объект со свойством, для которого <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Standard" /> задано значение <b>false</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -310,8 +310,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Сохранить все изменения в <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> объектов в рамках <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRules" /> семейства сайтов.</summary>
-        <remarks><para>Любые изменения, внесенные в коллекцию <b>AutoFormatRules</b> , такие как добавление или удаление объектов <b>AutoFormatRule</b> или <b>AutoFormatRule</b> объект в коллекции, сохраняются только в том случае, если этот метод вызывается.</para>
+        <summary>Сохраните все изменения <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> объектов в <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRules" /> коллекции.</summary>
+        <remarks><para>Любые изменения, внесенные в коллекцию <b>AutoFormatRules</b> , например добавление или удаление объектов <b>AutoFormatRule</b> или объекта <b>AutoFormatRule</b> в коллекции, сохраняются только при вызове этого метода.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -338,9 +338,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>

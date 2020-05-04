@@ -13,7 +13,7 @@
   </Base>
   <Docs>
     <summary>Указывает тип вложения.</summary>
-    <remarks><para>Используется в качестве дополнительный параметр для <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" /> метод, чтобы указать тип вложения.</para>
+    <remarks><para>Используется в качестве необязательного параметра <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" /> метода для указания типа вложения.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Это значение больше не поддерживается начиная с Microsoft Outlook 2007. Используйте <b>olByValue</b> , чтобы добавить копию файла в файловой системе.</summary>
+        <summary>Это значение больше не поддерживается с момента выпуска Microsoft Outlook 2007. Используйте <b>olByValue</b> , чтобы прикрепить копию файла в файловой системе.</summary>
       </Docs>
     </Member>
     <Member MemberName="olByValue">
@@ -52,7 +52,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Вложение представляет собой копию исходного файла и возможен даже в том случае, если исходный файл будет удален.</summary>
+        <summary>Вложение — это копия исходного файла, доступ к которому можно получить, даже если исходный файл удален.</summary>
       </Docs>
     </Member>
     <Member MemberName="olEmbeddeditem">
@@ -71,7 +71,7 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>Вложением является файл формат сообщения Outlook (MSG-файл) и копию исходного сообщения.</summary>
+        <summary>Вложение представляет собой файл формата сообщений Outlook (MSG) и является копией исходного сообщения.</summary>
       </Docs>
     </Member>
     <Member MemberName="olOLE">

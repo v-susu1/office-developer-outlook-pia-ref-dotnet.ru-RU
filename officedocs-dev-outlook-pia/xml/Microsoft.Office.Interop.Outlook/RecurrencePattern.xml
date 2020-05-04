@@ -18,57 +18,57 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Представляет шаблон вероятность повторяющихся встреч и задач для соответствующего <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> и <see cref="T:Microsoft.Office.Interop.Outlook.TaskItem" /> объекта.</summary>
-    <remarks><para>Используйте метод <b>GetRecurrencePattern</b> для возврата объекта <b>RecurrencePattern</b> , связанного с объектом <b>AppointmentItem</b> или <b>TaskItem</b> .</para>
-      <para>Вызов <b>GetRecurrencePattern</b> или <b>ClearRecurrencePattern</b> действует как со стороны свойства <b>IsRecurring</b> элемента соответствующим образом. Это свойство можно использовать для эффективного фильтрацию требуется <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> объекта.</para>
-      <para>Указывает тип шаблона повторения <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> свойство. Свойство <b>RecurrenceType</b> — это первое свойство, которое следует установить.</para>
-      <para>Допустимы следующие свойства для всех шаблоны повторения: <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.EndTime" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" />, <b>StartDate</b> <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.StartTime" />, или <b>Тип</b>.</para>
-      <para>Ниже приведены свойства, которые являются допустимыми для повторения различных типов. Если элемент сохраняется и свойство имеет значение null или содержит недопустимое значение, возникает ошибка. Ежемесячно и ежегодно данных являются допустимыми только в течение одного дня. Еженедельные шаблоны действительны только как <b>или</b> из <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfWeekMask" /> .</para>
+    <summary>Представляет шаблон совпадений повторяющихся встреч и задач для связанного <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> и <see cref="T:Microsoft.Office.Interop.Outlook.TaskItem" /> объектного объекта.</summary>
+    <remarks><para>Используйте метод <b>GetRecurrencePattern</b> , чтобы возвратить объект <b>RecurrencePattern</b> , связанный с объектом <b>AppointmentItem</b> или <b>TaskItem</b> .</para>
+      <para>Вызов <b>GetRecurrencePattern</b> или <b>клеаррекурренцепаттерн</b> имеет побочные эффекты установки свойства <b>IsRecurring</b> элемента соответствующим образом. Это свойство можно использовать в соответствии с требованиями для эффективной фильтрации <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> объекта.</para>
+      <para>Тип расписания повторения указывается <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> свойством. Свойство <b>RecurrenceType</b> — это первое свойство, которое необходимо задать.</para>
+      <para>Следующие свойства допустимы для всех <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.EndTime" />шаблонов повторения:, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" />, <b>StartDate</b> <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.StartTime" />или <b>Type</b>.</para>
+      <para>В следующей таблице приведены свойства, допустимые для различных типов повторения. Если элемент сохранен и свойство имеет значение null или содержит недопустимое значение, возникает ошибка. Шаблоны Monthly и ежегодно действительны только в течение одного дня. Еженедельные шаблоны действительны только в <b>том случае</b> , <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfWeekMask" /> когда.</para>
       <list type="table">
         <item>
           <description>
-            <b>olRecursDaily</b>
+            <b>олрекурсдаили</b>
           </description>
           <description>
             <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Duration" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.EndTime" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Interval" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.NoEndDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternStartDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.StartTime" /></description>
         </item>
         <item>
           <description>
-            <b>olRecursWeekly</b>
+            <b>олрекурсвикли</b>
           </description>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfWeekMask" />, <b>Длительность</b>, <b>время окончания</b>, <b>интервала</b>, <b>NoEndDate</b>, <b>вхождения</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>время начала</b></description>
+            <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfWeekMask" />, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <b>ноенддате</b>, <b>вхождения</b>, <b>PatternStartDate</b>, <b>паттерненддате</b>, <b>StartTime</b></description>
         </item>
         <item>
           <description>
-            <b>olRecursMonthly</b>
+            <b>олрекурсмонсли</b>
           </description>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfMonth" />, <b>Длительность</b>, <b>время окончания</b>, <b>интервала</b>, <b>NoEndDate</b>, <b>вхождения</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>время начала</b></description>
+            <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfMonth" />, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <b>ноенддате</b>, <b>вхождения</b>, <b>PatternStartDate</b>, <b>паттерненддате</b>, <b>StartTime</b></description>
         </item>
         <item>
           <description>
-            <b>olRecursMonthNth</b>
+            <b>олрекурсмонснс</b>
           </description>
           <description>
-            <b>DayOfWeekMask</b>, <b>длительность</b>, <b>время окончания</b>, <b>интервал</b> <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Instance" />, <b>NoEndDate</b>, <b>вхождения</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>время начала</b></description>
+            <b>DayOfWeekMask</b>, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Instance" />, <b>ноенддате</b>, <b>вхождения</b>, <b>PatternStartDate</b>, <b>паттерненддате</b>, <b>StartTime</b></description>
         </item>
         <item>
           <description>
-            <b>olRecursYearly</b>
+            <b>олрекурсеарли</b>
           </description>
           <description>
-            <b>День месяца</b>, <b>длительность</b>, <b>время окончания</b>, <b>интервал</b> <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.MonthOfYear" />, <b>NoEndDate</b>, <b>вхождения</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>время начала</b></description>
+            <b>DayOfMonth</b>, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.MonthOfYear" />, <b>ноенддате</b>, <b>вхождения</b>, <b>PatternStartDate</b>, <b>паттерненддате</b>, <b>StartTime</b></description>
         </item>
         <item>
           <description>
             <b>olRecursYearNth</b>
           </description>
           <description>
-            <b>DayOfWeekMask</b>, <b>длительность</b>, <b>время окончания</b>, <b>интервал</b>, <b>экземпляр</b>, <b>NoEndDate</b>, <b>вхождения</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>время начала</b></description>
+            <b>DayOfWeekMask</b>, <b>Duration</b>, <b>EndTime</b>, <b>интервал</b>, <b>экземпляр</b>, <b>ноенддате</b>, <b>вхождения</b>, <b>PatternStartDate</b>, <b>паттерненддате</b>, <b>StartTime</b></description>
         </item>
       </list>
-      <para>При работе с элементами повторяющейся встречи следует удалить все предыдущие ссылки, получить новые ссылки на элемент повторяющейся встречи перед обращением к элементу или его изменением и удалить эти ссылки сразу после завершения работы и сохранения изменений. Такой подход применяется к регулярное <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объекта и какие-либо <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> или <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> объекта. Для удаления ссылки в Visual Basic задано значение <b>Nothing</b>, существующий объект. В C# явно освободить память для этого объекта. </para>
+      <para>При работе с элементами повторяющихся встреч необходимо удалить все ранее существовавшие ссылки, получить новые ссылки на элемент повторяющейся встречи перед вызовом или изменением этого элемента и удалить эти ссылки сразу же по окончании внесения изменений и их сохранения. Это правило применяется к повторяющемуся <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объекту, а также к любому <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> объекту или <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> объекту. Чтобы удалить ссылки в Visual Basic, следует установить для этого существующего объекта значение <b>Nothing</b>. В C# следует явно освободить память для этого объекта. </para>
       <para>Обратите внимание, что даже после высвобождения ссылки и попытки получения новой ссылки, если по-прежнему существует активная ссылка на любой из вышеупомянутых объектов, удерживаемая другой надстройкой или приложением Outlook, новая ссылка будет указывать на устаревшую копию объекта. В связи с этим важно высвобождать ссылки немедленно после завершения текущей встречи.</para>
       <para> </para></remarks>
   </Docs>
@@ -96,7 +96,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -124,7 +124,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,7 +155,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>Integer</b> (<b>целое</b> в C#) значение, указывающее день месяца, на котором происходит повторяющейся встречи или задачи. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), обозначающее день месяца, в который происходит повторяющаяся встреча или задача. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -186,10 +186,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlDaysOfWeek</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlDaysOfWeek" /> константу, представляющую маски для дней недели, на котором происходит повторяющейся встречи или задачи. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlDaysOfWeek" /> константу, представляющую маску для дней недели, в которые происходит повторяющаяся встреча или задача. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para><b>DayOfWeekMask</b> должно быть установлено после <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> свойства и до <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" /> и <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternStartDate" /> задано. </para>
-          <para>Ежемесячно и ежегодно данных являются допустимыми только в течение одного дня. Еженедельные шаблоны действительны только как <b>или</b> из <b>DayOfWeekMask</b>. </para>
+        <remarks><para><b>DayOfWeekMask</b> следует задать после задания <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> свойства и до задания свойств <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" /> и. <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternStartDate" /> </para>
+          <para>Шаблоны Monthly и ежегодно действительны только в течение одного дня. Еженедельные шаблоны действительны только в <b>качестве объекта</b> <b>DayOfWeekMask</b>. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -219,10 +219,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>Integer</b> (<b>целое</b> в C#) значение, указывающее интервал (в минутах) из <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее продолжительность (в минутах) <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Для повторения это свойство допустимо только для встреч.</para>
-          <para>Чтобы создать в течение одного дня для событием на целый день, равным во время выполнения 1440. </para>
+        <remarks><para>Для повторений это свойство является допустимым только для встреч.</para>
+          <para>Чтобы создать длительность события на целый день в течение одного дня, задайте значение длительности равное 1440. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -252,11 +252,11 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>даты и времени</b> , указывающего на то время окончания для шаблона повторения. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>значение DateTime</b> , указывающее время окончания для расписания повторения. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство допустимо только для встреч. </para>
-          <para>При создании <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> указанного объекта и не часовые пояса для встречи, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.StartTime" /> и <b>EndTime</b> объекта <b>RecurrencePattern</b> основаны на часовой пояс, указанного идентификатором <see cref="P:Microsoft.Office.Interop.Outlook._TimeZones.CurrentTimeZone" />. </para>
-          <para>Если вы хотите создать повторяющейся встречи для конкретного часового пояса, необходимо сначала создать <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />, задайте <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.StartTimeZone" />, а затем вызвать <see cref="M:Microsoft.Office.Interop.Outlook._AppointmentItem.GetRecurrencePattern" />. <b>RecurrencePattern</b> объект, возвращенный будут иметь оба <b>StartTime</b> и <b>EndTime</b> по часовой пояс, указанного идентификатором <b>AppointmentItem.StartTimeZone</b>. Обратите внимание на то, что в диалоговом окне повторения встречи время указано как запустить <b>RecurrencePattern.StartTime</b> , основанное на <b>AppointmentItem.StartTimeZone</b>, но время указано, как окончания не всегда совпадает с <b> RecurrencePattern.EndTime</b> которого основана на <b>AppointmentItem.StartTimeZone</b>; на основе значения отображаемых времени <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.EndTimeZone" />. </para>
+        <remarks><para>Это свойство является допустимым только для встреч. </para>
+          <para><see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> При создании объекта, если для встречи не указаны Часовые пояса, а значение <b>EndTime</b> объекта <b>RecurrencePattern</b> основано на часовом поясе, <see cref="P:Microsoft.Office.Interop.Outlook._TimeZones.CurrentTimeZone" /> <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.StartTime" /> заданном параметром. </para>
+          <para>Если вы хотите создать повторяющуюся встречу для определенного часового пояса, необходимо сначала создать <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />, <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.StartTimeZone" />а затем позвонить. <see cref="M:Microsoft.Office.Interop.Outlook._AppointmentItem.GetRecurrencePattern" /> Возвращаемый объект <b>RecurrencePattern</b> будет иметь значения <b>StartTime</b> и <b>EndTime</b> в соответствии с часовым поясом, указанным в <b>AppointmentItem. StartTimeZone</b>. Обратите внимание, что в диалоговом окне Повторение встречи время начала — <b>RecurrencePattern. StartTime</b> , основанное на <b>AppointmentItem. StartTimeZone</b>, но время, указанное как End, не всегда совпадает с <b>RecurrencePattern. EndTime</b> , который основан на <b>AppointmentItem. StartTimeZone</b>; отображается значение времени на <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.EndTimeZone" />основе. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -283,9 +283,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Exceptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Exceptions" /> семейства сайтов для указанной последовательности повторяющихся встреч. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Exceptions" /> коллекцию для указанного ряда повторяющихся встреч. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>При работе с элементами повторяющейся встречи следует удалить все предыдущие ссылки, получить новые ссылки на элемент повторяющейся встречи перед обращением к элементу или его изменением и удалить эти ссылки сразу после завершения работы и сохранения изменений. Такой подход применяется к регулярное <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объекта и какие-либо <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> или <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> объекта. Для удаления ссылки в Visual Basic задано значение <b>Nothing</b>, существующий объект. В C# явно освободить память для этого объекта. </para>
+        <remarks><para>При работе с элементами повторяющихся встреч необходимо удалить все ранее существовавшие ссылки, получить новые ссылки на элемент повторяющейся встречи перед вызовом или изменением этого элемента и удалить эти ссылки сразу же по окончании внесения изменений и их сохранения. Это правило применяется к повторяющемуся <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объекту, а также к любому <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> объекту или <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> объекту. Чтобы удалить ссылки в Visual Basic, следует установить для этого существующего объекта значение <b>Nothing</b>. В C# следует явно освободить память для этого объекта. </para>
           <para>Обратите внимание, что даже после высвобождения ссылки и попытки получения новой ссылки, если по-прежнему существует активная ссылка на любой из вышеупомянутых объектов, удерживаемая другой надстройкой или приложением Outlook, новая ссылка будет указывать на устаревшую копию объекта. В связи с этим важно высвобождать ссылки немедленно после завершения текущей встречи.</para>
           <para> </para></remarks>
       </Docs>
@@ -313,12 +313,12 @@
         <Parameter Name="StartDate" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="StartDate">Значение типа <b>Date</b> , представляющий местного времени.</param>
-        <summary>Возвращает определенный экземпляр <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объектов в указанную дату.</summary>
-        <returns>Объект <b>AppointmentItem</b> , который представляет конкретную встречу в указанную дату.</returns>
+        <param name="StartDate">Значение <b>даты</b> , представляющее местное время.</param>
+        <summary>Возвращает определенный экземпляр <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объекта на указанную дату.</summary>
+        <returns>Объект <b>AppointmentItem</b> , представляющий определенную встречу на указанную дату.</returns>
         <remarks><para>
-            <b>Примечание</b>: метод <b>GetOccurrence</b> генерирует ошибку, если нет встречи ряда присутствует в указанной даты.</para>
-          <para>При работе с элементами повторяющейся встречи следует удалить все предыдущие ссылки, получить новые ссылки на элемент повторяющейся встречи перед обращением к элементу или его изменением и удалить эти ссылки сразу после завершения работы и сохранения изменений. Такой подход применяется к регулярное <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объекта и какие-либо <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> или <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> объекта. Для удаления ссылки в Visual Basic задано значение <b>Nothing</b>, существующий объект. В C# явно освободить память для этого объекта. </para>
+            <b>Note</b> <b>: метод getDate</b> создает ошибку, если в указанной дате не существует встречи этого ряда.</para>
+          <para>При работе с элементами повторяющихся встреч необходимо удалить все ранее существовавшие ссылки, получить новые ссылки на элемент повторяющейся встречи перед вызовом или изменением этого элемента и удалить эти ссылки сразу же по окончании внесения изменений и их сохранения. Это правило применяется к повторяющемуся <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объекту, а также к любому <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> объекту или <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> объекту. Чтобы удалить ссылки в Visual Basic, следует установить для этого существующего объекта значение <b>Nothing</b>. В C# следует явно освободить память для этого объекта. </para>
           <para>Обратите внимание, что даже после высвобождения ссылки и попытки получения новой ссылки, если по-прежнему существует активная ссылка на любой из вышеупомянутых объектов, удерживаемая другой надстройкой или приложением Outlook, новая ссылка будет указывать на устаревшую копию объекта. В связи с этим важно высвобождать ссылки немедленно после завершения текущей встречи.</para>
           <para> </para></remarks>
       </Docs>
@@ -349,9 +349,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>Integer</b> (<b>целое</b> в C#) значение, определяющее число, для которого шаблон повторения является допустимым для заданного интервала. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Integer</b> (<b>int</b> в C#), определяющее количество, для которого шаблон повторения действителен для заданного интервала. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство допустимо только для повторения типа <b>olRecursMonthNth</b> и <b>olRecursYearNth</b> и разрешает определение шаблона повторения, который действителен только в n-й вхождение, например, «2-й воскресенье марта» шаблона. Подсчет задано числовым: 1 для первого, 2 — для второго и т. д-5 для последнего. Значения, превышающие 5 будет возвращать ошибки при сохранении сопоставляться с шаблоном. </para>
+        <remarks><para>Это свойство является допустимым только для повторений типа <b>олрекурсмонснс</b> и <b>olRecursYearNth</b> , а также позволяет определение расписания повторения, допустимое только для n-го экземпляра, например "второе воскресенье в марте". Число задается по числу: 1 для первого, 2 для второго, и так далее по 5 для последней. Значения, превышающие 5, будут приводить к ошибкам при сохранении шаблона. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -381,11 +381,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>Integer</b> (<b>int</b> в C#) значение, указывающее количество единиц конкретного типа повторения между вхождений. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Integer</b> (<b>int</b> в C#), определяющее количество единиц данного типа повторения между повторениями. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>Interval</b> необходимо установить до установки <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" />. </para>
-          <para>Например, установка для свойства <b>интервал</b> 2 и <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> свойства olRecursWeekly вызовет шаблон будет выполнена каждую вторую неделю.</para>
-          <para>Если <b>RecurrenceType</b> olRecursYearNth или olRecursYear, свойство <b>Interval</b> показывает, сколько лет между вхождений. К примеру, <b>интервал</b> равняется 1 указывает повторения каждый год, равно <b>интервал</b> 2 указывает повторения каждые 2 года и т. д.</para>
+        <remarks><para>Перед <b>Interval</b> настройкой <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" />необходимо задать свойство Interval. </para>
+          <para>Например, если задать для свойства <b>Interval</b> значение 2 и <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> свойство равно олрекурсвикли, шаблон будет выполняться каждую вторую неделю.</para>
+          <para>Если для <b>RecurrenceType</b> задано значение OlRecursYearNth или олрекурсеар, свойство <b>Interval</b> указывает количество лет между повторениями. Например, <b>интервал</b> равно 1 указывает, что повторение составляет каждый год, <b>интервал</b> равен 2, что повторение составляет каждые 2 года и т. д.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -415,9 +415,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>Integer</b> (<b>int</b> в C#) значение, указывающее, является допустимым для указанного повторения какой месяц года. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), которое указывает, какой месяц года действителен для указанного расписания повторения. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение может быть число от 1 до 12. Например, для этого свойства до 5 и <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> свойства <b>olRecursYearly</b> вызовет повторение будет выполнена каждые мая. Это свойство допустимо только для которых свойство <b>RecurrenceType</b> задано значение <b>olRecursYearly</b> или <b>olRecursYearNth</b>шаблоны повторения.</para>
+        <remarks><para>Значение может быть числом от 1 до 12. Например, если задать для этого свойства значение 5, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> а свойство <b>Олрекурсеарли</b> , это может привести к возникновению каждого шаблона повторения. Это свойство является допустимым только для шаблонов повторения, для которых свойство <b>RecurrenceType</b> имеет значение <b>олрекурсеарли</b> или <b>olRecursYearNth</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -447,9 +447,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает значение True, если шаблон повторения не имеет даты завершения. Для чтения и записи.</summary>
+        <summary>Возвращает значение <b>Boolean</b> (<b>bool</b> в C#), которое указывает true, если у расписания повторения нет даты окончания. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство должно быть согласованных с другими свойствами, при настройке шаблона повторения. Если <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" /> свойство или <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" /> свойству, шаблон считается конечное и свойство <b>NoEndDate</b> имеет <b>значение False</b>. Если ни <b>PatternEndDate</b> , ни <b>вхождения</b> , шаблон считается не ограничен и <b>NoEndDate</b> имеет <b>значение True</b>.</para>
+        <remarks><para>Это свойство должно согласовываться с другими свойствами при настройке расписания повторения. Если <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" /> свойство или <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" /> свойство задано, шаблон считается конечным, а свойство <b>ноенддате</b> имеет <b>значение false</b>. Если не заданы ни <b>паттерненддате</b> , ни <b>экземпляры</b> , шаблон считается бесконечным и <b>ноенддате</b> имеет <b>значение true</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -479,9 +479,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>Integer</b> (<b>int</b> в C#) значение, указывающее количество повторов. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее количество повторений расписания повторения. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство разрешает определение шаблона повторения, который действителен только в указанное количество последующих вхождений. Например можно задать это свойство до 10 для официальную учебного курса, который будет храниться на следующих десяти вечером четверг. Это свойство должно быть согласованных с другими свойствами, при настройке шаблона повторения. Если <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" /> значение свойства или свойства <b>вхождения</b> , шаблон считается конечное и <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.NoEndDate" /> свойство имеет <b>значение False</b>. Если ни <b>PatternEndDate</b> , ни <b>вхождения</b> , шаблон считается не ограничен и <b>NoEndDate</b> имеет <b>значение True</b>.</para>
+        <remarks><para>Это свойство позволяет определение расписания повторения, которое является допустимым только для указанного числа последующих повторений. Например, для этого свойства можно задать значение 10 для формального учебного курса, который будет храниться в течение 10 четверг вечера. Это свойство должно согласовываться с другими свойствами при настройке расписания повторения. Если задано свойство или свойство <b>вхождения</b> , шаблон считается конечным, а <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.NoEndDate" /> свойство имеет <b>значение false.</b> <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" /> Если не заданы ни <b>паттерненддате</b> , ни <b>экземпляры</b> , шаблон считается бесконечным и <b>ноенддате</b> имеет <b>значение true</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -508,7 +508,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -539,9 +539,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>даты и времени</b> , указывающее дату окончания для повторения. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение даты и <b>времени</b> , указывающее дату окончания для расписания повторения. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство является необязательным, но должны координироваться со другие свойства при настройке шаблона повторения. Если это свойство или <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" /> значение свойства, то шаблон считается ограничение и <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.NoEndDate" /> свойство имеет <b>значение False</b>. Если ни <b>PatternEndDate</b> , ни <b>вхождения</b> , шаблон считается не ограничен и <b>NoEndDate</b> имеет <b>значение True</b>. <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Interval" /> Перед переключением <b>PatternEndDate</b>должно быть установлено свойство.</para>
+        <remarks><para>Это свойство является необязательным, но оно должно координироваться с другими свойствами при настройке расписания повторения. Если это свойство или <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" /> свойство задано, шаблон считается конечным, а <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.NoEndDate" /> свойство имеет <b>значение false</b>. Если не заданы ни <b>паттерненддате</b> , ни <b>экземпляры</b> , шаблон считается бесконечным и <b>ноенддате</b> имеет <b>значение true</b>. <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Interval" /> Свойство должно быть задано до установки <b>паттерненддате</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -571,7 +571,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>даты и времени</b> , указывающее, Дата начала для повторения. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение даты и <b>времени</b> , указывающее дату начала для расписания повторения. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -602,55 +602,55 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlRecurrenceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlRecurrenceType" /> константу, определяющую частота вхождений для повторения. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlRecurrenceType" /> константу, определяющую частоту повторений для расписания повторения. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Необходимо установить свойство <b>RecurrenceType</b> перед настройкой других свойств для <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> объекта. Свойства <b>RecurrencePattern</b> , которые впоследствии можно задать зависит от значение <b>RecurrenceType</b>, как показано в следующей таблице:</para>
+        <remarks><para>Чтобы задать другие свойства <b>RecurrenceType</b> <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> объекта, необходимо задать свойство RecurrenceType. Затем свойства <b>RecurrencePattern</b> , которые можно задать, зависят от значения <b>RecurrenceType</b>, как показано в следующей таблице:</para>
           <list type="table">
             <item>
               <description>OlRecurrenceType</description>
-              <description>Свойства допустимый RecurrencePattern</description>
+              <description>Допустимые свойства RecurrencePattern</description>
             </item>
             <item>
               <description>
-                <b>olRecursDaily</b>
+                <b>олрекурсдаили</b>
               </description>
               <description>
                 <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Duration" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.EndTime" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Interval" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.NoEndDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternStartDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.StartTime" /></description>
             </item>
             <item>
               <description>
-                <b>olRecursWeekly</b>
+                <b>олрекурсвикли</b>
               </description>
               <description>
-                <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfWeekMask" />, <b>Длительность</b>, <b>время окончания</b>, <b>интервала</b>, <b>NoEndDate</b>, <b>вхождения</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>время начала</b></description>
+                <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfWeekMask" />, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <b>ноенддате</b>, <b>вхождения</b>, <b>PatternStartDate</b>, <b>паттерненддате</b>, <b>StartTime</b></description>
             </item>
             <item>
               <description>
-                <b>olRecursMonthly</b>
+                <b>олрекурсмонсли</b>
               </description>
               <description>
-                <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfMonth" />, <b>Длительность</b>, <b>время окончания</b>, <b>интервала</b>, <b>NoEndDate</b>, <b>вхождения</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>время начала</b></description>
+                <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfMonth" />, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <b>ноенддате</b>, <b>вхождения</b>, <b>PatternStartDate</b>, <b>паттерненддате</b>, <b>StartTime</b></description>
             </item>
             <item>
               <description>
-                <b>olRecursMonthNth</b>
+                <b>олрекурсмонснс</b>
               </description>
               <description>
-                <b>DayOfWeekMask</b>, <b>длительность</b>, <b>время окончания</b>, <b>интервал</b> <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Instance" />, <b>NoEndDate</b>, <b>вхождения</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>время начала</b></description>
+                <b>DayOfWeekMask</b>, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Instance" />, <b>ноенддате</b>, <b>вхождения</b>, <b>PatternStartDate</b>, <b>паттерненддате</b>, <b>StartTime</b></description>
             </item>
             <item>
               <description>
-                <b>olRecursYearly</b>
+                <b>олрекурсеарли</b>
               </description>
               <description>
-                <b>День месяца</b>, <b>длительность</b>, <b>время окончания</b>, <b>интервала</b>, <b>MonthOfYear</b>, <b>NoEndDate</b>, <b>вхождения</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>время начала</b></description>
+                <b>DayOfMonth</b>, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <b>MonthOfYear</b>, <b>ноенддате</b>, <b>вхождения</b>, <b>PatternStartDate</b>, <b>паттерненддате</b>, <b>StartTime</b></description>
             </item>
             <item>
               <description>
                 <b>olRecursYearNth</b>
               </description>
               <description>
-                <b>DayOfWeekMask</b>, <b>длительность</b>, <b>время окончания</b>, <b>интервал</b>, <b>экземпляр</b>, <b>NoEndDate</b>, <b>вхождения</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>время начала</b></description>
+                <b>DayOfWeekMask</b>, <b>Duration</b>, <b>EndTime</b>, <b>интервал</b>, <b>экземпляр</b>, <b>ноенддате</b>, <b>вхождения</b>, <b>PatternStartDate</b>, <b>паттерненддате</b>, <b>StartTime</b></description>
             </item>
           </list>
           <para> </para></remarks>
@@ -682,10 +682,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает <b>значение True</b> , если задачи должны восстанавливаются после этого прохода через шаблона повторения. Для чтения и записи.</summary>
+        <summary>Возвращает <b>логическое</b> значение (<b>bool</b> в C#), которое <b>указывает на</b> то, что задача должна быть повторно создана после прохождения по шаблону повторения. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство используется для управления повторного создания задачи как завершенные все вхождения повторяющейся задачи. Допустимо только для задачи. Не является допустимым для встреч.</para>
-          <para>Чтобы создать шаблон повторения, необходимо сначала задать <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> свойство, чтобы задать частоту, затем присвойте свойству <b>Обновите</b> значение <b>True,</b> Чтобы воссоздать задачи. После установки <b>повторно создать</b> значение <b>True</b>, не задать значение <b>False.</b> Если впоследствии настройкой <b>Обновите</b> значение <b>False</b>, то следует настроить шаблон повторения еще раз, получив новый <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> объекта. </para>
+        <remarks><para>Это свойство используется для управления пересозданием задачи по мере выполнения каждого повторения повторяющейся задачи. Он действителен только для задач. Это недопустимо для встреч.</para>
+          <para>Чтобы создать расписание повторения, необходимо сначала установить <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> свойство, чтобы задать частоту, а затем установить для свойства <b>REGENERATE</b> <b>значение true</b> , чтобы повторно создать задачу. После установки для <b>повторного создания</b> <b>значение true</b>не задавайте значение <b>false</b>. Если вы построите <b>Повторное создание</b> для " <b>false</b>", следует снова настроить шаблон повторения, получив новый <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> объект. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -712,9 +712,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -750,11 +750,11 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>даты и времени</b> , которое указывает время начала для шаблона повторения. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>значение DateTime</b> , указывающее время начала для расписания повторения. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство допустимо только для встреч.</para>
-          <para>При создании <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> указанного объекта и не часовые пояса для встречи, <b>время начала</b> и <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.EndTime" /> объекта <b>RecurrencePattern</b> на основе часового пояса, указанного идентификатором <see cref="P:Microsoft.Office.Interop.Outlook._TimeZones.CurrentTimeZone" />. </para>
-          <para>Если вы хотите создать повторяющейся встречи для конкретного часового пояса, необходимо сначала создать <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />, задайте <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.StartTimeZone" />, а затем вызвать <see cref="M:Microsoft.Office.Interop.Outlook._AppointmentItem.GetRecurrencePattern" />. <b>RecurrencePattern</b> объект, возвращенный будут иметь оба <b>StartTime</b> и <b>EndTime</b> по часовой пояс, указанного идентификатором <b>AppointmentItem.StartTimeZone</b>. Обратите внимание на то, что в диалоговом окне повторения встречи время указано как запустить <b>RecurrencePattern.StartTime</b> , основанное на <b>AppointmentItem.StartTimeZone</b>, но время указано, как окончания не всегда совпадает с <b> RecurrencePattern.EndTime</b> которого основана на <b>AppointmentItem.StartTimeZone</b>; на основе значения отображаемых времени <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.EndTimeZone" />. </para>
+        <remarks><para>Это свойство является допустимым только для встреч.</para>
+          <para>Когда вы создаете <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> объект и не указали Часовые пояса для встречи, время <b>начала</b> и <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.EndTime" /> объект <b>RecurrencePattern</b> основываются на часовом поясе, заданном <see cref="P:Microsoft.Office.Interop.Outlook._TimeZones.CurrentTimeZone" />параметром. </para>
+          <para>Если вы хотите создать повторяющуюся встречу для определенного часового пояса, необходимо сначала создать <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />, <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.StartTimeZone" />а затем позвонить. <see cref="M:Microsoft.Office.Interop.Outlook._AppointmentItem.GetRecurrencePattern" /> Возвращаемый объект <b>RecurrencePattern</b> будет иметь значения <b>StartTime</b> и <b>EndTime</b> в соответствии с часовым поясом, указанным в <b>AppointmentItem. StartTimeZone</b>. Обратите внимание, что в диалоговом окне Повторение встречи время начала — <b>RecurrencePattern. StartTime</b> , основанное на <b>AppointmentItem. StartTimeZone</b>, но время, указанное как End, не всегда совпадает с <b>RecurrencePattern. EndTime</b> , который основан на <b>AppointmentItem. StartTimeZone</b>; отображается значение времени на <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.EndTimeZone" />основе. </para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.ViewFields" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.ViewFields" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,14 +49,14 @@
         <Parameter Name="PropertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="PropertyName">Имя свойства, с которым связана новый объект. Это свойство можно ссылаться по имени поля (отображаемых в окне Выбор поля) или пространством имен (представленный <see cref="P:Microsoft.Office.Interop.Outlook._ViewField.ViewXMLSchemaName" />).</param>
-        <summary>Добавляет указанного поля в конце <see cref="T:Microsoft.Office.Interop.Outlook.ViewFields" /> семейства сайтов для представления.</summary>
-        <returns>Объект <b>ViewField</b> , который представляет новое поле представления.</returns>
-        <remarks><para>Ссылки на свойство в <paramref name="PropertyName" /> с полем Имя требует локализованное имя на соответствующем языке. Дополнительные сведения о связывании свойства пространством имен в разделе <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Создание ссылок на свойства пространством имен</a></para>
-          <para>При добавлении настраиваемых свойств в коллекцию <b>ViewFields</b> свойства должен существовать в <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.UserDefinedProperties" /> семейство сайтов для представления родительской папки.  </para>
+        <param name="PropertyName">Имя свойства, с которым связан новый объект. На это свойство можно ссылаться по имени поля (отображается в средстве выбора полей) или по пространству имен <see cref="P:Microsoft.Office.Interop.Outlook._ViewField.ViewXMLSchemaName" />(представленному).</param>
+        <summary>Добавляет указанное поле в конец <see cref="T:Microsoft.Office.Interop.Outlook.ViewFields" /> коллекции для представления.</summary>
+        <returns>Объект <b>ViewField</b> , представляющий новое поле представления.</returns>
+        <remarks><para><paramref name="PropertyName" /> Для ссылки на свойство по его имени поля необходимо локализованное имя в соответствующем языковом стандарте. Дополнительные сведения о ссылках на свойства по пространству имен приведены в разделе <a href="http://go.microsoft.com/fwlink/?LinkId=87860">ссылки на свойства по пространству имен</a></para>
+          <para>Если вы добавляете настраиваемое свойство в коллекцию <b>ViewFields</b> , оно должно существовать в <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.UserDefinedProperties" /> коллекции для родительской папки этого представления.  </para>
           <para>Если свойство уже существует в коллекции <b>ViewFields</b> , Outlook вызовет ошибку.</para>
-          <para>Для программного добавления настраиваемого поля в представлении, используйте метод <b>ViewFields.Add</b> . Это рекомендуемый способ динамически изменять представление через параметр <see cref="P:Microsoft.Office.Interop.Outlook.View.XML" /> свойство.</para>
-          <para>Некоторые свойства нельзя добавить в представление, с помощью <b>ViewFields.Add</b>, включая двоичные свойства, вычисленные свойства и содержимое текста запроса HTML или RTF. Для получения дополнительных сведений см <a href="http://go.microsoft.com/fwlink/?LinkId=87926">Неподдерживаемые свойства в объекте таблицы или фильтр таблицы</a></para>
+          <para>Чтобы программно добавить настраиваемое поле в представление, используйте метод <b>ViewFields. Add</b> . Это рекомендуемый способ динамического изменения представления при установке <see cref="P:Microsoft.Office.Interop.Outlook.View.XML" /> свойства.</para>
+          <para>Некоторые свойства невозможно добавить в представление с помощью <b>ViewFields. Add</b>, включая двоичные свойства, вычисляемые свойства, а также содержимое HTML или текста в формате RTF. Дополнительные сведения см. <a href="http://go.microsoft.com/fwlink/?LinkId=87926">в разделе неподдерживаемые свойства объекта таблицы или фильтра таблицы</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -83,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -111,7 +111,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -139,7 +139,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее число <see cref="T:Microsoft.Office.Interop.Outlook.ViewField" /> объекты в указанном семействе сайтов. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее количество <see cref="T:Microsoft.Office.Interop.Outlook.ViewField" /> объектов в указанной коллекции. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -168,10 +168,10 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="PropertyName">Имя свойства, с которым связана новый объект.</param>
-        <param name="Index">На основе одного индекса номер либо для вставки нового объекта, или значение, используемое в соответствии с <see cref="P:Microsoft.Office.Interop.Outlook._ViewField.ViewXMLSchemaName" /> значение свойства объекта в семействе сайтов, где — это новый объект для вставки.</param>
-        <summary>Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.ViewField" /> объекта и вставляет его по указанному индексу в пределах <see cref="T:Microsoft.Office.Interop.Outlook.ViewFields" /> семейства сайтов.</summary>
-        <returns>Объект <b>ViewField</b> , который представляет новое поле представления.</returns>
+        <param name="PropertyName">Имя свойства, с которым связан новый объект.</param>
+        <param name="Index">Номер индекса, начиная с единицы, для которого вставляется новый объект, или значение, используемое для сравнения значения <see cref="P:Microsoft.Office.Interop.Outlook._ViewField.ViewXMLSchemaName" /> свойства объекта в коллекции, в которую будет вставлен новый объект.</param>
+        <summary>Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.ViewField" /> объект и вставляет его по указанному индексу в <see cref="T:Microsoft.Office.Interop.Outlook.ViewFields" /> коллекции.</summary>
+        <returns>Объект <b>ViewField</b> , представляющий новое поле представления.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,9 +201,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Значение может быть с единицы целое число, в котором индексируются объект <b>ViewField</b> в <see cref="T:Microsoft.Office.Interop.Outlook.ViewFields" /> семейства сайтов, строку, которая соответствует <see cref="P:Microsoft.Office.Interop.Outlook._ViewField.ViewXMLSchemaName" /> значение свойства объекта <b>ViewField</b> в коллекции или имя поля, как оно отображается в окне Выбор поля.</param>
+        <param name="Index">Значение может быть одноэлементным целым числом, которое индексирует объект <b>ViewField</b> в <see cref="T:Microsoft.Office.Interop.Outlook.ViewFields" /> коллекции, строку, которая соответствует значению <see cref="P:Microsoft.Office.Interop.Outlook._ViewField.ViewXMLSchemaName" /> свойства объекта <b>ViewField</b> в коллекции, или имя поля, отображаемое в средстве выбора полей.</param>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ViewField" /> объект из коллекции.</summary>
-        <value>Объект <b>ViewField</b> , который представляет указанный объект.</value>
+        <value>Объект <b>ViewField</b> , представляющий указанный объект.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,7 +230,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -258,7 +258,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Номер индекса объекта, или значение, используемое в соответствии с <see cref="P:Microsoft.Office.Interop.Outlook._ViewField.ViewXMLSchemaName" /> значение свойства объекта в коллекции.</param>
+        <param name="Index">Номер индекса объекта или значение, используемое для сравнения значения <see cref="P:Microsoft.Office.Interop.Outlook._ViewField.ViewXMLSchemaName" /> свойства объекта в коллекции.</param>
         <summary>Удаляет объект из коллекции.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -286,9 +286,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>

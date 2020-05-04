@@ -12,8 +12,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Указывает тип свойства пользователя.</summary>
-    <remarks><para>Используется с <see cref="M:Microsoft.Office.Interop.Outlook.ItemProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" />, <see cref="M:Microsoft.Office.Interop.Outlook._UserDefinedProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" />, и <see cref="M:Microsoft.Office.Interop.Outlook.UserProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> методы, и <see cref="P:Microsoft.Office.Interop.Outlook._ColumnFormat.FieldType" />, <see cref="P:Microsoft.Office.Interop.Outlook.ItemProperty.Type" />, <see cref="P:Microsoft.Office.Interop.Outlook._UserDefinedProperty.Type" />, и <see cref="P:Microsoft.Office.Interop.Outlook.UserProperty.Type" /> свойства.</para>
+    <summary>Указывает тип пользовательского свойства.</summary>
+    <remarks><para><see cref="M:Microsoft.Office.Interop.Outlook.ItemProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> <see cref="P:Microsoft.Office.Interop.Outlook._UserDefinedProperty.Type" /> <see cref="M:Microsoft.Office.Interop.Outlook.UserProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> <see cref="P:Microsoft.Office.Interop.Outlook._ColumnFormat.FieldType" />Используется методами <see cref="P:Microsoft.Office.Interop.Outlook.ItemProperty.Type" />,, и, а также <see cref="P:Microsoft.Office.Interop.Outlook.UserProperty.Type" /> <see cref="M:Microsoft.Office.Interop.Outlook._UserDefinedProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" />свойствами.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </ReturnValue>
       <MemberValue>19</MemberValue>
       <Docs>
-        <summary>Тип свойства состоит из других типов. Он соответствует типу MAPI PT_STRING8.</summary>
+        <summary>Тип свойства это сочетание других типов. Он соответствует типу MAPI PT_STRING8.</summary>
       </Docs>
     </Member>
     <Member MemberName="olCurrency">
@@ -52,7 +52,7 @@
       </ReturnValue>
       <MemberValue>14</MemberValue>
       <Docs>
-        <summary>Представляет свойство валюты от десятичной запятой типа (в десятичном формате в C#). Он соответствует типу MAPI PT_CURRENCY.</summary>
+        <summary>Представляет свойство Currency десятичного типа (десятичное число в C#). Он соответствует типу MAPI PT_CURRENCY.</summary>
       </Docs>
     </Member>
     <Member MemberName="olDateTime">
@@ -71,7 +71,7 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>Представляет тип свойства даты и времени. Он соответствует типу MAPI PT_SYSTIME.</summary>
+        <summary>Представляет тип свойства DateTime. Он соответствует типу MAPI PT_SYSTIME.</summary>
       </Docs>
     </Member>
     <Member MemberName="olDuration">
@@ -90,7 +90,7 @@
       </ReturnValue>
       <MemberValue>7</MemberValue>
       <Docs>
-        <summary>Представляет тип свойства продолжительность времени. Он соответствует типу MAPI PT_LONG.</summary>
+        <summary>Представляет тип свойства "длительность времени". Он соответствует типу MAPI PT_LONG.</summary>
       </Docs>
     </Member>
     <Member MemberName="olEnumeration">
@@ -128,7 +128,7 @@
       </ReturnValue>
       <MemberValue>18</MemberValue>
       <Docs>
-        <summary>Представляет тип формулы свойства. Он соответствует типу MAPI PT_STRING8. Просмотреть <see cref="P:Microsoft.Office.Interop.Outlook._UserDefinedProperty.Formula" /> свойство.</summary>
+        <summary>Представляет тип свойства формулы. Он соответствует типу MAPI PT_STRING8. Просмотрите <see cref="P:Microsoft.Office.Interop.Outlook._UserDefinedProperty.Formula" /> свойство.</summary>
       </Docs>
     </Member>
     <Member MemberName="olInteger">
@@ -147,7 +147,7 @@
       </ReturnValue>
       <MemberValue>20</MemberValue>
       <Docs>
-        <summary>Представляет тип свойства номеров целое число. Он соответствует типу MAPI PT_LONG.</summary>
+        <summary>Представляет тип свойства целого числа. Он соответствует типу MAPI PT_LONG.</summary>
       </Docs>
     </Member>
     <Member MemberName="olKeywords">
@@ -166,7 +166,7 @@
       </ReturnValue>
       <MemberValue>11</MemberValue>
       <Docs>
-        <summary>Представляет тип свойства массива <b>String</b> (<b>строка</b> в C#), используется для хранения ключевые слова. Он соответствует типу MAPI PT_MV_STRING8.</summary>
+        <summary>Представляет тип свойства массива <b>String</b> (<b>строка</b> в C#), используемый для хранения ключевых слов. Он соответствует типу MAPI PT_MV_STRING8.</summary>
       </Docs>
     </Member>
     <Member MemberName="olNumber">
@@ -185,7 +185,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>Представляет номер типа свойства типа Double (double в C#). Он соответствует типу MAPI PT_LONG.</summary>
+        <summary>Представляет тип свойства "двойной" (двойной в C#) "число". Он соответствует типу MAPI PT_LONG.</summary>
       </Docs>
     </Member>
     <Member MemberName="olOutlookInternal">
@@ -204,7 +204,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Представляет тип внутреннее свойство Outlook.</summary>
+        <summary>Представляет тип внутреннего свойства Outlook.</summary>
       </Docs>
     </Member>
     <Member MemberName="olPercent">
@@ -223,7 +223,7 @@
       </ReturnValue>
       <MemberValue>12</MemberValue>
       <Docs>
-        <summary>Представляет Double (double в C#) номер типа свойства хранятся в процентах. Он соответствует типу MAPI PT_LONG.</summary>
+        <summary>Представляет тип свойства Double (Double в C#), используемый для хранения процентов. Он соответствует типу MAPI PT_LONG.</summary>
       </Docs>
     </Member>
     <Member MemberName="olSmartFrom">
@@ -242,7 +242,7 @@
       </ReturnValue>
       <MemberValue>22</MemberValue>
       <Docs>
-        <summary>Представляет разумная от типа свойства.  Это свойство показывает, что если свойство <b>из</b> элемента Outlook пуст, затем свойства <b>для</b> следует использовать вместо этого.</summary>
+        <summary>Представляет тип свойства Smart.  Это свойство указывает, что если свойство <b>from</b> элемента Outlook пустое, вместо него следует использовать свойство <b>to</b> .</summary>
       </Docs>
     </Member>
     <Member MemberName="olText">
@@ -280,7 +280,7 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>Представляет Да/Нет (Boolean) свойство type. Он соответствует типу MAPI PT_BOOLEAN.</summary>
+        <summary>Представляет тип свойства да/нет (логический). Он соответствует типу MAPI PT_BOOLEAN.</summary>
       </Docs>
     </Member>
   </Members>

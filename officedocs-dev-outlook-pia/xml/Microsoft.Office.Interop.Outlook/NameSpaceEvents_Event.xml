@@ -40,7 +40,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpaceEvents_AutoDiscoverCompleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает после завершения работы Outlook доступ к службе автообнаружения Exchange server и имеет связанные сведения, доступные в <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.AutoDiscoverXml" />.</summary>
+        <summary>Возникает после того, как Outlook закончит доступ к службе автоматического обнаружения на сервере Exchange Server и имеет соответствующие сведения, <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.AutoDiscoverXml" />доступные в.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,9 +59,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpaceEvents_OptionsPagesAddEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает всякий раз, когда открывается диалоговое окно Свойства для папки.</summary>
-        <remarks><para>Можно открыть диалоговое окно Свойства для папки, щелкнув правой кнопкой мыши папку и выбрав пункт Свойства.</para>
-          <para>Программа обрабатывает это событие, чтобы добавить пользовательскую страницу свойств. На странице свойств будет добавлен в диалоговое окно свойств указанной папки. При включении событие объект коллекции <b>свойств</b> определяется <paramref name="Pages" /> содержит страницы свойств, которые были добавлены до вызова обработчика событий. Чтобы добавить страницы свойств в коллекцию, используйте <see cref="M:Microsoft.Office.Interop.Outlook.PropertyPages.Add(System.Object,System.String)" /> методу коллекции <b>страницы свойств</b> перед выходом из обработчика событий.</para>
+        <summary>Возникает при открытии диалогового окна "Свойства" для папки.</summary>
+        <remarks><para>Открыть диалоговое окно Свойства для папки можно, щелкнув папку правой кнопкой мыши и выбрав пункт Свойства.</para>
+          <para>Программа обрабатывает это событие для добавления настраиваемой страницы свойств. Страница свойств будет добавлена в диалоговое окно "Свойства" указанной папки. Когда запускается событие, объект коллекции <b>PropertyPages</b> , идентифицированный по <paramref name="Pages" /> , содержит страницы свойств, добавленные до вызова обработчика события. Чтобы добавить страницу свойств в коллекцию, используйте <see cref="M:Microsoft.Office.Interop.Outlook.PropertyPages.Add(System.Object,System.String)" /> метод коллекции <b>PropertyPages</b> перед выходом из обработчика событий.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

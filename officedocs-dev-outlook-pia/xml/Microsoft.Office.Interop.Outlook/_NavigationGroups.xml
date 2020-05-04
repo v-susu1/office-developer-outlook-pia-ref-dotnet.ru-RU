@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroups" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroups" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -77,9 +77,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Данное свойство возвращает <b>olNavigationGroups</b> для <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroups" /> объекта.</para>
+        <remarks><para>Это свойство возвращает <b>олнавигатионграупс</b> для <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroups" /> объекта.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -106,7 +106,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее число объектов в указанном семействе сайтов. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее количество объектов в указанной коллекции. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -135,10 +135,10 @@
       </Parameters>
       <Docs>
         <param name="GroupDisplayName">Значение <see cref="P:Microsoft.Office.Interop.Outlook._NavigationGroup.Name" /> свойства для нового объекта <b>NavigationGroup</b> .</param>
-        <summary>Создает и возвращает новый <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> объект, добавляемый в конец <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroups" /> семейства сайтов.</summary>
+        <summary>Создает и возвращает новый <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> объект, добавленный в конец <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroups" /> коллекции.</summary>
         <returns>Объект <b>NavigationGroup</b> , представляющий новую группу навигации.</returns>
-        <remarks><para>Коллекция <b>NavigationGroups</b> может содержать несколько объектов <b>NavigationGroup</b> же значения свойства <b>имя</b> .</para>
-          <para>Ошибка возникает, если надстройка пытается добавить более 50 групп навигации в коллекцию <b>NavigationGroups</b> , или если надстройка пытается добавить <b>NavigationGroup</b> объект в коллекцию <b>NavigationGroups</b> <see cref="T:Microsoft.Office.Interop.Outlook.MailModule" /> объектов.</para>
+        <remarks><para>Коллекция <b>NavigationGroups</b> может содержать несколько объектов <b>NavigationGroup</b> с одинаковыми значениями свойств <b>Name</b> .</para>
+          <para>Если надстройка пытается добавить более 50 групп навигации в коллекцию <b>NavigationGroups</b> или если надстройка пытается добавить объект <b>NavigationGroup</b> в коллекцию <b>NavigationGroups</b> <see cref="T:Microsoft.Office.Interop.Outlook.MailModule" /> объекта, возникает ошибка.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -165,18 +165,18 @@
         <Parameter Name="Group" Type="Microsoft.Office.Interop.Outlook.NavigationGroup" />
       </Parameters>
       <Docs>
-        <param name="Group">Группа навигации к удалению.</param>
-        <summary>Удаляет указанный <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> объекта из <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroups" /> семейства сайтов.</summary>
+        <param name="Group">Удаляемая группа навигации.</param>
+        <summary>Удаляет указанный <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> объект из <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroups" /> коллекции.</summary>
         <remarks><para>Метод <b>Delete</b> вызывает ошибку, если:</para>
           <list type="bullet">
             <item>
-              <para> Группа навигации, указанного в <paramref name="Group" /> содержит папки навигации в его <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolders" /> семейства сайтов.</para>
+              <para> Группа навигации, указанная <paramref name="Group" /> в разделе содержит папки навигации <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolders" /> в коллекции.</para>
             </item>
             <item>
-              <para><see cref="P:Microsoft.Office.Interop.Outlook._NavigationGroup.GroupType" /> Свойства группы навигации, указанного в <paramref name="Group" /> задано значение <b>olMyFoldersGroup</b>.</para>
+              <para><see cref="P:Microsoft.Office.Interop.Outlook._NavigationGroup.GroupType" /> Свойство группы навигации, указанной в <paramref name="Group" /> , имеет значение <b>олмифолдерсграуп</b>.</para>
             </item>
             <item>
-              <para>— Это родительской коллекции <b>NavigationGroups</b> <see cref="T:Microsoft.Office.Interop.Outlook.MailModule" /> объектов.</para>
+              <para>Родителем коллекции <b>NavigationGroups</b> является <see cref="T:Microsoft.Office.Interop.Outlook.MailModule" /> объект.</para>
             </item>
           </list>
           <para> </para></remarks>
@@ -205,10 +205,10 @@
         <Parameter Name="DefaultFolderGroup" Type="Microsoft.Office.Interop.Outlook.OlGroupType" />
       </Parameters>
       <Docs>
-        <param name="DefaultFolderGroup">Тип группы навигации нужно вернуть.</param>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> , который соответствует группе общую папку выбранных по умолчанию.</summary>
-        <returns>Объект <b>NavigationGroup</b> , который представляет группу папки выбранных по умолчанию.</returns>
-        <remarks><para>Если группа навигации по умолчанию, указанный в <paramref name="DefaultFolderGroup" /> был удален или в противном случае — не существует, автоматически создается, если родительский <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModule" /> объект поддерживает тип группы указанного навигации.  Если родительский объект <b>NavigationModule</b> не поддерживает создание этот тип группы навигации, возникает ошибка.</para>
+        <param name="DefaultFolderGroup">Тип получаемой группы навигации.</param>
+        <summary>Возвращает значение <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> , соответствующее выбранной группе общих папок по умолчанию.</summary>
+        <returns>Объект <b>NavigationGroup</b> , представляющий выбранную группу папок по умолчанию.</returns>
+        <remarks><para>Если группа навигации по умолчанию, <paramref name="DefaultFolderGroup" /> указанная в параметре Deleted или Exists, не существует, <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModule" /> она будет создана автоматически, если родительский объект поддерживает указанный тип группы навигации.  Если родительский объект <b>NavigationModule</b> не поддерживает создание этого типа группы навигации, возникает ошибка.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -240,8 +240,8 @@
       <Docs>
         <param name="Index">Номер индекса объекта.</param>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> объект из коллекции.</summary>
-        <value>Объект <b>NavigationGroup</b> , который представляет указанный объект.</value>
-        <remarks><para>Значение индекса <b>NavigationGroup</b> в коллекции представляет порядковый номер группы навигации при отображении в области навигации. Изменение положения навигации групп также изменяет значения индекса навигации групп, содержащихся в <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroups" /> семейства сайтов.</para>
+        <value>Объект <b>NavigationGroup</b> , представляющий указанный объект.</value>
+        <remarks><para>Значение индекса объекта <b>NavigationGroup</b> в коллекции представляет порядковый номер группы навигации при отображении в области навигации. При изменении положения групп навигации также изменяются значения индекса групп навигации, содержащихся в <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroups" /> коллекции.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -268,7 +268,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -296,9 +296,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
