@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="e1e6b-p101">Это интерфейс .NET, созданный при обработке компонентного класса COM, который требуется управляемому коду для взаимодействия с соответствующим объектом COM. Этот интерфейс реализует все события предыдущих интерфейсов и новые события. Используйте его, только если имя нужного события совпадает с именем метода объекта COM. В этом случае выполните приведение типов к этому интерфейсу, чтобы подключиться к событию, и выполните приведение типов к первичному интерфейсу, вызвать метод. В противном случае используйте интерфейс .NET, производный от компонентного класса COM, для доступа к методам, свойствам и событиям объекта COM.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-p101">This is a .NET interface created when processing a COM coclass that is required by managed code for interoperability with the corresponding COM object. This interface implements all events of earlier interfaces and any additional new events. Use this interface only when the event you want to use shares the same name as a method of the COM object; in this case, cast to this interface to connect to the event, and cast to the primary interface to call the method. Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span></span></summary>
+    <summary><span data-ttu-id="77edf-p101">Это интерфейс .NET, созданный при обработке компонентного класса COM, который требуется управляемому коду для взаимодействия с соответствующим объектом COM. Этот интерфейс реализует все события предыдущих интерфейсов и новые события. Используйте его, только если имя нужного события совпадает с именем метода объекта COM. В этом случае выполните приведение типов к этому интерфейсу, чтобы подключиться к событию, и выполните приведение типов к первичному интерфейсу, вызвать метод. В противном случае используйте интерфейс .NET, производный от компонентного класса COM, для доступа к методам, свойствам и событиям объекта COM.</span><span class="sxs-lookup"><span data-stu-id="77edf-p101">This is a .NET interface created when processing a COM coclass that is required by managed code for interoperability with the corresponding COM object. This interface implements all events of earlier interfaces and any additional new events. Use this interface only when the event you want to use shares the same name as a method of the COM object; in this case, cast to this interface to connect to the event, and cast to the primary interface to call the method. Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span></span></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,7 +40,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_ActivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e1e6b-105">Происходит, когда проводник становится активным окном, в результате действий пользователя или через программный код.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-105">Occurs when an explorer becomes the active window, either as a result of user action or through program code.</span></span></summary>
+        <summary><span data-ttu-id="77edf-105">Происходит, когда обозреватель становится активным окном в результате действия пользователя или кода программы.</span><span class="sxs-lookup"><span data-stu-id="77edf-105">Occurs when an explorer becomes the active window, either as a result of user action or through program code.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,8 +59,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_AttachmentSelectionChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e1e6b-106">Происходит, когда пользователь выбирает другой или дополнительных вложений в окне active программно или с которым взаимодействует с пользовательским интерфейсом.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-106">Occurs when the user selects a different or additional attachment in the active explorer programmatically or by interacting with the user interface.</span></span></summary>
-        <remarks><para><span data-ttu-id="e1e6b-107">Событие <b>AttachmentSelectionChange</b> вызывается при выборе различных или дополнительные вложения любого элемента в окне active.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-107">The <b>AttachmentSelectionChange</b> event fires when a different or additional attachment of any item is selected in the active explorer.</span></span></para>
+        <summary><span data-ttu-id="77edf-106">Происходит, когда пользователь выбирает другое или дополнительное вложение в активном проводнике программным путем или взаимодействует с пользовательским интерфейсом.</span><span class="sxs-lookup"><span data-stu-id="77edf-106">Occurs when the user selects a different or additional attachment in the active explorer programmatically or by interacting with the user interface.</span></span></summary>
+        <remarks><para><span data-ttu-id="77edf-107">Событие <b>AttachmentSelectionChange</b> запускается, когда в активном проводнике выбрано другое или дополнительное вложение какого-либо элемента.</span><span class="sxs-lookup"><span data-stu-id="77edf-107">The <b>AttachmentSelectionChange</b> event fires when a different or additional attachment of any item is selected in the active explorer.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -79,8 +79,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeFolderSwitchEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e1e6b-108">Возникает перед explorer входит в новую папку, в результате действий пользователя или через программный код.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-108">Occurs before the explorer goes to a new folder, either as a result of user action or through program code.</span></span></summary>
-        <remarks><para><span data-ttu-id="e1e6b-109">Если папка была отключена, чтобы в пространстве имен, которое не поддерживает автоматизацию (например, файловая система), <paramref name="NewFolder" /> имеет <b>значение Nothing</b>.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-109">If the folder being switched to is in a namespace that doesn’t support automation (such as the file system), <paramref name="NewFolder" /> is <b>Nothing</b>.</span></span></para>
+        <summary><span data-ttu-id="77edf-108">Возникает перед тем, как проводник переходит к новой папке, как результат действия пользователя или с помощью программного кода.</span><span class="sxs-lookup"><span data-stu-id="77edf-108">Occurs before the explorer goes to a new folder, either as a result of user action or through program code.</span></span></summary>
+        <remarks><para><span data-ttu-id="77edf-109">Если папка, для которой выполняется переключение, находится в пространстве имен, которое не поддерживает автоматизацию (например, файловая <paramref name="NewFolder" /> система), <b>ничего</b>не происходит.</span><span class="sxs-lookup"><span data-stu-id="77edf-109">If the folder being switched to is in a namespace that doesn’t support automation (such as the file system), <paramref name="NewFolder" /> is <b>Nothing</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -99,8 +99,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeItemCopyEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e1e6b-110">Происходит, когда сообщение скопировано Outlook.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-110">Occurs when an Outlook item is copied.</span></span></summary>
-        <remarks><para><span data-ttu-id="e1e6b-111">Это событие можно отменить после его запуска.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-111">This event can be cancelled after it has started.</span></span></para>
+        <summary><span data-ttu-id="77edf-110">Возникает при копировании элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="77edf-110">Occurs when an Outlook item is copied.</span></span></summary>
+        <remarks><para><span data-ttu-id="77edf-111">Это событие можно отменить после его запуска.</span><span class="sxs-lookup"><span data-stu-id="77edf-111">This event can be cancelled after it has started.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -119,8 +119,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeItemCutEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e1e6b-112">Происходит, когда элемент Outlook — это вырезать из папки.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-112">Occurs when an Outlook item is cut from a folder.</span></span></summary>
-        <remarks><para><span data-ttu-id="e1e6b-113">Это событие можно отменить после его запуска.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-113">This event can be cancelled after it has started.</span></span> <span data-ttu-id="e1e6b-114">При отмене события элемент не будет удален.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-114">If the event is cancelled, then the item will not be removed.</span></span></para>
+        <summary><span data-ttu-id="77edf-112">Возникает при вырезании элемента Outlook из папки.</span><span class="sxs-lookup"><span data-stu-id="77edf-112">Occurs when an Outlook item is cut from a folder.</span></span></summary>
+        <remarks><para><span data-ttu-id="77edf-113">Это событие можно отменить после его запуска.</span><span class="sxs-lookup"><span data-stu-id="77edf-113">This event can be cancelled after it has started.</span></span> <span data-ttu-id="77edf-114">Если событие отменено, элемент не будет удален.</span><span class="sxs-lookup"><span data-stu-id="77edf-114">If the event is cancelled, then the item will not be removed.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -139,8 +139,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeItemPasteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e1e6b-115">Возникает при вставке элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-115">Occurs when an Outlook item is pasted.</span></span></summary>
-        <remarks><para><span data-ttu-id="e1e6b-116">Это событие можно отменить после его запуска.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-116">This event can be cancelled after it has started.</span></span></para>
+        <summary><span data-ttu-id="77edf-115">Возникает при вставке элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="77edf-115">Occurs when an Outlook item is pasted.</span></span></summary>
+        <remarks><para><span data-ttu-id="77edf-116">Это событие можно отменить после его запуска.</span><span class="sxs-lookup"><span data-stu-id="77edf-116">This event can be cancelled after it has started.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -159,8 +159,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeMaximizeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e1e6b-117">Происходит, когда проводник развернуто пользователем.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-117">Occurs when an explorer is maximized by the user.</span></span></summary>
-        <remarks><para><span data-ttu-id="e1e6b-118">Это событие можно отменить после его запуска.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-118">This event can be cancelled after it has started.</span></span></para>
+        <summary><span data-ttu-id="77edf-117">Происходит, когда Проводник разворачивается пользователем.</span><span class="sxs-lookup"><span data-stu-id="77edf-117">Occurs when an explorer is maximized by the user.</span></span></summary>
+        <remarks><para><span data-ttu-id="77edf-118">Это событие можно отменить после его запуска.</span><span class="sxs-lookup"><span data-stu-id="77edf-118">This event can be cancelled after it has started.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -179,8 +179,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeMinimizeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e1e6b-119">Происходит, когда active explorer свернута пользователем.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-119">Occurs when the active explorer is minimized by the user.</span></span></summary>
-        <remarks><para><span data-ttu-id="e1e6b-120">Это событие можно отменить после его запуска.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-120">This event can be cancelled after it has started.</span></span></para>
+        <summary><span data-ttu-id="77edf-119">Происходит, когда пользователь сворачивает активный проводник.</span><span class="sxs-lookup"><span data-stu-id="77edf-119">Occurs when the active explorer is minimized by the user.</span></span></summary>
+        <remarks><para><span data-ttu-id="77edf-120">Это событие можно отменить после его запуска.</span><span class="sxs-lookup"><span data-stu-id="77edf-120">This event can be cancelled after it has started.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -199,8 +199,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeMoveEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e1e6b-121">Происходит, когда <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> перемещается пользователем.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-121">Occurs when the  <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> is moved by the user.</span></span></summary>
-        <remarks><para><span data-ttu-id="e1e6b-122">Это событие можно отменить после его запуска.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-122">This event can be cancelled after it has started.</span></span></para>
+        <summary><span data-ttu-id="77edf-121">Возникает, когда <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> пользователь перемещается.</span><span class="sxs-lookup"><span data-stu-id="77edf-121">Occurs when the  <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> is moved by the user.</span></span></summary>
+        <remarks><para><span data-ttu-id="77edf-122">Это событие можно отменить после его запуска.</span><span class="sxs-lookup"><span data-stu-id="77edf-122">This event can be cancelled after it has started.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -219,8 +219,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeSizeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e1e6b-123">Происходит, когда пользователь изменяет размер текущего <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" />.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-123">Occurs when the user sizes the current <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" />.</span></span></summary>
-        <remarks><para><span data-ttu-id="e1e6b-124">Это событие можно отменить после его запуска.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-124">This event can be cancelled after it has started.</span></span> <span data-ttu-id="e1e6b-125">При отмене события окна не изменяется.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-125">If the event is cancelled, the window is not sized.</span></span></para>
+        <summary><span data-ttu-id="77edf-123">Происходит, когда пользователь изменяет размер текущего <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" />.</span><span class="sxs-lookup"><span data-stu-id="77edf-123">Occurs when the user sizes the current <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" />.</span></span></summary>
+        <remarks><para><span data-ttu-id="77edf-124">Это событие можно отменить после его запуска.</span><span class="sxs-lookup"><span data-stu-id="77edf-124">This event can be cancelled after it has started.</span></span> <span data-ttu-id="77edf-125">Если событие отменено, размер окна не изменяется.</span><span class="sxs-lookup"><span data-stu-id="77edf-125">If the event is cancelled, the window is not sized.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -239,7 +239,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeViewSwitchEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e1e6b-126">Возникает перед explorer изменяется на новое представление, в результате действий пользователя или через программный код.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-126">Occurs before the explorer changes to a new view, either as a result of user action or through program code.</span></span></summary>
+        <summary><span data-ttu-id="77edf-126">Возникает перед внесением изменений в новое представление в результате действия пользователя или кода программы.</span><span class="sxs-lookup"><span data-stu-id="77edf-126">Occurs before the explorer changes to a new view, either as a result of user action or through program code.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,8 +258,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_CloseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e1e6b-127">Возникает при закрытии проводник.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-127">Occurs when an explorer is being closed.</span></span></summary>
-        <remarks><para><span data-ttu-id="e1e6b-128">Если вы используете <see cref="M:Microsoft.Office.Interop.Outlook._Explorer.Close" /> метод должно срабатывать, это событие, он может быть отменена, только если метод <b>Close</b> используется аргумент <b>olPromptForSave</b> .</span><span class="sxs-lookup"><span data-stu-id="e1e6b-128">If you use the <see cref="M:Microsoft.Office.Interop.Outlook._Explorer.Close" /> method to fire this event, it can only be canceled if the <b>Close</b> method uses the <b>olPromptForSave</b> argument.</span></span></para>
+        <summary><span data-ttu-id="77edf-127">Возникает при закрытии проводника.</span><span class="sxs-lookup"><span data-stu-id="77edf-127">Occurs when an explorer is being closed.</span></span></summary>
+        <remarks><para><span data-ttu-id="77edf-128">Если вы используете <see cref="M:Microsoft.Office.Interop.Outlook._Explorer.Close" /> метод для запуска этого события, его можно отменить только в том случае, если метод <b>Close</b> использует аргумент <b>олпромптфорсаве</b> .</span><span class="sxs-lookup"><span data-stu-id="77edf-128">If you use the <see cref="M:Microsoft.Office.Interop.Outlook._Explorer.Close" /> method to fire this event, it can only be canceled if the <b>Close</b> method uses the <b>olPromptForSave</b> argument.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -278,7 +278,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_DeactivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e1e6b-129">Происходит, когда проводник перестает быть активного окна, в результате действий пользователя или через программный код.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-129">Occurs when an explorer stops being the active window, either as a result of user action or through program code.</span></span></summary>
+        <summary><span data-ttu-id="77edf-129">Происходит, когда обозреватель завершает работу в активном окне, как результат действия пользователя или с помощью программного кода.</span><span class="sxs-lookup"><span data-stu-id="77edf-129">Occurs when an explorer stops being the active window, either as a result of user action or through program code.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -297,7 +297,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_FolderSwitchEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e1e6b-130">Происходит, когда explorer входит в новую папку, в результате действий пользователя или через программный код.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-130">Occurs when the explorer goes to a new folder, either as a result of user action or through program code.</span></span></summary>
+        <summary><span data-ttu-id="77edf-130">Возникает, когда Проводник переходит к новой папке в результате действия пользователя или кода программы.</span><span class="sxs-lookup"><span data-stu-id="77edf-130">Occurs when the explorer goes to a new folder, either as a result of user action or through program code.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,8 +316,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_InlineResponseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e1e6b-131">Происходит, когда пользователь выполняет действие, которое вызывает встроенный ответ отображаться в области чтения.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-131">Occurs when the user performs an action that causes an inline response to appear in the Reading Pane.</span></span></summary>
-        <remarks><para><span data-ttu-id="e1e6b-132">Это событие возвращает объект элемента, представляющий элемент встроенного ответа.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-132">This event returns an item object representing the inline response item.</span></span></para>
+        <summary><span data-ttu-id="77edf-131">Происходит, когда пользователь выполняет действие, которое вызывает отображение встроенного ответа в области чтения.</span><span class="sxs-lookup"><span data-stu-id="77edf-131">Occurs when the user performs an action that causes an inline response to appear in the Reading Pane.</span></span></summary>
+        <remarks><para><span data-ttu-id="77edf-132">Это событие возвращает объект Item, представляющий элемент встроенного ответа.</span><span class="sxs-lookup"><span data-stu-id="77edf-132">This event returns an item object representing the inline response item.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -336,26 +336,26 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_InlineResponseCloseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e1e6b-133">Происходит, когда пользователь выполняет действие, которое вызывает active встроенный ответ закрыть в области чтения.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-133">Occurs when the user performs an action that causes the active inline response to close in the Reading Pane.</span></span></summary>
-        <remarks><para><span data-ttu-id="e1e6b-134">Это событие вызывается при новый встроенный ответ или закрытии черновиков встроенный ответ по следующим причинам:</span><span class="sxs-lookup"><span data-stu-id="e1e6b-134">This event fires when a new inline response or draft inline response is closed for the following reasons:</span></span></para>
+        <summary><span data-ttu-id="77edf-133">Происходит, когда пользователь выполняет действие, которое вызывает закрытие активного встроенного отклика в области чтения.</span><span class="sxs-lookup"><span data-stu-id="77edf-133">Occurs when the user performs an action that causes the active inline response to close in the Reading Pane.</span></span></summary>
+        <remarks><para><span data-ttu-id="77edf-134">Это событие вызывается при закрытии нового встроенного ответа или встроенного отклика по следующим причинам:</span><span class="sxs-lookup"><span data-stu-id="77edf-134">This event fires when a new inline response or draft inline response is closed for the following reasons:</span></span></para>
           <list type="bullet">
             <item>
-              <para><span data-ttu-id="e1e6b-135">Пользователь выбирает команду <b>Pop в работе</b> .</span><span class="sxs-lookup"><span data-stu-id="e1e6b-135">The user selects the <b>Pop Out</b> command.</span></span></para>
+              <para><span data-ttu-id="77edf-135">Пользователь выбирает команду <b>выделять из выступающего</b> .</span><span class="sxs-lookup"><span data-stu-id="77edf-135">The user selects the <b>Pop Out</b> command.</span></span></para>
             </item>
             <item>
-              <para><span data-ttu-id="e1e6b-136">Пользователь выбирает команду <b>Отменить</b> .</span><span class="sxs-lookup"><span data-stu-id="e1e6b-136">The user selects the <b>Discard</b> command.</span></span></para>
+              <para><span data-ttu-id="77edf-136">Пользователь выбирает команду " <b>Удалить</b> ".</span><span class="sxs-lookup"><span data-stu-id="77edf-136">The user selects the <b>Discard</b> command.</span></span></para>
             </item>
             <item>
-              <para><span data-ttu-id="e1e6b-137">Пользователь отправляет встроенный ответ.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-137">The user sends the inline response.</span></span></para>
+              <para><span data-ttu-id="77edf-137">Пользователь отправляет встроенные ответы.</span><span class="sxs-lookup"><span data-stu-id="77edf-137">The user sends the inline response.</span></span></para>
             </item>
             <item>
-              <para><span data-ttu-id="e1e6b-138">Пользователь переходит на другое сообщение в списке сообщений.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-138">The user navigates to a different message in the message list.</span></span></para>
+              <para><span data-ttu-id="77edf-138">Пользователь переходит к другому сообщению в списке сообщений.</span><span class="sxs-lookup"><span data-stu-id="77edf-138">The user navigates to a different message in the message list.</span></span></para>
             </item>
             <item>
-              <para><span data-ttu-id="e1e6b-139">Пользователь переходит в другую папку.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-139">The user navigates to a different folder.</span></span></para>
+              <para><span data-ttu-id="77edf-139">Пользователь переходит в другую папку.</span><span class="sxs-lookup"><span data-stu-id="77edf-139">The user navigates to a different folder.</span></span></para>
             </item>
             <item>
-              <para><span data-ttu-id="e1e6b-140">Пользователи могут переключаться модули, например от модуль почты в модуль календаря.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-140">The user switches modules, for example from the mail module to the Calendar module.</span></span></para>
+              <para><span data-ttu-id="77edf-140">Пользователь переключает модули, например из почтового модуля в модуль календаря.</span><span class="sxs-lookup"><span data-stu-id="77edf-140">The user switches modules, for example from the mail module to the Calendar module.</span></span></para>
             </item>
           </list>
           <para> </para></remarks>
@@ -376,8 +376,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_SelectionChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e1e6b-141">Происходит, когда пользователь переходит к другой элемент в папке с помощью пользовательского интерфейса (UI) или программными средствами.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-141">Occurs when the user switches to a different item in a folder using the user interface (UI) or programmatically.</span></span></summary>
-        <remarks><para><span data-ttu-id="e1e6b-142">Это событие также возникает при пользователя, либо программными средствами или с помощью inerface пользователя, щелкает или переключает в другую папку, которая содержит элементы, как Outlook автоматически выбирает первый элемент в этой папке.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-142">This event also occurs when the user, either programmatically or using the user inerface, clicks or switches to a different folder that contains items as Outlook automatically selects the first item in that folder.</span></span> <span data-ttu-id="e1e6b-143">Тем не менее это событие не возникает, если папка является файловой системы или любая папка с текущего представления Web отображается.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-143">However, this event does not occur if the folder is a file-system folder or if any folder with a current Web view is displayed.</span></span> </para>
+        <summary><span data-ttu-id="77edf-141">Возникает, когда пользователь переключается на другой элемент в папке с помощью пользовательского интерфейса или программным способом.</span><span class="sxs-lookup"><span data-stu-id="77edf-141">Occurs when the user switches to a different item in a folder using the user interface (UI) or programmatically.</span></span></summary>
+        <remarks><para><span data-ttu-id="77edf-142">Это событие также возникает, если пользователь программным способом или с помощью инерфаце пользователь щелкает или переключается на другую папку, содержащую элементы, так как Outlook автоматически выбирает первый элемент в этой папке.</span><span class="sxs-lookup"><span data-stu-id="77edf-142">This event also occurs when the user, either programmatically or using the user inerface, clicks or switches to a different folder that contains items as Outlook automatically selects the first item in that folder.</span></span> <span data-ttu-id="77edf-143">Однако это событие не возникает, если папка является папкой файловой системы или отображается любая папка с текущим представлением веб-сайта.</span><span class="sxs-lookup"><span data-stu-id="77edf-143">However, this event does not occur if the folder is a file-system folder or if any folder with a current Web view is displayed.</span></span> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -396,7 +396,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_ViewSwitchEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e1e6b-144">Возникает при изменении представления в обозревателе, в результате действий пользователя или через программный код.</span><span class="sxs-lookup"><span data-stu-id="e1e6b-144">Occurs when the view in the explorer changes, either as a result of user action or through program code.</span></span></summary>
+        <summary><span data-ttu-id="77edf-144">Возникает при изменении представления в проводнике или в результате действия пользователя или кода программы.</span><span class="sxs-lookup"><span data-stu-id="77edf-144">Occurs when the view in the explorer changes, either as a result of user action or through program code.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="c0e88-101">Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом.</span><span class="sxs-lookup"><span data-stu-id="c0e88-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span></span> <span data-ttu-id="c0e88-102">Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию.</span><span class="sxs-lookup"><span data-stu-id="c0e88-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span></span> <span data-ttu-id="c0e88-103">В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом.</span><span class="sxs-lookup"><span data-stu-id="c0e88-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span></span> <span data-ttu-id="c0e88-104">Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" />.</span><span class="sxs-lookup"><span data-stu-id="c0e88-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" />.</span></span></summary>
+    <summary><span data-ttu-id="80000-101">Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM.</span><span class="sxs-lookup"><span data-stu-id="80000-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span></span> <span data-ttu-id="80000-102">Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий.</span><span class="sxs-lookup"><span data-stu-id="80000-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span></span> <span data-ttu-id="80000-103">Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM.</span><span class="sxs-lookup"><span data-stu-id="80000-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span></span> <span data-ttu-id="80000-104">Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" />.</span><span class="sxs-lookup"><span data-stu-id="80000-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" />.</span></span></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0e88-105">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта.</span><span class="sxs-lookup"><span data-stu-id="c0e88-105">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span></span> <span data-ttu-id="c0e88-106">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c0e88-106">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="80000-105">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта.</span><span class="sxs-lookup"><span data-stu-id="80000-105">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span></span> <span data-ttu-id="80000-106">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="80000-106">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -71,7 +71,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="c0e88-107">Область применения <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" /> объекта к текущему представлению.</span><span class="sxs-lookup"><span data-stu-id="c0e88-107">Applies the <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" /> object to the current view.</span></span></summary>
+        <summary><span data-ttu-id="80000-107">Применяет <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" /> объект к текущему представлению.</span><span class="sxs-lookup"><span data-stu-id="80000-107">Applies the <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" /> object to the current view.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,9 +101,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0e88-108">Возвращает или задает значение типа <b>Integer</b> (<b>целое</b> в C#), представляющее размер в процентах от электронной визитной карточки (EBC) в представлении.</span><span class="sxs-lookup"><span data-stu-id="c0e88-108">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value that represents the size, as a percentage, of an Electronic Business Card (EBC) in the view.</span></span> <span data-ttu-id="c0e88-109">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c0e88-109">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="80000-108">Возвращает или задает значение <b>Integer</b> (<b>int</b> в C#), представляющее размер (в процентах) электронной визитной карточки (EBC) в представлении.</span><span class="sxs-lookup"><span data-stu-id="80000-108">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value that represents the size, as a percentage, of an Electronic Business Card (EBC) in the view.</span></span> <span data-ttu-id="80000-109">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="80000-109">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="c0e88-110">Это свойство можно задать значение в диапазоне от 20 до 100.</span><span class="sxs-lookup"><span data-stu-id="c0e88-110">This property can be set to a value between 20 and 100.</span></span> <span data-ttu-id="c0e88-111">Если это свойство задано значение меньше 20, свойство имеет значение 20.</span><span class="sxs-lookup"><span data-stu-id="c0e88-111">If this property is set to a value less than 20, the property is set to 20.</span></span> <span data-ttu-id="c0e88-112">Если значение этого свойства больше 100, свойство имеет значение 100.</span><span class="sxs-lookup"><span data-stu-id="c0e88-112">If this property is set to a value greater than 100, the property is set to 100.</span></span></para>
+        <remarks><para><span data-ttu-id="80000-110">Для этого свойства можно задать значение от 20 до 100.</span><span class="sxs-lookup"><span data-stu-id="80000-110">This property can be set to a value between 20 and 100.</span></span> <span data-ttu-id="80000-111">Если для этого свойства задано значение меньше 20, свойству присвоено значение 20.</span><span class="sxs-lookup"><span data-stu-id="80000-111">If this property is set to a value less than 20, the property is set to 20.</span></span> <span data-ttu-id="80000-112">Если для этого свойства задано значение больше 100, свойству присваивается значение 100.</span><span class="sxs-lookup"><span data-stu-id="80000-112">If this property is set to a value greater than 100, the property is set to 100.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -130,9 +130,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0e88-113">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта.</span><span class="sxs-lookup"><span data-stu-id="c0e88-113">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span></span> <span data-ttu-id="c0e88-114">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c0e88-114">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="80000-113">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта.</span><span class="sxs-lookup"><span data-stu-id="80000-113">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span></span> <span data-ttu-id="80000-114">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="80000-114">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="c0e88-115">Данное свойство возвращает <b>olBusinessCardView</b> для <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" /> объекта.</span><span class="sxs-lookup"><span data-stu-id="c0e88-115">This property returns <b>olBusinessCardView</b> for the <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" /> object.</span></span></para>
+        <remarks><para><span data-ttu-id="80000-115">Это свойство возвращает <b>олбусинесскардвиев</b> для <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" /> объекта.</span><span class="sxs-lookup"><span data-stu-id="80000-115">This property returns <b>olBusinessCardView</b> for the <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" /> object.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -159,10 +159,10 @@
         <Parameter Name="SaveOption" Type="Microsoft.Office.Interop.Outlook.OlViewSaveOption" />
       </Parameters>
       <Docs>
-        <param name="Name"><span data-ttu-id="c0e88-116">Имя нового представления.</span><span class="sxs-lookup"><span data-stu-id="c0e88-116">The name of the new view.</span></span></param>
-        <param name="SaveOption"><span data-ttu-id="c0e88-117">Параметр Сохранить для нового представления.</span><span class="sxs-lookup"><span data-stu-id="c0e88-117">The save option for the new view.</span></span></param>
-        <summary><span data-ttu-id="c0e88-118">Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.View" /> объекта на основании существующих <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" /> объекта.</span><span class="sxs-lookup"><span data-stu-id="c0e88-118">Creates a new <see cref="T:Microsoft.Office.Interop.Outlook.View" /> object based on the existing <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" /> object.</span></span></summary>
-        <returns><span data-ttu-id="c0e88-119">Объект <b>представления</b> , который представляет новое представление.</span><span class="sxs-lookup"><span data-stu-id="c0e88-119">A <b>View</b> object that represents the new view.</span></span></returns>
+        <param name="Name"><span data-ttu-id="80000-116">Имя нового представления.</span><span class="sxs-lookup"><span data-stu-id="80000-116">The name of the new view.</span></span></param>
+        <param name="SaveOption"><span data-ttu-id="80000-117">Параметр Сохранить для нового представления.</span><span class="sxs-lookup"><span data-stu-id="80000-117">The save option for the new view.</span></span></param>
+        <summary><span data-ttu-id="80000-118">Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.View" /> объект на основе существующего <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" /> объекта.</span><span class="sxs-lookup"><span data-stu-id="80000-118">Creates a new <see cref="T:Microsoft.Office.Interop.Outlook.View" /> object based on the existing <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" /> object.</span></span></summary>
+        <returns><span data-ttu-id="80000-119">Объект <b>View</b> , представляющий новое представление.</span><span class="sxs-lookup"><span data-stu-id="80000-119">A <b>View</b> object that represents the new view.</span></span></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,7 +187,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="c0e88-120">Удаляет объект из коллекции.</span><span class="sxs-lookup"><span data-stu-id="c0e88-120">Deletes an object from a collection.</span></span></summary>
+        <summary><span data-ttu-id="80000-120">Удаляет объект из коллекции.</span><span class="sxs-lookup"><span data-stu-id="80000-120">Deletes an object from a collection.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,7 +217,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0e88-121">Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет фильтр для представления.</span><span class="sxs-lookup"><span data-stu-id="c0e88-121">Returns or sets a <b>String</b> (<b>string</b> in C#) value that represents the filter for a view.</span></span>  <span data-ttu-id="c0e88-122">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c0e88-122">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="80000-121">Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее фильтр для представления.</span><span class="sxs-lookup"><span data-stu-id="80000-121">Returns or sets a <b>String</b> (<b>string</b> in C#) value that represents the filter for a view.</span></span>  <span data-ttu-id="80000-122">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="80000-122">Read/write.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -245,8 +245,8 @@
         <Parameter Name="Date" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="Date"><span data-ttu-id="c0e88-123">Дата, к которой следует изменить представление.</span><span class="sxs-lookup"><span data-stu-id="c0e88-123">The date to which the view should be changed.</span></span></param>
-        <summary><span data-ttu-id="c0e88-124">Изменение даты, используемых текущим представлением для отображения информации.</span><span class="sxs-lookup"><span data-stu-id="c0e88-124">Changes the date used by the current view to display information.</span></span></summary>
+        <param name="Date"><span data-ttu-id="80000-123">Дата, до которой должно быть изменено представление.</span><span class="sxs-lookup"><span data-stu-id="80000-123">The date to which the view should be changed.</span></span></param>
+        <summary><span data-ttu-id="80000-124">Изменяет дату, используемую текущим представлением, для отображения сведений.</span><span class="sxs-lookup"><span data-stu-id="80000-124">Changes the date used by the current view to display information.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,7 +273,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ViewFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0e88-125">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> объект, представляющий шрифт, используемый для отображения заголовков для каждого электронной визитной карточки (EBC) в представлении.</span><span class="sxs-lookup"><span data-stu-id="c0e88-125">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> object that represents the font used to display headings for each Electronic Business Card (EBC) in the view.</span></span> <span data-ttu-id="c0e88-126">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c0e88-126">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="80000-125">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> объект, представляющий шрифт, используемый для отображения заголовков для каждой электронной визитной карточки (EBC) в представлении.</span><span class="sxs-lookup"><span data-stu-id="80000-125">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> object that represents the font used to display headings for each Electronic Business Card (EBC) in the view.</span></span> <span data-ttu-id="80000-126">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="80000-126">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -304,10 +304,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0e88-127">Возвращает или задает значение типа <b>String</b> (<b>строка</b> в C#), представляющее языка, заданных для объекта, который определяет язык, используемый в меню.</span><span class="sxs-lookup"><span data-stu-id="c0e88-127">Returns or sets a <b>String</b> (<b>string</b> in C#) value that represents the language setting for the object that defines the language used in the menu.</span></span> <span data-ttu-id="c0e88-128">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c0e88-128">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="80000-127">Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее языковой параметр объекта, который определяет язык, используемый в меню.</span><span class="sxs-lookup"><span data-stu-id="80000-127">Returns or sets a <b>String</b> (<b>string</b> in C#) value that represents the language setting for the object that defines the language used in the menu.</span></span> <span data-ttu-id="80000-128">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="80000-128">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="c0e88-129">Свойство <b>Language</b> <b>String</b> (<b>строка</b> в C#) используется для представления тег языка ISO.</span><span class="sxs-lookup"><span data-stu-id="c0e88-129">The <b>Language</b> property uses a <b>String</b> (<b>string</b> in C#) to represent an ISO language tag.</span></span> <span data-ttu-id="c0e88-130">Например строка «EN-US» представляет код ISO «США - английский.»</span><span class="sxs-lookup"><span data-stu-id="c0e88-130">For example, the string "EN-US" represents the ISO code for "United States - English."</span></span></para>
-          <para><span data-ttu-id="c0e88-131">Если указан допустимый код языка, объект доступна только в меню "Вид" для типа указанного языка.</span><span class="sxs-lookup"><span data-stu-id="c0e88-131">If a valid language code is specified, the object will only be available in the View menu for the specified language type.</span></span> <span data-ttu-id="c0e88-132">Если значение не указано, элемент object доступен для всех типов языка.</span><span class="sxs-lookup"><span data-stu-id="c0e88-132">If no value is specified, the object item is available for all language types.</span></span> <span data-ttu-id="c0e88-133">Значение по умолчанию для этого свойства — это пустая строка.</span><span class="sxs-lookup"><span data-stu-id="c0e88-133">The default value for this property is an empty string.</span></span></para>
+        <remarks><para><span data-ttu-id="80000-129">Свойство <b>Language</b> использует <b>строку</b> (<b>строка</b> в C#) для представления тега языка ISO.</span><span class="sxs-lookup"><span data-stu-id="80000-129">The <b>Language</b> property uses a <b>String</b> (<b>string</b> in C#) to represent an ISO language tag.</span></span> <span data-ttu-id="80000-130">Например, строка "EN-US" представляет код ISO для "США-английский".</span><span class="sxs-lookup"><span data-stu-id="80000-130">For example, the string "EN-US" represents the ISO code for "United States - English."</span></span></para>
+          <para><span data-ttu-id="80000-131">Если указан допустимый код языка, объект будет доступен только в меню Вид для указанного типа языка.</span><span class="sxs-lookup"><span data-stu-id="80000-131">If a valid language code is specified, the object will only be available in the View menu for the specified language type.</span></span> <span data-ttu-id="80000-132">Если значение не указано, элемент объекта доступен для всех типов языка.</span><span class="sxs-lookup"><span data-stu-id="80000-132">If no value is specified, the object item is available for all language types.</span></span> <span data-ttu-id="80000-133">Значение по умолчанию для этого свойства — пустая строка.</span><span class="sxs-lookup"><span data-stu-id="80000-133">The default value for this property is an empty string.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -337,9 +337,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0e88-134">Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, указывающее, является ли пользователь может изменять параметры текущего представления.</span><span class="sxs-lookup"><span data-stu-id="c0e88-134">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) value that indicates whether a user can modify the settings of the current view.</span></span> <span data-ttu-id="c0e88-135">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c0e88-135">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="80000-134">Возвращает или задает значение <b>логического</b> значения (<b>bool</b> в C#), которое указывает, может ли пользователь изменять параметры текущего представления.</span><span class="sxs-lookup"><span data-stu-id="80000-134">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) value that indicates whether a user can modify the settings of the current view.</span></span> <span data-ttu-id="80000-135">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="80000-135">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="c0e88-136">Если <b>значение True</b>, пользователь может изменять параметры текущего представления.</span><span class="sxs-lookup"><span data-stu-id="c0e88-136">If <b>True</b>, the user can modify the settings of the current view.</span></span> <span data-ttu-id="c0e88-137">Тем не менее изменения, внесенные в интерфейс не будут сохранены.</span><span class="sxs-lookup"><span data-stu-id="c0e88-137">However, changes made to the interface will not be saved.</span></span> <span data-ttu-id="c0e88-138">Если <b>значение False</b> (значение по умолчанию), все изменения будут сохранены.</span><span class="sxs-lookup"><span data-stu-id="c0e88-138">If <b>False</b> (the default), any changes will be saved.</span></span>  </para>
+        <remarks><para><span data-ttu-id="80000-136">Если <b>имеет значение true</b>, пользователь может изменять параметры текущего представления.</span><span class="sxs-lookup"><span data-stu-id="80000-136">If <b>True</b>, the user can modify the settings of the current view.</span></span> <span data-ttu-id="80000-137">Однако изменения, внесенные в интерфейс, не будут сохранены.</span><span class="sxs-lookup"><span data-stu-id="80000-137">However, changes made to the interface will not be saved.</span></span> <span data-ttu-id="80000-138">Если задано <b>значение false</b> (значение по умолчанию), все изменения будут сохранены.</span><span class="sxs-lookup"><span data-stu-id="80000-138">If <b>False</b> (the default), any changes will be saved.</span></span>  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -369,7 +369,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0e88-139">Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет отображаемое имя для объекта.</span><span class="sxs-lookup"><span data-stu-id="c0e88-139">Returns or sets a <b>String</b> (<b>string</b> in C#) value that represents the display name for the object.</span></span> <span data-ttu-id="c0e88-140">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c0e88-140">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="80000-139">Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее отображаемое имя объекта.</span><span class="sxs-lookup"><span data-stu-id="80000-139">Returns or sets a <b>String</b> (<b>string</b> in C#) value that represents the display name for the object.</span></span> <span data-ttu-id="80000-140">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="80000-140">Read/write.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -397,7 +397,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0e88-141">Возвращает родительский <b>объект</b> заданного объекта.</span><span class="sxs-lookup"><span data-stu-id="c0e88-141">Returns the parent <b>Object</b> of the specified object.</span></span> <span data-ttu-id="c0e88-142">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c0e88-142">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="80000-141">Возвращает родительский <b>объект</b> указанного объекта.</span><span class="sxs-lookup"><span data-stu-id="80000-141">Returns the parent <b>Object</b> of the specified object.</span></span> <span data-ttu-id="80000-142">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="80000-142">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -423,8 +423,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="c0e88-143">Сбрасывает встроенных представления Microsoft Outlook исходные параметры.</span><span class="sxs-lookup"><span data-stu-id="c0e88-143">Resets a built-in Microsoft Outlook view to its original settings.</span></span></summary>
-        <remarks><para><span data-ttu-id="c0e88-144">Этот метод работает только для встроенных представления Outlook.</span><span class="sxs-lookup"><span data-stu-id="c0e88-144">This method works only on built-in Outlook views.</span></span></para>
+        <summary><span data-ttu-id="80000-143">Восстанавливает исходные параметры встроенного представления Microsoft Outlook.</span><span class="sxs-lookup"><span data-stu-id="80000-143">Resets a built-in Microsoft Outlook view to its original settings.</span></span></summary>
+        <remarks><para><span data-ttu-id="80000-144">Этот метод работает только со встроенными представлениями Outlook.</span><span class="sxs-lookup"><span data-stu-id="80000-144">This method works only on built-in Outlook views.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -449,7 +449,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="c0e88-145">Сохраняет представления или сохраняет изменения в представлении.</span><span class="sxs-lookup"><span data-stu-id="c0e88-145">Saves the view, or saves the changes to a view.</span></span></summary>
+        <summary><span data-ttu-id="80000-145">Сохранение представления или сохранение изменений в представлении.</span><span class="sxs-lookup"><span data-stu-id="80000-145">Saves the view, or saves the changes to a view.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -476,9 +476,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlViewSaveOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0e88-146">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewSaveOption" /> константа, которая указывает папки, в которых доступен указанное представление и разрешения на чтение, подключенного к представления.</span><span class="sxs-lookup"><span data-stu-id="c0e88-146">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlViewSaveOption" /> constant that specifies the folders in which the specified view is available and the read permissions attached to the view.</span></span> <span data-ttu-id="c0e88-147">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c0e88-147">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="80000-146">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewSaveOption" /> константу, указывающую папки, в которых доступно указанное представление и разрешения на чтение, присоединенные к представлению.</span><span class="sxs-lookup"><span data-stu-id="80000-146">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlViewSaveOption" /> constant that specifies the folders in which the specified view is available and the read permissions attached to the view.</span></span> <span data-ttu-id="80000-147">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="80000-147">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="c0e88-148">Когда задано значение свойства <b>SaveOption</b> <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" /> объект создается с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> семейства сайтов.</span><span class="sxs-lookup"><span data-stu-id="c0e88-148">The value of the <b>SaveOption</b> property is set when the <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" /> object is created by using the <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> method of the <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> collection.</span></span> </para>
+        <remarks><para><span data-ttu-id="80000-148">Значение свойства <b>SaveOption</b> задается при создании <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" /> объекта с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> метода <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> коллекции.</span><span class="sxs-lookup"><span data-stu-id="80000-148">The value of the <b>SaveOption</b> property is set when the <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" /> object is created by using the <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> method of the <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> collection.</span></span> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -505,9 +505,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0e88-149">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса.</span><span class="sxs-lookup"><span data-stu-id="c0e88-149">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span></span> <span data-ttu-id="c0e88-150">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c0e88-150">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="80000-149">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса.</span><span class="sxs-lookup"><span data-stu-id="80000-149">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span></span> <span data-ttu-id="80000-150">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="80000-150">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="c0e88-151">Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса.</span><span class="sxs-lookup"><span data-stu-id="c0e88-151">The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session.</span></span> <span data-ttu-id="c0e88-152">Члены по своему назначению.</span><span class="sxs-lookup"><span data-stu-id="c0e88-152">Both members serve the same purpose.</span></span> <span data-ttu-id="c0e88-153">Например следующие пары операторов выполнить те же функции.</span><span class="sxs-lookup"><span data-stu-id="c0e88-153">For example, the following pairs of statements perform the same function:</span></span></para>
+        <remarks><para><span data-ttu-id="80000-151">Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса.</span><span class="sxs-lookup"><span data-stu-id="80000-151">The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session.</span></span> <span data-ttu-id="80000-152">Оба участника выполняют одну и ту же задачу.</span><span class="sxs-lookup"><span data-stu-id="80000-152">Both members serve the same purpose.</span></span> <span data-ttu-id="80000-153">Например, следующие пары операторов выполняют одну и ту же функцию:</span><span class="sxs-lookup"><span data-stu-id="80000-153">For example, the following pairs of statements perform the same function:</span></span></para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -540,7 +540,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OrderFields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0e88-154">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OrderFields" /> коллекцию, содержащую объект, представляющий все поля, по которым сортировка.</span><span class="sxs-lookup"><span data-stu-id="c0e88-154">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OrderFields" /> collection object that represents all the fields by which  the view is sorted.</span></span> <span data-ttu-id="c0e88-155">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c0e88-155">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="80000-154">Возвращает объект <see cref="T:Microsoft.Office.Interop.Outlook.OrderFields" /> Collection, который представляет все поля, по которым сортируется представление.</span><span class="sxs-lookup"><span data-stu-id="80000-154">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OrderFields" /> collection object that represents all the fields by which  the view is sorted.</span></span> <span data-ttu-id="80000-155">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="80000-155">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -568,9 +568,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0e88-156">Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, будет ли <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" /> объект является встроенной представления Outlook.</span><span class="sxs-lookup"><span data-stu-id="c0e88-156">Returns a <b>Boolean</b> (<b>bool</b> in C#) value that indicates whether the <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" /> object is a built-in Outlook view.</span></span> <span data-ttu-id="c0e88-157">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c0e88-157">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="80000-156">Возвращает логическое<b>значение (</b> <b>логическое</b> значение в C#), которое указывает, <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" /> является ли объект встроенным представлением Outlook.</span><span class="sxs-lookup"><span data-stu-id="80000-156">Returns a <b>Boolean</b> (<b>bool</b> in C#) value that indicates whether the <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" /> object is a built-in Outlook view.</span></span> <span data-ttu-id="80000-157">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="80000-157">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="c0e88-158"><see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> Метод можно использовать для представления, только если значение этого свойства имеет значение <b>True</b>.</span><span class="sxs-lookup"><span data-stu-id="c0e88-158">The <see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> method can only be used on a view if the value of this property is set to <b>True</b>.</span></span></para>
+        <remarks><para><span data-ttu-id="80000-158"><see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> Метод можно использовать только для представления, если для этого свойства задано значение <b>true</b>.</span><span class="sxs-lookup"><span data-stu-id="80000-158">The <see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> method can only be used on a view if the value of this property is set to <b>True</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -597,7 +597,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlViewType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0e88-159">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewType" /> константа, представляющий тип представления представления.</span><span class="sxs-lookup"><span data-stu-id="c0e88-159">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlViewType" /> constant that represents the view type of the view.</span></span> <span data-ttu-id="c0e88-160">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c0e88-160">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="80000-159">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewType" /> константу, представляющую тип представления.</span><span class="sxs-lookup"><span data-stu-id="80000-159">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlViewType" /> constant that represents the view type of the view.</span></span> <span data-ttu-id="80000-160">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="80000-160">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -628,10 +628,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0e88-161">Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), задающее XML-определение текущего представления.</span><span class="sxs-lookup"><span data-stu-id="c0e88-161">Returns or sets a <b>String</b> (<b>string</b> in C#) value that specifies the XML definition of the current view.</span></span> <span data-ttu-id="c0e88-162">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c0e88-162">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="80000-161">Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), задающее XML-определение текущего представления.</span><span class="sxs-lookup"><span data-stu-id="80000-161">Returns or sets a <b>String</b> (<b>string</b> in C#) value that specifies the XML definition of the current view.</span></span> <span data-ttu-id="80000-162">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="80000-162">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="c0e88-163">Определение XML описывает тип представления с помощью ряда теги и ключевых слов в соответствии с различными свойствами представления.</span><span class="sxs-lookup"><span data-stu-id="c0e88-163">The XML definition describes the view type by using a series of tags and keywords corresponding to various properties of the view itself.</span></span> <span data-ttu-id="c0e88-164">При создании представления XML-определение анализируется для отображения параметров для нового представления.</span><span class="sxs-lookup"><span data-stu-id="c0e88-164">When the view is created, the XML definition is parsed to render the settings for the new view.</span></span></para>
-          <para><span data-ttu-id="c0e88-165">Для определения XML структуру при создании представления, создание представления с помощью пользовательского интерфейса Outlook и затем извлеките свойство <b>XML</b> для этого представления.</span><span class="sxs-lookup"><span data-stu-id="c0e88-165">To determine how the XML should be structured when creating views, create a view by using the Outlook user interface and then retrieve the <b>XML</b> property for that view.</span></span>  </para>
+        <remarks><para><span data-ttu-id="80000-163">В XML-определении описывается тип представления с помощью ряда тегов и ключевых слов, соответствующих различным свойствам представления.</span><span class="sxs-lookup"><span data-stu-id="80000-163">The XML definition describes the view type by using a series of tags and keywords corresponding to various properties of the view itself.</span></span> <span data-ttu-id="80000-164">При создании представления XML-определение анализируется для отображения параметров нового представления.</span><span class="sxs-lookup"><span data-stu-id="80000-164">When the view is created, the XML definition is parsed to render the settings for the new view.</span></span></para>
+          <para><span data-ttu-id="80000-165">Чтобы определить структуру XML при создании представлений, создайте представление с помощью пользовательского интерфейса Outlook, а затем извлеките свойство <b>XML</b> для этого представления.</span><span class="sxs-lookup"><span data-stu-id="80000-165">To determine how the XML should be structured when creating views, create a view by using the Outlook user interface and then retrieve the <b>XML</b> property for that view.</span></span>  </para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="bcf8d-101">Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span></span> <span data-ttu-id="bcf8d-102">Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span></span> <span data-ttu-id="bcf8d-103">В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span></span> <span data-ttu-id="bcf8d-104">Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" />.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" />.</span></span></summary>
+    <summary><span data-ttu-id="039ea-101">Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM.</span><span class="sxs-lookup"><span data-stu-id="039ea-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span></span> <span data-ttu-id="039ea-102">Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий.</span><span class="sxs-lookup"><span data-stu-id="039ea-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span></span> <span data-ttu-id="039ea-103">Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM.</span><span class="sxs-lookup"><span data-stu-id="039ea-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span></span> <span data-ttu-id="039ea-104">Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" />.</span><span class="sxs-lookup"><span data-stu-id="039ea-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" />.</span></span></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,9 +48,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bcf8d-105">Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlAlign" /> константа, которая указывает Выравнивание названия столбцов для свойства, к которому <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> связан объект.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-105">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlAlign" /> constant that indicates the alignment of the column label for the property to which the <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> object is associated.</span></span> <span data-ttu-id="bcf8d-106">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-106">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="039ea-105">Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlAlign" /> константу, которая указывает на выравнивание заголовка столбца для свойства, с которым связан <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> объект.</span><span class="sxs-lookup"><span data-stu-id="039ea-105">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlAlign" /> constant that indicates the alignment of the column label for the property to which the <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> object is associated.</span></span> <span data-ttu-id="039ea-106">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="039ea-106">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="bcf8d-107">Значение этого свойства игнорируются для свойств, в которых названия столбцов отображается как значок.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-107">The value of this property is ignored for properties in which the column label is displayed as an icon.</span></span></para>
+        <remarks><para><span data-ttu-id="039ea-107">Значение этого свойства игнорируется для свойств, в которых подпись столбца отображается в виде значка.</span><span class="sxs-lookup"><span data-stu-id="039ea-107">The value of this property is ignored for properties in which the column label is displayed as an icon.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -77,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bcf8d-108">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-108">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span></span> <span data-ttu-id="bcf8d-109">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-109">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="039ea-108">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта.</span><span class="sxs-lookup"><span data-stu-id="039ea-108">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span></span> <span data-ttu-id="039ea-109">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="039ea-109">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -105,7 +105,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bcf8d-110">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-110">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span></span> <span data-ttu-id="bcf8d-111">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-111">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="039ea-110">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта.</span><span class="sxs-lookup"><span data-stu-id="039ea-110">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span></span> <span data-ttu-id="039ea-111">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="039ea-111">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -136,18 +136,18 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bcf8d-112">Возвращает или задает значение <b>Integer</b> (<b>int</b> в C#), который представляет формат отображения свойства, к которому <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> связан объект.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-112">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value that represents the display format of the property to which the <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> object is associated.</span></span> <span data-ttu-id="bcf8d-113">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-113">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="039ea-112">Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), представляющее формат отображения свойства, с которым связан <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> объект.</span><span class="sxs-lookup"><span data-stu-id="039ea-112">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value that represents the display format of the property to which the <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> object is associated.</span></span> <span data-ttu-id="039ea-113">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="039ea-113">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="bcf8d-114">Значение этого свойства — это константа из перечисления, где, зависит от значения перечисления <see cref="P:Microsoft.Office.Interop.Outlook._ColumnFormat.FieldType" /> свойства для объекта <b>ColumnFormat</b> :</span><span class="sxs-lookup"><span data-stu-id="bcf8d-114">The value of this property is a constant from an enumeration, where the enumeration is dependent on the value of the <see cref="P:Microsoft.Office.Interop.Outlook._ColumnFormat.FieldType" /> property for the <b>ColumnFormat</b> object:</span></span></para>
+        <remarks><para><span data-ttu-id="039ea-114">Значение этого свойства является константой из перечисления, где перечисление зависит от значения <see cref="P:Microsoft.Office.Interop.Outlook._ColumnFormat.FieldType" /> свойства для объекта <b>ColumnFormat</b> :</span><span class="sxs-lookup"><span data-stu-id="039ea-114">The value of this property is a constant from an enumeration, where the enumeration is dependent on the value of the <see cref="P:Microsoft.Office.Interop.Outlook._ColumnFormat.FieldType" /> property for the <b>ColumnFormat</b> object:</span></span></para>
           <list type="table">
             <item>
-              <description><span data-ttu-id="bcf8d-115">Значение FieldType</span><span class="sxs-lookup"><span data-stu-id="bcf8d-115">FieldType value</span></span></description>
-              <description><span data-ttu-id="bcf8d-116">Перечисление FieldFormat</span><span class="sxs-lookup"><span data-stu-id="bcf8d-116">FieldFormat enumeration</span></span></description>
+              <description><span data-ttu-id="039ea-115">Значение FieldType</span><span class="sxs-lookup"><span data-stu-id="039ea-115">FieldType value</span></span></description>
+              <description><span data-ttu-id="039ea-116">Перечисление Фиелдформат</span><span class="sxs-lookup"><span data-stu-id="039ea-116">FieldFormat enumeration</span></span></description>
             </item>
             <item>
-              <description><span data-ttu-id="bcf8d-117">
-                <b>olCurrency</b>
-              </span><span class="sxs-lookup"><span data-stu-id="bcf8d-117">
+              <description><span data-ttu-id="039ea-117">
+                <b>олкурренци</b>
+              </span><span class="sxs-lookup"><span data-stu-id="039ea-117">
                 <b>olCurrency</b>
               </span></span></description>
               <description>
@@ -155,9 +155,9 @@
               </description>
             </item>
             <item>
-              <description><span data-ttu-id="bcf8d-118">
+              <description><span data-ttu-id="039ea-118">
                 <b>olFormatDateTime</b>
-              </span><span class="sxs-lookup"><span data-stu-id="bcf8d-118">
+              </span><span class="sxs-lookup"><span data-stu-id="039ea-118">
                 <b>olFormatDateTime</b>
               </span></span></description>
               <description>
@@ -165,9 +165,9 @@
               </description>
             </item>
             <item>
-              <description><span data-ttu-id="bcf8d-119">
-                <b>olDuration</b>
-              </span><span class="sxs-lookup"><span data-stu-id="bcf8d-119">
+              <description><span data-ttu-id="039ea-119">
+                <b>олдуратион</b>
+              </span><span class="sxs-lookup"><span data-stu-id="039ea-119">
                 <b>olDuration</b>
               </span></span></description>
               <description>
@@ -175,9 +175,9 @@
               </description>
             </item>
             <item>
-              <description><span data-ttu-id="bcf8d-120">
-                <b>olInteger</b>
-              </span><span class="sxs-lookup"><span data-stu-id="bcf8d-120">
+              <description><span data-ttu-id="039ea-120">
+                <b>олинтежер</b>
+              </span><span class="sxs-lookup"><span data-stu-id="039ea-120">
                 <b>olInteger</b>
               </span></span></description>
               <description>
@@ -185,9 +185,9 @@
               </description>
             </item>
             <item>
-              <description><span data-ttu-id="bcf8d-121">
-                <b>olKeywords</b>
-              </span><span class="sxs-lookup"><span data-stu-id="bcf8d-121">
+              <description><span data-ttu-id="039ea-121">
+                <b>олкэйвордс</b>
+              </span><span class="sxs-lookup"><span data-stu-id="039ea-121">
                 <b>olKeywords</b>
               </span></span></description>
               <description>
@@ -195,9 +195,9 @@
               </description>
             </item>
             <item>
-              <description><span data-ttu-id="bcf8d-122">
-                <b>olNumber</b>
-              </span><span class="sxs-lookup"><span data-stu-id="bcf8d-122">
+              <description><span data-ttu-id="039ea-122">
+                <b>олнумбер</b>
+              </span><span class="sxs-lookup"><span data-stu-id="039ea-122">
                 <b>olNumber</b>
               </span></span></description>
               <description>
@@ -205,9 +205,9 @@
               </description>
             </item>
             <item>
-              <description><span data-ttu-id="bcf8d-123">
-                <b>olPercent</b>
-              </span><span class="sxs-lookup"><span data-stu-id="bcf8d-123">
+              <description><span data-ttu-id="039ea-123">
+                <b>олперцент</b>
+              </span><span class="sxs-lookup"><span data-stu-id="039ea-123">
                 <b>olPercent</b>
               </span></span></description>
               <description>
@@ -215,9 +215,9 @@
               </description>
             </item>
             <item>
-              <description><span data-ttu-id="bcf8d-124">
-                <b>olText</b>
-              </span><span class="sxs-lookup"><span data-stu-id="bcf8d-124">
+              <description><span data-ttu-id="039ea-124">
+                <b>олтекст</b>
+              </span><span class="sxs-lookup"><span data-stu-id="039ea-124">
                 <b>olText</b>
               </span></span></description>
               <description>
@@ -225,9 +225,9 @@
               </description>
             </item>
             <item>
-              <description><span data-ttu-id="bcf8d-125">
-                <b>olYesNo</b>
-              </span><span class="sxs-lookup"><span data-stu-id="bcf8d-125">
+              <description><span data-ttu-id="039ea-125">
+                <b>олесно</b>
+              </span><span class="sxs-lookup"><span data-stu-id="039ea-125">
                 <b>olYesNo</b>
               </span></span></description>
               <description>
@@ -235,9 +235,9 @@
               </description>
             </item>
             <item>
-              <description><span data-ttu-id="bcf8d-126">
-                <b>olEnumeration</b>
-              </span><span class="sxs-lookup"><span data-stu-id="bcf8d-126">
+              <description><span data-ttu-id="039ea-126">
+                <b>оленумератион</b>
+              </span><span class="sxs-lookup"><span data-stu-id="039ea-126">
                 <b>olEnumeration</b>
               </span></span></description>
               <description>
@@ -245,9 +245,9 @@
               </description>
             </item>
             <item>
-              <description><span data-ttu-id="bcf8d-127">
-                <b>olSmartFrom</b>
-              </span><span class="sxs-lookup"><span data-stu-id="bcf8d-127">
+              <description><span data-ttu-id="039ea-127">
+                <b>олсмартфром</b>
+              </span><span class="sxs-lookup"><span data-stu-id="039ea-127">
                 <b>olSmartFrom</b>
               </span></span></description>
               <description>
@@ -255,7 +255,7 @@
               </description>
             </item>
           </list>
-          <para><span data-ttu-id="bcf8d-128">Для типов полей, не указанные в приведенной выше таблице значение этого свойства игнорируется.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-128">For field types not listed in the above table, the value of this property is ignored.</span></span></para>
+          <para><span data-ttu-id="039ea-128">Для типов полей, не указанных в приведенной выше таблице, значение этого свойства игнорируется.</span><span class="sxs-lookup"><span data-stu-id="039ea-128">For field types not listed in the above table, the value of this property is ignored.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -282,7 +282,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlUserPropertyType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bcf8d-129">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlUserPropertyType" /> константа, который представляет тип поля свойства, к которому <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> связан объект.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-129">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlUserPropertyType" /> constant which represents the field type of the property to which the <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> object is associated.</span></span> <span data-ttu-id="bcf8d-130">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-130">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="039ea-129">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlUserPropertyType" /> константу, представляющую тип поля свойства, с которым связан <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> объект.</span><span class="sxs-lookup"><span data-stu-id="039ea-129">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlUserPropertyType" /> constant which represents the field type of the property to which the <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> object is associated.</span></span> <span data-ttu-id="039ea-130">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="039ea-130">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -313,10 +313,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bcf8d-131">Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет заголовок столбца и подсказка, отображаемая для свойства, к которому <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> связан объект.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-131">Returns or sets a <b>String</b> (<b>string</b> in C#) value that represents the column label and tooltip displayed for the property to which the <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> object is associated.</span></span> <span data-ttu-id="bcf8d-132">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-132">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="039ea-131">Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее метку столбца и всплывающую подсказку, отображаемую <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> для свойства, с которым связан объект.</span><span class="sxs-lookup"><span data-stu-id="039ea-131">Returns or sets a <b>String</b> (<b>string</b> in C#) value that represents the column label and tooltip displayed for the property to which the <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> object is associated.</span></span> <span data-ttu-id="039ea-132">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="039ea-132">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="bcf8d-133">Для встроенных свойств Outlook значение по умолчанию для этого свойства — локализованное имя свойства.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-133">For built-in Outlook properties, the default value for this property is the localized name of the property.</span></span> <span data-ttu-id="bcf8d-134">Для настраиваемого свойства Outlook значение по умолчанию для этого свойства — это имя свойства.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-134">For custom Outlook properties, the default value for this property is the name of the property.</span></span></para>
-          <para><span data-ttu-id="bcf8d-135">Значение этого свойства применим только к всплывающей подсказки для свойства Outlook, в которых заголовок столбца представлены в виде значка.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-135">The value of this property applies only to the tooltip for Outlook properties in which the column header is represented as an icon.</span></span></para>
+        <remarks><para><span data-ttu-id="039ea-133">Для встроенных свойств Outlook значением по умолчанию для этого свойства является локализованное имя свойства.</span><span class="sxs-lookup"><span data-stu-id="039ea-133">For built-in Outlook properties, the default value for this property is the localized name of the property.</span></span> <span data-ttu-id="039ea-134">Для настраиваемых свойств Outlook значением по умолчанию для этого свойства является имя свойства.</span><span class="sxs-lookup"><span data-stu-id="039ea-134">For custom Outlook properties, the default value for this property is the name of the property.</span></span></para>
+          <para><span data-ttu-id="039ea-135">Значение этого свойства применяется только к подсказке для свойств Outlook, в которых заголовок столбца представлен в виде значка.</span><span class="sxs-lookup"><span data-stu-id="039ea-135">The value of this property applies only to the tooltip for Outlook properties in which the column header is represented as an icon.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -343,7 +343,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bcf8d-136">Возвращает родительский <b>объект</b> заданного объекта.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-136">Returns the parent <b>Object</b> of the specified object.</span></span> <span data-ttu-id="bcf8d-137">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-137">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="039ea-136">Возвращает родительский <b>объект</b> указанного объекта.</span><span class="sxs-lookup"><span data-stu-id="039ea-136">Returns the parent <b>Object</b> of the specified object.</span></span> <span data-ttu-id="039ea-137">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="039ea-137">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -371,9 +371,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bcf8d-138">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-138">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span></span> <span data-ttu-id="bcf8d-139">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-139">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="039ea-138">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса.</span><span class="sxs-lookup"><span data-stu-id="039ea-138">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span></span> <span data-ttu-id="039ea-139">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="039ea-139">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="bcf8d-140">Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-140">The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session.</span></span> <span data-ttu-id="bcf8d-141">Члены по своему назначению.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-141">Both members serve the same purpose.</span></span> <span data-ttu-id="bcf8d-142">Например следующие пары операторов выполнить те же функции.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-142">For example, the following pairs of statements perform the same function:</span></span></para>
+        <remarks><para><span data-ttu-id="039ea-140">Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса.</span><span class="sxs-lookup"><span data-stu-id="039ea-140">The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session.</span></span> <span data-ttu-id="039ea-141">Оба участника выполняют одну и ту же задачу.</span><span class="sxs-lookup"><span data-stu-id="039ea-141">Both members serve the same purpose.</span></span> <span data-ttu-id="039ea-142">Например, следующие пары операторов выполняют одну и ту же функцию:</span><span class="sxs-lookup"><span data-stu-id="039ea-142">For example, the following pairs of statements perform the same function:</span></span></para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -409,10 +409,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bcf8d-143">Возвращает или задает <b>Integer</b> (<b>целое</b> в C#) значение, указывающее приблизительно, например ширина столбца (в знаках).</span><span class="sxs-lookup"><span data-stu-id="bcf8d-143">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value indicating the approximate width (in characters) of the column.</span></span> <span data-ttu-id="bcf8d-144">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-144">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="039ea-143">Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), обозначающее приблизительную ширину столбца (в знаках).</span><span class="sxs-lookup"><span data-stu-id="039ea-143">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value indicating the approximate width (in characters) of the column.</span></span> <span data-ttu-id="039ea-144">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="039ea-144">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="bcf8d-145">Это свойство можно задать значение в диапазоне от 2 до 1024.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-145">This property can be set to a value between 2 and 1024.</span></span> <span data-ttu-id="bcf8d-146">Если это свойство задано значение меньше 2, свойство имеет значение 2.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-146">If this property is set to a value less than 2, the property is  set to 2.</span></span> <span data-ttu-id="bcf8d-147">Если значение этого свойства больше 1024, свойство имеет значение на 1024.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-147">If this property is set to a value greater than 1024, the property is set to 1024.</span></span></para>
-          <para><span data-ttu-id="bcf8d-148">Если значение этого свойства для каждого столбца в представлении меньше, чем общая ширина представления, а затем свойства <b>Width</b> <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> объект для последнего <see cref="T:Microsoft.Office.Interop.Outlook.ViewField" /> в представлении увеличиваются в соответствии с общая ширина представления.</span><span class="sxs-lookup"><span data-stu-id="bcf8d-148">If the value of this property for every column in a view is less than the total width of the view, then the <b>Width</b> property of the <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> object for the last <see cref="T:Microsoft.Office.Interop.Outlook.ViewField" /> in the view is increased to match the total width of the view.</span></span></para>
+        <remarks><para><span data-ttu-id="039ea-145">Для этого свойства можно задать значение от 2 до 1024.</span><span class="sxs-lookup"><span data-stu-id="039ea-145">This property can be set to a value between 2 and 1024.</span></span> <span data-ttu-id="039ea-146">Если для этого свойства задано значение меньше 2, свойству присвоено значение 2.</span><span class="sxs-lookup"><span data-stu-id="039ea-146">If this property is set to a value less than 2, the property is  set to 2.</span></span> <span data-ttu-id="039ea-147">Если для этого свойства задано значение больше 1024, свойству присваивается значение 1024.</span><span class="sxs-lookup"><span data-stu-id="039ea-147">If this property is set to a value greater than 1024, the property is set to 1024.</span></span></para>
+          <para><span data-ttu-id="039ea-148">Если значение этого свойства для каждого столбца в представлении меньше, чем общая ширина представления, то свойство <b>Width</b> <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> объекта для последнего <see cref="T:Microsoft.Office.Interop.Outlook.ViewField" /> представления в представлении увеличивается в сравнении с общей шириной представления.</span><span class="sxs-lookup"><span data-stu-id="039ea-148">If the value of this property for every column in a view is less than the total width of the view, then the <b>Width</b> property of the <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> object for the last <see cref="T:Microsoft.Office.Interop.Outlook.ViewField" /> in the view is increased to match the total width of the view.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>

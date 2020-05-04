@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="deea0-101">Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом.</span><span class="sxs-lookup"><span data-stu-id="deea0-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span></span> <span data-ttu-id="deea0-102">Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию.</span><span class="sxs-lookup"><span data-stu-id="deea0-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span></span> <span data-ttu-id="deea0-103">В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом.</span><span class="sxs-lookup"><span data-stu-id="deea0-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span></span> <span data-ttu-id="deea0-104">Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />.</span><span class="sxs-lookup"><span data-stu-id="deea0-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />.</span></span></summary>
+    <summary><span data-ttu-id="c88b4-101">Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM.</span><span class="sxs-lookup"><span data-stu-id="c88b4-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span></span> <span data-ttu-id="c88b4-102">Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий.</span><span class="sxs-lookup"><span data-stu-id="c88b4-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span></span> <span data-ttu-id="c88b4-103">Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM.</span><span class="sxs-lookup"><span data-stu-id="c88b4-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span></span> <span data-ttu-id="c88b4-104">Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />.</span><span class="sxs-lookup"><span data-stu-id="c88b4-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />.</span></span></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Actions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-105">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Actions" /> коллекции, представляющей всех доступных действий для элемента.</span><span class="sxs-lookup"><span data-stu-id="deea0-105">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Actions" />  collection that represents all the available actions for the item.</span></span> <span data-ttu-id="deea0-106">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-106">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-105">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Actions" /> коллекцию, которая представляет все доступные действия для элемента.</span><span class="sxs-lookup"><span data-stu-id="c88b4-105">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Actions" />  collection that represents all the available actions for the item.</span></span> <span data-ttu-id="c88b4-106">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-106">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,7 +73,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-107">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта.</span><span class="sxs-lookup"><span data-stu-id="deea0-107">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span></span> <span data-ttu-id="deea0-108">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-108">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-107">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта.</span><span class="sxs-lookup"><span data-stu-id="c88b4-107">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span></span> <span data-ttu-id="c88b4-108">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-108">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -101,7 +101,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Attachments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-109">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" /> объект, представляющий все вложения для заданного элемента.</span><span class="sxs-lookup"><span data-stu-id="deea0-109">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" />  object that represents all the attachments for the specified item.</span></span> <span data-ttu-id="deea0-110">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-110">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-109">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" /> объект, который представляет все вложения для указанного элемента.</span><span class="sxs-lookup"><span data-stu-id="c88b4-109">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" />  object that represents all the attachments for the specified item.</span></span> <span data-ttu-id="c88b4-110">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-110">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -132,7 +132,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-111">Значение <b>типа Boolean</b> (<b>bool</b> в C#), возвращает <b>значение True,</b> Если элемент был автоматически переадресовываться.</span><span class="sxs-lookup"><span data-stu-id="deea0-111">A <b>Boolean</b> (<b>bool</b> in C#) value that returns <b>True</b> if the item was automatically forwarded.</span></span> <span data-ttu-id="deea0-112">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-112">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-111"><b>Логическое</b> <b>значение (логическое</b> значение в C#), которое возвращает значение <b>true</b> , если элемент был автоматически переадресован.</span><span class="sxs-lookup"><span data-stu-id="c88b4-111">A <b>Boolean</b> (<b>bool</b> in C#) value that returns <b>True</b> if the item was automatically forwarded.</span></span> <span data-ttu-id="c88b4-112">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-112">Read/write.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -160,10 +160,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-113">Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), который определяет, является ли элемент автоматического разрешения конфликтов по результатам.</span><span class="sxs-lookup"><span data-stu-id="deea0-113">Returns a <b>Boolean</b> (<b>bool</b> in C#) that determines if the item is a winner of an automatic conflict resolution.</span></span> <span data-ttu-id="deea0-114">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-114">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-113">Возвращает <b>логическое значение</b> (<b>bool</b> в C#), определяющее, является ли элемент победителем автоматического разрешения конфликтов.</span><span class="sxs-lookup"><span data-stu-id="c88b4-113">Returns a <b>Boolean</b> (<b>bool</b> in C#) that determines if the item is a winner of an automatic conflict resolution.</span></span> <span data-ttu-id="c88b4-114">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-114">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-115">Значение <b>False</b> не обязательно означает, что элемент является проигравший автоматического разрешения конфликтов.</span><span class="sxs-lookup"><span data-stu-id="deea0-115">A value of <b>False</b> does not necessarily indicate that the item is a loser of an automatic conflict resolution.</span></span> <span data-ttu-id="deea0-116">Элемент может быть конфликтует с другим элементом.</span><span class="sxs-lookup"><span data-stu-id="deea0-116">The item could be in conflict with another item.</span></span></para>
-          <para><span data-ttu-id="deea0-117">Если у элемента есть <see cref="P:Microsoft.Office.Interop.Outlook.Conflicts.Count" /> из его <see cref="P:Microsoft.Office.Interop.Outlook._MeetingItem.Conflicts" /> свойство больше нуля и, если его свойство <b>AutoResolvedWinner</b> имеет <b>значение True</b>, автоматического разрешения конфликтов по результатам.</span><span class="sxs-lookup"><span data-stu-id="deea0-117">If an item has <see cref="P:Microsoft.Office.Interop.Outlook.Conflicts.Count" /> of its <see cref="P:Microsoft.Office.Interop.Outlook._MeetingItem.Conflicts" /> property greater than zero and if its <b>AutoResolvedWinner</b> property is <b>True</b>, it is a winner of an automatic conflict resolution.</span></span> <span data-ttu-id="deea0-118">С другой стороны Если элемент конфликтов и его свойство <b>AutoResolvedWinner</b> в <b>значение False</b>, это проигравших в автоматического разрешения конфликтов.</span><span class="sxs-lookup"><span data-stu-id="deea0-118">On the other hand, if the item is in conflict and has its <b>AutoResolvedWinner</b> property as <b>False</b>, it is a loser in an automatic conflict resolution.</span></span></para>
+        <remarks><para><span data-ttu-id="c88b4-115">Значение <b>false</b> не обязательно указывает, что элемент является проигравший при автоматическом разрешении конфликтов.</span><span class="sxs-lookup"><span data-stu-id="c88b4-115">A value of <b>False</b> does not necessarily indicate that the item is a loser of an automatic conflict resolution.</span></span> <span data-ttu-id="c88b4-116">Элемент может находиться в конфликте с другим элементом.</span><span class="sxs-lookup"><span data-stu-id="c88b4-116">The item could be in conflict with another item.</span></span></para>
+          <para><span data-ttu-id="c88b4-117"><see cref="P:Microsoft.Office.Interop.Outlook.Conflicts.Count" /> Если элемент имеет <see cref="P:Microsoft.Office.Interop.Outlook._MeetingItem.Conflicts" /> свойство, большее нуля, и если его свойство <b>AutoResolvedWinner</b> имеет <b>значение true</b>, то это победитель в автоматическом разрешении конфликтов.</span><span class="sxs-lookup"><span data-stu-id="c88b4-117">If an item has <see cref="P:Microsoft.Office.Interop.Outlook.Conflicts.Count" /> of its <see cref="P:Microsoft.Office.Interop.Outlook._MeetingItem.Conflicts" /> property greater than zero and if its <b>AutoResolvedWinner</b> property is <b>True</b>, it is a winner of an automatic conflict resolution.</span></span> <span data-ttu-id="c88b4-118">С другой стороны, если элемент находится в конфликте и его свойство <b>AutoResolvedWinner</b> имеет <b>значение false</b>, то оно проявляется проигравший при автоматическом разрешении конфликтов.</span><span class="sxs-lookup"><span data-stu-id="c88b4-118">On the other hand, if the item is in conflict and has its <b>AutoResolvedWinner</b> property as <b>False</b>, it is a loser in an automatic conflict resolution.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -193,9 +193,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-119">Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляет сведения об оплате, связанный с элементом Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-119">Returns or sets a <b>String</b> (<b>string</b> in C#) representing the billing information associated with the Outlook item.</span></span> <span data-ttu-id="deea0-120">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-120">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-119">Возвращает или задает <b>строку</b> (<b>строку</b> в C#), представляющую сведения о выставлении счетов, связанные с элементом Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-119">Returns or sets a <b>String</b> (<b>string</b> in C#) representing the billing information associated with the Outlook item.</span></span> <span data-ttu-id="c88b4-120">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-120">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-121">Это поле текст в свободной форме.</span><span class="sxs-lookup"><span data-stu-id="deea0-121">This is a free-form text field.</span></span></para>
+        <remarks><para><span data-ttu-id="c88b4-121">Это текстовое поле произвольной формы.</span><span class="sxs-lookup"><span data-stu-id="c88b4-121">This is a free-form text field.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -225,7 +225,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-122">Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляющее clear-текста элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-122">Returns or sets a <b>String</b> (<b>string</b> in C#) representing the clear-text body of the Outlook item.</span></span> <span data-ttu-id="deea0-123">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-123">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-122">Возвращает или задает <b>строку</b> (<b>строку</b> в C#), представляющую текст элемента Outlook в виде открытого текста.</span><span class="sxs-lookup"><span data-stu-id="c88b4-122">Returns or sets a <b>String</b> (<b>string</b> in C#) representing the clear-text body of the Outlook item.</span></span> <span data-ttu-id="c88b4-123">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-123">Read/write.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -256,11 +256,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-124">Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляющее категории, назначенные элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-124">Returns or sets a <b>String</b> (<b>string</b> in C#) representing the categories assigned to the Outlook item.</span></span> <span data-ttu-id="deea0-125">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-125">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-124">Возвращает или задает <b>строку</b> (<b>строку</b> в C#), представляющую категории, назначенные элементу Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-124">Returns or sets a <b>String</b> (<b>string</b> in C#) representing the categories assigned to the Outlook item.</span></span> <span data-ttu-id="c88b4-125">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-125">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-126">
-            <b>Категории</b> — это строка с разделителями имен категорий, назначенных для элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-126">
-            <b>Categories</b> is a delimited string of category names that have been assigned to an Outlook item.</span></span> <span data-ttu-id="deea0-127">Это свойство используется символа, указанного в имени sList в разделе Panel\International HKEY_CURRENT_USER\Control в реестре Windows в качестве разделителя для нескольких значений категории.</span><span class="sxs-lookup"><span data-stu-id="deea0-127">This property uses the character specified in the value name, sList, under HKEY_CURRENT_USER\Control Panel\International in the Windows registry, as the delimiter for multiple category values.</span></span> <span data-ttu-id="deea0-128">Чтобы преобразовать строку имен категорий массив имен категорий, используйте функцию Microsoft Visual Basic <b>разделения</b>.</span><span class="sxs-lookup"><span data-stu-id="deea0-128">To convert the string of category names to an array of category names, use the Microsoft Visual Basic function <b>Split</b>.</span></span></para>
+        <remarks><para><span data-ttu-id="c88b4-126">
+            <b>Categories</b> — это строка с разделителями имен категорий, которые были назначены элементу Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-126">
+            <b>Categories</b> is a delimited string of category names that have been assigned to an Outlook item.</span></span> <span data-ttu-id="c88b4-127">В этом свойстве используется символ, указанный в имени значения Слист в разделе HKEY_CURRENT_USER \Контрол Панел\интернатионал в реестре Windows в качестве разделителя для нескольких значений категорий.</span><span class="sxs-lookup"><span data-stu-id="c88b4-127">This property uses the character specified in the value name, sList, under HKEY_CURRENT_USER\Control Panel\International in the Windows registry, as the delimiter for multiple category values.</span></span> <span data-ttu-id="c88b4-128">Чтобы преобразовать строку имен категорий в массив имен категорий, используйте функцию <b>разделения</b>в Microsoft Visual Basic.</span><span class="sxs-lookup"><span data-stu-id="c88b4-128">To convert the string of category names to an array of category names, use the Microsoft Visual Basic function <b>Split</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -287,7 +287,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-129">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта.</span><span class="sxs-lookup"><span data-stu-id="deea0-129">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span></span> <span data-ttu-id="deea0-130">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-130">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-129">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта.</span><span class="sxs-lookup"><span data-stu-id="c88b4-129">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span></span> <span data-ttu-id="c88b4-130">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-130">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -315,8 +315,8 @@
         <Parameter Name="SaveMode" Type="Microsoft.Office.Interop.Outlook.OlInspectorClose" />
       </Parameters>
       <Docs>
-        <param name="SaveMode"><span data-ttu-id="deea0-131">Закрытие поведения.</span><span class="sxs-lookup"><span data-stu-id="deea0-131">The close behavior.</span></span> <span data-ttu-id="deea0-132">Если элемент, отображаемый в окне инспектора не был изменен, этот аргумент не оказывает влияния.</span><span class="sxs-lookup"><span data-stu-id="deea0-132">If the item displayed within the inspector has not been changed, this argument has no effect.</span></span></param>
-        <summary><span data-ttu-id="deea0-133">Закрывает и при необходимости сохраняет изменения элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-133">Closes and optionally saves changes to the Outlook item.</span></span></summary>
+        <param name="SaveMode"><span data-ttu-id="c88b4-131">Поведение при закрытии.</span><span class="sxs-lookup"><span data-stu-id="c88b4-131">The close behavior.</span></span> <span data-ttu-id="c88b4-132">Если элемент, отображаемый в инспекторе, не был изменен, этот аргумент не оказывает никакого действия.</span><span class="sxs-lookup"><span data-stu-id="c88b4-132">If the item displayed within the inspector has not been changed, this argument has no effect.</span></span></param>
+        <summary><span data-ttu-id="c88b4-133">Закрывается и при необходимости сохраняет изменения элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-133">Closes and optionally saves changes to the Outlook item.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -346,9 +346,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-134">Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляющих имена компаний, связанный с элементом Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-134">Returns or sets a <b>String</b> (<b>string</b> in C#) representing the names of the companies associated with the Outlook item.</span></span> <span data-ttu-id="deea0-135">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-135">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-134">Возвращает или задает <b>строку</b> (<b>строка</b> в C#), представляющую имена компаний, связанных с элементом Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-134">Returns or sets a <b>String</b> (<b>string</b> in C#) representing the names of the companies associated with the Outlook item.</span></span> <span data-ttu-id="c88b4-135">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-135">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-136">Это поле текст в свободной форме.</span><span class="sxs-lookup"><span data-stu-id="deea0-136">This is a free-form text field.</span></span> </para>
+        <remarks><para><span data-ttu-id="c88b4-136">Это текстовое поле произвольной формы.</span><span class="sxs-lookup"><span data-stu-id="c88b4-136">This is a free-form text field.</span></span> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -375,7 +375,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Conflicts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-137">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Conflicts" /> объект, представляющий элементов, находящихся в конфликта для любого объекта элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-137">Return the <see cref="T:Microsoft.Office.Interop.Outlook.Conflicts" /> object that represents the items that are in conflict for any Outlook item object.</span></span>  <span data-ttu-id="deea0-138">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-138">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-137">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Conflicts" /> объект, представляющий конфликтующие элементы для любого объекта элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-137">Return the <see cref="T:Microsoft.Office.Interop.Outlook.Conflicts" /> object that represents the items that are in conflict for any Outlook item object.</span></span>  <span data-ttu-id="c88b4-138">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-138">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -403,11 +403,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-139">Возвращает <b>строку</b> (<b>строка</b> в C#), который уникальным образом определяет <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объекта, который <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> принадлежит объект.</span><span class="sxs-lookup"><span data-stu-id="deea0-139">Returns a <b>String</b> (<b>string</b> in C#) that uniquely identifies a <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> object that the <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> object belongs to.</span></span> <span data-ttu-id="deea0-140">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-140">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-139">Возвращает <b>строку</b> (<b>строка</b> в C#), однозначно определяющую <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объект, к которому <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> принадлежит объект.</span><span class="sxs-lookup"><span data-stu-id="c88b4-139">Returns a <b>String</b> (<b>string</b> in C#) that uniquely identifies a <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> object that the <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> object belongs to.</span></span> <span data-ttu-id="c88b4-140">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-140">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-141">Это свойство связывает элементов с беседы.</span><span class="sxs-lookup"><span data-stu-id="deea0-141">This property associates items with a conversation.</span></span> <span data-ttu-id="deea0-142">Эти элементы и беседу с таким же значением в своем свойстве <b>ConversationID</b> .</span><span class="sxs-lookup"><span data-stu-id="deea0-142">These items and the conversation all have the same value in their <b>ConversationID</b> property.</span></span></para>
-          <para><span data-ttu-id="deea0-143">Это свойство соответствует со свойством MAPI <b>PidTagConversationId</b>.</span><span class="sxs-lookup"><span data-stu-id="deea0-143">This property corresponds with the MAPI property <b>PidTagConversationId</b>.</span></span></para>
-          <para><span data-ttu-id="deea0-144">Если объект <b>MeetingItem</b> создается в версии Microsoft Outlook, предшествующих Microsoft Outlook 2010 или Outlook выполняется в оперативном режиме для версии Microsoft Exchange Server, более ранних чем Microsoft Exchange Server 2010, это свойство Возвращает совпадает со значением <see cref="P:Microsoft.Office.Interop.Outlook._MeetingItem.ConversationTopic" /> свойство.</span><span class="sxs-lookup"><span data-stu-id="deea0-144">If the <b>MeetingItem</b> object is created in a version of Microsoft Outlook earlier than Microsoft Outlook 2010, or if Outlook is running in online mode against a version of Microsoft Exchange Server earlier than Microsoft Exchange Server 2010, this property returns the same value as the <see cref="P:Microsoft.Office.Interop.Outlook._MeetingItem.ConversationTopic" /> property.</span></span></para>
+        <remarks><para><span data-ttu-id="c88b4-141">Это свойство связывает элементы с разговором.</span><span class="sxs-lookup"><span data-stu-id="c88b4-141">This property associates items with a conversation.</span></span> <span data-ttu-id="c88b4-142">Эти элементы и беседа имеют одно и то же значение в свойстве <b>ConversationID</b> .</span><span class="sxs-lookup"><span data-stu-id="c88b4-142">These items and the conversation all have the same value in their <b>ConversationID</b> property.</span></span></para>
+          <para><span data-ttu-id="c88b4-143">Это свойство соответствует свойству MAPI <b>пидтагконверсатионид</b>.</span><span class="sxs-lookup"><span data-stu-id="c88b4-143">This property corresponds with the MAPI property <b>PidTagConversationId</b>.</span></span></para>
+          <para><span data-ttu-id="c88b4-144">Если объект <b>MeetingItem</b> создан в более ранней версии Microsoft Outlook, чем microsoft Outlook 2010, или если Outlook работает в интерактивном режиме с версией Microsoft Exchange Server более ранней, чем Microsoft exchange Server 2010, это свойство возвращает то же значение, что <see cref="P:Microsoft.Office.Interop.Outlook._MeetingItem.ConversationTopic" /> и свойство.</span><span class="sxs-lookup"><span data-stu-id="c88b4-144">If the <b>MeetingItem</b> object is created in a version of Microsoft Outlook earlier than Microsoft Outlook 2010, or if Outlook is running in online mode against a version of Microsoft Exchange Server earlier than Microsoft Exchange Server 2010, this property returns the same value as the <see cref="P:Microsoft.Office.Interop.Outlook._MeetingItem.ConversationTopic" /> property.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -434,7 +434,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-145">Возвращает <b>строку</b> (<b>строка</b> в C#) представляющий индекс предмету элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-145">Returns a <b>String</b> (<b>string</b> in C#) representing the index of the conversation thread of the Outlook item.</span></span> <span data-ttu-id="deea0-146">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-146">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-145">Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую индекс потока бесед элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-145">Returns a <b>String</b> (<b>string</b> in C#) representing the index of the conversation thread of the Outlook item.</span></span> <span data-ttu-id="c88b4-146">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-146">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -462,7 +462,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-147">Возвращает <b>строку</b> (<b>строка</b> в C#) представляющий раздел предмету элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-147">Returns a <b>String</b> (<b>string</b> in C#) representing the topic of the conversation thread of the Outlook item.</span></span> <span data-ttu-id="deea0-148">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-148">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-147">Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую раздел цепочки бесед элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-147">Returns a <b>String</b> (<b>string</b> in C#) representing the topic of the conversation thread of the Outlook item.</span></span> <span data-ttu-id="c88b4-148">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-148">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -488,8 +488,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="deea0-149">Создает другого экземпляра объекта.</span><span class="sxs-lookup"><span data-stu-id="deea0-149">Creates another instance of an object.</span></span></summary>
-        <returns><span data-ttu-id="deea0-150">Возвращает <see cref="T:System.Object" /> то есть копию собрания родительского элемента.</span><span class="sxs-lookup"><span data-stu-id="deea0-150">Returns an <see cref="T:System.Object" /> that is a copy of the parent meeting item.</span></span></returns>
+        <summary><span data-ttu-id="c88b4-149">Создает еще один экземпляр объекта.</span><span class="sxs-lookup"><span data-stu-id="c88b4-149">Creates another instance of an object.</span></span></summary>
+        <returns><span data-ttu-id="c88b4-150">Возвращает объект <see cref="T:System.Object" /> , который является копией родительского элемента собрания.</span><span class="sxs-lookup"><span data-stu-id="c88b4-150">Returns an <see cref="T:System.Object" /> that is a copy of the parent meeting item.</span></span></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -516,9 +516,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-151">Возвращает <b>даты и времени</b> , которое указывает время создания элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-151">Returns a <b>DateTime</b> indicating the creation time for the Outlook item.</span></span> <span data-ttu-id="deea0-152">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-152">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-151">Возвращает <b>значение типа DateTime</b> , указывающее время создания элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-151">Returns a <b>DateTime</b> indicating the creation time for the Outlook item.</span></span> <span data-ttu-id="c88b4-152">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-152">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-153">Это свойство соответствует свойству MAPI <b>PidTagCreationTime</b>.</span><span class="sxs-lookup"><span data-stu-id="deea0-153">This property corresponds to the MAPI property <b>PidTagCreationTime</b>.</span></span> </para>
+        <remarks><para><span data-ttu-id="c88b4-153">Это свойство соответствует свойству MAPI <b>PidTagCreationTime</b>.</span><span class="sxs-lookup"><span data-stu-id="c88b4-153">This property corresponds to the MAPI property <b>PidTagCreationTime</b>.</span></span> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -548,9 +548,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-154">Возвращает или задает <b>даты и времени</b> , указывающее дату и время сообщения электронной почты должен быть доставлено.</span><span class="sxs-lookup"><span data-stu-id="deea0-154">Returns or sets a <b>DateTime</b> indicating the date and time the mail message is to be delivered.</span></span>  <span data-ttu-id="deea0-155">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-155">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-154">Возвращает или задает <b>значение DateTime</b> , указывающее дату и время доставки почтового сообщения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-154">Returns or sets a <b>DateTime</b> indicating the date and time the mail message is to be delivered.</span></span>  <span data-ttu-id="c88b4-155">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-155">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-156">Это свойство соответствует свойству MAPI <b>PidTagDeferredDeliveryTime</b>.</span><span class="sxs-lookup"><span data-stu-id="deea0-156">This property corresponds to the MAPI property <b>PidTagDeferredDeliveryTime</b>.</span></span></para>
+        <remarks><para><span data-ttu-id="c88b4-156">Это свойство соответствует свойству MAPI <b>PidTagDeferredDeliveryTime</b>.</span><span class="sxs-lookup"><span data-stu-id="c88b4-156">This property corresponds to the MAPI property <b>PidTagDeferredDeliveryTime</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -575,9 +575,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="deea0-157">Удаляет элемент из папки, содержащей элемент.</span><span class="sxs-lookup"><span data-stu-id="deea0-157">Removes the item from the folder that contains the item.</span></span></summary>
-        <remarks><para><span data-ttu-id="deea0-158">Метод <b>Delete</b> удаляет одного элемента в коллекции.</span><span class="sxs-lookup"><span data-stu-id="deea0-158">The <b>Delete</b> method deletes a single item in a collection.</span></span> <span data-ttu-id="deea0-159">Чтобы удалить все элементы в <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> коллекцию папки, необходимо удалить каждого элемента, начиная с последнего элемента в папке.</span><span class="sxs-lookup"><span data-stu-id="deea0-159">To delete all items in the <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> collection of a folder, you must delete each item starting with the last item in the folder.</span></span> <span data-ttu-id="deea0-160">К примеру в коллекции элементов папки AllItems, при n число элементов в папке, запуска удаления элемент по AllItems.Item(n), уменьшение индекс каждый раз, пока не будет удален AllItems.Item(1).</span><span class="sxs-lookup"><span data-stu-id="deea0-160">For example, in the items collection of a folder, AllItems, if there are n number of items in the folder, start deleting the item at AllItems.Item(n), decrementing the index each time until you delete AllItems.Item(1).</span></span></para>
-          <para><span data-ttu-id="deea0-161">Метод Delete Перемещение элемента в папке, в которой для папки «Удаленные».</span><span class="sxs-lookup"><span data-stu-id="deea0-161">The Delete method moves the item from the containing folder to the Deleted Items folder.</span></span> <span data-ttu-id="deea0-162">Если содержащей папки папки «Удаленные», метод <b>Delete</b> удаляет элемент без возможности восстановления.</span><span class="sxs-lookup"><span data-stu-id="deea0-162">If the containing folder is the Deleted Items folder, the <b>Delete</b> method removes the item permanently.</span></span></para>
+        <summary><span data-ttu-id="c88b4-157">Удаляет элемент из папки, содержащей элемент.</span><span class="sxs-lookup"><span data-stu-id="c88b4-157">Removes the item from the folder that contains the item.</span></span></summary>
+        <remarks><para><span data-ttu-id="c88b4-158">Метод <b>Delete</b> удаляет один элемент в коллекции.</span><span class="sxs-lookup"><span data-stu-id="c88b4-158">The <b>Delete</b> method deletes a single item in a collection.</span></span> <span data-ttu-id="c88b4-159">Чтобы удалить все элементы в <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> коллекции папки, необходимо удалить каждый элемент, начиная с последнего элемента в папке.</span><span class="sxs-lookup"><span data-stu-id="c88b4-159">To delete all items in the <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> collection of a folder, you must delete each item starting with the last item in the folder.</span></span> <span data-ttu-id="c88b4-160">Например, в коллекции Items папки AllItems, если в папке n количество элементов, начните удалять элемент по адресу AllItems. Item (n), уменьшая индекс до тех пор, пока не будет удален AllItems. Item (1).</span><span class="sxs-lookup"><span data-stu-id="c88b4-160">For example, in the items collection of a folder, AllItems, if there are n number of items in the folder, start deleting the item at AllItems.Item(n), decrementing the index each time until you delete AllItems.Item(1).</span></span></para>
+          <para><span data-ttu-id="c88b4-161">Метод Delete перемещает элемент из содержащей его папки в папку "Удаленные".</span><span class="sxs-lookup"><span data-stu-id="c88b4-161">The Delete method moves the item from the containing folder to the Deleted Items folder.</span></span> <span data-ttu-id="c88b4-162">Если папка содержит папку "Удаленные", метод <b>Delete</b> удаляет элемент без возможности восстановления.</span><span class="sxs-lookup"><span data-stu-id="c88b4-162">If the containing folder is the Deleted Items folder, the <b>Delete</b> method removes the item permanently.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -607,7 +607,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-163">Возвращает или задает значение <b>типа Boolean</b> (<b>bool</b> в C#), который имеет <b>значение True</b> , если копия сообщения электронной почты не сохраняется после отправки и <b>значение False</b> , если сохранения копии.</span><span class="sxs-lookup"><span data-stu-id="deea0-163">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) value that is <b>True</b> if a copy of the mail message is not saved upon being sent, and <b>False</b> if a copy is saved.</span></span> <span data-ttu-id="deea0-164">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-164">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-163">Возвращает или задает значение <b>Boolean</b> (<b>bool</b> in C#), которое имеет значение <b>true</b> , если копия почтового сообщения не сохраняется при отправке, и <b>false</b> в случае сохранения копии.</span><span class="sxs-lookup"><span data-stu-id="c88b4-163">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) value that is <b>True</b> if a copy of the mail message is not saved upon being sent, and <b>False</b> if a copy is saved.</span></span> <span data-ttu-id="c88b4-164">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-164">Read/write.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -634,10 +634,10 @@
         <Parameter Name="Modal" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Modal"><span data-ttu-id="deea0-165"><b>Значение true,</b> чтобы сделать модальные окна.</span><span class="sxs-lookup"><span data-stu-id="deea0-165"><b>True</b> to make the window modal.</span></span> <span data-ttu-id="deea0-166">Значение по умолчанию — <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="deea0-166">The default value is <b>False</b>.</span></span></param>
-        <summary><span data-ttu-id="deea0-167">Отображает новый <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объект для элемента.</span><span class="sxs-lookup"><span data-stu-id="deea0-167">Displays a new <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> object for the item.</span></span></summary>
-        <remarks><para><span data-ttu-id="deea0-168">Метод <b>отображения</b> поддерживается для windows explorer и инспектора для обратной совместимости.</span><span class="sxs-lookup"><span data-stu-id="deea0-168">The <b>Display</b> method is supported for explorer and inspector windows for the sake of backward compatibility.</span></span> <span data-ttu-id="deea0-169">Чтобы активировать окна проводника или инспектора, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.Activate" /> метод.</span><span class="sxs-lookup"><span data-stu-id="deea0-169">To activate an explorer or inspector window, use the <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.Activate" /> method.</span></span></para>
-          <para><span data-ttu-id="deea0-170">При попытке открыть объект «небезопасные» файловой системы (или файл «freedoc») с помощью объектной модели Microsoft Outlook, вы получаете код возврата E_FAIL на языках C или C++ программирования.</span><span class="sxs-lookup"><span data-stu-id="deea0-170">If you attempt to open an "unsafe" file system object (or "freedoc" file) by using the Microsoft Outlook object model, you receive the E_FAIL return code in the C or C++ programming languages.</span></span> <span data-ttu-id="deea0-171">В Outlook 2000 и более ранних версий то пользователь может открыть объекта системы «небезопасных» файлов с помощью метода <b>отображения</b> .</span><span class="sxs-lookup"><span data-stu-id="deea0-171">In Outlook 2000 and earlier, you could open an "unsafe" file system object by using the <b>Display</b> method.</span></span></para>
+        <param name="Modal"><span data-ttu-id="c88b4-165"><b>Значение true</b> , чтобы сделать окно модальным.</span><span class="sxs-lookup"><span data-stu-id="c88b4-165"><b>True</b> to make the window modal.</span></span> <span data-ttu-id="c88b4-166">Значение по умолчанию — <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="c88b4-166">The default value is <b>False</b>.</span></span></param>
+        <summary><span data-ttu-id="c88b4-167">Отображает новый <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объект для элемента.</span><span class="sxs-lookup"><span data-stu-id="c88b4-167">Displays a new <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> object for the item.</span></span></summary>
+        <remarks><para><span data-ttu-id="c88b4-168">Метод <b>Display</b> поддерживается для окон проводника и инспектора в целях обратной совместимости.</span><span class="sxs-lookup"><span data-stu-id="c88b4-168">The <b>Display</b> method is supported for explorer and inspector windows for the sake of backward compatibility.</span></span> <span data-ttu-id="c88b4-169">Чтобы активировать окно проводника или инспектора, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.Activate" /> метод.</span><span class="sxs-lookup"><span data-stu-id="c88b4-169">To activate an explorer or inspector window, use the <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.Activate" /> method.</span></span></para>
+          <para><span data-ttu-id="c88b4-170">При попытке открыть "небезопасный" объект файловой системы (или "файл фридок") с помощью объектной модели Microsoft Outlook вы получаете E_FAIL код возврата на языках программирования C или C++.</span><span class="sxs-lookup"><span data-stu-id="c88b4-170">If you attempt to open an "unsafe" file system object (or "freedoc" file) by using the Microsoft Outlook object model, you receive the E_FAIL return code in the C or C++ programming languages.</span></span> <span data-ttu-id="c88b4-171">В Outlook 2000 и более ранних версий можно открыть "небезопасную" объект файловой системы с помощью метода <b>Display</b> .</span><span class="sxs-lookup"><span data-stu-id="c88b4-171">In Outlook 2000 and earlier, you could open an "unsafe" file system object by using the <b>Display</b> method.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -664,7 +664,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlDownloadState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-172">Возвращает константу, к которой принадлежит <see cref="T:Microsoft.Office.Interop.Outlook.OlDownloadState" /> перечисление, указывающее состояние загрузки элемента.</span><span class="sxs-lookup"><span data-stu-id="deea0-172">Returns a constant that belongs to the <see cref="T:Microsoft.Office.Interop.Outlook.OlDownloadState" /> enumeration indicating the download state of the item.</span></span> <span data-ttu-id="deea0-173">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-173">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-172">Возвращает константу, принадлежащую <see cref="T:Microsoft.Office.Interop.Outlook.OlDownloadState" /> перечислению, указывающее состояние скачивания элемента.</span><span class="sxs-lookup"><span data-stu-id="c88b4-172">Returns a constant that belongs to the <see cref="T:Microsoft.Office.Interop.Outlook.OlDownloadState" /> enumeration indicating the download state of the item.</span></span> <span data-ttu-id="c88b4-173">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-173">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -692,10 +692,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-174">Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее уникальный идентификатор записи объекта.</span><span class="sxs-lookup"><span data-stu-id="deea0-174">Returns a <b>String</b> (<b>string</b> in C#) representing the unique Entry ID of the object.</span></span>  <span data-ttu-id="deea0-175">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-175">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-174">Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую уникальный идентификатор записи объекта.</span><span class="sxs-lookup"><span data-stu-id="c88b4-174">Returns a <b>String</b> (<b>string</b> in C#) representing the unique Entry ID of the object.</span></span>  <span data-ttu-id="c88b4-175">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-175">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-176">Это свойство соответствует свойству MAPI <b>PidTagEntryId</b>.</span><span class="sxs-lookup"><span data-stu-id="deea0-176">This property corresponds to the MAPI property <b>PidTagEntryId</b>.</span></span></para>
-          <para><span data-ttu-id="deea0-177">Поставщик хранилища MAPI назначает строка уникального идентификатора при создании элемента в хранилище.</span><span class="sxs-lookup"><span data-stu-id="deea0-177">A MAPI store provider assigns a unique ID string when an item is created in its store.</span></span> <span data-ttu-id="deea0-178">Таким образом свойство <b>EntryID</b> не задан для элемента Outlook до отправки или сохранения.</span><span class="sxs-lookup"><span data-stu-id="deea0-178">Therefore, the <b>EntryID</b> property is not set for an Outlook item until it is saved or sent.</span></span> <span data-ttu-id="deea0-179">Идентификатор записи изменений при перемещении элемента в другом хранилище, например, из папки "Входящие" в общую папку Microsoft Exchange Server или из одного файла личных папок (PST) другой PST-файл.</span><span class="sxs-lookup"><span data-stu-id="deea0-179">The Entry ID changes when an item is moved into another store, for example, from your Inbox to a Microsoft Exchange Server public folder, or from one Personal Folders (.pst) file to another .pst file.</span></span> <span data-ttu-id="deea0-180">Решения не должны зависеть от <b>EntryID</b> свойство должно быть уникальным, пока не будут перемещаться элементов.</span><span class="sxs-lookup"><span data-stu-id="deea0-180">Solutions should not depend on the <b>EntryID</b> property to be unique unless items will not be moved.</span></span> <span data-ttu-id="deea0-181">Свойство <b>EntryID</b> возвращает MAPI долгосрочного идентификатором записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-181">The <b>EntryID</b> property returns a MAPI long-term Entry ID.</span></span> <span data-ttu-id="deea0-182">Для получения дополнительных сведений о long - и short - term EntryIDs, http://msdn.microsoft.com для <b>PidTagEntryId</b>.</span><span class="sxs-lookup"><span data-stu-id="deea0-182">For more information about long- and short-term EntryIDs, search http://msdn.microsoft.com for <b>PidTagEntryId</b>.</span></span> </para>
+        <remarks><para><span data-ttu-id="c88b4-176">Это свойство соответствует свойству MAPI <b>PidTagEntryId</b>.</span><span class="sxs-lookup"><span data-stu-id="c88b4-176">This property corresponds to the MAPI property <b>PidTagEntryId</b>.</span></span></para>
+          <para><span data-ttu-id="c88b4-177">Поставщик хранилища MAPI назначает строку уникального идентификатора при создании элемента в хранилище.</span><span class="sxs-lookup"><span data-stu-id="c88b4-177">A MAPI store provider assigns a unique ID string when an item is created in its store.</span></span> <span data-ttu-id="c88b4-178">Таким образом, свойство <b>EntryID</b> не задается для элемента Outlook, пока он не будет сохранен или отправлен.</span><span class="sxs-lookup"><span data-stu-id="c88b4-178">Therefore, the <b>EntryID</b> property is not set for an Outlook item until it is saved or sent.</span></span> <span data-ttu-id="c88b4-179">Идентификатор записи изменяется при перемещении элемента в другое хранилище, например из папки "Входящие" в общую папку Microsoft Exchange Server или из одного PST-файла личных папок в другой PST-файл.</span><span class="sxs-lookup"><span data-stu-id="c88b4-179">The Entry ID changes when an item is moved into another store, for example, from your Inbox to a Microsoft Exchange Server public folder, or from one Personal Folders (.pst) file to another .pst file.</span></span> <span data-ttu-id="c88b4-180">Решения не должны зависеть от уникальности свойства <b>EntryID</b> , если не перемещение элементов не будет выполняться.</span><span class="sxs-lookup"><span data-stu-id="c88b4-180">Solutions should not depend on the <b>EntryID</b> property to be unique unless items will not be moved.</span></span> <span data-ttu-id="c88b4-181">Свойство <b>EntryID</b> возвращает идентификатор записи долгосрочного термина MAPI.</span><span class="sxs-lookup"><span data-stu-id="c88b4-181">The <b>EntryID</b> property returns a MAPI long-term Entry ID.</span></span> <span data-ttu-id="c88b4-182">Для получения дополнительных сведений о долгосрочных и краткосрочных идентификаторами EntryID выполните поиск http://msdn.microsoft.com по <b>PidTagEntryId</b>.</span><span class="sxs-lookup"><span data-stu-id="c88b4-182">For more information about long- and short-term EntryIDs, search http://msdn.microsoft.com for <b>PidTagEntryId</b>.</span></span> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -725,7 +725,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-183">Возвращает или задает <b>даты и времени</b> , которое указывает дату и время становится недействительным элемента и его можно удалить.</span><span class="sxs-lookup"><span data-stu-id="deea0-183">Returns or sets a <b>DateTime</b> indicating the date and time at which the item becomes invalid and can be deleted.</span></span> <span data-ttu-id="deea0-184">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-184">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-183">Возвращает или задает <b>значение DateTime</b> , указывающее дату и время, когда элемент становится недопустимым и может быть удален.</span><span class="sxs-lookup"><span data-stu-id="c88b4-183">Returns or sets a <b>DateTime</b> indicating the date and time at which the item becomes invalid and can be deleted.</span></span> <span data-ttu-id="c88b4-184">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-184">Read/write.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -762,7 +762,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-185">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span><span class="sxs-lookup"><span data-stu-id="deea0-185">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-185">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span><span class="sxs-lookup"><span data-stu-id="c88b4-185">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -799,7 +799,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlFlagIcon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-186">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span><span class="sxs-lookup"><span data-stu-id="deea0-186">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-186">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span><span class="sxs-lookup"><span data-stu-id="c88b4-186">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -836,7 +836,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-187">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span><span class="sxs-lookup"><span data-stu-id="deea0-187">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-187">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span><span class="sxs-lookup"><span data-stu-id="c88b4-187">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -873,7 +873,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlFlagStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-188">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span><span class="sxs-lookup"><span data-stu-id="deea0-188">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-188">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span><span class="sxs-lookup"><span data-stu-id="c88b4-188">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -901,7 +901,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.FormDescription</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-189">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.FormDescription" /> объект, представляющий описание формы для указанного элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-189">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.FormDescription" />  object that represents the form description for the specified Outlook item.</span></span> <span data-ttu-id="deea0-190">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-190">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-189">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.FormDescription" /> объект, представляющий описание формы для указанного элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-189">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.FormDescription" />  object that represents the form description for the specified Outlook item.</span></span> <span data-ttu-id="c88b4-190">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-190">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -927,8 +927,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="deea0-191">Выполняет прямого действия для элемента и возвращает результирующую Копировать как <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> объекта.</span><span class="sxs-lookup"><span data-stu-id="deea0-191">Executes the Forward action for an item and returns the resulting copy as a <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> object.</span></span></summary>
-        <returns><span data-ttu-id="deea0-192">Объект <b>MeetingItem</b> , представляющий новый элемент собрания.</span><span class="sxs-lookup"><span data-stu-id="deea0-192">A <b>MeetingItem</b> object that represents the new meeting item.</span></span></returns>
+        <summary><span data-ttu-id="c88b4-191">Выполняет действие Forward для элемента и возвращает полученную копию в виде <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> объекта.</span><span class="sxs-lookup"><span data-stu-id="c88b4-191">Executes the Forward action for an item and returns the resulting copy as a <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> object.</span></span></summary>
+        <returns><span data-ttu-id="c88b4-192">Объект <b>MeetingItem</b> , представляющий новый элемент собрания.</span><span class="sxs-lookup"><span data-stu-id="c88b4-192">A <b>MeetingItem</b> object that represents the new meeting item.</span></span></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -955,9 +955,9 @@
         <Parameter Name="AddToCalendar" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="AddToCalendar"><span data-ttu-id="deea0-193"><b>Значение true,</b> Чтобы добавить собрания в папке календаря по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="deea0-193"><b>True</b> to add the meeting to the default Calendar folder.</span></span></param>
-        <summary><span data-ttu-id="deea0-194">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объект, представляющий встречи, связанного с приглашения на собрание.</span><span class="sxs-lookup"><span data-stu-id="deea0-194">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />  object that represents the appointment associated with the meeting request.</span></span></summary>
-        <returns><span data-ttu-id="deea0-195">Объект <b>AppointmentItem</b> , который представляет связанной встречи.</span><span class="sxs-lookup"><span data-stu-id="deea0-195">An <b>AppointmentItem</b> object that represents the associated appointment.</span></span></returns>
+        <param name="AddToCalendar"><span data-ttu-id="c88b4-193"><b>Значение true</b> , чтобы добавить собрание в папку "Календарь" по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="c88b4-193"><b>True</b> to add the meeting to the default Calendar folder.</span></span></param>
+        <summary><span data-ttu-id="c88b4-194">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объект, представляющий встречу, связанную с приглашением на собрание.</span><span class="sxs-lookup"><span data-stu-id="c88b4-194">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />  object that represents the appointment associated with the meeting request.</span></span></summary>
+        <returns><span data-ttu-id="c88b4-195">Объект <b>AppointmentItem</b> , представляющий связанную встречу.</span><span class="sxs-lookup"><span data-stu-id="c88b4-195">An <b>AppointmentItem</b> object that represents the associated appointment.</span></span></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -982,23 +982,23 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="deea0-196">Получает <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объект, представляющий беседы, к которому принадлежит этот элемент.</span><span class="sxs-lookup"><span data-stu-id="deea0-196">Obtains a <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> object that represents the conversation to which this item belongs.</span></span></summary>
-        <returns><span data-ttu-id="deea0-197">Возвращает объект <b>беседы</b> , представляющий беседы, к которому принадлежит этот элемент.</span><span class="sxs-lookup"><span data-stu-id="deea0-197">Returns a <b>Conversation</b> object that represents the conversation to which this item belongs.</span></span></returns>
-        <remarks><para><span data-ttu-id="deea0-198">
-            <b>GetConversation</b> возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если беседы не существует для элемента.</span><span class="sxs-lookup"><span data-stu-id="deea0-198">
-            <b>GetConversation</b> returns <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#) if no conversation exists for the item.</span></span> <span data-ttu-id="deea0-199">Беседы не существует для элемента в следующих сценариях:</span><span class="sxs-lookup"><span data-stu-id="deea0-199">No conversation exists for an item in the following scenarios:</span></span></para>
+        <summary><span data-ttu-id="c88b4-196">Получает <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объект, представляющий беседу, к которой принадлежит данный элемент.</span><span class="sxs-lookup"><span data-stu-id="c88b4-196">Obtains a <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> object that represents the conversation to which this item belongs.</span></span></summary>
+        <returns><span data-ttu-id="c88b4-197">Возвращает объект <b>CONVERSATION</b> , представляющий беседу, к которой принадлежит данный элемент.</span><span class="sxs-lookup"><span data-stu-id="c88b4-197">Returns a <b>Conversation</b> object that represents the conversation to which this item belongs.</span></span></returns>
+        <remarks><para><span data-ttu-id="c88b4-198">
+            <b>GetConversation</b> Параметр GetItem возвращает <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если для элемента не существует беседы.</span><span class="sxs-lookup"><span data-stu-id="c88b4-198">
+            <b>GetConversation</b> returns <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#) if no conversation exists for the item.</span></span> <span data-ttu-id="c88b4-199">Не существует беседы для элемента в следующих сценариях:</span><span class="sxs-lookup"><span data-stu-id="c88b4-199">No conversation exists for an item in the following scenarios:</span></span></para>
           <list type="bullet">
             <item>
-              <para><span data-ttu-id="deea0-200">Элемент не был сохранен.</span><span class="sxs-lookup"><span data-stu-id="deea0-200">The item has not been saved.</span></span> <span data-ttu-id="deea0-201">Элемент можно сохранить программным способом, с помощью пользовательских действий или путем автоматического сохранения.</span><span class="sxs-lookup"><span data-stu-id="deea0-201">An item can be saved programmatically, by user action, or by auto-save.</span></span></para>
+              <para><span data-ttu-id="c88b4-200">Элемент не был сохранен.</span><span class="sxs-lookup"><span data-stu-id="c88b4-200">The item has not been saved.</span></span> <span data-ttu-id="c88b4-201">Элемент можно сохранить программным способом, действием пользователя или автоматическим сохранением.</span><span class="sxs-lookup"><span data-stu-id="c88b4-201">An item can be saved programmatically, by user action, or by auto-save.</span></span></para>
             </item>
             <item>
-              <para><span data-ttu-id="deea0-202">В элементе, которое можно отправить (для примера, почтовый элемент, элемента встречи или элемента контакта) не было отправлено элемента.</span><span class="sxs-lookup"><span data-stu-id="deea0-202">For an item that can be sent (for example, a mail item, appointment item, or contact item), the item has not been sent.</span></span></para>
+              <para><span data-ttu-id="c88b4-202">Для элемента, который может быть отправлен (например, почтового элемента, элемента встречи или элемента контакта), элемент не был отправлен.</span><span class="sxs-lookup"><span data-stu-id="c88b4-202">For an item that can be sent (for example, a mail item, appointment item, or contact item), the item has not been sent.</span></span></para>
             </item>
             <item>
-              <para><span data-ttu-id="deea0-203">Беседы были отключены с помощью реестра Windows.</span><span class="sxs-lookup"><span data-stu-id="deea0-203">Conversations have been disabled through the Windows registry.</span></span></para>
+              <para><span data-ttu-id="c88b4-203">Беседы отключены в реестре Windows.</span><span class="sxs-lookup"><span data-stu-id="c88b4-203">Conversations have been disabled through the Windows registry.</span></span></para>
             </item>
             <item>
-              <para><span data-ttu-id="deea0-204">Хранилище не поддерживает представление беседы (например, Outlook может работать в классическом режиме online для версии Microsoft Exchange, более ранних чем Microsoft Exchange Server 2010).</span><span class="sxs-lookup"><span data-stu-id="deea0-204">The store does not support the conversation view (for example, Outlook is running in classic online mode against a version of Microsoft Exchange earlier than Microsoft Exchange Server 2010).</span></span> <span data-ttu-id="deea0-205">Использование <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsConversationEnabled" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекта, чтобы определить, поддерживает ли хранилище представление беседы.</span><span class="sxs-lookup"><span data-stu-id="deea0-205">Use the <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsConversationEnabled" /> property of the <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> object to determine whether the store supports the conversation view.</span></span></para>
+              <para><span data-ttu-id="c88b4-204">Хранилище не поддерживает представление беседы (например, Outlook работает в классическом режиме Online в более ранней версии Microsoft Exchange, чем Microsoft Exchange Server 2010).</span><span class="sxs-lookup"><span data-stu-id="c88b4-204">The store does not support the conversation view (for example, Outlook is running in classic online mode against a version of Microsoft Exchange earlier than Microsoft Exchange Server 2010).</span></span> <span data-ttu-id="c88b4-205">Используйте <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsConversationEnabled" /> свойство <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекта, чтобы определить, поддерживает ли хранилище представление беседы.</span><span class="sxs-lookup"><span data-stu-id="c88b4-205">Use the <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsConversationEnabled" /> property of the <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> object to determine whether the store supports the conversation view.</span></span></para>
             </item>
           </list>
           <para> </para></remarks>
@@ -1027,9 +1027,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Inspector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-206">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> инициализируется объект, представляющий инспектора наличия указанного элемента.</span><span class="sxs-lookup"><span data-stu-id="deea0-206">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" />  object that represents an inspector initialized to contain the specified item.</span></span> <span data-ttu-id="deea0-207">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-207">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-206">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объект, представляющий инспектор, инициализированный для размещения указанного элемента.</span><span class="sxs-lookup"><span data-stu-id="c88b4-206">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" />  object that represents an inspector initialized to contain the specified item.</span></span> <span data-ttu-id="c88b4-207">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-207">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-208">Это свойство можно использовать для возвращения новый объект <b>инспектора</b> для отображения элемента, а не с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Application.ActiveInspector" /> метод и параметр <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.CurrentItem" /> свойство.</span><span class="sxs-lookup"><span data-stu-id="deea0-208">This property is useful for returning a new <b>Inspector</b> object in which to display the item, as opposed to using the <see cref="M:Microsoft.Office.Interop.Outlook._Application.ActiveInspector" />  method and setting the <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.CurrentItem" /> property.</span></span> <span data-ttu-id="deea0-209">Если объект <b>инспектора</b> уже существует для элемента, свойство <b>GetInspector</b> возвращает объект <b>инспектора</b> вместо создания новой.</span><span class="sxs-lookup"><span data-stu-id="deea0-209">If an <b>Inspector</b> object already exists for the item, the <b>GetInspector</b> property will return that <b>Inspector</b> object instead of creating a new one.</span></span></para>
+        <remarks><para><span data-ttu-id="c88b4-208">Это свойство полезно для возврата нового объекта <b>инспектора</b> , в котором будет отображаться элемент, а не с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Application.ActiveInspector" /> метода и установки <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.CurrentItem" /> свойства.</span><span class="sxs-lookup"><span data-stu-id="c88b4-208">This property is useful for returning a new <b>Inspector</b> object in which to display the item, as opposed to using the <see cref="M:Microsoft.Office.Interop.Outlook._Application.ActiveInspector" />  method and setting the <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.CurrentItem" /> property.</span></span> <span data-ttu-id="c88b4-209">Если для элемента уже существует объект <b>инспектора</b> <b>, свойство GetProperty возвратит этот объект</b> <b>инспектора</b> , а не создает новый объект.</span><span class="sxs-lookup"><span data-stu-id="c88b4-209">If an <b>Inspector</b> object already exists for the item, the <b>GetInspector</b> property will return that <b>Inspector</b> object instead of creating a new one.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1059,9 +1059,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlImportance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-210">Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlImportance" /> константа, уровень важности для элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-210">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlImportance" /> constant indicating the relative importance level for the Outlook item.</span></span> <span data-ttu-id="deea0-211">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-211">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-210">Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlImportance" /> константу, показывающую относительный уровень важности для элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-210">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlImportance" /> constant indicating the relative importance level for the Outlook item.</span></span> <span data-ttu-id="c88b4-211">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-211">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-212">Это свойство соответствует свойству MAPI <b>PidTagImportance</b>.</span><span class="sxs-lookup"><span data-stu-id="deea0-212">This property corresponds to the MAPI property <b>PidTagImportance</b>.</span></span> </para>
+        <remarks><para><span data-ttu-id="c88b4-212">Это свойство соответствует свойству MAPI <b>PidTagImportance</b>.</span><span class="sxs-lookup"><span data-stu-id="c88b4-212">This property corresponds to the MAPI property <b>PidTagImportance</b>.</span></span> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1088,10 +1088,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-213">Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), который определяет, является ли элемент конфликта.</span><span class="sxs-lookup"><span data-stu-id="deea0-213">Returns a <b>Boolean</b> (<b>bool</b> in C#) that determines if the item is in conflict.</span></span> <span data-ttu-id="deea0-214">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-214">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-213">Возвращает <b>логическое значение</b> (<b>bool</b> в C#), которое определяет, конфликтует ли элемент.</span><span class="sxs-lookup"><span data-stu-id="c88b4-213">Returns a <b>Boolean</b> (<b>bool</b> in C#) that determines if the item is in conflict.</span></span> <span data-ttu-id="c88b4-214">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-214">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-215">Того, является ли данный элемент находится в конфликте определяется состояния приложения.</span><span class="sxs-lookup"><span data-stu-id="deea0-215">Whether or not an item is in conflict is determined by the state of the application.</span></span> <span data-ttu-id="deea0-216">Например если пользователь находится в автономном режиме и пытается получить доступ к сетевой папке действие завершится с ошибкой.</span><span class="sxs-lookup"><span data-stu-id="deea0-216">For example, when a user is offline and tries to access an online folder the action will fail.</span></span> <span data-ttu-id="deea0-217">В этом случае свойство <b>IsConflict</b> возвращает <b>значение True</b>.</span><span class="sxs-lookup"><span data-stu-id="deea0-217">In this scenario, the <b>IsConflict</b> property will return <b>True</b>.</span></span></para>
-          <para><span data-ttu-id="deea0-218">Если <b>значение True</b>, указанный элемент находится в конфликта.</span><span class="sxs-lookup"><span data-stu-id="deea0-218">If <b>True</b>, the specified item is in conflict.</span></span></para>
+        <remarks><para><span data-ttu-id="c88b4-215">Независимо от того, является ли конфликт элементом, определяется состоянием приложения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-215">Whether or not an item is in conflict is determined by the state of the application.</span></span> <span data-ttu-id="c88b4-216">Например, если пользователь находится в автономном режиме и пытается получить доступ к сетевой папке, действие завершится с ошибкой.</span><span class="sxs-lookup"><span data-stu-id="c88b4-216">For example, when a user is offline and tries to access an online folder the action will fail.</span></span> <span data-ttu-id="c88b4-217">В этом <b>случае свойство</b> <b>IsTrue возвратит значение true</b>.</span><span class="sxs-lookup"><span data-stu-id="c88b4-217">In this scenario, the <b>IsConflict</b> property will return <b>True</b>.</span></span></para>
+          <para><span data-ttu-id="c88b4-218">Если <b>значение равно true</b>, указанный элемент конфликтует с другими.</span><span class="sxs-lookup"><span data-stu-id="c88b4-218">If <b>True</b>, the specified item is in conflict.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1118,12 +1118,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-219">Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, будет ли <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> объект представляет последней версии элемента в календаре организатора.</span><span class="sxs-lookup"><span data-stu-id="deea0-219">Returns a <b>Boolean</b> (<b>bool</b> in C#) value that indicates whether the <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> object represents the latest version of the item on the organizer’s calendar.</span></span> <span data-ttu-id="deea0-220">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-220">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-219">Возвращает логическое<b>значение (</b> <b>логическое</b> значение в C#), которое указывает, <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> представляет ли объект последнюю версию элемента в календаре организатора.</span><span class="sxs-lookup"><span data-stu-id="c88b4-219">Returns a <b>Boolean</b> (<b>bool</b> in C#) value that indicates whether the <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> object represents the latest version of the item on the organizer’s calendar.</span></span> <span data-ttu-id="c88b4-220">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-220">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-221">Это свойство применяется ко всем объектам <b>MeetingItem</b> , включая приглашения на собрания, обновлений встреч и отмены собраний.</span><span class="sxs-lookup"><span data-stu-id="deea0-221">This property applies to all <b>MeetingItem</b> objects including meeting requests, meeting updates, and meeting cancellation.</span></span></para>
-          <para><span data-ttu-id="deea0-222">
-            <b>Значение true,</b> указывает, что последней версии элемента встречи в календаре организатора.</span><span class="sxs-lookup"><span data-stu-id="deea0-222">
-            <b>True</b> indicates that the latest version of the meeting item is on the organizer’s calendar.</span></span> <span data-ttu-id="deea0-223"><b>Значение false</b> указывает, что элемент собрания в календаре не последней версии или что существует конфликт между приглашения на собрание и другого элемента встречи в календаре.</span><span class="sxs-lookup"><span data-stu-id="deea0-223"><b>False</b> indicates that the meeting item on the calendar is not the latest version, or that there is a conflict between the meeting request and another appointment item on the calendar.</span></span></para>
+        <remarks><para><span data-ttu-id="c88b4-221">Это свойство применяется ко всем объектам <b>MeetingItem</b> , включая приглашения на собрания, обновления собраний и отмену собрания.</span><span class="sxs-lookup"><span data-stu-id="c88b4-221">This property applies to all <b>MeetingItem</b> objects including meeting requests, meeting updates, and meeting cancellation.</span></span></para>
+          <para><span data-ttu-id="c88b4-222">
+            <b>Значение true</b> указывает, что последняя версия элемента собрания находится в календаре организатора.</span><span class="sxs-lookup"><span data-stu-id="c88b4-222">
+            <b>True</b> indicates that the latest version of the meeting item is on the organizer’s calendar.</span></span> <span data-ttu-id="c88b4-223"><b>Значение false</b> указывает на то, что элемент собрания в календаре не является последней версией или существует конфликт между приглашением на собрание и другим элементом встречи в календаре.</span><span class="sxs-lookup"><span data-stu-id="c88b4-223"><b>False</b> indicates that the meeting item on the calendar is not the latest version, or that there is a conflict between the meeting request and another appointment item on the calendar.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1150,9 +1150,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-224">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ItemProperties" /> коллекции, представляющей все стандартные и пользовательские свойства элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-224">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.ItemProperties" /> collection that represents all standard and user-defined properties associated with the Outlook item.</span></span> <span data-ttu-id="deea0-225">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-225">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-224">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ItemProperties" /> коллекцию, которая представляет все стандартные и определяемые пользователем свойства, связанные с элементом Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-224">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.ItemProperties" /> collection that represents all standard and user-defined properties associated with the Outlook item.</span></span> <span data-ttu-id="c88b4-225">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-225">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-226"><b>Набор свойств элементов</b> является с отсчетом от нуля семейства сайтов, что означает, что первый объект в коллекции ссылается индекса 0.</span><span class="sxs-lookup"><span data-stu-id="deea0-226">The <b>ItemProperties</b> collection is a zero-based collection, meaning that the first object in the collection is referenced by the index 0.</span></span></para>
+        <remarks><para><span data-ttu-id="c88b4-226">Коллекция <b>ItemProperties</b> является коллекцией с отсчетом от нуля, что означает, что первый объект в коллекции ссылается на индекс 0.</span><span class="sxs-lookup"><span data-stu-id="c88b4-226">The <b>ItemProperties</b> collection is a zero-based collection, meaning that the first object in the collection is referenced by the index 0.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1179,9 +1179,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-227">Возвращает <b>DateTime</b> , определяющее дату и время последнего изменения элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-227">Returns a <b>DateTime</b> specifying the date and time that the Outlook item was last modified.</span></span>  <span data-ttu-id="deea0-228">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-228">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-227">Возвращает <b>значение типа DateTime</b> , указывающее дату и время последнего изменения элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-227">Returns a <b>DateTime</b> specifying the date and time that the Outlook item was last modified.</span></span>  <span data-ttu-id="c88b4-228">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-228">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-229">Это свойство соответствует свойству MAPI <b>PidTagLastModificationTime</b>.</span><span class="sxs-lookup"><span data-stu-id="deea0-229">This property corresponds to the MAPI property <b>PidTagLastModificationTime</b>.</span></span></para>
+        <remarks><para><span data-ttu-id="c88b4-229">Это свойство соответствует свойству MAPI <b>PidTagLastModificationTime</b>.</span><span class="sxs-lookup"><span data-stu-id="c88b4-229">This property corresponds to the MAPI property <b>PidTagLastModificationTime</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1211,7 +1211,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Links</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-230">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span><span class="sxs-lookup"><span data-stu-id="deea0-230">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-230">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span><span class="sxs-lookup"><span data-stu-id="c88b4-230">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1242,7 +1242,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-231">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span><span class="sxs-lookup"><span data-stu-id="deea0-231">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-231">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span><span class="sxs-lookup"><span data-stu-id="c88b4-231">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1273,9 +1273,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlRemoteStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-232">Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlRemoteStatus" /> константа, которая определяет состояние элемента после получения удаленный пользователь.</span><span class="sxs-lookup"><span data-stu-id="deea0-232">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlRemoteStatus" />  constant that determines the status of an item once it is received by a remote user.</span></span> <span data-ttu-id="deea0-233">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-233">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-232">Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlRemoteStatus" /> константу, определяющую состояние элемента после его получения удаленным пользователем.</span><span class="sxs-lookup"><span data-stu-id="c88b4-232">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlRemoteStatus" />  constant that determines the status of an item once it is received by a remote user.</span></span> <span data-ttu-id="c88b4-233">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-233">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-234">Это свойство позволяет удаленным пользователям с менее чем идеально подходит передачи данных возможности обмена мгновенными сообщениями большая гибкость.</span><span class="sxs-lookup"><span data-stu-id="deea0-234">This property gives remote users with less-than-ideal data-transfer capabilities increased messaging flexibility.</span></span></para>
+        <remarks><para><span data-ttu-id="c88b4-234">Это свойство дает возможность удаленным пользователям с неоптимальными возможностями передачи данных повышать гибкость обмена сообщениями.</span><span class="sxs-lookup"><span data-stu-id="c88b4-234">This property gives remote users with less-than-ideal data-transfer capabilities increased messaging flexibility.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1302,9 +1302,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-235">Возвращает значение <b>String</b> (<b>строка</b> в C#), который представляет URL-адрес для рабочей области для собраний, связанной со встречей.</span><span class="sxs-lookup"><span data-stu-id="deea0-235">Returns a <b>String</b> (<b>string</b> in C#) value that represents the URL for the Meeting Workspace that the meeting item is linked to.</span></span> <span data-ttu-id="deea0-236">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-236">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-235">Возвращает значение <b>типа String</b> (<b>строка</b> в C#), представляющее URL-адрес рабочей области для собраний, с которой связан элемент собрания.</span><span class="sxs-lookup"><span data-stu-id="c88b4-235">Returns a <b>String</b> (<b>string</b> in C#) value that represents the URL for the Meeting Workspace that the meeting item is linked to.</span></span> <span data-ttu-id="c88b4-236">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-236">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-237">Рабочая область для собраний — это общий веб-узел для планирования собраний и отслеживания результатов.</span><span class="sxs-lookup"><span data-stu-id="deea0-237">A Meeting Workspace is a shared Web site for planning the meeting and tracking the results.</span></span>  </para>
+        <remarks><para><span data-ttu-id="c88b4-237">Рабочая область для собраний — это общедоступный веб-сайт для планирования собраний и отслеживания результатов.</span><span class="sxs-lookup"><span data-stu-id="c88b4-237">A Meeting Workspace is a shared Web site for planning the meeting and tracking the results.</span></span>  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1334,9 +1334,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-238">Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляет класс сообщения для элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-238">Returns or sets a <b>String</b> (<b>string</b> in C#) representing the message class for the Outlook item.</span></span> <span data-ttu-id="deea0-239">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-239">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-238">Возвращает или задает <b>строку</b> (<b>строку</b> в C#), представляющую класс сообщения для элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-238">Returns or sets a <b>String</b> (<b>string</b> in C#) representing the message class for the Outlook item.</span></span> <span data-ttu-id="c88b4-239">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-239">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-240">Это свойство соответствует свойству MAPI <b>PidTagMessageClass</b>.</span><span class="sxs-lookup"><span data-stu-id="deea0-240">This property corresponds to the MAPI property <b>PidTagMessageClass</b>.</span></span> <span data-ttu-id="deea0-241">Свойство <b>MessageClass</b> элемента ссылки на формы, на котором она основана.</span><span class="sxs-lookup"><span data-stu-id="deea0-241">The <b>MessageClass</b> property links the item to the form on which it is based.</span></span> <span data-ttu-id="deea0-242">При выборе элемента Outlook использует класс сообщения для размещения формы и предоставление доступа к его свойства, такие как команды ответ.</span><span class="sxs-lookup"><span data-stu-id="deea0-242">When an item is selected, Outlook uses the message class to locate the form and expose its properties, such as Reply commands.</span></span> </para>
+        <remarks><para><span data-ttu-id="c88b4-240">Это свойство соответствует свойству MAPI <b>PidTagMessageClass</b>.</span><span class="sxs-lookup"><span data-stu-id="c88b4-240">This property corresponds to the MAPI property <b>PidTagMessageClass</b>.</span></span> <span data-ttu-id="c88b4-241">Свойство <b>MessageClass</b> связывает элемент с формой, на которой она основана.</span><span class="sxs-lookup"><span data-stu-id="c88b4-241">The <b>MessageClass</b> property links the item to the form on which it is based.</span></span> <span data-ttu-id="c88b4-242">Если выбран элемент, Outlook использует класс Message для обнаружения формы и предоставляет ее свойства, такие как команды ответа.</span><span class="sxs-lookup"><span data-stu-id="c88b4-242">When an item is selected, Outlook uses the message class to locate the form and expose its properties, such as Reply commands.</span></span> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1366,9 +1366,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-243">Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляющее расстояние для элемента.</span><span class="sxs-lookup"><span data-stu-id="deea0-243">Returns or sets a <b>String</b> (<b>string</b> in C#) representing the mileage for an item.</span></span> <span data-ttu-id="deea0-244">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-244">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-243">Возвращает или задает <b>строку</b> (<b>строку</b> в C#), представляющую расстояние для элемента.</span><span class="sxs-lookup"><span data-stu-id="c88b4-243">Returns or sets a <b>String</b> (<b>string</b> in C#) representing the mileage for an item.</span></span> <span data-ttu-id="c88b4-244">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-244">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-245">Это поле произвольной строкой, можно использовать для хранения сведений расстояние, связанный с элементом (например, 100 миль для встречи, контактов или задач) для целей возмещение расходов.</span><span class="sxs-lookup"><span data-stu-id="deea0-245">This is a free-form string field and can be used to store mileage information associated with the item (for example, 100 miles documented for an appointment, contact, or task) for purposes of reimbursement.</span></span> </para>
+        <remarks><para><span data-ttu-id="c88b4-245">Это поле произвольной формы, которое можно использовать для хранения сведений о расстояниях, связанных с элементом (например, 100 миль документально задокументировано для встречи, контакта или задачи) в целях получения возмещения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-245">This is a free-form string field and can be used to store mileage information associated with the item (for example, 100 miles documented for an appointment, contact, or task) for purposes of reimbursement.</span></span> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1395,9 +1395,9 @@
         <Parameter Name="DestFldr" Type="Microsoft.Office.Interop.Outlook.MAPIFolder" />
       </Parameters>
       <Docs>
-        <param name="DestFldr"><span data-ttu-id="deea0-246">Выражение, возвращающее объект <b>Folder</b> .</span><span class="sxs-lookup"><span data-stu-id="deea0-246">An expression that returns a <b>Folder</b> object.</span></span> <span data-ttu-id="deea0-247">Папка назначения.</span><span class="sxs-lookup"><span data-stu-id="deea0-247">The destination folder.</span></span></param>
-        <summary><span data-ttu-id="deea0-248">Перемещает элемент Microsoft Outlook в новую папку.</span><span class="sxs-lookup"><span data-stu-id="deea0-248">Moves a Microsoft Outlook item to a new folder.</span></span></summary>
-        <returns><span data-ttu-id="deea0-249"><see cref="T:System.Object" /> Значение, которое представляет элемент, которая была перемещена в выделенной папке.</span><span class="sxs-lookup"><span data-stu-id="deea0-249">An <see cref="T:System.Object" /> value that represents the item which has been moved to the designated folder.</span></span></returns>
+        <param name="DestFldr"><span data-ttu-id="c88b4-246">Выражение, возвращающее объект <b>Folder</b> .</span><span class="sxs-lookup"><span data-stu-id="c88b4-246">An expression that returns a <b>Folder</b> object.</span></span> <span data-ttu-id="c88b4-247">Целевая папка.</span><span class="sxs-lookup"><span data-stu-id="c88b4-247">The destination folder.</span></span></param>
+        <summary><span data-ttu-id="c88b4-248">Перемещает элемент Microsoft Outlook в новую папку.</span><span class="sxs-lookup"><span data-stu-id="c88b4-248">Moves a Microsoft Outlook item to a new folder.</span></span></summary>
+        <returns><span data-ttu-id="c88b4-249"><see cref="T:System.Object" /> Значение, представляющее элемент, который был перемещен в указанную папку.</span><span class="sxs-lookup"><span data-stu-id="c88b4-249">An <see cref="T:System.Object" /> value that represents the item which has been moved to the designated folder.</span></span></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1427,7 +1427,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-250">Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, равное <b>True</b> , чтобы не срок хранения элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-250">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) value that is <b>True</b> to not age the Outlook item.</span></span> <span data-ttu-id="deea0-251">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-251">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-250">Возвращает или задает значение <b>Boolean</b> (<b>bool</b> в C#), которое имеет значение <b>true</b> , чтобы не возрастать элемент Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-250">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) value that is <b>True</b> to not age the Outlook item.</span></span> <span data-ttu-id="c88b4-251">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-251">Read/write.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1458,10 +1458,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-252">Возвращает или задает значение <b>типа Boolean</b> (<b>bool</b> в C#), который определяет ли инициатором собрания элемента или почтового сообщения будут получать отчетов о доставке.</span><span class="sxs-lookup"><span data-stu-id="deea0-252">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) value that determines whether the originator of the meeting item or mail message will receive a delivery report.</span></span> <span data-ttu-id="deea0-253">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-253">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-252">Возвращает или задает значение <b>Boolean</b> (<b>bool</b> в C#), которое определяет, будет ли Создатель элемента собрания или почтового сообщения получать отчет о доставке.</span><span class="sxs-lookup"><span data-stu-id="c88b4-252">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) value that determines whether the originator of the meeting item or mail message will receive a delivery report.</span></span> <span data-ttu-id="c88b4-253">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-253">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-254">Каждый поставщик транспорта, который обрабатывает сообщение отправляет одного уведомление о доставке с именами и адресами из каждого получателя, которому оно было доставлено.</span><span class="sxs-lookup"><span data-stu-id="deea0-254">Each transport provider that handles your message sends you a single delivery notification containing the names and addresses of each recipient to whom it was delivered.</span></span> <span data-ttu-id="deea0-255">Доставка не означает, что сообщение прочитано.</span><span class="sxs-lookup"><span data-stu-id="deea0-255">Delivery does not imply that the message has been read.</span></span> <span data-ttu-id="deea0-256">Значение true, если создателем запрошено уведомление о доставке в окне сообщения.</span><span class="sxs-lookup"><span data-stu-id="deea0-256">True if the originator requested a delivery receipt on the message.</span></span> </para>
-          <para><span data-ttu-id="deea0-257">Свойство <b>OriginatorDeliveryReportRequested</b> соответствует <b>PidTagOriginatorDeliveryReportRequested</b>свойство MAPI.</span><span class="sxs-lookup"><span data-stu-id="deea0-257">The <b>OriginatorDeliveryReportRequested</b> property corresponds to the MAPI property <b>PidTagOriginatorDeliveryReportRequested</b>.</span></span> </para>
+        <remarks><para><span data-ttu-id="c88b4-254">Каждый транспортный поставщик, который обрабатывает сообщение, отправляет вам одно уведомление о доставке, содержащее имена и адреса каждого получателя, которому он был доставлен.</span><span class="sxs-lookup"><span data-stu-id="c88b4-254">Each transport provider that handles your message sends you a single delivery notification containing the names and addresses of each recipient to whom it was delivered.</span></span> <span data-ttu-id="c88b4-255">Доставка не подразумевает, что сообщение было прочитано.</span><span class="sxs-lookup"><span data-stu-id="c88b4-255">Delivery does not imply that the message has been read.</span></span> <span data-ttu-id="c88b4-256">Значение true, если инициатор запросил уведомление о доставке сообщения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-256">True if the originator requested a delivery receipt on the message.</span></span> </para>
+          <para><span data-ttu-id="c88b4-257">Свойство <b>оригинаторделиверирепортрекуестед</b> соответствует свойству MAPI <b>PidTagOriginatorDeliveryReportRequested</b>.</span><span class="sxs-lookup"><span data-stu-id="c88b4-257">The <b>OriginatorDeliveryReportRequested</b> property corresponds to the MAPI property <b>PidTagOriginatorDeliveryReportRequested</b>.</span></span> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1488,7 +1488,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-258">Возвращает значение типа <b>Integer</b> (<b>целое</b> в C#), представляющее номер сборки приложения Outlook для элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-258">Returns an <b>Integer</b> (<b>int</b> in C#) value representing the build number of the Outlook application for an Outlook item.</span></span> <span data-ttu-id="deea0-259">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-259">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-258">Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), представляющее номер сборки приложения Outlook для элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-258">Returns an <b>Integer</b> (<b>int</b> in C#) value representing the build number of the Outlook application for an Outlook item.</span></span> <span data-ttu-id="c88b4-259">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-259">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1516,7 +1516,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-260">Возвращает <b>строку</b> (<b>строка</b> в C#), указывающее количество основной и дополнительный номер версии приложения Outlook для элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-260">Returns a <b>String</b> (<b>string</b> in C#) indicating the major and minor version number of the Outlook application for an Outlook item.</span></span> <span data-ttu-id="deea0-261">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-261">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-260">Возвращает <b>строку</b> (<b>строка</b> в C#), указывающую основной и дополнительный номер версии приложения Outlook для элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-260">Returns a <b>String</b> (<b>string</b> in C#) indicating the major and minor version number of the Outlook application for an Outlook item.</span></span> <span data-ttu-id="c88b4-261">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-261">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1544,7 +1544,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-262">Возвращает родительский <b>объект</b> заданного объекта.</span><span class="sxs-lookup"><span data-stu-id="deea0-262">Returns the parent <b>Object</b> of the specified object.</span></span> <span data-ttu-id="deea0-263">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-263">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-262">Возвращает родительский <b>объект</b> указанного объекта.</span><span class="sxs-lookup"><span data-stu-id="c88b4-262">Returns the parent <b>Object</b> of the specified object.</span></span> <span data-ttu-id="c88b4-263">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-263">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1570,7 +1570,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="deea0-264">Печатает элемента Outlook, с помощью все параметры по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="deea0-264">Prints the Outlook item using all default settings.</span></span> <span data-ttu-id="deea0-265">Метод <b>PrintOut</b> — это единственный способ Outlook, который может использоваться для печати.</span><span class="sxs-lookup"><span data-stu-id="deea0-265">The <b>PrintOut</b> method is the only Outlook method that can be used for printing.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-264">Печатает элемент Outlook, используя все параметры по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="c88b4-264">Prints the Outlook item using all default settings.</span></span> <span data-ttu-id="c88b4-265">Метод <b>PrintOut</b> — это единственный метод Outlook, который можно использовать для печати.</span><span class="sxs-lookup"><span data-stu-id="c88b4-265">The <b>PrintOut</b> method is the only Outlook method that can be used for printing.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1597,7 +1597,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.PropertyAccessor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-266">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект, который поддерживает создание, получение, Установка и удаление свойств родительского <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> объекта.</span><span class="sxs-lookup"><span data-stu-id="deea0-266">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> object that supports creating, getting, setting, and deleting properties of the parent <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> object.</span></span> <span data-ttu-id="deea0-267">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-267">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-266">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект, который поддерживает создание, получение, настройку и удаление свойств родительского <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> объекта.</span><span class="sxs-lookup"><span data-stu-id="c88b4-266">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> object that supports creating, getting, setting, and deleting properties of the parent <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> object.</span></span> <span data-ttu-id="c88b4-267">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-267">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1628,7 +1628,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-268">Возвращает или задает <b>даты и времени</b> , которое указывает дату и время получения элемента.</span><span class="sxs-lookup"><span data-stu-id="deea0-268">Returns or sets a <b>DateTime</b> indicating the date and time at which the item was received.</span></span> <span data-ttu-id="deea0-269">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-269">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-268">Возвращает или задает <b>значение DateTime</b> , указывающее дату и время получения элемента.</span><span class="sxs-lookup"><span data-stu-id="c88b4-268">Returns or sets a <b>DateTime</b> indicating the date and time at which the item was received.</span></span> <span data-ttu-id="c88b4-269">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-269">Read/write.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1656,9 +1656,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Recipients</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-270">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> коллекции, представляющей всех получателей для элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-270">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" />  collection that represents all the recipients for the Outlook item.</span></span> <span data-ttu-id="deea0-271">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-271">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-270">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> коллекцию, которая представляет всех получателей элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-270">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" />  collection that represents all the recipients for the Outlook item.</span></span> <span data-ttu-id="c88b4-271">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-271">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-272">Получатель можно задать с строку, представляющую получателя отображаемое имя, псевдоним или полный адрес электронной почты SMTP.</span><span class="sxs-lookup"><span data-stu-id="deea0-272">A recipient can be specified by a string representing the recipient's display name, alias, or full SMTP e-mail address.</span></span></para>
+        <remarks><para><span data-ttu-id="c88b4-272">Получатель может быть указан в виде строки, представляющей отображаемое имя получателя, псевдоним или полный SMTP-адрес электронной почты.</span><span class="sxs-lookup"><span data-stu-id="c88b4-272">A recipient can be specified by a string representing the recipient's display name, alias, or full SMTP e-mail address.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1688,7 +1688,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-273">Возвращает или задает значение <b>типа Boolean</b> (<b>bool</b> в C#), который имеет <b>значение True</b> , если напоминание имеет значение для этого элемента.</span><span class="sxs-lookup"><span data-stu-id="deea0-273">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) value that is <b>True</b> if a reminder has been set for this item.</span></span> <span data-ttu-id="deea0-274">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-274">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-273">Возвращает или задает значение <b>Boolean</b> (<b>bool</b> в C#), которое имеет значение <b>true</b> , если для этого элемента задано напоминание.</span><span class="sxs-lookup"><span data-stu-id="c88b4-273">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) value that is <b>True</b> if a reminder has been set for this item.</span></span> <span data-ttu-id="c88b4-274">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-274">Read/write.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1719,7 +1719,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-275">Возвращает или задает <b>даты и времени</b> , которое указывает дату и время, в которой должна выполняться напоминания для заданного элемента.</span><span class="sxs-lookup"><span data-stu-id="deea0-275">Returns or sets a <b>DateTime</b> indicating the date and time at which the reminder should occur for the specified item.</span></span> <span data-ttu-id="deea0-276">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-276">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-275">Возвращает или задает <b>значение DateTime</b> , указывающее дату и время, когда напоминание должно выполняться для указанного элемента.</span><span class="sxs-lookup"><span data-stu-id="c88b4-275">Returns or sets a <b>DateTime</b> indicating the date and time at which the reminder should occur for the specified item.</span></span> <span data-ttu-id="c88b4-276">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-276">Read/write.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1745,8 +1745,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="deea0-277">Создает ответ, предварительно адресованное отправителю, из исходного сообщения.</span><span class="sxs-lookup"><span data-stu-id="deea0-277">Creates a reply, pre-addressed to the original sender, from the original message.</span></span></summary>
-        <returns><span data-ttu-id="deea0-278">A <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> объект, представляющий ответ.</span><span class="sxs-lookup"><span data-stu-id="deea0-278">A <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> object that represents the reply.</span></span></returns>
+        <summary><span data-ttu-id="c88b4-277">Создает ответ, предварительно адресованный исходному отправителю, из исходного сообщения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-277">Creates a reply, pre-addressed to the original sender, from the original message.</span></span></summary>
+        <returns><span data-ttu-id="c88b4-278"><see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> Объект, представляющий ответ.</span><span class="sxs-lookup"><span data-stu-id="c88b4-278">A <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> object that represents the reply.</span></span></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1771,8 +1771,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="deea0-279">Создает ответить всем получателям исходного из исходного сообщения.</span><span class="sxs-lookup"><span data-stu-id="deea0-279">Creates a reply to all original recipients from the original message.</span></span></summary>
-        <returns><span data-ttu-id="deea0-280">A <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> , который представляет ответ.</span><span class="sxs-lookup"><span data-stu-id="deea0-280">A <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> that represents the reply.</span></span></returns>
+        <summary><span data-ttu-id="c88b4-279">Создает ответ для всех исходных получателей из исходного сообщения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-279">Creates a reply to all original recipients from the original message.</span></span></summary>
+        <returns><span data-ttu-id="c88b4-280">A <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> , представляющий ответ.</span><span class="sxs-lookup"><span data-stu-id="c88b4-280">A <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> that represents the reply.</span></span></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1799,7 +1799,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Recipients</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-281">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> коллекции, представляющей все ответ объекты получателей для элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-281">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" />  collection that represents all the reply recipient objects for the Outlook item.</span></span> <span data-ttu-id="deea0-282">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-282">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-281">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> коллекцию, которая представляет все объекты получателей ответа для элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-281">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" />  collection that represents all the reply recipient objects for the Outlook item.</span></span> <span data-ttu-id="c88b4-282">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-282">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1827,20 +1827,20 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-283">Возвращает <see cref="T:System.DateTime" /> значение, которое задает дату, когда <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> истечения срока действия объекта, после которого помощник по управления записями обмена сообщениями (MRM) будет удалить элемент.</span><span class="sxs-lookup"><span data-stu-id="deea0-283">Returns a <see cref="T:System.DateTime" /> value that specifies the date when the <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> object expires, after which the Messaging Records Management (MRM) Assistant will delete the item.</span></span> <span data-ttu-id="deea0-284">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-284">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-283">Возвращает <see cref="T:System.DateTime" /> значение, задающее дату истечения <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> срока действия объекта после того, как помощник по управлению записями сообщений (управления записями сообщений) удалит элемент.</span><span class="sxs-lookup"><span data-stu-id="c88b4-283">Returns a <see cref="T:System.DateTime" /> value that specifies the date when the <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> object expires, after which the Messaging Records Management (MRM) Assistant will delete the item.</span></span> <span data-ttu-id="c88b4-284">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-284">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-285">Политики хранения включены и отключены администраторами для Microsoft Exchange Server на уровне почтового ящика.</span><span class="sxs-lookup"><span data-stu-id="deea0-285">A retention policy is enabled and disabled by an administrator for a Microsoft Exchange Server on a mailbox level.</span></span> <span data-ttu-id="deea0-286">Эта функция доступна только в почтовый ящик Exchange Server 2010 с поддержкой управления записями сообщений 2.0.</span><span class="sxs-lookup"><span data-stu-id="deea0-286">This feature is available only on an Exchange Server 2010 mailbox with MRM 2.0 enabled.</span></span> </para>
-          <para><span data-ttu-id="deea0-287">Microsoft Outlook вычисляет значение этого свойства на основе даты начала хранения и срок хранения элемента, если Outlook находится в кэше или в автономном режиме.</span><span class="sxs-lookup"><span data-stu-id="deea0-287">Microsoft Outlook calculates the value of this property based on the item retention start date and the retention period, if Outlook is in cache or offline mode.</span></span> <span data-ttu-id="deea0-288">Exchange Server значение, если Outlook в интерактивном режиме.</span><span class="sxs-lookup"><span data-stu-id="deea0-288">The Exchange Server specifies the value if Outlook is in online mode.</span></span></para>
-          <para><span data-ttu-id="deea0-289">Как правило Дата начала хранения для элемента определяется следующим образом:</span><span class="sxs-lookup"><span data-stu-id="deea0-289">In general, the retention start date for the item is determined as follows:</span></span></para>
+        <remarks><para><span data-ttu-id="c88b4-285">Политика хранения включена и отключена администратором сервера Microsoft Exchange Server на уровне почтового ящика.</span><span class="sxs-lookup"><span data-stu-id="c88b4-285">A retention policy is enabled and disabled by an administrator for a Microsoft Exchange Server on a mailbox level.</span></span> <span data-ttu-id="c88b4-286">Эта функция доступна только в почтовом ящике Exchange Server 2010 с включенным управления ЗАПИСЯМИ сообщений 2,0.</span><span class="sxs-lookup"><span data-stu-id="c88b4-286">This feature is available only on an Exchange Server 2010 mailbox with MRM 2.0 enabled.</span></span> </para>
+          <para><span data-ttu-id="c88b4-287">Microsoft Outlook вычисляет значение этого свойства на основе даты начала хранения элемента и периода хранения, если Outlook находится в кэше или в автономном режиме.</span><span class="sxs-lookup"><span data-stu-id="c88b4-287">Microsoft Outlook calculates the value of this property based on the item retention start date and the retention period, if Outlook is in cache or offline mode.</span></span> <span data-ttu-id="c88b4-288">Сервер Exchange определяет значение, если Outlook находится в оперативном режиме.</span><span class="sxs-lookup"><span data-stu-id="c88b4-288">The Exchange Server specifies the value if Outlook is in online mode.</span></span></para>
+          <para><span data-ttu-id="c88b4-289">В общем случае Дата начала хранения для элемента определяется следующим образом:</span><span class="sxs-lookup"><span data-stu-id="c88b4-289">In general, the retention start date for the item is determined as follows:</span></span></para>
           <list type="bullet">
             <item>
-              <para><span data-ttu-id="deea0-290">Полученных и отправленных элементов: Дата начала хранения — это дата получения.</span><span class="sxs-lookup"><span data-stu-id="deea0-290">Received or sent items: the retention start date is the received date.</span></span></para>
+              <para><span data-ttu-id="c88b4-290">Получено или Отправлено элементов: Дата начала хранения — это Дата получения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-290">Received or sent items: the retention start date is the received date.</span></span></para>
             </item>
             <item>
-              <para><span data-ttu-id="deea0-291">Элементы календаря неповторяющейся: Дата начала хранения — это дата окончания встречи.</span><span class="sxs-lookup"><span data-stu-id="deea0-291">Nonrecurring calendar items: the retention start date is the appointment end date.</span></span></para>
+              <para><span data-ttu-id="c88b4-291">Непериодические элементы календаря: Дата начала хранения — Дата окончания встречи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-291">Nonrecurring calendar items: the retention start date is the appointment end date.</span></span></para>
             </item>
             <item>
-              <para><span data-ttu-id="deea0-292">Повторяющихся элементов календаря: Дата начала хранения — это дата окончания последнего повтора.</span><span class="sxs-lookup"><span data-stu-id="deea0-292">Recurring calendar items: the retention start date is the end date of last recurrence.</span></span> <span data-ttu-id="deea0-293">Если нет даты окончания, элемент срок действия не ограничен.</span><span class="sxs-lookup"><span data-stu-id="deea0-293">If there is no end date, the item never expires.</span></span></para>
+              <para><span data-ttu-id="c88b4-292">Повторяющиеся элементы календаря: Дата начала хранения — конечная дата последнего повторения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-292">Recurring calendar items: the retention start date is the end date of last recurrence.</span></span> <span data-ttu-id="c88b4-293">Если дата окончания отсутствует, срок действия элемента не ограничен.</span><span class="sxs-lookup"><span data-stu-id="c88b4-293">If there is no end date, the item never expires.</span></span></para>
             </item>
           </list>
           <para> </para>
@@ -1870,9 +1870,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-294">Возвращает <b>строку</b> (<b>строка</b> в C#), которая указывает имя политики хранения.</span><span class="sxs-lookup"><span data-stu-id="deea0-294">Returns a <b>String</b> (<b>string</b> in C#) that specifies the name of the retention policy.</span></span> <span data-ttu-id="deea0-295">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-295">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-294">Возвращает <b>строку</b> (<b>String</b> в C#), которая указывает имя политики хранения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-294">Returns a <b>String</b> (<b>string</b> in C#) that specifies the name of the retention policy.</span></span> <span data-ttu-id="c88b4-295">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-295">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-296">Хранения включены и отключены администраторами для Microsoft Exchange Server на уровне почтового ящика.</span><span class="sxs-lookup"><span data-stu-id="deea0-296">Retention is enabled and disabled by an administrator for a Microsoft Exchange Server on a mailbox level.</span></span> <span data-ttu-id="deea0-297">Функция доступна только в почтовый ящик Exchange Server 2010 с помощью системы обмена сообщениями записей управления Записями 2.0 должна быть включена.</span><span class="sxs-lookup"><span data-stu-id="deea0-297">The feature is available only on an Exchange Server 2010 mailbox with Messaging Records Management (MRM) 2.0 enabled.</span></span> <span data-ttu-id="deea0-298">Пример выбора имени политики хранения — «Определение временной интервал для быстрого поиска по истечение срока действия».</span><span class="sxs-lookup"><span data-stu-id="deea0-298">An example of a retention policy name is "Define time interval for expiration Quick Searches".</span></span></para>
+        <remarks><para><span data-ttu-id="c88b4-296">Хранение включено и отключено администратором для сервера Microsoft Exchange на уровне почтового ящика.</span><span class="sxs-lookup"><span data-stu-id="c88b4-296">Retention is enabled and disabled by an administrator for a Microsoft Exchange Server on a mailbox level.</span></span> <span data-ttu-id="c88b4-297">Эта функция доступна только в почтовом ящике Exchange Server 2010 с включенной службой управления записями сообщений (управления ЗАПИСЯМИ сообщений) 2,0.</span><span class="sxs-lookup"><span data-stu-id="c88b4-297">The feature is available only on an Exchange Server 2010 mailbox with Messaging Records Management (MRM) 2.0 enabled.</span></span> <span data-ttu-id="c88b4-298">Пример имени политики хранения — "определение интервала времени для быстрого поиска с истекшим сроком действия".</span><span class="sxs-lookup"><span data-stu-id="c88b4-298">An example of a retention policy name is "Define time interval for expiration Quick Searches".</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1902,9 +1902,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-299">Возвращает или задает массив байтов, который представляет тело элемента Microsoft Outlook в формате RTF.</span><span class="sxs-lookup"><span data-stu-id="deea0-299">Returns or sets a byte array that represents the body of the Microsoft Outlook item in Rich Text Format.</span></span> <span data-ttu-id="deea0-300">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-300">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-299">Возвращает или задает массив байтов, представляющий текст элемента Microsoft Outlook в формате RTF.</span><span class="sxs-lookup"><span data-stu-id="c88b4-299">Returns or sets a byte array that represents the body of the Microsoft Outlook item in Rich Text Format.</span></span> <span data-ttu-id="c88b4-300">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-300">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-301">Метод System.Text.Encoding.AsciiEncoding.GetString() в C# или Visual Basic для преобразования в массив байтов в строку.</span><span class="sxs-lookup"><span data-stu-id="deea0-301">You can use the System.Text.Encoding.AsciiEncoding.GetString() method in C# or Visual Basic to convert an array of bytes to a string.</span></span></para>
+        <remarks><para><span data-ttu-id="c88b4-301">С помощью метода System. Text. Encoding. АсЦииенкодинг. GetString () в C# или Visual Basic можно преобразовать массив байтов в строку.</span><span class="sxs-lookup"><span data-stu-id="c88b4-301">You can use the System.Text.Encoding.AsciiEncoding.GetString() method in C# or Visual Basic to convert an array of bytes to a string.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1929,7 +1929,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="deea0-302">Сохраняет элемент Microsoft Outlook в текущую папку или, если это новый элемент, в папку Outlook по умолчанию для типа элемента.</span><span class="sxs-lookup"><span data-stu-id="deea0-302">Saves the Microsoft Outlook item to the current folder or, if this is a new item, to the Outlook default folder for the item type.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-302">Сохраняет элемент Microsoft Outlook в текущей папке или, если это новый элемент, в папку Outlook по умолчанию для типа элемента.</span><span class="sxs-lookup"><span data-stu-id="c88b4-302">Saves the Microsoft Outlook item to the current folder or, if this is a new item, to the Outlook default folder for the item type.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1956,10 +1956,10 @@
         <Parameter Name="Type" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Path"><span data-ttu-id="deea0-303">Путь для сохранения элемента.</span><span class="sxs-lookup"><span data-stu-id="deea0-303">The path in which to save the item.</span></span></param>
-        <param name="Type"><span data-ttu-id="deea0-304">Тип файла для сохранения.</span><span class="sxs-lookup"><span data-stu-id="deea0-304">The file type to save.</span></span> <span data-ttu-id="deea0-305">Может иметь одно из следующих констант <b>OlSaveAsType</b> : <b>olHTML</b>, <b>olMSG</b>, <b>olRTF</b>, <b>olTemplate</b>, <b>olDoc</b>,<b>olTXT</b>, <b>olVCal</b>, <b>olVCard</b> <b>olICal</b>, или <b>olMSGUnicode</b>.</span><span class="sxs-lookup"><span data-stu-id="deea0-305">Can be one of the following <b>OlSaveAsType</b> constants: <b>olHTML</b>, <b>olMSG</b>, <b>olRTF</b>, <b>olTemplate</b>, <b>olDoc</b>,<b>olTXT</b>, <b>olVCal</b>,  <b>olVCard</b>,  <b>olICal</b>, or <b>olMSGUnicode</b>.</span></span></param>
-        <summary><span data-ttu-id="deea0-306">Сохраняет элемент Microsoft Outlook, указанному пути и в формате тип указанного файла.</span><span class="sxs-lookup"><span data-stu-id="deea0-306">Saves the Microsoft Outlook item to the specified path and in the format of the specified file type.</span></span> <span data-ttu-id="deea0-307">Если тип файла не указан, используется формат сообщений (MSG-файл).</span><span class="sxs-lookup"><span data-stu-id="deea0-307">If the file type is not specified, the MSG format (.msg) is used.</span></span></summary>
-        <remarks><para><span data-ttu-id="deea0-308">Также Обратите внимание, что несмотря на то, что <b>olDoc</b> — допустимый константа <b>OlSaveAsType</b> , сообщения в формате HTML не может быть сохранен в формате документа и константу <b>olDoc</b> работает только в том случае, если Microsoft Word настроен как редактор электронной почты по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="deea0-308">Also note that even though <b>olDoc</b> is a valid <b>OlSaveAsType</b> constant, messages in HTML format cannot be saved  in Document format, and the <b>olDoc</b> constant works only if Microsoft Word is set up as the default email editor.</span></span></para>
+        <param name="Path"><span data-ttu-id="c88b4-303">Путь для сохранения элемента.</span><span class="sxs-lookup"><span data-stu-id="c88b4-303">The path in which to save the item.</span></span></param>
+        <param name="Type"><span data-ttu-id="c88b4-304">Тип файла для сохранения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-304">The file type to save.</span></span> <span data-ttu-id="c88b4-305">Может быть одной из следующих констант <b>OlSaveAsType</b> : <b>олхтмл</b>, <b>олмсг</b>, <b>олртф</b>, <b>олтемплате</b>, <b>олдок</b>,<b>олткст</b>, <b>олвкал</b>, <b>олвкард</b>, <b>оликал</b>или <b>олмсгуникоде</b>.</span><span class="sxs-lookup"><span data-stu-id="c88b4-305">Can be one of the following <b>OlSaveAsType</b> constants: <b>olHTML</b>, <b>olMSG</b>, <b>olRTF</b>, <b>olTemplate</b>, <b>olDoc</b>,<b>olTXT</b>, <b>olVCal</b>,  <b>olVCard</b>,  <b>olICal</b>, or <b>olMSGUnicode</b>.</span></span></param>
+        <summary><span data-ttu-id="c88b4-306">Сохраняет элемент Microsoft Outlook в указанном пути и в формате указанного типа файлов.</span><span class="sxs-lookup"><span data-stu-id="c88b4-306">Saves the Microsoft Outlook item to the specified path and in the format of the specified file type.</span></span> <span data-ttu-id="c88b4-307">Если тип файла не указан, используется формат MSG (MSG).</span><span class="sxs-lookup"><span data-stu-id="c88b4-307">If the file type is not specified, the MSG format (.msg) is used.</span></span></summary>
+        <remarks><para><span data-ttu-id="c88b4-308">Также обратите внимание, что несмотря на то, что <b>олдок</b> является допустимой константой <b>OlSaveAsType</b> , сообщения в формате HTML невозможно сохранить в формате документа, а константа <b>Олдок</b> работает, только если Microsoft Word настроен как редактор электронной почты по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="c88b4-308">Also note that even though <b>olDoc</b> is a valid <b>OlSaveAsType</b> constant, messages in HTML format cannot be saved  in Document format, and the <b>olDoc</b> constant works only if Microsoft Word is set up as the default email editor.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1986,7 +1986,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-309">Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), который имеет <b>значение True</b> , если элемент Outlook не были изменены с момента последнего сохранения.</span><span class="sxs-lookup"><span data-stu-id="deea0-309">Returns a <b>Boolean</b> (<b>bool</b> in C#) value that is <b>True</b> if the Outlook item has not been modified since the last save.</span></span> <span data-ttu-id="deea0-310">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-310">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-309">Возвращает значение <b>Boolean</b> (<b>bool</b> в C#), которое имеет значение <b>true</b> , если элемент Outlook не был изменен с момента последнего сохранения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-309">Returns a <b>Boolean</b> (<b>bool</b> in C#) value that is <b>True</b> if the Outlook item has not been modified since the last save.</span></span> <span data-ttu-id="c88b4-310">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-310">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2017,7 +2017,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.MAPIFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-311">Задание или получение это свойство не действует заметно.</span><span class="sxs-lookup"><span data-stu-id="deea0-311">Setting or getting this property has no noticeable effect.</span></span> <span data-ttu-id="deea0-312">Это свойство не используется.</span><span class="sxs-lookup"><span data-stu-id="deea0-312">Do not use this property.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-311">Установка или извлечение этого свойства не оказывает никакого заметного действия.</span><span class="sxs-lookup"><span data-stu-id="c88b4-311">Setting or getting this property has no noticeable effect.</span></span> <span data-ttu-id="c88b4-312">Не используйте это свойство.</span><span class="sxs-lookup"><span data-stu-id="c88b4-312">Do not use this property.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2043,8 +2043,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="deea0-313">Отправляет элемент собрания.</span><span class="sxs-lookup"><span data-stu-id="deea0-313">Sends the meeting item.</span></span></summary>
-        <remarks><para><span data-ttu-id="deea0-314">Программное создание приглашения на собрание, сначала создайте <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объекта вместо <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> объекта.</span><span class="sxs-lookup"><span data-stu-id="deea0-314">When you create a meeting request programmatically, you first create an <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> object instead of a <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> object.</span></span> <span data-ttu-id="deea0-315">Чтобы указать, встречи собрание, задайте <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.MeetingStatus" /> свойства объекта <b>AppointmentItem</b> для olMeeting.</span><span class="sxs-lookup"><span data-stu-id="deea0-315">To indicate the appointment is a meeting, set the <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.MeetingStatus" /> property of the <b>AppointmentItem</b> object to olMeeting.</span></span> <span data-ttu-id="deea0-316">Чтобы отправить запрос на собрание, применение <see cref="M:Microsoft.Office.Interop.Outlook._AppointmentItem.Send" /> метод для этого объекта <b>AppointmentItem</b> .</span><span class="sxs-lookup"><span data-stu-id="deea0-316">To send the meeting request, apply the <see cref="M:Microsoft.Office.Interop.Outlook._AppointmentItem.Send" /> method to that <b>AppointmentItem</b> object.</span></span></para>
+        <summary><span data-ttu-id="c88b4-313">Отправляет элемент собрания.</span><span class="sxs-lookup"><span data-stu-id="c88b4-313">Sends the meeting item.</span></span></summary>
+        <remarks><para><span data-ttu-id="c88b4-314">При создании приглашения на собрание программным способом сначала создается <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объект, а не <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> объект.</span><span class="sxs-lookup"><span data-stu-id="c88b4-314">When you create a meeting request programmatically, you first create an <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> object instead of a <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> object.</span></span> <span data-ttu-id="c88b4-315">Чтобы указать, что встреча является собранием, присвойте <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.MeetingStatus" /> свойству объекта <b>AppointmentItem</b> значение olMeeting.</span><span class="sxs-lookup"><span data-stu-id="c88b4-315">To indicate the appointment is a meeting, set the <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.MeetingStatus" /> property of the <b>AppointmentItem</b> object to olMeeting.</span></span> <span data-ttu-id="c88b4-316">Чтобы отправить приглашение на собрание, примените <see cref="M:Microsoft.Office.Interop.Outlook._AppointmentItem.Send" /> метод к этому объекту <b>AppointmentItem</b> .</span><span class="sxs-lookup"><span data-stu-id="c88b4-316">To send the meeting request, apply the <see cref="M:Microsoft.Office.Interop.Outlook._AppointmentItem.Send" /> method to that <b>AppointmentItem</b> object.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2071,9 +2071,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-317">Возвращает <b>строку</b> (<b>строка</b> в C#), который представляет адрес электронной почты отправителя элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-317">Returns a <b>String</b> (<b>string</b> in C#) that represents the e-mail address of the sender of the Outlook item.</span></span>   <span data-ttu-id="deea0-318">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-318">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-317">Возвращает <b>строку</b> (<b>String</b> в C#), представляющую адрес электронной почты отправителя элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-317">Returns a <b>String</b> (<b>string</b> in C#) that represents the e-mail address of the sender of the Outlook item.</span></span>   <span data-ttu-id="c88b4-318">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-318">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-319">Это свойство соответствует свойству MAPI <b>PidTagSenderEmailAddress</b>.</span><span class="sxs-lookup"><span data-stu-id="deea0-319">This property corresponds to the MAPI property <b>PidTagSenderEmailAddress</b>.</span></span></para>
+        <remarks><para><span data-ttu-id="c88b4-319">Это свойство соответствует свойству MAPI <b>PidTagSenderEmailAddress</b>.</span><span class="sxs-lookup"><span data-stu-id="c88b4-319">This property corresponds to the MAPI property <b>PidTagSenderEmailAddress</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2100,7 +2100,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-320">Возвращает <b>строку</b> (<b>строка</b> в C#), который представляет тип записи для адреса электронной почты отправителя элемента Outlook, такие как «SMTP» для адреса Интернета, «EX» для адреса сервера Microsoft Exchange, и т.д. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-320">Returns a <b>String</b> (<b>string</b> in C#) that represents the type of entry for the e-mail address of the sender of the Outlook item, such as 'SMTP' for Internet address, 'EX' for a Microsoft Exchange server address, etc. Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-320">Возвращает <b>строку</b> (<b>String</b> в C#), которая представляет тип записи для адреса электронной почты отправителя элемента Outlook, например "SMTP" для адреса в Интернете, "ex" для адреса сервера Microsoft Exchange и т. д. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-320">Returns a <b>String</b> (<b>string</b> in C#) that represents the type of entry for the e-mail address of the sender of the Outlook item, such as 'SMTP' for Internet address, 'EX' for a Microsoft Exchange server address, etc. Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2128,10 +2128,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-321">Возвращает <b>строку</b> (<b>строка</b> в C#), указывающее, отображаемое имя отправителя для элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-321">Returns a <b>String</b> (<b>string</b> in C#) indicating the display name of the sender for the Outlook item.</span></span>  <span data-ttu-id="deea0-322">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-322">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-321">Возвращает значение типа <b>String</b> (<b>строка</b> в C#), указывающее отображаемое имя отправителя элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-321">Returns a <b>String</b> (<b>string</b> in C#) indicating the display name of the sender for the Outlook item.</span></span>  <span data-ttu-id="c88b4-322">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-322">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-323">Это свойство соответствует свойству MAPI <b>PidTagSenderName</b>.</span><span class="sxs-lookup"><span data-stu-id="deea0-323">This property corresponds to the MAPI property <b>PidTagSenderName</b>.</span></span></para>
-          <para><span data-ttu-id="deea0-324">Если вы хотите получить полный адрес отправителя, используйте <see cref="P:Microsoft.Office.Interop.Outlook._MeetingItem.SenderEmailAddress" /> свойство.</span><span class="sxs-lookup"><span data-stu-id="deea0-324">If you wish to retrieve the fully qualified e-mail address of the sender, use the <see cref="P:Microsoft.Office.Interop.Outlook._MeetingItem.SenderEmailAddress" /> property.</span></span></para>
+        <remarks><para><span data-ttu-id="c88b4-323">Это свойство соответствует свойству MAPI <b>PidTagSenderName</b>.</span><span class="sxs-lookup"><span data-stu-id="c88b4-323">This property corresponds to the MAPI property <b>PidTagSenderName</b>.</span></span></para>
+          <para><span data-ttu-id="c88b4-324">Если вы хотите получить полный адрес электронной почты отправителя, используйте <see cref="P:Microsoft.Office.Interop.Outlook._MeetingItem.SenderEmailAddress" /> свойство.</span><span class="sxs-lookup"><span data-stu-id="c88b4-324">If you wish to retrieve the fully qualified e-mail address of the sender, use the <see cref="P:Microsoft.Office.Interop.Outlook._MeetingItem.SenderEmailAddress" /> property.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2161,10 +2161,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Account</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-325">Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> объект, который представляет учетную запись, используемую для отправки <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />.</span><span class="sxs-lookup"><span data-stu-id="deea0-325">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> object that represents the account to use to send the <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />.</span></span> <span data-ttu-id="deea0-326">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-326">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-325">Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> объект, представляющий учетную запись, используемую для отправки <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />.</span><span class="sxs-lookup"><span data-stu-id="c88b4-325">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> object that represents the account to use to send the <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />.</span></span> <span data-ttu-id="c88b4-326">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-326">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-327">Свойство <b>SendUsingAccount</b> используется для указания учетной записи, которая <see cref="M:Microsoft.Office.Interop.Outlook._MeetingItem.Send" /> метод используется для отправки <b>MeetingItem</b>.</span><span class="sxs-lookup"><span data-stu-id="deea0-327">You can use the <b>SendUsingAccount</b> property to specify the account that the <see cref="M:Microsoft.Office.Interop.Outlook._MeetingItem.Send" /> method uses to send the <b>MeetingItem</b>.</span></span> <span data-ttu-id="deea0-328">Данное свойство возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если учетная запись, указанный для <b>MeetingItem</b> больше не существует.</span><span class="sxs-lookup"><span data-stu-id="deea0-328">This property returns <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#) if the account specified for the <b>MeetingItem</b> no longer exists.</span></span> </para>
-          <para><span data-ttu-id="deea0-329">Это свойство доступно только для чтения, если <b>MeetingItem</b> принятые элемента, или если <b>MeetingItem</b> уже был отправлен (то есть, <see cref="P:Microsoft.Office.Interop.Outlook._MeetingItem.Sent" /> свойства объекта имеет значение <b>True</b>).</span><span class="sxs-lookup"><span data-stu-id="deea0-329">This property is read-only if the <b>MeetingItem</b> is a received item, or if the <b>MeetingItem</b> has already been sent (that is, the <see cref="P:Microsoft.Office.Interop.Outlook._MeetingItem.Sent" /> property of the object is set to <b>True</b>).</span></span> </para>
+        <remarks><para><span data-ttu-id="c88b4-327">Свойство <b>SendUsingAccount</b> можно использовать для указания учетной записи, которую <see cref="M:Microsoft.Office.Interop.Outlook._MeetingItem.Send" /> метод использует для отправки <b>MeetingItem</b>.</span><span class="sxs-lookup"><span data-stu-id="c88b4-327">You can use the <b>SendUsingAccount</b> property to specify the account that the <see cref="M:Microsoft.Office.Interop.Outlook._MeetingItem.Send" /> method uses to send the <b>MeetingItem</b>.</span></span> <span data-ttu-id="c88b4-328">Это свойство возвращает значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если учетная запись, указанная для <b>MeetingItem</b> , больше не существует.</span><span class="sxs-lookup"><span data-stu-id="c88b4-328">This property returns <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#) if the account specified for the <b>MeetingItem</b> no longer exists.</span></span> </para>
+          <para><span data-ttu-id="c88b4-329">Это свойство доступно только для чтения, если <b>MeetingItem</b> является полученным элементом или если <b>MeetingItem</b> уже был отправлен (то есть для <see cref="P:Microsoft.Office.Interop.Outlook._MeetingItem.Sent" /> свойства объекта задано значение <b>true</b>).</span><span class="sxs-lookup"><span data-stu-id="c88b4-329">This property is read-only if the <b>MeetingItem</b> is a received item, or if the <b>MeetingItem</b> has already been sent (that is, the <see cref="P:Microsoft.Office.Interop.Outlook._MeetingItem.Sent" /> property of the object is set to <b>True</b>).</span></span> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2194,9 +2194,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlSensitivity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-330">Возвращает или задает значение константы <see cref="T:Microsoft.Office.Interop.Outlook.OlSensitivity" /> перечисление, указывающее, уровень конфиденциальности сообщения для элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-330">Returns or sets a constant in the <see cref="T:Microsoft.Office.Interop.Outlook.OlSensitivity" /> enumeration indicating the sensitivity for the Outlook item.</span></span> <span data-ttu-id="deea0-331">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-331">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-330">Возвращает или задает константу в <see cref="T:Microsoft.Office.Interop.Outlook.OlSensitivity" /> перечислении, указывающую чувствительность элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-330">Returns or sets a constant in the <see cref="T:Microsoft.Office.Interop.Outlook.OlSensitivity" /> enumeration indicating the sensitivity for the Outlook item.</span></span> <span data-ttu-id="c88b4-331">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-331">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-332">Это свойство соответствует свойству MAPI <b>PidTagSensitivity</b>.</span><span class="sxs-lookup"><span data-stu-id="deea0-332">This property corresponds to the MAPI property <b>PidTagSensitivity</b>.</span></span> </para>
+        <remarks><para><span data-ttu-id="c88b4-332">Это свойство соответствует свойству MAPI <b>PidTagSensitivity</b>.</span><span class="sxs-lookup"><span data-stu-id="c88b4-332">This property corresponds to the MAPI property <b>PidTagSensitivity</b>.</span></span> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2223,9 +2223,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-333">Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, было ли сообщение отправлено.</span><span class="sxs-lookup"><span data-stu-id="deea0-333">Returns a <b>Boolean</b> (<b>bool</b> in C#) value that indicates if a message has been sent.</span></span> <span data-ttu-id="deea0-334">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-334">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-333">Возвращает значение <b>Boolean</b> (<b>bool</b> в C#), которое указывает, было ли отправлено сообщение.</span><span class="sxs-lookup"><span data-stu-id="c88b4-333">Returns a <b>Boolean</b> (<b>bool</b> in C#) value that indicates if a message has been sent.</span></span> <span data-ttu-id="c88b4-334">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-334">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-335">В общем случае имеется три различных типа сообщений: отправленные, учтена и сохранен.</span><span class="sxs-lookup"><span data-stu-id="deea0-335">In general, there are three different kinds of messages: sent, posted, and saved.</span></span> <span data-ttu-id="deea0-336">Отправленные сообщения, отправленные получателю или общих папок элементы.</span><span class="sxs-lookup"><span data-stu-id="deea0-336">Sent messages are items sent to a recipient or public folder.</span></span> <span data-ttu-id="deea0-337">Отправленных сообщений создаются в общей папке.</span><span class="sxs-lookup"><span data-stu-id="deea0-337">Posted messages are created in a public folder.</span></span> <span data-ttu-id="deea0-338">Сохраненные сообщения создаются и сохраняются без отправки или учета.</span><span class="sxs-lookup"><span data-stu-id="deea0-338">Saved messages are created and saved without either sending or posting.</span></span></para>
+        <remarks><para><span data-ttu-id="c88b4-335">Как правило, существует три типа сообщений: отправленные, опубликованные и сохраненные.</span><span class="sxs-lookup"><span data-stu-id="c88b4-335">In general, there are three different kinds of messages: sent, posted, and saved.</span></span> <span data-ttu-id="c88b4-336">Отправленные сообщения — это элементы, отправляемые получателю или общедоступной папке.</span><span class="sxs-lookup"><span data-stu-id="c88b4-336">Sent messages are items sent to a recipient or public folder.</span></span> <span data-ttu-id="c88b4-337">Опубликованные сообщения создаются в общедоступной папке.</span><span class="sxs-lookup"><span data-stu-id="c88b4-337">Posted messages are created in a public folder.</span></span> <span data-ttu-id="c88b4-338">Сохраненные сообщения создаются и сохраняются без отправки и публикации.</span><span class="sxs-lookup"><span data-stu-id="c88b4-338">Saved messages are created and saved without either sending or posting.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2252,9 +2252,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-339">Возвращает <b>даты и времени</b> , которое указывает дату и время отправки элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-339">Returns a <b>DateTime</b> indicating the date and time on which the Outlook item was sent.</span></span> <span data-ttu-id="deea0-340">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-340">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-339">Возвращает <b>значение типа DateTime</b> , указывающее дату и время отправки элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-339">Returns a <b>DateTime</b> indicating the date and time on which the Outlook item was sent.</span></span> <span data-ttu-id="c88b4-340">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-340">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-341">Это свойство соответствует свойству MAPI <b>PidTagClientSubmitTime</b>.</span><span class="sxs-lookup"><span data-stu-id="deea0-341">This property corresponds to the MAPI property <b>PidTagClientSubmitTime</b>.</span></span> <span data-ttu-id="deea0-342">При отправке приглашения на собрание, элемент с помощью объекта <see cref="P:Microsoft.Office.Interop.Outlook._MeetingItem.ReceivedTime" /> метода, поставщика транспорта можно задать <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ReceivedTime" /> и <b>SentOn</b> свойства.</span><span class="sxs-lookup"><span data-stu-id="deea0-342">When you send a meeting request item using the object's <see cref="P:Microsoft.Office.Interop.Outlook._MeetingItem.ReceivedTime" />  method, the transport provider sets the <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ReceivedTime" />  and <b>SentOn</b> properties for you.</span></span> </para>
+        <remarks><para><span data-ttu-id="c88b4-341">Это свойство соответствует свойству MAPI <b>PidTagClientSubmitTime</b>.</span><span class="sxs-lookup"><span data-stu-id="c88b4-341">This property corresponds to the MAPI property <b>PidTagClientSubmitTime</b>.</span></span> <span data-ttu-id="c88b4-342">При отправке элемента приглашения на собрание с помощью <see cref="P:Microsoft.Office.Interop.Outlook._MeetingItem.ReceivedTime" /> метода объекта поставщик транспорта задает свойства <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ReceivedTime" /> и <b>SentOn</b> .</span><span class="sxs-lookup"><span data-stu-id="c88b4-342">When you send a meeting request item using the object's <see cref="P:Microsoft.Office.Interop.Outlook._MeetingItem.ReceivedTime" />  method, the transport provider sets the <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ReceivedTime" />  and <b>SentOn</b> properties for you.</span></span> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2281,9 +2281,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-343">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса.</span><span class="sxs-lookup"><span data-stu-id="deea0-343">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span></span> <span data-ttu-id="deea0-344">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-344">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-343">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса.</span><span class="sxs-lookup"><span data-stu-id="c88b4-343">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span></span> <span data-ttu-id="c88b4-344">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-344">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-345">Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса.</span><span class="sxs-lookup"><span data-stu-id="deea0-345">The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session.</span></span> <span data-ttu-id="deea0-346">Члены по своему назначению.</span><span class="sxs-lookup"><span data-stu-id="deea0-346">Both members serve the same purpose.</span></span> <span data-ttu-id="deea0-347">Например следующие пары операторов выполнить те же функции.</span><span class="sxs-lookup"><span data-stu-id="deea0-347">For example, the following pairs of statements perform the same function:</span></span></para>
+        <remarks><para><span data-ttu-id="c88b4-345">Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса.</span><span class="sxs-lookup"><span data-stu-id="c88b4-345">The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session.</span></span> <span data-ttu-id="c88b4-346">Оба участника выполняют одну и ту же задачу.</span><span class="sxs-lookup"><span data-stu-id="c88b4-346">Both members serve the same purpose.</span></span> <span data-ttu-id="c88b4-347">Например, следующие пары операторов выполняют одну и ту же функцию:</span><span class="sxs-lookup"><span data-stu-id="c88b4-347">For example, the following pairs of statements perform the same function:</span></span></para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -2314,7 +2314,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="deea0-348">Отображает диалоговое окно Показать категории, в которой можно выбрать категории, которые относятся к теме элемента.</span><span class="sxs-lookup"><span data-stu-id="deea0-348">Displays the Show Categories dialog box, which allows you to select categories that correspond to the subject of the item.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-348">Отображает диалоговое окно Показать категории, которое позволяет выбрать категории, соответствующие теме элемента.</span><span class="sxs-lookup"><span data-stu-id="c88b4-348">Displays the Show Categories dialog box, which allows you to select categories that correspond to the subject of the item.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2341,7 +2341,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-349">Возвращает значение типа <b>Integer</b> (<b>целое</b> в C#), определяющее размер (в байтах) элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-349">Returns an <b>Integer</b> (<b>int</b> in C#) value indicating the size (in bytes) of the Outlook item.</span></span> <span data-ttu-id="deea0-350">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-350">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-349">Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), которое указывает размер (в байтах) элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-349">Returns an <b>Integer</b> (<b>int</b> in C#) value indicating the size (in bytes) of the Outlook item.</span></span> <span data-ttu-id="c88b4-350">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-350">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2372,9 +2372,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-351">Возвращает или задает <b>String</b> (<b>строка</b> в C#), указывающее, тема для элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-351">Returns or sets a <b>String</b> (<b>string</b> in C#) indicating the subject for the Outlook item.</span></span> <span data-ttu-id="deea0-352">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-352">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-351">Возвращает или задает <b>строку</b> (<b>строку</b> в C#), указывающую тему элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-351">Returns or sets a <b>String</b> (<b>string</b> in C#) indicating the subject for the Outlook item.</span></span> <span data-ttu-id="c88b4-352">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-352">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-353">Это свойство соответствует свойству MAPI <b>PidTagSubject</b>.</span><span class="sxs-lookup"><span data-stu-id="deea0-353">This property corresponds to the MAPI property <b>PidTagSubject</b>.</span></span> <span data-ttu-id="deea0-354">Свойство <b>Subject</b> является свойством по умолчанию для элементов Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-354">The <b>Subject</b> property is the default property for Outlook items.</span></span> </para>
+        <remarks><para><span data-ttu-id="c88b4-353">Это свойство соответствует свойству MAPI <b>PidTagSubject</b>.</span><span class="sxs-lookup"><span data-stu-id="c88b4-353">This property corresponds to the MAPI property <b>PidTagSubject</b>.</span></span> <span data-ttu-id="c88b4-354">Свойство <b>subject</b> является свойством по умолчанию для элементов Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-354">The <b>Subject</b> property is the default property for Outlook items.</span></span> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2401,9 +2401,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-355">Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), который имеет <b>значение True</b> , если элемент был отправлен.</span><span class="sxs-lookup"><span data-stu-id="deea0-355">Returns a <b>Boolean</b> (<b>bool</b> in C#) value that is <b>True</b> if the item has been submitted.</span></span> <span data-ttu-id="deea0-356">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-356">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-355">Возвращает значение <b>Boolean</b> (<b>bool</b> в C#), которое равно <b>true</b> , если элемент был отправлен.</span><span class="sxs-lookup"><span data-stu-id="c88b4-355">Returns a <b>Boolean</b> (<b>bool</b> in C#) value that is <b>True</b> if the item has been submitted.</span></span> <span data-ttu-id="c88b4-356">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-356">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="deea0-357">Сообщение всегда создается и отправлено в папке, обычно Исходящие.</span><span class="sxs-lookup"><span data-stu-id="deea0-357">A message is always created and submitted in a folder, usually the Outbox.</span></span> </para>
+        <remarks><para><span data-ttu-id="c88b4-357">Сообщение всегда создается и отправляется в папке, как правило, в папке "Исходящие".</span><span class="sxs-lookup"><span data-stu-id="c88b4-357">A message is always created and submitted in a folder, usually the Outbox.</span></span> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2433,7 +2433,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-358">Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение <b>True</b> , если Outlook, элемент не был открыт (чтение).</span><span class="sxs-lookup"><span data-stu-id="deea0-358">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) value that is <b>True</b> if the Outlook item has not been opened (read).</span></span> <span data-ttu-id="deea0-359">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="deea0-359">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-358">Возвращает или задает значение <b>Boolean</b> (<b>bool</b> в C#), которое равно <b>true</b> , если элемент Outlook не был открыт (чтение).</span><span class="sxs-lookup"><span data-stu-id="c88b4-358">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) value that is <b>True</b> if the Outlook item has not been opened (read).</span></span> <span data-ttu-id="c88b4-359">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c88b4-359">Read/write.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2461,7 +2461,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.UserProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="deea0-360">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> коллекции, представляющей все свойства пользователя для элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="deea0-360">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" />  collection that represents all the user properties for the Outlook item.</span></span> <span data-ttu-id="deea0-361">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="deea0-361">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c88b4-360">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> коллекцию, которая представляет все свойства пользователя для элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="c88b4-360">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" />  collection that represents all the user properties for the Outlook item.</span></span> <span data-ttu-id="c88b4-361">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c88b4-361">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

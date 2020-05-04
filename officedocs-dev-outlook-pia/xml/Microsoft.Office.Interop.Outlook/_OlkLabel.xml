@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="ffcb9-101">Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span></span> <span data-ttu-id="ffcb9-102">Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span></span> <span data-ttu-id="ffcb9-103">В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span></span> <span data-ttu-id="ffcb9-104">Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.OlkLabel" />.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.OlkLabel" />.</span></span></summary>
+    <summary><span data-ttu-id="7f13a-101">Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM.</span><span class="sxs-lookup"><span data-stu-id="7f13a-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span></span> <span data-ttu-id="7f13a-102">Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий.</span><span class="sxs-lookup"><span data-stu-id="7f13a-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span></span> <span data-ttu-id="7f13a-103">Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM.</span><span class="sxs-lookup"><span data-stu-id="7f13a-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span></span> <span data-ttu-id="7f13a-104">Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.OlkLabel" />.</span><span class="sxs-lookup"><span data-stu-id="7f13a-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.OlkLabel" />.</span></span></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,11 +48,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ffcb9-105">Возвращает или задает значение типа <b>String</b> (<b>строка</b> в C#), представляющее accelerator или сочетание клавиш для элемента управления.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-105">Returns or sets a <b>String</b> (<b>string</b> in C#) value that represents the accelerator or hot key for the control.</span></span> <span data-ttu-id="ffcb9-106">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-106">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="7f13a-105">Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее ускоритель или сочетание клавиш для элемента управления.</span><span class="sxs-lookup"><span data-stu-id="7f13a-105">Returns or sets a <b>String</b> (<b>string</b> in C#) value that represents the accelerator or hot key for the control.</span></span> <span data-ttu-id="7f13a-106">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="7f13a-106">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ffcb9-107">Значение по умолчанию — пустая строка, то есть не горячей ключ.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-107">The default value is an empty string, meaning there is no hot key.</span></span>  <span data-ttu-id="ffcb9-108">Если свойство имеет значение со строкой более одного символа, значение будет усечено до первого знака.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-108">If the property is set with a string of more than one character, the value will  be truncated to the first character.</span></span>  </para>
-          <para><span data-ttu-id="ffcb9-109">Сочетание клавиш нельзя использовать цифры.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-109">You cannot use digits in an accelerator.</span></span></para>
-          <para><span data-ttu-id="ffcb9-110">При нажатии сочетания клавиш для элемента label фокус, не элемент управления label получает следующий элемент управления в последовательности табуляции.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-110">When the accelerator key for a label is pressed, the next control in the tab order receives the focus, not the label control.</span></span></para>
+        <remarks><para><span data-ttu-id="7f13a-107">Значение по умолчанию — пустая строка, означающее отсутствие сочетания клавиш.</span><span class="sxs-lookup"><span data-stu-id="7f13a-107">The default value is an empty string, meaning there is no hot key.</span></span>  <span data-ttu-id="7f13a-108">Если для свойства задана строка из нескольких символов, значение будет укорочено до первого символа.</span><span class="sxs-lookup"><span data-stu-id="7f13a-108">If the property is set with a string of more than one character, the value will  be truncated to the first character.</span></span>  </para>
+          <para><span data-ttu-id="7f13a-109">В ускорителе нельзя использовать цифры.</span><span class="sxs-lookup"><span data-stu-id="7f13a-109">You cannot use digits in an accelerator.</span></span></para>
+          <para><span data-ttu-id="7f13a-110">При нажатии клавиши сочетания клавиш для метки следующий элемент управления в последовательности табуляции получает фокус, а не элемент управления Label.</span><span class="sxs-lookup"><span data-stu-id="7f13a-110">When the accelerator key for a label is pressed, the next control in the tab order receives the focus, not the label control.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -82,9 +82,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ffcb9-111">Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), которая автоматически изменяет размер элемента управления для отображения всего содержимого.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-111">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) that automatically sizes the control to display  the entire contents.</span></span>  <span data-ttu-id="ffcb9-112">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-112">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="7f13a-111">Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое автоматически изменяет размер элемента управления для отображения всего содержимого.</span><span class="sxs-lookup"><span data-stu-id="7f13a-111">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) that automatically sizes the control to display  the entire contents.</span></span>  <span data-ttu-id="7f13a-112">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="7f13a-112">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para>  <span data-ttu-id="ffcb9-113">Значение по умолчанию для этого свойства — <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-113">The default value for this property is <b>False</b>.</span></span></para>
+        <remarks><para>  <span data-ttu-id="7f13a-113">По умолчанию для этого свойства задано значение <b>false</b>.</span><span class="sxs-lookup"><span data-stu-id="7f13a-113">The default value for this property is <b>False</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -117,9 +117,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ffcb9-114">Возвращает или задает значение <b>UInteger</b> (<b>uint</b> в C#), которое указывает цвет фона элемента управления.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-114">Returns or sets a <b>UInteger</b> (<b>uint</b> in C#) value that indicates the background color of the control.</span></span> <span data-ttu-id="ffcb9-115">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-115">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="7f13a-114">Возвращает или задает значение <b>UInteger</b> (<b>uint</b> в C#), которое указывает цвет фона элемента управления.</span><span class="sxs-lookup"><span data-stu-id="7f13a-114">Returns or sets a <b>UInteger</b> (<b>uint</b> in C#) value that indicates the background color of the control.</span></span> <span data-ttu-id="7f13a-115">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="7f13a-115">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ffcb9-116">Это свойство имеет тип <b>OLE_COLOR</b> , которое является значением <b>UInteger</b> (<b>uint</b> в C#).</span><span class="sxs-lookup"><span data-stu-id="ffcb9-116">This property is of the type <b>OLE_COLOR</b> which is a <b>UInteger</b> (<b>uint</b> in C#) value.</span></span> <span data-ttu-id="ffcb9-117">Значение по умолчанию для этого свойства — 0x8000000F, «Кнопка».</span><span class="sxs-lookup"><span data-stu-id="ffcb9-117">The default value for this property is 0x8000000F, "Button Face."</span></span></para>
+        <remarks><para><span data-ttu-id="7f13a-116">Это свойство имеет тип <b>OLE_COLOR</b> который является значением <b>UInteger</b> (<b>uint</b> в C#).</span><span class="sxs-lookup"><span data-stu-id="7f13a-116">This property is of the type <b>OLE_COLOR</b> which is a <b>UInteger</b> (<b>uint</b> in C#) value.</span></span> <span data-ttu-id="7f13a-117">По умолчанию для этого свойства задано значение 0x8000000F, "Face Button".</span><span class="sxs-lookup"><span data-stu-id="7f13a-117">The default value for this property is 0x8000000F, "Button Face."</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -149,9 +149,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlBackStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ffcb9-118">Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlBackStyle" /> константа, изменяется стиль фона элемента управления между прозрачный и непрозрачный.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-118">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlBackStyle" /> constant that changes the background style of the control between transparent and opaque.</span></span> <span data-ttu-id="ffcb9-119">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-119">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="7f13a-118">Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlBackStyle" /> константу, которая изменяет стиль фона элемента управления прозрачным и непрозрачным.</span><span class="sxs-lookup"><span data-stu-id="7f13a-118">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlBackStyle" /> constant that changes the background style of the control between transparent and opaque.</span></span> <span data-ttu-id="7f13a-119">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="7f13a-119">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ffcb9-120">Значение по умолчанию — <b>olBackStyleOpaque</b>.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-120">The default value is <b>olBackStyleOpaque</b>.</span></span>  </para>
+        <remarks><para><span data-ttu-id="7f13a-120">Значение по умолчанию — <b>олбаккстилеопакуе</b>.</span><span class="sxs-lookup"><span data-stu-id="7f13a-120">The default value is <b>olBackStyleOpaque</b>.</span></span>  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -181,9 +181,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ffcb9-121">Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlBorderStyle" /> константа, который определяет стиль границы вокруг элемента управления.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-121">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlBorderStyle" /> constant that defines the style of the  border  around the control.</span></span>   <span data-ttu-id="ffcb9-122">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-122">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="7f13a-121">Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlBorderStyle" /> константу, определяющую стиль границы вокруг элемента управления.</span><span class="sxs-lookup"><span data-stu-id="7f13a-121">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlBorderStyle" /> constant that defines the style of the  border  around the control.</span></span>   <span data-ttu-id="7f13a-122">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="7f13a-122">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ffcb9-123">Значение по умолчанию — <b>olBorderStyleSingle</b>.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-123">The default value is <b>olBorderStyleSingle</b>.</span></span></para>
+        <remarks><para><span data-ttu-id="7f13a-123">Значение по умолчанию — <b>олбордерстилесингле</b>.</span><span class="sxs-lookup"><span data-stu-id="7f13a-123">The default value is <b>olBorderStyleSingle</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -213,9 +213,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ffcb9-124">Возвращает или задает <b>String</b> (<b>строка</b> в C#), который отображается на объекте, чтобы определить или описать его.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-124">Returns or sets a <b>String</b> (<b>string</b> in C#) that appears on an object to identify or describe it.</span></span>  <span data-ttu-id="ffcb9-125">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-125">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="7f13a-124">Возвращает или задает <b>строку</b> (<b>строку</b> в C#), которая отображается в объекте для идентификации или описания.</span><span class="sxs-lookup"><span data-stu-id="7f13a-124">Returns or sets a <b>String</b> (<b>string</b> in C#) that appears on an object to identify or describe it.</span></span>  <span data-ttu-id="7f13a-125">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="7f13a-125">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ffcb9-126">Значение по умолчанию — пустая строка.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-126">The default value is an empty string.</span></span> <span data-ttu-id="ffcb9-127">Конструктор форм этому свойству присваивается имя элемента управления по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-127">The Forms Designer sets this property to the control's default name.</span></span>  </para>
+        <remarks><para><span data-ttu-id="7f13a-126">Значение по умолчанию: пустая строка.</span><span class="sxs-lookup"><span data-stu-id="7f13a-126">The default value is an empty string.</span></span> <span data-ttu-id="7f13a-127">Конструктор форм задает для этого свойства имя по умолчанию для элемента управления.</span><span class="sxs-lookup"><span data-stu-id="7f13a-127">The Forms Designer sets this property to the control's default name.</span></span>  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -245,9 +245,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ffcb9-128">Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), которое указывает, если элемент управления может работать.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-128">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) that indicates if the control is allowed to function.</span></span>  <span data-ttu-id="ffcb9-129">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-129">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="7f13a-128">Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, может ли элемент управления работать.</span><span class="sxs-lookup"><span data-stu-id="7f13a-128">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) that indicates if the control is allowed to function.</span></span>  <span data-ttu-id="7f13a-129">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="7f13a-129">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ffcb9-130">Значение по умолчанию — <b>True</b>.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-130">The default value is <b>True</b>.</span></span></para>
+        <remarks><para><span data-ttu-id="7f13a-130">Значение по умолчанию — <b>True</b>.</span><span class="sxs-lookup"><span data-stu-id="7f13a-130">The default value is <b>True</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -274,7 +274,7 @@
         <ReturnType>stdole.StdFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ffcb9-131">Возврат значения в <b>StdFont</b> , который представляет шрифт, используемый для отображения текста в элементе управления.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-131">Returns as <b>StdFont</b> that represents the font used to render the text inside the control.</span></span>  <span data-ttu-id="ffcb9-132">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-132">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="7f13a-131">Возвращает как <b>стдфонт</b> , который представляет шрифт, используемый для отображения текста в элементе управления.</span><span class="sxs-lookup"><span data-stu-id="7f13a-131">Returns as <b>StdFont</b> that represents the font used to render the text inside the control.</span></span>  <span data-ttu-id="7f13a-132">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="7f13a-132">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -308,9 +308,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ffcb9-133">Возвращает или задает значение <b>UInteger</b> (<b>uint</b> в C#), которое указывает, цвет переднего плана элемента управления.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-133">Returns or sets a <b>UInteger</b> (<b>uint</b> in C#) value that indicates the foreground color of the control.</span></span> <span data-ttu-id="ffcb9-134">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-134">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="7f13a-133">Возвращает или задает значение <b>UInteger</b> (<b>uint</b> в C#), которое указывает цвет переднего плана для элемента управления.</span><span class="sxs-lookup"><span data-stu-id="7f13a-133">Returns or sets a <b>UInteger</b> (<b>uint</b> in C#) value that indicates the foreground color of the control.</span></span> <span data-ttu-id="7f13a-134">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="7f13a-134">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ffcb9-135">Это свойство имеет тип <b>OLE_COLOR</b> , которое является значением <b>UInteger</b> (<b>uint</b> в C#).</span><span class="sxs-lookup"><span data-stu-id="ffcb9-135">This property is of the type <b>OLE_COLOR</b> which is a <b>UInteger</b> (<b>uint</b> in C#) value.</span></span> <span data-ttu-id="ffcb9-136">Значение по умолчанию для этого свойства — 0x80000008, «Окно текст».</span><span class="sxs-lookup"><span data-stu-id="ffcb9-136">The default value for this property is 0x80000008, "Window Text."</span></span>  </para>
+        <remarks><para><span data-ttu-id="7f13a-135">Это свойство имеет тип <b>OLE_COLOR</b> который является значением <b>UInteger</b> (<b>uint</b> в C#).</span><span class="sxs-lookup"><span data-stu-id="7f13a-135">This property is of the type <b>OLE_COLOR</b> which is a <b>UInteger</b> (<b>uint</b> in C#) value.</span></span> <span data-ttu-id="7f13a-136">Значение этого свойства по умолчанию — 0x80000008, "текст окна".</span><span class="sxs-lookup"><span data-stu-id="7f13a-136">The default value for this property is 0x80000008, "Window Text."</span></span>  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -340,9 +340,9 @@
         <ReturnType>stdole.StdPicture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ffcb9-137">Возвращает или задает <b>StdPicture</b> , представляющий настраиваемые изображения курсор мыши для данного элемента управления.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-137">Returns or sets a <b>StdPicture</b> that represents the custom picture to the mouse cursor for this control.</span></span> <span data-ttu-id="ffcb9-138">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-138">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="7f13a-137">Возвращает или задает <b>стдпиктуре</b> , представляющий настраиваемый рисунок курсора мыши для этого элемента управления.</span><span class="sxs-lookup"><span data-stu-id="7f13a-137">Returns or sets a <b>StdPicture</b> that represents the custom picture to the mouse cursor for this control.</span></span> <span data-ttu-id="7f13a-138">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="7f13a-138">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ffcb9-139">Значение по умолчанию — <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</span><span class="sxs-lookup"><span data-stu-id="ffcb9-139">The default value is <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#).</span></span></para>
+        <remarks><para><span data-ttu-id="7f13a-139">Значение по умолчанию — <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</span><span class="sxs-lookup"><span data-stu-id="7f13a-139">The default value is <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#).</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -372,9 +372,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMousePointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ffcb9-140">Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> константа, которая определяет тип указателя, который отображается при наведении мыши на элемент управления.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-140">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> constant that specifies the type of pointer displayed when the user positions the mouse over the control.</span></span>  <span data-ttu-id="ffcb9-141">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-141">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="7f13a-140">Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> константу, определяющую тип указателя, отображаемого при наведении указателя мыши на элемент управления.</span><span class="sxs-lookup"><span data-stu-id="7f13a-140">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> constant that specifies the type of pointer displayed when the user positions the mouse over the control.</span></span>  <span data-ttu-id="7f13a-141">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="7f13a-141">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ffcb9-142">Значение по умолчанию — <b>olMousePointerDefault</b>.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-142">The default value is <b>olMousePointerDefault</b>.</span></span></para>
+        <remarks><para><span data-ttu-id="7f13a-142">Значение по умолчанию — <b>олмаусепоинтердефаулт</b>.</span><span class="sxs-lookup"><span data-stu-id="7f13a-142">The default value is <b>olMousePointerDefault</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -404,9 +404,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlTextAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ffcb9-143">Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> константа, которая указывает способ выравнивания текста в элементе управления.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-143">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> constant that specifies how text is aligned in the control.</span></span>  <span data-ttu-id="ffcb9-144">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-144">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="7f13a-143">Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> константу, определяющую выравнивание текста в элементе управления.</span><span class="sxs-lookup"><span data-stu-id="7f13a-143">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> constant that specifies how text is aligned in the control.</span></span>  <span data-ttu-id="7f13a-144">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="7f13a-144">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ffcb9-145">Значение по умолчанию — <b>olTextAlignLeft</b> на языках справа налево, например, на английском языке.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-145">The default value is <b>olTextAlignLeft</b> in left-to-right languages such as English.</span></span></para>
+        <remarks><para><span data-ttu-id="7f13a-145">По умолчанию используется значение <b>олтексталигнлефт</b> в языках с письмом слева направо, например, на английском языке.</span><span class="sxs-lookup"><span data-stu-id="7f13a-145">The default value is <b>olTextAlignLeft</b> in left-to-right languages such as English.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -436,9 +436,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ffcb9-146">Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), которое указывает, должен ли элемент управления label использовать цвет переднего плана в соответствии с текущей темы Windows XP или Windows Vista.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-146">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) that indicates whether the label control should use the foreground color to match the current Windows XP or Windows Vista theme.</span></span> <span data-ttu-id="ffcb9-147">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-147">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="7f13a-146">Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, должен ли элемент управления метки использовать основной цвет для соответствия текущей теме Windows XP или Windows Vista.</span><span class="sxs-lookup"><span data-stu-id="7f13a-146">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) that indicates whether the label control should use the foreground color to match the current Windows XP or Windows Vista theme.</span></span> <span data-ttu-id="7f13a-147">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="7f13a-147">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ffcb9-148">Это свойство предназначено для метки элементов управления в форме сообщения, отображаемые в области чтения и в инспекторе.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-148">This property is intended for label controls in a message form displayed in the Reading Pane and in the Inspector.</span></span> <span data-ttu-id="ffcb9-149">Если свойство имеет <b>значение True</b>, метку следует использовать цвет переднего плана, которая соответствует текущей темы Windows.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-149">If the property is <b>True</b>, then the label should use the foreground color that matches the current Windows theme.</span></span> <span data-ttu-id="ffcb9-150">Если свойство имеет <b>значение False</b>, то метки следует использовать цвет переднего плана, указанный в параметре <see cref="P:Microsoft.Office.Interop.Outlook._OlkLabel.ForeColor" /> свойство.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-150">If the property is <b>False</b>, then the label should use the foreground color indicated by the <see cref="P:Microsoft.Office.Interop.Outlook._OlkLabel.ForeColor" /> property.</span></span></para>
+        <remarks><para><span data-ttu-id="7f13a-148">Это свойство предназначено для элементов управления метки в форме сообщений, отображаемых в области чтения и в инспекторе.</span><span class="sxs-lookup"><span data-stu-id="7f13a-148">This property is intended for label controls in a message form displayed in the Reading Pane and in the Inspector.</span></span> <span data-ttu-id="7f13a-149">Если свойство имеет <b>значение true</b>, то в метке должен использоваться основной цвет, соответствующий текущей теме Windows.</span><span class="sxs-lookup"><span data-stu-id="7f13a-149">If the property is <b>True</b>, then the label should use the foreground color that matches the current Windows theme.</span></span> <span data-ttu-id="7f13a-150">Если свойство имеет <b>значение false</b>, то в метке должен использоваться цвет переднего плана, <see cref="P:Microsoft.Office.Interop.Outlook._OlkLabel.ForeColor" /> указанный свойством.</span><span class="sxs-lookup"><span data-stu-id="7f13a-150">If the property is <b>False</b>, then the label should use the foreground color indicated by the <see cref="P:Microsoft.Office.Interop.Outlook._OlkLabel.ForeColor" /> property.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -474,7 +474,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ffcb9-151">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-151">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
+        <summary><span data-ttu-id="7f13a-151">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span><span class="sxs-lookup"><span data-stu-id="7f13a-151">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -505,9 +505,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ffcb9-152">Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), указывающее, является ли содержимое элемента управления автоматический перенос в конце строки.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-152">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) that specifies whether the contents of a control automatically wrap at the end of a line.</span></span>  <span data-ttu-id="ffcb9-153">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-153">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="7f13a-152">Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, будет ли содержимое элемента управления автоматически переноситься в конце строки.</span><span class="sxs-lookup"><span data-stu-id="7f13a-152">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) that specifies whether the contents of a control automatically wrap at the end of a line.</span></span>  <span data-ttu-id="7f13a-153">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="7f13a-153">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ffcb9-154">Значение по умолчанию — <b>True</b>.</span><span class="sxs-lookup"><span data-stu-id="ffcb9-154">The default value is <b>True</b>.</span></span></para>
+        <remarks><para><span data-ttu-id="7f13a-154">Значение по умолчанию — <b>True</b>.</span><span class="sxs-lookup"><span data-stu-id="7f13a-154">The default value is <b>True</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
