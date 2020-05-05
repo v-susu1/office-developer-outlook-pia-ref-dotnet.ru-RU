@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,7 +73,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -104,7 +104,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, указывающее, представленное ли правило форматирования <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> объектов включен. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>логического</b> значения (<b>bool</b> в C#), которое указывает, включено ли правило форматирования, <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> представленное объектом. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -135,11 +135,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение типа <b>String</b> (<b>строка</b> в C#), представляющее фильтра для настраиваемого правила форматирования.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее фильтр для настраиваемого правила форматирования.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение этого свойства — это DAV поиска и поиск (DASL) строку, представляющую текущий фильтр для настраиваемого правила форматирования. Дополнительные сведения об использовании DASL для фильтрации элементов, отформатированный с правила форматирования можно <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Фильтрации элементов</a></para>
+        <remarks><para>Значение этого свойства — это строка поиска и обнаружения DAV, которая представляет текущий фильтр для настраиваемого правила форматирования. Дополнительные сведения об использовании DASL для фильтрации элементов, отформатированных с помощью правила форматирования, приведены в статье <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Фильтрация элементов</a></para>
           <para>
-            <b>Примечание</b>: это свойство возвращает пустую строку для стандартных правила форматирования ( <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> объект с <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Standard" /> свойство значение <b>True</b>). Попытка присвоить значение этого свойства для стандартных правила форматирования, возникает ошибка.</para>
+            <b>Note</b>: данное свойство возвращает пустую строку для стандартного правила форматирования ( <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> объект со значением <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Standard" /> свойства, равным <b>true</b>). При попытке присвоить этому свойству значение для стандартного правила форматирования возникает ошибка.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -200,7 +200,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет отображаемое имя для объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее отображаемое имя объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -228,7 +228,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -256,9 +256,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -291,9 +291,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, будет ли <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> объектов представляет встроенные правила форматирования Outlook. Только для чтения.</summary>
+        <summary>Возвращает логическое<b>значение (</b> <b>логическое</b> значение в C#), которое указывает, <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> представляет ли объект встроенное правило форматирования Outlook. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Если значение этого свойства имеет значение <b>True</b>, а затем <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Filter" /> и <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Name" /> пользователи не могут менять свойства объекта <b>AutoFormatRule</b> . Аналогично, нельзя использовать <see cref="M:Microsoft.Office.Interop.Outlook._AutoFormatRules.Remove(System.Object)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRules" /> правила семейства сайтов для удаления встроенных форматирования Outlook, а также использовать <see cref="M:Microsoft.Office.Interop.Outlook._AutoFormatRules.Insert(System.String,System.Object)" /> метода <b>AutoFormatRules</b> коллекции для вставки настраиваемого правила форматирования выше или между в этой коллекции правил форматирования встроенных Outlook.</para>
+        <remarks><para>Если для этого свойства задано значение <b>true</b>, то <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Filter" /> свойства и <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Name" /> объекта <b>AutoFormatRule</b> нельзя изменить. Аналогично, невозможно <see cref="M:Microsoft.Office.Interop.Outlook._AutoFormatRules.Remove(System.Object)" /> использовать метод <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRules" /> коллекции для удаления встроенного правила форматирования Outlook, а также для вставки настраиваемого правила форматирования выше или <see cref="M:Microsoft.Office.Interop.Outlook._AutoFormatRules.Insert(System.String,System.Object)" /> между встроенными правилами форматирования Outlook, включенными в эту коллекцию, или с помощью метода коллекции <b>AutoFormatRules</b> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>

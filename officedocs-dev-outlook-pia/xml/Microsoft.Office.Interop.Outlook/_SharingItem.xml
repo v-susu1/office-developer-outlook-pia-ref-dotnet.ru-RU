@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Actions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Actions" /> коллекции, представляющей все доступные действия для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Actions" /> коллекцию, которая представляет все доступные действия для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,29 +73,29 @@
         <Parameter Name="contact" Type="Microsoft.Office.Interop.Outlook.ContactItem" />
       </Parameters>
       <Docs>
-        <param name="contact">Элемент контактов из которого требуется получить сведения о визитной карточки.</param>
-        <summary>Добавляет контактные данные на основе на электронной визитной карточки (EBC) связанный с заданным <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" /> объект <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекта.</summary>
-        <remarks><para>Этот метод добавляет контактных данных, созданных на основании сведений, хранящихся в объекте <b>ContactItem</b> существующий объект <b>SharingItem</b> .  Сведения, включенные зависит от значение <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.BodyFormat" /> свойства для объекта <b>SharingItem</b> :</para>
+        <param name="contact">Элемент контакта, из которого необходимо получить сведения о визитной карточке.</param>
+        <summary>Добавляет контактную информацию на основе электронной визитной карточки (EBC), связанной с указанным <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" /> объектом, в <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объект.</summary>
+        <remarks><para>Этот метод добавляет контактную информацию, созданную на основе информации, хранящейся в объекте <b>ContactItem</b> , с существующим объектом <b>SharingItem</b> .  Включаемые сведения зависят от значения <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.BodyFormat" /> свойства для объекта <b>SharingItem</b> :</para>
           <list type="table">
             <item>
               <description>Значение свойства</description>
               <description>Результат</description>
             </item>
             <item>
-              <description>olFormatPlain</description>
-              <description>Файл vCard (.vcf), которая добавляется в коллекцию вложений объект SharingItem.</description>
+              <description>олформатплаин</description>
+              <description>Файл vCard (VCF) создается и добавляется в коллекцию вложений объекта SharingItem.</description>
             </item>
             <item>
-              <description>olFormatRichText</description>
-              <description>Файл vCard (.vcf), которая добавляется в коллекцию вложений объект SharingItem.</description>
+              <description>олформатричтекст</description>
+              <description>Файл vCard (VCF) создается и добавляется в коллекцию вложений объекта SharingItem.</description>
             </item>
             <item>
-              <description>olFormatHTML</description>
-              <description>Созданные и включенные в свойство Body объект SharingItem изображение визитной карточки, и файл vCard (.vcf), которая добавляется в коллекцию вложений объект SharingItem.</description>
+              <description>олформастмл</description>
+              <description>Изображение визитной карточки создается и включается в свойство Body объекта SharingItem, а также создается файл vCard (VCF), который добавляется в коллекцию вложений объекта SharingItem.</description>
             </item>
           </list>
           <para>
-            <b>Примечание</b>: вложенные vCard файл содержит контактные данные, включенные в электронной визитной карточки связанного с объектом <b>ContactItem</b> . Контактные сведения не отображаются в электронной визитной карточки исключается из файла vCard.</para>
+            <b>Note</b>: вложенный файл vCard содержит только контактные данные, включенные в электронную визитную карточку, связанную с объектом <b>ContactItem</b> . Сведения о контактах, не отображаемые в электронной визитной карточке, исключаются из файла vCard.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -120,11 +120,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Позволяет запрос на общий доступ и общего доступа посылает отправителю <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.</summary>
-        <remarks><para>Метод <b>Разрешить</b> могут вызываться только для объектов <b>SharingItem</b> <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.Type" /> значение свойства <b>olSharingMsgTypeRequest</b> или <b>olSharingMsgTypeInviteAndRequest</b>.</para>
-          <para>Свойство <b>Type</b> общего доступа ответа, отправленный при вызове этого метода имеет значение <b>olSharingMsgTypeResponseAllow</b>.</para>
+        <summary>Разрешает общий доступ и отправляет ответ об общем доступе отправителю <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.</summary>
+        <remarks><para>Метод <b>allow</b> может вызываться только для объектов <b>SharingItem</b> со значением <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.Type" /> свойства <b>олшарингмсгтиперекуест</b> или <b>олшарингмсгтипеинвитеандрекуест</b>.</para>
+          <para>Свойство <b>Type</b> для ответа общего доступа, отправляемого при вызове этого метода, устанавливается равным <b>олшарингмсгтипереспонсеаллов</b>.</para>
           <para>
-            <b>Примечание</b>: общий доступ к может сразу же после вызова этого метода, независимо от того, является ли получен ответ общего доступа.</para>
+            <b>Note</b>: общий доступ разрешается сразу после вызова этого метода независимо от того, был ли получен ответ общего доступа.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -154,10 +154,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, которое указывает, следует ли включать доступ на запись в папку приглашения на общий доступ. Для чтения и записи.</summary>
-        <value><b>Значение true,</b> Если получатель приглашение к совместному использованию должны получить доступ на запись; в противном случае — <b>False</b>. Значение по умолчанию — <b>False</b>.</value>
-        <remarks><para>При отправке приглашения на общий доступ для папки не по умолчанию, получатель можно предоставить доступ на запись в папку, в дополнение к доступ на чтение по умолчанию.  Это свойство определяет, если получателю, будут иметь разрешение на запись при <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> отправляется.</para>
-          <para>Ошибка возникает при попытке установить это свойство после отправки или получения сообщений общего доступа.</para>
+        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> в C#), которое указывает, должно ли приглашение к совместному использованию включать доступ на запись к папке. Для чтения и записи.</summary>
+        <value><b>Имеет значение true</b> , если получатель приглашения к совместному использованию должен получать доступ на запись; в противном случае — <b>false</b>. Значение по умолчанию - <b>false</b>.</value>
+        <remarks><para>При отправке приглашения к совместному использованию для папки, отличной от папки по умолчанию, получателю можно предоставить доступ на запись к папке в дополнение к доступу для чтения по умолчанию.  Это свойство определяет, следует ли предоставлять получателю разрешение на запись при <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> отправке.</para>
+          <para>Если вы попытаетесь установить это свойство после отправки или получения сообщения о предоставлении доступа, возникает ошибка.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -187,7 +187,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>типа Boolean</b> (<b>bool</b> в C#), который имеет <b>значение True</b> , если элемент можно перенаправлять. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> в C#), которое равно <b>true</b> , если элемент можно переадресовать. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -215,7 +215,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительского приложения Outlook для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -243,7 +243,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Attachments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" /> объект, представляющий все вложения для указанного <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" /> объект, который представляет все вложения для указанного <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />элемента. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -274,7 +274,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>типа Boolean</b> (<b>bool</b> в C#), который имеет <b>значение True</b> , если элемент был автоматически переадресовываться. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> в C#), которое равно <b>true</b> , если элемент был автоматически переадресован. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -305,11 +305,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее отображать список имен скрытой копии (СК) для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую список имен скрытой копии (BCC) для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство содержит только отображаемые имена, разделенных точкой с запятой (;) знаков. <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> Семейства сайтов должен использоваться для изменения получателей скрытой копии. </para>
+        <remarks><para>Данное свойство содержит только отображаемые имена, разделенные точкой с запятой (;) символа. <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> Коллекция должна использоваться для изменения получателей скрытой копии. </para>
           <para>
-            <b>Примечание</b>: Если <b>SharingItem</b> Exchange, общий доступ к контекста, а затем этого свойства для любого значения, отличного от <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#) не позволяет элемент отправки и вызывает <see cref="M:Microsoft.Office.Interop.Outlook._SharingItem.Send" /> метод вызовет ошибку.</para>
+            <b>Note</b>: Если в <b>SharingItem</b> используется контекст общего доступа Exchange, то установка для этого свойства любого значения, отличного от <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), запрещает отправку элемента <see cref="M:Microsoft.Office.Interop.Outlook._SharingItem.Send" /> , а метод вызывает ошибку.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -339,9 +339,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#), представляющее выставления счетов информации, связанной с <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), представляющую сведения для выставления счетов <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />, связанные с. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это поле текст в свободной форме.</para>
+        <remarks><para>Это текстовое поле произвольной формы.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -371,7 +371,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляющее тело открытым текстом <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> (<b>String</b> в C#), представляющую собой основной текст <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -402,10 +402,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlBodyFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlBodyFormat" /> константа, формат основного текста.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlBodyFormat" /> константу, указывающую формат основного текста.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Текстовый формат текста определяет стандарт, используемый для отображения текста сообщения. Microsoft Outlook предоставляет три варианта формат текста body: обычный текст, форматированный текст (RTF) и HTML.</para>
-          <para>Будут потеряны все форматирование текста, если свойство <b>BodyFormat</b> переключения с RTF, HTML и наоборот.</para>
+        <remarks><para>Формат основного текста определяет стандарт, используемый для отображения текста сообщения. Microsoft Outlook предоставляет три варианта форматирования текста: обычный текст, форматированный текст (RTF) и HTML.</para>
+          <para>При переключении свойства <b>BodyFormat</b> из формата RTF в HTML и наоборот все форматирование текста будет потеряно.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -435,9 +435,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#), представляющее категории назначены <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), представляющую категории, <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />назначенные для. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение свойства <b>категорий</b> является строкой с разделителем имен категорий, назначенных для элемента Outlook. Это свойство используется символа, указанного в имени sList в разделе Panel\International HKEY_CURRENT_USER\Control в реестре Windows в качестве разделителя для нескольких значений категории. Чтобы преобразовать строку имен категорий массив имен категорий, используйте функцию Microsoft Visual Basic <b>разделения</b>.</para>
+        <remarks><para>Значение свойства <b>Categories</b> — это строка с разделителями имен категорий, которые были назначены элементу Outlook. В этом свойстве используется символ, указанный в имени значения Слист в разделе HKEY_CURRENT_USER \Контрол Панел\интернатионал в реестре Windows в качестве разделителя для нескольких значений категорий. Чтобы преобразовать строку имен категорий в массив имен категорий, используйте функцию <b>разделения</b>в Microsoft Visual Basic.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -467,11 +467,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее отображать список имен скрытую копию (CC) для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую список имен копий (CC) для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство содержит только отображаемые имена, разделенных точкой с запятой (;) знаков. <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> Семейства сайтов должен использоваться для изменения получателей копии. </para>
+        <remarks><para>Данное свойство содержит только отображаемые имена, разделенные точкой с запятой (;) символа. <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> Коллекция должна использоваться для изменения получателей копии. </para>
           <para>
-            <b>Примечание</b>: Если <b>SharingItem</b> Exchange, общий доступ к контекста, а затем назначить этому свойству значение любого значения, кроме <b>ничего не</b> запрещает отправку элемента и вызывает <see cref="M:Microsoft.Office.Interop.Outlook._SharingItem.Send" /> метод вызвать ошибку.</para>
+            <b>Note</b>: Если в <b>SharingItem</b> используется контекст общего доступа Exchange, то установка для этого свойства любого значения, отличного от <b>Nothing</b> , предотвращает отправку элемента и <see cref="M:Microsoft.Office.Interop.Outlook._SharingItem.Send" /> приводит к тому, что метод вызывает ошибку.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -498,9 +498,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Данное свойство всегда возвращает <b>olSharing</b> для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекта.</para>
+        <remarks><para>Это свойство всегда возвращает <b>олшаринг</b> для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекта.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -525,7 +525,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Очищает индекс потока беседы для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.</summary>
+        <summary>Очищает индекс цепочки бесед для объекта <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -550,8 +550,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Очищает <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объект, что и задачи.</summary>
-        <remarks><para>Вызов этого метода можно задать <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.IsMarkedAsTask" /> значение <b>False</b>.</para>
+        <summary>Очищает <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объект как задачу.</summary>
+        <remarks><para>При вызове этого метода <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.IsMarkedAsTask" /> свойству присваивается <b>значение false</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -578,8 +578,8 @@
         <Parameter Name="SaveMode" Type="Microsoft.Office.Interop.Outlook.OlInspectorClose" />
       </Parameters>
       <Docs>
-        <param name="SaveMode">Закрытие поведения. Если элемент, отображаемый в окне инспектора не был изменен, этот аргумент не оказывает влияния.</param>
-        <summary>Закрывает и при необходимости сохраняет изменения <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.</summary>
+        <param name="SaveMode">Поведение при закрытии. Если элемент, отображаемый в инспекторе, не был изменен, этот аргумент не оказывает никакого действия.</param>
+        <summary>Закрывается и при необходимости сохраняет изменения <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />в файле.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -609,9 +609,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#), представляющая имена компаний, связанные с <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> (<b>строка</b> в C#), представляющую имена компаний, <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />связанных с. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это поле текст в свободной форме. </para>
+        <remarks><para>Это текстовое поле произвольной формы. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -638,7 +638,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Conflicts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Conflicts" /> объект, представляющий элементов, находящихся в conflict с <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.  Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Conflicts" /> объект, представляющий элементы, которые находятся в конфликте с <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.  Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -666,11 +666,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), который уникальным образом определяет <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объекта, который <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> принадлежит объект. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), однозначно определяющую <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объект, к которому <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> принадлежит объект. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство связывает элементов с беседы. Эти элементы и беседу с таким же значением в своем свойстве <b>ConversationID</b> .</para>
-          <para>Это свойство соответствует со свойством MAPI <b>PidTagConversationId</b>.</para>
-          <para>Если объект <b>SharingItem</b> создается в версии Microsoft Outlook, предшествующих Microsoft Outlook 2010 или Outlook выполняется в оперативном режиме для версии Microsoft Exchange Server, более ранних чем Microsoft Exchange Server 2010, это свойство Возвращает совпадает со значением <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.ConversationTopic" /> свойство.</para>
+        <remarks><para>Это свойство связывает элементы с разговором. Эти элементы и беседа имеют одно и то же значение в свойстве <b>ConversationID</b> .</para>
+          <para>Это свойство соответствует свойству MAPI <b>пидтагконверсатионид</b>.</para>
+          <para>Если объект <b>SharingItem</b> создан в более ранней версии Microsoft Outlook, чем microsoft Outlook 2010, или если Outlook работает в интерактивном режиме с версией Microsoft Exchange Server более ранней, чем Microsoft exchange Server 2010, это свойство возвращает то же значение, что <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.ConversationTopic" /> и свойство.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -697,7 +697,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющий индекс беседы поток <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую индекс цепочки сообщений объекта <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -725,7 +725,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющий раздел поток беседы <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую раздел цепочки сообщений объекта <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -751,8 +751,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Создает другой экземпляр <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.</summary>
-        <returns>Возвращает <see cref="T:System.Object" /> то есть копии родительского <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекта.</returns>
+        <summary>Создает еще один экземпляр объекта <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.</summary>
+        <returns>Возвращает объект <see cref="T:System.Object" /> , который является копией родительского <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекта.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -779,7 +779,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>даты и времени</b> , которое указывает время создания для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
+        <summary>Возвращает <b>значение типа DateTime</b> , указывающее время создания для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagCreationTime</b>. </para>
           <para> </para></remarks>
@@ -811,7 +811,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>даты и времени</b> , которое указывает дату и время <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> необходимо доставить.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>значение</b> даты и времени, которое указывает дату <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> и время доставки.  Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagDeferredDeliveryTime</b>.</para>
           <para> </para></remarks>
@@ -838,9 +838,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Удаляет <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> элемента из папки, содержащей элемент.</summary>
-        <remarks><para>Метод <b>Delete</b> удаляет одного элемента в коллекции. Чтобы удалить все элементы в <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> коллекцию папки, необходимо удалить каждого элемента, начиная с последнего элемента в папке. К примеру в коллекции элементов папки AllItems, при n число элементов в папке, запуска удаления элемент по AllItems.Item(n), уменьшение индекс каждый раз, пока не будет удален AllItems.Item(1).</para>
-          <para>Метод Delete Перемещение элемента в папке, в которой для папки «Удаленные». Если содержащей папки папки «Удаленные», метод <b>Delete</b> удаляет элемент без возможности восстановления.</para>
+        <summary>Удаляет <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> элемент из папки, содержащей элемент.</summary>
+        <remarks><para>Метод <b>Delete</b> удаляет один элемент в коллекции. Чтобы удалить все элементы в <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> коллекции папки, необходимо удалить каждый элемент, начиная с последнего элемента в папке. Например, в коллекции Items папки AllItems, если в папке n количество элементов, начните удалять элемент по адресу AllItems. Item (n), уменьшая индекс до тех пор, пока не будет удален AllItems. Item (1).</para>
+          <para>Метод Delete перемещает элемент из содержащей его папки в папку "Удаленные". Если папка содержит папку "Удаленные", метод <b>Delete</b> удаляет элемент без возможности восстановления.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -870,7 +870,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>типа Boolean</b> (<b>bool</b> в C#), который имеет <b>значение True</b> , если копии элемента не сохраняется после отправки и <b>значение False</b> , если сохранения копии. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> in C#), которое имеет значение <b>true</b> , если копия элемента не сохраняется при отправке, и <b>false</b> в случае сохранения копии. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -896,12 +896,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Выполняет запрос на общий доступ, а отправляет общего доступа ответа отправителю <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.</summary>
-        <returns>Объект <b>SharingItem</b> , который представляет общего доступа ответа.</returns>
-        <remarks><para>Метод <b>Deny</b> могут вызываться только для объектов <b>SharingItem</b> <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.Type" /> значение свойства <b>olSharingMsgTypeRequest</b> или <b>olSharingMsgTypeInviteAndRequest</b>.</para>
-          <para>Этот метод создает новый объект <b>SharingItem</b> и задает <b>Тип</b> свойства нового объекта <b>olSharingMsgTypeResponseDeny</b>. <b>SharingItem</b> не отправляется сразу же отправителю запрос общий доступ, тем не менее, поэтому при необходимости можно изменить общего доступа ответа.</para>
+        <summary>Отклоняет запрос на общий доступ и отправляет ответ об общем доступе отправителю <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.</summary>
+        <returns>Объект <b>SharingItem</b> , представляющий ответ общего доступа.</returns>
+        <remarks><para>Метод <b>Deny</b> можно вызывать только для объектов <b>SharingItem</b> со значением <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.Type" /> свойства <b>олшарингмсгтиперекуест</b> или <b>олшарингмсгтипеинвитеандрекуест</b>.</para>
+          <para>Этот метод создает новый объект <b>SharingItem</b> и задает для свойства <b>Type</b> нового объекта значение <b>олшарингмсгтипереспонседени</b>. Однако <b>SharingItem</b> не отправляется сразу отправителю запроса на предоставление общего доступа, поэтому при необходимости вы можете изменить ответ на общий доступ.</para>
           <para>
-            <b>Примечание</b>: общий доступ запрещен сразу же после вызова этого метода, независимо от того, является ли получен ответ общего доступа.</para>
+            <b>Note</b>: общий доступ запрещается сразу после вызова этого метода независимо от того, был ли получен ответ общего доступа.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -927,10 +927,10 @@
         <Parameter Name="Modal" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Modal"><b>Значение true,</b> чтобы сделать модальные окна. Значение по умолчанию — <b>False</b>.</param>
+        <param name="Modal"><b>Значение true</b> , чтобы сделать окно модальным. Значение по умолчанию — <b>False</b>.</param>
         <summary>Отображает новый <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объект для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.</summary>
-        <remarks><para>Метод <b>отображения</b> поддерживается для windows explorer и инспектора для обратной совместимости. Чтобы активировать окна проводника или инспектора, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.Activate" /> метод.</para>
-          <para>При попытке открыть объект «небезопасные» файловой системы (или файл «freedoc») с помощью объектной модели Microsoft Outlook, вы получаете код возврата E_FAIL на языках C или C++ программирования. В Outlook 2000 и более ранних версий то пользователь может открыть объекта системы «небезопасных» файлов с помощью метода <b>отображения</b> .</para>
+        <remarks><para>Метод <b>Display</b> поддерживается для окон проводника и инспектора в целях обратной совместимости. Чтобы активировать окно проводника или инспектора, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.Activate" /> метод.</para>
+          <para>При попытке открыть "небезопасный" объект файловой системы (или "файл фридок") с помощью объектной модели Microsoft Outlook вы получаете E_FAIL код возврата на языках программирования C или C++. В Outlook 2000 и более ранних версий можно открыть "небезопасную" объект файловой системы с помощью метода <b>Display</b> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -957,7 +957,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlDownloadState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает константу, к которой принадлежит <see cref="T:Microsoft.Office.Interop.Outlook.OlDownloadState" /> перечисление, указывающее состояние загрузки <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
+        <summary>Возвращает константу, принадлежащую <see cref="T:Microsoft.Office.Interop.Outlook.OlDownloadState" /> перечислению, указывающее состояние загрузки файла <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1022,10 +1022,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющий уникальный идентификатор записи <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.  Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую уникальный идентификатор элемента <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.  Только для чтения.</summary>
         <value>To be added.</value>
         <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagEntryId</b>.</para>
-          <para>Поставщик хранилища MAPI назначает строка уникального идентификатора при создании элемента в хранилище. Таким образом свойство <b>EntryID</b> не задан для элемента Outlook до отправки или сохранения. Идентификатор записи изменений при перемещении элемента в другом хранилище, например, из папки "Входящие" в общую папку Microsoft Exchange Server или из одного файла личных папок (PST) другой PST-файл. Решения не должны зависеть от <b>EntryID</b> свойство должно быть уникальным, пока не будут перемещаться элементов. Свойство <b>EntryID</b> возвращает MAPI долгосрочного идентификатором записи. Для получения дополнительных сведений о long - и short - term EntryIDs, http://msdn.microsoft.com для <b>PidTagEntryId</b>.</para>
+          <para>Поставщик хранилища MAPI назначает строку уникального идентификатора при создании элемента в хранилище. Таким образом, свойство <b>EntryID</b> не задается для элемента Outlook, пока он не будет сохранен или отправлен. Идентификатор записи изменяется при перемещении элемента в другое хранилище, например из папки "Входящие" в общую папку Microsoft Exchange Server или из одного PST-файла личных папок в другой PST-файл. Решения не должны зависеть от уникальности свойства <b>EntryID</b> , если не перемещение элементов не будет выполняться. Свойство <b>EntryID</b> возвращает идентификатор записи долгосрочного термина MAPI. Для получения дополнительных сведений о долгосрочных и краткосрочных идентификаторами EntryID выполните поиск http://msdn.microsoft.com по <b>PidTagEntryId</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1055,7 +1055,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>даты и времени</b> , указывающее дату и время, в которой <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> становится недопустимым и может быть удалена. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>значение DateTime</b> , указывающее дату и время, когда она <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> становится недопустимой и может быть удалена. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1160,9 +1160,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#), указывающее, запрошенное действие для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> (<b>String</b> в C#), указывающую запрошенное действие для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это поле текст в свободной форме.</para>
+        <remarks><para>Это текстовое поле произвольной формы.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1226,7 +1226,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.FormDescription</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.FormDescription" /> объект, представляющий описание формы для указанного <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.FormDescription" /> объект, представляющий описание формы для указанного <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1252,9 +1252,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Выполняет прямого действия для элемента и возвращает результирующую Копировать как <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекта.</summary>
-        <returns>Объект <b>SharingItem</b> , который представляет новое приглашение общего доступа.</returns>
-        <remarks><para>Если этот метод вызывается с помощью Exchange, общий доступ к контекста приглашения или по запросам на доступ, возникает ошибка.</para>
+        <summary>Выполняет действие Forward для элемента и возвращает полученную копию в виде <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекта.</summary>
+        <returns>Объект <b>SharingItem</b> , представляющий новое приглашение к совместному использованию.</returns>
+        <remarks><para>Если этот метод вызывается в приглашениях на общий доступ с использованием контекста общего доступа Exchange или запросов на общий доступ, возникает ошибка.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1279,22 +1279,22 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объект, представляющий беседы, к которому принадлежит этот элемент.</summary>
-        <returns>Возвращает объект <b>беседы</b> , представляющий беседы, к которому принадлежит этот элемент.</returns>
+        <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объект, представляющий беседу, к которой принадлежит данный элемент.</summary>
+        <returns>Возвращает объект <b>CONVERSATION</b> , представляющий беседу, к которой принадлежит данный элемент.</returns>
         <remarks><para>
-            <b>GetConversation</b> возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если беседы не существует для элемента. Беседы не существует для элемента в следующих сценариях:</para>
+            <b>GetConversation</b> Параметр GetItem возвращает <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если для элемента не существует беседы. Не существует беседы для элемента в следующих сценариях:</para>
           <list type="bullet">
             <item>
-              <para>Элемент не был сохранен. Элемент можно сохранить программным способом, с помощью пользовательских действий или путем автоматического сохранения.</para>
+              <para>Элемент не был сохранен. Элемент можно сохранить программным способом, действием пользователя или автоматическим сохранением.</para>
             </item>
             <item>
-              <para>В элементе, которое можно отправить (для примера, почтовый элемент, элемента встречи или элемента контакта) не было отправлено элемента.</para>
+              <para>Для элемента, который может быть отправлен (например, почтового элемента, элемента встречи или элемента контакта), элемент не был отправлен.</para>
             </item>
             <item>
-              <para>Беседы были отключены с помощью реестра Windows.</para>
+              <para>Беседы отключены в реестре Windows.</para>
             </item>
             <item>
-              <para>Хранилище не поддерживает представление беседы (например, Outlook может работать в классическом режиме online для версии Microsoft Exchange, более ранних чем Microsoft Exchange Server 2010). Использование <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsConversationEnabled" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекта, чтобы определить, поддерживает ли хранилище представление беседы.</para>
+              <para>Хранилище не поддерживает представление беседы (например, Outlook работает в классическом режиме Online в более ранней версии Microsoft Exchange, чем Microsoft Exchange Server 2010). Используйте <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsConversationEnabled" /> свойство <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекта, чтобы определить, поддерживает ли хранилище представление беседы.</para>
             </item>
           </list>
           <para> </para></remarks>
@@ -1323,9 +1323,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Inspector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> инициализируется объект, представляющий инспектора наличия в указанном <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объект, представляющий инспектор, инициализированный для размещения указанного <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />элемента. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство можно использовать для возвращения новый объект <b>инспектора</b> для отображения элемента, а не с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Application.ActiveInspector" /> метод и параметр <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.CurrentItem" /> свойство. </para>
+        <remarks><para>Это свойство полезно для возврата нового объекта <b>инспектора</b> , в котором будет отображаться элемент, а не с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Application.ActiveInspector" /> метода и установки <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.CurrentItem" /> свойства. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1355,11 +1355,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляющее HTML-текста указанного <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), представляющую HTML-текст указанного <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />элемента.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para><b>Параметр HTMLBody</b> свойство должно быть строку синтаксис HTML.</para>
-          <para>Установка наборы свойств <b>параметр HTMLBody</b> <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.EditorType" /> свойства элемента <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> для <b>olEditorHTML</b>.</para>
-          <para>Установка <b>параметр HTMLBody</b> свойство будут всегда обновляться <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.Body" /> свойство немедленно.</para>
+        <remarks><para>Свойство <b>HTMLBody</b> должно быть строкой синтаксиса HTML.</para>
+          <para>Установка свойства <b>HTMLBody</b> задает <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.EditorType" /> <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> для свойства элемента значение <b>оледиторхтмл</b>.</para>
+          <para>Задание свойства <b>HTMLBody</b> всегда приводит к <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.Body" /> немедленному обновлению свойства.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1389,7 +1389,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlImportance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlImportance" /> константа, уровень важности для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlImportance" /> константу, определяющую относительный уровень <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />важности для. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagImportance</b>. </para>
           <para> </para></remarks>
@@ -1421,44 +1421,44 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>Integer</b> (<b>int</b> в C#), который определяет код веб-страницы, используемый <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Integer</b> (<b>int</b> в C#), определяющее кодовую страницу Интернета, используемую <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />в. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Код веб-страницы определяет схему кодировки текста, используемого элемента.</para>
-          <para>В следующей таблице перечислены значения, которые поддерживаются в свойстве <b>InternetCodepage</b> .</para>
+        <remarks><para>На странице код Интернета определяется схема кодировки текста, используемая элементом.</para>
+          <para>В следующей таблице приведены значения, которые поддерживаются свойством <b>интернеткодепаже</b> .</para>
           <list type="table">
             <item>
               <description>Имя</description>
-              <description>Набор символов</description>
+              <description>Набор знаков</description>
               <description>Кодировка страницы</description>
             </item>
             <item>
               <description>Арабский (ISO)</description>
-              <description>ISO-8859-6 </description>
+              <description>iso-8859-6 </description>
               <description>28596 </description>
             </item>
             <item>
-              <description>Арабский (Windows)</description>
-              <description>Windows 1256 </description>
+              <description>Арабская (Windows)</description>
+              <description>windows-1256 </description>
               <description>1256 </description>
             </item>
             <item>
               <description>Балтийский (ISO)</description>
-              <description>ISO-8859-4 </description>
+              <description>iso-8859-4 </description>
               <description>28594 </description>
             </item>
             <item>
               <description>Балтийский (Windows)</description>
-              <description>Windows 1257 </description>
+              <description>windows-1257 </description>
               <description>1257 </description>
             </item>
             <item>
-              <description>Центральноевропейская (ISO)</description>
-              <description>ISO-8859-2 </description>
+              <description>Центральноевропейский (ISO)</description>
+              <description>iso-8859-2 </description>
               <description>28592 </description>
             </item>
             <item>
-              <description>Центральноевропейская (Windows)</description>
-              <description>Windows 1250 </description>
+              <description>Центральноевропейский (Windows)</description>
+              <description>windows-1250 </description>
               <description>1250 </description>
             </item>
             <item>
@@ -1468,42 +1468,42 @@
             </item>
             <item>
               <description>Китайская упрощенная (HZ) </description>
-              <description>Гц gb 2312 </description>
+              <description>hz-gb-2312 </description>
               <description>52936 </description>
             </item>
             <item>
-              <description>Китайский традиционный (Big5) </description>
-              <description>big5 </description>
+              <description>Китайская традиционная (Big5) </description>
+              <description>традиционн </description>
               <description>950 </description>
             </item>
             <item>
               <description>Кириллица (ISO) </description>
-              <description>ISO-8859-5 </description>
+              <description>iso-8859-5 </description>
               <description>28595 </description>
             </item>
             <item>
               <description>Кириллица (KOI8-R) </description>
-              <description>KOI8-r </description>
+              <description>koi8-r </description>
               <description>20866 </description>
             </item>
             <item>
               <description>Кириллица (KOI8-U) </description>
-              <description>KOI8-u </description>
+              <description>koi8-u </description>
               <description>21866 </description>
             </item>
             <item>
               <description>Кириллица (Windows) </description>
-              <description>Windows 1251 </description>
+              <description>windows-1251 </description>
               <description>1251 </description>
             </item>
             <item>
               <description>Греческий (ISO) </description>
-              <description>ISO-8859-7 </description>
+              <description>iso-8859-7 </description>
               <description>28597 </description>
             </item>
             <item>
               <description>Греческий (Windows) </description>
-              <description>Windows 1253 </description>
+              <description>windows-1253 </description>
               <description>1253 </description>
             </item>
             <item>
@@ -1513,7 +1513,7 @@
             </item>
             <item>
               <description>Иврит (Windows) </description>
-              <description>Windows 1255 </description>
+              <description>windows-1255 </description>
               <description>1255 </description>
             </item>
             <item>
@@ -1523,21 +1523,21 @@
             </item>
             <item>
               <description>Японская (JIS) </description>
-              <description>ISO-2022-jp </description>
+              <description>iso-2022-jp </description>
               <description>50220 </description>
             </item>
             <item>
-              <description>Японский (JIS, разрешить 1-байтовых кана с JIS) </description>
+              <description>Японская (однобайтная кана с JIS) </description>
               <description>csISO2022JP </description>
               <description>50221 </description>
             </item>
             <item>
               <description>Японская (Shift-JIS) </description>
-              <description>ISO-2022-jp </description>
+              <description>iso-2022-jp </description>
               <description>932 </description>
             </item>
             <item>
-              <description>Корейская </description>
+              <description>Корейский </description>
               <description>ks_c_5601-1987 </description>
               <description>949 </description>
             </item>
@@ -1547,33 +1547,33 @@
               <description>51949 </description>
             </item>
             <item>
-              <description>Латинский 3 (ISO) </description>
-              <description>ISO-8859-3 </description>
+              <description>Латинская 3 (ISO) </description>
+              <description>iso-8859-3 </description>
               <description>28593 </description>
             </item>
             <item>
-              <description>Латинский 9 (ISO) </description>
-              <description>ISO-8859-15 </description>
+              <description>Латинская 9 (ISO) </description>
+              <description>iso-8859-15 </description>
               <description>28605 </description>
             </item>
             <item>
-              <description>Тайский (Windows) </description>
-              <description>Windows-874 </description>
+              <description>Тайская (Windows) </description>
+              <description>windows-874 </description>
               <description>874 </description>
             </item>
             <item>
               <description>Турецкий (ISO) </description>
-              <description>ISO-8859-9 </description>
+              <description>iso-8859-9 </description>
               <description>28599 </description>
             </item>
             <item>
               <description>Турецкий (Windows) </description>
-              <description>Windows 1254 </description>
+              <description>windows-1254 </description>
               <description>1254 </description>
             </item>
             <item>
               <description>Юникод (UTF-7) </description>
-              <description>UTF-7 </description>
+              <description>UTF — 7 </description>
               <description>65000 </description>
             </item>
             <item>
@@ -1582,96 +1582,96 @@
               <description>65001 </description>
             </item>
             <item>
-              <description>US ASCII </description>
-              <description>US-ascii </description>
+              <description>US — ASCII </description>
+              <description>US — ASCII </description>
               <description>20127 </description>
             </item>
             <item>
               <description>Вьетнамский (Windows) </description>
-              <description>Windows 1258 </description>
+              <description>windows-1258 </description>
               <description>1258 </description>
             </item>
             <item>
-              <description>Западноевропейская (ISO) </description>
-              <description>ISO-8859-1 </description>
+              <description>Западноевропейский (ISO) </description>
+              <description>iso-8859-1 </description>
               <description>28591 </description>
             </item>
             <item>
-              <description>Западноевропейская (Windows) </description>
-              <description>Windows 1252 </description>
+              <description>Западноевропейский (Windows) </description>
+              <description>windows-1252 </description>
               <description>1252 </description>
             </item>
           </list>
-          <para>В следующей таблице приведены кодовых страниц, корпорация Майкрософт рекомендует использовать для обеспечения наилучшей совместимости со старой системы электронной почты.</para>
+          <para>В следующей таблице перечислены кодовые страницы, которые корпорация Майкрософт рекомендует использовать для обеспечения лучшей совместимости с устаревшими системами электронной почты.</para>
           <list type="table">
             <item>
               <description>Имя</description>
-              <description>Набор символов</description>
+              <description>Набор знаков</description>
               <description>Кодировка страницы</description>
             </item>
             <item>
               <description>Арабский (Windows)</description>
-              <description>Windows 1256 </description>
+              <description>windows-1256 </description>
               <description>1256 </description>
             </item>
             <item>
               <description>Балтийский (ISO)</description>
-              <description>ISO-8859-4 </description>
+              <description>iso-8859-4 </description>
               <description>28594 </description>
             </item>
             <item>
-              <description>Центральноевропейская (ISO)</description>
-              <description>ISO-8859-2 </description>
+              <description>Центральноевропейский (ISO)</description>
+              <description>iso-8859-2 </description>
               <description>28592 </description>
             </item>
             <item>
-              <description>Китайская упрощенная (GB2312) </description>
+              <description>Китайский упрощенный (GB2312) </description>
               <description>GB2312 </description>
               <description>936 </description>
             </item>
             <item>
               <description>Китайский традиционный (Big5) </description>
-              <description>big5 </description>
+              <description>традиционн </description>
               <description>950 </description>
             </item>
             <item>
               <description>Кириллица (KOI8-R) </description>
-              <description>KOI8-r </description>
+              <description>koi8-r </description>
               <description>20866 </description>
             </item>
             <item>
               <description>Кириллица (Windows) </description>
-              <description>Windows 1251 </description>
+              <description>windows-1251 </description>
               <description>1251 </description>
             </item>
             <item>
               <description>Греческий (ISO) </description>
-              <description>ISO-8859-7 </description>
+              <description>iso-8859-7 </description>
               <description>28597 </description>
             </item>
             <item>
               <description>Иврит (Windows) </description>
-              <description>Windows 1255 </description>
+              <description>windows-1255 </description>
               <description>1255 </description>
             </item>
             <item>
-              <description>Японская (JIS) </description>
-              <description>ISO-2022-jp </description>
+              <description>Японский (JIS) </description>
+              <description>iso-2022-jp </description>
               <description>50220 </description>
             </item>
             <item>
-              <description>Корейская </description>
+              <description>Корейский </description>
               <description>ks_c_5601-1987 </description>
               <description>949 </description>
             </item>
             <item>
               <description>Тайский (Windows) </description>
-              <description>Windows-874 </description>
+              <description>windows-874 </description>
               <description>874 </description>
             </item>
             <item>
               <description>Турецкий (ISO) </description>
-              <description>ISO-8859-9 </description>
+              <description>iso-8859-9 </description>
               <description>28599 </description>
             </item>
             <item>
@@ -1680,18 +1680,18 @@
               <description>65001 </description>
             </item>
             <item>
-              <description>US ASCII </description>
-              <description>US-ascii </description>
+              <description>US — ASCII </description>
+              <description>US — ASCII </description>
               <description>20127 </description>
             </item>
             <item>
               <description>Вьетнамский (Windows) </description>
-              <description>Windows 1258 </description>
+              <description>windows-1258 </description>
               <description>1258 </description>
             </item>
             <item>
-              <description>Западноевропейская (ISO) </description>
-              <description>ISO-8859-1 </description>
+              <description>Западноевропейский (ISO) </description>
+              <description>iso-8859-1 </description>
               <description>28591 </description>
             </item>
           </list>
@@ -1721,10 +1721,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), определяющий, если <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> конфликт. Только для чтения.</summary>
+        <summary>Возвращает <b>логическое значение</b> (<b>bool</b> в C#), которое определяет, <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> находится ли конфликт. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Того, является ли данный элемент находится в конфликте определяется состояния приложения. Например если пользователь находится в автономном режиме и пытается получить доступ к сетевой папке действие завершится с ошибкой. В этом случае свойство <b>IsConflict</b> возвращает <b>значение True</b>.</para>
-          <para>Если <b>значение True</b>, указанный элемент находится в конфликта.</para>
+        <remarks><para>Независимо от того, является ли конфликт элементом, определяется состоянием приложения. Например, если пользователь находится в автономном режиме и пытается получить доступ к сетевой папке, действие завершится с ошибкой. В этом <b>случае свойство</b> <b>IsTrue возвратит значение true</b>.</para>
+          <para>Если <b>значение равно true</b>, указанный элемент конфликтует с другими.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1751,7 +1751,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, будет ли <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> отмечен как задачи. Только для чтения.</summary>
+        <summary>Возвращает значение <b>Boolean</b> (<b>bool</b> в C#), которое указывает, помечена ли <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> задача как задача. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1779,9 +1779,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ItemProperties" /> коллекции, представляющей все стандартные и пользовательские свойства связанного с <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ItemProperties" /> коллекцию, которая представляет все стандартные и определяемые пользователем свойства, связанные с <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />параметром. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para><b>Набор свойств элементов</b> является с отсчетом от нуля семейства сайтов, что означает, что первый объект в коллекции ссылается индекса 0.</para>
+        <remarks><para>Коллекция <b>ItemProperties</b> является коллекцией с отсчетом от нуля, что означает, что первый объект в коллекции ссылается на индекс 0.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1808,7 +1808,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>даты и времени</b> , указав дату и время <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> последнего изменения.  Только для чтения.</summary>
+        <summary>Возвращает <b>значение типа DateTime</b> , <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> указывающее дату и время последнего изменения.  Только для чтения.</summary>
         <value>To be added.</value>
         <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagLastModificationTime</b>.</para>
           <para> </para></remarks>
@@ -1869,8 +1869,8 @@
       </Parameters>
       <Docs>
         <param name="MarkInterval">Интервал задачи для <b>SharingItem</b>.</param>
-        <summary>Метки <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объект, что задачи и назначает интервал задачи для объекта.</summary>
-        <remarks><para>Вызов этого метода можно задать <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.IsMarkedAsTask" /> значение <b>True</b> и обновления <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.TaskStartDate" />, <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.TaskDueDate" />, и <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.ToDoTaskOrdinal" /> свойств в зависимости от значения, указанного в <paramref name="MarkInterval" />.</para>
+        <summary>Помечает <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объект как задачу и назначает интервал задач для объекта.</summary>
+        <remarks><para>При вызове этого метода <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.IsMarkedAsTask" /> свойству присваивается <b>значение true</b> <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.TaskStartDate" />и <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.TaskDueDate" />обновляются <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.ToDoTaskOrdinal" /> свойства, и свойства, в зависимости от <paramref name="MarkInterval" />значения, указанного в свойстве.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1900,9 +1900,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlRemoteStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlRemoteStatus" /> константа, которая определяет состояние элемента после получения удаленный пользователь. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlRemoteStatus" /> константу, определяющую состояние элемента после его получения удаленным пользователем. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство позволяет удаленным пользователям с менее чем идеально подходит передачи данных возможности обмена мгновенными сообщениями большая гибкость.</para>
+        <remarks><para>Это свойство дает возможность удаленным пользователям с неоптимальными возможностями передачи данных повышать гибкость обмена сообщениями.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1932,10 +1932,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляет класс сообщения для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), представляющую класс Message для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagMessageClass</b>. Свойство <b>MessageClass</b> элемента ссылки на формы, на котором она основана. При выборе элемента Outlook использует класс сообщения для размещения формы и предоставление доступа к его свойства, такие как команды ответ.</para>
-          <para>Значение по умолчанию для этого свойства — IPM. Общий доступ.</para>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagMessageClass</b>. Свойство <b>MessageClass</b> связывает элемент с формой, на которой она основана. Если выбран элемент, Outlook использует класс Message для обнаружения формы и предоставляет ее свойства, такие как команды ответа.</para>
+          <para>По умолчанию для этого свойства задано значение IPM. Нему.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1965,9 +1965,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляющее расстояние для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), представляющую расстояние для объекта <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это поле произвольной строкой, можно использовать для хранения сведений расстояние, связанный с элементом (например, 100 миль для встречи, контактов или задач) для целей возмещение расходов. </para>
+        <remarks><para>Это поле произвольной формы, которое можно использовать для хранения сведений о расстояниях, связанных с элементом (например, 100 миль документально задокументировано для встречи, контакта или задачи) в целях получения возмещения. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1994,9 +1994,9 @@
         <Parameter Name="DestFldr" Type="Microsoft.Office.Interop.Outlook.MAPIFolder" />
       </Parameters>
       <Docs>
-        <param name="DestFldr">Выражение, возвращающее объект <b>Folder</b> . Папка назначения.</param>
-        <summary>Перемещает <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> в новую папку.</summary>
-        <returns>Значение <b>объекта</b> , который представляет элемент, который был перемещен в выделенной папке.</returns>
+        <param name="DestFldr">Выражение, возвращающее объект <b>Folder</b> . Целевая папка.</param>
+        <summary>Перемещает <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> a в новую папку.</summary>
+        <returns>Значение <b>объекта</b> , представляющее элемент, который был перемещен в указанную папку.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2026,7 +2026,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, равное <b>True</b> , чтобы не срок хранения в <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> в C#), которое имеет значение <b>true</b> , чтобы не <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />возрастать. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2052,9 +2052,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Открывает общей папке, предлагаемых приглашения на общий доступ.</summary>
-        <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий общую папку.</returns>
-        <remarks><para>Этот метод позволяет получателю приглашения на общий доступ, чтобы открыть к общей папке, предлагаемых отправителем. Возникает ошибка, если этот метод вызывается для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объект со значением типа свойства <b>olSharingMsgTypeInvite</b> или <b>olSharingMsgTypeInviteAndRequest</b>, или если Outlook не удается подключиться к общей папке.</para>
+        <summary>Открывает общую папку, предлагаемую приглашением на совместное использование.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> Объект, представляющий общую папку.</returns>
+        <remarks><para>Этот метод позволяет получателю приглашения к совместному использованию открыть общую папку, предлагаемую отправителем. При вызове этого метода для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекта со значением свойства Type, отличным от <b>олшарингмсгтипеинвите</b> или <b>олшарингмсгтипеинвитеандрекуест</b>, возникает ошибка, или если Outlook не удается подключиться к общей папке.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2084,10 +2084,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>типа Boolean</b> (<b>bool</b> в C#), который определяет, будет ли инициатора <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> будет получать отчетов о доставке. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> в C#), которое определяет, <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> будет ли создатель получать отчет о доставке. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Каждый поставщик транспорта, который обрабатывает сообщение отправляет одного уведомление о доставке с именами и адресами из каждого получателя, которому оно было доставлено. Доставка не означает, что сообщение прочитано. Значение true, если создателем запрошено уведомление о доставке в окне сообщения. </para>
-          <para>Свойство <b>OriginatorDeliveryReportRequested</b> соответствует <b>PidTagOriginatorDeliveryReportRequested</b>свойство MAPI. </para>
+        <remarks><para>Каждый транспортный поставщик, который обрабатывает сообщение, отправляет вам одно уведомление о доставке, содержащее имена и адреса каждого получателя, которому он был доставлен. Доставка не подразумевает, что сообщение было прочитано. Значение true, если инициатор запросил уведомление о доставке сообщения. </para>
+          <para>Свойство <b>оригинаторделиверирепортрекуестед</b> соответствует свойству MAPI <b>PidTagOriginatorDeliveryReportRequested</b>. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2114,7 +2114,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение типа <b>Integer</b> (<b>целое</b> в C#), представляющее номер сборки приложения Outlook для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), представляющее номер сборки приложения Outlook для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2142,7 +2142,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), указывающее количество основной и дополнительный номер версии приложения Outlook для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), указывающую основной и дополнительный номер версии приложения Outlook для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2170,9 +2170,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Если <b>SharingItem</b> только что был создан, данное свойство возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объекта, представляющего папку "Входящие". В противном случае это свойство возвращает объект <b>папки</b> , который представляет папку, в которой был сохранен <b>SharingItem</b> .</para>
+        <remarks><para>Если <b>SharingItem</b> был только что создан, это свойство возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий папку "Входящие". В противном случае это свойство возвращает объект <b>Folder</b> , представляющий папку, в которой был сохранен <b>SharingItem</b> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2202,11 +2202,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlPermission</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlPermission" /> константа, определяющая разрешения получателей будет иметь на <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlPermission" /> константу, определяющую разрешения, которые будут иметь получатели <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>разрешения</b> должны быть синхронизированы с <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.PermissionTemplateGuid" /> свойство для точного отображения состояния разрешений <b>SharingItem</b>. Установка для свойства <b>PermissionTemplateGuid</b> допустимый идентификатор GUID следует также приводить к <b>разрешений</b> для свойства <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olPermissionTemplate" />. </para>
-          <para>Если нет управления правами (IRM) была настроена (в противном случае — это свойство <b>разрешения</b> <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olUnrestricted" />), или — это ограничение не для пересылки <b>SharingItem</b> (в противном случае — это свойство <b>разрешения</b> <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olDoNotForward" />), значение Свойство <b>PermissionTemplateGuid</b> должно быть пустая строка.</para>
-          <para>Несмотря на то, что можно просмотреть содержимого, защищенного IRM на любом компьютере под управлением системы Microsoft Office 2007 или более поздней версии, необходимо иметь профессиональный выпуск Microsoft Office 2003, Microsoft Office Outlook 2007 или более поздней версии Outlook для создания и отправки сообщения электронной почты, который был защищен с IRM.</para>
+        <remarks><para>Свойство <b>Permission</b> должно быть синхронизировано со <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.PermissionTemplateGuid" /> свойством, чтобы точно отражать состояние разрешений для <b>SharingItem</b>. Чтобы задать для свойства <b>пермиссионтемплатегуид</b> действительный идентификатор GUID, необходимо также присвоить свойству <b>Permission</b> значение <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olPermissionTemplate" />. </para>
+          <para>Если управление правами на доступ к данным (IRM) не настроено (в этом случае <b>свойство Permission</b> имеет <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olUnrestricted" />значение) или ограничение не пересылает <b>SharingItem</b> (в этом случае свойство <b>Permission</b> имеет <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olDoNotForward" />значение), значением свойства <b>пермиссионтемплатегуид</b> должна быть пустая строка.</para>
+          <para>Несмотря на то что вы можете просматривать содержимое, защищенное IRM, на любом компьютере с системой Microsoft Office 2007 или более поздней версии, для создания или отправки сообщения электронной почты, защищенного IRM, необходимо иметь Microsoft Office профессиональный выпуск 2003, Microsoft Office Outlook 2007 или более поздней версии Outlook.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2236,10 +2236,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlPermissionService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlPermissionService" /> константа, которая определяет службу разрешений, который будет использоваться при отправке <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> защищенного службой управления правами на доступ к данным (IRM). Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlPermissionService" /> константу, определяющую службу разрешений, которая будет использоваться при отправке <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> данных, защищенных службой управления правами на доступ к данным (IRM). Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство можно использовать только в том случае, если у вас есть несколько удостоверений разрешений для конкретного SMTP-адреса. </para>
-          <para>При просмотре содержимого, защищенного IRM на любом компьютере под управлением системы Microsoft Office 2007 или более поздней версии, необходимо иметь профессиональный выпуск Microsoft Office 2003, Microsoft Office Outlook 2007 или более поздней версии Outlook для создания и отправки Электронная почта, защищенного IRM.</para>
+        <remarks><para>Это свойство полезно, только если у вас есть несколько удостоверений разрешений для определенного SMTP-адреса. </para>
+          <para>Несмотря на то, что вы можете просматривать содержимое, защищенное IRM, на любом компьютере с системой Microsoft Office 2007 или более поздней версии, для создания или отправки сообщения электронной почты, защищенного IRM, необходимо иметь Microsoft Office профессиональный выпуск 2003, Microsoft Office Outlook 2007 или более поздней версии Outlook.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2269,12 +2269,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет идентификатор GUID файла шаблона для применения к <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> для указания разрешений управления правами на доступ к данным (IRM). Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее GUID файла шаблона, применяемого к параметру <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> для указания разрешений на управление правами на доступ к данным (IRM). Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство дополняет свойства IRM на объект <b>SharingItem</b> ; то есть <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.Permission" /> свойство и <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.PermissionService" /> свойства.</para>
-          <para>В частности свойство <b>PermissionTemplateGuid</b> должны быть синхронизированы с помощью свойства <b>разрешений</b> для точного отображения состояния разрешений <b>SharingItem</b>. Установка для свойства <b>PermissionTemplateGuid</b> допустимый идентификатор GUID следует также приводить к <b>разрешений</b> для свойства <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olPermissionTemplate" />.</para>
-          <para>Пустое строковое значение для свойства <b>PermissionTemplateGuid</b> означает, что не указан для <b>SharingItem</b>файл шаблона разрешений. Например, если нет IRM не настроена (в противном случае — это свойство <b>разрешения</b> <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olUnrestricted" />), или — это ограничение не для пересылки <b>SharingItem</b> (в противном случае — это свойство <b>разрешения</b> <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olDoNotForward" />).</para>
-          <para>При попытке задать свойство <b>PermissionTemplateGuid</b> для полученного сообщения (то есть, <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.Sent" /> свойство <b>SharingItem</b> имеет <b>значение True</b>), Microsoft Outlook, возвращается ошибка.</para>
+        <remarks><para>Это свойство дополняет свойства IRM для объекта <b>SharingItem</b> . то есть <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.Permission" /> свойство и <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.PermissionService" /> свойства.</para>
+          <para>В частности, свойство <b>пермиссионтемплатегуид</b> должно быть синхронизировано с свойством <b>Permission</b> , чтобы точно отражать состояние разрешений <b>SharingItem</b>. Чтобы задать для свойства <b>пермиссионтемплатегуид</b> действительный идентификатор GUID, необходимо также присвоить свойству <b>Permission</b> значение <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olPermissionTemplate" />.</para>
+          <para>Пустое строковое значение для свойства <b>пермиссионтемплатегуид</b> означает, что для <b>SharingItem</b>не указан файл шаблона разрешений. Например, если не настроено управление правами на доступ к данным (в этом <b>Permission</b> случае свойство Permission <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olUnrestricted" />имеет значение) или ограничение не пересылает <b>SharingItem</b> (в этом случае свойство <b>Permission</b> имеет <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olDoNotForward" />значение).</para>
+          <para>Если вы попытаетесь задать свойство <b>пермиссионтемплатегуид</b> для полученного сообщения (то есть, <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.Sent" /> свойство <b>SharingItem</b> имеет <b>значение true</b>), приложение Microsoft Outlook возвращает сообщение об ошибке.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2299,8 +2299,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Печать <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> с помощью все параметры по умолчанию.</summary>
-        <remarks><para>Метод <b>PrintOut</b> — это единственный способ Outlook, который может использоваться для печати.</para>
+        <summary>Печать <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> с использованием всех параметров по умолчанию.</summary>
+        <remarks><para>Метод <b>PrintOut</b> — это единственный метод Outlook, который можно использовать для печати.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2327,7 +2327,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.PropertyAccessor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект, который поддерживает создание, получение, Установка и удаление свойств родительского <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект, который поддерживает создание, получение, настройку и удаление свойств родительского <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2358,9 +2358,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает <b>значение True</b> , если запрошен прочтении отправителем.</summary>
+        <summary>Возвращает значение <b>Boolean</b> (<b>bool</b> в C#), которое указывает на значение <b>true</b> , если уведомление о прочтении было запрошено отправителем.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagReadReceiptRequested</b>. Это свойство является чтение и запись для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекты, которые были созданы, но не были отправлены или размещенные; он доступен только для чтения для отправленной <b>SharingItem</b> объектов. </para>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagReadReceiptRequested</b>. Это свойство доступно для чтения и записи <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> для объектов, которые были созданы, но не были отправлены или отправлены; Он доступен только для чтения для отправленных объектов <b>SharingItem</b> . </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2387,7 +2387,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает объект, представляющий <b>String</b> (<b>строка</b> в C#) <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.EntryID" /> для получателя, значение true, как обеспечение поставщика транспорта <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.EntryID" /> представляющую значение для истинного получателя, заданное поставщиком транспорта, который <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />предоставляет. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagReceivedByEntryId</b>. </para>
           <para> </para></remarks>
@@ -2416,7 +2416,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляет отображаемое имя получателя, значение true для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую отображаемое имя истинного получателя для объекта <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagReceivedByName</b>.</para>
           <para> </para></remarks>
@@ -2445,7 +2445,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает объект, представляющий <b>String</b> (<b>строка</b> в C#) <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.EntryID" /> передать получателем для пользователя <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.EntryID" /> представляющую пользователя, делегированного для представления получателя. <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> Только для чтения.</summary>
         <value>To be added.</value>
         <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagReceivedRepresentingEntryId</b>. </para>
           <para> </para></remarks>
@@ -2474,7 +2474,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) отображаемое имя пользователя, представляющее передать получателем для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую отображаемое имя пользователя, <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />делегированное для представления получателя для. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagReceivedRepresentingName</b>.</para>
           <para> </para></remarks>
@@ -2503,7 +2503,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>даты и времени</b> , указывающее дату и время, в которой <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> был получен. Только для чтения.</summary>
+        <summary>Возвращает <b>значение типа DateTime</b> , указывающее дату и время <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> получения. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2534,7 +2534,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает <b>значение True</b> , если получатель не пересылать указанного <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает <b>логическое</b> значение (<b>bool</b> в C#), которое указывает <b>true</b> , если получателю не удается переадресовать указанную <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2562,9 +2562,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Recipients</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> коллекции, представляющей всех получателей для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> коллекцию, которая представляет всех получателей для объекта <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Получатель можно задать с строку, представляющую получателя отображаемое имя, псевдоним или полный адрес электронной почты SMTP.</para>
+        <remarks><para>Получатель может быть указан в виде строки, представляющей отображаемое имя получателя, псевдоним или полный SMTP-адрес электронной почты.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2594,9 +2594,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>типа Boolean</b> (<b>bool</b> в C#), который имеет <b>значение True</b> , если напоминания переопределяет напоминание по умолчанию для указанного <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> в C#), которое равно <b>true</b> , если напоминание переопределяет поведение напоминания по умолчанию для указанного <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Необходимо установить свойство <b>ReminderOverrideDefault</b> для проверки <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.ReminderPlaySound" /> и <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.ReminderSoundFile" /> свойства.</para>
+        <remarks><para>Необходимо задать свойство <b>реминдероверридедефаулт</b> , чтобы проверить <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.ReminderPlaySound" /> <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.ReminderSoundFile" /> свойства и его свойства.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2626,9 +2626,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>типа Boolean</b> (<b>bool</b> в C#), который имеет <b>значение True</b> , если напоминания следует воспроизведения звука при возникновении для указанного <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> в C#), которое будет иметь значение <b>true</b> , если напоминание должно воспринимать звук при возникновении <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />указанного значения. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>ReminderPlaySound</b> необходимо задать для обеспечения проверки <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.ReminderSoundFile" /> свойство. </para>
+        <remarks><para>Чтобы <b>ReminderPlaySound</b> проверить <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.ReminderSoundFile" /> свойство, необходимо задать свойство реминдерплайсаунд. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2658,7 +2658,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>типа Boolean</b> (<b>bool</b> в C#), который имеет <b>значение True</b> , если были установлены напоминание для указанного <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> в C#), которое имеет значение <b>true</b> , если для указанного <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />объекта задано напоминание. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2689,9 +2689,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#), указывающее путь и имя звукового файла для воспроизведения при возникновении напоминания для элемента Outlook. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> (<b>String</b> в C#), которая указывает путь и имя файла звукового файла, который будет воспроизводиться при возникновении напоминания для элемента Outlook. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство используется только если <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.ReminderOverrideDefault" /> и <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.ReminderPlaySound" /> задано значение <b>True</b>. </para>
+        <remarks><para>Это свойство является допустимым только в <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.ReminderOverrideDefault" /> том <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.ReminderPlaySound" /> случае, если свойству и свойству присвоено <b>значение true</b>. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2721,7 +2721,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>даты и времени</b> , которое указывает дату и время, в которой должна выполняться напоминания для указанного <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>значение DateTime</b> , указывающее дату и время, когда напоминание должно происходить для указанного <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />элемента. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2749,10 +2749,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), который представляет уникальный идентификатор контекста общего доступа для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>String</b> в C#), которая представляет уникальный идентификатор контекста общего доступа для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство содержит идентификатор записи или идентификатор GUID для общего доступа контекста, содержащихся в объект <b>SharingItem</b> .</para>
-          <para>Если это свойство имеет значение пустую строку <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.Type" /> свойства объект <b>SharingItem</b> задано значение <b>olSharingMsgTypeRequest</b>.</para>
+        <remarks><para>Данное свойство содержит либо GUID, либо EntryID для контекста общего доступа, содержащегося в объекте <b>SharingItem</b></para>
+          <para>Для этого свойства задается пустая строка, <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.Type" /> если свойству объекта <b>SharingItem</b> присвоено значение <b>олшарингмсгтиперекуест</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2779,10 +2779,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), который представляет имя общего доступа контекста для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>String</b> в C#), представляющую имя общего контекста для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство содержит имя, используемое для общего доступа контекста, таким как название папки или элемента, содержащихся в объект <b>SharingItem</b> .</para>
-          <para>Если это свойство имеет значение пустую строку <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.Type" /> свойства объект <b>SharingItem</b> задано значение <b>olSharingMsgTypeRequest</b>.</para>
+        <remarks><para>Это свойство содержит имя, используемое для контекста общего доступа, например имя папки или элемента, содержащееся в объекте <b>SharingItem</b></para>
+          <para>Для этого свойства задается пустая строка, <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.Type" /> если свойству объекта <b>SharingItem</b> присвоено значение <b>олшарингмсгтиперекуест</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2809,10 +2809,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющий путь контекст общего доступа для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>String</b> в C#), представляющую путь к общему контексту для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство содержит путь контекст доступа, такие как URL-адрес календарь WebCal, содержащиеся в объект <b>SharingItem</b> .</para>
-          <para>Если это свойство имеет значение пустую строку <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.Type" /> свойства объект <b>SharingItem</b> задано значение <b>olSharingMsgTypeRequest</b>.</para>
+        <remarks><para>Данное свойство содержит путь к общему контексту, например URL-адресу календаря WebCal, который содержится в объекте <b>SharingItem</b> .</para>
+          <para>Для этого свойства задается пустая строка, <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.Type" /> если свойству объекта <b>SharingItem</b> присвоено значение <b>олшарингмсгтиперекуест</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2842,7 +2842,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlRemoteStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlRemoteStatus" /> константу, определяющую удаленного состояние <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlRemoteStatus" /> константу, <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />определяющую Удаленное состояние объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2868,8 +2868,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Создает ответ, предварительно адресованное отправителю, из исходной <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.</summary>
-        <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> объект, представляющий ответ.</returns>
+        <summary>Создает ответ, предварительно адресованный исходному отправителю, из оригинала <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> Объект, представляющий ответ.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2894,8 +2894,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Создает ответить всем получателям исходного из исходной <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.</summary>
-        <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> объект, представляющий ответ.</returns>
+        <summary>Создает ответ всем исходным получателям <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> Объект, представляющий ответ.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2922,9 +2922,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает список разделенных точкой с запятой <b>String</b> (<b>строка</b> в C#) получателей ответа для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.  Только для чтения.</summary>
+        <summary>Возвращает разделенную точками с запятой <b>строку</b> (<b>строку</b> в C#) в <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />списке получателей ответа для.  Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство содержит только отображаемые имена для ответов получателей. Список получателей ответа необходимо задать с помощью <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.ReplyRecipients" /> семейства сайтов.</para>
+        <remarks><para>Это свойство содержит только отображаемые имена для получателей ответа. Список получателей ответа должен быть установлен с помощью <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.ReplyRecipients" /> коллекции.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2951,7 +2951,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Recipients</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> объектов коллекции, представляющей у получателя ответа для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> коллекцию, которая представляет все объекты получателей ответа для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2979,9 +2979,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlDefaultFolders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultFolders" /> константа, представляющий тип папки по умолчанию, для которого запрашивается доступ с запрос на общий доступ. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultFolders" /> константу, представляющую тип папки по умолчанию, запрашиваемой запросом общего доступа. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>A <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объект, представляющий запрос на общий доступ только могут запрашивать доступ к папке по умолчанию.</para>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> Объект, представляющий запрос на совместное использование, может запрашивать доступ только к папке по умолчанию.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3008,20 +3008,20 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:System.DateTime" /> значение, которое задает дату, когда <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> истечения срока действия объекта, после которого помощник по управления записями обмена сообщениями (MRM) будет удалить элемент. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:System.DateTime" /> значение, задающее дату истечения <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> срока действия объекта после того, как помощник по управлению записями сообщений (управления записями сообщений) удалит элемент. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Политики хранения включены и отключены администраторами для Microsoft Exchange Server на уровне почтового ящика. Эта функция доступна только в почтовый ящик Exchange Server 2010 с поддержкой управления записями сообщений 2.0. </para>
-          <para>Microsoft Outlook вычисляет значение этого свойства на основе даты начала хранения и срок хранения элемента, если Outlook находится в кэше или в автономном режиме. Exchange Server значение, если Outlook в интерактивном режиме.</para>
-          <para>Как правило Дата начала хранения для элемента определяется следующим образом:</para>
+        <remarks><para>Политика хранения включена и отключена администратором сервера Microsoft Exchange Server на уровне почтового ящика. Эта функция доступна только в почтовом ящике Exchange Server 2010 с включенным управления ЗАПИСЯМИ сообщений 2,0. </para>
+          <para>Microsoft Outlook вычисляет значение этого свойства на основе даты начала хранения элемента и периода хранения, если Outlook находится в кэше или в автономном режиме. Сервер Exchange определяет значение, если Outlook находится в оперативном режиме.</para>
+          <para>В общем случае Дата начала хранения для элемента определяется следующим образом:</para>
           <list type="bullet">
             <item>
-              <para>Полученных и отправленных элементов: Дата начала хранения — это дата получения.</para>
+              <para>Получено или Отправлено элементов: Дата начала хранения — это Дата получения.</para>
             </item>
             <item>
-              <para>Элементы календаря неповторяющейся: Дата начала хранения — это дата окончания встречи.</para>
+              <para>Непериодические элементы календаря: Дата начала хранения — Дата окончания встречи.</para>
             </item>
             <item>
-              <para>Повторяющихся элементов календаря: Дата начала хранения — это дата окончания последнего повтора. Если нет даты окончания, элемент срок действия не ограничен.</para>
+              <para>Повторяющиеся элементы календаря: Дата начала хранения — конечная дата последнего повторения. Если дата окончания отсутствует, срок действия элемента не ограничен.</para>
             </item>
           </list>
           <para> </para>
@@ -3051,9 +3051,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), которая указывает имя политики хранения. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>String</b> в C#), которая указывает имя политики хранения. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Хранения включены и отключены администраторами для Microsoft Exchange Server на уровне почтового ящика. Функция доступна только в почтовый ящик Exchange Server 2010 с помощью системы обмена сообщениями записей управления Записями 2.0 должна быть включена. Пример выбора имени политики хранения — «Определение временной интервал для быстрого поиска по истечение срока действия».</para>
+        <remarks><para>Хранение включено и отключено администратором для сервера Microsoft Exchange на уровне почтового ящика. Эта функция доступна только в почтовом ящике Exchange Server 2010 с включенной службой управления записями сообщений (управления ЗАПИСЯМИ сообщений) 2,0. Пример имени политики хранения — "определение интервала времени для быстрого поиска с истекшим сроком действия".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3083,9 +3083,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает массив байтов, который представляет тело элемента Microsoft Outlook в формате RTF. Для чтения и записи.</summary>
+        <summary>Возвращает или задает массив байтов, представляющий текст элемента Microsoft Outlook в формате RTF. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Метод System.Text.Encoding.AsciiEncoding.GetString() в C# или Visual Basic для преобразования в массив байтов в строку.</para>
+        <remarks><para>С помощью метода System. Text. Encoding. АсЦииенкодинг. GetString () в C# или Visual Basic можно преобразовать массив байтов в строку.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3110,7 +3110,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Сохраняет <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> в текущую папку или, если это новый элемент, в папку Outlook по умолчанию для типа элемента.</summary>
+        <summary>Сохраняет значение <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> в текущей папке или, если это новый элемент, в папку Outlook по умолчанию для типа элемента.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3138,9 +3138,9 @@
       </Parameters>
       <Docs>
         <param name="Path">Путь для сохранения элемента.</param>
-        <param name="Type">Тип файла для сохранения. Может иметь одно из следующих констант <b>OlSaveAsType</b> : <b>olHTML</b>, <b>olMSG</b>, <b>olRTF</b>, <b>olTemplate</b>, <b>olDoc</b>,<b>olTXT</b>, <b>olVCal</b>, <b>olVCard</b> <b>olICal</b>, или <b>olMSGUnicode</b>.</param>
-        <summary>Сохраняет <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> указанному пути и в формате тип указанного файла. Если тип файла не указан, используется формат сообщений (MSG-файл).</summary>
-        <remarks><para>Также Обратите внимание, что несмотря на то, что <b>olDoc</b> — допустимый константа <b>OlSaveAsType</b> , сообщения в формате HTML не может быть сохранен в формате документа и константу <b>olDoc</b> работает только в том случае, если Microsoft Word настроен как редактор электронной почты по умолчанию.</para>
+        <param name="Type">Тип файла для сохранения. Может быть одной из следующих констант <b>OlSaveAsType</b> : <b>олхтмл</b>, <b>олмсг</b>, <b>олртф</b>, <b>олтемплате</b>, <b>олдок</b>,<b>олткст</b>, <b>олвкал</b>, <b>олвкард</b>, <b>оликал</b>или <b>олмсгуникоде</b>.</param>
+        <summary>Сохраняет значение <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> в заданном пути и в формате указанного типа файлов. Если тип файла не указан, используется формат MSG (MSG).</summary>
+        <remarks><para>Также обратите внимание, что несмотря на то, что <b>олдок</b> является допустимой константой <b>OlSaveAsType</b> , сообщения в формате HTML невозможно сохранить в формате документа, а константа <b>Олдок</b> работает, только если Microsoft Word настроен как редактор электронной почты по умолчанию.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3167,7 +3167,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), который имеет <b>значение True</b> , если <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> не были изменены с момента последнего сохранения. Только для чтения.</summary>
+        <summary>Возвращает значение <b>Boolean</b> (<b>bool</b> в C#), которое имеет значение <b>true</b> , <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> если объект не был изменен с момента последнего сохранения. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3198,7 +3198,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.MAPIFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, который представляет папку, в которой копию <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> будет сохраняться после отправки. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий папку, в которой после отправки <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> будет сохранена копия. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3225,9 +3225,9 @@
       <Parameters />
       <Docs>
         <summary>Отправляет <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.</summary>
-        <remarks><para>Метод <b>Send</b> отправляет к элементу с использованием учетной записи по умолчанию, заданный для сеанса. В сеансе, где определены несколько учетных записей Microsoft Exchange в профиле первую учетную запись Exchange, добавлено к профилю — это основная учетная запись Exchange и также является учетной записью по умолчанию для сеанса. Чтобы указать другую учетную запись для отправки элемента, задайте <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.SendUsingAccount" /> свойство в нужные <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> объекта и затем вызвать метод <b>отправки</b> .</para>
-          <para>Некоторые общего доступа поставщиков может иметь ограничения на тип получателей. При вызове этого метода некоторые поставщики попытается Выбор записи списка (ACL) для папки для каждого получателя, включенные в <b>SharingItem</b>. Если произошла ошибка при попытке задать списков управления доступом для какого-либо получателя, этот метод вызывает ошибку, и <b>SharingItem</b> не отправляются на любой из получателей.</para>
-          <para>Если возникает ошибка <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.BCC" /> или <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.CC" /> установки свойств <b>SharingItem</b> с помощью Exchange, общий доступ к контекста.</para>
+        <remarks><para>Метод <b>Send</b> отправляет элемент, используя учетную запись по умолчанию, указанную для сеанса. В сеансе, где в профиле определено несколько учетных записей Microsoft Exchange, первая учетная запись Exchange, добавленная в профиль, является основной учетной записью Exchange, а также учетной записью по умолчанию для этого сеанса. Чтобы указать другую учетную запись для отправки элемента, задайте для <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.SendUsingAccount" /> свойства нужный <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> объект, а затем вызовите метод <b>Send</b> .</para>
+          <para>Некоторые поставщики общего доступа могут иметь ограничения на тип разрешенных получателей. При вызове этого метода некоторые поставщики будут пытаться задать записи списка управления доступом (ACL) для каждого получателя, включенного в <b>SharingItem</b>. Если при попытке задать списки управления доступом для получателя возникла ошибка, этот метод выдает ошибку, и <b>SharingItem</b> не отправляется ни одному из получателей.</para>
+          <para>Ошибка возникает, если для <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.BCC" /> SharingItem <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.CC" /> заданы свойства "или <b>SharingItem</b> " с помощью контекста общего доступа Exchange.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3254,7 +3254,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), который представляет адрес электронной почты отправителя <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.   Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>String</b> в C#), представляющую адрес электронной почты отправителя <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.   Только для чтения.</summary>
         <value>To be added.</value>
         <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagSenderEmailAddress</b>.</para>
           <para> </para></remarks>
@@ -3283,7 +3283,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), который представляет тип записи для адреса электронной почты отправителя <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />, таких как «SMTP» для адреса Интернета, «EX» для адреса сервера Microsoft Exchange и т. д. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>String</b> в C#), которая представляет тип записи для адреса электронной почты отправителя <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />, например "SMTP" для адреса в Интернете, "ex" для адреса сервера Microsoft Exchange и т. д. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3311,10 +3311,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), указывающее, отображаемое имя отправителя для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.  Только для чтения.</summary>
+        <summary>Возвращает значение типа <b>String</b> (<b>строка</b> в C#), указывающее отображаемое имя отправителя для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />.  Только для чтения.</summary>
         <value>To be added.</value>
         <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagSenderName</b>.</para>
-          <para>Если вы хотите получить полный адрес отправителя, используйте <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.SenderEmailAddress" /> свойство.</para>
+          <para>Если вы хотите получить полный адрес электронной почты отправителя, используйте <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.SenderEmailAddress" /> свойство.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3344,10 +3344,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Account</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> объект, который представляет учетную запись, под которой <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> должно быть отправлено. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> объект, представляющий учетную запись, в которой <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> отправляется сообщение. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>SendUsingAccount</b> можно использовать для указания учетной записи, которая должна использоваться для отправки <b>SharingItem</b> при <see cref="M:Microsoft.Office.Interop.Outlook._SharingItem.Send" /> вызывается метод. Данное свойство возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если <b>SharingItem</b> принятые элемента, или если для учетной записи <b>SharingItem</b> больше не существует.</para>
-          <para> Это свойство доступно только для чтения, если <b>SharingItem</b> является принятые элемента или уже был отправлен <b>SharingItem</b> ( <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.Sent" /> свойства объекта имеет значение <b>True</b>.)</para>
+        <remarks><para>Свойство <b>SendUsingAccount</b> можно использовать для указания учетной записи, которая должна использоваться для отправки <b>SharingItem</b> при вызове <see cref="M:Microsoft.Office.Interop.Outlook._SharingItem.Send" /> метода. Это свойство возвращает значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если <b>SharingItem</b> является полученным элементом или учетная запись, указанная для <b>SharingItem</b> , больше не существует.</para>
+          <para> Это свойство доступно только для чтения, если <b>SharingItem</b> является полученным элементом или если <b>SharingItem</b> уже был отправлен ( <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.Sent" /> свойство объекта имеет значение <b>true</b>.)</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3377,7 +3377,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlSensitivity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlSensitivity" /> константа, уровень конфиденциальности сообщения для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlSensitivity" /> константу, указывающую чувствительность для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagSensitivity</b>. </para>
           <para> </para></remarks>
@@ -3406,10 +3406,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, если <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> был отправлен. Только для чтения.</summary>
+        <summary>Возвращает значение <b>Boolean</b> (<b>bool</b> в C#), которое указывает, отправлено ли <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> значение. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>В общем случае имеется три различных типа сообщений: отправленные, учтена и сохранен. Отправленные сообщения, отправленные получателю или общих папок элементы. Отправленных сообщений создаются в общей папке. Сохраненные сообщения создаются и сохраняются без отправки или учета.</para>
-          <para>Если этому свойству присвоено <b>значение True</b>, при попытке установить <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.SendUsingAccount" /> свойство вызывает ошибку.</para>
+        <remarks><para>Как правило, существует три типа сообщений: отправленные, опубликованные и сохраненные. Отправленные сообщения — это элементы, отправляемые получателю или общедоступной папке. Опубликованные сообщения создаются в общедоступной папке. Сохраненные сообщения создаются и сохраняются без отправки и публикации.</para>
+          <para>Если для этого свойства задано <b>значение true</b>, попытка установить <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.SendUsingAccount" /> свойство вызовет ошибку.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3436,9 +3436,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>даты и времени</b> , которое указывает дату и время, на котором <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> было отправлено. Только для чтения.</summary>
+        <summary>Возвращает <b>значение типа DateTime</b> , указывающее дату и время <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> отправки. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagClientSubmitTime</b>. При отправке элемента с помощью объекта <see cref="M:Microsoft.Office.Interop.Outlook._SharingItem.Send" /> метода, поставщика транспорта можно задать <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.ReceivedTime" /> и <b>SentOn</b> свойства. </para>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagClientSubmitTime</b>. При отправке элемента с помощью <see cref="M:Microsoft.Office.Interop.Outlook._SharingItem.Send" /> метода объекта поставщик транспорта задает свойства <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.ReceivedTime" /> и <b>SentOn</b> . </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3468,7 +3468,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#), указывающее, отображаемое имя для нужного отправителя <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), которая указывает отображаемое имя для предполагаемого отправителя <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagSentRepresentingName</b>.</para>
           <para> </para></remarks>
@@ -3497,9 +3497,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -3532,7 +3532,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlSharingProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlSharingProvider" /> константа, которая указывает поставщик общего доступа, используемый <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlSharingProvider" /> константу, указывающую поставщика общего доступа, используемого <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3560,11 +3560,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), который представляет идентификатор GUID для поставщика общего доступа, используемые <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>String</b> в C#), представляющую GUID поставщика общего доступа, используемого <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объектом. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Идентификатор GUID возвращается в виде строки в следующем формате:</para>
+        <remarks><para>GUID возвращается в виде строки в следующем формате:</para>
           <code>{00000000-0000-0000-0000-000000000000}</code>
-          <para>Если <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.SharingProvider" /> свойство объект <b>SharingItem</b> имеет значение <b>olProviderUnknown</b>, можно использовать свойство <b>SharingProviderGUID</b> для определения общего доступа поставщика.</para>
+          <para>Если <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.SharingProvider" /> свойству объекта <b>SharingItem</b> присвоено значение <b>Олпровидерункновн</b>, можно использовать свойство <b>шарингпровидергуид</b> для определения поставщика общего доступа.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3589,7 +3589,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Отображает диалоговое окно Показать категории, в которой можно выбрать категории, которые относятся к теме элемента.</summary>
+        <summary>Отображает диалоговое окно Показать категории, которое позволяет выбрать категории, соответствующие теме элемента.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3616,7 +3616,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее размер (в байтах) <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), которое указывает размер (в байтах) <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3647,9 +3647,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#), указывающее, тему для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> (<b>строка</b> в C#), указывающую тему для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagSubject</b>. Свойство <b>Subject</b> является свойством по умолчанию для элементов Outlook. </para>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagSubject</b>. Свойство <b>subject</b> является свойством по умолчанию для элементов Outlook. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3676,9 +3676,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), который имеет <b>значение True</b> , если <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> был отправлен. Только для чтения.</summary>
+        <summary>Возвращает значение <b>Boolean</b> (<b>bool</b> в C#), которое равно <b>true</b> , если <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> отправлено. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Сообщение всегда создается и отправлено в папке, обычно Исходящие. </para>
+        <remarks><para>Сообщение всегда создается и отправляется в папке, как правило, в папке "Исходящие". </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3708,9 +3708,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>даты и времени</b> , представляющий дату завершения задачи для этого <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>DateTime</b> , представляющее дату завершения задачи для этого <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Данное свойство возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.IsMarkedAsTask" /> задано значение <b>False</b>.</para>
+        <remarks><para>Это свойство не возвращает значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#) <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.IsMarkedAsTask" /> , если свойству присвоено значение <b>false</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3740,9 +3740,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>даты и времени</b> , представляющий дату завершения задачи для этого <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>DateTime</b> , представляющее дату выполнения задачи для этого <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />элемента. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Данное свойство возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.IsMarkedAsTask" /> задано значение <b>False</b>.</para>
+        <remarks><para>Это свойство не возвращает значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#) <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.IsMarkedAsTask" /> , если свойству присвоено значение <b>false</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3772,9 +3772,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>даты и времени</b> , представляющий дату начала задачи для этого <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>DateTime</b> , представляющее дату начала задачи для этого <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Данное свойство возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.IsMarkedAsTask" /> задано значение <b>False</b>.</para>
+        <remarks><para>Это свойство не возвращает значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#) <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.IsMarkedAsTask" /> , если свойству присвоено значение <b>false</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3804,9 +3804,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение типа <b>String</b> (<b>строка</b> в C#), представляющее темы задачи для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее тему задачи для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Данное свойство возвращает значение <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.Subject" /> свойства при <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.IsMarkedAsTask" /> задано значение <b>False</b>.</para>
+        <remarks><para>Это свойство возвращает значение <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.Subject" /> свойства, если для <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.IsMarkedAsTask" /> свойства задано значение <b>false</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3836,9 +3836,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает отображаемые имена для получателей в список разделенных точкой с запятой <b>String</b> (<b>строка</b> в C#) <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает разделенную точками с запятой <b>строку</b> (<b>String</b> в C#) список отображаемых имен для получателей <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство содержит только отображаемые имена. Свойство To соответствует свойств MAPI <b>PidTagDisplayTo</b>. <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> Семейства сайтов должен использоваться для изменения этого свойства. </para>
+        <remarks><para>Данное свойство содержит только отображаемые имена. Свойство to соответствует свойству MAPI <b>PidTagDisplayTo</b>. <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> Коллекция должна использоваться для изменения этого свойства. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3868,10 +3868,10 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>даты и времени</b> , представляющий порядковый номер задачи для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>DateTime</b> , представляющее порядковое значение задачи для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Данное свойство возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.IsMarkedAsTask" /> задано значение <b>False</b>.</para>
-          <para>Это свойство используется для указания порядок задачи в рамках родительские группы, такие как прямо сейчас или группу завтрашнему дню из списка задач. Значение, используемое в это свойство не имеет связи значениям <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.TaskStartDate" />, <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.TaskDueDate" />, или <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.TaskCompletedDate" /> свойства.</para>
+        <remarks><para>Это свойство не возвращает значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#) <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.IsMarkedAsTask" /> , если свойству присвоено значение <b>false</b>.</para>
+          <para>Это свойство используется для указания того, как задача должна быть упорядочена в родительских группах, например в группу "сегодня" или "завтра", для списка дел. Значение, используемое в этом свойстве <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.TaskStartDate" />, не имеет связи со значениями свойств, <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.TaskDueDate" />или <see cref="P:Microsoft.Office.Interop.Outlook._SharingItem.TaskCompletedDate" /> свойств.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3901,9 +3901,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlSharingMsgType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlSharingMsgType" /> константу, указывающую тип общего доступа к сообщение, представленное <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlSharingMsgType" /> константу, которая указывает тип сообщения общего доступа, <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />представленного. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>При попытке установить это свойство после отправки или получения общего доступа сообщения или при попытке этому свойству присвоено значение <b>olSharingMsgTypeResponseAllow</b> или <b>olSharingMsgTypeResponseDeny</b>, возникает ошибка.</para>
+        <remarks><para>Если вы попытаетесь установить это свойство после отправки или получения сообщения о предоставлении общего доступа, или если вы попытаетесь задать для этого свойства значение <b>олшарингмсгтипереспонсеаллов</b> или <b>олшарингмсгтипереспонседени</b>, возникает ошибка.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3933,7 +3933,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>типа Boolean</b> (<b>bool</b> в C#), который имеет <b>значение True</b> , если <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> не был открыт (чтение). Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> в C#), которое имеет значение <b>true</b> , <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> если объект не был открыт (Read). Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3961,7 +3961,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.UserProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> коллекции, представляющей все свойства пользователя для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> коллекцию, которая представляет все свойства пользователя для <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

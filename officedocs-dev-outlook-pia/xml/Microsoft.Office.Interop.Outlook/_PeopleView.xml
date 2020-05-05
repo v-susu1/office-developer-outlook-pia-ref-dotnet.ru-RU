@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.PeopleView" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.PeopleView" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -71,7 +71,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Область применения <see cref="T:Microsoft.Office.Interop.Outlook.PeopleView" /> объекта к текущему представлению.</summary>
+        <summary>Применяет <see cref="T:Microsoft.Office.Interop.Outlook.PeopleView" /> объект к текущему представлению.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,7 +98,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,7 +128,7 @@
       <Docs>
         <param name="Name">Имя нового представления.</param>
         <param name="SaveOption">Параметр Сохранить для нового представления.</param>
-        <summary>Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.View" /> объекта на основании существующих <see cref="T:Microsoft.Office.Interop.Outlook.PeopleView" /> объекта.</summary>
+        <summary>Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.View" /> объект на основе существующего <see cref="T:Microsoft.Office.Interop.Outlook.PeopleView" /> объекта.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -184,7 +184,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет фильтр для представления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее фильтр для представления. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -212,8 +212,8 @@
         <Parameter Name="Date" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="Date">Дата, к которой следует изменить представление.</param>
-        <summary>Изменение даты, используемых текущим представлением для отображения информации.</summary>
+        <param name="Date">Дата, до которой должно быть изменено представление.</param>
+        <summary>Изменяет дату, используемую текущим представлением, для отображения сведений.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,7 +243,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение типа <b>String</b> (<b>строка</b> в C#), представляющее языка, заданных для представления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее параметр языка для представления. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -274,7 +274,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, указывающее, является ли пользователь может изменять параметры представления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>логического</b> значения (<b>bool</b> в C#), которое указывает, может ли пользователь изменять параметры представления. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -305,7 +305,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет отображаемое имя для объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее отображаемое имя объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -333,7 +333,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -359,7 +359,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Сброс этого встроенных представления Outlook исходные параметры.</summary>
+        <summary>Восстанавливает исходные параметры встроенного представления Outlook.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -384,7 +384,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Сохраняет представления или сохраняет изменения в представлении.</summary>
+        <summary>Сохранение представления или сохранение изменений в представлении.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -411,7 +411,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlViewSaveOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewSaveOption" /> константа, которая указывает папки, в которых доступен указанное представление и разрешения на чтение, подключенного к представления. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewSaveOption" /> константу, указывающую папки, в которых доступно указанное представление и разрешения на чтение, присоединенные к представлению. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -439,7 +439,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -467,7 +467,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OrderFields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OrderFields" /> объект, представляющий набор полей, по которым элементы отображаются в <see cref="T:Microsoft.Office.Interop.Outlook.PeopleView" /> упорядочены в объект. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OrderFields" /> объект, представляющий набор полей, по которым упорядочиваются элементы, отображаемые в <see cref="T:Microsoft.Office.Interop.Outlook.PeopleView" /> объекте. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -495,7 +495,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, будет ли <see cref="T:Microsoft.Office.Interop.Outlook.PeopleView" /> объект является встроенной представления Outlook. Только для чтения.</summary>
+        <summary>Возвращает логическое<b>значение (</b> <b>логическое</b> значение в C#), которое указывает, <see cref="T:Microsoft.Office.Interop.Outlook.PeopleView" /> является ли объект встроенным представлением Outlook. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -523,7 +523,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlViewType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewType" /> константа, которая указывает тип представления представления. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewType" /> константу, указывающую тип представления. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -554,7 +554,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), задающее XML-определение представления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), задающее XML-определение представления. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

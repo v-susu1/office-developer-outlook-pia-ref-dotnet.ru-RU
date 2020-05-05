@@ -18,9 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Представляет документ или ссылку на документ, содержащиеся в элементе Outlook.</summary>
-    <remarks><para>Использование <see cref="P:Microsoft.Office.Interop.Outlook.Attachments.Item(System.Object)" /> (<paramref name="index" />), где <paramref name="index" /> — номер индекса для возврата объекта <b>вложения</b> .</para>
-      <para>Использование <see cref="M:Microsoft.Office.Interop.Outlook.Attachments.Add(System.Object,System.Object,System.Object,System.Object)" /> метод, чтобы добавить вложение элемента.</para>
+    <summary>Представляет документ или ссылку на документ, содержащийся в элементе Outlook.</summary>
+    <remarks><para>Используйте <see cref="P:Microsoft.Office.Interop.Outlook.Attachments.Item(System.Object)" /> (<paramref name="index" />), где <paramref name="index" /> — это номер индекса, чтобы вернуть один объект <b>вложения</b> .</para>
+      <para>Используйте <see cref="M:Microsoft.Office.Interop.Outlook.Attachments.Add(System.Object,System.Object,System.Object,System.Object)" /> метод, чтобы добавить вложение в элемент.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -47,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -75,9 +75,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlAttachmentBlockLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlAttachmentBlockLevel" /> константа, которая указывает, что любое ограничение на основании расширения файла вложения. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlAttachmentBlockLevel" /> константу, которая указывает, есть ли ограничения на вложение на основе расширения файла. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это значение этого свойства отражает, заблокирован ли вложения на основе расширения файла и как безопасности вложений настроен на клиентском компьютере. Дополнительные сведения о безопасности вложений в Outlook посетите сайт веб-пакет ресурсов Office.</para>
+        <remarks><para>Это значение этого свойства отражает, блокируется ли вложение в зависимости от его расширения, а также от того, как настроена защита вложений на клиентском компьютере. Дополнительные сведения о безопасности вложений в Outlook можно найти на веб-сайте Office Resource Kit.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -104,7 +104,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -160,7 +160,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляет имя, которое не обязательно должна быть фактическое имя файла, отображаемые под значок, обозначающий внедренного вложения. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), представляющую имя, которое не обязательно должно быть фактическим именем файла, отображаемым под значком, представляющим внедренное вложение. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagDisplayName</b>.</para>
           <para> </para></remarks>
@@ -189,9 +189,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее имя файла вложения.  Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую имя файла вложения.  Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство используется в сочетании с <see cref="P:Microsoft.Office.Interop.Outlook.Attachment.PathName" /> свойство.</para>
+        <remarks><para>Используйте это свойство вместе со <see cref="P:Microsoft.Office.Interop.Outlook.Attachment.PathName" /> свойством.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -216,45 +216,45 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает полный путь к вложенный файл, который находится в папке временных файлов. Только для чтения.</summary>
-        <returns>Возвращает <see cref="T:System.String" /> , представляющий полный путь к файлу временные вложения.</returns>
-        <remarks><para>Метод <b>GetTemporaryFilePath</b> допустимо только для вложения, <see cref="P:Microsoft.Office.Interop.Outlook.Attachment.Type" /> — это свойство <see cref="F:Microsoft.Office.Interop.Outlook.OlAttachmentType.olByValue" />. Это означает, что вложение является копии и даже в том случае, если исходный файл удаляется может осуществляться эту копию. Для других типов вложения метод <b>GetTemporaryFilePath</b> возвращает ошибку. </para>
+        <summary>Возвращает полный путь к вложенному файлу, который находится в папке временных файлов. Только для чтения.</summary>
+        <returns>Возвращает объект <see cref="T:System.String" /> a, представляющий полный путь к временному файлу вложения.</returns>
+        <remarks><para>Метод <b>жеттемпорарифилепас</b> является допустимым только для тех вложений <see cref="P:Microsoft.Office.Interop.Outlook.Attachment.Type" /> , свойство <see cref="F:Microsoft.Office.Interop.Outlook.OlAttachmentType.olByValue" />которых имеет значение. Это означает, что вложение является копией, и к ней можно получить доступ, даже если исходный файл удаляется. Для других типов вложений метод <b>жеттемпорарифилепас</b> возвращает ошибку. </para>
           <para>
-            <b>GetTemporaryFilePath</b> возвращает ошибку, при доступе к <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> объект в <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" /> семейства сайтов или в <see cref="T:Microsoft.Office.Interop.Outlook.AttachmentSelection" /> объекта. Использование <b>GetTemporaryFilePath</b> только в обратных вызовов события вложения перечисленных ниже различных элементов Microsoft Outlook:</para>
+            <b>Жеттемпорарифилепас</b> также возвращает ошибку при доступе к <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> объекту в <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" /> коллекции или в <see cref="T:Microsoft.Office.Interop.Outlook.AttachmentSelection" /> объекте. Используйте <b>жеттемпорарифилепас</b> только в обратных вызовах событий вложений, перечисленных ниже для различных элементов Microsoft Outlook:</para>
           <list type="bullet">
             <item>
               <para>
-                <b>Attachmentadd для</b>
+                <b>Событие attachmentadd</b>
               </para>
             </item>
             <item>
               <para>
-                <b>Attachmentread для</b>
+                <b>Событие attachmentread</b>
               </para>
             </item>
             <item>
               <para>
-                <b>Attachmentremove для</b>
+                <b>Событие attachmentremove</b>
               </para>
             </item>
             <item>
               <para>
-                <b>Beforeattachmentadd для</b>
+                <b>Событие beforeattachmentadd</b>
               </para>
             </item>
             <item>
               <para>
-                <b>Beforeattachmentpreview для</b>
+                <b>Событие beforeattachmentpreview</b>
               </para>
             </item>
             <item>
               <para>
-                <b>Beforeattachmentread для</b>
+                <b>Событие beforeattachmentread</b>
               </para>
             </item>
             <item>
               <para>
-                <b>Beforeattachmentsave для</b>
+                <b>Событие beforeattachmentsave</b>
               </para>
             </item>
             <item>
@@ -289,9 +289,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее положение объекта в коллекции.  Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), которое указывает положение объекта в коллекции.  Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>Index</b> допустимо только во время текущего сеанса и можно изменить, как объекты добавлен и удален из коллекции. Первый объект в коллекции имеет значение <b>индекса</b> 1.</para>
+        <remarks><para>Свойство <b>index</b> является допустимым только во время текущего сеанса и может изменяться при добавлении и удалении объектов из коллекции. Значение <b>индекса</b> первого объекта в коллекции равно 1.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -349,7 +349,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -377,9 +377,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющий полный путь для связанного вложенного файла. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую полный путь к связанному вложенному файлу. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство допустимо только для связанных файлов.</para>
+        <remarks><para>Это свойство является допустимым только для связанных файлов.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -409,11 +409,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>Integer</b> (<b>int</b> в C#) значение, указывающее положение вложений в основном тексте элемента. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее положение вложения в теле элемента. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>Position</b> работает только с вложения для элементов, где форматированного текста (RTF) — это формат текста сообщения. Если формат текста сообщения не RTF, <b>положение</b> свойство игнорируется для заданной операции и всегда возвращает нуль (0) для выполнения операции get.</para>
-          <para>Если свойству <b>положение</b> присвоено значение 0 для элемента которых имеет формат текста RTF, вложения будет скрыта в пользовательском интерфейсе Outlook. Вложение не отображается в представлении, и пользователь не может удалить вложение из текста элемента. Вложение по-прежнему можно получить доступ через <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" /> семейства сайтов для элемента.</para>
-          <para>Является единственным элементом, обеспечивающий программный значение свойства BodyFormat <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />. Другие типы элементов, например встречи, контактов и задач, RTF по умолчанию. </para>
+        <remarks><para>Свойство <b>position</b> применяется только к вложению для элемента, в котором используется формат текста RTF. Если формат текста не является RTF, свойство <b>position</b> игнорируется для операции Set и всегда возвращает ноль (0) для операции Get.</para>
+          <para>Если присвоить свойству <b>position</b> значение 0 для элемента, в котором формат текста — RTF, вложение будет скрыто в пользовательском интерфейсе Outlook. Вложение не отображается в представлении, и пользователь не может удалить вложение из основного текста элемента. Доступ к вложению по-прежнему можно <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" /> получить через коллекцию элемента.</para>
+          <para>Единственным элементом, допускающим программное задание свойства BodyFormat, является значение <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />. Другие типы элементов, например "Встреча", "Контакты" и "задача" по умолчанию имеют формат RTF. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -440,7 +440,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.PropertyAccessor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект, который поддерживает создание, получение, Установка и удаление свойств родительского <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект, который поддерживает создание, получение, настройку и удаление свойств родительского <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -468,8 +468,8 @@
         <Parameter Name="Path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Path">Место, в котором следует сохранить вложение.</param>
-        <summary>Сохранение вложений для указанного пути.</summary>
+        <param name="Path">Расположение, в котором необходимо сохранить вложение.</param>
+        <summary>Сохраняет вложение по указанному пути.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -496,9 +496,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -531,9 +531,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение типа <b>Integer</b> (<b>целое</b> в C#), определяющее размер (в байтах) вложения. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее размер вложения (в байтах). Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Эти сведения не всегда возможно, доступен для вложений.  Например на S/MIME-сообщение, размер фактических вложений, неизвестные до извлекается вложение. В тех случаях, когда не удается определить размер вложения это свойство возвращает значение 0.  </para>
+        <remarks><para>Эта информация может быть недоступна для вложений.  Например, в сообщении S/MIME фактические размеры вложений неизвестны, пока не будет извлечено вложение. В случаях, когда размер вложения не может быть определен, это свойство возвращает значение 0.  </para>
           <para> </para></remarks>
       </Docs>
     </Member>

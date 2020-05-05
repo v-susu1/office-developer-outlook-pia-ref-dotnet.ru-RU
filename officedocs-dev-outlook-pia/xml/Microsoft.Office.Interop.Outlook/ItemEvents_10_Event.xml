@@ -40,14 +40,14 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_AfterWriteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает после Microsoft Outlook был сохранен элемента.</summary>
-        <remarks><para>Событие <b>AfterWrite</b> возникает после <see cref="E:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event.Write" /> события. Это событие не отменить. Чтобы определить, когда элемент выгрузки из памяти, используйте <see cref="E:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event.Unload" /> события. </para>
-          <para>Событие <b>AfterWrite</b> соответствует <b>IExchExtMessageEvents::OnWriteComplete</b>события расширения клиента Exchange (ECE). </para>
-          <para>В событии <b>AfterWrite</b> возможен только следующие члены объекта элемента: </para>
+        <summary>Возникает после сохранения элемента в Microsoft Outlook.</summary>
+        <remarks><para>Событие <b>афтерврите</b> происходит после <see cref="E:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event.Write" /> события. Это событие не может быть отменено. Чтобы определить, когда элемент выгружается из памяти, используйте <see cref="E:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event.Unload" /> событие. </para>
+          <para>Событие <b>афтерврите</b> соответствует событию "расширения клиента Exchange" (Еце) <b>Иексчекстмессажеевентс:: онвритекомплете</b>. </para>
+          <para>В событии <b>афтерврите</b> можно получить доступ только к следующим элементам объекта Item: </para>
           <list type="bullet">
             <item>
               <para>
-                <b>Класс</b>
+                <b>Классе</b>
               </para>
             </item>
             <item>
@@ -57,13 +57,13 @@
             </item>
             <item>
               <para>
-                <b>MAPIOBJECT</b>
+                <b>мапиобжект</b>
               </para>
             </item>
           </list>
-          <para>Свойство <b>MAPIOBJECT</b> — скрытые в объектной модели Outlook. Это свойство предоставляет доступ к базового объекта MAPI IMessage и может быть вызвана только через интерфейс IUnknown. Свойство доступным для программ, написанных на языках, например C или C++, которые поддерживают <b>интерфейс IUnknown</b>. <b>MAPIOBJECT</b> не доступен через интерфейс IDispatch. Языков разработки, например Visual Basic для приложений (VBA), Visual C# и Visual Basic поддерживают интерфейс <b>IDispatch</b> и <b>IUnknown</b>и таким образом, они не могут получить доступ к <b>MAPIOBJECT</b>. Если другие свойства или методы родительского элемента осуществляется в это событие, Outlook вызывает ошибку. </para>
-          <para>Объект получен из свойства <b>MAPIOBJECT</b> в это событие должно содержать все, что изменения сохранены в Outlook. Разработчик может вызвать метод SaveChanges на объекте <b>IMessage</b> для сохранения изменений базового объекта <b>IMessage</b> , представленного <b>MAPIOBJECT</b>и Outlook не вернется эти изменения. </para>
-          <para>Специалистов по внедрению необходимо удалить объект получен из свойства <b>MAPIOBJECT</b> до завершения события для события. Попытка использовать объект вне контекста события не поддерживается и приведет к непредвиденному поведению.</para>
+          <para>Свойство <b>мапиобжект</b> является скрытым свойством в объектной модели Outlook. Это свойство предоставляет доступ к базовому объекту MAPI IMessage и может вызываться только через интерфейс IUnknown. Свойство доступно для программ, написанных на таких языках, как C или C++, поддерживающих <b>IUnknown</b>. <b>Мапиобжект</b> недоступен через интерфейс IDispatch. Языки разработки, такие как Visual Basic для приложений (VBA), Visual C# и Visual Basic, поддерживают интерфейс <b>IDispatch</b> , а не <b>IUnknown</b>и поэтому не могут получить доступ к <b>мапиобжект</b>. Если в этом событии есть доступ к другим свойствам или методам родительского элемента, Outlook вызывает ошибку. </para>
+          <para>Объект, полученный из свойства <b>мапиобжект</b> в этом событии, должен содержать все изменения, сохраненные в Outlook. Разработчик может вызвать метод SaveChanges для объекта <b>iMessage</b> для сохранения изменений в базовом объекте <b>iMessage</b> , представленном <b>мапиобжект</b>, и Outlook не будет возвратиться к этим изменениям. </para>
+          <para>Разработчики должны освободить объект, полученный из свойства <b>мапиобжект</b> в событии до завершения события. Попытка использования этого объекта вне контекста события не поддерживается и приводит к непредсказуемому поведению.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -82,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_AttachmentAddEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда было добавлено вложение в экземпляр родительского объекта.</summary>
+        <summary>Возникает при добавлении вложения в экземпляр родительского объекта.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,7 +101,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_AttachmentReadEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда вложение в экземпляр родительский объект был открыт для чтения.</summary>
+        <summary>Происходит, когда вложение в экземпляре родительского объекта было открыто для чтения.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,7 +120,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_AttachmentRemoveEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда вложение был удален из экземпляра родительский объект.</summary>
+        <summary>Происходит, когда вложение было удалено из экземпляра родительского объекта.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,7 +139,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_BeforeAttachmentAddEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит перед добавлением вложения в экземпляр родительского объекта.</summary>
+        <summary>Возникает перед добавлением вложения в экземпляр родительского объекта.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,8 +158,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_BeforeAttachmentPreviewEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает перед предварительного просмотра вложений, связанные с экземпляром родительского объекта.</summary>
-        <remarks><para>Это событие происходит перед просмотра вложений в полосе вложений области чтения active explorer или из инспектора active.</para>
+        <summary>Возникает перед предварительным просмотром вложения, связанного с экземпляром родительского объекта.</summary>
+        <remarks><para>Это событие происходит перед предварительным просмотром вложения либо из полосы вложений в области чтения активного проводника, либо из активного инспектора.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -178,7 +178,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_BeforeAttachmentReadEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает перед вложения, связанные с экземпляром родительский объект считываются из файловой системы, поток вложения или <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> объекта.</summary>
+        <summary>Возникает перед тем, как вложение, связанное с экземпляром родительского объекта, считывается из файловой системы, потока вложений или <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> объекта.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,7 +198,7 @@
       </ReturnValue>
       <Docs>
         <summary>Происходит непосредственно перед сохранением вложения.</summary>
-        <remarks><para>Это событие соответствует при сохранении вложения в хранилище обмена мгновенными сообщениями. Событие <b>beforeattachmentsave для</b> происходит непосредственно перед вложения сохраняются при сохранении элемента. Если пользователь изменяет вложения, а затем сохраняет эти изменения не происходит событие <b>beforeattachmentsave для</b> в это время; Вместо этого он может возникнуть при сам элемент сохраняется более поздней версии. Он также не происходит при сохранении вложений на жестком диске, с помощью метода <b>SaveAsFile</b> .</para>
+        <remarks><para>Это событие соответствует моменту сохранения вложений в хранилище сообщений. Событие <b>событие beforeattachmentsave</b> происходит непосредственно перед сохранением вложения при сохранении элемента. Если пользователь редактирует вложение и сохраняет эти изменения, событие <b>событие beforeattachmentsave</b> не будет выполняться в это время; Вместо этого он будет выполняться при последующем сохранении элемента. Он также не происходит при сохранении вложения на жестком диске с помощью метода <b>SaveAsFile</b> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -217,7 +217,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_BeforeAttachmentWriteToTempFileEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает перед вложения, связанные с экземпляром родительского объекта записывается во временный файл.</summary>
+        <summary>Возникает, прежде чем вложение, связанное с экземпляром родительского объекта, записывается во временный файл.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,7 +236,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_BeforeAutoSaveEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает перед элемент автоматически сохраняются в Outlook.</summary>
+        <summary>Происходит перед автоматическим сохранением элемента в Outlook.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,20 +255,20 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_BeforeCheckNamesEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит непосредственно перед Microsoft Outlook начинает разрешение имен в коллекции получателей для элемента (по экземпляр родительский объект).</summary>
-        <remarks><para>События не возникают при следующих обстоятельствах:  </para>
+        <summary>Происходит непосредственно перед тем, как Microsoft Outlook начинает разрешать имена в коллекции получателей для элемента (экземпляр родительского объекта).</summary>
+        <remarks><para>Событие не срабатывает в следующих случаях:  </para>
           <list type="bullet">
             <item>
-              <para>Настроить запись в журнале формы и затем разрешения контакта в поле контакты. </para>
+              <para>Вы настроили форму записи дневника и затем разрешали контакт в поле Contacts (контакты). </para>
             </item>
             <item>
-              <para>Настроить формы контакта и выберите Разрешить контакта в поле контакты. </para>
+              <para>Вы настроили форму контакта, а затем разрешаете контакт в поле Contacts (контакты). </para>
             </item>
             <item>
-              <para>Настроить любого типа формы и Outlook автоматически разрешенного имени в фоновом режиме. </para>
+              <para>Вы настроили форму любого типа, и Outlook автоматически разрешал имя в фоновом режиме. </para>
             </item>
             <item>
-              <para>Программная была создана и разрешить получателя.</para>
+              <para>Вы создаете и разрешаете получателю программным способом.</para>
             </item>
           </list>
           <para> </para></remarks>
@@ -289,9 +289,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_BeforeDeleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает перед удалением элемента (по экземпляр родительский объект).</summary>
-        <remarks><para>Чтобы это событие должно срабатывать, когда сообщение электронной почты список рассылки, запись журнала, задач, контактов или post, удаляются через действие, инспектора необходимо открыть.</para>
-          <para>Событие происходит каждый раз, когда элемент удаляется.</para>
+        <summary>Возникает перед удалением элемента (который является экземпляром родительского объекта).</summary>
+        <remarks><para>Чтобы это событие порождается при удалении сообщения электронной почты, списка рассылки, записи журнала, задачи, контакта или сообщения POST, необходимо открыть инспектор.</para>
+          <para>Событие возникает при каждом удалении элемента.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -310,14 +310,14 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_BeforeReadEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает перед началом Microsoft Outlook для чтения свойства для элемента.</summary>
-        <remarks><para>Событие <b>BeforeRead</b> возникает после <see cref="E:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event.Read" /> события. В отличие от других событий с префиксом <b>перед</b> это событие не отменить. Чтобы определить, когда элемент выгрузки из памяти, используйте <see cref="E:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event.Unload" /> события. </para>
-          <para>Событие <b>BeforeRead</b> соответствует <b>IExchExtMessageEvents::OnRead</b>события расширения клиента Exchange (ECE). </para>
-          <para>В событии <b>BeforeRead</b> возможен только следующие члены объекта элемента: </para>
+        <summary>Возникает перед тем, как Microsoft Outlook начинает чтение свойств элемента.</summary>
+        <remarks><para>Событие <b>BeforeRead</b> происходит после <see cref="E:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event.Read" /> события. В отличие от других событий с префиксом <b>Before</b> , это событие не отменяется. Чтобы определить, когда элемент выгружается из памяти, используйте <see cref="E:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event.Unload" /> событие. </para>
+          <para>Событие <b>BeforeRead</b> соответствует событию "расширения клиента Exchange (еце)" <b>иексчекстмессажеевентс:: onread</b>. </para>
+          <para>В событии <b>BeforeRead</b> можно получить доступ только к следующим элементам объекта Item: </para>
           <list type="bullet">
             <item>
               <para>
-                <b>Класс</b>
+                <b>Классе</b>
               </para>
             </item>
             <item>
@@ -327,13 +327,13 @@
             </item>
             <item>
               <para>
-                <b>MAPIOBJECT</b>
+                <b>мапиобжект</b>
               </para>
             </item>
           </list>
-          <para>Свойство <b>MAPIOBJECT</b> — скрытые в объектной модели Outlook. Это свойство предоставляет доступ к базового объекта MAPI IMessage и может быть вызвана только через интерфейс IUnknown. Свойство доступным для программ, написанных на языках, например C или C++, которые поддерживают <b>интерфейс IUnknown</b>. <b>MAPIOBJECT</b> не доступен через интерфейс IDispatch. Языков разработки, например Visual Basic для приложений (VBA), Visual C# и Visual Basic поддерживают интерфейс <b>IDispatch</b> и <b>IUnknown</b>и таким образом, они не могут получить доступ к <b>MAPIOBJECT</b>. Если другие свойства или методы родительского элемента осуществляется в это событие, Outlook вызывает ошибку. </para>
-          <para>Если разработчик получает доступ к базовым <b>IMessage</b> объект и изменения свойства для этого объекта, Outlook будут отображаться данного элемента, что отражает изменения объект <b>IMessage</b> . Разработчик не нужно вызвать SaveChanges для объекта <b>IMessage</b> , чтобы изменения отразились в Outlook. </para>
-          <para>Специалистов по внедрению необходимо удалить объект получен из свойства <b>MAPIOBJECT</b> до завершения события для события. Попытка использовать объект вне контекста события не поддерживается и приведет к непредвиденному поведению.</para>
+          <para>Свойство <b>мапиобжект</b> является скрытым свойством в объектной модели Outlook. Это свойство предоставляет доступ к базовому объекту MAPI IMessage и может вызываться только через интерфейс IUnknown. Свойство доступно для программ, написанных на таких языках, как C или C++, поддерживающих <b>IUnknown</b>. <b>Мапиобжект</b> недоступен через интерфейс IDispatch. Языки разработки, такие как Visual Basic для приложений (VBA), Visual C# и Visual Basic, поддерживают интерфейс <b>IDispatch</b> , а не <b>IUnknown</b>и поэтому не могут получить доступ к <b>мапиобжект</b>. Если в этом событии есть доступ к другим свойствам или методам родительского элемента, Outlook вызывает ошибку. </para>
+          <para>Если надстройка получает доступ к базовому объекту <b>iMessage</b> и изменяет свойства этого объекта, в Outlook будет отображаться этот элемент, отражающий изменения объекта <b>iMessage</b> . Разработчику не нужно вызывать SaveChanges для объекта <b>iMessage</b> , чтобы изменения отражались в Outlook. </para>
+          <para>Разработчики должны освободить объект, полученный из свойства <b>мапиобжект</b> в событии до завершения события. Попытка использования этого объекта вне контекста события не поддерживается и приводит к непредсказуемому поведению.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -352,8 +352,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_CloseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает при закрытии инспектора, связанный с элементом (по экземпляр родительский объект).</summary>
-        <remarks><para>Если вы используете метод <b>Close</b> должно срабатывать, это событие, его можно только отменить Если аргумент <b>olPromptForSave</b> использует метод <b>Close</b> .</para>
+        <summary>Возникает, когда закрывается инспектор, связанный с элементом (экземпляром родительского объекта).</summary>
+        <remarks><para>Если вы используете метод <b>Close</b> для запуска этого события, его можно отменить только в том случае, если метод <b>Close</b> использует аргумент <b>олпромптфорсаве</b> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -372,8 +372,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_CustomActionEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает при выполнении дополнительного действия элемента (по экземпляр родительский объект).</summary>
-        <remarks><para>Объект <b>действия</b> и только что созданный элемент, связанные с дополнительным действием, передаются события.</para>
+        <summary>Возникает при выполнении настраиваемого действия элемента (который является экземпляром родительского объекта).</summary>
+        <remarks><para>Объект <b>Action</b> и вновь созданный элемент, созданный в результате дополнительного действия, передаются в событие.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -392,8 +392,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_CustomPropertyChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит при изменении настраиваемого свойства элемента (по экземпляр родительский объект).</summary>
-        <remarks><para>Имя свойства передается в процедуру, чтобы определить, какие настраиваемое свойство изменения.</para>
+        <summary>Возникает при изменении настраиваемого свойства элемента (который является экземпляром родительского объекта).</summary>
+        <remarks><para>Имя свойства передается в процедуру, чтобы можно было определить, какое пользовательское свойство изменилось.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -412,7 +412,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_ForwardEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда пользователь выбирает прямого действия для элемента (по экземпляр родительский объект).</summary>
+        <summary>Происходит, когда пользователь выбирает действие Forward для элемента (экземпляр родительского объекта).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -431,8 +431,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_OpenEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда экземпляр объекта родительского открыт в <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" />.</summary>
-        <remarks><para>При возникновении этого события объекта <b>инспектора</b> инициализирована, но еще не отображается. <b>Открытые</b> события отличается от <see cref="E:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event.Read" /> событий в <b>чтения</b> , возникает всякий раз, когда пользователь выбирает элемент в представлении, что поддерживается в ячейке редактирования, а также при открытии элемента в инспекторе.</para>
+        <summary>Возникает при открытии экземпляра родительского объекта в файле <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" />.</summary>
+        <remarks><para>При возникновении этого события объект <b>инспектора</b> инициализируется, но пока не отображается. Событие <b>Open</b> отличается от <see cref="E:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event.Read" /> события в таком <b>прочтении</b> , когда пользователь выбирает элемент в представлении, поддерживающем редактирование в ячейках, а также при открытии элемента в инспекторе.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -451,8 +451,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_PropertyChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит при изменении явных встроенных свойств экземпляра родительский объект.</summary>
-        <remarks><para>Имя свойства передается в событие, чтобы определить, какие свойства был изменен.</para>
+        <summary>Возникает, когда изменяется явное встроенное свойство экземпляра родительского объекта.</summary>
+        <remarks><para>Имя свойства передается в событие, чтобы можно было определить, какое свойство было изменено.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -471,8 +471,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_ReadEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда экземпляр объекта родительского открыт для изменения пользователем.</summary>
-        <remarks><para>Событие <b>чтения</b> отличается от <see cref="E:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event.Open" /> событий в <b>чтения</b> , возникает всякий раз, когда пользователь выбирает элемент в представлении, поддерживающего редактирование в ячейке, а также при открытии элемента в <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" />.</para>
+        <summary>Возникает при открытии экземпляра родительского объекта для редактирования пользователем.</summary>
+        <remarks><para>Событие <b>Read</b> отличается от <see cref="E:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event.Open" /> события в этом <b>прочтении</b> происходит, когда пользователь выбирает элемент в представлении, поддерживающем редактирование в ячейках, а также при открытии элемента в <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" />.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -491,10 +491,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_ReadCompleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает после завершения чтение свойств элемента Outlook.</summary>
-        <remarks><para>Событие <b>ReadComplete</b> возникает после <see cref="E:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event.BeforeRead" /> событий и до <see cref="E:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event.Read" /> события для элемента. </para>
-          <para>Чтобы определить, когда элемент выгрузки из памяти, используйте <see cref="E:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event.Unload" /> события.</para>
-          <para>Событие <b>ReadComplete</b> соответствует <b>IExchExtMessageEvents::OnReadComplete</b>события расширения клиента Exchange (ECE).</para>
+        <summary>Происходит, когда Outlook завершает чтение свойств элемента.</summary>
+        <remarks><para>Событие <b>ReadComplete</b> происходит после <see cref="E:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event.BeforeRead" /> события и до <see cref="E:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event.Read" /> события для элемента. </para>
+          <para>Чтобы определить, когда элемент выгружается из памяти, используйте <see cref="E:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event.Unload" /> событие.</para>
+          <para>Событие <b>ReadComplete</b> соответствует событию "расширения клиента Exchange" (Еце) <b>Иексчекстмессажеевентс:: онреадкомплете</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -513,8 +513,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_ReplyEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда пользователь выбирает действие ответ для элемента (по экземпляр родительский объект).</summary>
-        <remarks><para>Возвращает ответ как <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> объекта.</para>
+        <summary>Происходит, когда пользователь выбирает действие ответа для элемента (экземпляр родительского объекта).</summary>
+        <remarks><para>Возвращает ответ как <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> объект.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -533,8 +533,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_ReplyAllEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда пользователь выбирает действие ReplyAll для элемента (по экземпляр родительский объект).</summary>
-        <remarks><para>Возвращает ответ как <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> объекта.</para>
+        <summary>Происходит, когда пользователь выбирает действие ReplyAll для элемента (экземпляр родительского объекта).</summary>
+        <remarks><para>Возвращает ответ как <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> объект.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -553,7 +553,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_SendEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда пользователь выбирает действие отправки для элемента (по экземпляр родительский объект).</summary>
+        <summary>Происходит, когда пользователь выбирает действие Send для элемента (экземпляр родительского объекта).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -572,10 +572,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_UnloadEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит до выгрузки из памяти, элемента Outlook программно или с помощью пользовательских действий.</summary>
-        <remarks><para>Это событие происходит после <b>закрытия</b> события для элемента Outlook, но перед Outlook элемента выгрузки из памяти, что надстройка для освобождения ресурсов, связанный с объектом.  Несмотря на то, что событие происходит до выгрузки из памяти элемента Outlook, это событие не может быть отменен.</para>
+        <summary>Возникает перед выгрузкой элемента Outlook из памяти программным путем или путем действия пользователя.</summary>
+        <remarks><para>Это событие происходит после события <b>закрытия</b> для элемента Outlook, но до выгрузки элемента Outlook из памяти, позволяя надстройке освобождать все ресурсы, связанные с объектом.  Несмотря на то, что событие возникает до выгрузки элемента Outlook из памяти, это событие не может быть отменено.</para>
           <para>
-            <b>Примечание</b>: это событие является обязательным только событие уведомления, чтобы надстройка разыменования объекта.  Если в событии <b>Unload</b> вызывается любое свойство или метод для данного объекта, возникает ошибка.</para>
+            <b>Note</b>: это событие предназначено только для события уведомления, поэтому надстройка может отменять ссылку на объект.  Если какое-либо свойство или метод этого объекта вызывается в рамках события <b>unload (выгрузка</b> ), возникает ошибка.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -594,7 +594,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemEvents_10_WriteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда экземпляр родительский объект сохраняется, явно или неявно (например, в ответ на приглашение при закрытии инспектора элемента).</summary>
+        <summary>Происходит, когда экземпляр родительского объекта сохраняется явно или неявно (например, в ответ на запрос при закрытии инспектора элемента).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

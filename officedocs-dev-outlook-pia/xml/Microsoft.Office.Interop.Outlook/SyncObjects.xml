@@ -22,9 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Содержит набор <see cref="T:Microsoft.Office.Interop.Outlook.SyncObject" /> объектов, представляющих групп отправки и получения для пользователя.</summary>
-    <remarks><para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.SyncObjects" /> свойство для возврата объекта <b>SyncObjects</b> из <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта.</para>
-      <para>Объект <b>SyncObjects</b> доступен только для чтения. Не удается добавить элемент в коллекцию. Тем не менее Обратите внимание на то, что можно добавить одну группу отправки и получения, с помощью свойства <b>AppFolders</b> , которая создаст группу отправки и получения с именем папки приложений.</para>
+    <summary>Содержит набор <see cref="T:Microsoft.Office.Interop.Outlook.SyncObject" /> объектов, представляющих группы отправки и получения для пользователя.</summary>
+    <remarks><para>Используйте <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.SyncObjects" /> свойство, чтобы возвратить объект <b>SyncObjects</b> из <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта.</para>
+      <para>Объект <b>SyncObjects</b> доступен только для чтения. Вы не можете добавить элемент в коллекцию. Однако обратите внимание, что вы можете добавить одну группу отправки и получения с помощью свойства <b>аппфолдерс</b> , которое создает группу отправки и получения с именем "папки приложения".</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -51,9 +51,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.SyncObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Данное свойство возвращает <see cref="T:Microsoft.Office.Interop.Outlook.SyncObject" /> для папок приложения. Только для чтения.</summary>
+        <summary>Это свойство возвращает <see cref="T:Microsoft.Office.Interop.Outlook.SyncObject" /> папки приложения. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para><b>SyncObject</b> —, где папки автоматически добавляются, когда свойство <b>InAppFolderSyncObject</b> объекта <b>папки</b> имеет значение <b>True</b>. <b>SyncObject</b> пользователи могут синхронизировать папки Microsoft Outlook, адресные книги и домашние страницы папки в автономном режиме.</para>
+        <remarks><para>В <b>SyncObject</b> автоматически добавляются папки, когда свойству <b>инаппфолдерсинкобжект</b> объекта <b>Folder</b> присвоено значение <b>true</b>. <b>SyncObject</b> позволяет пользователям синхронизировать папки Microsoft Outlook, адресные книги и домашние страницы папок для автономного использования.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -108,7 +108,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -136,7 +136,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее число объектов в указанном семействе сайтов. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее количество объектов в указанной коллекции. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -167,9 +167,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Либо индекс объекта, или значение, используемое для сопоставления свойства по умолчанию объекта в коллекции.</param>
+        <param name="Index">Номер индекса объекта или значение, используемое для сравнения со свойством по умолчанию объекта в коллекции.</param>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.SyncObject" /> объект из коллекции.</summary>
-        <value>Объект <b>SyncObject</b> , который представляет указанный объект.</value>
+        <value>Объект <b>SyncObject</b> , представляющий указанный объект.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,7 +196,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -224,9 +224,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие инструкции выполните те же функции:</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие операторы выполняют одну и ту же функцию:</para>
           <para> </para></remarks>
       </Docs>
     </Member>

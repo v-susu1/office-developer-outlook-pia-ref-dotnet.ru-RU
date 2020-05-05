@@ -22,11 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Содержит коллекцию <see cref="T:Microsoft.Office.Interop.Outlook.Conflict" /> объекты, которые представляют все элементы Microsoft Outlook, входящие в конфликт определенного элемента Outlook.</summary>
-    <remarks><para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Conflicts" /> свойство все Outlook элемент, например <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />, чтобы возвратить объект <b>конфликтов</b> .</para>
-      <para>Использование <see cref="P:Microsoft.Office.Interop.Outlook.Conflicts.Count" /> свойства объекта <b>конфликтов</b> определяется invloved в конфликт. Ненулевое значение указывает конфликта.</para>
-      <para>Использование <see cref="P:Microsoft.Office.Interop.Outlook.Conflicts.Item(System.Object)" /> свойство (<b>в этом</b> в C#) для получения определенного конфликтного элемента из объекта коллекции <b>конфликтов</b> .</para>
-      <para>Использование <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetNext" />, <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetPrevious" />, и <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetLast" /> методы для перемещения по коллекции <b>конфликтов</b> .</para>
+    <summary>Содержит коллекцию <see cref="T:Microsoft.Office.Interop.Outlook.Conflict" /> объектов, представляющих все элементы Microsoft Outlook, которые конфликтуют с определенным элементом Outlook.</summary>
+    <remarks><para>Используйте <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Conflicts" /> свойство любого элемента Outlook, например <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />, чтобы возвратить объект <b>конфликтов</b> .</para>
+      <para>Используйте <see cref="P:Microsoft.Office.Interop.Outlook.Conflicts.Count" /> свойство объекта <b>конфликтов</b> , чтобы определить, является ли элемент инвловед конфликтом. Значение, отличное от нуля, указывает на конфликт.</para>
+      <para>Используйте <see cref="P:Microsoft.Office.Interop.Outlook.Conflicts.Item(System.Object)" /> свойство (<b>this</b> в C#) для получения определенного элемента конфликта из объекта Collection Collections ( <b>конфликты</b> ).</para>
+      <para>Используйте методы <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetNext" />, <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetPrevious" />и <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetLast" /> , чтобы выполнить обход коллекции <b>конфликтов</b> .</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -53,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -81,7 +81,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -109,7 +109,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее число объектов в указанном семействе сайтов. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее количество объектов в указанной коллекции. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -135,9 +135,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает первый объект в <see cref="T:Microsoft.Office.Interop.Outlook.Conflicts" /> семейства сайтов.</summary>
-        <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.Conflict" /> объект, представляющий первый объект, содержащихся в коллекции.</returns>
-        <remarks><para>Возвращает <b>значение Nothing</b> , если первый объект не существует, например, если нет объектов в коллекции. Чтобы обеспечить правильную работу <b>GetFirst</b>, <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetNext" />, и <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
+        <summary>Возвращает первый объект в <see cref="T:Microsoft.Office.Interop.Outlook.Conflicts" /> коллекции.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Conflict" /> Объект, представляющий первый объект, содержащийся в коллекции.</returns>
+        <remarks><para>Возвращает <b>значение Nothing</b> , если первый объект не существует, например, если в коллекции нет объектов. Чтобы обеспечить правильную работу методов <b>GetNext,</b> <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetLast" /> <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetNext" />, <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetPrevious" /> и методов в большом семействе, <b>сначала</b> вызовите метод GetNext перед вызовом метода GetNext для этой коллекции и перед вызовом метода <b>GetNext</b> <b>вызовите метод</b> <b>GetNext.</b> Чтобы обеспечить постоянное выполнение вызовов в одной коллекции, создайте явную переменную, которая ссылается на эту коллекцию перед входом в цикл.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -162,9 +162,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает последний объект в <see cref="T:Microsoft.Office.Interop.Outlook.Conflicts" /> семейства сайтов.</summary>
-        <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.Conflict" /> объекта, представляющего последнего объекта, содержащихся в коллекции.</returns>
-        <remarks><para> Возвращает <b>значение Nothing</b> Если последний объект не существует, например, если коллекция пуста. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetFirst" />, <b>GetLast</b> <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetNext" />, и <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
+        <summary>Возвращает последний объект в <see cref="T:Microsoft.Office.Interop.Outlook.Conflicts" /> коллекции.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Conflict" /> Объект, представляющий последний объект, содержащийся в коллекции.</returns>
+        <remarks><para> Он возвращает <b>Nothing</b> , если не существует последнего объекта, например, если коллекция пуста. Чтобы обеспечить правильную работу методов <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetFirst" />, <b>GetLast</b> <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetNext" />методов и <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetPrevious" /> методов в большом семействе, <b>сначала</b> вызовите метод GetNext <b>перед вызовом</b>метода GetNext для этой коллекции, а затем вызовите метод GetNext перед вызовом <b>метода</b> <b>GetNext</b> . Чтобы обеспечить постоянное выполнение вызовов в одной коллекции, создайте явную переменную, которая ссылается на эту коллекцию перед входом в цикл.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -189,9 +189,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает к следующему объекту в <see cref="T:Microsoft.Office.Interop.Outlook.Conflicts" /> семейства сайтов.</summary>
-        <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.Conflict" /> объект, представляющий следующий объект, содержащихся в коллекции.</returns>
-        <remarks><para>Возвращает <b>значение Nothing</b> при следующей объект не существует, например, если уже находится в конце коллекции. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetLast" />, <b>GetNext</b>и <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetPrevious" /> методы в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции и вызвать <b>GetLast</b> перед вызовом <b>GetPrevious </b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
+        <summary>Возвращает следующий объект в <see cref="T:Microsoft.Office.Interop.Outlook.Conflicts" /> коллекции.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Conflict" /> Объект, представляющий следующий объект, содержащийся в коллекции.</returns>
+        <remarks><para>Он возвращает <b>Nothing</b> , если следующий объект не существует, например, если он уже расположен в конце коллекции. Чтобы обеспечить правильную работу методов <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetLast" />, <b>GetNext</b>и <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetPrevious" /> методов в большом семействе, <b>сначала</b> вызовите метод GetNext <b>перед вызовом</b>метода GetNext для этой коллекции, а затем вызовите метод GetNext перед вызовом <b>метода</b> <b>GetNext</b> . Чтобы обеспечить постоянное выполнение вызовов в одной коллекции, создайте явную переменную, которая ссылается на эту коллекцию перед входом в цикл.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -216,9 +216,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает предыдущему объекту в <see cref="T:Microsoft.Office.Interop.Outlook.Conflicts" /> семейства сайтов.</summary>
-        <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.Conflict" /> объект, представляющий предыдущему объекту, содержащихся в коллекции.</returns>
-        <remarks><para>Возвращает <b>значение Nothing</b> при предыдущей объект не существует, например, если уже размещен в начало коллекции. Чтобы обеспечить правильную работу <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetNext" />, и методы <b>GetPrevious</b> в большой коллекции вызвать <b>GetFirst</b> перед вызовом <b>GetNext</b> для этой коллекции, а также вызвать <b>GetLast</b> до вызова метода <b> GetPrevious</b>. Чтобы убедиться, что имеются всегда вызовы в одном семействе сайтов, создайте переменную явных, который относится к этой коллекции перед началом цикла.</para>
+        <summary>Возвращает предыдущий объект в <see cref="T:Microsoft.Office.Interop.Outlook.Conflicts" /> коллекции.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Conflict" /> Объект, представляющий предыдущий объект, содержащийся в коллекции.</returns>
+        <remarks><para>Он возвращает <b>значение Nothing</b> , если не существует предыдущего объекта, например, если он уже расположен в начале коллекции. Чтобы обеспечить правильную работу методов <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook.Conflicts.GetNext" />, и <b>Previous</b> в большой коллекции, <b>сначала</b> вызовите метод GetNext <b>перед вызовом</b>метода <b>GetNext</b> для этой коллекции, а затем вызовите метод GetNext перед вызовом <b>метода GetNext</b> . Чтобы обеспечить постоянное выполнение вызовов в одной коллекции, создайте явную переменную, которая ссылается на эту коллекцию перед входом в цикл.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -248,9 +248,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Либо индекс объекта, или значение, используемое для сопоставления свойства по умолчанию объекта в коллекции.</param>
+        <param name="Index">Номер индекса объекта или значение, используемое для сравнения со свойством по умолчанию объекта в коллекции.</param>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Conflict" /> объект из коллекции.</summary>
-        <value>Объект <b>конфликта</b> , который представляет указанный объект.</value>
+        <value>Объект <b>конфликта</b> , представляющий указанный объект.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,7 +277,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -305,9 +305,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>

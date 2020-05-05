@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.AttachmentSelection" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.AttachmentSelection" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -77,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -105,7 +105,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>целое число</b> (<b>int</b> в C#) значение, указывающее число объектов в указанном семействе сайтов. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее количество объектов в указанной коллекции. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -133,10 +133,10 @@
         <Parameter Name="SelectionContents" Type="Microsoft.Office.Interop.Outlook.OlSelectionContents" />
       </Parameters>
       <Docs>
-        <param name="SelectionContents">Указывает тип объектов в выделении для возврата.</param>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Selection" /> объект, содержащий тип объектов, указанного идентификатором <paramref name="SelectionContents" /> параметр и, выбранных в данный момент в окне active где родительский элемент <see cref="T:Microsoft.Office.Interop.Outlook.AttachmentSelection" /> — это объект.</summary>
-        <returns>Возвращает объект <b>Selection</b> , который содержит заданный тип объектов, выбранного в обозревателе active.</returns>
-        <remarks><para>Только причина, что этот метод предоставляются на объект <b>AttachmentSelection</b> том, что объект <b>AttachmentSelection</b> наследует от объекта <b>Selection</b> . Этот метод не предназначен для вызова на объект <b>AttachmentSelection</b> .</para>
+        <param name="SelectionContents">Указывает тип возвращаемых объектов в выделенном фрагменте.</param>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Selection" /> объект, который содержит тип объектов, заданных <paramref name="SelectionContents" /> параметром, который выбран в текущий момент в активном проводнике, где находится родительский элемент <see cref="T:Microsoft.Office.Interop.Outlook.AttachmentSelection" /> объекта.</summary>
+        <returns>Возвращает объект <b>Selection</b> , который содержит заданные типы объектов, выбранных в активном проводнике.</returns>
+        <remarks><para>Единственная причина, по которой этот метод предоставляется в объекте <b>AttachmentSelection</b> , заключается в том, что объект <b>AttachmentSelection</b> наследуется от объекта <b>Selection</b> . Этот метод не должен вызываться для объекта <b>AttachmentSelection</b> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -166,9 +166,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Либо индекс объекта, или значение, используемое для сопоставления свойства по умолчанию объекта в коллекции.</param>
+        <param name="Index">Номер индекса объекта или значение, используемое для сравнения со свойством по умолчанию объекта в коллекции.</param>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> объект из коллекции.</summary>
-        <value>Объект <b>вложения</b> , который представляет указанный объект.</value>
+        <value>Объект <b>вложения</b> , представляющий указанный объект.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,9 +195,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlSelectionLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlSelectionLocation" /> константа, которая указывает, где выделение вложений в интерфейсе пользователя Microsoft Outlook. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlSelectionLocation" /> константу, указывающую, где в пользовательском интерфейсе Microsoft Outlook выбрано вложение. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Данное свойство всегда возвращает константу <see cref="F:Microsoft.Office.Interop.Outlook.OlSelectionLocation.olAttachmentWell" />.</para>
+        <remarks><para>Это свойство всегда возвращает константу <see cref="F:Microsoft.Office.Interop.Outlook.OlSelectionLocation.olAttachmentWell" />.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -224,7 +224,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -252,9 +252,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>

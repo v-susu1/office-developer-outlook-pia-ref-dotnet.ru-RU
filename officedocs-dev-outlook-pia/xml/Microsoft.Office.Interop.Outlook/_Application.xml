@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Application" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Application" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -43,9 +43,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает самым верхним <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> объект на рабочем столе.</summary>
-        <returns><b>Обозреватель</b> , представляющий верхний explorer на рабочем столе. Возвращает <b>значение Nothing</b> , если нет explorer не активно.</returns>
-        <remarks><para> Этот метод используется для возврата объекта <b>Explorer</b> , вероятнее всего просматривает пользователь. Этот метод также полезен для определения, когда нет нет активных explorer, поэтому можно открыть новый.</para>
+        <summary>Возвращает самый верхний <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> объект на рабочем столе.</summary>
+        <returns><b>Проводник</b> , представляющий самый верхний проводник на настольном компьютере. Если нет активных проводника, возвращается <b>значение Nothing</b> .</returns>
+        <remarks><para> Используйте этот метод, чтобы вернуть объект <b>Explorer</b> , который скорее всего просматривает пользователь. Этот метод также полезен для определения, когда нет активного проводника, поэтому можно открыть новый.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -70,10 +70,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает самым верхним <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объект на рабочем столе.</summary>
-        <returns><b>Инспектор</b> , представляющий верхний инспектора на рабочем столе.</returns>
-        <remarks><para> Этот метод используется для доступа к объекту <b>инспектора</b> , который пользователь является наиболее важные для просмотра.</para>
-          <para>Если нет инспектора не активны, возвращает <b>значение Nothing</b>.</para>
+        <summary>Возвращает самый верхний <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объект на рабочем столе.</summary>
+        <returns><b>Инспектор</b> , представляющий самый верхний инспектор на настольном компьютере.</returns>
+        <remarks><para> Используйте этот метод для доступа к объекту <b>инспектора</b> , который пользователь скорее всего будет просматривать.</para>
+          <para>Если инспектор не активен, возвращается <b>значение Nothing</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -98,8 +98,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает объект, представляющий верхнее окно Microsoft Outlook на рабочем столе, либо <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> или <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объекта.</summary>
-        <returns>Объект, представляющий верхнее окно Microsoft Outlook на рабочем столе. Возвращает <b>значение Nothing</b> , если нет инспектора или проводника Outlook открыта.</returns>
+        <summary>Возвращает объект, представляющий самое верхнее окно Microsoft Outlook на рабочем столе: <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объект или объект.</summary>
+        <returns>Объект, представляющий самое верхнее окно Microsoft Outlook на рабочем столе. Если обозреватель Outlook или инспектор не открыт, возвращается <b>значение Nothing</b> .</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,15 +128,15 @@
         <Parameter Name="Tag" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Scope">Область поиска. Например путь к папке папки. Рекомендуется, что путь к папке заключен в кавычки. В противном случае поиска может возвращать неверные результаты, если путь к папке содержит специальные символы, включая символы Юникода. Чтобы указать несколько путей к папкам, заключите каждый путь к папке в одинарных кавычках и разделяются запятыми одного кавычках путей к папкам.</param>
-        <param name="Filter">Поисковый фильтр DASL, определяющий параметры поиска.</param>
-        <param name="SearchSubFolders">Определяет, при поиске будут включены все вложенные папки.</param>
-        <param name="Tag">Имя, присвоенное как идентификатор для поиска.</param>
-        <summary>Выполняет поиск на основе указанного DAV поиска и поиск (DASL) строку для поиска.</summary>
-        <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> объект, представляющий результаты поиска.</returns>
-        <remarks><para>Несколько поисков можно запустить одновременно путем вызова метода <b>AdvancedSearch</b> в последующие строки кода. Тем не менее следует иметь в виду, что программное создание большое число папок поиска приведет к активности значительные одновременных поиска, которые могут повлиять на производительность Outlook, особенно если Outlook выполняет поиск в интерактивном режиме.</para>
-          <para>Метод <b>AdvancedSearch</b> и связанные компоненты в объектной модели Outlook не создавать папки поиска, которое будет отображаться в пользовательском интерфейсе Outlook. Тем не менее, можно использовать <see cref="M:Microsoft.Office.Interop.Outlook.Search.Save(System.String)" /> метод объекта поиска, который возвращается для создания папки поиска, которое будет отображаться в списке папок поиска в пользовательском интерфейсе Outlook.</para>
-          <para>С помощью <paramref name="Scope" /> параметр, можно указать один или несколько папок в том же хранилище, но не может указать несколько папок в нескольких хранилищ. Чтобы указать несколько папок для <paramref name="Scope" /> для параметра использовать знак разделители между каждой путь к папке и заключите каждый путь к папке в одинарные кавычки. Для папок по умолчанию, например, "Входящие" или отправленные можно использовать имя папки простой вместо полный путь к папке. Например, следующие строки кода представлять допустимый <paramref name="Scope" /> параметры:</para>
+        <param name="Scope">Область поиска. Например, путь к папке. Путь к папке рекомендуется заключить в одинарные кавычки. В противном случае при поиске могут возвращаться неверные результаты, если путь к папке содержит специальные символы, в том числе символы Юникода. Чтобы указать несколько путей к папкам, заключите каждый путь к папке в одинарные кавычки и Разделяйте пути к папкам с одиночными кавычками запятыми.</param>
+        <param name="Filter">Фильтр поиска DASL, определяющий параметры поиска.</param>
+        <param name="SearchSubFolders">Определяет, будет ли поиск содержать любую из вложенных папок.</param>
+        <param name="Tag">Имя, заданное в качестве идентификатора для поиска.</param>
+        <summary>Выполняет поиск, основанный на указанной строке поиска DAV и поиске (DASL).</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Search" /> Объект, представляющий результаты поиска.</returns>
+        <remarks><para>Можно выполнить несколько операций поиска одновременно, вызвав метод <b>AdvancedSearch</b> в последующих строках кода. Однако следует иметь в виду, что программное создание большого количества папок поиска может привести к значительным операциям поиска, которые влияют на производительность Outlook, особенно если Outlook выполняет поиск в режиме Online Exchange.</para>
+          <para>Метод <b>AdvancedSearch</b> и связанные с ним функции в объектной модели Outlook не создают папку поиска, которая будет отображаться в пользовательском интерфейсе Outlook. Тем не менее, вы можете <see cref="M:Microsoft.Office.Interop.Outlook.Search.Save(System.String)" /> использовать метод искомого объекта, который возвращается для создания папки поиска, которая будет отображаться в списке папок поиска в пользовательском интерфейсе Outlook.</para>
+          <para>С помощью <paramref name="Scope" /> параметра вы можете указать одну или несколько папок в одном хранилище, но вы не можете указать несколько папок в нескольких хранилищах. Чтобы указать несколько папок для <paramref name="Scope" /> параметра, используйте символ запятой между каждой папкой и заключите каждый путь к папке в одинарные кавычки. Для папок по умолчанию, таких как папки "Входящие" и "Отправленные", можно использовать простое имя папки вместо полного пути к папке. Например, следующие строки кода представляют допустимые <paramref name="Scope" /> параметры:</para>
           <code>Dim Scope As String = "'Inbox', 'Sent Items'"</code>
           <code>string Scope = "'Inbox', 'Sent Items'";</code>
           <code>Dim Scope1 As String = "'" &amp;amp; Application.Session.GetDefaultFolder( _
@@ -147,7 +147,7 @@
     Outlook.OlDefaultFolders.olFolderInbox).FolderPath + 
     "','" + Application.Session.GetDefaultFolder( 
     Outlook.OlDefaultFolders.olFolderSentMail).FolderPath;</code>
-          <para><paramref name="Filter" /> Параметр может иметь любое допустимое запроса DASL. Дополнительные сведения о запросах DASL видеть создание ссылок на свойства пространством имен и фильтрации элементов. Обратите внимание, что нельзя использовать для запроса JET <paramref name="Filter" /> параметр расширенного поиска. Если включено мгновенного поиска для хранилища, содержащего папке, указанной в <paramref name="Scope" /> параметр, можно использовать ключевые слова мгновенного поиска для повышения эффективности поиска. При использовании функции мгновенного поиска ключевых слов и мгновенного поиска не включен, Outlook вернет ошибку и поиска завершится с ошибкой.</para>
+          <para><paramref name="Filter" /> Параметр может быть любым допустимым запросом DASL. Дополнительные сведения о запросах DASL приведены в разделе Фильтрация элементов и ссылки на свойства по пространству имен. Обратите внимание, что вы не можете использовать запрос <paramref name="Filter" /> Jet для параметра расширенного поиска. Если для хранилища, содержащего папку, указанную в <paramref name="Scope" /> параметре, включен мгновенный поиск, вы можете использовать ключевые слова для мгновенного поиска, чтобы увеличить производительность поиска. Если вы используете ключевые слова для мгновенного поиска и функция быстрого поиска не включена, Outlook возвратит ошибку, и поиск завершится неудачей.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -205,7 +205,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -233,9 +233,9 @@
         <ReturnType>Microsoft.Office.Core.IAssistance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <a href="http://go.microsoft.com/fwlink/?LinkId=87944">IAssistance</a></summary>
+        <summary>Возвращает объект <a href="http://go.microsoft.com/fwlink/?LinkId=87944">IAssistance</a></summary>
         <value>To be added.</value>
-        <remarks><para>Дополнительные сведения о <b>IAssistance</b>видеть Справочник по библиотеке объектов для выпуска 2007 системы Microsoft Office.</para>
+        <remarks><para>Более подробную информацию о <b>IAssistance</b>можно найти в справочнике по библиотеке объектов для системы Microsoft Office 2007.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -293,7 +293,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -321,7 +321,7 @@
         <ReturnType>Microsoft.Office.Core.COMAddIns</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает коллекцию <b>COMAddIns</b> , представляющий все модели компонентных объектов (COM) надстройки в настоящее время, загруженных в Microsoft Outlook.</summary>
+        <summary>Возвращает коллекцию <b>COMAddIns</b> , которая представляет все загруженные в Microsoft Outlook надстройки модели компонентных объектов (com).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -350,10 +350,10 @@
         <Parameter Name="DestFolderPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FilePath">Имя пути объект, который необходимо скопировать.</param>
-        <param name="DestFolderPath">Расположение, необходимо скопировать файл.</param>
-        <summary>Копирует хранилища файлов из указанного расположения в Microsoft Outlook.</summary>
-        <returns>Значение <b>объекта</b> , который представляет скопированный файл.</returns>
+        <param name="FilePath">Имя пути объекта, который необходимо скопировать.</param>
+        <param name="DestFolderPath">Расположение, в которое нужно скопировать файл.</param>
+        <summary>Копирует файл из указанного места в магазин Microsoft Outlook.</summary>
+        <returns>Значение <b>объекта</b> , представляющее скопированный файл.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -381,9 +381,9 @@
       </Parameters>
       <Docs>
         <param name="ItemType">Тип элемента Outlook для нового элемента.</param>
-        <summary>Создает и возвращает элемент Microsoft Outlook.</summary>
-        <returns>Значение <b>объекта</b> , который представляет новый элемент Outlook.</returns>
-        <remarks><para>Метод <b>CreateItem</b> только можно создать элементы Outlook по умолчанию. Чтобы создать новые элементы, с помощью пользовательской формы, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Items.Add(System.Object)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> семейства сайтов.</para>
+        <summary>Создает и возвращает новый элемент Microsoft Outlook.</summary>
+        <returns>Значение <b>объекта</b> , представляющее новый элемент Outlook.</returns>
+        <remarks><para>Метод <b>CreateItem</b> может создавать только элементы Outlook по умолчанию. Чтобы создать новые элементы с помощью настраиваемой формы, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Items.Add(System.Object)" /> метод в <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> коллекции.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -410,11 +410,11 @@
         <Parameter Name="InFolder" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="TemplatePath">Путь и имя шаблона Outlook для нового элемента.</param>
-        <param name="InFolder">Папка, в которой должен быть создан элемент. Если этот аргумент указан, будет использоваться папка по умолчанию для типа элемента.</param>
+        <param name="TemplatePath">Путь и имя файла шаблона Outlook для нового элемента.</param>
+        <param name="InFolder">Папка, в которой будет создан элемент. Если этот аргумент не задан, будет использоваться папка по умолчанию для типа элемента.</param>
         <summary>Создает новый элемент Microsoft Outlook из шаблона Outlook (oft) и возвращает новый элемент.</summary>
-        <returns>Значение <b>объекта</b> , который представляет новый элемент Microsoft Outlook.</returns>
-        <remarks><para>Новые элементы всегда открывается в режиме, а не в режиме чтения, вне зависимости от режима, в котором были сохранены элементы сообщения на диск.</para>
+        <returns>Значение <b>объекта</b> , представляющее новый элемент Microsoft Outlook.</returns>
+        <remarks><para>Новые элементы всегда открываются в режиме создания, а не в режиме чтения, независимо от режима, в котором элементы были сохранены на диске.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -441,12 +441,12 @@
         <Parameter Name="ObjectName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ObjectName">Имя класса объекта. Сведения об именах допустимый класс можно <a href="http://go.microsoft.com/fwlink/?LinkId=87946">OLE программные идентификаторы</a></param>
+        <param name="ObjectName">Имя класса создаваемого объекта. Сведения о допустимых именах классов приведены в статье <a href="http://go.microsoft.com/fwlink/?LinkId=87946">программные идентификаторы OLE</a></param>
         <summary>Создает объект автоматизации указанного класса.</summary>
-        <returns>Значение <b>объекта</b> , который представляет новый экземпляр объекта автоматизации. Если приложение уже выполняется, <b>CreateObject</b> будет создать новый экземпляр.</returns>
-        <remarks><para>Этот метод предоставляется, чтобы другие приложения может быть автоматизирована из Microsoft Visual Basic Scripting Edition (VBScript) 1.0, который не были включены метод <b>CreateObject</b> . <b>Функция CreateObject</b> был включен в VBScript версии 2.0 и более поздних версий. Этот метод не должен использоваться для автоматизации Microsoft Outlook из VBScript.</para>
+        <returns>Значение <b>объекта</b> , представляющее новый экземпляр объекта Automation. Если приложение уже запущено, <b>CreateObject</b> создаст новый экземпляр.</returns>
+        <remarks><para>Этот метод предоставляется таким образом, чтобы другие приложения можно было автоматизировать из Microsoft Visual Basic Scripting Edition (VBScript) 1,0, который не включал метод <b>CreateObject</b> . <b>CreateObject</b> был включен в VBScript версии 2,0 и более поздних версий. Этот метод не следует использовать для автоматизации Microsoft Outlook из VBScript.</para>
           <para>
-            <b>Примечание</b>: методы <b>CreateObject</b> , обычно используемые в примере кода в этом файле справки (доступно при нажатии кнопки «Пример») доступны по Microsoft Visual Basic или Microsoft Visual Basic для приложений (VBA). В этих примерах выполните <paramref name="not" /> используется тот же метод <b>CreateObject</b> , реализованный как часть объектной модели Outlook.</para>
+            <b>Note</b>: методы <b>CreateObject</b> , часто используемые в примере кода в этом файле справки (доступны при нажатии кнопки "пример"), становятся доступными в Microsoft Visual Basic или Microsoft Visual Basic для приложений (VBA). В этих примерах <paramref name="not" /> используется тот же метод <b>CreateObject</b> , который реализован в составе объектной модели в Outlook.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -473,9 +473,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющая имя имя профиля по умолчанию. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую имя профиля по умолчанию. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Возвращает пустую строку, если профиль не был настроен или если нет профиля по умолчанию для Outlook.</para>
+        <remarks><para>Возвращает пустую строку, если профиль не настроен или отсутствует профиль по умолчанию для Outlook.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -502,7 +502,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Explorers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Explorers" /> коллекцию, содержащую объект, который содержит <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> объектов, представляющих все открытые обозреватели. Только для чтения.</summary>
+        <summary>Возвращает объект <see cref="T:Microsoft.Office.Interop.Outlook.Explorers" /> Collection, который содержит <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> объекты, представляющие все открытые проводника. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -567,10 +567,10 @@
         <Parameter Name="Type" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Type">Тип пространства имен для возврата.</param>
+        <param name="Type">Тип пространства имен, который требуется вернуть.</param>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект указанного типа.</summary>
-        <returns>Объект <b>пространство имен</b> , представляющий указанного пространства имен.</returns>
-        <remarks><para>Поддерживаются только пространства имен тип — «MAPI». Метод <b>существуют</b> функционально эквивалентно свойством <b>сеанса</b> , который был введен в Microsoft Outlook 98.</para>
+        <returns>Объект <b>Namespace</b> , представляющий указанное пространство имен.</returns>
+        <remarks><para>Единственным поддерживаемым типом пространства имен является "MAPI". Метод <b>GetProperty</b> функционально эквивалентен свойству <b>Session</b> , которое было введено в Microsoft Outlook 98.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -629,13 +629,13 @@
         <Parameter Name="ReferenceType" Type="Microsoft.Office.Interop.Outlook.OlReferenceType" />
       </Parameters>
       <Docs>
-        <param name="Item">Объект, из которого необходимо получить со строгим или ссылку на объект слабые.</param>
-        <param name="ReferenceType">Тип ссылку на объект.</param>
-        <summary>Создает ссылку на объект строгое или простой для указанного объекта Outlook.</summary>
-        <returns><b>Объект</b> , представляющий со строгим или ссылку на объект слабые для указанного объекта.</returns>
-        <remarks><para>Этот метод возвращает ссылку на объект слабой или строгой для объекта, указанного в <paramref name="Item" />.</para>
+        <param name="Item">Объект, из которого получается ссылка на строгое или слабую объект.</param>
+        <param name="ReferenceType">Тип ссылки на объект.</param>
+        <summary>Создает строго или слабую ссылку на объект для указанного объекта Outlook.</summary>
+        <returns><b>Объект</b> , представляющий строго или слабую ссылку на объект для указанного объекта.</returns>
+        <remarks><para>Этот метод возвращает слабое или строгое обращение к объекту для объекта, <paramref name="Item" />указанного в параметре.</para>
           <para>
-            <b>Примечание</b>: Outlook может не работать для закрытия успешно, если надстройка сохраняет строгое ссылок на объекты. Всегда Разыменуйте ссылку на объект строгое после больше не требуется, надстройки.</para>
+            <b>Примечание</b>: Outlook может завершиться неудачно, если надстройка сохраняет строгое создание ссылок на объекты. Всегда отменяйте ссылку на сильную ссылку на объект, когда она больше не нужна надстройке.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -662,7 +662,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Inspectors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Inspectors" /> коллекцию, содержащую объект, который содержит <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объектов, представляющих все открытые инспекторов. Только для чтения.</summary>
+        <summary>Возвращает объект <see cref="T:Microsoft.Office.Interop.Outlook.Inspectors" /> Collection, который содержит <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объекты, представляющие все открытые инспекторы. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -690,10 +690,10 @@
         <Parameter Name="LookInFolders" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="LookInFolders">Путь и имя папки, которые просматривает поиска. Необходимо заключить путь к папке в одинарные кавычки.</param>
-        <summary>Возвращает <b>логическое</b> (<b>bool</b> в C#), если поиск будет синхронными и асинхронными.</summary>
-        <returns><b>Значение true,</b> Если поиск синхронные; в противном случае — <b>False</b>.</returns>
-        <remarks><para>При поиске с синхронным, <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> метод не возвращает только после завершения поиска. С другой стороны Если поиск является асинхронным, метод <b>AdvancedSearch</b> сразу же возвращает. Чтобы получить достоверные результаты из асинхронного поиска, используйте <see cref="E:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.AdvancedSearchComplete" /> событий для уведомления о завершении поиска.</para>
+        <param name="LookInFolders">Имя пути к папкам, в которых будет осуществляться поиск. Путь к папке необходимо заключить в одинарные кавычки.</param>
+        <summary>Возвращает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, будет ли поиск выполняться синхронно или асинхронно.</summary>
+        <returns><b>Значение true</b> , если поиск является синхронным; в противном случае — <b>false</b>.</returns>
+        <remarks><para>Если поиск выполняется в синхронном режиме <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> , метод не вернется до завершения поиска. И наоборот, если поиск является асинхронным, метод <b>AdvancedSearch</b> будет немедленно возвращать значение. Чтобы получить осмысленные результаты асинхронного поиска, используйте <see cref="E:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.AdvancedSearchComplete" /> событие, чтобы уведомить о завершении поиска.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -720,9 +720,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#) для указания, если надстройка или внешним вызывающего считается доверенным с Outlook. Только для чтения</summary>
+        <summary>Возвращает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, считается ли надстройка или внешний вызывающий абонент доверенной для Outlook. Только для чтения</summary>
         <value>To be added.</value>
-        <remarks><para>Для абонентов ожидания процесса, которые создания экземпляра <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объекта <b>IsTrusted</b> всегда возвращает <b>значение False</b>.   Для надстроек Outlook <b>IsTrusted</b> возвращает <b>значение True</b> , только в том случае, если надстройка считается доверенным для Outlook.</para>
+        <remarks><para>Для нестандартных абонентов, которые создали экземпляр <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объекта, <b>доверие</b> всегда возвращает <b>значение false</b>.   Для надстроек Outlook свойство <b>заслуживает доверия</b> возвращает <b>значение true</b> , если надстройка считается доверенной для Outlook.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -749,7 +749,7 @@
         <ReturnType>Microsoft.Office.Core.LanguageSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <a href="http://go.microsoft.com/fwlink/?LinkId=87945">LanguageSettings</a></summary>
+        <summary>Возвращает объект <a href="http://go.microsoft.com/fwlink/?LinkId=87945">LanguageSettings</a></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -777,7 +777,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение типа <b>String</b> (<b>строка</b> в C#), представляющее отображаемое имя для объекта. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа String</b> (<b>строка</b> в C#), представляющее отображаемое имя объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -805,7 +805,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -835,7 +835,7 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Core.PickerDialog" /> объект, который предоставляет функциональные возможности для выбора людей или данных в диалоговом окне. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Объект <b>PickerDialog</b> доступен в библиотеке типов, Microsoft Office. Дополнительные сведения можно найти следующие объекты и их члены:</para>
+        <remarks><para>Объект <b>PickerDialog</b> доступен в библиотеке типов Microsoft Office. Дополнительные сведения можно найти в следующих объектах и их участниках:</para>
           <list type="bullet">
             <item>
               <para>
@@ -899,7 +899,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) указания Microsoft Outlook <a href="http://go.microsoft.com/fwlink/?LinkId=87946">глобальный уникальный идентификатор (GUID).</a></summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) с указанием <a href="http://go.microsoft.com/fwlink/?LinkId=87946">глобального уникального идентификатора Microsoft Outlook (GUID)</a></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -925,8 +925,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Закрывает все открытые в настоящий момент windows.</summary>
-        <remarks><para>Связанный сеанс Outlook закрыт полностью; Выход пользователя из системы обмена сообщениями и удаляются все изменения элементов еще не сохраняются.  </para>
+        <summary>Закрывает все открытые в данный момент окна.</summary>
+        <remarks><para>Связанный сеанс Outlook полностью закрыт; пользователь выходит из системы обмена сообщениями, а все изменения элементов, которые еще не сохранены, отбрасываются.  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -953,11 +953,11 @@
         <Parameter Name="RegionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="RegionName">Внутреннее имя области формы, определение которого требуется обновить в кэше. Чтобы обновить все определения области формы, укажите пустую строку.</param>
-        <summary>Обновляет кэш путем получения текущего определения из реестра Windows для одного или всех областей формы, определенных для локального компьютера и текущего пользователя.</summary>
-        <remarks><para>При запуске Microsoft Outlook, чтение реестра Windows, чтобы получить список областей формы и их определения и затем кэширует данные. Определения хранятся в реестре в разделе ключ локального компьютера (как HKEY_LOCAL_MACHINE\Software\Microsoft\Office\Outlook\FormRegions) и в разделе текущего пользователя (как HKEY_CURRENT_USER\Software\Microsoft\Office\Outlook\FormRegions). Определения описания макета, поведения и другие характеристики каждой области формы. Если регистрация области формы или изменение определения области формы после того как запустится Outlook, можно использовать метод <b>RefreshFormRegionDefinition</b> для указания Outlook, чтобы получить обновленные сведения.</para>
-          <para><paramref name="RegionName" /> Аргумент должен соответствовать <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.InternalName" /> свойство области формы, определение которого обновление. Внутреннее имя области формы поддерживает только символы ASCII. Если указать пустую строку Outlook считывает реестра Windows для получения определения всех областей формы, определенных для локального компьютера и текущего пользователя.</para>
-          <para>Дополнительные сведения о регистрации областей формы можно областей форм в реестре Windows.</para>
+        <param name="RegionName">Внутреннее имя области формы, определение которой необходимо обновить в кэше. Чтобы обновить все определения областей формы, укажите пустую строку.</param>
+        <summary>Обновляет кэш, получая текущее определение из реестра Windows для одной или всех областей формы, определенных для локального компьютера и текущего пользователя.</summary>
+        <remarks><para>После запуска Microsoft Outlook считывает реестр Windows для получения списка областей формы и их определений, а затем кэширует эти данные. Определения хранятся в реестре под ключом локального компьютера (как HKEY_LOCAL_MACHINE \Софтваре\микрософт\оффице\аутлук\формрегионс), а также под ключом текущего пользователя (как HKEY_CURRENT_USER \Софтваре\микрософт\оффице\аутлук\формрегионс). В определениях описывается макет, поведение и другие характеристики каждой области формы. При регистрации области формы или изменении определения области формы после запуска Outlook можно использовать метод <b>RefreshFormRegionDefinition</b> , чтобы заставить Outlook получить обновленные сведения.</para>
+          <para><paramref name="RegionName" /> Аргумент должен сопоставляться со <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.InternalName" /> свойством области формы, для которой выполняется обновление определения. Внутреннее имя области формы поддерживает только символы ASCII. Если указать пустую строку, Outlook читает реестр Windows, чтобы получить определения для всех областей формы, определенных для локального компьютера и текущего пользователя.</para>
+          <para>Дополнительные сведения о регистрации областей форм приведены в разделе Определение областей форм в реестре Windows.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -984,7 +984,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Reminders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Reminders" /> коллекции, представляющей все текущего напоминания. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Reminders" /> коллекцию, которая представляет все текущие напоминания. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1012,9 +1012,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -1047,9 +1047,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.TimeZones</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.TimeZones" /> семейства сайтов, который представляет набор часовые пояса, поддерживаются в Outlook. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.TimeZones" /> коллекцию, представляющую набор часовых поясов, поддерживаемых в Outlook. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Набор часовые пояса, поддерживаются в Outlook основано на данных, хранящихся в раздел реестра Windows параметру NT\CurrentVersion\Time зон. </para>
+        <remarks><para>Набор часовых поясов, поддерживаемых в Outlook, основан на данных, хранящихся в разделе реестра Windows HKEY_LOCAL_MACHINE \Софтваре\микрософт\виндовс Нт\куррентверсион\тиме Zones. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1076,7 +1076,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#), указывающее число версий. Только для чтения.</summary>
+        <summary>Возвращает или задает <b>строку</b> (<b>строка</b> в C#), указывающую номер версии. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

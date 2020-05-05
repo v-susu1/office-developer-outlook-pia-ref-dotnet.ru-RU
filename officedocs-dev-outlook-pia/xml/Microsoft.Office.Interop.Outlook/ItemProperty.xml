@@ -18,9 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Представляет сведения о свойстве заданного элемента для объекта элемента Microsoft Outlook.</summary>
-    <remarks><para> Каждое свойство item определяет атрибут элемента, таких как имя, тип или значение элемента. Объект <b>ItemProperty</b> входит в состав <see cref="T:Microsoft.Office.Interop.Outlook.ItemProperties" /> семейства сайтов.</para>
-      <para>Используйте <b>ItemProperties.Item</b>(<paramref name="index" />), где <paramref name="index" /> — это числовой положение объекта в коллекции или она имеет имя для возврата объекта <b>ItemProperty</b> .</para>
+    <summary>Представляет сведения об определенном свойстве элемента для объекта элемента Microsoft Outlook.</summary>
+    <remarks><para> Каждое свойство Item определяет определенный атрибут элемента, например имя, тип или значение элемента. Объект <b>ItemProperty</b> является членом <see cref="T:Microsoft.Office.Interop.Outlook.ItemProperties" /> коллекции.</para>
+      <para>Используйте <b>ItemProperties. Item</b>(<paramref name="index" />), где <paramref name="index" /> — это числовое положение объекта в коллекции или его имя, возвращающее один объект <b>ItemProperty</b> .</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -47,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -75,7 +75,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -168,7 +168,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, является ли свойство item настраиваемое свойство, создаваемые пользователем. Только для чтения.</summary>
+        <summary>Возвращает логическое<b>значение (</b> <b>логическое</b> значение в C#), которое указывает, является ли свойство Item настраиваемым свойством, созданным пользователем. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -196,7 +196,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение типа <b>String</b> (<b>строка</b> в C#), представляющее отображаемое имя для объекта. Только для чтения.</summary>
+        <summary>Возвращает значение <b>типа String</b> (<b>строка</b> в C#), представляющее отображаемое имя объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -224,7 +224,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -252,9 +252,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -392,9 +392,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>объект</b> , указывающее, значение для указанного настраиваемого или явных встроенных свойств. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>объект</b> , указывающий значение указанного настраиваемого или явного встроенного свойства. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Несмотря на то, что <b>ItemProperty.Value</b> позволяет получить или задать явные встроенных свойств или настраиваемое свойство, можно указывать явных встроенных свойств непосредственно из родительского объекта, например, ContactItem.Body. Дополнительные сведения о доступе к свойств в Outlook можно <a href="http://go.microsoft.com/fwlink/?LinkId=87861">Общие сведения о свойствах</a></para>
+        <remarks><para>Несмотря на то, что <b>ItemProperty. Value</b> позволяет получать или задавать явное встроенное свойство или настраиваемое свойство, вы можете ссылаться на явные встроенные свойства непосредственно из родительского объекта, например ContactItem. Body. Дополнительные сведения о доступе к свойствам в Outlook приведены в статье <a href="http://go.microsoft.com/fwlink/?LinkId=87861">Общие сведения о свойствах</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>

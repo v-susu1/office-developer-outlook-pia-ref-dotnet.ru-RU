@@ -12,9 +12,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Задает область действия в виде папок поиска.</summary>
-    <remarks><para>Вы можете выбрать хранилищ выполнять поиск в папках поиска меню, нажав кнопку средства поиска в группе Параметры контекстных вкладок поиска в Microsoft Office Fluent ленты.</para>
-      <para>По умолчанию поиска не включает папки «Удаленные». Для поиска папки «Удаленные», установите эту папку в качестве текущей папки и поиск по <see cref="F:Microsoft.Office.Interop.Outlook.OlSearchScope.olSearchScopeCurrentFolder" />.</para>
+    <summary>Задает область в терминах папок для поиска.</summary>
+    <remarks><para>Вы можете выбрать магазины для поиска в меню "расположения для поиска", выбрав пункт средства поиска в группе Параметры контекстной вкладки поиска на ленте Microsoft Office Fluent.</para>
+      <para>По умолчанию поиск не включает папку "Удаленные". Чтобы выполнить поиск в папке "Удаленные", задайте эту папку в качестве текущей папки и <see cref="F:Microsoft.Office.Interop.Outlook.OlSearchScope.olSearchScopeCurrentFolder" />выполните поиск по учетной записи.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,7 +34,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Область поиска будет во всех папках, имеющие тип папки из текущей папки (<see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.DefaultItemType" />) и все хранилища, которые были выбраны для поиска в папке, в раскрывающемся меню.</summary>
+        <summary>Область поиска будет находиться во всех папках с типом папки текущая папка (<see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.DefaultItemType" />) и всеми хранилищами, выбранными для поиска в раскрывающемся меню Папка в папке.</summary>
       </Docs>
     </Member>
     <Member MemberName="olSearchScopeAllOutlookItems">
@@ -53,7 +53,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Область поиска — это все элементы Outlook в всех папок в хранилищах, которые были выбраны для поиска.</summary>
+        <summary>Область поиска — это все элементы Outlook во всех папках в магазинах, которые были выбраны для поиска.</summary>
       </Docs>
     </Member>
     <Member MemberName="olSearchScopeCurrentFolder">
@@ -72,7 +72,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Область поиска будет только папки, представленной <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" />.</summary>
+        <summary>Область поиска будет содержать только ту папку, в которой <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" />она представлена.</summary>
       </Docs>
     </Member>
     <Member MemberName="olSearchScopeCurrentStore">
@@ -91,7 +91,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Область поиска — это хранилище для текущей папки, которая содержит элемент, отображаемые в окне active.</summary>
+        <summary>Область поиска — это магазин для текущей папки, который содержит элемент, отображаемый в активном проводнике.</summary>
       </Docs>
     </Member>
     <Member MemberName="olSearchScopeSubfolders">
@@ -110,7 +110,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>Область поиска — это папка, представленного <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> и вложенные в нее папки.</summary>
+        <summary>Область поиска — это папка, представленная <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> и вложенные в нее папки.</summary>
       </Docs>
     </Member>
   </Members>

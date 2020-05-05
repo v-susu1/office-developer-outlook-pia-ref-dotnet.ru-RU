@@ -13,7 +13,7 @@
   </Base>
   <Docs>
     <summary>Указывает уровень детализации для элементов календаря, которые будут экспортированы в файл iCalendar (ICS).</summary>
-    <remarks><para>Это перечисление используется с <see cref="P:Microsoft.Office.Interop.Outlook._CalendarSharing.CalendarDetail" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> объекта, чтобы определить уровень детализации для элементов календаря, хранящиеся в файл iCalendar, созданные <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.ForwardAsICal(Microsoft.Office.Interop.Outlook.OlCalendarMailFormat)" /> и <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.SaveAsICal(System.String)" /> методы.</para>
+    <remarks><para>Это <see cref="P:Microsoft.Office.Interop.Outlook._CalendarSharing.CalendarDetail" /> перечисление используется свойством <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> объекта для определения уровня детализации элементов календаря, хранящихся в файле iCalendar, созданном с помощью <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.ForwardAsICal(Microsoft.Office.Interop.Outlook.OlCalendarMailFormat)" /> методов и <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.SaveAsICal(System.String)" /> .</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>О доступности сведения и встречу, которую субъектов экспортируются в файл iCalendar.</summary>
+        <summary>Сведения о доступности и темы встречи экспортируются в файл iCalendar.</summary>
       </Docs>
     </Member>
     <Member MemberName="olFreeBusyOnly">
@@ -52,7 +52,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Сведения о доступности только экспортируется в файл iCalendar.</summary>
+        <summary>В файл iCalendar экспортируется только сведения о доступности.</summary>
       </Docs>
     </Member>
     <Member MemberName="olFullDetails">
@@ -71,7 +71,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Полные сведения каждого элемента встречи экспортируются в файл iCalendar.</summary>
+        <summary>Полные сведения о каждом элементе встречи экспортируются в файл iCalendar.</summary>
       </Docs>
     </Member>
   </Members>

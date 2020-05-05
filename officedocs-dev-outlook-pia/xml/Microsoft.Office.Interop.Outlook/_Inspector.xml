@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -43,7 +43,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Активирует окно инспектора перенос на передний план и установив фокус.</summary>
+        <summary>Активирует окно инспектора, переводит его на передний план и устанавливая фокус клавиатуры.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,7 +70,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -98,7 +98,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.AttachmentSelection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.AttachmentSelection" /> объект, состоящий из одного или нескольких вложений, выбранного в инспекторе. Только для чтения.</summary>
+        <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.AttachmentSelection" /> объект, состоящий из одного или нескольких вложений, выбранных в инспекторе. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,7 +126,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющая название. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую название. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,7 +154,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -182,8 +182,8 @@
         <Parameter Name="SaveMode" Type="Microsoft.Office.Interop.Outlook.OlInspectorClose" />
       </Parameters>
       <Docs>
-        <param name="SaveMode">Закрытие поведения. Если элемент, отображаемый в окне инспектора не был изменен, этот аргумент не оказывает влияния.</param>
-        <summary>Закрывает <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> и при необходимости сохраняет изменения отображаемого элемента Outlook.</summary>
+        <param name="SaveMode">Поведение при закрытии. Если элемент, отображаемый в инспекторе, не был изменен, этот аргумент не оказывает никакого действия.</param>
+        <summary>Закрывает <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> и (при необходимости) сохраняет изменения в отображаемом элементе Outlook.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,9 +241,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>объект</b> , представляющий текущий элемент, отображаемый в окне инспектора. Только для чтения.</summary>
+        <summary>Возвращает <b>объект</b> , представляющий текущий элемент, отображаемый в инспекторе. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Если элемент не открыт, будут возвращены сообщения об ошибке.</para>
+        <remarks><para>Если в данный момент ни один элемент не открыт, будет возвращено сообщение об ошибке.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -269,10 +269,10 @@
         <Parameter Name="Modal" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Modal"><b>Значение true,</b> чтобы сделать модальные окна. Значение по умолчанию — <b>False</b>.</param>
+        <param name="Modal"><b>Значение true</b> , чтобы сделать окно модальным. Значение по умолчанию — <b>False</b>.</param>
         <summary>Отображает новый <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объект для элемента.</summary>
-        <remarks><para>Метод <b>отображения</b> поддерживается для windows explorer и инспектора для обратной совместимости. Чтобы активировать окна проводника или инспектора, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.Activate" /> метод.</para>
-          <para>При попытке открыть объект «небезопасные» файловой системы (или файл «freedoc») с помощью объектной модели Microsoft Outlook, вы получаете код возврата E_FAIL на языках C или C++ программирования. В Outlook 2000 и более ранних версий то пользователь может открыть объекта системы «небезопасных» файлов с помощью метода <b>отображения</b> .</para>
+        <remarks><para>Метод <b>Display</b> поддерживается для окон проводника и инспектора в целях обратной совместимости. Чтобы активировать окно проводника или инспектора, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.Activate" /> метод.</para>
+          <para>При попытке открыть "небезопасный" объект файловой системы (или "файл фридок") с помощью объектной модели Microsoft Outlook вы получаете E_FAIL код возврата на языках программирования C или C++. В Outlook 2000 и более ранних версий можно открыть "небезопасную" объект файловой системы с помощью метода <b>Display</b> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -301,7 +301,7 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlEditorType" /> константу, указывающую тип редактора. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Начиная с Microsoft Office Outlook 2007 свойство <b>EditorType</b> всегда возвращает olEditorWord.</para>
+        <remarks><para>Так как Microsoft Office Outlook 2007, свойство <b>едитортипе</b> всегда возвращает оледиторворд.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -331,7 +331,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>Integer</b> (<b>целое</b> в C#) значение, определяющее высоту (в точках) окна инспектора. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), задающее высоту (в пикселях) окна инспектора. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -359,9 +359,9 @@
         <Parameter Name="PageName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="PageName">Отображаемое имя страницы формы или внутреннее имя области формы скрыто.</param>
+        <param name="PageName">Отображаемое имя страницы формы или внутреннее имя области формы, которая будет скрыта.</param>
         <summary>Скрывает страницу формы или область формы в инспекторе.</summary>
-        <remarks><para>Чтобы скрыть область формы путем указания можно использовать <b>HideFormRegion</b> <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.InternalName" /> свойства области формы, если область формы — соседних или отдельная область формы. Только надстройки, который реализует области формы можно скрыть область формы.</para>
+        <remarks><para>С помощью <b>хидеформрегион</b> можно скрыть область формы, указав <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.InternalName" /> свойство области формы, если область формы является примыкающей или отдельной областью формы. Область формы может быть скрыта только надстройкой, которая реализует область формы.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -417,8 +417,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Определяет, отображаются ли сообщение электронной почты, связанный с инспектора, Outlook <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> или в Microsoft Word.</summary>
-        <returns><b>Значение true,</b> Если отображается сообщение электронной почты в Microsoft Word (то есть, если Word почты используется); в противном случае — <b>False</b>.</returns>
+        <summary>Определяет, отображается ли почтовое сообщение, связанное с инспектором, <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> в Outlook или в Microsoft Word.</summary>
+        <returns><b>Значение true</b> , если почтовое сообщение отображается в Microsoft Word (то есть, если используется почта Word); в противном случае — <b>false</b>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -448,7 +448,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>Integer</b> (<b>целое</b> в C#) значение, определяющее положение (в точках) вертикальной левого края окне инспектора от края экрана. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), задающее положение (в пикселях) левого вертикального края окна инспектора от края экрана. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -476,9 +476,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Pages" /> коллекции, представляющей все страницы в окне инспектора элемента. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Pages" /> коллекцию, которая представляет все страницы для элемента в инспекторе. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Главная страница и до пяти настраиваемых страниц можно получить с помощью <see cref="M:Microsoft.Office.Interop.Outlook.Pages.Add(System.Object)" /> метод. </para>
+        <remarks><para>С помощью <see cref="M:Microsoft.Office.Interop.Outlook.Pages.Add(System.Object)" /> метода можно получить основную страницу и пять настраиваемых страниц. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -503,10 +503,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Откроется новая страница в режиме конструктора в инспекторе для новой области формы.</summary>
-        <returns>Объект, представляющий страницы, отображение области формы в окне инспектора.</returns>
-        <remarks><para>Если инспектора еще не в режиме конструктора, <b>NewFormRegion</b> будет поместить его в режиме конструктора.</para>
-          <para>Этот метод только откроется страница для новой области формы в режиме конструктора. Этот метод не предназначен для создания области формы во время выполнения.</para>
+        <summary>Открывает новую страницу в режиме конструктора в инспекторе для новой области формы.</summary>
+        <returns>Объект, представляющий страницу, отображающую область формы в инспекторе.</returns>
+        <remarks><para>Если инспектор еще не находится в режиме конструктора, <b>невформрегион</b> поместит его в режиме конструктора.</para>
+          <para>Этот метод открывает страницу только для новой области формы в режиме конструктора. Этот метод не предназначен для создания области формы во время выполнения.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -533,10 +533,10 @@
         <Parameter Name="Path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Path">Полный локальный путь к хранилища форм Outlook (. Файл OFS) для области формы, который должен открываться в инспекторе.</param>
-        <summary>Открывает страницу в режиме конструктора в инспекторе для указанной области.</summary>
-        <returns>Объект, представляющий страницы, отображение области формы в окне инспектора.</returns>
-        <remarks><para>Если инспектора еще не в режиме конструктора, <b>OpenFormRegion</b> будет поместить его в режиме конструктора.</para>
+        <param name="Path">Полный путь к локальному файлу хранилища формы Outlook (. OFS) — файл для области формы, которая должна быть открыта в инспекторе.</param>
+        <summary>Открывает страницу в режиме конструктора в инспекторе указанной области формы.</summary>
+        <returns>Объект, представляющий страницу, отображающую область формы в инспекторе.</returns>
+        <remarks><para>Если инспектор еще не находится в режиме конструктора, <b>опенформрегион</b> поместит его в режиме конструктора.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -563,7 +563,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -592,10 +592,10 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Page">Страница, отображение области формы в окне инспектора.</param>
-        <param name="FileName">Полный локальный путь к хранилища форм Outlook (. Файл OFS), которое сохраняется области формы.</param>
-        <summary>Сохраняет указанную страницу в режиме конструктора в инспекторе в определенный файл.</summary>
-        <remarks><para>Чтобы <b>SaveFormRegion</b> Сохранить область формы необходимо загрузить области формы в режиме конструктора в инспекторе.</para>
+        <param name="Page">Страница, на которой отображается область формы в инспекторе.</param>
+        <param name="FileName">Полный путь к локальному файлу для хранилища формы Outlook (. OFS) — файл, в который сохраняется область формы.</param>
+        <summary>Сохраняет указанную страницу в режиме конструктора в инспекторе в указанный файл.</summary>
+        <remarks><para>Чтобы <b>савеформрегион</b> сохранить область формы, область формы должна быть загружена в режиме конструктора в инспекторе.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -622,9 +622,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -658,12 +658,12 @@
         <Parameter Name="PropertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Control">Элемент управления, тем самым соглашаетесь со свойством.</param>
-        <param name="PropertyName">Имя свойства, который будет привязан к элементу управления.</param>
-        <summary>Выполняет привязку к элементу управления в инспекторе встроенных свойств или настраиваемого свойства.</summary>
-        <remarks><para>Этот метод можно использовать для привязки к элементу управления явных встроенных свойств или настраиваемого свойства. Необходимо сослаться на свойство его имя строки, например, <b>тему</b>, а не пространство имен, например, http://schemas.microsoft.com/mapi/proptag/0x0037001E.</para>
-          <para><paramref name="PropertyName" /> Параметр регистр не учитывается. Например, <b>SetControlItemProperty</b> интерпретирует аргумента <b>CustomerId</b>, подлежащей <b>CustomerID</b> и связывает указанного элемента управления встроенных <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.CustomerID" /> свойство.</para>
-          <para>Кроме того, можно использовать следующую строку кода myPage.Controls("bar"). ItemProperty = «тема» для привязки элемента управления свойство subject. Тем не менее, обратите внимание на то, что ненадежные кода с помощью будет вызываться предупреждение системы безопасности, если свойство был защищен с объектной модели безопасности например, <b>Чтобы</b>и Microsoft Office Outlook 2007 или более поздняя версия но работает на клиентском компьютере не имеет соответствующим образом настройте антивирусное программное обеспечение. Чтобы избежать предупреждений системы безопасности с доверенными приложениями можно использовать метод <b>SetControlItemProperty</b> .  Для получения дополнительных сведений см <a href="http://go.microsoft.com/fwlink/?LinkId=87941">Поведение безопасности объектной модели Outlook</a></para>
+        <param name="Control">Элемент управления, который будет привязан к свойству.</param>
+        <param name="PropertyName">Имя свойства, которое будет привязано к элементу управления.</param>
+        <summary>Связывает встроенное свойство или настраиваемое свойство с элементом управления в инспекторе.</summary>
+        <remarks><para>С помощью этого метода можно привязывать явное встроенное свойство или настраиваемое свойство к элементу управления. Необходимо ссылаться на свойство по его строковому имени, например <b>subject</b>, а не по пространству имен, например http://schemas.microsoft.com/mapi/proptag/0x0037001E.</para>
+          <para>В <paramref name="PropertyName" /> параметре регистр не учитывается. Например, <b>сетконтролитемпроперти</b> интерпретирует аргумент, <b>CustomerID</b>, так же, как <b>CustomerID</b> , и применяет к встроенному <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.CustomerID" /> свойству указанный элемент управления.</para>
+          <para>Кроме того, можно использовать следующую строку кода myPage. Controls ("Bar"). ItemProperty = "subject" для привязывания свойства Subject к элементу управления. Однако обратите внимание на то, что ненадежный код использует это предупреждение системы безопасности, если свойство защищено защитой объектной модели, например, <b>на</b>клиентском компьютере работает Microsoft Office Outlook 2007 или более поздней версии, но не настроено соответствующее антивирусное программное обеспечение. Вы можете использовать метод <b>сетконтролитемпроперти</b> , чтобы избежать появления предупреждений системы безопасности для надежных приложений.  Дополнительные сведения см в разделе <a href="http://go.microsoft.com/fwlink/?LinkId=87941">поведение системы безопасности объектной модели Outlook</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -691,8 +691,8 @@
       </Parameters>
       <Docs>
         <param name="PageName">Отображаемое имя страницы формы или внутреннее имя области формы.</param>
-        <summary>Отображается страница указанную форму или область формы в инспекторе.</summary>
-        <remarks><para><b>SetCurrentFormPage</b> можно использовать для отображения области формы путем указания <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.InternalName" /> свойство области формы, если область формы — в отдельных, заменить или область заменяющей формы.</para>
+        <summary>Отображает указанную страницу формы или область формы в инспекторе.</summary>
+        <remarks><para>Вы можете использовать <b>сеткуррентформпаже</b> для отображения области формы, указав <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.InternalName" /> свойство области формы, если область формы является отдельной, заменить или заменить область формы.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -719,9 +719,9 @@
         <Parameter Name="Start" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="Start">Начало интервала времени, что помощник по планированию вкладке инспектора отображается доступности для участниками собрания.</param>
-        <summary>Задает время начала для элемента собрания в сетке сведений о доступности на вкладке помощник по планированию инспектора.</summary>
-        <remarks><para>Объект, заданный параметром <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.CurrentItem" /> свойство родительского <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объект должен иметь <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> или <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />. Помощник по планированию вкладки должен отображаться в инспекторе, в противном случае возникает ошибка Microsoft Outlook. Если не удается отобразить вкладку помощник по планированию для этого типа элемента, Outlook отображается следующее сообщение об ошибке: время начала планирования могут быть установлены только когда помощник по планированию отображается в элементе собрания.</para>
+        <param name="Start">Начало диапазона времени, на котором на вкладке помощник по планированию отображаются сведения о занятости участников собрания.</param>
+        <summary>Задает время начала для элемента собрания в таблице сведений о доступности на вкладке помощник по планированию в инспекторе.</summary>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Outlook._Inspector.CurrentItem" /> Объект, указанный <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> свойством родительского объекта, должен иметь значение <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> или. <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> Вкладка помощник по планированию должна отображаться в инспекторе, в противном случае в Microsoft Outlook возникает ошибка. Если Outlook не может отобразить вкладку Помощник по планированию для этого типа элемента, в Outlook отображается следующее сообщение об ошибке: время начала расписания можно задать только при отображении помощника по планированию для элемента собрания.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -749,8 +749,8 @@
       </Parameters>
       <Docs>
         <param name="PageName">Отображаемое имя страницы формы или внутреннее имя области формы, которое будет отображаться.</param>
-        <summary>Отображаются кнопки в группе Отображать на ленте Microsoft Office Fluent для инспектора, нажав кнопку которого будут отображаться области формы или страницы, заданной параметром <paramref name="PageName" />.</summary>
-        <remarks><para>Для области формы можно использовать <b>ShowFormPage</b> для отображения кнопки путем указания <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.InternalName" /> свойства области формы, если область формы — соседних или отдельная область формы. Только надстройки, который реализует области формы можно использовать <b>ShowFormRegion</b> для отображения кнопки.</para>
+        <summary>Отображает кнопку в группе "Показать" ленты Microsoft Office Fluent для инспектора, в которой отображается страница или область формы, заданная в параметре <paramref name="PageName" />.</summary>
+        <remarks><para>Для областей формы можно использовать <b>шовформпаже</b> для отображения кнопки, указав <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.InternalName" /> свойство области формы, если область формы является примыкающей или отдельной областью формы. Только надстройка, которая реализует область формы, может использовать <b>шовформрегион</b> для отображения кнопки.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -780,7 +780,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>Integer</b> (<b>целое</b> в C#) значение, указывающее положение (в точках) горизонтальной верхнего края окне инспектора от края экрана. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), обозначающее положение (в пикселях) верхней горизонтальной границы окна инспектора от края экрана. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -811,7 +811,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>Integer</b> (<b>целое</b> в C#) значение, указывающее ширину (в точках) указанного объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее ширину (в пикселях) указанного объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -842,7 +842,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlWindowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает для свойства значение константы в <see cref="T:Microsoft.Office.Interop.Outlook.OlWindowState" /> перечисление, указывающее состояние окна окна проводника или инспектора. Для чтения и записи.</summary>
+        <summary>Возвращает или задает свойство с константой в <see cref="T:Microsoft.Office.Interop.Outlook.OlWindowState" /> перечислении, указывающей состояние окна проводника или окна инспектора. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -870,43 +870,43 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает Microsoft Document объектной модели Word из сообщения об ошибке. Только для чтения.</summary>
+        <summary>Возвращает объектную модель документа Microsoft Word для отображаемого сообщения. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>WordEditor</b> допустимо только если <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.IsWordMail" /> возвращает <b>значение True</b> и <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.EditorType" /> — это <b>olEditorWord</b>. Возвращаемый объект <b>WordDocument</b> предоставляет доступ к большая часть объектной модели Word, за исключением следующие элементы: </para>
+        <remarks><para>Свойство <b>WordEditor</b> является допустимым только в <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.IsWordMail" /> <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.EditorType" /> том случае, если возвращается <b>значение true</b> и значение <b>оледиторворд</b>. Возвращаемый объект <b>ворддокумент</b> предоставляет доступ к большинству объектной модели Word, за исключением следующих элементов: </para>
           <list type="bullet">
             <item>
               <para>
-                <b>Tables.Add</b>
+                <b>Tables. Add</b>
               </para>
             </item>
             <item>
               <para>
-                <b>Range.ConvertToTable</b>
+                <b>Range. Конверттотабле</b>
               </para>
             </item>
             <item>
               <para>
-                <b>InlineShapes.AddChart</b>
+                <b>InlineShapes. AddChart</b>
               </para>
             </item>
             <item>
               <para>
-                <b>Shapes.AddChart</b>
+                <b>Shapes. AddChart</b>
               </para>
             </item>
             <item>
               <para>
-                <b>Range.InsertXML</b>
+                <b>Range. InsertXML</b>
               </para>
             </item>
             <item>
               <para>
-                <b>Selection.insertxml выполняются</b>
+                <b>Selection. InsertXML</b>
               </para>
             </item>
             <item>
               <para>
-                <b>Range.ImportFragment</b>
+                <b>Range. Импортфрагмент</b>
               </para>
             </item>
           </list>

@@ -12,8 +12,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Определяет тип модуль навигации <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModule" /> объекта.</summary>
-    <remarks><para>Это перечисление используется с <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModule.NavigationModuleType" /> свойство для следующих объектов для определения типа модуль навигации:</para>
+    <summary>Определяет тип модуля навигации <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModule" /> объекта.</summary>
+    <remarks><para>Это перечисление используется <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModule.NavigationModuleType" /> свойством для следующих объектов, чтобы определить тип модуля навигации:</para>
       <list type="bullet">
         <item>
           <para>
@@ -37,7 +37,7 @@
         </item>
         <item>
           <para>
-            <b>Модуль</b>
+            <b>Назначаем</b>
           </para>
         </item>
         <item>
@@ -51,7 +51,7 @@
           </para>
         </item>
       </list>
-      <para>Перечисление также используется <see cref="M:Microsoft.Office.Interop.Outlook._NavigationModules.GetNavigationModule(Microsoft.Office.Interop.Outlook.OlNavigationModuleType)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModules" /> семейства сайтов для определения типа модуль навигации <b>NavigationModule</b> осуществляется с помощью этого метода.</para>
+      <para>Перечисление также используется <see cref="M:Microsoft.Office.Interop.Outlook._NavigationModules.GetNavigationModule(Microsoft.Office.Interop.Outlook.OlNavigationModuleType)" /> методом <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModules" /> коллекции для определения типа модуля навигации <b>NavigationModule</b> , извлекаемого этим методом.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -71,7 +71,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Идентифицирует <see cref="T:Microsoft.Office.Interop.Outlook.CalendarModule" /> объект, представляющий навигации модуля "Календарь".</summary>
+        <summary>Определяет <see cref="T:Microsoft.Office.Interop.Outlook.CalendarModule" /> объект, представляющий модуль навигации по календарю.</summary>
       </Docs>
     </Member>
     <Member MemberName="olModuleContacts">
@@ -90,7 +90,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Идентифицирует <see cref="T:Microsoft.Office.Interop.Outlook.ContactsModule" /> объект, представляющий навигации модуля "Контакты".</summary>
+        <summary>Определяет <see cref="T:Microsoft.Office.Interop.Outlook.ContactsModule" /> объект, представляющий модуль навигации Contacts.</summary>
       </Docs>
     </Member>
     <Member MemberName="olModuleFolderList">
@@ -109,7 +109,7 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>Определяет объект <b>NavigationModule</b> , представляющий модуль навигации список папок.</summary>
+        <summary>Определяет объект <b>NavigationModule</b> , представляющий модуль навигации списка папок.</summary>
       </Docs>
     </Member>
     <Member MemberName="olModuleJournal">
@@ -128,7 +128,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Идентифицирует <see cref="T:Microsoft.Office.Interop.Outlook.JournalModule" /> объект, представляющий навигации модуля "Дневник".</summary>
+        <summary>Определяет <see cref="T:Microsoft.Office.Interop.Outlook.JournalModule" /> объект, представляющий модуль навигации журнала.</summary>
       </Docs>
     </Member>
     <Member MemberName="olModuleMail">
@@ -147,7 +147,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Идентифицирует <see cref="T:Microsoft.Office.Interop.Outlook.MailModule" /> объект, представляющий модуль навигации почты.</summary>
+        <summary>Определяет <see cref="T:Microsoft.Office.Interop.Outlook.MailModule" /> объект, представляющий модуль навигации почты.</summary>
       </Docs>
     </Member>
     <Member MemberName="olModuleNotes">
@@ -166,7 +166,7 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>Идентифицирует <see cref="T:Microsoft.Office.Interop.Outlook.NotesModule" /> объект, представляющий модуля заметок навигации.</summary>
+        <summary>Определяет <see cref="T:Microsoft.Office.Interop.Outlook.NotesModule" /> объект, представляющий модуль навигации Notes.</summary>
       </Docs>
     </Member>
     <Member MemberName="olModuleShortcuts">
@@ -185,7 +185,7 @@
       </ReturnValue>
       <MemberValue>7</MemberValue>
       <Docs>
-        <summary>Определяет объект <b>NavigationModule</b> , представляющий модуль навигации сочетаний клавиш.</summary>
+        <summary>Определяет объект <b>NavigationModule</b> , представляющий модуль навигации "ярлыки".</summary>
       </Docs>
     </Member>
     <Member MemberName="olModuleSolutions">
@@ -204,7 +204,7 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>A <see cref="T:Microsoft.Office.Interop.Outlook.SolutionsModule" /> объект, представляющий навигации решений в модуль.</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Outlook.SolutionsModule" /> Объект, представляющий модуль навигации Solutions.</summary>
       </Docs>
     </Member>
     <Member MemberName="olModuleTasks">
@@ -223,7 +223,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>Идентифицирует <see cref="T:Microsoft.Office.Interop.Outlook.TasksModule" /> объект, представляющий модуль навигации задач.</summary>
+        <summary>Определяет <see cref="T:Microsoft.Office.Interop.Outlook.TasksModule" /> объект, представляющий модуль навигации Tasks.</summary>
       </Docs>
     </Member>
   </Members>

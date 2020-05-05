@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -71,7 +71,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Область применения <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекта к текущему представлению.</summary>
+        <summary>Применяет <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объект к текущему представлению.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,7 +98,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,8 +128,8 @@
       <Docs>
         <param name="Name">Имя нового представления.</param>
         <param name="SaveOption">Параметр Сохранить для нового представления.</param>
-        <summary>Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.View" /> объекта на основании существующих <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекта.</summary>
-        <returns>Объект <b>представления</b> , который представляет новое представление.</returns>
+        <summary>Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.View" /> объект на основе существующего <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекта.</summary>
+        <returns>Объект <b>View</b> , представляющий новое представление.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,7 +159,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlDefaultExpandCollapseSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultExpandCollapseSetting" /> константа, которая определяет расширения по умолчанию для групп в <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultExpandCollapseSetting" /> константу, определяющую параметр развертывания по умолчанию для групп <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> в объекте. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -215,9 +215,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет имя свойства, название которого заканчивается промежуток времени для элементов Outlook, отображаемые в <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее имя свойства, которое завершает период времени для элементов Outlook, отображаемых в <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекте. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значения <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.StartField" /> и <b>EndField</b> свойства указывают, какие свойства элемента Outlook используются объектом <b>TimelineView</b> для представления длительность элемента Outlook. Можно указать настраиваемых и встроенных свойств, но допускается только свойства даты и времени.</para>
+        <remarks><para>Значения свойств <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.StartField" /> и <b>ендфиелд</b> указывают, какие свойства элемента Outlook используются объектом <b>TimelineView</b> для представления длительности элемента Outlook. Можно указать как настраиваемые, так и встроенные свойства, но разрешены только свойства даты и времени.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -247,9 +247,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет фильтр для представления.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее фильтр для представления.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение этого свойства — это строка, в синтаксисе поиска DAV и поиск (DASL), представляющий текущий фильтр для представления. Дополнительные сведения об использовании DASL синтаксис для фильтрации элементов в представлении можно <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Фильтрации элементов</a></para>
+        <remarks><para>Значением этого свойства является строка в синтаксисе поиска по протоколу DAV (DASL), которая представляет текущий фильтр для представления. Дополнительные сведения об использовании синтаксиса DASL для фильтрации элементов в представлении можно узнать в статье <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Фильтрация элементов</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -276,8 +276,8 @@
         <Parameter Name="Date" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="Date">Дата, к которой следует изменить представление.</param>
-        <summary>Изменение даты, используемых текущим представлением для отображения информации.</summary>
+        <param name="Date">Дата, до которой должно быть изменено представление.</param>
+        <summary>Изменяет дату, используемую текущим представлением, для отображения сведений.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,7 +304,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OrderFields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OrderFields" /> объект, представляющий набор полей, по которым элементы отображаются в <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> сгруппированных объектов. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OrderFields" /> объект, представляющий набор полей, по которым группируются элементы, отображаемые в <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекте. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -332,7 +332,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ViewFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> объект, представляющий шрифт, используемый при отображении элементов Outlook в <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> объект, представляющий шрифт, используемый при отображении элементов Outlook в <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекте. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -363,10 +363,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение типа <b>String</b> (<b>строка</b> в C#), представляющее языка, заданных для представления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее параметр языка для представления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>Language</b> <b>String</b> (<b>строка</b> в C#) используется для представления тег языка ISO. Например строка «EN-US» представляет код ISO «США - английский.»</para>
-          <para>Если указан допустимый код языка, объект доступна только в меню "Вид" для типа указанного языка. Если значение не указано, элемент object доступен для всех типов языка. Значение по умолчанию для этого свойства — это пустая строка.</para>
+        <remarks><para>Свойство <b>Language</b> использует <b>строку</b> (<b>строка</b> в C#) для представления тега языка ISO. Например, строка "EN-US" представляет код ISO для "США-английский".</para>
+          <para>Если указан допустимый код языка, объект будет доступен только в меню Вид для указанного типа языка. Если значение не указано, элемент объекта доступен для всех типов языка. Значение по умолчанию для этого свойства — пустая строка.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -396,9 +396,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, указывающее, является ли пользователь может изменять параметры представления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>логического</b> значения (<b>bool</b> в C#), которое указывает, может ли пользователь изменять параметры представления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Если <b>значение True</b>, пользователь может изменить параметры указанное представление. Тем не менее изменения, внесенные в интерфейс не будут сохранены. Если <b>значение False</b> (значение по умолчанию), все изменения будут сохранены.  </para>
+        <remarks><para>Если <b>имеет значение true</b>, пользователь может изменять параметры указанного представления. Однако изменения, внесенные в интерфейс, не будут сохранены. Если задано <b>значение false</b> (значение по умолчанию), все изменения будут сохранены.  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -425,7 +425,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ViewFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> объект, представляющий шрифт, используемый для отображения в нижней части масштаба временной шкалы для <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> объект, представляющий шрифт, используемый для отображения нижней части шкалы шкалы времени для <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -456,10 +456,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение типа <b>Integer</b> (<b>целое</b> в C#), представляющее Максимальная длина (в знаках) для метки элемента Outlook в <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), представляющее максимальную длину (в символах) метки элемента Outlook в <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекте. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство может иметь значение в диапазоне от 0 до 132. Если это свойство задано значение меньше 0, оно имеет значение 0. Если значение этого свойства больше 132, свойство имеет значение 132. Значение по умолчанию для этого свойства — 80.</para>
-          <para>Если задано значение 0, метки для элементов Outlook не отображаются в представлении.</para>
+        <remarks><para>Для этого свойства можно задать значение от 0 до 132. Если для этого свойства задано значение, меньшее 0, оно равно 0. Если для этого свойства задано значение больше 132, свойству присваивается значение 132. Значение по умолчанию для этого свойства — 80.</para>
+          <para>Если для этого свойства задано значение 0, метки элементов Outlook не отображаются в представлении.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -489,7 +489,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет отображаемое имя для объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее отображаемое имя объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -517,7 +517,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -543,8 +543,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Сбрасывает встроенных представления Microsoft Outlook исходные параметры.</summary>
-        <remarks><para>Этот метод работает только для встроенных представления Outlook.</para>
+        <summary>Восстанавливает исходные параметры встроенного представления Microsoft Outlook.</summary>
+        <remarks><para>Этот метод работает только со встроенными представлениями Outlook.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -569,7 +569,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Сохраняет представления или сохраняет изменения в представлении.</summary>
+        <summary>Сохранение представления или сохранение изменений в представлении.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -596,9 +596,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlViewSaveOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewSaveOption" /> константа, которая указывает папки, в которых доступен указанное представление и разрешения на чтение, подключенного к представления. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewSaveOption" /> константу, указывающую папки, в которых доступно указанное представление и разрешения на чтение, присоединенные к представлению. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Когда задано значение свойства <b>SaveOption</b> <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объект создается с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> семейства сайтов. </para>
+        <remarks><para>Значение свойства <b>SaveOption</b> задается при создании <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекта с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> метода <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> коллекции. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -625,9 +625,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -663,9 +663,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>типа Boolean</b> (<b>bool</b> в C#), который определяет, если метки для элементов Outlook отображаются при просмотре по месяцам в <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> in C#), которое определяет, отображаются ли метки элементов Outlook при просмотре в <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекте по месяцам. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство можно применять, только если <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.TimelineViewMode" /> задано значение <b>olTimelineViewMonth</b>.</para>
+        <remarks><para>Это свойство применяется, только если для <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.TimelineViewMode" /> свойства задано значение <b>олтимелиневиевмонс</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -695,9 +695,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, указывающее, отображаются ли названия номер недели в масштаб временной шкалы для <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>логического</b> значения (<b>bool</b> в C#), которое указывает, отображаются ли метки недель на шкале времени для <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Если этому свойству присвоено <b>значение True</b>, расположение, в неделю номеров метки отображаются в масштабе временной шкалы для объекта <b>TimelineView</b> зависит от значение <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.TimelineViewMode" /> свойства.</para>
+        <remarks><para>Если для этого свойства задано значение <b>true</b>, то расположение, в котором метки недели отображаются на шкале шкалы времени для объекта <b>TimelineView</b> , зависит от значения <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.TimelineViewMode" /> свойства.</para>
           <list type="table">
             <item>
               <description>Значение свойства</description>
@@ -705,21 +705,21 @@
             </item>
             <item>
               <description>
-                <b>olTimelineViewDay</b>
+                <b>олтимелиневиевдай</b>
               </description>
-              <description>Отображается в верхней части масштаба временной шкалы, предшествующим метку даты.</description>
+              <description>Отображается в верхней части шкалы времени с предшествующей меткой даты.</description>
             </item>
             <item>
               <description>
-                <b>olTimelineViewWeek</b>
+                <b>олтимелиневиеввик</b>
               </description>
-              <description>Отображается в верхней части масштаба временной шкалы, предшествующим метку недели.</description>
+              <description>Отображается в верхней части шкалы времени с предшествующей меткой "Неделя".</description>
             </item>
             <item>
               <description>
-                <b>olTimelineViewMonth</b>
+                <b>олтимелиневиевмонс</b>
               </description>
-              <description>Отображается в нижней части масштаба временной шкалы, заменив меток вместе с датой.</description>
+              <description>Отображается в нижней части шкалы шкалы времени, заменяя метки даты и времени.</description>
             </item>
           </list>
           <para> </para></remarks>
@@ -748,9 +748,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Boolean</b> (<b>bool</b> в C#), которое указывает, будет ли <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объект является встроенной представления Outlook. Только для чтения.</summary>
+        <summary>Возвращает логическое<b>значение (</b> <b>логическое</b> значение в C#), которое указывает, <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> является ли объект встроенным представлением Outlook. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para><see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> Метод можно использовать для представления, только если значение этого свойства имеет значение <b>True</b>.</para>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> Метод можно использовать только для представления, если для этого свойства задано значение <b>true</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -780,9 +780,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет имя свойства, который запускает промежуток времени для элементов Outlook, отображаемые в <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее имя свойства, которое запускает период времени для элементов Outlook, отображаемых в <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекте. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значения <b>StartField</b> и <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.EndField" /> свойства указывают, какие свойства элемента Outlook используются объектом <b>TimelineView</b> для представления длительность элемента Outlook. Можно указать настраиваемых и встроенных свойств, но допускается только свойства даты и времени.</para>
+        <remarks><para>Значения свойств <b>стартфиелд</b> и <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.EndField" /> Properties указывают, какие свойства элементов Outlook используются объектом <b>TimelineView</b> для представления длительности элемента Outlook. Можно указать как настраиваемые, так и встроенные свойства, но разрешены только свойства даты и времени.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -812,7 +812,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlTimelineViewMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlTimelineViewMode" /> константа, которая указывает режим просмотра для <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlTimelineViewMode" /> константу, указывающую режим просмотра для <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -840,7 +840,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ViewFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> объект, представляющий шрифт, используемый для отображения в верхней части масштаба временной шкалы для <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> объект, представляющий шрифт, используемый для отображения верхней части шкалы шкалы времени для <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -868,7 +868,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlViewType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewType" /> константа, которая указывает тип представления представления. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlViewType" /> константу, указывающую тип представления. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -899,10 +899,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), задающее XML-определение представления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), задающее XML-определение представления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Определение XML описывает тип представления с помощью ряда теги и ключевых слов в соответствии с различными свойствами представления. При создании представления XML-определение анализируется для отображения параметров для нового представления.</para>
-          <para>Для определения XML структуру при создании представления, можно создать представление с помощью пользовательского интерфейса Outlook и затем можно извлечь свойство <b>XML</b> для этого представления.  </para>
+        <remarks><para>В XML-определении описывается тип представления с помощью ряда тегов и ключевых слов, соответствующих различным свойствам представления. При создании представления XML-определение анализируется для отображения параметров нового представления.</para>
+          <para>Чтобы определить структуру XML при создании представлений, можно создать представление с помощью пользовательского интерфейса Outlook, а затем можно получить свойство <b>XML</b> для этого представления.  </para>
           <para> </para></remarks>
       </Docs>
     </Member>

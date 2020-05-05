@@ -19,8 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Представляет хранилище для объектов в области ярлыки.</summary>
-    <remarks><para>Использование <see cref="P:Microsoft.Office.Interop.Outlook._OutlookBarPane.Contents" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarPane" /> объектов для извлечения объекта <b>OutlookBarStorage</b> для области.</para>
-      <para>Использование <see cref="P:Microsoft.Office.Interop.Outlook.OutlookBarStorage.Groups" /> свойства, чтобы получить <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarGroups" /> объект для области сочетаний клавиш.</para>
+    <remarks><para>Используйте <see cref="P:Microsoft.Office.Interop.Outlook._OutlookBarPane.Contents" /> свойство <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarPane" /> объекта, чтобы получить объект <b>OutlookBarStorage</b> для области.</para>
+      <para>Используйте <see cref="P:Microsoft.Office.Interop.Outlook.OutlookBarStorage.Groups" /> свойство, чтобы получить <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarGroups" /> объект для области ярлыков.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -47,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -75,7 +75,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,7 +131,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -159,9 +159,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>

@@ -18,9 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Представляет пользователя, группы или общей папки, к которому система обмена сообщениями может доставлять сообщения.</summary>
-    <remarks><para>Объект <b>AddressEntry</b> является адресом в <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> объекта. Каждый объект <b>AddressEntry</b> в объект <b>AddressEntries</b> содержит сведения, представляющий пользователя, группы или общей папки, к которому система обмена сообщениями может доставлять сообщения.</para>
-      <para>Используйте <b>AddressEntries</b>(<paramref name="index" />), где <paramref name="index" /> — номер индекса запись или значение, используемое для сопоставления свойства по умолчанию запись, чтобы возвратить объект <b>AddressEntry</b> .</para>
+    <summary>Представляет пользователя, группу или общую папку, к которой система обмена сообщениями может доставить сообщения.</summary>
+    <remarks><para>Объект <b>AddressEntry</b> является адресом <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> объекта. Каждый объект <b>AddressEntry</b> в объекте <b>AddressEntries</b> содержит сведения, представляющие человека, группу или общую папку, к которой система обмена сообщениями может доставить сообщения.</para>
+      <para>Используйте <b>AddressEntries</b>(<paramref name="index" />), где <paramref name="index" /> — это номер индекса записи адреса или значение, используемое по умолчанию для записи адреса, чтобы возвратить один объект <b>AddressEntry</b> .</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -50,9 +50,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляющее адрес электронной почты <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> (<b>строка</b> в C#), представляющую адрес электронной почты <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" />. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>адреса</b> необходимо задать до вызова метода <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntry.Details(System.Object)" /> метод.</para>
+        <remarks><para>Перед <b>Address</b> вызовом <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntry.Details(System.Object)" /> метода необходимо задать свойство Address.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -79,10 +79,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlAddressEntryUserType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает константу из <see cref="T:Microsoft.Office.Interop.Outlook.OlAddressEntryUserType" /> тип перечисления, представляющий пользователя <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" />. Только для чтения.</summary>
+        <summary>Возвращает константу из <see cref="T:Microsoft.Office.Interop.Outlook.OlAddressEntryUserType" /> перечисления, <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" />представляющего тип пользователя. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>AddressEntryUserType</b> предоставляет уровень детализации для типов пользователей, которые более чем <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.DisplayType" />. Свойство <b>DisplayType</b> не различать пользователей с использованием разных типов <b>AddressEntry</b>, такие как <b>AddressEntry</b> , имеющий адрес электронной почты Simple Mail Transfer Protocol (SMTP), Lightweight Directory Access Protocol (LDAP) адрес, адреса пользователя Exchange или <b>AddressEntry</b> в адресной книге контакты Outlook. Эти записи имеют <b>olUser</b> как их <b>AddressEntry.DisplayType</b>. </para>
+            <b>Аддрессентрюсертипе</b> обеспечивает уровень детализации для пользовательских типов, которые более детально отличаются от <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.DisplayType" />. Свойство <b>дисплайтипе</b> не различает пользователей с разными типами <b>AddressEntry</b>, такими как <b>AddressEntry</b> с SMTP-адресом электронной почты, адресом протокола LDAP, адресом пользователя Exchange или <b>AddressEntry</b> в адресной книге Outlook Contacts. Все эти целые значения имеют <b>олусер</b> в виде <b>AddressEntry. дисплайтипе</b>. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -109,7 +109,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,7 +137,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -189,11 +189,11 @@
         <Parameter Name="HWnd" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="HWnd">Дескриптор родительского окна для диалоговое окно "Подробности". Нулевое значение (по умолчанию) указывает, что диалоговое окно родительской записи в Outlook.</param>
-        <summary>Отображает безрежимным диалоговое окно, которое предоставляет подробные сведения о <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта.</summary>
+        <param name="HWnd">Дескриптор родительского окна для диалогового окна "сведения". Нулевое значение (по умолчанию) указывает, что диалоговое окно является родительским для Outlook.</param>
+        <summary>Отображает немодальное диалоговое окно, содержащее подробные сведения <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> об объекте.</summary>
         <remarks><para>
-            <b>Примечание</b>: не удается выполнить метод <b>сведений</b> , если <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.Name" /> оставлено пустым.</para>
-          <para>Обработка ошибок необходимо использовать для обработки ошибок во время выполнения, при нажатии кнопки "Отмена" в диалоговом окне. Метод <b>сведения о</b> фактически останавливает выполнение во время отображения диалоговое окно кода.</para>
+            <b>Note</b>: метод <b>Details</b> завершается с <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.Name" /> ошибкой, если свойство является пустым.</para>
+          <para>Для обработки ошибок во время выполнения необходимо использовать обработку ошибок, когда пользователь нажимает кнопку Cancel (Отмена) в диалоговом окне. Метод <b>Details</b> фактически прерывает выполнение кода при отображении диалогового окна.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -220,9 +220,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlDisplayType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает константу, относящегося к <see cref="T:Microsoft.Office.Interop.Outlook.OlDisplayType" /> перечисления, которое описывает характер <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" />. Только для чтения.</summary>
+        <summary>Возвращает константу, принадлежащую <see cref="T:Microsoft.Office.Interop.Outlook.OlDisplayType" /> перечислению, описывающую природу <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" />объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Можно использовать свойство <b>DisplayType</b> для записи адресов фильтра. Свойство <b>DisplayType</b> соответствует свойств MAPI <b>PidTagDisplayType</b>.</para>
+        <remarks><para>Для фильтрации записей адресов можно использовать свойство <b>дисплайтипе</b> . Свойство <b>дисплайтипе</b> соответствует свойству MAPI <b>PidTagDisplayType</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -247,8 +247,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" /> объект, представляющий <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" />, если <b>AddressEntry</b> соответствует контактов в Outlook контактов адресной книги (CAB).</summary>
-        <returns>Объект <b>ContactItem</b> , соответствующий <b>AddressEntry</b>. Возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если объект <b>AddressEntry</b> не соответствует контакта в адресной книге контакты.</returns>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" /> объект, представляющий значение <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" />, если <b>AddressEntry</b> соответствует контакту в АДРЕСНОЙ книге Outlook Contacts (CAB).</summary>
+        <returns>Объект <b>ContactItem</b> , соответствующий <b>AddressEntry</b>. Возвращает <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если объект <b>AddressEntry</b> не соответствует контакту в адресной книге Contacts.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,9 +273,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объект, представляющий <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Если <b>AddressEntry</b> относится к Exchange <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> объект, таких как глобальный список адресов (GAL) и соответствующий списка рассылки Exchange.</summary>
-        <returns>Объект <b>ExchangeDistributionList</b> , который представляет <b>AddressEntry</b>. Возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если объект <b>AddressEntry</b> не соответствует списка рассылки Exchange.</returns>
-        <remarks><para> Требуется подключение к серверу Exchange, чтобы использовать этот способ.</para>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> объект, представляющий <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объект <b>AddressEntry</b> , принадлежащий объекту Exchange <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> , например глобальному списку адресов (GAL) и соответствующему списку рассылки Exchange.</summary>
+        <returns>Объект <b>метод exchangedistributionlist</b> , представляющий <b>AddressEntry</b>. Возвращает <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если объект <b>AddressEntry</b> не соответствует списку рассылки Exchange.</returns>
+        <remarks><para> Для использования этого метода необходимо подключиться к серверу Exchange Server.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -300,9 +300,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" /> объект, представляющий <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Если <b>AddressEntry</b> относится к Exchange <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> объект, таких как глобальный список адресов (GAL) и соответствующий пользователя Exchange.</summary>
-        <returns>Объект <b>ExchangeUser</b> , который представляет <b>AddressEntry</b>. Возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если объект <b>AddressEntry</b> не соответствует пользователя Exchange.</returns>
-        <remarks><para> Требуется подключение к серверу Exchange, чтобы использовать этот способ.</para>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" /> объект, представляющий <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объект <b>AddressEntry</b> , принадлежащий объекту Exchange <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> , например глобальному списку адресов (GAL) и соответствующему пользователю Exchange.</summary>
+        <returns>Объект <b>ExchangeUser</b> , представляющий <b>AddressEntry</b>. Возвращает <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если объект <b>AddressEntry</b> не соответствует пользователю Exchange.</returns>
+        <remarks><para> Для использования этого метода необходимо подключиться к серверу Exchange Server.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -331,49 +331,49 @@
       </Parameters>
       <Docs>
         <param name="Start">Задает дату.</param>
-        <param name="MinPerChar">Задает продолжительность каждого промежуток времени в минутах. Значение по умолчанию — 30.</param>
-        <param name="CompleteFormat">Задает <b>логическое</b> значение (<b>bool</b> в C#), который представляет объем сведений, возвращаемых для каждого промежуток времени. Значение по умолчанию — <b>False</b>.</param>
-        <summary>Возвращает значение <b>String</b> (<b>строка</b> в C#), который представляет доступность отдельного пользователя в течение 30 дней от даты начала, начиная с полуночи указанной даты.</summary>
-        <returns>Значение <b>String</b> (<b>строка</b> в C#), который представляет доступности пользователя для заданного периода. Строковое значение содержит один знак для каждого промежуток времени в течение указанного периода.</returns>
+        <param name="MinPerChar">Задает продолжительность каждого интервала времени в минутах. Значение по умолчанию — 30 дней.</param>
+        <param name="CompleteFormat">Задает <b>логическое</b> значение (<b>bool</b> в C#), представляющее уровень сведений, возвращаемых для каждого интервала времени. Значение по умолчанию — <b>False</b>.</param>
+        <summary>Возвращает значение <b>типа String</b> (<b>строка</b> в C#), которое представляет доступность отдельного пользователя в течение 30 дней с даты начала, начиная с полуночи указанной даты.</summary>
+        <returns>Значение типа <b>String</b> (<b>строка</b> в C#), представляющее доступность пользователя в указанный период. Строковое значение содержит один символ для каждого интервала времени в течение заданного периода.</returns>
         <remarks><para>
-            <b>Примечание</b>: Если запись представляет список рассылки, состояние отдельных членов не возвращается пользователю с помощью метода <b>GetFreeBusy</b> . Приглашения на собрание будут отправляться только одна обмена мгновенными сообщениями пользователи. Можно определить, если обмена сообщениями пользователя в список рассылки, определяя, если его <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.DisplayType" /> свойство является <b>olDistList</b> или <b>olPrivateDistList</b>.</para>
-          <para>Определяется содержимое строки, возвращаемые данным методом <paramref name="CompleteFormat" /> параметр. </para>
-          <para>Если <paramref name="CompleteFormat" /> имеет значение <b>False</b>, значения по умолчанию, строка, возвращаемая этим методом содержит один из следующих знаков для каждого промежуток времени:</para>
+            <b>Note</b>: Если запись адреса представляет список рассылки, состояние его отдельных членов не может быть возвращено пользователю с помощью метода <b>жетфрибуси</b> . Приглашение на собрание должно отправляться только одному пользователю обмена сообщениями. Можно определить, является ли пользователь обмена сообщениями списком рассылки, определяя, является <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.DisplayType" /> ли его свойство <b>олдистлист</b> или <b>олприватедистлист</b>.</para>
+          <para>Содержимое строки, возвращаемой этим методом, определяется <paramref name="CompleteFormat" /> параметром. </para>
+          <para>Если <paramref name="CompleteFormat" /> задано значение <b>false</b>, то строка, возвращаемая этим методом, содержит один из следующих символов для каждого интервала времени:</para>
           <list type="table">
             <item>
               <description>Знак</description>
               <description>Описание</description>
             </item>
             <item>
-              <description>0</description>
-              <description>Промежуток времени представляет бесплатную периода.</description>
+              <description>нуль</description>
+              <description>Временной интервал представляет свободный период.</description>
             </item>
             <item>
-              <description>1</description>
-              <description>Промежуток времени представляет под вопросом, нет на работе (OOF) или периода времени «занят».</description>
+              <description>1,1</description>
+              <description>Временное гнездо представляет собой пробную, незанятую (отсутствие на работе) или занятую точку.</description>
             </item>
           </list>
-          <para>Если <paramref name="CompleteFormat" /> задано значение <b>True</b>, строка, возвращаемая этим методом содержит один из следующих знаков для каждого промежуток времени:</para>
+          <para>Если <paramref name="CompleteFormat" /> задано <b>значение true</b>, строка, возвращаемая этим методом, содержит один из следующих символов для каждого интервала времени:</para>
           <list type="table">
             <item>
               <description>Знак</description>
               <description>Описание</description>
             </item>
             <item>
-              <description>0</description>
-              <description>Промежуток времени представляет бесплатную периода.</description>
+              <description>нуль</description>
+              <description>Временной интервал представляет свободный период.</description>
             </item>
             <item>
-              <description>1</description>
-              <description>Промежуток времени представляет пробного периода.</description>
+              <description>1,1</description>
+              <description>Временной интервал представляет период под вопросом.</description>
             </item>
             <item>
               <description>2</description>
-              <description>Промежуток времени представляет занят периода.</description>
+              <description>Временной интервал представляет занятую точку.</description>
             </item>
             <item>
-              <description>3</description>
-              <description>Промежуток времени представляет об отсутствии на работе (OOF) периода.</description>
+              <description>4</description>
+              <description>Временной интервал представляет период отсутствия на работе (отсутствие на работе).</description>
             </item>
           </list>
           <para> </para></remarks>
@@ -402,9 +402,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющее уникальный идентификатор для объекта. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую уникальный идентификатор объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>При создании объекта отдельным элементом, поставщика транспорта назначает свойство строки постоянная, уникальный <b>идентификатор</b> . Эти идентификаторы не изменяйте из одного сеанса в другую. </para>
+        <remarks><para>Поставщик транспорта назначает свойство постоянного уникального <b>идентификатора</b> строки при создании отдельного объекта члена. Эти идентификаторы не меняются от одного сеанса к другому. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -533,9 +533,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#) отображаемое имя для объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строковое</b> значение (<b>String</b> в C#) отображаемое имя объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это необходимо для свойства <b>имя</b> должно быть задано до вызова метода <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntry.Details(System.Object)" /> метод.</para>
+        <remarks><para>Перед вызовом <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntry.Details(System.Object)" /> метода необходимо задать свойство <b>Name</b> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -562,7 +562,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -590,7 +590,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.PropertyAccessor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект, который поддерживает создание, получение, Установка и удаление свойств родительского <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект, который поддерживает создание, получение, настройку и удаление свойств родительского <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -618,9 +618,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -656,7 +656,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>String</b> (<b>строка</b> в C#) представляющее тип записи для этого адреса, например веб-адрес, MacMail адрес или адрес электронной почты Microsoft. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), представляющую тип записи для этого адреса, например адрес в Интернете, адрес Макмаил или адрес электронной почты Майкрософт. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -684,11 +684,11 @@
         <Parameter Name="Refresh" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="MakePermanent">Значение <b>True</b> означает, что при сбросе кэша свойства и все изменения завершены в базовом адресной книги. Значение <b>False</b> указывает, что кэш свойств очищен, но не было зафиксировано постоянное хранилище. Значение по умолчанию — <b>True</b>.</param>
-        <param name="Refresh">Значение <b>True</b> указывает, что кэш свойств перезагружается из значений в базовом адресной книги. Значение <b>False</b> указывает, что кэш свойств не загружаются. Значение по умолчанию — <b>False</b>.</param>
-        <summary>Внесение изменений в публикации, посвященные <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объект в системе обмена сообщениями.</summary>
-        <remarks><para>Новые записи или изменения существующих записей, не сохраняются в коллекции до вызова метода <b>Update</b> с его <paramref name="MakePermanent" /> параметра задано значение <b>True</b>.</para>
-          <para>Чтобы очистить кэш и перезагрузите значения из адресной книги, вызвать метод <b>обновления</b> с <paramref name="MakePermanent" /> параметра значение <b>False</b> и <paramref name="Refresh" /> параметра задано значение <b>True</b>.</para>
+        <param name="MakePermanent">Значение <b>true</b> указывает на то, что кэш свойств очищается и все изменения фиксируются в соответствующей адресной книге. Значение <b>false</b> указывает на то, что кэш свойств очищается, но не фиксируется в постоянном хранилище. Значение по умолчанию — <b>True</b>.</param>
+        <param name="Refresh">Значение <b>true</b> указывает на то, что кэш свойств перегружается из значений в базовой адресной книге. Значение <b>false</b> указывает на то, что кэш свойств не перегружается. Значение по умолчанию — <b>False</b>.</param>
+        <summary>Отправляет изменение <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объекта в систему обмена сообщениями.</summary>
+        <remarks><para>Новые записи или изменения, внесенные в существующие записи, не сохраняются в коллекции до <b>Update</b> тех пор, пока не будет вызван <paramref name="MakePermanent" /> метод Update, для которого параметру присвоено значение <b>true</b>.</para>
+          <para>Чтобы очистить кэш и повторно загрузить значения из адресной книги, вызовите метод <b>Update</b> с <paramref name="MakePermanent" /> параметром <b>false</b> , а для <paramref name="Refresh" /> параметра задано значение <b>true</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

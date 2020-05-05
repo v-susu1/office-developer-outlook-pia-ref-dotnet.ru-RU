@@ -12,8 +12,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Определяет период времени, для которого элемента Outlook отмечен как задачи.</summary>
-    <remarks><para>Это перечисление используется с помощью метода <b>выполнение MarkAsTask</b> для следующих элементов Outlook:</para>
+    <summary>Задает период времени, в течение которого элемент Outlook отмечается как задача.</summary>
+    <remarks><para>Это перечисление используется методом <b>MarkAsTask</b> для следующих элементов Outlook:</para>
       <list type="bullet">
         <item>
           <para>
@@ -41,53 +41,53 @@
           </para>
         </item>
       </list>
-      <para>В зависимости от значения, выбираемого указанные значения по умолчанию устанавливаются следующие свойства.</para>
+      <para>В зависимости от выбранного значения для следующих свойств задаются указанные значения по умолчанию.</para>
       <list type="table">
         <item>
           <description>Значение перечисления</description>
-          <description>Значения свойств</description>
+          <description>Значения свойства</description>
         </item>
         <item>
           <description>
-            <b>olMarkComplete</b>
+            <b>олмарккомплете</b>
           </description>
-          <description>
-            <b>TaskCompletedDate</b> задано значение текущей даты и времени (<b>теперь</b> в Visual Basic), если элемент был помечен как задачи. <b>TaskCompletedDate</b> задано значение пустой даты (#1/1/4501 #) Если элемент не был помечен как задачи или задачи уже помечен завершена.</description>
+          <description>Для 
+            <b>тасккомплетеддате</b> задается текущая дата и время (<b>теперь</b> в Visual Basic), если элемент помечен как задача. Для <b>тасккомплетеддате</b> задано пустое значение даты (#1/1/4501 #), если элемент не был помечен как задача, или если задача уже помечена как завершенная.</description>
         </item>
         <item>
           <description>
-            <b>olMarkNoDate</b>
+            <b>олмаркнодате</b>
           </description>
-          <description>
-            <b>IsMarkedAsTask</b> имеет значение <b>True</b>. <b>Tasksubject;</b> задано значение свойства <b>Тема</b> для элемента Outlook. <b>Дата начала задачи</b>, <b>taskduedate;</b>и <b>TaskCompletedDate</b> , присваивается <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#). Установка <b>todotaskordinal</b> для текущей датой и временем (<b>теперь</b> в Visual Basic).  </description>
+          <description>Для 
+            <b>исмаркедастаск</b> задано <b>значение true</b>. Для <b>тасксубжект</b> задается значение свойства <b>subject</b> для элемента Outlook. Для <b>таскстартдате</b>, <b>таскдуедате</b>и <b>тасккомплетеддате</b> задано значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#). Для <b>тодотаскординал</b> задается текущая дата и время (<b>теперь</b> в Visual Basic).  </description>
         </item>
         <item>
           <description>
-            <b>olMarkNextWeek</b>
+            <b>олмаркнекствик</b>
           </description>
-          <description>
-            <b>IsMarkedAsTask</b> имеет значение <b>True</b>. <b>Tasksubject;</b> задано значение свойства <b>Тема</b> для элемента Outlook. <b>Дата начала задачи</b> имеет значение первого рабочего дня следующей недели.   <b>Taskduedate;</b> устанавливается на последний рабочий день следующей недели. <b>TaskCompletedDate</b> устанавливается значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#). Установка <b>todotaskordinal</b> для текущей датой и временем (<b>теперь</b> в Visual Basic). </description>
+          <description>Для 
+            <b>исмаркедастаск</b> задано <b>значение true</b>. Для <b>тасксубжект</b> задается значение свойства <b>subject</b> для элемента Outlook. Для <b>таскстартдате</b> задается первый рабочий день следующей недели.   Для <b>таскдуедате</b> задан последний рабочий день следующей недели. Для <b>тасккомплетеддате</b> задано значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#). Для <b>тодотаскординал</b> задается текущая дата и время (<b>теперь</b> в Visual Basic). </description>
         </item>
         <item>
           <description>
-            <b>olMarkThisWeek</b>
+            <b>олмарксисвик</b>
           </description>
-          <description>
-            <b>IsMarkedAsTask</b> имеет значение <b>True</b>. <b>Tasksubject;</b> задано значение свойства <b>Тема</b> для элемента Outlook. <b>Дата начала задачи</b> имеет значение даты два рабочих дней до текущей даты. Если это значение превышает значение <b>taskduedate;</b> <b>Дата начала задачи</b> присваивается значение <b>taskduedate;</b>.   <b>Taskduedate;</b> устанавливается на последний рабочий день текущей недели. <b>TaskCompletedDate</b> устанавливается значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#). Установка <b>todotaskordinal</b> для текущей датой и временем (<b>теперь</b> в Visual Basic). </description>
+          <description>Для 
+            <b>исмаркедастаск</b> задано <b>значение true</b>. Для <b>тасксубжект</b> задается значение свойства <b>subject</b> для элемента Outlook. Для <b>таскстартдате</b> установлено значение, равное двум рабочим дням вперед текущей даты. Если это значение превысит значение <b>таскдуедате</b>, <b>таскстартдате</b> задается значением <b>таскдуедате</b>.   Для <b>таскдуедате</b> задается последний рабочий день текущей недели. Для <b>тасккомплетеддате</b> задано значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#). Для <b>тодотаскординал</b> задается текущая дата и время (<b>теперь</b> в Visual Basic). </description>
         </item>
         <item>
           <description>
-            <b>olMarkToday</b>
+            <b>олмарктодай</b>
           </description>
-          <description>
-            <b>IsMarkedAsTask</b> имеет значение <b>True</b>. <b>Tasksubject;</b> задано значение свойства <b>Тема</b> для элемента Outlook. <b>Дата начала задачи</b> <b>taskduedate;</b> значение текущей даты.  <b>TaskCompletedDate</b> устанавливается значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#). Установка <b>todotaskordinal</b> для текущей датой и временем (<b>теперь</b> в Visual Basic). </description>
+          <description>Для 
+            <b>исмаркедастаск</b> задано <b>значение true</b>. Для <b>тасксубжект</b> задается значение свойства <b>subject</b> для элемента Outlook. <b>Таскстартдате</b> и <b>таскдуедате</b> задаются на текущую дату.  Для <b>тасккомплетеддате</b> задано значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#). Для <b>тодотаскординал</b> задается текущая дата и время (<b>теперь</b> в Visual Basic). </description>
         </item>
         <item>
           <description>
-            <b>olMarkTomorrow</b>
+            <b>олмарктоморров</b>
           </description>
-          <description>
-            <b>IsMarkedAsTask</b> имеет значение <b>True</b>. <b>Tasksubject;</b> задано значение свойства <b>Тема</b> для элемента Outlook. <b>Дата начала задачи</b> и <b>taskduedate;</b> устанавливаются один день после текущей даты.  <b>TaskCompletedDate</b> устанавливается значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#). Установка <b>todotaskordinal</b> для текущей датой и временем (<b>теперь</b> в Visual Basic). </description>
+          <description>Для 
+            <b>исмаркедастаск</b> задано <b>значение true</b>. Для <b>тасксубжект</b> задается значение свойства <b>subject</b> для элемента Outlook. <b>Таскстартдате</b> и <b>таскдуедате</b> задаются на один день после текущей даты.  Для <b>тасккомплетеддате</b> задано значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#). Для <b>тодотаскординал</b> задается текущая дата и время (<b>теперь</b> в Visual Basic). </description>
         </item>
       </list>
       <para> </para></remarks>
@@ -109,7 +109,7 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>Пометка задачи как завершенные.</summary>
+        <summary>Пометить задачу как завершенную.</summary>
       </Docs>
     </Member>
     <Member MemberName="olMarkNextWeek">
@@ -128,7 +128,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>Пометка задачи из-за следующей недели.</summary>
+        <summary>Пометить задачу на следующую неделю.</summary>
       </Docs>
     </Member>
     <Member MemberName="olMarkNoDate">
@@ -147,7 +147,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Пометить задачу срок выполнения без даты.</summary>
+        <summary>Отметка задачи в срок без даты.</summary>
       </Docs>
     </Member>
     <Member MemberName="olMarkThisWeek">
@@ -166,7 +166,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Пометка задачи этой недели.</summary>
+        <summary>Пометить задачу, выданную за эту неделю.</summary>
       </Docs>
     </Member>
     <Member MemberName="olMarkToday">
@@ -185,7 +185,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Пометить задачу сегодня оплаты.</summary>
+        <summary>Помечайте срок выполнения задачи сегодня.</summary>
       </Docs>
     </Member>
     <Member MemberName="olMarkTomorrow">
@@ -204,7 +204,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Пометить задачу срок выполнения завтра.</summary>
+        <summary>Помечайте срок выполнения задачи завтра.</summary>
       </Docs>
     </Member>
   </Members>

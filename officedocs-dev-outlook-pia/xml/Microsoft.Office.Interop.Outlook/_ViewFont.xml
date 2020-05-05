@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -76,7 +76,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> в C#), которое указывает, является ли шрифт полужирным шрифтом в <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>логического</b> значения (<b>bool</b> в C#), которое указывает, является ли шрифт полужирным <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> для объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -104,7 +104,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -135,7 +135,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlColor" /> константа, которая указывает цвет шрифта в <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlColor" /> константу, которая указывает цвет шрифта в <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> объекте. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -166,9 +166,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlCategoryColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlCategoryColor" /> константу как цвет шрифта представления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlCategoryColor" /> константу в качестве цвета шрифта для представления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Можно использовать <see cref="P:Microsoft.Office.Interop.Outlook._ViewFont.Color" /> свойство или свойство <b>ExtendedColor</b> , чтобы задать цвет текста в представлении. Для представления календаря в частности, необходимо использовать свойство <b>ExtendedColor</b> Установка цвет шрифта.</para>
+        <remarks><para>Вы можете использовать <see cref="P:Microsoft.Office.Interop.Outlook._ViewFont.Color" /> свойство или свойство <b>екстендедколор</b> , чтобы задать цвет шрифта в представлении. Для представления календаря в частности, необходимо использовать свойство <b>екстендедколор</b> , чтобы задать цвет шрифта.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -198,7 +198,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, указывающее, если шрифт является курсивом в <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> в C#), которое указывает, является ли шрифт курсивным для <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -229,7 +229,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>String</b> (<b>строка</b> в C#), который представляет отображаемое имя для объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее отображаемое имя объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -257,7 +257,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -285,9 +285,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -323,10 +323,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>Integer</b> (<b>int</b> в C#), представляющее размер (в пунктах) шрифта, в представлении. Только для чтения.</summary>
+        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), представляющее размер шрифта в представлении (в пунктах). Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство может иметь значение в диапазоне от 1 до 127. Если это свойство задано значение меньше 1, свойство имеет значение 1. Если значение этого свойства больше 127, 127 значение свойства.</para>
-          <para>Значение по умолчанию для данного свойства, определяется в операционной системе.</para>
+        <remarks><para>Этому свойству можно присвоить значение от 1 до 127. Если для этого свойства задано значение меньше 1, свойству присвоено значение 1. Если для этого свойства задано значение больше 127, свойству присваивается значение 127.</para>
+          <para>Значение этого свойства по умолчанию определяется операционной системой.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -356,7 +356,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, указывающее, если шрифт — это два прохода через с горизонтальной линии в <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>логического</b> значения (<b>bool</b> в C#), которое указывает, является ли шрифт зачеркнутым с горизонтальной чертой в <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> объекте. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -387,7 +387,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, указывающее, если шрифт подчеркнутым в <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>логического</b> значения (<b>bool</b> в C#), которое указывает, является ли шрифт подчеркиванием в <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> объекте. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -76,18 +76,18 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlCalendarDetail</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlCalendarDetail" /> значение, указывающее уровень детализации для элементов календаря, включенных в файл iCalendar (ICS), созданный <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.ForwardAsICal(Microsoft.Office.Interop.Outlook.OlCalendarMailFormat)" /> или <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.SaveAsICal(System.String)" /> методы <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> объекта. Для чтения и записи.</summary>
-        <value><b>OlCalendarDetail</b> значение, указывающее уровень детализации для элементов календаря.</value>
-        <remarks><para>Значение этого свойства определяет допустимые значения для следующих свойств объекта <b>CalendarSharing</b> .</para>
+        <summary><see cref="T:Microsoft.Office.Interop.Outlook.OlCalendarDetail" /> Возвращает или задает значение, указывающее уровень детализации для элементов календаря, включенных в файл iCalendar (ICS) <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.ForwardAsICal(Microsoft.Office.Interop.Outlook.OlCalendarMailFormat)" /> , созданный методами или <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.SaveAsICal(System.String)" /> методами <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> объекта. Для чтения и записи.</summary>
+        <value>Значение <b>OlCalendarDetail</b> , которое указывает уровень детализации для элементов календаря.</value>
+        <remarks><para>Значение этого свойства определяет допустимые значения для следующих свойств объекта <b>CalendarSharing</b> :</para>
           <list type="bullet">
             <item>
-              <para>Если значение CalendarDetail olFreeBusyOnly или olFreeBusyAndSubject IncludeAttachments должен иметь значение False.</para>
+              <para>Инклудеаттачментс должен иметь значение false, если для Календардетаил задано значение Олфрибусйонли или Олфрибусяндсубжект.</para>
             </item>
             <item>
-              <para>Если выбрано значение CalendarDetail olFreeBusyOnly IncludePrivateDetails должен иметь значение False.</para>
+              <para>Инклудеприватедетаилс должен иметь значение false, если для Календардетаил задано значение Олфрибусйонли.</para>
             </item>
             <item>
-              <para>Если значение CalendarDetail olFreeBusyAndSubject или olFullDetails RestrictToWorkingHours должен иметь значение False.</para>
+              <para>Рестрикттоворкингхаурс должен иметь значение false, если для Календардетаил задано значение Олфрибусяндсубжект или Олфуллдетаилс.</para>
             </item>
           </list>
           <para> </para></remarks>
@@ -116,7 +116,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,9 +147,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>даты и времени</b> , которое указывает дату окончания включительно диапазона элементов календаря для совместного использования <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>даты и времени</b> , которое указывает инклюзивную дату окончания диапазона элементов календаря, которые будут общими для <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство игнорируется, если <see cref="P:Microsoft.Office.Interop.Outlook._CalendarSharing.IncludeWholeCalendar" /> объекта <b>CalendarSharing</b> задано значение <b>true</b>.</para>
+        <remarks><para>Это свойство игнорируется, если <see cref="P:Microsoft.Office.Interop.Outlook._CalendarSharing.IncludeWholeCalendar" /> для свойства объекта <b>CalendarSharing</b> задано значение <b>true</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -176,7 +176,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.MAPIFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> содержащий элементы календаря для совместного использования <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> объекта. Только для чтения.</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> Возвращает элементы календаря, которые будут общими для <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -204,16 +204,16 @@
         <Parameter Name="MailFormat" Type="Microsoft.Office.Interop.Outlook.OlCalendarMailFormat" />
       </Parameters>
       <Docs>
-        <param name="MailFormat">Определяет формат данных календаря в тексте <b>сообщения</b> , созданные с помощью этого метода.</param>
-        <summary>Передает сведения от родительского сайта в календаре <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> из <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> объект в качестве полезных данных <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />.</summary>
-        <returns>Объект <b>MailItem</b> , представляющий новый элемент почты, к которому подключен сведения из календаря.</returns>
-        <remarks><para>Метод <b>ForwardAsICal</b> содержит единственный метод, с помощью которого можно использовать общий доступ к полезной нагрузки для совместного доступа к календарю с другими пользователями. Метод:</para>
+        <param name="MailFormat">Определяет формат данных календаря в теле объекта <b>MailItem</b> , созданного данным методом.</param>
+        <summary>Пересылает сведения календаря из родительского <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> объекта объекта в качестве полезных данных. <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /></summary>
+        <returns>Объект <b>MailItem</b> , представляющий новый элемент почты, к которому присоединены сведения календаря.</returns>
+        <remarks><para>Метод <b>ForwardAsICal</b> предоставляет единый метод, с помощью которого можно использовать совместное использование полезных данных для предоставления общего доступа к календарю другим пользователям. Метод:</para>
           <list type="bullet">
             <item>
-              <para>Создает объект MailItem и предоставляет представление сведений календаря в теле почтового элемента.</para>
+              <para>Создает объект MailItem и предоставляет представление сведений о календаре в теле почтового элемента.</para>
             </item>
             <item>
-              <para>Создает файл iCalendar (ICS), содержащий сведения из календаря и подключает файл MailItem.</para>
+              <para>Создает файл iCalendar (ICS), содержащий сведения о календаре, и присоединяет файл к MailItem.</para>
             </item>
           </list>
           <para> </para></remarks>
@@ -245,11 +245,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, указывающее, включены ли вложения для элементов календаря в файл iCalendar (ICS), созданный <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.ForwardAsICal(Microsoft.Office.Interop.Outlook.OlCalendarMailFormat)" /> или <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.SaveAsICal(System.String)" /> методы <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> in C#), которое указывает, следует ли включать вложения для элементов календаря в файл iCalendar (ICS), созданный методами <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.ForwardAsICal(Microsoft.Office.Interop.Outlook.OlCalendarMailFormat)" /> или <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.SaveAsICal(System.String)" /> методами <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>Значение true</b> указывает, что вложения для элементов календаря должны быть включены.</para>
-          <para>Это свойство должно быть присвоено <b>значение False,</b> Если <see cref="P:Microsoft.Office.Interop.Outlook._CalendarSharing.CalendarDetail" /> объекта <b>CalendarSharing</b> задано значение <b>olFreeBusyOnly</b> или <b>olFreeBusyAndSubject</b>.</para>
+            <b>Значение true</b> указывает, что необходимо включить вложения для элементов календаря.</para>
+          <para>Этому свойству необходимо присвоить значение <b>false</b> , если <see cref="P:Microsoft.Office.Interop.Outlook._CalendarSharing.CalendarDetail" /> свойству объекта <b>CalendarSharing</b> присвоено значение <b>олфрибусйонли</b> или <b>олфрибусяндсубжект</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -279,11 +279,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, указывающее, включены ли личные сведения для элементов календаря в файл iCalendar (ICS), созданный <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.ForwardAsICal(Microsoft.Office.Interop.Outlook.OlCalendarMailFormat)" /> или <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.SaveAsICal(System.String)" /> методы <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> in C#), которое указывает, следует ли включать в файл iCalendar (ICS) файл, созданный методами <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.ForwardAsICal(Microsoft.Office.Interop.Outlook.OlCalendarMailFormat)" /> или <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.SaveAsICal(System.String)" /> методом <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> , частные сведения для элементов календаря. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>Значение true</b> указывает, что закрытый сведений для элементов календаря должны быть включены.</para>
-          <para>Это свойство должно быть присвоено <b>значение False,</b> Если <see cref="P:Microsoft.Office.Interop.Outlook._CalendarSharing.CalendarDetail" /> свойства объекта <b>CalendarSharing</b> задано значение <b>olFreeBusyOnly</b>.</para>
+            <b>Значение true</b> указывает, что необходимо включить частные сведения для элементов календаря.</para>
+          <para>Этому свойству необходимо присвоить значение <b>false</b> , если <see cref="P:Microsoft.Office.Interop.Outlook._CalendarSharing.CalendarDetail" /> свойству объекта <b>CalendarSharing</b> присвоено значение <b>олфрибусйонли</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -313,12 +313,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, указывающее, включены ли все элементы календаря в папке в файл iCalendar (ICS), созданный <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.ForwardAsICal(Microsoft.Office.Interop.Outlook.OlCalendarMailFormat)" /> или <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.SaveAsICal(System.String)" /> методы <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> in C#), которое указывает, следует ли включать все элементы календаря в папку (ICS), созданную методом <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.ForwardAsICal(Microsoft.Office.Interop.Outlook.OlCalendarMailFormat)" /> или <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.SaveAsICal(System.String)" /> методом <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>Значение true</b> указывает, что все элементы календаря в папке должны быть включены.</para>
-          <para>Если этому свойству присвоено <b>значение True</b>, <see cref="P:Microsoft.Office.Interop.Outlook._CalendarSharing.StartDate" /> и <see cref="P:Microsoft.Office.Interop.Outlook._CalendarSharing.EndDate" /> свойства объекта <b>CalendarSharing</b> игнорируются и будут включены все элементы календаря в папке.</para>
-          <para>Если этому свойству присвоено <b>значение False</b>, <b>StartDate</b> и <b>EndDate</b> определяют диапазон элементов календаря, которые требуется включить.</para>
+            <b>Значение true</b> указывает, что необходимо включить все элементы календаря в папке.</para>
+          <para>Если для этого свойства задано <b>значение true</b>, <see cref="P:Microsoft.Office.Interop.Outlook._CalendarSharing.StartDate" /> то <see cref="P:Microsoft.Office.Interop.Outlook._CalendarSharing.EndDate" /> свойства и объекта <b>CalendarSharing</b> игнорируются и включаются все элементы календаря в папке.</para>
+          <para>Если для этого свойства задано <b>значение false</b>, свойства <b>StartDate</b> и <b>EndDate</b> определяют диапазон включаемых элементов календаря.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -345,7 +345,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -376,11 +376,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или устанавливает <b>логическое</b> (<b>bool</b> в C#) значение, указывающее, включены ли элементы календаря, которые не входят в рабочее время в файл iCalendar (ICS), созданный <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.ForwardAsICal(Microsoft.Office.Interop.Outlook.OlCalendarMailFormat)" /> или <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.SaveAsICal(System.String)" /> методы <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>логического</b> значения<b>(bool</b> в C#), которое указывает, следует ли включать элементы календаря, которые не находятся в рабочее время, в файл iCalendar (ICS), созданный <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.ForwardAsICal(Microsoft.Office.Interop.Outlook.OlCalendarMailFormat)" /> методами <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.SaveAsICal(System.String)" /> или методами <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>Значение true</b> указывает, что элементы календаря, которые не входят в рабочее время должны быть включены.</para>
-          <para>Это свойство должно быть присвоено <b>значение False,</b> Если <see cref="P:Microsoft.Office.Interop.Outlook._CalendarSharing.CalendarDetail" /> объекта <b>CalendarSharing</b> задано значение <b>olFreeBusyOnly</b> или <b>olFullDetails</b>.</para>
+            <b>Значение true</b> указывает, что необходимо включить элементы календаря, которые не находятся в рабочем времени.</para>
+          <para>Этому свойству необходимо присвоить значение <b>false</b> , если <see cref="P:Microsoft.Office.Interop.Outlook._CalendarSharing.CalendarDetail" /> свойству объекта <b>CalendarSharing</b> присвоено значение <b>олфрибусйонли</b> или <b>олфуллдетаилс</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -408,8 +408,8 @@
       </Parameters>
       <Docs>
         <param name="Path">Путь и имя файла iCalendar.</param>
-        <summary>Экспорт данных из родительского сайта календаря <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> из <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> объект в качестве файла iCalendar календарей (ICS).</summary>
-        <remarks><para>Уровень детализации, входящий в файл iCalendar, определяется сочетание значений в следующие свойства <b>CalendarSharing</b> :</para>
+        <summary>Экспортирует сведения календаря из родительского <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> объекта объекта в виде файла календаря iCalendar (ICS).</summary>
+        <remarks><para>Уровень детализации, указанный в файле iCalendar, определяется сочетанием значений в следующих свойствах <b>CalendarSharing</b> :</para>
           <list type="bullet">
             <item>
               <para>CalendarDetail</para>
@@ -424,7 +424,7 @@
               <para>RestrictToWorkingHours</para>
             </item>
           </list>
-          <para>Можно задать <see cref="P:Microsoft.Office.Interop.Outlook._CalendarSharing.IncludeWholeCalendar" /> можно задать значение <b>True</b> для экспорта всех элементов, содержащихся в папке, или <see cref="P:Microsoft.Office.Interop.Outlook._CalendarSharing.StartDate" /> и <see cref="P:Microsoft.Office.Interop.Outlook._CalendarSharing.EndDate" /> свойства для ограничения экспортируемые элементы в дату в диапазоне между указанной датой начала и Дата окончания соответственно.</para>
+          <para>Можно задать для <see cref="P:Microsoft.Office.Interop.Outlook._CalendarSharing.IncludeWholeCalendar" /> свойства <b>значение true</b> , чтобы экспортировать все элементы, находящихся в папке, или задать свойства <see cref="P:Microsoft.Office.Interop.Outlook._CalendarSharing.StartDate" /> и <see cref="P:Microsoft.Office.Interop.Outlook._CalendarSharing.EndDate" /> , чтобы ограничить экспортируемые элементы диапазоном дат между заданными датами начала и окончания соответственно.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -451,9 +451,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -489,9 +489,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>даты и времени</b> , которое указывает дату начала включительно диапазона элементов календаря для совместного использования <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>даты и времени</b> , которое указывает инклюзивную дату начала диапазона элементов календаря, которые будут общими для <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство игнорируется, если <see cref="P:Microsoft.Office.Interop.Outlook._CalendarSharing.IncludeWholeCalendar" /> объекта <b>CalendarSharing</b> задано значение <b>True</b>.</para>
+        <remarks><para>Это свойство игнорируется, если <see cref="P:Microsoft.Office.Interop.Outlook._CalendarSharing.IncludeWholeCalendar" /> для свойства объекта <b>CalendarSharing</b> задано значение <b>true</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -13,7 +13,7 @@
   </Base>
   <Docs>
     <summary>Указывает порядок сортировки.</summary>
-    <remarks><para>Используется в качестве дополнительный параметр для <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.Sort(System.Object,System.Object)" /> метод, чтобы указать порядок, в котором адрес записи должны быть отсортированы по <paramref name="Property" /> параметр.</para>
+    <remarks><para>Используется в качестве необязательного параметра <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.Sort(System.Object,System.Object)" /> метода для указания порядка, в соответствии с которым записи адресов должны сортироваться по <paramref name="Property" /> параметру.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>По возрастанию</summary>
+        <summary>Порядок по возрастанию</summary>
       </Docs>
     </Member>
     <Member MemberName="olDescending">
@@ -52,7 +52,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>По убыванию</summary>
+        <summary>Убывающий порядок</summary>
       </Docs>
     </Member>
     <Member MemberName="olSortNone">
@@ -71,7 +71,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Отсутствует</summary>
+        <summary>Не отсортировано</summary>
       </Docs>
     </Member>
   </Members>

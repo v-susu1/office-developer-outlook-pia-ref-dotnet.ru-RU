@@ -12,8 +12,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Определяет стиль ответа.</summary>
-    <remarks><para>Используемые <see cref="P:Microsoft.Office.Interop.Outlook.Action.ReplyStyle" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.Action" /> для задания стиля ответ, который будет использоваться при выполнении <b>действия</b> .</para>
+    <summary>Задает стиль ответа.</summary>
+    <remarks><para>Используется <see cref="P:Microsoft.Office.Interop.Outlook.Action.ReplyStyle" /> свойством, <see cref="T:Microsoft.Office.Interop.Outlook.Action" /> чтобы указать стиль ответа, который будет использоваться при выполнении <b>действия</b> .</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Ответ будет включать исходного элемента, внедренные в нем.</summary>
+        <summary>В ответ будет включен исходный элемент, внедренный в него.</summary>
       </Docs>
     </Member>
     <Member MemberName="olIncludeOriginalText">
@@ -52,7 +52,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Ответ будет включать текст исходного элемента.</summary>
+        <summary>Ответ будет содержать текст исходного элемента.</summary>
       </Docs>
     </Member>
     <Member MemberName="olIndentOriginalText">
@@ -71,7 +71,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>Ответ будет включать отступ текста исходного элемента.</summary>
+        <summary>Ответ будет включать текст с отступом исходного элемента.</summary>
       </Docs>
     </Member>
     <Member MemberName="olLinkOriginalItem">
@@ -90,7 +90,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Ответ будет добавлена ссылка на статью исходного элемента.</summary>
+        <summary>Ответ будет содержать ссылку на исходный элемент.</summary>
       </Docs>
     </Member>
     <Member MemberName="olOmitOriginalText">
@@ -109,7 +109,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Ответ не будет включать все ссылки на объект или текст.</summary>
+        <summary>В ответ не будут включены ссылки на исходный элемент или его текст.</summary>
       </Docs>
     </Member>
     <Member MemberName="olReplyTickOriginalText">
@@ -128,7 +128,7 @@
       </ReturnValue>
       <MemberValue>1000</MemberValue>
       <Docs>
-        <summary>Ответ будет включать исходного текста с каждой строки, такие как предшествует символ "&gt;«.</summary>
+        <summary>В ответе будет включен исходный текст с каждой строкой, предшествующей символу, например&gt;"".</summary>
       </Docs>
     </Member>
     <Member MemberName="olUserPreference">
@@ -147,7 +147,7 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>Стиль ответа будет установить в зависимости от настройки пользователя.</summary>
+        <summary>Стиль ответа задается в зависимости от предпочтения пользователя.</summary>
       </Docs>
     </Member>
   </Members>

@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.AddressRuleCondition" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.AddressRuleCondition" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,10 +48,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает массив элементов <b>String</b> (<b>строка</b> в C#), чтобы оценить условие правила адрес. Для чтения и записи.</summary>
+        <summary>Возвращает или задает массив элементов <b>String</b> (<b>String</b> в C#) для оценки условия правила для адреса. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Можно назначить массив с одним элементом для оценки на один адрес или массив нескольких строк для оценки несколько адресов. Несколько строк адресов, назначенных в массиве вычисляются с помощью логической операции или.</para>
-          <para>Если строка, заданная <b>адрес</b> содержится в поле адрес отправителя или получателя, условие принимает значение <b>True</b>.</para>
+        <remarks><para>Можно назначить массив одним элементом для оценки одного адреса или массива нескольких строк для оценки нескольких адресов. Несколько строк адреса, назначенных в массиве, оцениваются с помощью логической операции OR.</para>
+          <para>Если строка, указанная в параметре <b>Address</b> , содержит адрес получателя или отправителя, условие принимает <b>значение true</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -78,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -106,7 +106,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -134,10 +134,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlRuleConditionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает константу из <see cref="T:Microsoft.Office.Interop.Outlook.OlRuleConditionType" /> перечисление, указывающее тип условия правила. Только для чтения.</summary>
+        <summary>Возвращает константу из <see cref="T:Microsoft.Office.Interop.Outlook.OlRuleConditionType" /> перечисления, указывающую тип условия правила. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para><see cref="T:Microsoft.Office.Interop.Outlook.AddressRuleCondition" /> Используется объект правила типы <b>olRuleSend</b> и <b>olRuleReceive</b>. Если создается правило <b>olRuleSend</b> правило, — тип связанного объекта <b>AddressRuleCondition</b> будет <b>olConditionSenderAddress</b>. Если создается правило <b>olRuleReceive</b> правило, — тип связанного объекта <b>AddressRuleCondition</b> будет <b>olConditionRecipientAddress</b>. </para>
-          <para>Это тем не менее не означает, что правило всегда имеет определенный условие для адреса отправителя или получателя. Независимо от того, является ли существует условие правила заданные или включено свойство <b>AddressRuleCondition.ConditionType</b> всегда инициализируется, после создания связанного правила. Дополнительные сведения по условиям правила можно <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Указание условия правила</a></para>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Outlook.AddressRuleCondition" /> Объект используется правилами типов <b>олрулесенд</b> и <b>олрулерецеиве</b>. Если правило создается как правило <b>олрулесенд</b> , то тип связанного объекта <b>AddressRuleCondition</b> будет <b>олкондитионсендераддресс</b>. Если правило создается как правило <b>олрулерецеиве</b> , то тип связанного объекта <b>AddressRuleCondition</b> будет <b>олкондитионреЦипиентаддресс</b>. </para>
+          <para>Однако это не означает, что правило всегда имеет определенное условие правила для адресов отправителей или получателей. Независимо от того, существует ли такое условие для правила или включено, свойство <b>AddressRuleCondition. кондитионтипе</b> всегда инициализируется после создания связанного правила. Дополнительные сведения об условиях правил приведены в статье <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Определение условий правил</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -167,9 +167,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое</b> (<b>bool</b> в C#), который определяет, включена ли условие правила. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое определяет, включено ли условие правила. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>После включения условие для правила необходимо сохранить правило с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> , чтобы условие правила и его состояние будут сохранены и отобразятся текущего сеанса.  Условие правила доступна только после его успешно сохранены.</para>
+        <remarks><para>После включения условия для правила необходимо также сохранить правило, указав <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> , что условие правила и его включенное состояние не будут сохраняться за текущий сеанс.  Условие правила включается только после успешного сохранения.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -196,9 +196,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Родительский объект является <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> объекта.</para>
+        <remarks><para>Родительский объект — это <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> объект.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -225,9 +225,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>

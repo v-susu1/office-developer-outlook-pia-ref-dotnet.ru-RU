@@ -12,8 +12,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Задает способ отображения папки.</summary>
-    <remarks><para>Используется в качестве дополнительный параметр для <see cref="M:Microsoft.Office.Interop.Outlook._Explorers.Add(System.Object,Microsoft.Office.Interop.Outlook.OlFolderDisplayMode)" /> метод.</para>
+    <summary>Задает режим отображения папки.</summary>
+    <remarks><para>Используется в качестве необязательного параметра <see cref="M:Microsoft.Office.Interop.Outlook._Explorers.Add(System.Object,Microsoft.Office.Interop.Outlook.OlFolderDisplayMode)" /> для метода.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -52,7 +52,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Содержимое папки отображаются, но показано не области переходов.</summary>
+        <summary>Содержимое папки отображается, но область переходов не отображается.</summary>
       </Docs>
     </Member>
     <Member MemberName="olFolderDisplayNormal">
@@ -71,7 +71,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Папка отображается с помощью панели переходов на странице слева и папки контент в правом.</summary>
+        <summary>Отображается с областью навигации слева и ее содержимым справа.</summary>
       </Docs>
     </Member>
   </Members>

@@ -40,8 +40,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ApplicationEvents_11_AdvancedSearchCompleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> завершения метода.</summary>
-        <remarks><para>Событие <b>AdvancedSearchComplete</b> используется для возврата объекта, который был создан с помощью метода <b>AdvancedSearch</b> . Это событие вызывается только при выполнении метода <b>AdvancedSearch</b> программными средствами.</para>
+        <summary>Возникает при завершении <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> метода.</summary>
+        <remarks><para>Событие <b>адванцедсеарчкомплете</b> используется для возврата объекта, созданного методом <b>AdvancedSearch</b> . Это событие срабатывает, только если метод <b>AdvancedSearch</b> выполняется программно.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -60,8 +60,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ApplicationEvents_11_AdvancedSearchStoppedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда указанный <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> объекта <see cref="M:Microsoft.Office.Interop.Outlook.Search.Stop" /> метод был выполнен.</summary>
-        <remarks><para>После этого события, объект <b>поиска</b> <see cref="T:Microsoft.Office.Interop.Outlook.Results" /> коллекции больше не будет обновляться. Это событие может быть запущено только программными средствами.</para>
+        <summary>Возникает при выполнении <see cref="M:Microsoft.Office.Interop.Outlook.Search.Stop" /> метода <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> указанного объекта.</summary>
+        <remarks><para>После запуска этого события <see cref="T:Microsoft.Office.Interop.Outlook.Results" /> коллекция объекта <b>поиска</b> больше не будет обновляться. Это событие можно активировать только программно.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -99,8 +99,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ApplicationEvents_11_BeforeFolderSharingDialogEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает перед отображением диалоговом окне общий доступ для выбранного <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объекта.</summary>
-        <remarks><para>Это событие предоставляет надстройки уровня приложения с возможностью замены общего доступа пользовательского интерфейса, предоставленные приложением Outlook с помощью настраиваемого пользовательского интерфейса.  Это событие не возникает, если программным способом создается и отображается сообщение общего доступа.</para>
+        <summary>Возникает перед отображением диалогового окна совместного использования для <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> выбранного объекта.</summary>
+        <remarks><para>Это событие предоставляет надстройку с возможностью замены пользовательского интерфейса общего доступа, предоставленного Outlook, с настраиваемым пользовательским интерфейсом.  Это событие не происходит, если сообщение о совместном доступе создается и отображается программным способом.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -176,22 +176,22 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ApplicationEvents_11_ItemLoadEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда элемент Outlook загружается в память.</summary>
-        <remarks><para>Это событие происходит, когда элемент Outlook начинает загрузку в память. Данные для элемента еще не доступен, отличный от значения для свойств <b>класса</b> и <b>MessageClass</b> элемента Outlook, возникает ошибка при вызове любого свойства, отличный от <b>класса</b> или <b>MessageClass</b> для элемента Outlook возвращаются в <paramref name="Item" />. Аналогично, возникает ошибка при попытке вызова любого метода из элемента Outlook или при вызове <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetObjectReference(System.Object,Microsoft.Office.Interop.Outlook.OlReferenceType)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> на элемент Outlook, возвращаемых в объект <paramref name="Item" />.</para>
-          <para>Событие <b>ItemLoad</b> обычно должны быть реализована как означает, что для подключения обработчиков событий на уровне элементов, таких как <b>BeforeRead</b>, <b>Открытие</b>, <b>Отправка</b>и <b>запись</b>.</para>
-          <para>Это событие не возникает при выполнении следующих условий:</para>
+        <summary>Возникает при загрузке элемента Outlook в память.</summary>
+        <remarks><para>Это событие происходит, когда элемент Outlook начинает загрузку в память. Данные для элемента пока недоступны, кроме значений свойств <b>Class</b> и <b>MessageClass</b> элемента Outlook, поэтому ошибка возникает при вызове любого свойства, кроме <b>Class</b> или <b>MessageClass</b> , для элемента Outlook, возвращенного в <paramref name="Item" />. Аналогично, если вы попытаетесь вызвать любой метод из элемента Outlook или вызывается <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetObjectReference(System.Object,Microsoft.Office.Interop.Outlook.OlReferenceType)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объекта в элементе Outlook, возвращенном в. <paramref name="Item" /></para>
+          <para>Событие <b>итемлоад</b> обычно следует реализовать как средство подключения обработчиков событий уровня элемента, таких как <b>BeforeRead</b>, <b>Open</b>, <b>Send</b>и <b>Write</b>.</para>
+          <para>Это событие не возникает, если выполняются следующие условия:</para>
           <list type="bullet">
             <item>
               <para>Элемент Outlook синхронизируется с папкой.</para>
             </item>
             <item>
-              <para>Правила на сервере запускается для элемента Outlook.</para>
+              <para>Для элемента Outlook запускается правило на стороне сервера.</para>
             </item>
             <item>
               <para>Оповещение запускается для элемента Outlook.</para>
             </item>
             <item>
-              <para>Оповещение на рабочем столе отображается для элемента Outlook.</para>
+              <para>Отображается оповещение о рабочем столе для элемента Outlook.</para>
             </item>
           </list>
           <para> </para></remarks>
@@ -212,7 +212,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ApplicationEvents_11_ItemSendEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит при отправке элемента Outlook либо пользователем с помощью <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> (перед закрытием, но при нажатии кнопки Отправить) или когда <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.Send" /> элемент метод для Outlook, например <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />, используемые в программе.</summary>
+        <summary>Возникает при отправке элемента Outlook пользователем через <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> (перед закрытием инспектора, но после нажатия кнопки Отправить) или при использовании <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.Send" /> метода для элемента Outlook (например <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />,) в программе.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,7 +231,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ApplicationEvents_11_MAPILogonCompleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит после входа пользователя в систему.</summary>
+        <summary>Возникает после входа пользователя в систему.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,9 +250,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ApplicationEvents_11_NewMailEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает при получении нового сообщения электронной почты в папке "Входящие".</summary>
-        <remarks><para>Событие <b>NewMail</b> вызывается при получении нового сообщения в папке "Входящие" и перед клиента возникает обработки правила. Если вы хотите обрабатывать элементы, поступающие в папке "Входящие", рекомендуется использовать <see cref="E:Microsoft.Office.Interop.Outlook.ItemsEvents_Event.ItemAdd" /> событий на коллекцию элементов в папке "Входящие". Событие <b>ItemAdd</b> передает ссылку на элемент, который добавляется в папку.</para>
-          <para>Событие <b>NewMail</b> не запускается, когда пользователь работает в автономном режиме.</para>
+        <summary>Возникает при получении одного или нескольких новых сообщений электронной почты в папке "Входящие".</summary>
+        <remarks><para>Событие <b>NewMail</b> запускается при получении новых сообщений в папке "Входящие" и при обработке правила клиента. Если вы хотите обработать элементы, поступающие в папку "Входящие", <see cref="E:Microsoft.Office.Interop.Outlook.ItemsEvents_Event.ItemAdd" /> рассмотрите возможность использования события в коллекции элементов в папке "Входящие". Событие <b>итемадд</b> передает ссылку на каждый элемент, который добавляется в папку.</para>
+          <para>Событие <b>NewMail</b> не срабатывает, если пользователь находится в автономном режиме.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -271,12 +271,12 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ApplicationEvents_11_NewMailExEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда поступает новый элемент в папке "Входящие".</summary>
-        <remarks><para>Это событие вызывается, когда для каждого элемента, полученных, который обрабатывается в Outlook. Элемент может иметь одно из нескольких различных типов элементов, например, <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />, <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />, или <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />. <paramref name="EntryIDsCollection" /> Строка содержит идентификатор записи, соответствующий этому элементу. Обратите внимание, что это поведение изменилось из более ранних версий события при <paramref name="EntryIDCollection" /> содержится список разделенных запятой идентификаторы всех элементов, полученных в папке "Входящие" с момента последнего выполнения события было запущено.</para>
-          <para>Это событие вызывается для учетных записей электронной почты, которые обеспечивают уведомления для сообщений, полученных, такие как учетные записи POP3 и Microsoft Exchange Server.</para>
-          <para>Событие <b>NewMailEx</b> вызывается при получении нового сообщения в папке "Входящие", прежде чем правила клиента обрабатывается. Можно использовать идентификатор записи, возвращаемых в <paramref name="EntryIDCollection" /> массива для вызова <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetItemFromID(System.String,System.Object)" /> метод и процесс элемента. Используйте этот метод с осторожностью для сведения к минимуму влияние на производительность Outlook. Тем не менее, в зависимости от программы установки на стороне клиента компьютера, после прибытия нового сообщения в папке "Входящие" обрабатывает как фильтрации нежелательной почты и правил клиента, переместите нового сообщения из папки «Входящие» в другую папку может возникнуть асинхронно. Не следует предполагать, что после эти события возникают, это всегда будет один элемент увеличение числа элементов в папке "Входящие".</para>
-          <para>Для пользователей с учетной записью Exchange Server (не - режима кэширования данных Exchange или режима кэширования данных Exchange) событие вызывается только для сообщений, приходящих на сервере после запуска Outlook. События не возникают для сообщений, которые синхронизируются в режиме кэширования Exchange сразу после запуска Outlook или для сообщений, которые уже на сервере при запуске Outlook в не - режима кэширования данных Exchange.</para>
-          <para>Для пользователей с помощью режима кэширования данных Exchange, вызывается событие в всех параметрах предоставляются, что запущен Outlook при получении сообщения: загружать сообщения целиком, загружать заголовки и загружать заголовки, а затем целиком. </para>
+        <summary>Возникает при получении нового элемента в папке "Входящие".</summary>
+        <remarks><para>Это событие запускается один раз для каждого полученного элемента, обрабатываемого приложением Outlook. Элемент может иметь один из нескольких различных типов элементов, например <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />,, или. <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> <paramref name="EntryIDsCollection" /> Строка содержит идентификатор записи, соответствующий этому элементу. Обратите внимание, что это поведение изменилось по сравнению с более <paramref name="EntryIDCollection" /> ранними версиями события, когда содержит список идентификаторов записей, разделенных запятыми, из всех элементов, полученных в папке "Входящие" со времени последнего запуска события.</para>
+          <para>Это событие вызывается для учетных записей электронной почты, которые предоставляют уведомления для полученных сообщений, таких как Microsoft Exchange Server и POP3.</para>
+          <para>Событие <b>невмаилекс</b> запускается, когда новое сообщение поступает в папку "Входящие" и при обработке правила клиента. Вы можете использовать идентификатор записи, возвращенный в <paramref name="EntryIDCollection" /> массиве, для <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetItemFromID(System.String,System.Object)" /> вызова метода и обработки элемента. Используйте этот метод с осторожностью, чтобы свести к минимуму влияние на производительность Outlook. Однако в зависимости от установки на клиентском компьютере, когда сообщение поступает в папку "Входящие", такие процессы как фильтрация нежелательной почты и правила клиента, которые перемещают новое сообщение из папки "Входящие" в другую папку, могут выполняться асинхронно. Не следует предполагать, что после запуска этих событий всегда будет увеличиваться количество элементов в папке "Входящие" с одним элементом.</para>
+          <para>Для пользователей с учетной записью сервера Exchange (режим без кэширования Exchange или режим кэширования данных Exchange) событие запускается только для сообщений, поступающих на сервер после запуска Outlook. Событие не срабатывает для сообщений, которые синхронизируются в режиме кэширования Exchange сразу после запуска Outlook, или для сообщений, уже находящегося на сервере при запуске Outlook в режиме без кэширования Exchange.</para>
+          <para>Для пользователей, использующих режим кэширования Exchange, событие активируется во всех параметрах, выполняемых Outlook при получении сообщения: скачивать элементы целиком, загружать заголовки и загружать заголовки, а затем все элементы. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -295,8 +295,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ApplicationEvents_11_OptionsPagesAddEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает всякий раз, когда пользователь нажимает кнопку Параметры надстройки на вкладке "надстройки" диалогового окна Параметры Outlook.</summary>
-        <remarks><para>Программа обрабатывает это событие, чтобы добавить пользовательскую страницу свойств. На странице свойств будет добавлен в диалоговое окно Параметры. При включении событие объект коллекции <b>свойств</b> определяется <paramref name="Pages" /> содержит страницы свойств, которые были добавлены до вызова обработчика событий. Чтобы добавить страницы свойств в коллекцию, используйте <see cref="M:Microsoft.Office.Interop.Outlook.PropertyPages.Add(System.Object,System.String)" /> методу коллекции <b>страницы свойств</b> перед выходом из обработчика событий.</para>
+        <summary>Возникает каждый раз, когда пользователь нажимает кнопку "параметры надстройки" на вкладке "надстройки" диалогового окна "Параметры" Outlook.</summary>
+        <remarks><para>Программа обрабатывает это событие для добавления настраиваемой страницы свойств. Страница свойств будет добавлена в диалоговое окно "Параметры". Когда запускается событие, объект коллекции <b>PropertyPages</b> , идентифицированный по <paramref name="Pages" /> , содержит страницы свойств, добавленные до вызова обработчика события. Чтобы добавить страницу свойств в коллекцию, используйте <see cref="M:Microsoft.Office.Interop.Outlook.PropertyPages.Add(System.Object,System.String)" /> метод коллекции <b>PropertyPages</b> перед выходом из обработчика событий.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -315,7 +315,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ApplicationEvents_11_QuitEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит, когда начинается Outlook закрыть.</summary>
+        <summary>Происходит, когда Outlook начинает закрываться.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -334,7 +334,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ApplicationEvents_11_ReminderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Происходит непосредственно перед отображается напоминание.</summary>
+        <summary>Происходит непосредственно перед отображением напоминания.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -372,8 +372,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ApplicationEvents_11_StartupEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возникает при запуске Microsoft Outlook, но все надстройки приложений были загружены.</summary>
-        <remarks><para>Outlook Visual Basic for Applications (VBA) макрос эту процедуру события можно использовать для инициализации самого при запуске Outlook.</para>
+        <summary>Происходит при запуске Microsoft Outlook, но после загрузки всех программ надстроек.</summary>
+        <remarks><para>Макросы Outlook Visual Basic для приложений (VBA) могут использовать эту процедуру обработки события для инициализации самой себя при запуске Outlook.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом. Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию. В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом. Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -71,7 +71,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Активирует окно проводника перенос на передний план и установив фокус.</summary>
+        <summary>Активирует окно проводника, переводит его на передний план и устанавливая фокус клавиатуры.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,48 +98,48 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает объект элемента, представляющий элемент active встроенного ответа в обозревателе, область чтения. Только для чтения.</summary>
+        <summary>Возвращает объект Item, представляющий активный элемент встроенного ответа в области чтения в проводнике. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Можно использовать большинство свойств и методов <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> объекта по этому элементу. Нельзя использовать следующие методы:</para>
+        <remarks><para>Вы можете использовать большинство свойств и методов <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> объекта для этого элемента. Вы не можете использовать следующие методы:</para>
           <list type="bullet">
             <item>
               <para>
-                <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Actions" />Свойство</para>
+                <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Actions" />свойств</para>
             </item>
             <item>
               <para>
-                <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.Close(Microsoft.Office.Interop.Outlook.OlInspectorClose)" />метод</para>
+                <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.Close(Microsoft.Office.Interop.Outlook.OlInspectorClose)" />WebMethod</para>
             </item>
             <item>
               <para>
-                <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.Copy" />метод</para>
+                <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.Copy" />WebMethod</para>
             </item>
             <item>
               <para>
-                <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.Delete" />метод</para>
+                <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.Delete" />WebMethod</para>
             </item>
             <item>
               <para>
-                <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.Forward" />метод</para>
+                <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.Forward" />WebMethod</para>
             </item>
             <item>
               <para>
-                <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.Move(Microsoft.Office.Interop.Outlook.MAPIFolder)" />метод</para>
+                <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.Move(Microsoft.Office.Interop.Outlook.MAPIFolder)" />WebMethod</para>
             </item>
             <item>
               <para>
-                <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.Reply" />метод</para>
+                <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.Reply" />WebMethod</para>
             </item>
             <item>
               <para>
-                <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.ReplyAll" />метод</para>
+                <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.ReplyAll" />WebMethod</para>
             </item>
             <item>
               <para>
-                <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.Send" />метод</para>
+                <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.Send" />WebMethod</para>
             </item>
           </list>
-          <para>Данное свойство возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если не встроенный ответ будет отображаться в области чтения.</para>
+          <para>Это свойство не возвращает значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если встроенный ответ не отображается в области чтения.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -166,9 +166,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает слово <see cref="T:Microsoft.Office.Interop.Word.Document" /> объект active встроенный ответ, который отображается в области чтения проводника. Только для чтения.</summary>
+        <summary>Возвращает объект Word <see cref="T:Microsoft.Office.Interop.Word.Document" /> активного встроенного отклика, который отображается в области чтения в проводнике. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Данное свойство возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если не встроенный ответ будет отображаться в области чтения. Возвращаемый объект Word <b>документов</b> предоставляет доступ к большая часть объектной модели Word, за исключением следующие элементы:</para>
+        <remarks><para>Это свойство не возвращает значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если встроенный ответ не отображается в области чтения. Возвращенный объект Word <b>Document</b> предоставляет доступ к большинству объектной модели Word, за исключением следующих элементов:</para>
           <list type="bullet">
             <item>
               <para>
@@ -232,59 +232,59 @@
         <Parameter Name="Item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Item">Элемент для добавления активных обозреватель.</param>
-        <summary>Добавляет указанный элемент Microsoft Outlook для выделения в окне active.</summary>
-        <remarks><para>Представлены в разделе active Проводник <see cref="T:Microsoft.Office.Interop.Outlook.Selection" /> объекта, который возвращается с <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.Selection" /> свойство.</para>
-          <para>Для выбора, этот элемент должен быть доступно для выбора в текущем представлении active explorer. Использование <see cref="M:Microsoft.Office.Interop.Outlook._Explorer.IsItemSelectableInView(System.Object)" /> метод, чтобы определить, можно ли выбирать элемент в представлении. Элемент не имеет должен быть виден в представлении. </para>
-          <para>При следующих условиях Outlook возвращает ошибку при вызове метода <b>AddToSelection</b> :</para>
+        <param name="Item">Элемент, добавляемый в выделенный фрагмент в активном проводнике.</param>
+        <summary>Добавляет указанный элемент Microsoft Outlook в выделенный фрагмент в активном проводнике.</summary>
+        <remarks><para>Выбор в активном исследовании представлен <see cref="T:Microsoft.Office.Interop.Outlook.Selection" /> объектом, возвращаемым <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.Selection" /> свойством.</para>
+          <para>Для выбора необходимо выбрать элемент в текущем представлении активного проводника. Используйте <see cref="M:Microsoft.Office.Interop.Outlook._Explorer.IsItemSelectableInView(System.Object)" /> метод, чтобы определить, можно ли выбрать элемент в представлении. Элемент не обязательно должен быть виден в представлении. </para>
+          <para>При выполнении следующих условий Outlook возвращает ошибку при вызове метода <b>аддтоселектион</b> :</para>
           <list type="bullet">
             <item>
-              <para>Указанный элемент не является в текущем представлении active explorer.</para>
+              <para>Указанный элемент не находится в текущем представлении активного проводника.</para>
             </item>
             <item>
-              <para>В текущем представлении active explorer сейчас изменяется указанного элемента.</para>
+              <para>Указанный элемент редактируется в текущем представлении активного проводника.</para>
             </item>
             <item>
-              <para>Было отфильтровано, текущее представление и приложения фильтр удаляет элемент из представления.</para>
+              <para>Текущее представление отфильтровано, а приложение фильтра удалило его из представления.</para>
             </item>
             <item>
               <para>Указанный элемент не был сохранен.</para>
             </item>
             <item>
-              <para>Представляет указанный элемент <see cref="T:Microsoft.Office.Interop.Outlook.StorageItem" />. </para>
+              <para>Указанный элемент представляет <see cref="T:Microsoft.Office.Interop.Outlook.StorageItem" />. </para>
             </item>
             <item>
-              <para>Не определено текущее представление для активной explorer.</para>
+              <para>Для активного проводника не существует текущего представления.</para>
             </item>
           </list>
-          <para>Если элемент не выбран и доступно для выбора в текущем представлении, вызов заставляет <b>AddToSelection</b> <see cref="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.SelectionChange" /> событие.</para>
-          <para>Вызов <b>AddToSelection</b> прокрутки представления для отображения элемента, выбранного в представлении и не развернуть или свернуть группы в представлении.</para>
-          <para>В следующей таблице приведены результаты вызова <b>AddToSelection</b>, принимая во внимание любого текущего выделения ( <see cref="P:Microsoft.Office.Interop.Outlook.Selection.Count" /> свойство) и, для отображения области чтения.</para>
+          <para>Если элемент не выбран и доступен для выбора в текущем представлении, вызов <b>аддтоселектион</b> вызывает срабатывание <see cref="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.SelectionChange" /> события.</para>
+          <para>Вызов <b>аддтоселектион</b> не Прокручивает представление, чтобы сделать выбранный элемент видимым в представлении, а также не разворачивать и сворачивать группы в представлении.</para>
+          <para>В следующей таблице показаны результаты вызова <b>аддтоселектион</b>, учитывая все текущее выделение ( <see cref="P:Microsoft.Office.Interop.Outlook.Selection.Count" /> свойство) и отображается ли область чтения.</para>
           <list type="table">
             <item>
-              <description>0</description>
+              <description>нуль</description>
               <description>Да</description>
-              <description>Элемент добавляется в выделение. Активируется <b>SelectionChange</b> . Элемент отображается в области чтения.</description>
+              <description>Элемент добавляется в выделенный фрагмент. Запускается <b>SelectionChange</b> . В области чтения отображается элемент.</description>
             </item>
             <item>
-              <description>0</description>
+              <description>нуль</description>
               <description>No</description>
-              <description>Элемент добавляется в выделение. Активируется <b>SelectionChange</b> .</description>
+              <description>Элемент добавляется в выделенный фрагмент. Запускается <b>SelectionChange</b> .</description>
             </item>
             <item>
               <description>&gt;= 1</description>
               <description>Да</description>
-              <description>Элемент добавляется в выделение. Активируется <b>SelectionChange</b> . Область чтения не изменяется элемент, который отображается, если представление является представление календаря, в противном случае вызов <b>AddToSelection</b> может привести к области чтения для отображения различных элементов.</description>
+              <description>Элемент добавляется в выделенный фрагмент. Запускается <b>SelectionChange</b> . Область чтения не изменяет отображаемый элемент, если представление не является представлением календаря, в этом случае вызов <b>аддтоселектион</b> может привести к отображению другого элемента в области чтения.</description>
             </item>
             <item>
               <description>&gt;= 1</description>
               <description>Нет</description>
-              <description>Элемент добавляется в выделение. Активируется <b>SelectionChange</b> .</description>
+              <description>Элемент добавляется в выделенный фрагмент. Запускается <b>SelectionChange</b> .</description>
             </item>
           </list>
-          <para>Если указанный элемент уже установлен в окне active, вызов <b>AddToSelection</b> не приведет к каких-либо изменений для выделения и событие <b>SelectionChange</b> не работает.</para>
-          <para>При указании элемента в повторяющейся встречи или задачи в качестве аргумента для метода <b>AddToSelection</b> , убедитесь в том, что перед передать аргумент можно получить экземпляр появления развернув повторов, с помощью <see cref="P:Microsoft.Office.Interop.Outlook._Items.IncludeRecurrences" /> свойство и <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> семейства сайтов. Если не разверните повторов и получить вхождения в серии, передать переменную экземпляра, который представляет серии встречи или задачи, а метод <b>AddToSelection</b> работает на серии вместо этот экземпляр. </para>
-          <para>Обратите внимание на то, что <b>AddToSelection</b> можно использовать для добавления элементов в выбранный фрагмент, но нельзя добавлять заголовки беседы в выделение.</para>
+          <para>Если указанный элемент уже выбран в активном проводнике, вызов <b>аддтоселектион</b> не приводит к изменению выделенного фрагмента, а событие <b>SelectionChange</b> не срабатывает.</para>
+          <para>Когда вы указываете элемент повторяющейся встречи или задачи в качестве аргумента для метода <b>аддтоселектион</b> , убедитесь, что перед передачей аргументу необходимо получить экземпляр этого экземпляра, сначала развернув повторения, используя <see cref="P:Microsoft.Office.Interop.Outlook._Items.IncludeRecurrences" /> свойство и <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> коллекцию. Если вы не разворачиваете повторения и получаете экземпляр в серии, вы передаете переменную экземпляра, представляющую ряд встречи или задачи, а метод <b>аддтоселектион</b> работает с серией, а не с экземпляром. </para>
+          <para>Обратите внимание, что вы можете использовать <b>аддтоселектион</b> для добавления элементов в выделенный фрагмент, но нельзя добавить заголовки бесед в выделенный фрагмент.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -311,7 +311,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -339,7 +339,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.AttachmentSelection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AttachmentSelection" /> объект, состоящий из одного или нескольких вложений, выбранные в текущем представлении обозревателя. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AttachmentSelection" /> объект, состоящий из одного или нескольких вложений, выбранных в текущем представлении проводника. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -367,7 +367,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#) представляющая название. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую название. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -395,7 +395,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -421,9 +421,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Очищает результаты из Microsoft мгновенного поиска в <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> Если результаты отображаются в <b>проводнике</b>.</summary>
-        <remarks><para>Функциональные возможности этого метода является аналогом кнопку Очистить в мгновенного поиска.   </para>
-          <para>Если результаты поиска не отображаются в обозревателе, <b>ClearSearch</b> ничего не происходит. Если текущее представление <b>Explorer</b> не Просмотр поиска, <b>ClearSearch</b> не вызовет ошибку.</para>
+        <summary>Отменяет результаты из мгновенного поиска Microsoft в <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> результатах поиска в <b>проводнике</b>.</summary>
+        <remarks><para>Функциональные возможности этого метода аналогичны кнопке Clear в функции мгновенного поиска.   </para>
+          <para>Если в проводнике не отображаются результаты поиска, <b>клеарсеарч</b> не будет предпринимать никаких действий. Если в текущем представлении <b>проводника</b> не представлено представление поиска, <b>клеарсеарч</b> не приведет к ошибке.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -448,12 +448,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Отменяет все параметры, выбранные в окне active.</summary>
-        <remarks><para>После вызова метода <b>ClearSelection</b> <see cref="P:Microsoft.Office.Interop.Outlook.Selection.Count" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.Selection" /> объекта, который <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.Selection" /> свойство возвращает равно нулю. Тогда <see cref="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.SelectionChange" /> событие запускается, если не до вызова <b>ClearSelection</b>, текущее представление не содержит все элементы, текущая папка пуст или свойство <b>Count</b> уже равно нулю. </para>
-          <para>Если отображается область чтения и текущее представление — это представление таблицы, области чтения вызов <b>ClearSelection</b> отображает пустым.</para>
-          <para>Если текущее представление или текущей папки не содержит все элементы, вызов <b>ClearSelection</b> не приведет к каких-либо изменений для выделения и не возникают события <b>SelectionChange</b> . </para>
+        <summary>Отменяет выбор в активном проводнике.</summary>
+        <remarks><para>После вызова метода <b>клеарселектион</b> <see cref="P:Microsoft.Office.Interop.Outlook.Selection.Count" /> свойство <see cref="T:Microsoft.Office.Interop.Outlook.Selection" /> объекта, возвращаемое <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.Selection" /> свойством, равно нулю. Затем вызывается <see cref="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.SelectionChange" /> событие, если перед вызовом <b>клеарселектион</b>не было вызвано, текущее представление не содержит элементов, текущая папка была пустой, или свойство <b>Count</b> уже равно нулю. </para>
+          <para>Если область чтения видна, а текущее представление — представление таблицы, вызов <b>клеарселектион</b> отображает пустую область чтения.</para>
+          <para>Если текущее представление или текущая папка не содержат элементов, вызов <b>клеарселектион</b> не приводит к изменению выделенного фрагмента и не запускает событие <b>SelectionChange</b> . </para>
           <para>
-            <b>ClearSelection</b> возвращает ошибку, если элемент редактируется в текущем представлении.</para>
+            <b>Клеарселектион</b> возвращает ошибку, если элемент редактируется в текущем представлении.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -478,7 +478,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Закрывает <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> объекта.</summary>
+        <summary>Закрывает <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> объект.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -539,9 +539,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.MAPIFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий текущую папку, отображаемые в обозревателе. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий текущую папку, отображаемую в проводнике. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство используется для изменения папки, которые пользователь просматривает.</para>
+        <remarks><para>С помощью этого свойства можно изменить папку, в которую просматривается пользователь.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -573,9 +573,9 @@
       <Docs>
         <summary>Возвращает или задает <b>объект</b> , представляющий текущее представление. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Для получения <see cref="T:Microsoft.Office.Interop.Outlook.View" /> объект для представления текущего <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" />, используйте <b>Explorer.CurrentView</b> вместо <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.CurrentView" /> текущего элемента <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, возвращенный свойством <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" />. </para>
-          <para>Необходимо сохранить ссылку на объект <b>представления</b> , возвращенный свойством <b>CurrentView</b> , прежде чем продолжить использовать для целей.</para>
-          <para>Чтобы должным образом восстановить текущее представление, необходимо выполнить <see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> и затем <see cref="M:Microsoft.Office.Interop.Outlook.View.Apply" />. В следующем примере показан порядок вызовов:</para>
+        <remarks><para>Чтобы получить <see cref="T:Microsoft.Office.Interop.Outlook.View" /> объект для представления текущего <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" />объекта, используйте <b>Explorer. CurrentView</b> вместо <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.CurrentView" /> свойства текущего <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объекта, возвращаемого методом. <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> </para>
+          <para>Необходимо сохранить ссылку на объект <b>представления</b> , возвращенный службой <b>CurrentView</b> , прежде чем приступать к его использованию для любых целей.</para>
+          <para>Чтобы правильно сбросить текущее представление, необходимо выполнить a <see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> и затем a. <see cref="M:Microsoft.Office.Interop.Outlook.View.Apply" /> В приведенном ниже примере кода показан порядок вызовов:</para>
           <code>Sub ResetView()
     Dim v as Outlook.View
     ' Save a reference to the current view object
@@ -594,7 +594,7 @@ End Sub</code>
     v.Reset();
     v.Apply();
 }</code>
-          <para>Если задано это свойство, возникают два события: <see cref="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.BeforeViewSwitch" /> происходит перед происходит изменение представления фактических и можно использовать для отмены изменений и <see cref="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.ViewSwitch" /> имеет место после изменение вступает в силу.</para>
+          <para>Если это свойство задано, происходят два события: <see cref="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.BeforeViewSwitch" /> происходит перед выполнением фактического изменения представления и может использоваться для отмены изменения и <see cref="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.ViewSwitch" /> выполнения после вступления изменений в силу.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -650,9 +650,9 @@ End Sub</code>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Отображает новый <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> объекта папки.</summary>
-        <remarks><para>Метод <b>отображения</b> поддерживается для windows explorer и инспектора для обратной совместимости. Чтобы активировать окна проводника или инспектора, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.Activate" /> метод.</para>
-          <para>При попытке открыть объект «небезопасные» файловой системы (или файл «freedoc») с помощью объектной модели Microsoft Outlook, вы получаете код возврата E_FAIL на языках C или C++ программирования. В Outlook 2000 и более ранних версий то пользователь может открыть объекта системы «небезопасных» файлов с помощью метода <b>отображения</b> .</para>
+        <summary>Отображает новый <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> объект для папки.</summary>
+        <remarks><para>Метод <b>Display</b> поддерживается для окон проводника и инспектора в целях обратной совместимости. Чтобы активировать окно проводника или инспектора, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.Activate" /> метод.</para>
+          <para>При попытке открыть "небезопасный" объект файловой системы (или "файл фридок") с помощью объектной модели Microsoft Outlook вы получаете E_FAIL код возврата на языках программирования C или C++. В Outlook 2000 и более ранних версий можно открыть "небезопасную" объект файловой системы с помощью метода <b>Display</b> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -682,7 +682,7 @@ End Sub</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>целое число</b> (<b>int</b> в C#) значение, задающее высоту (в точках) окно проводника. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), задающее высоту (в пикселях) окна проводника. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -710,9 +710,9 @@ End Sub</code>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает объект <b>HTMLDocument</b> , указывающий объектной моделью HTML-код, связанный с HTML-документ в текущем представлении (если оно существует). Только для чтения.</summary>
+        <summary>Возвращает объект <b>HtmlDocument</b> , который указывает объектную модель HTML, связанную с HTML-документом в текущем представлении (при условии, что он существует). Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Чтобы использовать это свойство, папку необходимо использовать домашней страницы папки, или можно задать <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.WebViewURL" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объекта на веб-страницу.</para>
+        <remarks><para>Чтобы использовать это свойство, папка должна использовать домашнюю страницу папки или <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.WebViewURL" /> свойство <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объекта можно задать для веб-страницы.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -771,14 +771,14 @@ End Sub</code>
         <Parameter Name="Item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Item">Элемент, который считается для выбора.</param>
-        <summary>Возвращает значение, указывающее, является ли указанный элемент Microsoft Outlook можно выбирать в текущем представлении active explorer.</summary>
-        <returns>Возвращает <see cref="T:System.Boolean" /> (<b>bool</b> для языка C#) значение, указывающее, является ли указанный элемент можно выбирать в текущем представлении.</returns>
-        <remarks><para>Возвращает <b>значение True,</b> Если элемент может быть выбран в текущем представлении; в противном случае возвращает <b>значение False</b>. </para>
-          <para>Метод возвращает <b>значение True</b> или <b>False</b> в зависимости от того, является ли элемент выбрать в представлении. Указывает, видима ли элемент в представлении. Если элемент содержится в свернутые группы в представлении, метод возвращает <b>значение False</b>. </para>
-          <para>Если редактирования в ячейке включен для текущего представления для активной explorer и редактирование в ячейке находится в стадии разработки для элемента, метод возвращает <b>значение False</b>. Если текущее представление — это представление таблицы, следует проверить с помощью редактирования в ячейках <see cref="P:Microsoft.Office.Interop.Outlook._TableView.AllowInCellEditing" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> объекта. Аналогично, если текущее представление — это представление карты, можно использовать <see cref="P:Microsoft.Office.Interop.Outlook._CardView.AllowInCellEditing" />свойства <see cref="T:Microsoft.Office.Interop.Outlook.CardView" /> объекта.</para>
-          <para>При указании элемента в повторяющейся встречи или задачи в качестве аргумента для метода <b>IsItemSelectableInView</b> , убедитесь в том, что перед передать аргумент можно получить экземпляр появления развернув повторов, с помощью <see cref="P:Microsoft.Office.Interop.Outlook._Items.IncludeRecurrences" /> свойство и <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> семейства сайтов. Если не разверните повторов и получить вхождения в серии, бы, передав переменной экземпляра, который представляет встречи или ряд задач, и метод <b>IsItemSelectableInView</b> будет работы на серии вместо событие. </para>
-          <para>Метод <b>IsItemSelectableInView</b> вызывает ошибку, если текущее представление — это представление беседы.</para>
+        <param name="Item">Элемент, который считается выбранным.</param>
+        <summary>Возвращает значение, которое указывает, можно ли выбрать указанный элемент Microsoft Outlook в текущем представлении активного проводника.</summary>
+        <returns>Возвращает значение <see cref="T:System.Boolean" /> (<b>bool</b> для C#), которое указывает, можно ли выбрать указанный элемент в текущем представлении.</returns>
+        <remarks><para>Возвращает <b>значение true</b> , если элемент можно выбрать в текущем представлении; в противном случае возвращает <b>значение false</b>. </para>
+          <para>Метод возвращает <b>значение true</b> или <b>false</b> в зависимости от того, является ли элемент выбираемым в представлении. Он не указывает, отображается ли элемент в представлении. Если элемент находится в свернутой группе в представлении, метод возвращает <b>значение false</b>. </para>
+          <para>Если редактирование в ячейках включено для текущего представления активного проводника и редактирования в ячейках, то метод возвращает <b>значение false</b>. Если текущее представление является представлением таблицы, можно проверить возможность редактирования в ячейках с помощью <see cref="P:Microsoft.Office.Interop.Outlook._TableView.AllowInCellEditing" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> объекта. Аналогично, если текущее представление является представлением карточками, можно использовать <see cref="P:Microsoft.Office.Interop.Outlook._CardView.AllowInCellEditing" />свойство <see cref="T:Microsoft.Office.Interop.Outlook.CardView" /> объекта.</para>
+          <para>При указании элемента в повторяющейся встрече или задаче в качестве аргумента метода <b>иситемселектаблеинвиев</b> убедитесь, что перед передачей аргументу необходимо получить экземпляр этого экземпляра, сначала развернув повторения, используя <see cref="P:Microsoft.Office.Interop.Outlook._Items.IncludeRecurrences" /> свойство и <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> коллекцию. Если вы не разворачиваете повторения и получаете вхождение в серии, вы бы передаем переменную экземпляра, представляющую ряд встречи или задачи, а метод <b>иситемселектаблеинвиев</b> будет работать для ряда, а не экземпляра. </para>
+          <para>Метод <b>иситемселектаблеинвиев</b> вызывает ошибку, если текущее представление является представлением беседы.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -805,10 +805,10 @@ End Sub</code>
         <Parameter Name="Pane" Type="Microsoft.Office.Interop.Outlook.OlPane" />
       </Parameters>
       <Docs>
-        <param name="Pane">Области, чтобы проверить.</param>
-        <summary>Возвращает <b>логическое</b> (<b>bool</b> в C#), указывающее, отображается область конкретного обозревателя.</summary>
-        <returns><b>Значение true,</b> Если указанный области отображается в обозревателе; в противном случае — <b>False</b>.</returns>
-        <remarks><para>Вы также можете использовать <see cref="P:Microsoft.Office.Interop.Outlook._OutlookBarPane.Visible" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarPane" /> объекта, чтобы определить, отображается ли область ярлыков.</para>
+        <param name="Pane">Область, которую необходимо проверить.</param>
+        <summary>Возвращает <b>логическое значение</b> (<b>логическое</b> значение в C#), которое указывает, отображается ли определенная область обозревателя.</summary>
+        <returns><b>Значение true</b> , если указанная область отображается в проводнике; в противном случае — <b>false</b>.</returns>
+        <remarks><para>Кроме того, можно использовать <see cref="P:Microsoft.Office.Interop.Outlook._OutlookBarPane.Visible" /> свойство <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarPane" /> объекта, чтобы определить, отображается ли область ярлыков.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -838,7 +838,7 @@ End Sub</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>Integer</b> (<b>int</b> в C#) значение, определяющее положение (в точках) вертикальной левого края от края экрана, окно проводника. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), задающее положение (в пикселях) левой вертикальной границы окна проводника от края экрана. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -868,7 +868,7 @@ End Sub</code>
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> объект, представляющий область навигации для <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Некоторые объекты <b>Explorer</b> не могут иметь связанный объект <b>NavigationPane</b> . В таких случаях данное свойство возвращает <b>значение Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#)</para>
+        <remarks><para>У некоторых объектов <b>Explorer</b> может отсутствовать связанный объект <b>NavigationPane</b> . В таких случаях это свойство возвращает значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#)</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -895,7 +895,7 @@ End Sub</code>
         <ReturnType>Microsoft.Office.Interop.Outlook.Panes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Panes" /> коллекции объект, представляющий областями, отображаемые с указанным explorer.</summary>
+        <summary>Возвращает объект <see cref="T:Microsoft.Office.Interop.Outlook.Panes" /> Collection, представляющий области, отображаемые указанным обозревателем.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -923,7 +923,7 @@ End Sub</code>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> заданного объекта. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -951,65 +951,65 @@ End Sub</code>
         <Parameter Name="Item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Item">Элемент удален из выборки.</param>
-        <summary>Отменяет выбор указанного элемента Microsoft Outlook, в окне active.</summary>
-        <remarks><para>Представлены в разделе active Проводник <see cref="T:Microsoft.Office.Interop.Outlook.Selection" /> объекта, который возвращается с <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.Selection" /> свойство.</para>
-          <para>Требуется удалить элемент должен быть доступно для выбора в текущем представлении active explorer. Использование <see cref="M:Microsoft.Office.Interop.Outlook._Explorer.IsItemSelectableInView(System.Object)" /> метод, чтобы определить, можно ли выбирать элемент в представлении. Элемент не имеет должен быть виден в представлении. </para>
-          <para>При следующих условиях Outlook возвращает ошибку при вызове метода <b>RemoveFromSelection</b> :</para>
+        <param name="Item">Элемент, который необходимо удалить из выделенного фрагмента.</param>
+        <summary>Отменяет выбор указанного элемента Microsoft Outlook в активном проводнике.</summary>
+        <remarks><para>Выбор в активном исследовании представлен <see cref="T:Microsoft.Office.Interop.Outlook.Selection" /> объектом, возвращаемым <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.Selection" /> свойством.</para>
+          <para>Для удаления необходимо выбрать элемент в текущем представлении активного проводника. Используйте <see cref="M:Microsoft.Office.Interop.Outlook._Explorer.IsItemSelectableInView(System.Object)" /> метод, чтобы определить, можно ли выбрать элемент в представлении. Элемент не обязательно должен быть виден в представлении. </para>
+          <para>При выполнении следующих условий Outlook возвращает ошибку при вызове метода <b>ремовефромселектион</b> :</para>
           <list type="bullet">
             <item>
-              <para>Указанный элемент не является в текущем представлении active explorer.</para>
+              <para>Указанный элемент не находится в текущем представлении активного проводника.</para>
             </item>
             <item>
-              <para>В текущем представлении active explorer сейчас изменяется указанного элемента.</para>
+              <para>Указанный элемент редактируется в текущем представлении активного проводника.</para>
             </item>
             <item>
-              <para>Было отфильтровано, текущее представление и приложения фильтр удаляет элемент из представления.</para>
+              <para>Текущее представление отфильтровано, а приложение фильтра удалило его из представления.</para>
             </item>
             <item>
               <para>Указанный элемент не был сохранен.</para>
             </item>
             <item>
-              <para>Представляет указанный элемент <see cref="T:Microsoft.Office.Interop.Outlook.StorageItem" />. </para>
+              <para>Указанный элемент представляет <see cref="T:Microsoft.Office.Interop.Outlook.StorageItem" />. </para>
             </item>
             <item>
-              <para>Текущее представление — это представление беседы.</para>
+              <para>Текущее представление является представлением беседы.</para>
             </item>
             <item>
-              <para>Не определено текущее представление для активной explorer.</para>
+              <para>Для активного проводника не существует текущего представления.</para>
             </item>
           </list>
-          <para>Если элемент выбран, вызов заставляет <b>RemoveFromSelection</b> <see cref="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.SelectionChange" /> событие. Если элемент не выбран, вызов <b>RemoveFromSelection</b> не вызывает события <b>SelectionChange</b> для вызова.</para>
-          <para>Вызов <b>RemoveFromSelection</b> прокрутки представления для отображения элемента, выбранного в представлении и не развернуть или свернуть группы в представлении.</para>
-          <para>В следующей таблице приведены результаты вызова <b>RemoveFromSelection</b>, принимая во внимание любого текущего выделения ( <see cref="P:Microsoft.Office.Interop.Outlook.Selection.Count" /> свойство), области чтения, отображается ли и является ли указанный элемент отображается в чтения Область.</para>
+          <para>Если выбран элемент, вызов <b>ремовефромселектион</b> приводит к срабатыванию <see cref="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.SelectionChange" /> события. Если элемент не выбран, вызов <b>ремовефромселектион</b> не приведет к срабатыванию события <b>SelectionChange</b> .</para>
+          <para>Вызов <b>ремовефромселектион</b> не Прокручивает представление, чтобы сделать выбранный элемент видимым в представлении, а также не разворачивать и сворачивать группы в представлении.</para>
+          <para>В следующей таблице показаны результаты вызова <b>ремовефромселектион</b>, учитывая все текущее выделение ( <see cref="P:Microsoft.Office.Interop.Outlook.Selection.Count" /> свойство), отображается ли область чтения, и отображается ли указанный элемент в области чтения.</para>
           <list type="table">
             <item>
-              <description>1</description>
+              <description>1,1</description>
               <description>Да</description>
               <description>Да</description>
-              <description>Выделение снят. Активируется <b>SelectionChange</b> . Область чтения будет пустым.</description>
+              <description>Выделенный фрагмент очищен. Запускается <b>SelectionChange</b> . Область чтения пуста.</description>
             </item>
             <item>
-              <description>&gt;1</description>
+              <description>&gt;1,1</description>
               <description>Да</description>
               <description>Нет</description>
-              <description>Элемент будет удален из выборки. Активируется <b>SelectionChange</b> . Область чтения не изменяется.</description>
+              <description>Элемент удаляется из выделенного фрагмента. Запускается <b>SelectionChange</b> . Область чтения не изменяется.</description>
             </item>
             <item>
-              <description>&gt;1</description>
+              <description>&gt;1,1</description>
               <description>Да</description>
               <description>Да</description>
-              <description>Элемент будет удален из выборки. Активируется <b>SelectionChange</b> . Область чтения отображает следующего элемента или соседними элемента в выделение.</description>
+              <description>Элемент удаляется из выделенного фрагмента. Запускается <b>SelectionChange</b> . В области чтения отображается следующий элемент или смежный элемент в выделенном фрагменте.</description>
             </item>
             <item>
               <description>&gt;= 1</description>
               <description>Нет</description>
-              <description>Недоступно</description>
-              <description>Элемент будет удален из выборки. Активируется <b>SelectionChange</b> .</description>
+              <description>Н/Д</description>
+              <description>Элемент удаляется из выделенного фрагмента. Запускается <b>SelectionChange</b> .</description>
             </item>
           </list>
-          <para>Если указанный элемент существует в текущем представлении, но не выбран, то есть Просмотр доступных телефонных <b>RemoveFromSelection</b> не приведет к любые изменения выделения и события <b>SelectionChange</b> не возникают.</para>
-          <para>При указании элемента в повторяющейся встречи или задачи в качестве аргумента для метода <b>RemoveFromSelection</b> , убедитесь в том, что перед передать аргумент можно получить экземпляр появления развернув повторов, с помощью <see cref="P:Microsoft.Office.Interop.Outlook._Items.IncludeRecurrences" /> свойство и <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> семейства сайтов. Если не разверните повторов и получить вхождения в серии, бы, передав переменной экземпляра, который представляет встречи или ряд задач, и метод <b>RemoveFromSelection</b> будет работы на серии вместо событие. </para>
+          <para>Если указанный элемент существует в текущем представлении, но не выбран в этом представлении, вызов <b>ремовефромселектион</b> не приводит к внесению изменений в выбор и событие <b>SelectionChange</b> не срабатывает.</para>
+          <para>Когда вы указываете элемент повторяющейся встречи или задачи в качестве аргумента для метода <b>ремовефромселектион</b> , убедитесь, что перед передачей аргументу необходимо получить экземпляр этого экземпляра, сначала развернув повторения, используя <see cref="P:Microsoft.Office.Interop.Outlook._Items.IncludeRecurrences" /> свойство и <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> коллекцию. Если вы не разворачиваете повторения и получаете вхождение в серии, вы бы передаем переменную экземпляра, представляющую ряд встречи или задачи, а метод <b>ремовефромселектион</b> будет работать для ряда, а не экземпляра. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1037,11 +1037,11 @@ End Sub</code>
         <Parameter Name="SearchScope" Type="Microsoft.Office.Interop.Outlook.OlSearchScope" />
       </Parameters>
       <Docs>
-        <param name="Query">Строка поиска, которое может содержать любое допустимое ключевые слова, поддерживаемые в мгновенного поиска.</param>
-        <param name="SearchScope">Задает область действия в виде папок поиска.</param>
-        <summary>Создание мгновенного поиска Microsoft на текущей папки, отображаемые в обозревателе с помощью данного <paramref name="Query" />.</summary>
-        <remarks><para>Функциональность <b>Explorer.Search</b> является аналогом кнопки "Найти" мгновенного поиска. Он работает как в том случае, если пользователь ввел строки запроса в пользовательском интерфейсе мгновенного поиска и затем нажатии этой кнопки поиска.  При вызове <b>поиска</b>, запрос выполняется в пользовательском интерфейсе, и нельзя программный для получения результатов поиска. Для получения дополнительных сведений о мгновенного поиска, запросов «Мгновенного поиска» в справке Microsoft Outlook.</para>
-          <para>Метод <b>поиска</b> отсутствуют обратного вызова для включения разработчика для определения после завершения поиска. </para>
+        <param name="Query">Строка поиска, которая может содержать любые допустимые ключевые слова, поддерживаемые в функции мгновенного поиска.</param>
+        <param name="SearchScope">Задает область в терминах папок для поиска.</param>
+        <summary>Выполняет мгновенный поиск Майкрософт для текущей папки, отображаемой в проводнике, с использованием <paramref name="Query" />заданной папки.</summary>
+        <remarks><para>Функциональные возможности <b>Explorer. Search</b> аналогичны кнопке поиска в мгновенных запросах поиска. Он выполняется так, как если бы пользователь ввел строку запроса в пользовательском интерфейсе мгновенного поиска, а затем нажмите кнопку Поиск.  При вызове функции <b>поиска</b>запрос выполняется в пользовательском интерфейсе, а программный механизм для получения результатов поиска отсутствует. Дополнительные сведения о мгновенных запросах поиска в справке Outlook.</para>
+          <para>Метод <b>Search</b> не предоставляет обратный вызов, позволяющий разработчику определить момент завершения поиска. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1066,13 +1066,13 @@ End Sub</code>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Выбирает все элементы, содержащиеся в текущем представлении active explorer.</summary>
-        <remarks><para>Если одной или нескольких групп свернуты в текущем представлении, вызов <b>SelectAllItems</b> не выберите элементы в свернутые группы. Только элементы в расширенной группы выбраны.</para>
-          <para>Если текущее представление — это представление календаря, вызов <b>SelectAllItems</b> выбирает все встречи и событий на целый день в представлении. Вызов <b>SelectAllItems</b> в календарном представлении элементов не выберите в списке задач на день.</para>
-          <para><see cref="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.SelectionChange" /> Событие вызывается только один раз после вызова метода <b>SelectAllItems</b> .</para>
-          <para>Если текущее представление или текущей папки не содержит все элементы, вызов <b>SelectAllItems</b> не приведет к каких-либо изменений для выделения и не возникают события <b>SelectionChange</b> . </para>
+        <summary>Выбирает все элементы, которые находятся в текущем представлении активного проводника.</summary>
+        <remarks><para>Если одна или несколько групп свернуты в текущем представлении, вызов <b>селекталлитемс</b> не выбирает элементы в свернутых группах. Выделены только элементы в развернутых группах.</para>
+          <para>Если текущее представление является представлением календаря, вызов <b>селекталлитемс</b> выбирает все встречи и события на целый день в представлении. При вызове <b>селекталлитемс</b> в представлении календаря не выбираются элементы в списке задач на день.</para>
+          <para>Событие запускается только один раз после вызова метода <b>селекталлитемс.</b> <see cref="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.SelectionChange" /></para>
+          <para>Если текущее представление или текущая папка не содержат элементов, вызов <b>селекталлитемс</b> не приводит к изменению выделенного фрагмента и не запускает событие <b>SelectionChange</b> . </para>
           <para>
-            <b>SelectAllItems</b> вызывает ошибку, если элемент редактируется в текущем представлении или текущее представление — это представление беседы.</para>
+            <b>Селекталлитемс</b> вызывает ошибку, если элемент редактируется в текущем представлении, или текущее представление является представлением беседы.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1132,7 +1132,7 @@ End Sub</code>
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Selection" /> объект, состоящий из одного или нескольких элементов, выбранных в текущем представлении. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Если текущей папки в папку файловой системы или Microsoft Outlook сегодня или любая папка с веб-просмотра отображается, данное свойство возвращает пустую коллекцию. Также если выбран заголовок группы, свойство <b>Count</b> выбора возвращает нуль.</para>
+        <remarks><para>Если текущая папка является папкой файловой системы или если в настоящее время отображается текущая папка с веб-представлением, это свойство возвращает пустую коллекцию. Кроме того, если выбран заголовок группы, свойство <b>Count</b> в выделении возвращает ноль.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1159,9 +1159,9 @@ End Sub</code>
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса. Члены по своему назначению. Например следующие пары операторов выполнить те же функции.</para>
+        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -1195,11 +1195,11 @@ End Sub</code>
         <Parameter Name="Visible" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Pane">Области для отображения.</param>
-        <param name="Visible"><b>Значение true,</b> чтобы отобразить в области <b>значение False,</b> Чтобы скрыть область.</param>
-        <summary>Отображает или скрывает определенные области в проводнике.</summary>
+        <param name="Pane">Отображаемая область.</param>
+        <param name="Visible"><b>Значение true</b> , чтобы сделать область видимой, <b>значение false</b> , чтобы скрыть область.</param>
+        <summary>Отображает или скрывает определенную область в проводнике.</summary>
         <remarks><para>
-            <b>Примечание</b>: вы также можете использовать <see cref="P:Microsoft.Office.Interop.Outlook._OutlookBarPane.Visible" /> свойства <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarPane" /> объект, который требуется отобразить или скрыть область ярлыков.</para>
+            <b>Note</b>: Вы также можете использовать <see cref="P:Microsoft.Office.Interop.Outlook._OutlookBarPane.Visible" /> свойство <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarPane" /> объекта для отображения или скрытия области ярлыков.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1229,7 +1229,7 @@ End Sub</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>Integer</b> (<b>целое</b> в C#) значение, указывающее положение (в точках) горизонтальной верхнего края от края экрана, окно проводника. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), обозначающее положение (в пикселях) верхней горизонтальной границы окна проводника от края экрана. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1291,7 +1291,7 @@ End Sub</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>Integer</b> (<b>целое</b> в C#) значение, указывающее ширину (в точках) указанного объекта. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее ширину (в пикселях) указанного объекта. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1322,7 +1322,7 @@ End Sub</code>
         <ReturnType>Microsoft.Office.Interop.Outlook.OlWindowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает для свойства значение константы в <see cref="T:Microsoft.Office.Interop.Outlook.OlWindowState" /> перечисление, указывающее состояние окна окна проводника или инспектора. Для чтения и записи.</summary>
+        <summary>Возвращает или задает свойство с константой в <see cref="T:Microsoft.Office.Interop.Outlook.OlWindowState" /> перечислении, указывающей состояние окна проводника или окна инспектора. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
