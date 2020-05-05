@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="24d0d-101">Это основной интерфейс в компонентном классе COM, необходимые для управляемого кода для взаимодействия с соответствующим COM-объектом.</span><span class="sxs-lookup"><span data-stu-id="24d0d-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span></span> <span data-ttu-id="24d0d-102">Этот основной интерфейс используется только в том случае, если метод, который будет использоваться совместно совпадает с именем событие COM-объектом; в этом случае преобразовывается этот интерфейс для вызова метода и приведены последние интерфейс события для подключения к событию.</span><span class="sxs-lookup"><span data-stu-id="24d0d-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span></span> <span data-ttu-id="24d0d-103">В противном случае используется интерфейс .NET, который является производным от компонентного класса COM для доступа к методы, свойства и события COM-объектом.</span><span class="sxs-lookup"><span data-stu-id="24d0d-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span></span> <span data-ttu-id="24d0d-104">Сведения о COM-объектом, в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" />.</span><span class="sxs-lookup"><span data-stu-id="24d0d-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" />.</span></span></summary>
+    <summary><span data-ttu-id="c6bec-101">Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM.</span><span class="sxs-lookup"><span data-stu-id="c6bec-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span></span> <span data-ttu-id="c6bec-102">Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий.</span><span class="sxs-lookup"><span data-stu-id="c6bec-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span></span> <span data-ttu-id="c6bec-103">Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM.</span><span class="sxs-lookup"><span data-stu-id="c6bec-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span></span> <span data-ttu-id="c6bec-104">Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" />.</span><span class="sxs-lookup"><span data-stu-id="c6bec-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" />.</span></span></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -43,7 +43,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="24d0d-105">Активирует окно инспектора перенос на передний план и установив фокус.</span><span class="sxs-lookup"><span data-stu-id="24d0d-105">Activates an inspector window by bringing it to the foreground and setting keyboard focus.</span></span></summary>
+        <summary><span data-ttu-id="c6bec-105">Активирует окно инспектора, переводит его на передний план и устанавливая фокус клавиатуры.</span><span class="sxs-lookup"><span data-stu-id="c6bec-105">Activates an inspector window by bringing it to the foreground and setting keyboard focus.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,7 +70,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="24d0d-106">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительский приложение Outlook для объекта.</span><span class="sxs-lookup"><span data-stu-id="24d0d-106">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span></span> <span data-ttu-id="24d0d-107">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="24d0d-107">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c6bec-106">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта.</span><span class="sxs-lookup"><span data-stu-id="c6bec-106">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span></span> <span data-ttu-id="c6bec-107">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c6bec-107">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -98,7 +98,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.AttachmentSelection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="24d0d-108">Получает <see cref="T:Microsoft.Office.Interop.Outlook.AttachmentSelection" /> объект, состоящий из одного или нескольких вложений, выбранного в инспекторе.</span><span class="sxs-lookup"><span data-stu-id="24d0d-108">Obtains an <see cref="T:Microsoft.Office.Interop.Outlook.AttachmentSelection" /> object consisting of one or more attachments that are selected in the inspector.</span></span> <span data-ttu-id="24d0d-109">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="24d0d-109">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c6bec-108">Получает <see cref="T:Microsoft.Office.Interop.Outlook.AttachmentSelection" /> объект, состоящий из одного или нескольких вложений, выбранных в инспекторе.</span><span class="sxs-lookup"><span data-stu-id="c6bec-108">Obtains an <see cref="T:Microsoft.Office.Interop.Outlook.AttachmentSelection" /> object consisting of one or more attachments that are selected in the inspector.</span></span> <span data-ttu-id="c6bec-109">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c6bec-109">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,7 +126,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="24d0d-110">Возвращает <b>строку</b> (<b>строка</b> в C#) представляющая название.</span><span class="sxs-lookup"><span data-stu-id="24d0d-110">Returns a <b>String</b> (<b>string</b> in C#) representing the title.</span></span> <span data-ttu-id="24d0d-111">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="24d0d-111">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c6bec-110">Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую название.</span><span class="sxs-lookup"><span data-stu-id="c6bec-110">Returns a <b>String</b> (<b>string</b> in C#) representing the title.</span></span> <span data-ttu-id="c6bec-111">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c6bec-111">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,7 +154,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="24d0d-112">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константа, класс объекта.</span><span class="sxs-lookup"><span data-stu-id="24d0d-112">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span></span> <span data-ttu-id="24d0d-113">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="24d0d-113">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c6bec-112">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта.</span><span class="sxs-lookup"><span data-stu-id="c6bec-112">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span></span> <span data-ttu-id="c6bec-113">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c6bec-113">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -182,8 +182,8 @@
         <Parameter Name="SaveMode" Type="Microsoft.Office.Interop.Outlook.OlInspectorClose" />
       </Parameters>
       <Docs>
-        <param name="SaveMode"><span data-ttu-id="24d0d-114">Закрытие поведения.</span><span class="sxs-lookup"><span data-stu-id="24d0d-114">The close behavior.</span></span> <span data-ttu-id="24d0d-115">Если элемент, отображаемый в окне инспектора не был изменен, этот аргумент не оказывает влияния.</span><span class="sxs-lookup"><span data-stu-id="24d0d-115">If the item displayed within the inspector has not been changed, this argument has no effect.</span></span></param>
-        <summary><span data-ttu-id="24d0d-116">Закрывает <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> и при необходимости сохраняет изменения отображаемого элемента Outlook.</span><span class="sxs-lookup"><span data-stu-id="24d0d-116">Closes the  <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> and optionally saves changes to the displayed Outlook item.</span></span></summary>
+        <param name="SaveMode"><span data-ttu-id="c6bec-114">Поведение при закрытии.</span><span class="sxs-lookup"><span data-stu-id="c6bec-114">The close behavior.</span></span> <span data-ttu-id="c6bec-115">Если элемент, отображаемый в инспекторе, не был изменен, этот аргумент не оказывает никакого действия.</span><span class="sxs-lookup"><span data-stu-id="c6bec-115">If the item displayed within the inspector has not been changed, this argument has no effect.</span></span></param>
+        <summary><span data-ttu-id="c6bec-116">Закрывает <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> и (при необходимости) сохраняет изменения в отображаемом элементе Outlook.</span><span class="sxs-lookup"><span data-stu-id="c6bec-116">Closes the  <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> and optionally saves changes to the displayed Outlook item.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,7 +213,7 @@
         <ReturnType>Microsoft.Office.Core.CommandBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="24d0d-117">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span><span class="sxs-lookup"><span data-stu-id="24d0d-117">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
+        <summary><span data-ttu-id="c6bec-117">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span><span class="sxs-lookup"><span data-stu-id="c6bec-117">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -241,9 +241,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="24d0d-118">Возвращает <b>объект</b> , представляющий текущий элемент, отображаемый в окне инспектора.</span><span class="sxs-lookup"><span data-stu-id="24d0d-118">Returns an <b>Object</b> representing the current item being displayed in the inspector.</span></span> <span data-ttu-id="24d0d-119">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="24d0d-119">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c6bec-118">Возвращает <b>объект</b> , представляющий текущий элемент, отображаемый в инспекторе.</span><span class="sxs-lookup"><span data-stu-id="c6bec-118">Returns an <b>Object</b> representing the current item being displayed in the inspector.</span></span> <span data-ttu-id="c6bec-119">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c6bec-119">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="24d0d-120">Если элемент не открыт, будут возвращены сообщения об ошибке.</span><span class="sxs-lookup"><span data-stu-id="24d0d-120">If no item is currently open, an error message will be returned.</span></span></para>
+        <remarks><para><span data-ttu-id="c6bec-120">Если в данный момент ни один элемент не открыт, будет возвращено сообщение об ошибке.</span><span class="sxs-lookup"><span data-stu-id="c6bec-120">If no item is currently open, an error message will be returned.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -269,10 +269,10 @@
         <Parameter Name="Modal" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Modal"><span data-ttu-id="24d0d-121"><b>Значение true,</b> чтобы сделать модальные окна.</span><span class="sxs-lookup"><span data-stu-id="24d0d-121"><b>True</b> to make the window modal.</span></span> <span data-ttu-id="24d0d-122">Значение по умолчанию — <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="24d0d-122">The default value is <b>False</b>.</span></span></param>
-        <summary><span data-ttu-id="24d0d-123">Отображает новый <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объект для элемента.</span><span class="sxs-lookup"><span data-stu-id="24d0d-123">Displays a new <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> object for the item.</span></span></summary>
-        <remarks><para><span data-ttu-id="24d0d-124">Метод <b>отображения</b> поддерживается для windows explorer и инспектора для обратной совместимости.</span><span class="sxs-lookup"><span data-stu-id="24d0d-124">The <b>Display</b> method is supported for explorer and inspector windows for the sake of backward compatibility.</span></span> <span data-ttu-id="24d0d-125">Чтобы активировать окна проводника или инспектора, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.Activate" /> метод.</span><span class="sxs-lookup"><span data-stu-id="24d0d-125">To activate an explorer or inspector window, use the <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.Activate" /> method.</span></span></para>
-          <para><span data-ttu-id="24d0d-126">При попытке открыть объект «небезопасные» файловой системы (или файл «freedoc») с помощью объектной модели Microsoft Outlook, вы получаете код возврата E_FAIL на языках C или C++ программирования.</span><span class="sxs-lookup"><span data-stu-id="24d0d-126">If you attempt to open an "unsafe" file system object (or "freedoc" file) by using the Microsoft Outlook object model, you receive the E_FAIL return code in the C or C++ programming languages.</span></span> <span data-ttu-id="24d0d-127">В Outlook 2000 и более ранних версий то пользователь может открыть объекта системы «небезопасных» файлов с помощью метода <b>отображения</b> .</span><span class="sxs-lookup"><span data-stu-id="24d0d-127">In Outlook 2000 and earlier, you could open an "unsafe" file system object by using the <b>Display</b> method.</span></span></para>
+        <param name="Modal"><span data-ttu-id="c6bec-121"><b>Значение true</b> , чтобы сделать окно модальным.</span><span class="sxs-lookup"><span data-stu-id="c6bec-121"><b>True</b> to make the window modal.</span></span> <span data-ttu-id="c6bec-122">Значение по умолчанию — <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="c6bec-122">The default value is <b>False</b>.</span></span></param>
+        <summary><span data-ttu-id="c6bec-123">Отображает новый <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объект для элемента.</span><span class="sxs-lookup"><span data-stu-id="c6bec-123">Displays a new <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> object for the item.</span></span></summary>
+        <remarks><para><span data-ttu-id="c6bec-124">Метод <b>Display</b> поддерживается для окон проводника и инспектора в целях обратной совместимости.</span><span class="sxs-lookup"><span data-stu-id="c6bec-124">The <b>Display</b> method is supported for explorer and inspector windows for the sake of backward compatibility.</span></span> <span data-ttu-id="c6bec-125">Чтобы активировать окно проводника или инспектора, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.Activate" /> метод.</span><span class="sxs-lookup"><span data-stu-id="c6bec-125">To activate an explorer or inspector window, use the <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.Activate" /> method.</span></span></para>
+          <para><span data-ttu-id="c6bec-126">При попытке открыть "небезопасный" объект файловой системы (или "файл фридок") с помощью объектной модели Microsoft Outlook вы получаете E_FAIL код возврата на языках программирования C или C++.</span><span class="sxs-lookup"><span data-stu-id="c6bec-126">If you attempt to open an "unsafe" file system object (or "freedoc" file) by using the Microsoft Outlook object model, you receive the E_FAIL return code in the C or C++ programming languages.</span></span> <span data-ttu-id="c6bec-127">В Outlook 2000 и более ранних версий можно открыть "небезопасную" объект файловой системы с помощью метода <b>Display</b> .</span><span class="sxs-lookup"><span data-stu-id="c6bec-127">In Outlook 2000 and earlier, you could open an "unsafe" file system object by using the <b>Display</b> method.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -299,9 +299,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlEditorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="24d0d-128">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlEditorType" /> константу, указывающую тип редактора.</span><span class="sxs-lookup"><span data-stu-id="24d0d-128">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlEditorType" /> constant indicating the type of editor.</span></span> <span data-ttu-id="24d0d-129">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="24d0d-129">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c6bec-128">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlEditorType" /> константу, указывающую тип редактора.</span><span class="sxs-lookup"><span data-stu-id="c6bec-128">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlEditorType" /> constant indicating the type of editor.</span></span> <span data-ttu-id="c6bec-129">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c6bec-129">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="24d0d-130">Начиная с Microsoft Office Outlook 2007 свойство <b>EditorType</b> всегда возвращает olEditorWord.</span><span class="sxs-lookup"><span data-stu-id="24d0d-130">Since Microsoft Office Outlook 2007, the <b>EditorType</b> property always returns olEditorWord.</span></span></para>
+        <remarks><para><span data-ttu-id="c6bec-130">Так как Microsoft Office Outlook 2007, свойство <b>едитортипе</b> всегда возвращает оледиторворд.</span><span class="sxs-lookup"><span data-stu-id="c6bec-130">Since Microsoft Office Outlook 2007, the <b>EditorType</b> property always returns olEditorWord.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -331,7 +331,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="24d0d-131">Возвращает или задает <b>Integer</b> (<b>целое</b> в C#) значение, определяющее высоту (в точках) окна инспектора.</span><span class="sxs-lookup"><span data-stu-id="24d0d-131">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value specifying the height (in pixels) of the inspector window.</span></span> <span data-ttu-id="24d0d-132">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="24d0d-132">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c6bec-131">Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), задающее высоту (в пикселях) окна инспектора.</span><span class="sxs-lookup"><span data-stu-id="c6bec-131">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value specifying the height (in pixels) of the inspector window.</span></span> <span data-ttu-id="c6bec-132">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c6bec-132">Read/write.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -359,9 +359,9 @@
         <Parameter Name="PageName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="PageName"><span data-ttu-id="24d0d-133">Отображаемое имя страницы формы или внутреннее имя области формы скрыто.</span><span class="sxs-lookup"><span data-stu-id="24d0d-133">The display name of the form page, or the internal name of a form region to be hidden.</span></span></param>
-        <summary><span data-ttu-id="24d0d-134">Скрывает страницу формы или область формы в инспекторе.</span><span class="sxs-lookup"><span data-stu-id="24d0d-134">Hides a form page or form region in the inspector.</span></span></summary>
-        <remarks><para><span data-ttu-id="24d0d-135">Чтобы скрыть область формы путем указания можно использовать <b>HideFormRegion</b> <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.InternalName" /> свойства области формы, если область формы — соседних или отдельная область формы.</span><span class="sxs-lookup"><span data-stu-id="24d0d-135">You can use <b>HideFormRegion</b> to hide a form region by specifying the <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.InternalName" /> property of the form region, if the form region is an adjoining or separate form region.</span></span> <span data-ttu-id="24d0d-136">Только надстройки, который реализует области формы можно скрыть область формы.</span><span class="sxs-lookup"><span data-stu-id="24d0d-136">Only the add-in that implements the form region can hide the form region.</span></span></para>
+        <param name="PageName"><span data-ttu-id="c6bec-133">Отображаемое имя страницы формы или внутреннее имя области формы, которая будет скрыта.</span><span class="sxs-lookup"><span data-stu-id="c6bec-133">The display name of the form page, or the internal name of a form region to be hidden.</span></span></param>
+        <summary><span data-ttu-id="c6bec-134">Скрывает страницу формы или область формы в инспекторе.</span><span class="sxs-lookup"><span data-stu-id="c6bec-134">Hides a form page or form region in the inspector.</span></span></summary>
+        <remarks><para><span data-ttu-id="c6bec-135">С помощью <b>хидеформрегион</b> можно скрыть область формы, указав <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.InternalName" /> свойство области формы, если область формы является примыкающей или отдельной областью формы.</span><span class="sxs-lookup"><span data-stu-id="c6bec-135">You can use <b>HideFormRegion</b> to hide a form region by specifying the <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.InternalName" /> property of the form region, if the form region is an adjoining or separate form region.</span></span> <span data-ttu-id="c6bec-136">Область формы может быть скрыта только надстройкой, которая реализует область формы.</span><span class="sxs-lookup"><span data-stu-id="c6bec-136">Only the add-in that implements the form region can hide the form region.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -391,7 +391,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="24d0d-137">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span><span class="sxs-lookup"><span data-stu-id="24d0d-137">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
+        <summary><span data-ttu-id="c6bec-137">Этот объект, элемент или перечисление устарели и не предназначены для использования в коде.</span><span class="sxs-lookup"><span data-stu-id="c6bec-137">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -417,8 +417,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="24d0d-138">Определяет, отображаются ли сообщение электронной почты, связанный с инспектора, Outlook <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> или в Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="24d0d-138">Determines whether the mail message associated with an inspector is displayed in an Outlook <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" />  or in Microsoft Word.</span></span></summary>
-        <returns><span data-ttu-id="24d0d-139"><b>Значение true,</b> Если отображается сообщение электронной почты в Microsoft Word (то есть, если Word почты используется); в противном случае — <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="24d0d-139"><b>True</b> if the mail message is displayed in Microsoft Word (that is, if Word Mail is in use); otherwise, <b>False</b>.</span></span></returns>
+        <summary><span data-ttu-id="c6bec-138">Определяет, отображается ли почтовое сообщение, связанное с инспектором, <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> в Outlook или в Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="c6bec-138">Determines whether the mail message associated with an inspector is displayed in an Outlook <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" />  or in Microsoft Word.</span></span></summary>
+        <returns><span data-ttu-id="c6bec-139"><b>Значение true</b> , если почтовое сообщение отображается в Microsoft Word (то есть, если используется почта Word); в противном случае — <b>false</b>.</span><span class="sxs-lookup"><span data-stu-id="c6bec-139"><b>True</b> if the mail message is displayed in Microsoft Word (that is, if Word Mail is in use); otherwise, <b>False</b>.</span></span></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -448,7 +448,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="24d0d-140">Возвращает или задает <b>Integer</b> (<b>целое</b> в C#) значение, определяющее положение (в точках) вертикальной левого края окне инспектора от края экрана.</span><span class="sxs-lookup"><span data-stu-id="24d0d-140">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value specifying the position (in pixels) of the left vertical edge of an inspector window from the edge of the screen.</span></span> <span data-ttu-id="24d0d-141">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="24d0d-141">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c6bec-140">Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), задающее положение (в пикселях) левого вертикального края окна инспектора от края экрана.</span><span class="sxs-lookup"><span data-stu-id="c6bec-140">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value specifying the position (in pixels) of the left vertical edge of an inspector window from the edge of the screen.</span></span> <span data-ttu-id="c6bec-141">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c6bec-141">Read/write.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -476,9 +476,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="24d0d-142">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Pages" /> коллекции, представляющей все страницы в окне инспектора элемента.</span><span class="sxs-lookup"><span data-stu-id="24d0d-142">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.Pages" />  collection that represents all the pages for the item in the inspector.</span></span> <span data-ttu-id="24d0d-143">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="24d0d-143">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c6bec-142">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Pages" /> коллекцию, которая представляет все страницы для элемента в инспекторе.</span><span class="sxs-lookup"><span data-stu-id="c6bec-142">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.Pages" />  collection that represents all the pages for the item in the inspector.</span></span> <span data-ttu-id="c6bec-143">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c6bec-143">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="24d0d-144">Главная страница и до пяти настраиваемых страниц можно получить с помощью <see cref="M:Microsoft.Office.Interop.Outlook.Pages.Add(System.Object)" /> метод.</span><span class="sxs-lookup"><span data-stu-id="24d0d-144">The main page and up to five customizable pages can be obtained using the <see cref="M:Microsoft.Office.Interop.Outlook.Pages.Add(System.Object)" />  method.</span></span> </para>
+        <remarks><para><span data-ttu-id="c6bec-144">С помощью <see cref="M:Microsoft.Office.Interop.Outlook.Pages.Add(System.Object)" /> метода можно получить основную страницу и пять настраиваемых страниц.</span><span class="sxs-lookup"><span data-stu-id="c6bec-144">The main page and up to five customizable pages can be obtained using the <see cref="M:Microsoft.Office.Interop.Outlook.Pages.Add(System.Object)" />  method.</span></span> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -503,10 +503,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="24d0d-145">Откроется новая страница в режиме конструктора в инспекторе для новой области формы.</span><span class="sxs-lookup"><span data-stu-id="24d0d-145">Opens a new page in design mode in the inspector for a new form region.</span></span></summary>
-        <returns><span data-ttu-id="24d0d-146">Объект, представляющий страницы, отображение области формы в окне инспектора.</span><span class="sxs-lookup"><span data-stu-id="24d0d-146">An Object that represents the page displaying the form region in the inspector.</span></span></returns>
-        <remarks><para><span data-ttu-id="24d0d-147">Если инспектора еще не в режиме конструктора, <b>NewFormRegion</b> будет поместить его в режиме конструктора.</span><span class="sxs-lookup"><span data-stu-id="24d0d-147">If the inspector is not already in design mode, <b>NewFormRegion</b> will put it in design mode.</span></span></para>
-          <para><span data-ttu-id="24d0d-148">Этот метод только откроется страница для новой области формы в режиме конструктора.</span><span class="sxs-lookup"><span data-stu-id="24d0d-148">This method only opens a page for a new form region in design mode.</span></span> <span data-ttu-id="24d0d-149">Этот метод не предназначен для создания области формы во время выполнения.</span><span class="sxs-lookup"><span data-stu-id="24d0d-149">This method is not intended for creating a form region at runtime.</span></span></para>
+        <summary><span data-ttu-id="c6bec-145">Открывает новую страницу в режиме конструктора в инспекторе для новой области формы.</span><span class="sxs-lookup"><span data-stu-id="c6bec-145">Opens a new page in design mode in the inspector for a new form region.</span></span></summary>
+        <returns><span data-ttu-id="c6bec-146">Объект, представляющий страницу, отображающую область формы в инспекторе.</span><span class="sxs-lookup"><span data-stu-id="c6bec-146">An Object that represents the page displaying the form region in the inspector.</span></span></returns>
+        <remarks><para><span data-ttu-id="c6bec-147">Если инспектор еще не находится в режиме конструктора, <b>невформрегион</b> поместит его в режиме конструктора.</span><span class="sxs-lookup"><span data-stu-id="c6bec-147">If the inspector is not already in design mode, <b>NewFormRegion</b> will put it in design mode.</span></span></para>
+          <para><span data-ttu-id="c6bec-148">Этот метод открывает страницу только для новой области формы в режиме конструктора.</span><span class="sxs-lookup"><span data-stu-id="c6bec-148">This method only opens a page for a new form region in design mode.</span></span> <span data-ttu-id="c6bec-149">Этот метод не предназначен для создания области формы во время выполнения.</span><span class="sxs-lookup"><span data-stu-id="c6bec-149">This method is not intended for creating a form region at runtime.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -533,10 +533,10 @@
         <Parameter Name="Path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Path"><span data-ttu-id="24d0d-150">Полный локальный путь к хранилища форм Outlook (. Файл OFS) для области формы, который должен открываться в инспекторе.</span><span class="sxs-lookup"><span data-stu-id="24d0d-150">A full local file path to the Outlook Form Storage (.OFS) file for the form region that is to be opened in the inspector.</span></span></param>
-        <summary><span data-ttu-id="24d0d-151">Открывает страницу в режиме конструктора в инспекторе для указанной области.</span><span class="sxs-lookup"><span data-stu-id="24d0d-151">Opens a page in design mode in the inspector for the specified form region.</span></span></summary>
-        <returns><span data-ttu-id="24d0d-152">Объект, представляющий страницы, отображение области формы в окне инспектора.</span><span class="sxs-lookup"><span data-stu-id="24d0d-152">An Object that represents the page displaying the form region in the inspector.</span></span></returns>
-        <remarks><para><span data-ttu-id="24d0d-153">Если инспектора еще не в режиме конструктора, <b>OpenFormRegion</b> будет поместить его в режиме конструктора.</span><span class="sxs-lookup"><span data-stu-id="24d0d-153">If the inspector is not already in design mode, <b>OpenFormRegion</b> will put it in design mode.</span></span></para>
+        <param name="Path"><span data-ttu-id="c6bec-150">Полный путь к локальному файлу хранилища формы Outlook (. OFS) — файл для области формы, которая должна быть открыта в инспекторе.</span><span class="sxs-lookup"><span data-stu-id="c6bec-150">A full local file path to the Outlook Form Storage (.OFS) file for the form region that is to be opened in the inspector.</span></span></param>
+        <summary><span data-ttu-id="c6bec-151">Открывает страницу в режиме конструктора в инспекторе указанной области формы.</span><span class="sxs-lookup"><span data-stu-id="c6bec-151">Opens a page in design mode in the inspector for the specified form region.</span></span></summary>
+        <returns><span data-ttu-id="c6bec-152">Объект, представляющий страницу, отображающую область формы в инспекторе.</span><span class="sxs-lookup"><span data-stu-id="c6bec-152">An Object that represents the page displaying the form region in the inspector.</span></span></returns>
+        <remarks><para><span data-ttu-id="c6bec-153">Если инспектор еще не находится в режиме конструктора, <b>опенформрегион</b> поместит его в режиме конструктора.</span><span class="sxs-lookup"><span data-stu-id="c6bec-153">If the inspector is not already in design mode, <b>OpenFormRegion</b> will put it in design mode.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -563,7 +563,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="24d0d-154">Возвращает родительский <b>объект</b> заданного объекта.</span><span class="sxs-lookup"><span data-stu-id="24d0d-154">Returns the parent <b>Object</b> of the specified object.</span></span> <span data-ttu-id="24d0d-155">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="24d0d-155">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c6bec-154">Возвращает родительский <b>объект</b> указанного объекта.</span><span class="sxs-lookup"><span data-stu-id="c6bec-154">Returns the parent <b>Object</b> of the specified object.</span></span> <span data-ttu-id="c6bec-155">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c6bec-155">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -592,10 +592,10 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Page"><span data-ttu-id="24d0d-156">Страница, отображение области формы в окне инспектора.</span><span class="sxs-lookup"><span data-stu-id="24d0d-156">The page displaying the form region in the inspector.</span></span></param>
-        <param name="FileName"><span data-ttu-id="24d0d-157">Полный локальный путь к хранилища форм Outlook (. Файл OFS), которое сохраняется области формы.</span><span class="sxs-lookup"><span data-stu-id="24d0d-157">The full local file path to an Outlook Form Storage (.OFS) file that the form region is being saved to.</span></span></param>
-        <summary><span data-ttu-id="24d0d-158">Сохраняет указанную страницу в режиме конструктора в инспекторе в определенный файл.</span><span class="sxs-lookup"><span data-stu-id="24d0d-158">Saves the specified page in design mode in the inspector to the specified file.</span></span></summary>
-        <remarks><para><span data-ttu-id="24d0d-159">Чтобы <b>SaveFormRegion</b> Сохранить область формы необходимо загрузить области формы в режиме конструктора в инспекторе.</span><span class="sxs-lookup"><span data-stu-id="24d0d-159">In order for <b>SaveFormRegion</b> to save the form region, the form region must have been loaded in design mode in the inspector.</span></span></para>
+        <param name="Page"><span data-ttu-id="c6bec-156">Страница, на которой отображается область формы в инспекторе.</span><span class="sxs-lookup"><span data-stu-id="c6bec-156">The page displaying the form region in the inspector.</span></span></param>
+        <param name="FileName"><span data-ttu-id="c6bec-157">Полный путь к локальному файлу для хранилища формы Outlook (. OFS) — файл, в который сохраняется область формы.</span><span class="sxs-lookup"><span data-stu-id="c6bec-157">The full local file path to an Outlook Form Storage (.OFS) file that the form region is being saved to.</span></span></param>
+        <summary><span data-ttu-id="c6bec-158">Сохраняет указанную страницу в режиме конструктора в инспекторе в указанный файл.</span><span class="sxs-lookup"><span data-stu-id="c6bec-158">Saves the specified page in design mode in the inspector to the specified file.</span></span></summary>
+        <remarks><para><span data-ttu-id="c6bec-159">Чтобы <b>савеформрегион</b> сохранить область формы, область формы должна быть загружена в режиме конструктора в инспекторе.</span><span class="sxs-lookup"><span data-stu-id="c6bec-159">In order for <b>SaveFormRegion</b> to save the form region, the form region must have been loaded in design mode in the inspector.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -622,9 +622,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="24d0d-160">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта для текущего сеанса.</span><span class="sxs-lookup"><span data-stu-id="24d0d-160">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span></span> <span data-ttu-id="24d0d-161">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="24d0d-161">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c6bec-160">Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса.</span><span class="sxs-lookup"><span data-stu-id="c6bec-160">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span></span> <span data-ttu-id="c6bec-161">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c6bec-161">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="24d0d-162">Свойство <b>сеанса</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> взаимозаменяемыми метод для получения объекта <b>пространства имен</b> для текущего сеанса.</span><span class="sxs-lookup"><span data-stu-id="24d0d-162">The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session.</span></span> <span data-ttu-id="24d0d-163">Члены по своему назначению.</span><span class="sxs-lookup"><span data-stu-id="24d0d-163">Both members serve the same purpose.</span></span> <span data-ttu-id="24d0d-164">Например следующие пары операторов выполнить те же функции.</span><span class="sxs-lookup"><span data-stu-id="24d0d-164">For example, the following pairs of statements perform the same function:</span></span></para>
+        <remarks><para><span data-ttu-id="c6bec-162">Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса.</span><span class="sxs-lookup"><span data-stu-id="c6bec-162">The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session.</span></span> <span data-ttu-id="c6bec-163">Оба участника выполняют одну и ту же задачу.</span><span class="sxs-lookup"><span data-stu-id="c6bec-163">Both members serve the same purpose.</span></span> <span data-ttu-id="c6bec-164">Например, следующие пары операторов выполняют одну и ту же функцию:</span><span class="sxs-lookup"><span data-stu-id="c6bec-164">For example, the following pairs of statements perform the same function:</span></span></para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -658,12 +658,12 @@
         <Parameter Name="PropertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Control"><span data-ttu-id="24d0d-165">Элемент управления, тем самым соглашаетесь со свойством.</span><span class="sxs-lookup"><span data-stu-id="24d0d-165">The control that will be bound to a property.</span></span></param>
-        <param name="PropertyName"><span data-ttu-id="24d0d-166">Имя свойства, который будет привязан к элементу управления.</span><span class="sxs-lookup"><span data-stu-id="24d0d-166">The name of the property that will be bound to the control.</span></span></param>
-        <summary><span data-ttu-id="24d0d-167">Выполняет привязку к элементу управления в инспекторе встроенных свойств или настраиваемого свойства.</span><span class="sxs-lookup"><span data-stu-id="24d0d-167">Binds a built-in property or custom property to a control in an inspector.</span></span></summary>
-        <remarks><para><span data-ttu-id="24d0d-168">Этот метод можно использовать для привязки к элементу управления явных встроенных свойств или настраиваемого свойства.</span><span class="sxs-lookup"><span data-stu-id="24d0d-168">You can use this method to bind an explicit built-in property or a custom property to a control.</span></span> <span data-ttu-id="24d0d-169">Необходимо сослаться на свойство его имя строки, например, <b>тему</b>, а не пространство имен, например, http://schemas.microsoft.com/mapi/proptag/0x0037001E.</span><span class="sxs-lookup"><span data-stu-id="24d0d-169">You must reference the property by its string name, for example, <b>Subject</b>, and not by namespace, for example, http://schemas.microsoft.com/mapi/proptag/0x0037001E.</span></span></para>
-          <para><span data-ttu-id="24d0d-170"><paramref name="PropertyName" /> Параметр регистр не учитывается.</span><span class="sxs-lookup"><span data-stu-id="24d0d-170">The <paramref name="PropertyName" /> parameter is not case-sensitive.</span></span> <span data-ttu-id="24d0d-171">Например, <b>SetControlItemProperty</b> интерпретирует аргумента <b>CustomerId</b>, подлежащей <b>CustomerID</b> и связывает указанного элемента управления встроенных <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.CustomerID" /> свойство.</span><span class="sxs-lookup"><span data-stu-id="24d0d-171">For example, <b>SetControlItemProperty</b> interprets an argument, <b>CustomerId</b>, to be the same as <b>CustomerID</b> and binds the specified control to the built-in <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.CustomerID" /> property.</span></span></para>
-          <para><span data-ttu-id="24d0d-172">Кроме того, можно использовать следующую строку кода myPage.Controls("bar"). ItemProperty = «тема» для привязки элемента управления свойство subject.</span><span class="sxs-lookup"><span data-stu-id="24d0d-172">You can also use the following line of code myPage.Controls("bar").ItemProperty = "subject"  to bind the subject property to a control.</span></span> <span data-ttu-id="24d0d-173">Тем не менее, обратите внимание на то, что ненадежные кода с помощью будет вызываться предупреждение системы безопасности, если свойство был защищен с объектной модели безопасности например, <b>Чтобы</b>и Microsoft Office Outlook 2007 или более поздняя версия но работает на клиентском компьютере не имеет соответствующим образом настройте антивирусное программное обеспечение.</span><span class="sxs-lookup"><span data-stu-id="24d0d-173">However, note that untrusted code using this will trigger a security warning if the property is protected by the object model security guard such as <b>To</b>, and the client computer is running Microsoft Office Outlook 2007 or later but does not have an appropriately set up antivirus software.</span></span> <span data-ttu-id="24d0d-174">Чтобы избежать предупреждений системы безопасности с доверенными приложениями можно использовать метод <b>SetControlItemProperty</b> .</span><span class="sxs-lookup"><span data-stu-id="24d0d-174">You can use the <b>SetControlItemProperty</b> method to avoid security warnings with trusted applications.</span></span>  <span data-ttu-id="24d0d-175">Для получения дополнительных сведений см <a href="http://go.microsoft.com/fwlink/?LinkId=87941">Поведение безопасности объектной модели Outlook</a></span><span class="sxs-lookup"><span data-stu-id="24d0d-175">For more information, see <a href="http://go.microsoft.com/fwlink/?LinkId=87941">Security Behavior of the Outlook Object Model</a></span></span></para>
+        <param name="Control"><span data-ttu-id="c6bec-165">Элемент управления, который будет привязан к свойству.</span><span class="sxs-lookup"><span data-stu-id="c6bec-165">The control that will be bound to a property.</span></span></param>
+        <param name="PropertyName"><span data-ttu-id="c6bec-166">Имя свойства, которое будет привязано к элементу управления.</span><span class="sxs-lookup"><span data-stu-id="c6bec-166">The name of the property that will be bound to the control.</span></span></param>
+        <summary><span data-ttu-id="c6bec-167">Связывает встроенное свойство или настраиваемое свойство с элементом управления в инспекторе.</span><span class="sxs-lookup"><span data-stu-id="c6bec-167">Binds a built-in property or custom property to a control in an inspector.</span></span></summary>
+        <remarks><para><span data-ttu-id="c6bec-168">С помощью этого метода можно привязывать явное встроенное свойство или настраиваемое свойство к элементу управления.</span><span class="sxs-lookup"><span data-stu-id="c6bec-168">You can use this method to bind an explicit built-in property or a custom property to a control.</span></span> <span data-ttu-id="c6bec-169">Необходимо ссылаться на свойство по его строковому имени, например <b>subject</b>, а не по пространству имен, например http://schemas.microsoft.com/mapi/proptag/0x0037001E.</span><span class="sxs-lookup"><span data-stu-id="c6bec-169">You must reference the property by its string name, for example, <b>Subject</b>, and not by namespace, for example, http://schemas.microsoft.com/mapi/proptag/0x0037001E.</span></span></para>
+          <para><span data-ttu-id="c6bec-170">В <paramref name="PropertyName" /> параметре регистр не учитывается.</span><span class="sxs-lookup"><span data-stu-id="c6bec-170">The <paramref name="PropertyName" /> parameter is not case-sensitive.</span></span> <span data-ttu-id="c6bec-171">Например, <b>сетконтролитемпроперти</b> интерпретирует аргумент, <b>CustomerID</b>, так же, как <b>CustomerID</b> , и применяет к встроенному <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.CustomerID" /> свойству указанный элемент управления.</span><span class="sxs-lookup"><span data-stu-id="c6bec-171">For example, <b>SetControlItemProperty</b> interprets an argument, <b>CustomerId</b>, to be the same as <b>CustomerID</b> and binds the specified control to the built-in <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.CustomerID" /> property.</span></span></para>
+          <para><span data-ttu-id="c6bec-172">Кроме того, можно использовать следующую строку кода myPage. Controls ("Bar"). ItemProperty = "subject" для привязывания свойства Subject к элементу управления.</span><span class="sxs-lookup"><span data-stu-id="c6bec-172">You can also use the following line of code myPage.Controls("bar").ItemProperty = "subject"  to bind the subject property to a control.</span></span> <span data-ttu-id="c6bec-173">Однако обратите внимание на то, что ненадежный код использует это предупреждение системы безопасности, если свойство защищено защитой объектной модели, например, <b>на</b>клиентском компьютере работает Microsoft Office Outlook 2007 или более поздней версии, но не настроено соответствующее антивирусное программное обеспечение.</span><span class="sxs-lookup"><span data-stu-id="c6bec-173">However, note that untrusted code using this will trigger a security warning if the property is protected by the object model security guard such as <b>To</b>, and the client computer is running Microsoft Office Outlook 2007 or later but does not have an appropriately set up antivirus software.</span></span> <span data-ttu-id="c6bec-174">Вы можете использовать метод <b>сетконтролитемпроперти</b> , чтобы избежать появления предупреждений системы безопасности для надежных приложений.</span><span class="sxs-lookup"><span data-stu-id="c6bec-174">You can use the <b>SetControlItemProperty</b> method to avoid security warnings with trusted applications.</span></span>  <span data-ttu-id="c6bec-175">Дополнительные сведения см в разделе <a href="http://go.microsoft.com/fwlink/?LinkId=87941">поведение системы безопасности объектной модели Outlook</a></span><span class="sxs-lookup"><span data-stu-id="c6bec-175">For more information, see <a href="http://go.microsoft.com/fwlink/?LinkId=87941">Security Behavior of the Outlook Object Model</a></span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -690,9 +690,9 @@
         <Parameter Name="PageName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="PageName"><span data-ttu-id="24d0d-176">Отображаемое имя страницы формы или внутреннее имя области формы.</span><span class="sxs-lookup"><span data-stu-id="24d0d-176">The display name of the form page, or the internal name of the form region.</span></span></param>
-        <summary><span data-ttu-id="24d0d-177">Отображается страница указанную форму или область формы в инспекторе.</span><span class="sxs-lookup"><span data-stu-id="24d0d-177">Displays the specified form page or form region in the inspector.</span></span></summary>
-        <remarks><para><span data-ttu-id="24d0d-178"><b>SetCurrentFormPage</b> можно использовать для отображения области формы путем указания <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.InternalName" /> свойство области формы, если область формы — в отдельных, заменить или область заменяющей формы.</span><span class="sxs-lookup"><span data-stu-id="24d0d-178">You can use <b>SetCurrentFormPage</b> to display a form region by specifying the <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.InternalName" /> property of the form region, if the form region is an a separate, replace, or replace-all form region.</span></span></para>
+        <param name="PageName"><span data-ttu-id="c6bec-176">Отображаемое имя страницы формы или внутреннее имя области формы.</span><span class="sxs-lookup"><span data-stu-id="c6bec-176">The display name of the form page, or the internal name of the form region.</span></span></param>
+        <summary><span data-ttu-id="c6bec-177">Отображает указанную страницу формы или область формы в инспекторе.</span><span class="sxs-lookup"><span data-stu-id="c6bec-177">Displays the specified form page or form region in the inspector.</span></span></summary>
+        <remarks><para><span data-ttu-id="c6bec-178">Вы можете использовать <b>сеткуррентформпаже</b> для отображения области формы, указав <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.InternalName" /> свойство области формы, если область формы является отдельной, заменить или заменить область формы.</span><span class="sxs-lookup"><span data-stu-id="c6bec-178">You can use <b>SetCurrentFormPage</b> to display a form region by specifying the <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.InternalName" /> property of the form region, if the form region is an a separate, replace, or replace-all form region.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -719,9 +719,9 @@
         <Parameter Name="Start" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="Start"><span data-ttu-id="24d0d-179">Начало интервала времени, что помощник по планированию вкладке инспектора отображается доступности для участниками собрания.</span><span class="sxs-lookup"><span data-stu-id="24d0d-179">The beginning of the time range that the Scheduling Assistant tab of the inspector displays free/busy times for meeting attendees.</span></span></param>
-        <summary><span data-ttu-id="24d0d-180">Задает время начала для элемента собрания в сетке сведений о доступности на вкладке помощник по планированию инспектора.</span><span class="sxs-lookup"><span data-stu-id="24d0d-180">Sets the start time for a meeting item in the free/busy grid on the Scheduling Assistant tab of the inspector.</span></span></summary>
-        <remarks><para><span data-ttu-id="24d0d-181">Объект, заданный параметром <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.CurrentItem" /> свойство родительского <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объект должен иметь <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> или <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />.</span><span class="sxs-lookup"><span data-stu-id="24d0d-181">The object specified by the <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.CurrentItem" /> property of the parent <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> object must be an <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> or <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />.</span></span> <span data-ttu-id="24d0d-182">Помощник по планированию вкладки должен отображаться в инспекторе, в противном случае возникает ошибка Microsoft Outlook.</span><span class="sxs-lookup"><span data-stu-id="24d0d-182">The Scheduling Assistant tab must be displayed in the inspector, otherwise Microsoft Outlook raises an error.</span></span> <span data-ttu-id="24d0d-183">Если не удается отобразить вкладку помощник по планированию для этого типа элемента, Outlook отображается следующее сообщение об ошибке: время начала планирования могут быть установлены только когда помощник по планированию отображается в элементе собрания.</span><span class="sxs-lookup"><span data-stu-id="24d0d-183">If Outlook cannot display the Scheduling Assistant tab for that item type, Outlook displays the following error: The scheduling start time can only be set when the Scheduling Assistant is displayed on a meeting item.</span></span></para>
+        <param name="Start"><span data-ttu-id="c6bec-179">Начало диапазона времени, на котором на вкладке помощник по планированию отображаются сведения о занятости участников собрания.</span><span class="sxs-lookup"><span data-stu-id="c6bec-179">The beginning of the time range that the Scheduling Assistant tab of the inspector displays free/busy times for meeting attendees.</span></span></param>
+        <summary><span data-ttu-id="c6bec-180">Задает время начала для элемента собрания в таблице сведений о доступности на вкладке помощник по планированию в инспекторе.</span><span class="sxs-lookup"><span data-stu-id="c6bec-180">Sets the start time for a meeting item in the free/busy grid on the Scheduling Assistant tab of the inspector.</span></span></summary>
+        <remarks><para><span data-ttu-id="c6bec-181"><see cref="P:Microsoft.Office.Interop.Outlook._Inspector.CurrentItem" /> Объект, указанный <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> свойством родительского объекта, должен иметь значение <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> или. <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /></span><span class="sxs-lookup"><span data-stu-id="c6bec-181">The object specified by the <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.CurrentItem" /> property of the parent <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> object must be an <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> or <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />.</span></span> <span data-ttu-id="c6bec-182">Вкладка помощник по планированию должна отображаться в инспекторе, в противном случае в Microsoft Outlook возникает ошибка.</span><span class="sxs-lookup"><span data-stu-id="c6bec-182">The Scheduling Assistant tab must be displayed in the inspector, otherwise Microsoft Outlook raises an error.</span></span> <span data-ttu-id="c6bec-183">Если Outlook не может отобразить вкладку Помощник по планированию для этого типа элемента, в Outlook отображается следующее сообщение об ошибке: время начала расписания можно задать только при отображении помощника по планированию для элемента собрания.</span><span class="sxs-lookup"><span data-stu-id="c6bec-183">If Outlook cannot display the Scheduling Assistant tab for that item type, Outlook displays the following error: The scheduling start time can only be set when the Scheduling Assistant is displayed on a meeting item.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -748,9 +748,9 @@
         <Parameter Name="PageName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="PageName"><span data-ttu-id="24d0d-184">Отображаемое имя страницы формы или внутреннее имя области формы, которое будет отображаться.</span><span class="sxs-lookup"><span data-stu-id="24d0d-184">The display name of the form page, or the internal name of a form region to be shown.</span></span></param>
-        <summary><span data-ttu-id="24d0d-185">Отображаются кнопки в группе Отображать на ленте Microsoft Office Fluent для инспектора, нажав кнопку которого будут отображаться области формы или страницы, заданной параметром <paramref name="PageName" />.</span><span class="sxs-lookup"><span data-stu-id="24d0d-185">Displays a button in the Show group of the Microsoft Office Fluent ribbon for the inspector, clicking which will show the page or form region specified by <paramref name="PageName" />.</span></span></summary>
-        <remarks><para><span data-ttu-id="24d0d-186">Для области формы можно использовать <b>ShowFormPage</b> для отображения кнопки путем указания <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.InternalName" /> свойства области формы, если область формы — соседних или отдельная область формы.</span><span class="sxs-lookup"><span data-stu-id="24d0d-186">For form regions, you can use <b>ShowFormPage</b> to display the button by specifying the <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.InternalName" /> property of the form region, if the form region is an adjoining or separate form region.</span></span> <span data-ttu-id="24d0d-187">Только надстройки, который реализует области формы можно использовать <b>ShowFormRegion</b> для отображения кнопки.</span><span class="sxs-lookup"><span data-stu-id="24d0d-187">Only the add-in that implements the form region can use <b>ShowFormRegion</b> to display the button.</span></span></para>
+        <param name="PageName"><span data-ttu-id="c6bec-184">Отображаемое имя страницы формы или внутреннее имя области формы, которое будет отображаться.</span><span class="sxs-lookup"><span data-stu-id="c6bec-184">The display name of the form page, or the internal name of a form region to be shown.</span></span></param>
+        <summary><span data-ttu-id="c6bec-185">Отображает кнопку в группе "Показать" ленты Microsoft Office Fluent для инспектора, в которой отображается страница или область формы, заданная в параметре <paramref name="PageName" />.</span><span class="sxs-lookup"><span data-stu-id="c6bec-185">Displays a button in the Show group of the Microsoft Office Fluent ribbon for the inspector, clicking which will show the page or form region specified by <paramref name="PageName" />.</span></span></summary>
+        <remarks><para><span data-ttu-id="c6bec-186">Для областей формы можно использовать <b>шовформпаже</b> для отображения кнопки, указав <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.InternalName" /> свойство области формы, если область формы является примыкающей или отдельной областью формы.</span><span class="sxs-lookup"><span data-stu-id="c6bec-186">For form regions, you can use <b>ShowFormPage</b> to display the button by specifying the <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.InternalName" /> property of the form region, if the form region is an adjoining or separate form region.</span></span> <span data-ttu-id="c6bec-187">Только надстройка, которая реализует область формы, может использовать <b>шовформрегион</b> для отображения кнопки.</span><span class="sxs-lookup"><span data-stu-id="c6bec-187">Only the add-in that implements the form region can use <b>ShowFormRegion</b> to display the button.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -780,7 +780,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="24d0d-188">Возвращает или задает <b>Integer</b> (<b>целое</b> в C#) значение, указывающее положение (в точках) горизонтальной верхнего края окне инспектора от края экрана.</span><span class="sxs-lookup"><span data-stu-id="24d0d-188">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value indicating the position (in pixels) of the top horizontal edge of an inspector window from the edge of the screen.</span></span> <span data-ttu-id="24d0d-189">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="24d0d-189">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c6bec-188">Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), обозначающее положение (в пикселях) верхней горизонтальной границы окна инспектора от края экрана.</span><span class="sxs-lookup"><span data-stu-id="c6bec-188">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value indicating the position (in pixels) of the top horizontal edge of an inspector window from the edge of the screen.</span></span> <span data-ttu-id="c6bec-189">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c6bec-189">Read/write.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -811,7 +811,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="24d0d-190">Возвращает или задает <b>Integer</b> (<b>целое</b> в C#) значение, указывающее ширину (в точках) указанного объекта.</span><span class="sxs-lookup"><span data-stu-id="24d0d-190">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value indicating the width (in pixels) of the specified object.</span></span> <span data-ttu-id="24d0d-191">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="24d0d-191">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c6bec-190">Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее ширину (в пикселях) указанного объекта.</span><span class="sxs-lookup"><span data-stu-id="c6bec-190">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value indicating the width (in pixels) of the specified object.</span></span> <span data-ttu-id="c6bec-191">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c6bec-191">Read/write.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -842,7 +842,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlWindowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="24d0d-192">Возвращает или задает для свойства значение константы в <see cref="T:Microsoft.Office.Interop.Outlook.OlWindowState" /> перечисление, указывающее состояние окна окна проводника или инспектора.</span><span class="sxs-lookup"><span data-stu-id="24d0d-192">Returns or sets the property with a constant in the  <see cref="T:Microsoft.Office.Interop.Outlook.OlWindowState" /> enumeration specifying the window state of an explorer or inspector window.</span></span> <span data-ttu-id="24d0d-193">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="24d0d-193">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="c6bec-192">Возвращает или задает свойство с константой в <see cref="T:Microsoft.Office.Interop.Outlook.OlWindowState" /> перечислении, указывающей состояние окна проводника или окна инспектора.</span><span class="sxs-lookup"><span data-stu-id="c6bec-192">Returns or sets the property with a constant in the  <see cref="T:Microsoft.Office.Interop.Outlook.OlWindowState" /> enumeration specifying the window state of an explorer or inspector window.</span></span> <span data-ttu-id="c6bec-193">Для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="c6bec-193">Read/write.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -870,56 +870,56 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="24d0d-194">Возвращает Microsoft Document объектной модели Word из сообщения об ошибке.</span><span class="sxs-lookup"><span data-stu-id="24d0d-194">Returns the Microsoft Word Document Object Model of the  message being displayed.</span></span> <span data-ttu-id="24d0d-195">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="24d0d-195">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c6bec-194">Возвращает объектную модель документа Microsoft Word для отображаемого сообщения.</span><span class="sxs-lookup"><span data-stu-id="c6bec-194">Returns the Microsoft Word Document Object Model of the  message being displayed.</span></span> <span data-ttu-id="c6bec-195">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c6bec-195">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="24d0d-196">Свойство <b>WordEditor</b> допустимо только если <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.IsWordMail" /> возвращает <b>значение True</b> и <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.EditorType" /> — это <b>olEditorWord</b>.</span><span class="sxs-lookup"><span data-stu-id="24d0d-196">The <b>WordEditor</b> property is only valid if <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.IsWordMail" /> returns <b>True</b> and the <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.EditorType" /> is <b>olEditorWord</b>.</span></span> <span data-ttu-id="24d0d-197">Возвращаемый объект <b>WordDocument</b> предоставляет доступ к большая часть объектной модели Word, за исключением следующие элементы:</span><span class="sxs-lookup"><span data-stu-id="24d0d-197">The returned <b>WordDocument</b> object provides access to most of the Word object model except for the following members:</span></span> </para>
+        <remarks><para><span data-ttu-id="c6bec-196">Свойство <b>WordEditor</b> является допустимым только в <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.IsWordMail" /> <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.EditorType" /> том случае, если возвращается <b>значение true</b> и значение <b>оледиторворд</b>.</span><span class="sxs-lookup"><span data-stu-id="c6bec-196">The <b>WordEditor</b> property is only valid if <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.IsWordMail" /> returns <b>True</b> and the <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.EditorType" /> is <b>olEditorWord</b>.</span></span> <span data-ttu-id="c6bec-197">Возвращаемый объект <b>ворддокумент</b> предоставляет доступ к большинству объектной модели Word, за исключением следующих элементов:</span><span class="sxs-lookup"><span data-stu-id="c6bec-197">The returned <b>WordDocument</b> object provides access to most of the Word object model except for the following members:</span></span> </para>
           <list type="bullet">
             <item>
-              <para><span data-ttu-id="24d0d-198">
+              <para><span data-ttu-id="c6bec-198">
+                <b>Tables. Add</b>
+              </span><span class="sxs-lookup"><span data-stu-id="c6bec-198">
                 <b>Tables.Add</b>
-              </span><span class="sxs-lookup"><span data-stu-id="24d0d-198">
-                <b>Tables.Add</b>
               </span></span></para>
             </item>
             <item>
-              <para><span data-ttu-id="24d0d-199">
-                <b>Range.ConvertToTable</b>
-              </span><span class="sxs-lookup"><span data-stu-id="24d0d-199">
+              <para><span data-ttu-id="c6bec-199">
+                <b>Range. Конверттотабле</b>
+              </span><span class="sxs-lookup"><span data-stu-id="c6bec-199">
                 <b>Range.ConvertToTable</b>
               </span></span></para>
             </item>
             <item>
-              <para><span data-ttu-id="24d0d-200">
+              <para><span data-ttu-id="c6bec-200">
+                <b>InlineShapes. AddChart</b>
+              </span><span class="sxs-lookup"><span data-stu-id="c6bec-200">
                 <b>InlineShapes.AddChart</b>
-              </span><span class="sxs-lookup"><span data-stu-id="24d0d-200">
-                <b>InlineShapes.AddChart</b>
               </span></span></para>
             </item>
             <item>
-              <para><span data-ttu-id="24d0d-201">
-                <b>Shapes.AddChart</b>
-              </span><span class="sxs-lookup"><span data-stu-id="24d0d-201">
+              <para><span data-ttu-id="c6bec-201">
+                <b>Shapes. AddChart</b>
+              </span><span class="sxs-lookup"><span data-stu-id="c6bec-201">
                 <b>Shapes.AddChart</b>
               </span></span></para>
             </item>
             <item>
-              <para><span data-ttu-id="24d0d-202">
-                <b>Range.InsertXML</b>
-              </span><span class="sxs-lookup"><span data-stu-id="24d0d-202">
+              <para><span data-ttu-id="c6bec-202">
+                <b>Range. InsertXML</b>
+              </span><span class="sxs-lookup"><span data-stu-id="c6bec-202">
                 <b>Range.InsertXML</b>
               </span></span></para>
             </item>
             <item>
-              <para><span data-ttu-id="24d0d-203">
-                <b>Selection.insertxml выполняются</b>
-              </span><span class="sxs-lookup"><span data-stu-id="24d0d-203">
+              <para><span data-ttu-id="c6bec-203">
+                <b>Selection. InsertXML</b>
+              </span><span class="sxs-lookup"><span data-stu-id="c6bec-203">
                 <b>Selection.InsertXML</b>
               </span></span></para>
             </item>
             <item>
-              <para><span data-ttu-id="24d0d-204">
-                <b>Range.ImportFragment</b>
-              </span><span class="sxs-lookup"><span data-stu-id="24d0d-204">
+              <para><span data-ttu-id="c6bec-204">
+                <b>Range. Импортфрагмент</b>
+              </span><span class="sxs-lookup"><span data-stu-id="c6bec-204">
                 <b>Range.ImportFragment</b>
               </span></span></para>
             </item>

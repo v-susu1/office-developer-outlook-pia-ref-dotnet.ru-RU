@@ -12,9 +12,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary><span data-ttu-id="dfa2f-101">Задает область действия в виде папок поиска.</span><span class="sxs-lookup"><span data-stu-id="dfa2f-101">Specifies the scope in terms of folders for the search.</span></span></summary>
-    <remarks><para><span data-ttu-id="dfa2f-102">Вы можете выбрать хранилищ выполнять поиск в папках поиска меню, нажав кнопку средства поиска в группе Параметры контекстных вкладок поиска в Microsoft Office Fluent ленты.</span><span class="sxs-lookup"><span data-stu-id="dfa2f-102">You can select stores to search in the Locations to Search menu by clicking Search Tools in the Options group of the Search contextual tab in the Microsoft Office Fluent ribbon.</span></span></para>
-      <para><span data-ttu-id="dfa2f-103">По умолчанию поиска не включает папки «Удаленные».</span><span class="sxs-lookup"><span data-stu-id="dfa2f-103">By default, search does not include the Deleted Items folder.</span></span> <span data-ttu-id="dfa2f-104">Для поиска папки «Удаленные», установите эту папку в качестве текущей папки и поиск по <see cref="F:Microsoft.Office.Interop.Outlook.OlSearchScope.olSearchScopeCurrentFolder" />.</span><span class="sxs-lookup"><span data-stu-id="dfa2f-104">To search the Deleted Items folder, set that folder as your current folder and search by <see cref="F:Microsoft.Office.Interop.Outlook.OlSearchScope.olSearchScopeCurrentFolder" />.</span></span></para>
+    <summary><span data-ttu-id="d315b-101">Задает область в терминах папок для поиска.</span><span class="sxs-lookup"><span data-stu-id="d315b-101">Specifies the scope in terms of folders for the search.</span></span></summary>
+    <remarks><para><span data-ttu-id="d315b-102">Вы можете выбрать магазины для поиска в меню "расположения для поиска", выбрав пункт средства поиска в группе Параметры контекстной вкладки поиска на ленте Microsoft Office Fluent.</span><span class="sxs-lookup"><span data-stu-id="d315b-102">You can select stores to search in the Locations to Search menu by clicking Search Tools in the Options group of the Search contextual tab in the Microsoft Office Fluent ribbon.</span></span></para>
+      <para><span data-ttu-id="d315b-103">По умолчанию поиск не включает папку "Удаленные".</span><span class="sxs-lookup"><span data-stu-id="d315b-103">By default, search does not include the Deleted Items folder.</span></span> <span data-ttu-id="d315b-104">Чтобы выполнить поиск в папке "Удаленные", задайте эту папку в качестве текущей папки и <see cref="F:Microsoft.Office.Interop.Outlook.OlSearchScope.olSearchScopeCurrentFolder" />выполните поиск по учетной записи.</span><span class="sxs-lookup"><span data-stu-id="d315b-104">To search the Deleted Items folder, set that folder as your current folder and search by <see cref="F:Microsoft.Office.Interop.Outlook.OlSearchScope.olSearchScopeCurrentFolder" />.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,7 +34,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary><span data-ttu-id="dfa2f-105">Область поиска будет во всех папках, имеющие тип папки из текущей папки (<see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.DefaultItemType" />) и все хранилища, которые были выбраны для поиска в папке, в раскрывающемся меню.</span><span class="sxs-lookup"><span data-stu-id="dfa2f-105">The search scope will be across all folders that have the folder type of the current folder (<see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.DefaultItemType" />) and all stores that have been selected for search in the In Folder drop down menu.</span></span></summary>
+        <summary><span data-ttu-id="d315b-105">Область поиска будет находиться во всех папках с типом папки текущая папка (<see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.DefaultItemType" />) и всеми хранилищами, выбранными для поиска в раскрывающемся меню Папка в папке.</span><span class="sxs-lookup"><span data-stu-id="d315b-105">The search scope will be across all folders that have the folder type of the current folder (<see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.DefaultItemType" />) and all stores that have been selected for search in the In Folder drop down menu.</span></span></summary>
       </Docs>
     </Member>
     <Member MemberName="olSearchScopeAllOutlookItems">
@@ -53,7 +53,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary><span data-ttu-id="dfa2f-106">Область поиска — это все элементы Outlook в всех папок в хранилищах, которые были выбраны для поиска.</span><span class="sxs-lookup"><span data-stu-id="dfa2f-106">The search scope is all Outlook items in all folders in stores that have been selected for search.</span></span></summary>
+        <summary><span data-ttu-id="d315b-106">Область поиска — это все элементы Outlook во всех папках в магазинах, которые были выбраны для поиска.</span><span class="sxs-lookup"><span data-stu-id="d315b-106">The search scope is all Outlook items in all folders in stores that have been selected for search.</span></span></summary>
       </Docs>
     </Member>
     <Member MemberName="olSearchScopeCurrentFolder">
@@ -72,7 +72,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary><span data-ttu-id="dfa2f-107">Область поиска будет только папки, представленной <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" />.</span><span class="sxs-lookup"><span data-stu-id="dfa2f-107">The search scope will be only the folder represented by <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" />.</span></span></summary>
+        <summary><span data-ttu-id="d315b-107">Область поиска будет содержать только ту папку, в которой <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" />она представлена.</span><span class="sxs-lookup"><span data-stu-id="d315b-107">The search scope will be only the folder represented by <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" />.</span></span></summary>
       </Docs>
     </Member>
     <Member MemberName="olSearchScopeCurrentStore">
@@ -91,7 +91,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary><span data-ttu-id="dfa2f-108">Область поиска — это хранилище для текущей папки, которая содержит элемент, отображаемые в окне active.</span><span class="sxs-lookup"><span data-stu-id="dfa2f-108">The search scope is the store for the current folder, which contains the item displayed in the active explorer.</span></span></summary>
+        <summary><span data-ttu-id="d315b-108">Область поиска — это магазин для текущей папки, который содержит элемент, отображаемый в активном проводнике.</span><span class="sxs-lookup"><span data-stu-id="d315b-108">The search scope is the store for the current folder, which contains the item displayed in the active explorer.</span></span></summary>
       </Docs>
     </Member>
     <Member MemberName="olSearchScopeSubfolders">
@@ -110,7 +110,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary><span data-ttu-id="dfa2f-109">Область поиска — это папка, представленного <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> и вложенные в нее папки.</span><span class="sxs-lookup"><span data-stu-id="dfa2f-109">The search scope is the folder represented by <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> and its subfolders.</span></span></summary>
+        <summary><span data-ttu-id="d315b-109">Область поиска — это папка, представленная <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> и вложенные в нее папки.</span><span class="sxs-lookup"><span data-stu-id="d315b-109">The search scope is the folder represented by <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> and its subfolders.</span></span></summary>
       </Docs>
     </Member>
   </Members>
