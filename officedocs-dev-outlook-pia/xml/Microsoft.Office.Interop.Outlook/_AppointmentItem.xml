@@ -1,5 +1,5 @@
 <Type Name="_AppointmentItem" FullName="Microsoft.Office.Interop.Outlook._AppointmentItem">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="e1a98d4cad5fc9572e588f667c7713563d8c671c" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27899959" /></Metadata><TypeSignature Language="C#" Value="public interface _AppointmentItem" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7b2884a5c5f2ab4368f538b8ff4fac0ead2aa935" /><Meta Name="ms.sourcegitcommit" Value="edbc1e709f796342c771b5226636c7e9dde40a82" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="06/25/2021" /><Meta Name="ms.locfileid" Value="53139497" /></Metadata><TypeSignature Language="C#" Value="public interface _AppointmentItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _AppointmentItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._AppointmentItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface _AppointmentItem" />
@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения об объекте COM см. в <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> .</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Actions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Actions" /> коллекцию, которая представляет все доступные действия для элемента. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Actions" />  коллекцию, которая представляет все доступные действия для элемента. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -76,7 +76,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>значение true</b> , если встреча является событием на целый день (а не заданное время). Для чтения и записи.</summary>
+        <summary>Возвращает <b>True,</b> если встреча является событием на весь день (в отличие от указанного времени). Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -104,7 +104,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, который представляет родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -132,7 +132,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Attachments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" /> объект, который представляет все вложения для указанного элемента. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" />  объект, который представляет все вложения для указанного элемента. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -160,10 +160,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>логическое значение</b> (<b>bool</b> в C#), определяющее, является ли элемент победителем автоматического разрешения конфликтов. Только для чтения.</summary>
+        <summary>Возвращает <b>boolean</b> <b>(bool</b> в C#), который определяет, является ли элемент победителем автоматического разрешения конфликтов. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение <b>false</b> не обязательно указывает, что элемент является проигравший при автоматическом разрешении конфликтов. Элемент может находиться в конфликте с другим элементом.</para>
-          <para><see cref="P:Microsoft.Office.Interop.Outlook.Conflicts.Count" /> Если элемент имеет <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.Conflicts" /> свойство, большее нуля, и если его свойство <b>AutoResolvedWinner</b> имеет <b>значение true</b>, то это победитель в автоматическом разрешении конфликтов. С другой стороны, если элемент находится в конфликте и его свойство <b>AutoResolvedWinner</b> имеет <b>значение false</b>, то оно проявляется проигравший при автоматическом разрешении конфликтов.</para>
+        <remarks><para>Значение <b>False</b> не обязательно указывает на то, что элемент является неудачником автоматического разрешения конфликтов. Элемент может быть в конфликте с другим элементом.</para>
+          <para>Если у элемента есть свойство больше нуля и если свойство  <see cref="P:Microsoft.Office.Interop.Outlook.Conflicts.Count" /> <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.Conflicts" /> <b>AutoResolvedWinner</b> является <b>True,</b>он является победителем автоматического разрешения конфликтов. С другой стороны, если элемент находится в конфликте и имеет свойство <b>AutoResolvedWinner</b> как <b>False,</b>он проигрывает в автоматическом разрешении конфликтов.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -193,9 +193,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), представляющую сведения о выставлении счетов, связанные с элементом Outlook. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> <b>(строка</b> в C#), представляющую сведения о выставлении счета, связанные с Outlook элементом. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это текстовое поле произвольной формы.</para>
+        <remarks><para>Это текстовое поле в свободной форме.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -225,7 +225,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), представляющую текст элемента Outlook в виде открытого текста. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> <b>(строка</b> в C#), представляющую текстовое тело элемента Outlook. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -256,7 +256,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlBusyStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlBusyStatus" /> константу, показывающую состояние занятости пользователя для встречи. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlBusyStatus" /> констант с указанием загруженного состояния пользователя для встречи. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -287,10 +287,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), представляющую категории, назначенные элементу Outlook. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> <b>(строка</b> C#), представляющую категории, заданной элементу Outlook. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>Categories</b> — это строка с разделителями имен категорий, которые были назначены элементу Outlook. В этом свойстве используется символ, указанный в имени значения Слист в разделе HKEY_CURRENT_USER \Контрол Панел\интернатионал в реестре Windows в качестве разделителя для нескольких значений категорий. Чтобы преобразовать строку имен категорий в массив имен категорий, используйте функцию <b>разделения</b>в Microsoft Visual Basic.</para>
+            <b>Категории —</b> это делимитированная строка имен категорий, назначенная элементу Outlook. Это свойство использует символ, указанный в имени значения sList, HKEY_CURRENT_USER\Control Panel\International в реестре Windows, в качестве делимитера для нескольких значений категорий. Чтобы преобразовать строку имен категорий в массив имен категорий, используйте функцию Microsoft Visual Basic <b>Split.</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -317,7 +317,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> констант с указанием класса объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -343,7 +343,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Удаляет параметры повторения и восстанавливает состояние одного события для встречи или задачи.</summary>
+        <summary>Удаляет параметры повторения и восстанавливает состояние одного возникновения для встречи или задачи.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -370,8 +370,8 @@
         <Parameter Name="SaveMode" Type="Microsoft.Office.Interop.Outlook.OlInspectorClose" />
       </Parameters>
       <Docs>
-        <param name="SaveMode">Поведение при закрытии. Если элемент, отображаемый в инспекторе, не был изменен, этот аргумент не оказывает никакого действия.</param>
-        <summary>Закрывается и при необходимости сохраняет изменения элемента Outlook.</summary>
+        <param name="SaveMode">Близкое поведение. Если элемент, отображающийся в инспекторе, не был изменен, этот аргумент не влияет.</param>
+        <summary>Закрывает и дополнительно сохраняет изменения в элементе Outlook.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -401,9 +401,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>строку</b> (<b>строка</b> в C#), представляющую имена компаний, связанных с элементом Outlook. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> <b>(строка</b> в C#), представляющую имена компаний, связанных с Outlook элементом. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это текстовое поле произвольной формы. </para>
+        <remarks><para>Это текстовое поле в свободной форме. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -504,7 +504,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Conflicts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Conflicts" /> объект, представляющий конфликтующие элементы для любого объекта элемента Outlook.  Только для чтения.</summary>
+        <summary>Возвращаем объект, который представляет элементы, которые находятся в конфликте для любого <see cref="T:Microsoft.Office.Interop.Outlook.Conflicts" /> объекта Outlook элемента.  Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -532,11 +532,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), однозначно определяющую <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объект, к которому <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> принадлежит объект. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> <b>(строка</b> в C#), которая уникально идентифицирует объект, к котором <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> принадлежит объект. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство связывает элементы с разговором. Эти элементы и беседа имеют одно и то же значение в свойстве <b>ConversationID</b> .</para>
-          <para>Это свойство соответствует свойству MAPI <b>пидтагконверсатионид</b>.</para>
-          <para>Если объект <b>AppointmentItem</b> создан в более ранней версии Microsoft Outlook, чем microsoft Outlook 2010, или если Outlook работает в интерактивном режиме с версией Microsoft Exchange Server более ранней, чем Microsoft exchange Server 2010, это свойство возвращает то же значение, что <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.ConversationTopic" /> и свойство.</para>
+        <remarks><para>Это свойство связывает элементы с беседой. Эти элементы и беседа имеют одинаковое значение в <b>свойстве ConversationID.</b></para>
+          <para>Это свойство соответствует свойству MAPI <b>PidTagConversationId.</b></para>
+          <para>Если объект <b>AppointmentItem</b> создается в версии Microsoft Outlook раньше Microsoft Outlook 2010, русская версия или если Outlook работает в режиме онлайн по сравнению с версией Microsoft Exchange Server до Microsoft Exchange Server 2010 г., это свойство возвращает то же значение, что и <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.ConversationTopic" /> свойство.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -563,7 +563,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую индекс потока бесед элемента Outlook. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> <b>(строку</b> в C#), представляющую индекс потока беседы элемента Outlook. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -591,7 +591,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую раздел цепочки бесед элемента Outlook. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> <b>(строку</b> в C#), представляющую тему потока беседы элемента Outlook. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -617,8 +617,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Создает еще один экземпляр объекта.</summary>
-        <returns>Возвращает объект <see cref="T:System.Object" /> , который является копией родительского элемента встречи.</returns>
+        <summary>Создает другой экземпляр объекта.</summary>
+        <returns>Возвращает копию родительского элемента <see cref="T:System.Object" /> назначения.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -646,14 +646,14 @@
         <Parameter Name="CopyOptions" Type="Microsoft.Office.Interop.Outlook.OlAppointmentCopyOptions" />
       </Parameters>
       <Docs>
-        <param name="DestinationFolder">Указывает папку, в которую копируется объект <b>AppointmentItem</b> .</param>
-        <param name="CopyOptions">Указывает взаимодействие с пользователем для операции копирования.</param>
-        <summary>Копирует в <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> папку, указанную <paramref name="DestinationFolder" /> параметром, и возвращает объект, представляющий элемент, созданный в конечной папке операцией копирования.</summary>
-        <returns>Возвращает объект <b>AppointmentItem</b> обжектсат, который представляет объект, созданный в конечной папке, в результате операции копирования.</returns>
-        <remarks><para>Если для <paramref name="CopyOptions" /> параметра не указан аргумент, <b>CopyTo</b> предполагает, что значение равно <b>олкреатеаппоинтмент</b>.</para>
+        <param name="DestinationFolder">Указывает папку, в которую копируется объект <b>AppointmentItem.</b></param>
+        <param name="CopyOptions">Указывает пользовательский интерфейс операции копирования.</param>
+        <summary>Копирует папку, заданную параметром, и возвращает объект, который представляет элемент, созданный в папке назначения операцией <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> <paramref name="DestinationFolder" /> копирования.</summary>
+        <returns>Возвращает объект <b>AppointmentItem,</b> который представляет объект, созданный в папке назначения в результате операции копирования.</returns>
+        <remarks><para>Если для параметра не указан аргумент, CopyTo предполагает, что значение <paramref name="CopyOptions" /> <b>olCreateAppointment</b>. <b></b></para>
           <para>
-            <b>CopyTo</b> возвращает ошибку, если конечная папка не является подходящим типом для объекта <b>AppointmentItem</b> , или если у пользователя нет необходимых разрешений для создания элементов в указанной конечной папке.</para>
-          <para>Установка значения REG_MULTI_SZ DisableCrossAccountCopy в HKCU\Software\Microsoft\Office\14.0\Outlook в реестре Windows оказывает побочный последствия отключения этого метода.</para>
+            <b>CopyTo</b> возвращает ошибку, если папка назначения не является подходящим типом папки для объекта <b>AppointmentItem</b> или если у пользователя нет необходимых разрешений на создание элементов в указанной папке назначения.</para>
+          <para>Параметр REG_MULTI_SZ, DisableCrossAccountCopy в HKCU\Software\Microsoft\Office\14.0\Outlook в реестре Windows имеет побочный эффект отключения этого метода.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -680,9 +680,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>значение типа DateTime</b> , указывающее время создания элемента Outlook. Только для чтения.</summary>
+        <summary>Возвращает <b>dateTime с</b> указанием времени создания элемента Outlook. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagCreationTime</b>. </para>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagCreationTime.</b> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -707,9 +707,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Удаляет элемент из папки, содержащей элемент.</summary>
-        <remarks><para>Метод <b>Delete</b> удаляет один элемент в коллекции. Чтобы удалить все элементы в <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> коллекции папки, необходимо удалить каждый элемент, начиная с последнего элемента в папке. Например, в коллекции Items папки AllItems, если в папке n количество элементов, начните удалять элемент по адресу AllItems. Item (n), уменьшая индекс до тех пор, пока не будет удален AllItems. Item (1).</para>
-          <para>Метод <b>Delete</b> перемещает элемент из содержащей его папки в папку "Удаленные". Если папка содержит папку "Удаленные", метод <b>Delete</b> удаляет элемент без возможности восстановления.</para>
+        <summary>Удаляет элемент из папки, которая содержит элемент.</summary>
+        <remarks><para>Метод <b>Delete</b> удаляет один элемент в коллекции. Чтобы удалить все элементы в коллекции папки, необходимо удалить каждый элемент, начиная с последнего элемента <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> в папке. Например, в коллекции элементов папки AllItems, если в папке имеется n число элементов, начинайте удалять элемент в AllItems.Item(n), каждый раз приумножив индекс до удаления AllItems.Item (1).</para>
+          <para>Метод <b>Delete</b> перемещает элемент из папки, содержащей папку, в папку "Удаленные элементы". Если в папке содержится папка "Удаленные элементы", метод <b>Удаления</b> удаляет элемент навсегда.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -735,10 +735,10 @@
         <Parameter Name="Modal" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Modal"><b>Значение true</b> , чтобы сделать окно модальным. Значение по умолчанию — <b>False</b>.</param>
+        <param name="Modal"><b>True,</b> чтобы сделать окно модальным. Значение по умолчанию — <b>False</b>.</param>
         <summary>Отображает новый <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объект для элемента.</summary>
-        <remarks><para>Метод <b>Display</b> поддерживается для окон проводника и инспектора в целях обратной совместимости. Чтобы активировать окно проводника или инспектора, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.Activate" /> метод.</para>
-          <para>При попытке открыть "небезопасный" объект файловой системы (или "файл фридок") с помощью объектной модели Microsoft Outlook вы получаете E_FAIL код возврата на языках программирования C или C++. В Outlook 2000 и более ранних версий можно открыть "небезопасную" объект файловой системы с помощью метода <b>Display</b> .</para>
+        <remarks><para>Метод <b>Display</b> поддерживается для окон обозревателя и инспектора ради обратной совместимости. Чтобы активировать окно проводника или инспектора, используйте <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.Activate" /> метод.</para>
+          <para>Если вы попытаетесь открыть объект "небезопасной" файловой системы (или файл freedoc) с помощью объектной модели Microsoft Outlook, вы получите код возврата E_FAIL на языках программирования C или C++. В Outlook 2000 и более ранних годах можно открыть объект "небезопасной" файловой системы с помощью метода <b>Display.</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -765,7 +765,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlDownloadState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает константу, принадлежащую <see cref="T:Microsoft.Office.Interop.Outlook.OlDownloadState" /> перечислению, указывающее состояние скачивания элемента. Только для чтения.</summary>
+        <summary>Возвращает константу, которая относится к <see cref="T:Microsoft.Office.Interop.Outlook.OlDownloadState" /> переумериям, указывающее состояние загрузки элемента. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -796,7 +796,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее продолжительность (в минутах) <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Integer (int</b> in C#) с указанием продолжительности (в минутах)<b></b> <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> . Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -827,7 +827,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>значение DateTime</b> , указывающее дату и время окончания <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>DateTime с</b> указанием конечной даты и времени <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> . Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -858,9 +858,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>DateTime</b> , представляющее дату и время окончания встречи, выраженную в <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.EndTimeZone" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>DateTime,</b> которое представляет даты окончания и времени встречи, выраженной в <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.EndTimeZone" /> . Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это значение отображается как время окончания в пользовательском интерфейсе инспектора встреч.</para>
+        <remarks><para>Это значение отображается как end time в пользовательском интерфейсе инспектора встречи.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -890,13 +890,13 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.TimeZone</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.TimeZone" /> значение, соответствующее времени окончания встречи.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.TimeZone" /> значение, соответствующее конечному времени встречи.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Сведения о часовом поясе используются для сопоставления встречи с правильным временем в формате UTC при сохранении встречи и в правильное местное время, когда элемент отображается в календаре.  </para>
-          <para> Изменение <b>EndTimeZone</b> влияет на значение, <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.End" /> которое всегда представляется в местном часовом поясе <see cref="P:Microsoft.Office.Interop.Outlook._TimeZones.CurrentTimeZone" />.</para>
-          <para>В зависимости от обстоятельств изменение <b>EndTimeZone</b> может привести или не вызвать перерасчет и обновление Outlook <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.EndInEndTimeZone" />. </para>
-          <para>Например, в инспекторе встреч, если вы организатор встречи с временем начала в 1 P.M. EST и время окончания в 3 вечера В средстве EST, если для встречи задано значение <b>ENDTIMEZONE</b> PST, собрание будет выполняться в течение 1 вечера. EST — 3 P.M. PST, а <b>ендинендтимезоне</b> — 3 P.M.. Тем не менее, если вы не организатор, то при изменении <b>EndTimeZone</b> с помощью средства EST на PST-файл будет пересчитана и обновлена в <b>Outlook, а встречается в течение</b>1 вечера. EST до 12 часов Формата. </para>
-          <para>Другой пример: изменение <b>EndTimeZone</b> , в результате которого время окончания встречи задается до начала ранее установленного времени начала встречи, в этом случае Outlook будет пересчитывать и обновлять <b>ендинендтимезоне</b>. Например, встреча с временем начала в 1 P.M. PST и время окончания в 3 вечера В PST-файле <b>EndTimeZone</b> изменился на EST. Если Outlook не пересчитал <b>ендинендтимезоне</b>, время окончания встречи будет заканчиваться на 3 вечера. Средство EST, которое эквивалентно 12 часов PST, который будет выполняться до времени начала 1 P.M. Формата. Однако на практике изменение <b>EndTimeZone</b> приведет к пересчету и обновлению <b>ендинендтимезоне</b> в Outlook до 6 вечера. (в <b>EndTimeZone</b> EST).</para>
+        <remarks><para>Сведения о часовом поясе используются для отображения назначения в нужное время UTC при сэкономлении встречи и в правильное локальное время, когда элемент отображается в календаре.  </para>
+          <para> Изменение <b>EndTimeZone</b> влияет на <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.End" /> значение, которое всегда представлено в локальном часовом поясе. <see cref="P:Microsoft.Office.Interop.Outlook._TimeZones.CurrentTimeZone" /></para>
+          <para>В зависимости от обстоятельств изменение <b>endTimeZone</b> может привести к Outlook и обновлению <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.EndInEndTimeZone" /> . </para>
+          <para>Например, в инспекторе встречи, если вы организатор встречи с началом в 13:00. EST и время окончания в 15:00. EST, изменение назначения на <b>endTimeZone</b> PST приведет к встрече продолжительностью с 13:00. EST до 15:00. PST, а <b>endInEndTimeZone</b> остается в 15:00. Однако если вы не организатор, изменение <b>endTimeZone</b> с EST на PST приведет к Outlook пересчету и обновлению <b>EndInEndTimeZone,</b>и встреча будет длиться с 13:00. EST до 12 часов. PST. </para>
+          <para>Другой пример — изменение <b>endTimeZone</b> в результате окончания встречи, которое происходит до заданного ранее времени начала встречи, в этом случае Outlook будет пересчитать и обновить <b>EndInEndTimeZone</b>. Например, встреча с началом в 13:00. PST и время окончания в 15:00. PST имеет свой <b>EndTimeZone</b> изменен на EST. Если Outlook не пересчитал <b>endInEndTimeZone,</b>назначение будет иметь конечный срок в 15:00. EST, что эквивалентно 12 часам. PST, которая будет происходить до начала 13:00. PST. Однако на практике изменение <b>endTimeZone</b> приведет к Outlook и обновлению <b>EndInEndTimeZone</b> до 6 часов. (в <b>EST EndTimeZone).</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -926,9 +926,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>DateTime</b> , представляющее дату и время окончания встречи, выраженные в стандарте всемирного координированного времени (UTC). Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>DateTime,</b> которое представляет даты окончания и время встречи, выраженное в стандарте Координируется универсальное время (UTC). Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Изменение значения <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.End" /> свойства или <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.EndTimeZone" /> свойства приведет к пересчету <b>ендутк</b>в Outlook. </para>
+        <remarks><para>Изменение значения для свойства или свойства приведет к Outlook <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.End" /> <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.EndTimeZone" /> перерасчету <b>EndUTC</b>. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -955,11 +955,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую уникальный идентификатор записи объекта.  Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> <b>(строка</b> в C#), представляющую уникальный ID входа объекта.  Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagEntryId</b>.</para>
-          <para>Поставщик хранилища MAPI назначает строку уникального идентификатора при создании элемента в хранилище. Таким образом, свойство <b>EntryID</b> не задается для элемента Outlook, пока он не будет сохранен или отправлен. Идентификатор записи изменяется при перемещении элемента в другое хранилище, например из папки "Входящие" в общую папку Microsoft Exchange Server или из одного PST-файла личных папок в другой PST-файл. Решения не должны зависеть от уникальности свойства <b>EntryID</b> , если не перемещение элементов не будет выполняться. Свойство <b>EntryID</b> возвращает идентификатор записи долгосрочного термина MAPI. Для получения дополнительных сведений о долгосрочных и краткосрочных идентификаторами EntryID выполните поиск http://msdn.microsoft.com по <b>PidTagEntryId</b>. </para>
-          <para>Кроме того, при вызове метода <b>AppointmentItem. ответчика</b> с помощью параметра <b>олмитингакцептед</b> или <b>олмитингтентативе</b> в Outlook будет создан новый элемент встречи, дублирующий исходный элемент встречи. Новый элемент будет иметь другой идентификатор записи. Затем Outlook удалит исходный элемент. Больше не следует использовать идентификатор элемента исходного элемента, а вместо этого использовать <b>AppointmentItem. EntryID</b> для получения идентификатора записи для нового элемента при последующих требованиях. Это позволяет убедиться, что этот элемент встреча будет правильно синхронизирован в вашем календаре, если несколько клиентских компьютеров обращаются к календарю, но могут работать в автономном режиме в режиме кэширования.</para>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagEntryId.</b></para>
+          <para>Поставщик магазина MAPI назначает уникальную строку ID при создания элемента в магазине. Поэтому свойство <b>EntryID</b> не задано для элемента Outlook, пока он не будет сохранен или отправлен. ID записи изменяется при перемещении элемента в другой магазин, например из папки "Входящие" в общедоступные папки Microsoft Exchange Server или из одного файла персональных папок (PST) в другой файл PST. Решения не должны зависеть от уникального свойства <b>EntryID,</b> если элементы не будут перемещены. Свойство <b>EntryID</b> возвращает долгосрочный ID записи MAPI. Дополнительные сведения о долгосрочных и краткосрочных entryIDs можно найти http://msdn.microsoft.com в <b>PidTagEntryId.</b> </para>
+          <para>Кроме того, при вызове метода <b>AppointmentItem.Respond</b> с параметром <b>olMeetingAccepted</b> или <b>olMeetingTentative</b> Outlook будет создаваться новый элемент назначения, который дублирует исходный элемент встречи. Новый элемент будет иметь другой ID записи. Outlook удалите исходный элемент. Вы больше не должны использовать ID входа исходного элемента, а вместо этого используйте <b>AppointmentItem.EntryID</b> для получения ID входа для нового элемента для любых последующих потребностей. Это необходимо для обеспечения правильной синхронизации этого элемента встречи в календаре, если несколько клиентских компьютеров имеют доступ к календарю, но иногда могут быть отключены с помощью режима кэша.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -989,9 +989,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>логического</b> значения (<b>bool</b> в C#), которое указывает, следует ли <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> отправлять обновления для объекта всем участникам. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> <b>(bool</b> в C#), которое указывает, следует ли отослать обновления к объекту <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> всем участникам. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Обычно обновления отправляются участникам только в том случае, если изменилось время или местонахождение элемента встречи. Если для этого свойства задано <b>значение true</b> , обновление будет отправлено всем участникам, даже если не было внесено никаких изменений в время или расположение.</para>
+        <remarks><para>Обычно обновления отправляются участникам только в том случае, если изменено время или расположение элемента встречи. Настройка этого свойства <b>true</b> заставляет всех участников отправить обновление, даже если не было изменений времени или расположения.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1018,7 +1018,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.FormDescription</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.FormDescription" /> объект, представляющий описание формы для указанного элемента Outlook. Только для чтения.</summary>
+        <summary>Возвращает объект, который представляет описание формы для указанного элемента <see cref="T:Microsoft.Office.Interop.Outlook.FormDescription" /> Outlook. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1044,9 +1044,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Пересылает <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> как объект вкал; элемент виртуального календаря.</summary>
-        <returns><see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> Объект, представляющий новый почтовый элемент, к которому присоединены сведения календаря.</returns>
-        <remarks><para>Метод <b>форвардасвкал</b> возвращает объект a <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> с вложенным файлом вкал.</para>
+        <summary>Пересылает <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />  элемент vCal; виртуальный элемент календаря.</summary>
+        <returns>Объект, <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> который представляет новый элемент почты, к которому присоединена информация календаря.</returns>
+        <remarks><para>Метод <b>ForwardAsVcal</b> возвращает файл <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />  vCal с присоединенным файлом.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1071,22 +1071,22 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объект, представляющий беседу, к которой принадлежит данный элемент.</summary>
-        <returns>Возвращает объект <b>CONVERSATION</b> , представляющий беседу, к которой принадлежит данный элемент.</returns>
+        <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> объект, который представляет беседу, к которой относится этот элемент.</summary>
+        <returns>Возвращает объект <b>Conversation,</b> который представляет беседу, к которой относится этот элемент.</returns>
         <remarks><para>
-            <b>GetConversation</b> Параметр GetItem возвращает <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если для элемента не существует беседы. Не существует беседы для элемента в следующих сценариях:</para>
+            <b>GetConversation</b> не возвращает ничего <b>(ссылка</b> null (Ничего в Visual Basic) в C#), если для элемента не существует беседы. Для элемента в следующих сценариях не существует беседы:</para>
           <list type="bullet">
             <item>
-              <para>Элемент не был сохранен. Элемент можно сохранить программным способом, действием пользователя или автоматическим сохранением.</para>
+              <para>Элемент не был сохранен. Элемент может быть сохранен программным путем, действием пользователя или автоматическим сохранением.</para>
             </item>
             <item>
-              <para>Для элемента, который может быть отправлен (например, почтового элемента, элемента встречи или элемента контакта), элемент не был отправлен.</para>
+              <para>Для элемента, который можно отправить (например, почтовый элемент, пункт встречи или контактный элемент), этот элемент не был отправлен.</para>
             </item>
             <item>
-              <para>Беседы отключены в реестре Windows.</para>
+              <para>Беседы отключены через Windows реестра.</para>
             </item>
             <item>
-              <para>Хранилище не поддерживает представление беседы (например, Outlook работает в классическом режиме Online в более ранней версии Microsoft Exchange, чем Microsoft Exchange Server 2010). Используйте <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsConversationEnabled" /> свойство <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекта, чтобы определить, поддерживает ли хранилище представление беседы.</para>
+              <para>Магазин не поддерживает представление беседы (например, Outlook работает в классическом режиме в режиме онлайн по сравнению с версией Microsoft Exchange раньше Microsoft Exchange Server 2010 г.). Используйте свойство объекта, чтобы определить, поддерживает ли магазин <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsConversationEnabled" /> <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> представление беседы.</para>
             </item>
           </list>
           <para> </para></remarks>
@@ -1115,9 +1115,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Inspector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объект, представляющий инспектор, инициализированный для размещения указанного элемента. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" />  объект, который представляет инспектора, инициализированного, чтобы содержать указанный элемент. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство полезно для возврата нового объекта <b>инспектора</b> , в котором будет отображаться элемент, а не с помощью <see cref="M:Microsoft.Office.Interop.Outlook._Application.ActiveInspector" /> метода и установки <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.CurrentItem" /> свойства. Если для элемента уже существует объект <b>инспектора</b> <b>, свойство GetProperty возвратит этот объект</b> <b>инспектора</b> , а не создает новый объект.</para>
+        <remarks><para>Это свойство полезно для возврата нового объекта <b>Inspector</b> для отображения элемента, а не для использования метода и <see cref="M:Microsoft.Office.Interop.Outlook._Application.ActiveInspector" />  настройки <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.CurrentItem" /> свойства. Если объект <b>Inspector</b> уже существует для элемента, <b>свойство GetInspector</b> возвращает объект <b>Inspector</b> вместо создания нового.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1142,8 +1142,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объект, содержащий сведения из адресной книги об организаторе <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />.</summary>
-        <returns>Возвращает объект <b>AddressEntry</b> , представляющий организатора <b>AppointmentItem</b>.</returns>
+        <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объект, содержащий сведения из адресной книги об организаторе <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> .</summary>
+        <returns>Возвращает объект <b>AddressEntry,</b> который представляет организатор <b>AppointmentItem.</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1169,9 +1169,9 @@
       <Parameters />
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> объект, представляющий атрибуты повторения встречи.</summary>
-        <returns>Объект <b>RecurrencePattern</b> , представляющий атрибуты повторения встречи.</returns>
-        <remarks><para>Если нет существующего расписания повторения, возвращается новый пустой объект <b>RecurrencePattern</b> .</para>
-          <para>При работе с элементами повторяющихся встреч необходимо удалить все ранее существовавшие ссылки, получить новые ссылки на элемент повторяющейся встречи перед вызовом или изменением этого элемента и удалить эти ссылки сразу же по окончании внесения изменений и их сохранения. Это правило применяется к повторяющемуся <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объекту, а также к любому <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> объекту или <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> объекту. Чтобы удалить ссылки в Visual Basic, следует установить для этого существующего объекта значение <b>Nothing</b>. В C# следует явно освободить память для этого объекта. </para>
+        <returns>Объект <b>RecurrencePattern,</b> представляющий атрибуты повторения встречи.</returns>
+        <remarks><para>Если нет существующего шаблона повторения, возвращается новый пустой объект <b>RecurrencePattern.</b></para>
+          <para>При работе с элементами повторяющихся встреч необходимо удалить все ранее существовавшие ссылки, получить новые ссылки на элемент повторяющейся встречи перед вызовом или изменением этого элемента и удалить эти ссылки сразу же по окончании внесения изменений и их сохранения. Эта практика применяется к повторяющимся объектам <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> и любому <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> объекту. Чтобы удалить ссылки в Visual Basic, следует установить для этого существующего объекта значение <b>Nothing</b>. В C# следует явно освободить память для этого объекта. </para>
           <para>Обратите внимание, что даже после высвобождения ссылки и попытки получения новой ссылки, если по-прежнему существует активная ссылка на любой из вышеупомянутых объектов, удерживаемая другой надстройкой или приложением Outlook, новая ссылка будет указывать на устаревшую копию объекта. В связи с этим важно высвобождать ссылки немедленно после завершения текущей встречи.</para>
           <para> </para></remarks>
       </Docs>
@@ -1199,10 +1199,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа String</b> (<b>строка</b> в C#), представляющее уникальный глобальный идентификатор <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает значение <b>String</b> <b>(string</b> in C#), которое представляет уникальный глобальный идентификатор <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Существуют ситуации, в которых может измениться идентификатор записи объектов <b>AppointmentItem</b> , например, когда элемент перемещается в другую папку или в другое хранилище. Идентификаторы записей также могут изменяться, когда пользователь выполняет определенные функции в Outlook, например экспорт и повторный импорт данных. </para>
-          <para>Таким образом, каждому элементу встречи Outlook назначается глобальный идентификатор объекта, уникальный глобальный идентификатор, который не изменяется в этих ситуациях. Глобальный идентификатор объекта — это свойство MAPI, используемое Outlook для сопоставления обновлений и ответов собраний с определенным собранием в календаре. Глобальный идентификатор объекта одинаков во всех копиях элемента.</para>
+        <remarks><para>Существуют ситуации, когда может изменяться ID записи объектов <b>AppointmentItem,</b> например при перемещении элемента в другую папку или в другой магазин. ID записи также могут изменяться при выполнении пользователем определенных функций в Outlook, таких как экспорт и повторное переоценка данных. </para>
+          <para>Поэтому каждому элементу Outlook назначен идентификатор глобального объекта, уникальный глобальный идентификатор, который не меняется во время этих ситуаций. Global Object ID — это свойство MAPI, которое Outlook для сопоставления обновлений собраний и ответов с определенным собранием в календаре. Глобальный объектный ID является одинаковым для всех копий элемента.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1232,9 +1232,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlImportance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlImportance" /> константу, показывающую относительный уровень важности для элемента Outlook. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlImportance" /> констант, указывающая относительный уровень важности элемента Outlook. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagImportance</b>. </para>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagImportance.</b> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1264,9 +1264,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>Integer</b> (<b>int</b> в C#), определяющее кодовую страницу Интернета, используемую элементом. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Integer (int</b> in C#), которое определяет страницу кода Интернета, используемую элементом.<b></b> Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>На странице код Интернета определяется схема кодировки текста, используемая элементом.</para>
+        <remarks><para>Страница кода Интернета определяет схему кодиации текста, используемую элементом.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1293,10 +1293,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>логическое значение</b> (<b>bool</b> в C#), определяющее, отличается ли элемент на локальном компьютере от копии на сервере. Только для чтения.</summary>
+        <summary>Возвращает <b>boolean</b> <b>(bool</b> в C#), который определяет, отличается ли элемент на локальном компьютере от копии на сервере. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Независимо от того, является ли конфликт элементом, определяется состоянием приложения. Например, если пользователь находится в автономном режиме и пытается получить доступ к сетевой папке, действие завершится с ошибкой. В этом <b>случае свойство</b> <b>IsTrue возвратит значение true</b>.</para>
-          <para>Это свойство не указывает, существует ли конфликт времени для элемента встречи с другой встречей в календаре.</para>
+        <remarks><para>Конфликт между элементом или нет определяется состоянием приложения. Например, если пользователь находится в автономном режиме и пытается получить доступ к онлайн-папке, действие будет неудачным. В этом сценарии <b>свойство IsConflict</b> возвращает <b>True.</b></para>
+          <para>Это свойство не указывает, имеет ли элемент встречи конфликт времени с другой встречей в календаре.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1360,9 +1360,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>Boolean</b> (<b>bool</b> в C#), которое равно <b>true</b> , если встреча является повторяющейся встречей.  Только для чтения.</summary>
+        <summary>Возвращает значение <b>Boolean</b> <b>(bool</b> C#) true, <b></b> если встреча является повторяющейся.  Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Если <see cref="M:Microsoft.Office.Interop.Outlook._AppointmentItem.GetRecurrencePattern" /> метод используется с <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объектом, для этого свойства задается <b>значение true</b>.</para>
+        <remarks><para>Когда метод <see cref="M:Microsoft.Office.Interop.Outlook._AppointmentItem.GetRecurrencePattern" />  используется с <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />  объектом, это свойство заданной для <b>True</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1389,9 +1389,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ItemProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.ItemProperties" /> коллекцию, которая представляет все стандартные и определяемые пользователем свойства, связанные с элементом Outlook. Только для чтения.</summary>
+        <summary>Возвращает коллекцию, которая представляет все стандартные и пользовательские свойства, связанные с <see cref="T:Microsoft.Office.Interop.Outlook.ItemProperties" /> Outlook элементом. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Коллекция <b>ItemProperties</b> является коллекцией с отсчетом от нуля, что означает, что первый объект в коллекции ссылается на индекс 0.</para>
+        <remarks><para>Коллекция <b>ItemProperties</b> — это коллекция с нулевой базой, что означает, что первый объект в коллекции ссылается на индекс 0.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1418,9 +1418,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>значение типа DateTime</b> , указывающее дату и время последнего изменения элемента Outlook.  Только для чтения.</summary>
+        <summary>Возвращает <b>dateTime</b> с указанием даты и времени последнего изменения Outlook элемента.  Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagLastModificationTime</b>.</para>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagLastModificationTime.</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1481,9 +1481,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), представляющую конкретное расположение Office (например, создание 1 комнаты 1 или набора 123) для встречи. Для чтения и записи.</summary>
+        <summary>Возвращает или задает строку <b>(строка</b> в C#), представляющую определенное расположение офиса (например, здание 1 комнаты 1 или suite 123) для встречи.<b></b> Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagOfficeLocation</b>. </para>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagOfficeLocation.</b> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1544,9 +1544,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlRemoteStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlRemoteStatus" /> константу, определяющую состояние элемента после его получения удаленным пользователем. Для чтения и записи.</summary>
+        <summary>Возвращает или задает константы, определяя состояние элемента после его получить <see cref="T:Microsoft.Office.Interop.Outlook.OlRemoteStatus" />  удаленный пользователь. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство дает возможность удаленным пользователям с неоптимальными возможностями передачи данных повышать гибкость обмена сообщениями.</para>
+        <remarks><para>Это свойство предоставляет удаленным пользователям возможности передачи данных с меньшими возможностями, чем в идеале, повышенную гибкость обмена сообщениями.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1576,9 +1576,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMeetingStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlMeetingStatus" /> константу, определяющую состояние собрания встречи. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlMeetingStatus" /> констант, указывав состояние собрания при встрече. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Используйте это свойство, чтобы сделать <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> объект доступным для встречи. </para>
+        <remarks><para>Используйте это свойство, чтобы сделать <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />  объект доступным для встречи. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1605,9 +1605,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа String</b> (<b>строка</b> в C#), представляющее URL-адрес рабочей области для собраний, с которой связан элемент встречи. Только для чтения.</summary>
+        <summary>Возвращает значение <b>String</b> <b>(string</b> in C#), представляюное URL-адрес рабочей области собрания, с чем связан элемент назначения. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Рабочая область для собраний — это общедоступный веб-сайт для планирования собраний и отслеживания результатов.  </para>
+        <remarks><para>Рабочее пространство собраний — это общий веб-сайт для планирования собрания и отслеживания результатов.  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1637,9 +1637,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), представляющую класс сообщения для элемента Outlook. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> <b>(строка</b> в C#), представляющую класс сообщения для элемента Outlook. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagMessageClass</b>. Свойство <b>MessageClass</b> связывает элемент с формой, на которой она основана. Если выбран элемент, Outlook использует класс Message для обнаружения формы и предоставляет ее свойства, такие как команды ответа. </para>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagMessageClass.</b> Свойство <b>MessageClass</b> связывает элемент с формой, на которой он основан. При выборе элемента Outlook класс сообщения для определения формы и размещения его свойств, например команд ответа. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1669,9 +1669,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), представляющую расстояние для элемента. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> <b>(строка</b> в C#), представляющую пробег для элемента. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это поле произвольной формы, которое можно использовать для хранения сведений о расстояниях, связанных с элементом (например, 100 миль документально задокументировано для встречи, контакта или задачи) в целях получения возмещения. </para>
+        <remarks><para>Это поле строк в свободной форме и может использоваться для хранения сведений о пробеге, связанных с элементом (например, 100 миль, задокументированных для встречи, контакта или задачи) для целей возмещения. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1698,9 +1698,9 @@
         <Parameter Name="DestFldr" Type="Microsoft.Office.Interop.Outlook.MAPIFolder" />
       </Parameters>
       <Docs>
-        <param name="DestFldr">Целевая папка.</param>
-        <summary>Перемещает элемент Microsoft Outlook в новую папку.</summary>
-        <returns>Значение <b>объекта</b> , представляющее элемент, который был перемещен в указанную папку.</returns>
+        <param name="DestFldr">Папка назначения.</param>
+        <summary>Перемещает элемент microsoft Outlook в новую папку.</summary>
+        <returns><b>Объектное</b> значение, которое представляет элемент, который был перемещен в назначенную папку.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1952,7 +1952,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> в C#), которое имеет значение <b>true</b> , чтобы не возрастать элемент Outlook. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> <b>(bool</b> в C#) значение <b>True,</b> чтобы не стареть элемент Outlook. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1983,9 +1983,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), представляющую строку с необязательными именами участников для встречи. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> <b>(строка</b> в C#), представляющую строку отображения необязательных имен участников для встречи. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagDisplayCc</b>. </para>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagDisplayCc.</b> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2012,7 +2012,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую имя организатора встречи. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> <b>(строка</b> C#) с именем организатора встречи. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2040,7 +2040,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), представляющее номер сборки приложения Outlook для элемента Outlook. Только для чтения.</summary>
+        <summary>Возвращает значение <b>Integer (int</b> in C#), представляющее число сборки приложения Outlook для элемента Outlook.<b></b> Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2068,7 +2068,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), указывающую основной и дополнительный номер версии приложения Outlook для элемента Outlook. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> <b>(строка</b> в C#) с указанием основных и второстепенных номеров Outlook приложения для Outlook элемента. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2122,7 +2122,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Печатает элемент Outlook, используя все параметры по умолчанию. Метод <b>PrintOut</b> — это единственный метод Outlook, который можно использовать для печати.</summary>
+        <summary>Печатает элемент Outlook с помощью всех параметров по умолчанию. Метод <b>PrintOut</b> — это единственный метод Outlook, который можно использовать для печати.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2149,7 +2149,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.PropertyAccessor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект, который поддерживает создание, получение, настройку и удаление свойств родительского <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> объект, поддерживаюющий создание, получение, настройку и удаление свойств родительского <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2177,9 +2177,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Recipients</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> коллекцию, которая представляет всех получателей элемента Outlook. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> коллекцию, которая представляет всех получателей для Outlook элемента. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Получатель может быть указан в виде строки, представляющей отображаемое имя получателя, псевдоним или полный SMTP-адрес электронной почты.</para>
+        <remarks><para>Получатель может быть указан строкой, представляющей отображаемую именем, псевдонимом или полным адресом электронной почты SMTP.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2206,7 +2206,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlRecurrenceState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlRecurrenceState" /> константу, показывающую свойство повторения указанного объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlRecurrenceState" /> констант, указывающее свойство повторения указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2237,7 +2237,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее количество минут, в течение которых напоминание должно произойти до начала встречи. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Integer (int</b> in C#) с указанием количества минут, которые напоминание должно произойти до начала встречи.<b></b> Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2268,9 +2268,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> в C#), которое равно <b>true</b> , если напоминание переопределяет поведение напоминания по умолчанию для элемента. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> <b>(bool</b> в C#) <b></b> true, если напоминание переопределит поведение напоминания по умолчанию для элемента. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Необходимо задать свойство <b>реминдероверридедефаулт</b> , чтобы проверить <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.ReminderPlaySound" /> <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.ReminderSoundFile" /> свойства и его свойства.</para>
+        <remarks><para>Для проверки свойств и свойств необходимо задать свойство <b>ReminderOverrideDefault.</b> <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.ReminderPlaySound" /> <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.ReminderSoundFile" /></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2300,9 +2300,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> в C#), которое будет иметь значение <b>true</b> , если напоминание должно воспроизводиться в звуковом элементе. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> <b>(bool</b> в C#) <b></b> true, если напоминание должно играть звук, когда он возникает для этого элемента. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Чтобы <b>ReminderPlaySound</b> проверить <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.ReminderSoundFile" /> свойство, необходимо задать свойство реминдерплайсаунд. </para>
+        <remarks><para>Для проверки свойства необходимо задать свойство <b>ReminderPlaySound.</b> <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.ReminderSoundFile" /> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2332,7 +2332,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> в C#), которое имеет значение <b>true</b> , если для этого элемента задано напоминание. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> <b>(bool</b> в C#) <b></b> true, если для этого элемента установлено напоминание. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2363,9 +2363,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>строку</b> (<b>String</b> в C#), которая указывает путь и имя файла звукового файла, который будет воспроизводиться при возникновении напоминания для элемента Outlook. Для чтения и записи.</summary>
+        <summary>Возвращает или задает строку <b>(строка</b> в C#) с указанием пути и имени файла звукового файла для воспроизведения, когда напоминание возникает для элемента Outlook.<b></b> Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство является допустимым только в <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.ReminderOverrideDefault" /> том <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.ReminderPlaySound" /> случае, если свойству и свойству присвоено <b>значение true</b>. </para>
+        <remarks><para>Это свойство допустимо только в том случае, если свойства и свойства <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.ReminderOverrideDefault" /> <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.ReminderPlaySound" />  настроены на <b>True</b>. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2395,7 +2395,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>значение даты</b> и времени, указывающее время отклика для встречи. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>DateTime,</b> указывающее время ответа на встречу. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2426,9 +2426,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает разделенную точками с запятой <b>строку</b> (<b>строку</b> в C#) имен обязательных участников для встречи собрания. Для чтения и записи.</summary>
+        <summary>Возвращает заколон-делимитированную строку<b>(строка</b> в C#) необходимых имен участников для встречи. <b></b> Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство содержит только отображаемые имена обязательных участников. Список участников должен быть задан с помощью <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> коллекции. </para>
+        <remarks><para>Это свойство содержит только имена отображения для необходимых участников. Список участников должен быть установлен с помощью <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" />  коллекции. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2458,9 +2458,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает разделенную точками с запятой <b>строку</b> (<b>строку</b> в C#) имен ресурсов для собрания. Для чтения и записи.</summary>
+        <summary>Возвращает полуколон-делимитированную строку<b>(строка</b> в C#) имен ресурсов для собрания. <b></b> Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Данное свойство содержит только отображаемые имена. <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> Коллекция должна использоваться для изменения получателей ресурса. Ресурсы добавляются в <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.BCC" /> коллекцию в качестве получателей. </para>
+        <remarks><para>Это свойство содержит только имена отображения. Коллекция <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> должна использоваться для изменения получателей ресурсов. Ресурсы добавляются <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.BCC" /> в качестве получателей в коллекцию. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2489,27 +2489,27 @@
       </Parameters>
       <Docs>
         <param name="Response">Ответ на запрос.</param>
-        <param name="fNoUI"><b>Значение true</b> , чтобы не отображать диалоговое окно; Ответ отправляется автоматически. <b>Значение false</b> , чтобы отобразить диалоговое окно для ответа.</param>
-        <param name="fAdditionalTextDialog"><b>Значение false</b> , чтобы не предлагать пользователю ввести данные; отклик отображается в инспекторе для редактирования. <b>Значение true</b> , чтобы запросить разрешение пользователя на отправку или отправку с комментариями. Этот аргумент действителен, только если <b>fNoUI</b> имеет <b>значение false</b>.</param>
-        <summary>Реагирует на приглашение на собрание.</summary>
-        <returns><see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> Объект, представляющий ответ на приглашение на собрание.</returns>
-        <remarks><para>При вызове метода <b>ответа</b> с помощью параметра <b>Олмитингакцептед</b> или <b>олмитингтентативе</b> Outlook создаст новый элемент встречи, который дублирует исходный элемент встречи. Новый элемент будет иметь другой идентификатор записи. Затем Outlook удалит исходный элемент. Больше не следует использовать идентификатор элемента исходного элемента, а вместо этого вызвать <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.EntryID" /> свойство, чтобы получить идентификатор записи для нового элемента при последующих требованиях. Это позволяет убедиться, что этот элемент встреча будет правильно синхронизирован в вашем календаре, если несколько клиентских компьютеров обращаются к календарю, но могут работать в автономном режиме в режиме кэширования.</para>
-          <para>В следующей таблице описывается поведение метода <b>ответ</b> в зависимости от родительского объекта, а также <paramref name="fNoUI" /> параметры и. <paramref name="fAdditionalTextDialog" /></para>
+        <param name="fNoUI"><b>True,</b> чтобы не отображать диалоговое окно; ответ отправляется автоматически. <b>False</b> для отображения диалоговое окно для ответа.</param>
+        <param name="fAdditionalTextDialog"><b>False,</b> чтобы не подсказыть пользователю ввод; ответ отображается в инспекторе для редактирования. <b>True,</b> чтобы побудить пользователя отправить или отправить с комментариями. Этот аргумент действителен только в том случае, <b>если fNoUI</b> является <b>false</b>.</param>
+        <summary>Отвечает на запрос собрания.</summary>
+        <returns>Объект, <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" /> который представляет ответ на запрос собрания.</returns>
+        <remarks><para>При вызове метода <b>Respond</b> с параметром <b>olMeetingAccepted</b> или <b>olMeetingTentative</b> Outlook будет создаваться новый элемент встречи, который дублирует исходный элемент встречи. Новый элемент будет иметь другой ID записи. Outlook удалите исходный элемент. Вы больше не должны использовать ID входа исходного элемента, а вместо этого вызываем свойство, чтобы получить ID входа для нового элемента для любых <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.EntryID" /> последующих потребностей. Это необходимо для обеспечения правильной синхронизации этого элемента встречи в календаре, если несколько клиентских компьютеров имеют доступ к календарю, но иногда могут быть отключены с помощью режима кэша.</para>
+          <para>В следующей таблице описывается поведение метода <b>Respond</b> в зависимости от родительского объекта, а также <paramref name="fNoUI" /> <paramref name="fAdditionalTextDialog" /> параметры и параметры.</para>
           <list type="table">
             <item>
-              <description>True, true</description>
-              <description> Элемент Response возвращается без пользовательского интерфейса. Чтобы отправить ответ, необходимо вызвать метод Send.  </description>
+              <description>True, True</description>
+              <description> Элемент ответа возвращается без пользовательского интерфейса. Чтобы отправить ответ, необходимо вызвать метод Отправка.  </description>
             </item>
             <item>
-              <description>True, false</description>
-              <description> Такой же результат, как и при значении true, истина.  </description>
+              <description>True, False</description>
+              <description> Тот же результат, что и в True, True.  </description>
             </item>
             <item>
-              <description>False, true</description>
-              <description> Предлагает пользователю отправить или изменить его перед отправкой ответа.  </description>
+              <description>False, True</description>
+              <description> Перед отправкой ответа пользователю необходимо отправить или изменить.  </description>
             </item>
             <item>
-              <description>False, false</description>
+              <description>False, False</description>
               <description> Новый элемент ответа отображается в пользовательском интерфейсе, но запрос не отображается. </description>
             </item>
           </list>
@@ -2542,7 +2542,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>логическое</b> значение (<b>bool</b> в C#), которое <b>указывает,</b> является ли отправитель ответом на приглашение на собрание для встречи. Для чтения и записи.</summary>
+        <summary>Возвращает <b>boolean</b> <b>(bool</b> в C#), который указывает <b>True,</b> если отправитель хотел бы получить ответ на запрос собрания о встрече. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2570,7 +2570,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlResponseStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlResponseStatus" /> константу, показывающую общее состояние собрания для текущего пользователя для встречи. Только для чтения.</summary>
+        <summary>Возвращает констант с указанием общего состояния собрания для <see cref="T:Microsoft.Office.Interop.Outlook.OlResponseStatus" /> текущего пользователя для встречи. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2601,9 +2601,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает массив байтов, представляющий текст элемента Microsoft Outlook в формате RTF. Для чтения и записи.</summary>
+        <summary>Возвращает или задает массив byte, который представляет тело элемента Microsoft Outlook в формате rich Text. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>С помощью метода System. Text. Encoding. АсЦииенкодинг. GetString () в C# или Visual Basic можно преобразовать массив байтов в строку.</para>
+        <remarks><para>Для преобразования массива байтов в строку можно использовать метод System.Text.Encoding.AsciiEncoding.GetString() в C# или Visual Basic.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2628,7 +2628,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Сохраняет элемент Microsoft Outlook в текущей папке или, если это новый элемент, в папку Outlook по умолчанию для типа элемента.</summary>
+        <summary>Сохраняет элемент Microsoft Outlook в текущую папку или, если это новый элемент, в папку Outlook по умолчанию для типа элемента.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2655,10 +2655,10 @@
         <Parameter Name="Type" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Path">Путь для сохранения элемента.</param>
-        <param name="Type">Тип файла для сохранения. Может быть одной из следующих констант <b>OlSaveAsType</b> : <b>олхтмл</b>, <b>олмсг</b>, <b>олртф</b>, <b>олтемплате</b>, <b>олдок</b>,<b>олткст</b>, <b>олвкал</b>, <b>олвкард</b>, <b>оликал</b>или <b>олмсгуникоде</b>.</param>
-        <summary>Сохраняет элемент Microsoft Outlook в указанном пути и в формате указанного типа файлов. Если тип файла не указан, используется формат MSG (MSG).</summary>
-        <remarks><para>Также обратите внимание, что несмотря на то, что <b>олдок</b> является допустимой константой <b>OlSaveAsType</b> , сообщения в формате HTML невозможно сохранить в формате документа, а константа <b>Олдок</b> работает, только если Microsoft Word настроен как редактор электронной почты по умолчанию.</para>
+        <param name="Path">Путь, по которому можно сохранить элемент.</param>
+        <param name="Type">Тип файла для сохранения. Может быть одним из следующих констант <b>OlSaveAsType:</b> <b>olHTML</b>, <b>olMSG</b>, <b>olRTF</b>, <b>olTemplate</b>, <b>olDoc</b>,<b>olTXT</b>, <b>olVCal</b>,  <b>olVCard</b>,  <b>olICal</b>, или <b>olMSGUnicode</b>.</param>
+        <summary>Сохраняет элемент Microsoft Outlook в указанном пути и в формате указанного типа файла. Если тип файла не указан, используется формат MSG (.msg).</summary>
+        <remarks><para>Кроме того, обратите внимание, что несмотря на то, что <b>olDoc</b> является допустимой константой <b>OlSaveAsType,</b> сообщения в формате HTML не могут быть сохранены в формате Document, а постоянная <b>olDoc</b> работает только в том случае, если Microsoft Word настроен в качестве редактора электронной почты по умолчанию.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2685,7 +2685,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>Boolean</b> (<b>bool</b> в C#), которое имеет значение <b>true</b> , если элемент Outlook не был изменен с момента последнего сохранения. Только для чтения.</summary>
+        <summary>Возвращает значение <b>Boolean</b> <b></b> <b>(bool</b> в C#) true, если элемент Outlook не был изменен с момента последнего сохранения. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2712,7 +2712,7 @@
       <Parameters />
       <Docs>
         <summary>Отправляет встречу.</summary>
-        <remarks><para>Метод <b>Send</b> отправляет элемент, используя учетную запись по умолчанию, указанную для сеанса. В сеансе, где в профиле определено несколько учетных записей Microsoft Exchange, первая учетная запись Exchange, добавленная в профиль, является основной учетной записью Exchange, а также учетной записью по умолчанию для этого сеанса. Чтобы указать другую учетную запись для отправки элемента, задайте для <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.SendUsingAccount" /> свойства нужный <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> объект, а затем вызовите метод <b>Send</b> .</para>
+        <remarks><para>Метод <b>Отправка</b> отправляет элемент с помощью учетной записи по умолчанию, указанной для сеанса. В сеансе, в котором в профиле Exchange нескольких учетных записей Майкрософт, первая учетная запись Exchange, добавленная в профиль, является основной Exchange учетной записью, а также учетной записью по умолчанию для сеанса. Чтобы указать другую учетную запись для отправки элемента, задайте свойство нужному объекту, а затем <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.SendUsingAccount" /> <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> вызывайте метод <b>Отправка.</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2742,9 +2742,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Account</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> объект, представляющий учетную запись, в которой <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> отправляется сообщение. Для чтения и записи.</summary>
+        <summary>Возвращает или задает объект, который представляет учетную запись, под которую <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> должна быть отправлена. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>SendUsingAccount</b> можно использовать для указания учетной записи, которая должна использоваться для отправки <b>AppointmentItem</b> при вызове <see cref="M:Microsoft.Office.Interop.Outlook._TaskItem.Send" /> метода. Это свойство возвращает значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если учетная запись, указанная для <b>AppointmentItem</b> , больше не существует.</para>
+        <remarks><para>Свойство <b>SendUsingAccount</b> можно использовать для указания учетной записи, которая должна быть использована для отправки <b>AppointmentItem</b> при <see cref="M:Microsoft.Office.Interop.Outlook._TaskItem.Send" /> назвав метод. Это свойство возвращает <b>Nothing</b> (null reference (Nothing in Visual Basic) в C#), если учетная запись, указанная для <b>AppointmentItem,</b> больше не существует.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2774,9 +2774,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlSensitivity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает константу в <see cref="T:Microsoft.Office.Interop.Outlook.OlSensitivity" /> перечислении, указывающую чувствительность элемента Outlook. Для чтения и записи.</summary>
+        <summary>Возвращает или задает константу в переумериях, указывающее на чувствительность Outlook <see cref="T:Microsoft.Office.Interop.Outlook.OlSensitivity" /> элемента. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagSensitivity</b>. </para>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagSensitivity.</b> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2803,9 +2803,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает объект <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
+        <remarks><para>Свойство <b>Session</b> и метод можно использовать взаимозаменяемо для получения объекта <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> <b>NameSpace</b> для текущего сеанса. Оба члена служат одной и той же цели. Например, следующие пары заявлений выполняют ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -2836,7 +2836,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Отображает диалоговое окно Показать категории, которое позволяет выбрать категории, соответствующие теме элемента.</summary>
+        <summary>Отображает диалоговое окно Show Categories, которое позволяет выбирать категории, соответствующие субъекту элемента.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2863,7 +2863,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), которое указывает размер (в байтах) элемента Outlook. Только для чтения.</summary>
+        <summary>Возвращает значение <b>Integer</b> <b>(int</b> in C#) с указанием размера (в bytes) элемента Outlook. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2894,7 +2894,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>значение даты</b> и времени, указывающее дату и время начала для элемента Outlook. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>DateTime</b> с указанием даты и времени начала Outlook элемента. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2925,9 +2925,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>DateTime</b> , представляющее дату и время начала встречи, выраженную в <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.StartTimeZone" />. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>DateTime,</b> которое представляет дату начала и время встречи, выраженную в <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.StartTimeZone" /> . Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это значение отображается как время начала в пользовательском интерфейсе инспектора встреч.</para>
+        <remarks><para>Это значение отображается как время начала в пользовательском интерфейсе инспектора встречи.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2957,13 +2957,13 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.TimeZone</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.TimeZone" /> значение, соответствующее часовому поясу времени начала встречи.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение, соответствующее часовой пояс <see cref="T:Microsoft.Office.Interop.Outlook.TimeZone" /> для начала встречи.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Сведения о часовом поясе используются для сопоставления встречи с правильным временем в формате UTC при сохранении встречи и в правильное местное время, когда элемент отображается в календаре.  </para>
-          <para>Изменение <b>StartTimeZone</b> влияет на значение, <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.Start" /> которое всегда представляется в местном часовом поясе <see cref="P:Microsoft.Office.Interop.Outlook._TimeZones.CurrentTimeZone" />.</para>
-          <para>В зависимости от обстоятельств изменение <b>StartTimeZone</b> может привести или не вызвать перерасчет и обновление Outlook <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.StartInStartTimeZone" />. </para>
-          <para>Например, в инспекторе встреч, если вы организатор встречи с временем начала в 1 P.M. PST и время окончания в 3 вечера PST, при изменении встречи с <b>StartTimeZone</b> в СРЕДСТВе EST, встречается в течение 1 вечера. EST — 3 P.M. PST-файл с <b>стартинстарттимезоне</b> , который остался 1 P.M. Однако если вы не являетесь организатором, то при изменении <b>StartTimeZone</b> из PST-файла на средство EST приложение Outlook будет пересчитывать и обновлять <b>стартинстарттимезоне</b>, а встреча будет отправлена в течение 4 часов. EST — 3 P.M. Формата. </para>
-          <para>Другой пример: изменение <b>StartTimeZone</b> , в результате которого время окончания встречи задается до начала ранее установленного времени начала встречи, в этом случае Outlook будет пересчитывать и обновлять <b>стартинстарттимезоне</b>. Например, встреча с временем начала в 1 P.M. EST и время окончания в 3 вечера В средстве EST его <b>StartTimeZone</b> изменился на PST. Если приложение Outlook не пересчитало <b>стартинстарттимезоне</b>, время начала встречи будет равно 1 P.M.. PST-файл, эквивалентный 4 P.M. EST и предшествует конечному времени до 3 часов Ожидаем. Однако на практике изменение <b>StartTimeZone</b> приведет к пересчету и обновлению <b>стартинстарттимезоне</b> до 10 утра. (в <b>StartTimeZone</b> PST).</para>
+        <remarks><para>Сведения о часовом поясе используются для отображения назначения в нужное время UTC при сэкономлении встречи и в правильное локальное время, когда элемент отображается в календаре.  </para>
+          <para>Изменение <b>StartTimeZone</b> влияет на значение, которое всегда представлено <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.Start" /> в локальном часовом поясе. <see cref="P:Microsoft.Office.Interop.Outlook._TimeZones.CurrentTimeZone" /></para>
+          <para>В зависимости от обстоятельств изменение <b>StartTimeZone</b> может привести к Outlook и обновлению <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.StartInStartTimeZone" /> . </para>
+          <para>Например, в инспекторе встречи, если вы организатор встречи с началом в 13:00. PST и время окончания в 15:00. PST, изменение назначения на <b>startTimeZone</b> EST приведет к встрече продолжительностью с 13:00. EST до 15:00. PST, при этом <b>startInStartTimeZone</b> остается в 13:00. Однако если вы не организатор, изменение <b>startTimeZone</b> с PST на EST приведет к Outlook пересчету и обновлению <b>StartInStartTimeZone,</b>и встреча будет длиться с 16:00. EST до 15:00. PST. </para>
+          <para>Другим примером является изменение <b>startTimeZone</b> в результате окончания встречи, которое происходит до ранее установленного времени начала встречи, в этом случае Outlook будет пересчитать и обновить <b>StartInStartTimeZone</b>. Например, встреча с началом в 13:00. EST и время окончания в 15:00. EST имеет свой <b>StartTimeZone</b> изменен на PST. Если Outlook не пересчитал <b>StartInStartTimeZone,</b>время начала встречи будет 13:00. PST, что эквивалентно 4 часам. EST, которое будет происходить до конца 15:00. EST. Однако на практике изменение <b>StartTimeZone</b> приведет к Outlook и обновлению <b>StartInStartTimeZone</b> до 10 утра. (в <b>PST StartTimeZone).</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2993,9 +2993,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>DateTime</b> , представляющее дату и время начала встречи, выраженные в стандартном стандарте времени УНИВЕРАЛ (UTC). Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>DateTime,</b> которое представляет дату начала и время встречи, выраженную в стандарте Скоординированное универсальное время (UTC). Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Изменение значения <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.Start" /> свойства или <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.StartTimeZone" /> свойства приведет к пересчету значения <b>стартутк</b>в Outlook. </para>
+        <remarks><para>Изменение значения для свойства или свойства приведет к Outlook перерасчета <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.Start" /> <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.StartTimeZone" /> значения <b>StartUTC</b>. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3025,9 +3025,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), указывающую тему элемента Outlook. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> <b>(строка</b> в C#) с указанием субъекта для элемента Outlook. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagSubject</b>. Свойство <b>subject</b> является свойством по умолчанию для элементов Outlook. </para>
+        <remarks><para>Это свойство соответствует свойству MAPI <b>PidTagSubject.</b> Свойство <b>Subject</b> — это свойство по умолчанию для Outlook элементов. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3057,7 +3057,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>Boolean</b> (<b>bool</b> в C#), которое равно <b>true</b> , если элемент Outlook не был открыт (чтение). Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> <b>(bool</b> в C#) <b></b> true, если элемент Outlook не был открыт (чтение). Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3085,7 +3085,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.UserProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> коллекцию, которая представляет все свойства пользователя для элемента Outlook. Только для чтения.</summary>
+        <summary>Возвращает коллекцию, представляюную все свойства пользователя для <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> элемента Outlook. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

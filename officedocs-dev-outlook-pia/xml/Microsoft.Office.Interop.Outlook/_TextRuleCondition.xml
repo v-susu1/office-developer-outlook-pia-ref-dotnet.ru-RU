@@ -1,5 +1,5 @@
 <Type Name="_TextRuleCondition" FullName="Microsoft.Office.Interop.Outlook._TextRuleCondition">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="08c43d46f2b5c5edff71f17ab9960a3f103b9a53" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27900225" /></Metadata><TypeSignature Language="C#" Value="public interface _TextRuleCondition" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="77ef5a9daa77cf15bef3492520a6ed8b9feca023" /><Meta Name="ms.sourcegitcommit" Value="edbc1e709f796342c771b5226636c7e9dde40a82" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="06/25/2021" /><Meta Name="ms.locfileid" Value="53139471" /></Metadata><TypeSignature Language="C#" Value="public interface _TextRuleCondition" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _TextRuleCondition" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._TextRuleCondition" />
   <TypeSignature Language="VB.NET" Value="Public Interface _TextRuleCondition" />
@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения об объекте COM см. в <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> .</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, который представляет родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,7 +73,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> констант с указанием класса объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -101,9 +101,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlRuleConditionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает константу из <see cref="T:Microsoft.Office.Interop.Outlook.OlRuleConditionType" /> перечисления, указывающую тип условия правила. Только для чтения.</summary>
+        <summary>Возвращает константу из <see cref="T:Microsoft.Office.Interop.Outlook.OlRuleConditionType" /> переумерия, которая указывает тип условия правила. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение <b>кондитионтипе</b> зависит от типа условия правила, в том числе при использовании нескольких <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> типов условий правил Object: <b>олкондитионбоди</b>, <b>олкондитионбодйорсубжект</b>, <b>олкондитионмессажехеадер</b>и <b>olConditionSubject</b>. За исключением <b>олкондитионмессажехеадер</b>, который поддерживается только правилами для получения сообщений, все эти типы условий поддерживаются правилами для получения сообщений, а также правилами отправки сообщений. Дополнительные сведения см в разделе <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Определение условий правил</a></para>
+        <remarks><para>Значение <b>ConditionType</b> зависит от типа условия правила, так как объект используют несколько типов <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> правил: <b>olConditionBody,</b> <b>olConditionBodyOrSubject,</b> <b>olConditionMessageHeader</b>и <b>olConditionSubject.</b> За исключением  <b>olConditionMessageHeader,</b>который поддерживается только правилами получения сообщений, все эти типы условий поддерживаются правилами получения сообщений, а также правилами отправки сообщений. Дополнительные сведения см. в <a href="http://go.microsoft.com/fwlink/?LinkId=87803">дополнительных сведениях, определяющих условия правил</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -133,10 +133,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое определяет, включено ли условие правила. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>boolean</b> <b>(bool</b> в C#), определяя, включено ли условие правила. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>После включения условия для правила необходимо также сохранить правило, указав <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> , что условие правила и его включенное состояние не будут сохраняться за текущий сеанс.  Условие правила включается только после успешного сохранения. </para>
-          <para>Возвращает ошибку, если вы попытаетесь включить условие правила, которое поддерживается только для правила типа <b>олрулесенд</b> для правила типа <b>олрулерецеиве</b>или наоборот.  Дополнительные сведения о супппорт с помощью правил для получения сообщений или правил для отправки сообщений можно узнать в статье <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Определение условий правил</a></para>
+        <remarks><para>После включения условия правила необходимо также сохранить правило с помощью так, чтобы условие правила и его состояние включено сохранялось за <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> пределами текущего сеанса.  Условие правила включено только после успешного сэкономленного. </para>
+          <para>Возвращает ошибку при попытке включить условие правила, поддерживаемое только по правилу типа  <b>olRuleSend</b> для правила <b>типа olRuleReceive</b>или наоборот.  Дополнительные сведения о поддержке правилами получения сообщений или правилами отправки сообщений см. в дополнительных сведениях <a href="http://go.microsoft.com/fwlink/?LinkId=87803">о правилах</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -165,7 +165,7 @@
       <Docs>
         <summary>Возвращает родительский <b>объект</b> указанного объекта. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Родительский объект — это <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> объект.</para>
+        <remarks><para>Родительский объект — <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> это объект.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -192,9 +192,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает объект <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
+        <remarks><para>Свойство <b>Session</b> и метод можно использовать взаимозаменяемо для получения объекта <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> <b>NameSpace</b> для текущего сеанса. Оба члена служат одной и той же цели. Например, следующие пары заявлений выполняют ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -230,9 +230,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает массив элементов <b>String</b> (<b>String</b> в C#), представляющий текст, который необходимо оценить с помощью условия правила. Для чтения и записи.</summary>
+        <summary>Возвращает или задает массив элементов <b>String (string</b> <b>in</b> C#), которые представляют текст, оцениваемый условием правила. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Можно присвоить массив одной строкой или нескольким строкам для оценки. Несколько текстовых строк, назначенных в массиве, оцениваются с помощью логической операции OR.</para>
+        <remarks><para>Для оценки можно назначить массив одной строкой или несколькими строками. Несколько строк текста, заметив массив, оцениваются с помощью логической операции OR.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

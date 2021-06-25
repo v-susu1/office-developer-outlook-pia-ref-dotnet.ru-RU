@@ -1,5 +1,5 @@
 <Type Name="_FormRegion" FullName="Microsoft.Office.Interop.Outlook._FormRegion">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="170a1d134f5a487d0a43dde3247d20e4b029e8bb" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27902273" /></Metadata><TypeSignature Language="C#" Value="public interface _FormRegion" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1f5e36d15647c1ebf020041822306c7c220b912e" /><Meta Name="ms.sourcegitcommit" Value="edbc1e709f796342c771b5226636c7e9dde40a82" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="06/25/2021" /><Meta Name="ms.locfileid" Value="53139679" /></Metadata><TypeSignature Language="C#" Value="public interface _FormRegion" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _FormRegion" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._FormRegion" />
   <TypeSignature Language="VB.NET" Value="Public Interface _FormRegion" />
@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.FormRegion" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения об объекте COM см. в <see cref="T:Microsoft.Office.Interop.Outlook.FormRegion" /> .</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, который представляет родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,7 +73,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> констант с указанием класса объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -104,10 +104,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>строку</b> (<b>строка</b> в C#), представляющую текст, отображаемый во время выполнения в заголовке после отображаемого имени примыкающей области формы. Для чтения и записи.</summary>
+        <summary>Возвращает или задает строку <b>(строка</b> в C#), представляющую текст, отображающийся во время запуска в загонке после отображения имени прилегающей области формы.<b></b> Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>detail</b> отображается только для примыкающих областей формы. Он игнорируется для отдельных областей форм.</para>
-          <para>Свойство <b>detail</b> является необязательным для примыкающей области формы. </para>
+        <remarks><para>Свойство <b>Detail</b> отображается только для прилегающих областей форм. Он игнорируется для отдельных областей форм.</para>
+          <para>Свойство <b>Detail</b> является необязательным для прилегающей области форм. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -134,10 +134,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую отображаемое имя области формы. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> <b>(строка</b> в C#), представляющую отображаемую область формы. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Отображаемое имя является необязательным для области формы. Если вы определили значение для тега &lt;формрегионнаме&gt; в соответствующем XML-файле манифеста области формы, это значение будет сопоставлено со значением свойства <b>DisplayName</b> . Дополнительные сведения о схеме XML для областей форм можно найти в статье Справочник по XML-схеме Microsoft Outlook 2010 в <a href="http://msdn.microsoft.com/en-us/library/default.aspx">библиотеке MSDN</a></para>
-          <para>Значение свойства <b>DisplayName</b> отображается во время выполнения на вкладке "Показать" ленты Microsoft Office Fluent в отдельной области формы или в заголовке примыкающей области формы.  Он используется для языкового стандарта по умолчанию и может быть переопределен тегом &lt;stringOverride&gt; в соответствующем XML-файле манифеста области формы. В строке регистр символов не учитывается, а максимальная длина — 256 символов.</para>
+        <remarks><para>Имя отображения является необязательным для области форм. Если вы определили значение тега formRegionName в соответствующем XML-файле области формы, это значение будет соизмеряться со значением &lt; &gt; свойства <b>DisplayName.</b> Дополнительные сведения о схеме XML для областей форм см. в Microsoft Outlook 2010, русская версия ссылке на схему XML <a href="http://msdn.microsoft.com/en-us/library/default.aspx">в библиотека MSDN</a></para>
+          <para>Значение свойства <b>DisplayName</b> отображается во время запуска на вкладке Показать ленту Microsoft Office Fluent для отдельного региона форм или в загоне прилегающей области формы.  Он используется для локального значения по умолчанию и может быть переопределен тегом stringOverride в соответствующем &lt; &gt; XML-файле области формы. Строка нечувствительна к делу, а ее максимальная длина — 256 символов.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -167,10 +167,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, следует ли использовать функцию автоматического изменения размера макета при разработке областей форм в конструкторе форм. Чтение и запись</summary>
+        <summary>Возвращает или задает элемент <b>Boolean</b> <b>(bool</b> в C#), который указывает, следует ли использовать функцию автоматического формата, меняющий размер при разработке областей форм в конструкторе форм. Чтение и запись</summary>
         <value>To be added.</value>
-        <remarks><para>Функция автоматического изменения макета в конструкторе форм пересчитывает макет формы динамически при изменении размера формы. Эта функция доступна только для областей формы в конструкторе форм.</para>
-          <para>Если это свойство имеет <b>значение true</b>, конструктор форм выполняет автоматическое изменение размера макета.  Если это свойство имеет <b>значение false</b>, конструктор форм не выполняет автоматическое изменение размера макета.  Значение по умолчанию — <b>True</b>.</para>
+        <remarks><para>Функция автоматического размера макета в конструкторе форм динамически пересчитывает макет формы по мере повторного размера формы. Эта функция доступна только для формирования областей в конструкторе форм.</para>
+          <para>Когда это свойство <b>true,</b>конструктор форм выполняет автоматическое повторное размеров макета.  Если это свойство <b>false,</b>конструктор форм не выполняет автоматическое повторное размеров макета.  Значение по умолчанию — <b>True</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -197,7 +197,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>объект</b> , представляющий объект <b>MSForms. UserForm</b> . Только для чтения.</summary>
+        <summary>Возвращает <b>объект, представляющий</b> <b>объект MSForms.UserForm.</b> Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -225,9 +225,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlFormRegionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает константу <b>OlFormRegionMode</b> , которая указывает, находится ли область формы на странице чтения, странице создания или области чтения. Только для чтения.</summary>
+        <summary>Возвращает <b>констант OlFormRegionMode,</b> которая указывает, находится ли область формы на странице чтения, составить страницу или область чтения. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Если у пользователя есть почтовый элемент в области чтения, можно использовать <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Sent" /> свойство, чтобы определить, находится ли пользователь в режиме правки или режиме чтения области чтения. Почтовые элементы отображаются по-разному в области чтения, если она находится в режиме редактирования (почтовый элемент находится в папке черновиков), чем в режиме чтения (почтовый элемент находится в папке "Входящие" или "Отправленные").</para>
+        <remarks><para>Если у пользователя есть элемент почты в области чтения, вы можете использовать свойство, чтобы дополнительно определить, находится ли пользователь в режиме редактирования или режиме чтения области <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Sent" /> чтения. Почтовый элемент отображается в области чтения по-разному, если он находится в режиме редактирования (почтовый элемент находится в папке Draft), чем если он находится в режиме чтения (почтовый элемент находится в папке "Входящие" или "Отправленная").</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -254,9 +254,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Inspector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объект, представляющий инспектор, в котором размещается область формы. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объект, представляющий инспектора, на котором размещена область форм. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Возвращает значение <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#), если область формы отображается в области чтения.</para>
+        <remarks><para>Возвращает <b>nothing</b> (ссылка null (Ничего в Visual Basic) в C#), если область формы отображается в области чтения.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -283,10 +283,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>String</b> в C#), представляющую внутреннее программное имя области формы, определенное в манифесте для области формы. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> <b>(строку</b> в C#), которая представляет внутреннее программное имя области форм, как определено в манифесте для области форм. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Для области формы необходимо указать внутреннее имя. В &lt;теге&gt; Name в соответствующем XML-файле манифеста области формы отображается значение свойства <b>internalname —</b> . Дополнительные сведения о схеме XML для областей форм можно найти в статье Справочник по XML-схеме Microsoft Outlook 2010 в <a href="http://msdn.microsoft.com/en-us/library/default.aspx">библиотеке MSDN</a></para>
-          <para>Значение свойства <b>internalname —</b> используется надстройкой или Microsoft Outlook для ссылки на область формы, например, чтобы определить, какую область формы загружать или загружать строки из локализованных строковых ресурсов. Свойство <b>internalname —</b> поддерживает только символы ASCII. В строке регистр символов не учитывается, а максимальная длина — 256 символов.</para>
+        <remarks><para>Для области форм требуется внутреннее имя. Тег &lt; имени &gt; в соответствующей области формы манифест XML-карт для значения свойства <b>InternalName.</b> Дополнительные сведения о схеме XML для областей форм см. в Microsoft Outlook 2010, русская версия ссылке на схему XML <a href="http://msdn.microsoft.com/en-us/library/default.aspx">в библиотека MSDN</a></para>
+          <para>Значение свойства <b>InternalName</b> используется надстройкой или microsoft Outlook для ссылки на область форм, например для определения загружаемого региона формы или загрузки строк из локализованных строк. Свойство <b>InternalName</b> поддерживает только символы ASCII. Строка нечувствительна к делу, а ее максимальная длина — 256 символов.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -313,10 +313,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, развернута ли область формы. Только для чтения.</summary>
+        <summary>Возвращает <b>boolean</b> <b>(bool</b> в C#), который указывает, расширена ли область формы. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство применяется только к соседним областям формы и игнорируется для отдельных областей форм.</para>
-          <para>Outlook всегда сначала загружает область формы в развернутом состоянии и устанавливает для <b>NOEXPAND</b> <b>значение true</b>. Если исходное состояние области формы необходимо свернуть, Outlook сразу закрывает область формы, вызывает <see cref="E:Microsoft.Office.Interop.Outlook.FormRegionEvents_Event.Expanded" /> событие с <paramref name="Expand" /> параметром <b>false</b>и задает для свойства <b>NOEXPAND</b> <b>значение false</b>. </para>
+        <remarks><para>Это свойство применяется только к прилегающим областям форм и игнорируется для отдельных областей форм.</para>
+          <para>Outlook всегда сначала загружает область форм в расширенном состоянии и задает <b>IsExpanded</b> для <b>True</b>. Если исходное состояние области формы должно быть свернуто, Outlook немедленно закрывает область формы, событие с параметром False и <see cref="E:Microsoft.Office.Interop.Outlook.FormRegionEvents_Event.Expanded" /> <paramref name="Expand" /> задает <b>IsExpanded</b> <b></b>для <b>False</b>. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -343,7 +343,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>объект</b> , соответствующий элементу Outlook, связанному с областью формы. Только для чтения.</summary>
+        <summary>Возвращает <b>объект,</b> соответствующий элементу Outlook, связанному с областью формы. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -371,7 +371,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), которое указывает LCID для текущего языка. Только для чтения.</summary>
+        <summary>Возвращает значение <b>Integer</b> <b>(int</b> in C#), которое указывает LCID для текущего языка. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -399,7 +399,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает родительский <b>объект</b> области формы. Только для чтения.</summary>
+        <summary>Возвращает родительский <b>объект</b> области форм. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -425,8 +425,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Приводит к пересчету высоты примыкающей области формы в Outlook для отображения всех видимых элементов управления в области формы.</summary>
-        <remarks><para>Метод <b>расплавления</b> применяется только к примыкающим областям формы. Для отдельных областей форм не выполняется никаких действий.</para>
+        <summary>Вызывает Outlook для пересчета высоты прилегающей области форм, чтобы отобразить все видимые элементы управления в области форм.</summary>
+        <remarks><para>Метод <b>reflow</b> применяется только к прилегающим областям форм. Для отдельных областей форм не происходит никаких действий.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -451,8 +451,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Делает область формы активной областью формы, которая становится видимой.</summary>
-        <remarks><para>Если область формы является примыкающей областью формы, то <b>выберите</b> развернуть область формы (если она еще не развернута) и установите фокус на первый элемент управления на этой странице. Если область формы является отдельной областью формы и еще не активна, <b>выберите</b> свтич на странице "область формы" и установите фокус на первом элементе управления на этой странице. Если область формы является отдельной областью формы и уже активна, ничего не происходит.</para>
+        <summary>Делает область формы областью активной формы таким образом, чтобы она стала видимой.</summary>
+        <remarks><para>Если область формы является прилегающим регионом форм, <b>Выберите</b> расширит область формы (если она еще не расширена) и заорит фокус на первом контроле на этой странице. Если область формы является отдельной областью форм и еще не является активной страницей, <b>Выберите</b> переключается на страницу области форм и заоберет фокус на первом контроле на этой странице. Если область форм является отдельной областью форм и уже является активной страницей, то ничего не происходит.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -479,9 +479,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает объект <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
+        <remarks><para>Свойство <b>Session</b> и метод можно использовать взаимозаменяемо для получения объекта <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> <b>NameSpace</b> для текущего сеанса. Оба члена служат одной и той же цели. Например, следующие пары заявлений выполняют ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -515,12 +515,12 @@
         <Parameter Name="PropertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Control">Элемент управления в области формы, к которому привязано свойство, <paramref name="PropertyName" /> указанное с помощью.</param>
-        <param name="PropertyName">Имя свойства, которое будет привязано к элементу управления.</param>
-        <summary>Связывает явное встроенное свойство или настраиваемое свойство с элементом управления в области формы.</summary>
-        <remarks><para>С помощью этого метода можно привязывать явное встроенное свойство или настраиваемое свойство к элементу управления. Необходимо ссылаться на свойство по его строковому имени, например <b>subject</b>, а не по пространству имен, например http://schemas.microsoft.com/mapi/proptag/0x0037001E.</para>
-          <para>В <paramref name="PropertyName" /> параметре регистр не учитывается. Например, <b>сетконтролитемпроперти</b> интерпретирует аргумент, <b>CustomerID</b>, так же, как <b>CustomerID</b> , и применяет к встроенному <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.CustomerID" /> свойству указанный элемент управления.</para>
-          <para>Кроме использования метода <b>сетконтролитемпроперти</b> <see cref="T:Microsoft.Office.Interop.Outlook.FormRegion" /> объекта, можно также использовать код, аналогичный приведенному ниже, для привязывания свойства, например свойства <b>subject</b> , к элементу управления:</para>
+        <param name="Control">Управление в области форм, к которому будет привязано <paramref name="PropertyName" /> указанное свойство.</param>
+        <param name="PropertyName">Имя свойства, которое будет привязано к контролю.</param>
+        <summary>Привязывает явно встроенное свойство или настраиваемую свойство к контролю в области форм.</summary>
+        <remarks><para>Этот метод можно использовать для привязки явного встроенного свойства или настраиваемого свойства к контролю. Необходимо ссылаться на свойство по имени строки, например <b>Subject,</b>а не по пространству имен, http://schemas.microsoft.com/mapi/proptag/0x0037001E например.</para>
+          <para>Параметр <paramref name="PropertyName" /> не является чувствительным к делу. Например, <b>SetControlItemProperty</b> интерпретирует аргумент <b>CustomerId</b>таким же, как <b>CustomerID,</b> и связывает указанный контроль со встроенным <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.CustomerID" /> свойством.</para>
+          <para>Кроме метода <b>SetControlItemProperty</b> объекта можно также использовать код, аналогичный следующему, чтобы привязать свойство, например свойство <see cref="T:Microsoft.Office.Interop.Outlook.FormRegion" />  <b>Subject,</b> к контролю:</para>
           <code>myPage.Controls("bar").ItemProperty = "subject"</code>
           <code>myPage.Controls("bar").ItemProperty = "subject";</code>
           <para> </para></remarks>
@@ -552,9 +552,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое запрещает Outlook автоматически заменять элемент управления форм 2,0 с помощью элемента управления Outlook с темой во время конструирования и выполнения. Для чтения и записи.</summary>
+        <summary>Возвращает или задает контроль <b>boolean (bool</b> в C#), который отключает Outlook от автоматической замены управления Forms 2.0 на управление Outlook во время разработки и во время работы.<b></b> Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Дополнительные сведения о том, как Outlook автоматически заменяет элемент управления Forms 2,0 с помощью тематического элемента управления Outlook, представлен <a href="http://go.microsoft.com/fwlink/?LinkId=87823">в разделе элементы управления в настраиваемой форме</a></para>
+        <remarks><para>Дополнительные сведения о Outlook, автоматически заменяющих элемент управления Forms 2.0 на управление Outlook, см. в рублях Элементы управления в <a href="http://go.microsoft.com/fwlink/?LinkId=87823">настраиваемой форме</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -584,11 +584,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <see cref="T:System.Boolean" /> (<b>логическое</b> значение для C#), которое указывает, является ли область формы видимой или скрытой. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:System.Boolean" /> <b>(bool</b> для C#) значение, которое указывает, видна или скрыта область формы. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>Значение true</b> , если область формы видима; <b>False</b> , если он скрыт. По умолчанию используется значение <b>True</b>. </para>
-          <para>Используйте свойство <b>Visible</b> для управления доступом к сведениям, не отображая их в области формы.</para>
+            <b>True,</b> если область формы видна; <b>False,</b> если она скрыта. По умолчанию используется значение <b>True</b>. </para>
+          <para>Используйте <b>свойство Видимый</b> для управления доступом к информации без отображения ее в области форм.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

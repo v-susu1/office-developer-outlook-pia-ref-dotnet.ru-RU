@@ -1,5 +1,5 @@
 <Type Name="_OlkComboBox" FullName="Microsoft.Office.Interop.Outlook._OlkComboBox">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="89f18877a1a25c0c409aacc28f213dc09a4b2fad" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901433" /></Metadata><TypeSignature Language="C#" Value="public interface _OlkComboBox" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c820bf50404a80db164080f3f14e21ad21d54c4c" /><Meta Name="ms.sourcegitcommit" Value="edbc1e709f796342c771b5226636c7e9dde40a82" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="06/25/2021" /><Meta Name="ms.locfileid" Value="53139613" /></Metadata><TypeSignature Language="C#" Value="public interface _OlkComboBox" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _OlkComboBox" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._OlkComboBox" />
   <TypeSignature Language="VB.NET" Value="Public Interface _OlkComboBox" />
@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.OlkComboBox" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения об объекте COM см. в <see cref="T:Microsoft.Office.Interop.Outlook.OlkComboBox" /> .</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,10 +45,10 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ItemText">Значение, добавляемое в список в поле со списком.</param>
-        <param name="Index">Значение от 0, указывающее порядок нового элемента в списке.</param>
-        <summary>Добавляет элемент в список, при необходимости указывая индекс для нового элемента, который будет отображаться в списке.</summary>
-        <remarks><para>Если значение <paramref name="Index" /> равно или больше, чем число элементов в списке, новый элемент будет добавлен в конец списка.</para>
+        <param name="ItemText">Значение, добавленное в список в поле комбо.</param>
+        <param name="Index">Значение на основе 0, которое указывает порядок нового элемента в списке.</param>
+        <summary>Добавляет элемент в список с необязательным указанием индекса для нового элемента, который будет отображаться в списке.</summary>
+        <remarks><para>Если значение равно или больше числа элементов в списке, новый элемент будет добавлен в конец  <paramref name="Index" /> списка.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -78,10 +78,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое автоматически изменяет размер элемента управления для отображения всего содержимого.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>boolean</b> <b>(bool</b> в C#), который автоматически определяет размер управления для отображения всего содержимого.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>  По умолчанию для этого свойства задано значение <b>false</b>.</para>
-          <para>Если задать для параметра <b>AutoSize</b> <b>значение true</b> , ширина области отображения будет автоматически задается как длина текста в поле со списком. Это поведение аналогично текстовому полю из одной строки. </para>
+        <remarks><para>  Значение по умолчанию для этого свойства <b>false</b>.</para>
+          <para>Параметр <b>AutoSize</b> to <b>True</b> автоматически задает ширину области отображения до длины текста в поле комбо. Это поведение похоже на одностройное текстовое поле. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -111,9 +111,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, вставляется ли вкладка автоматически при заполнении заданной максимальной длины для этого элемента управления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Boolean</b> <b>(bool</b> в C#), которое указывает, вставляется ли вкладка автоматически при заполнении управления до максимальной указанной длины. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>  По умолчанию для этого свойства задано значение <b>false</b>.</para>
+        <remarks><para>  Значение по умолчанию для этого свойства <b>false</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -143,7 +143,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, является ли слово или символ базовой единицей, используемой для расширения выделенного фрагмента.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает элемент <b>Boolean</b> <b>(bool</b> в C#), который указывает, является ли слово или символ базовым элементом, используемым для расширения выбора.  Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks><para>Значение по умолчанию — <b>True</b>.</para>
           <para> </para></remarks>
@@ -178,9 +178,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>UInteger</b> (<b>uint</b> в C#), которое указывает цвет фона элемента управления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>значение UInteger</b> <b>(uint</b> in C#), которое указывает фоновый цвет управления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство имеет тип <b>OLE_COLOR</b> который является значением <b>UInteger</b> (<b>uint</b> в C#). По умолчанию для этого свойства задано значение 0x80000005, "Window". </para>
+        <remarks><para>Это свойство имеет тип <b>OLE_COLOR</b> <b>UInteger</b> <b>(uint</b> in C#). Значение по умолчанию для этого свойства 0x80000005 "Окно". </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -210,9 +210,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlBorderStyle" /> константу, определяющую стиль границы вокруг элемента управления.   Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlBorderStyle" /> констант, определяемую стилем границы вокруг управления.   Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>олбордерстилесингле</b>.</para>
+        <remarks><para>По умолчанию значение <b>olBorderStyleSingle</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -237,7 +237,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Удаляет все объекты из списка в поле со списком.</summary>
+        <summary>Удаляет все объекты из списка в поле комбо.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,9 +262,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Копирует содержимое элемента управления в буфер обмена.</summary>
-        <remarks><para>Данные копируются в неформатированный текстовый формат, заменяя существующее содержимое буфера обмена.</para>
-          <para>Если стиль элемента управления — <b>олкомбобоксстилелистбокс</b>, то этот метод копирует текущий выделенный фрагмент из раскрывающегося списка в буфер обмена.</para>
+        <summary>Копирует содержимое управления в буфер обмена.</summary>
+        <remarks><para>Данные копируется в неформатированном текстовом формате, заменяя существующее содержимое буфера обмена.</para>
+          <para>Если стилем управления является <b>olComboBoxStyleListBox,</b>то этот метод копирует текущий выбор в выпадаемом списке в буфер обмена.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -289,9 +289,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Удаляет содержимое элемента управления и копирует его в буфер обмена.</summary>
-        <remarks><para>Данные копируются в буфер обмена в неформатированном текстовом формате, заменяя существующее содержимое буфера обмена.</para>
-          <para>Если стиль элемента управления — <b>олкомбобоксстилелистбокс</b>, этот метод не будет вырезать ничего.</para>
+        <summary>Удаляет содержимое управления и копирует содержимое в буфер обмена.</summary>
+        <remarks><para>Данные копируется в буфер обмена в неформатированном текстовом формате, заменяя существующее содержимое буфера обмена.</para>
+          <para>Если стилем управления <b>является olComboBoxStyleListBox,</b>то этот метод не будет ничего резать.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -321,9 +321,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlDragBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlDragBehavior" /> константу, которая указывает, поддерживает ли система функцию перетаскивания для этого элемента управления.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает констант, которая указывает, включает ли система функцию перетаскивания для <see cref="T:Microsoft.Office.Interop.Outlook.OlDragBehavior" /> этого управления.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>олдрагдропдисаблед</b>.</para>
+        <remarks><para>По умолчанию значение <b>olDragDropDisabled</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -348,8 +348,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Разворачивает раскрывающийся часть поля со списком.</summary>
-        <remarks><para>Имитирует пользователя нажатием кнопки раскрытия на элементе управления. Этот метод приводит к <see cref="E:Microsoft.Office.Interop.Outlook.OlkComboBoxEvents_Event.DropButtonClick" /> срабатыванию события.</para>
+        <summary>Расширяет выпадаемую часть комбо-окна.</summary>
+        <remarks><para>Имитирует нажатие кнопки "Падение" на пульте управления. Этот метод вызывает <see cref="E:Microsoft.Office.Interop.Outlook.OlkComboBoxEvents_Event.DropButtonClick" /> событие, чтобы сгореть.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -379,7 +379,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, может ли элемент управления работать.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>boolean</b> <b>(bool</b> в C#), который указывает, разрешено ли работать управление.  Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks><para>Значение по умолчанию — <b>True</b>.</para>
           <para> </para></remarks>
@@ -411,9 +411,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlEnterFieldBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlEnterFieldBehavior" /> константу, определяющую поведение выделения при вводе элемента управления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlEnterFieldBehavior" /> констант, которая указывает поведение выбора при вводе управления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>олентерфиелдбехавиорселекталл</b>.</para>
+        <remarks><para>По умолчанию значение <b>olEnterFieldBehaviorSelectAll</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -440,9 +440,9 @@
         <ReturnType>stdole.StdFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает объект <b>стдфонт</b> , представляющий шрифт, используемый для отображения текста в элементе управления.  Только для чтения.</summary>
+        <summary>Возвращает <b>StdFont,</b> который представляет шрифт, используемый для отрисовки текста внутри управления.  Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Шрифт выражается в качестве типа Microsoft Windows <b>стдфонт</b>.</para>
+        <remarks><para>Шрифт выражается как <b>stdfont</b>Windows типа Microsoft.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -475,9 +475,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>UInteger</b> (<b>uint</b> в C#), которое указывает цвет переднего плана для элемента управления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>значение UInteger</b> <b>(uint</b> in C#), которое указывает на цвет переднего плана управления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство имеет тип <b>OLE_COLOR</b> который является значением <b>UInteger</b> (<b>uint</b> в C#). Значение этого свойства по умолчанию — 0x80000008, "текст окна".  </para>
+        <remarks><para>Это свойство имеет тип <b>OLE_COLOR</b> <b>UInteger</b> <b>(uint</b> in C#). Значение по умолчанию для этого свойства 0x80000008 "Window Text".  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -504,10 +504,10 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Значение с отсчетом от нуля, задающее расположение элемента в списке.</param>
-        <summary>Получает <b>строку</b> (<b>строку</b> в C#), которая представляет элемент в указанном расположении в списке элемента управления "поле со списком".</summary>
-        <returns>Значение <b>типа String</b> (<b>строка</b> в C#), представляющее элемент в указанном расположении в списке.</returns>
-        <remarks><para>Если <paramref name="Index" /> параметр находится за пределами диапазона допустимых значений (от <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.ListCount" />0 до-1), будет возвращена ошибка за пределами.</para>
+        <param name="Index">Нулевое значение, которое указывает расположение элемента в списке.</param>
+        <summary>Получает <b>строку</b> <b>(строку</b> в C#), которая представляет элемент в указанном расположении в списке элемента управления полем комбо.</summary>
+        <returns>Значение <b>String</b> <b>(string</b> in C#), которое представляет элемент в указанном расположении в списке.</returns>
+        <remarks><para>Если он находится за пределами допустимого диапазона значений (от нуля до -1), то будет возвращена ошибка, не связанная с <paramref name="Index" /> <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.ListCount" /> границами.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -537,9 +537,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, отображается ли выделенный фрагмент или скрыт для элемента управления, когда элемент управления теряет фокус.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>boolean</b> <b>(bool</b> в C#), который указывает, отображается ли выбор или скрывается для управления, когда управление теряет фокус.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение этого свойства по умолчанию — <b>true</b>. </para>
+        <remarks><para>Значение по умолчанию этого свойства <b>true</b>. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -566,9 +566,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), которое указывает количество элементов в раскрывающемся списке элемента управления "поле со списком". Только для чтения.</summary>
+        <summary>Возвращает значение <b>Integer (int</b> in C#), которое указывает количество элементов в выпадаемом списке элемента управления коробкой комбо.<b></b> Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию равно нулю, что означает, что в списке нет элементов.</para>
+        <remarks><para>Значение по умолчанию нулевое, что указывает на отсутствие элементов в списке.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -598,10 +598,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Или задает значение <b>Integer</b> (<b>int</b> в C#), которое указывает расположение выбранного в текущий момент элемента в списке элемента управления "поле со списком". Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Integer (int</b> in C#), которое указывает расположение выбранного элемента в списке элемента управления полем комбо.<b></b> Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>ListIndex</b> — это индексация значений с отсчетом от нуля в массиве элементов списка.  Значение по умолчанию —-1, указывающее на то, что элемент не выбран.</para>
+            <b>ListIndex</b> — это нулевая индексация значений в массив элементов в списке.  Значение по умолчанию — -1, что указывает на то, что элемент не выбран.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -631,10 +631,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, будет ли элемент управления заблокирован для изменения.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>boolean</b> <b>(bool</b> в C#), который указывает, заблокирован ли управление от изменения.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>False</b>.</para>
-          <para>Если элемент управления заблокирован, то элемент управления не имеет отключенного внешнего вида, но пользователь не может редактировать содержимое этого элемента управления.  </para>
+        <remarks><para>Значение по умолчанию — <b>False</b>.</para>
+          <para>Когда управление заблокировано, он не имеет "отключенного" внешнего вида, но пользователь не может изменить содержимое управления.  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -664,9 +664,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), задающее максимальное число символов для <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" /> этого элемента управления.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Integer (int</b> in C#), которое указывает максимальное количество символов для этого<b></b> <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" /> управления.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию равно 0, что означает, что для этого элемента управления не определена максимальная длина значения. Максимальная длина может быть по-прежнему на основе доступной памяти или других факторов.</para>
+        <remarks><para>Значение по умолчанию нулевое, а это означает, что для этого управления не определена максимальная длина значения. Максимальная длина по-прежнему может быть на месте в зависимости от доступной памяти или других факторов.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -696,9 +696,9 @@
         <ReturnType>stdole.StdPicture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>стдпиктуре</b> , представляющий пользовательское изображение курсора мыши для этого элемента управления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>stdPicture,</b> представляюшку настраиваемую картинку для курсора мыши для этого управления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
+        <remarks><para>Значение по умолчанию <b>является Nothing</b> (null reference (Nothing in Visual Basic) в C#).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -728,9 +728,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMousePointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> константу, определяющую тип указателя, отображаемого при наведении указателя мыши на элемент управления.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает констант, указывав тип указателя, отображаемого при позиционировании мыши над <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> управлением.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>олмаусепоинтердефаулт</b>.</para>
+        <remarks><para>По умолчанию значение <b>olMousePointerDefault</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -755,9 +755,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Вставит содержимое буфера обмена в элемент управления.</summary>
-        <remarks><para>Содержимое буфера обмена будет вставлено в неформатированный текст.</para>
-          <para>Этот метод не вставляет ничего, когда элемент управления <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Style" /> <b>олкомбобоксстилелистбокс</b>.</para>
+        <summary>Вклеить содержимое буфера обмена в управление.</summary>
+        <remarks><para>Содержимое буфера обмена вклеилось в неформатированный текст.</para>
+          <para>Этот метод не вклеит ничего, если управление <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Style" /> <b>olComboBoxStyleListBox</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -784,9 +784,9 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Индексация значений с отсчетом от нуля в массиве элементов списка.</param>
+        <param name="Index">Нулевая индексация значения в массив элементов в списке.</param>
         <summary>Удаляет указанный элемент из списка.</summary>
-        <remarks><para>Если <paramref name="Index" /> параметр находится за пределами диапазона допустимых значений (от <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.ListCount" />0 до-1), будет возвращена ошибка за пределами. </para>
+        <remarks><para>Если он находится за пределами допустимого диапазона значений (от нуля до -1), то будет возвращена ошибка, не связанная с <paramref name="Index" /> <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.ListCount" /> границами. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -816,9 +816,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, может ли пользователь выбрать строку текста, щелкнув область слева от текста.   Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>boolean (bool</b> в C#), который указывает, может ли пользователь выбрать строку текста, щелкнув в регионе слева от текста.<b></b>   Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Если этот параметр <b>имеет значение true</b>, щелчок по полю приводит к выделению текста.  Если задано <b>значение false</b>, это действие не выберет текст. Значение по умолчанию — <b>False</b>.  </para>
+        <remarks><para>Если <b>True,</b>щелчок в поле вызывает выбор текста.  Если <b>false,</b>это действие не выбирает текст. Значение по умолчанию — <b>False</b>.  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -848,12 +848,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), которое указывает количество символов в текущем выделенном фрагменте.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Integer (int</b> in C#), которое указывает количество символов в текущем выборе.<b></b>  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Текущий выделенный фрагмент задается элементом <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.SelText" />, который является частью элемента управления. <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" /> Максимальное число символов, поддерживаемое для <b>value</b> , равно <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.MaxLength" />.</para>
-          <para>Значение по умолчанию — ноль, что означает, что в данный момент нет выделенного текста. </para>
-          <para>Свойство <b>SelLength</b> всегда является допустимым, даже если элемент управления не имеет фокуса.</para>
-          <para>Если для параметра <b>SelLength</b> задано значение, меньшее нуля, возникает ошибка.   При попытке задать значение, превышающее <b>MaxLength</b> , в качестве значения параметра <b>SelLength</b> устанавливается значение <b>MaxLength</b>.  </para>
+        <remarks><para>Текущий выбор указывается <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.SelText" /> , который является частью управления <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" /> . Максимальное количество символов, которые <b></b> можно поддерживать для <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.MaxLength" /> Значения.</para>
+          <para>Значение по умолчанию нулевое, что означает, что текст в настоящее время не выбран. </para>
+          <para>Свойство <b>SelLength</b> всегда допустимо, даже если у управления нет фокуса.</para>
+          <para>Параметр <b>SelLength для</b> значения меньше нуля вызывает ошибку.   Попытка установить значение, большее, чем <b>MaxLength,</b> приводит к настройке <b>SelLength</b> до <b>MaxLength.</b>  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -883,11 +883,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), которое указывает начальную точку выделенного текста или точку вставки, если текст не выбран.    Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Integer (int</b> in C#), которое указывает либо отправную точку выбранного текста, либо точку вставки, если текст не выбран.<b></b>    Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Текущий выделенный фрагмент задается элементом <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.SelText" />, который является частью элемента управления. <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" /> Максимальное число символов, поддерживаемое для <b>value</b> , равно <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.MaxLength" />.</para>
-          <para>Значение по умолчанию равно 0, что означает, что текст не выбран и точка вставки находится в начале.</para>
-          <para>Свойство <b>SelStart</b> всегда является допустимым, даже если элемент управления не имеет фокуса.  Если для параметра <b>SelStart</b> задано значение, меньшее нуля, возникает ошибка.  Если для параметра <b>SelStart</b> задано значение, превышающее <b>MaxLength</b> , <b>SelStart</b> заменяется на <b>MaxLength</b>.  Изменение значения <b>SelStart</b> отменяет любой существующий выделенный фрагмент, размещает точку вставки в тексте и задает для свойства <b>SelLength</b> нулевое значение. </para>
+        <remarks><para>Текущий выбор указывается <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.SelText" /> , который является частью управления <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" /> . Максимальное количество символов, которые <b></b> можно поддерживать для <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.MaxLength" /> Значения.</para>
+          <para>Значение по умолчанию нулевое, что означает, что текст не выбран, а точка вставки находится в начале.</para>
+          <para>Свойство <b>SelStart всегда</b> допустимо, даже если у управления нет фокуса.  Параметр <b>SelStart для</b> значения меньше нуля вызывает ошибку.  Параметр <b>SelStart для</b> значения, большего, чем <b>MaxLength,</b> сбросит <b>SelStart</b> на <b>MaxLength.</b>  Изменение значения <b>SelStart отменяет</b> существующий выбор, помещает точку вставки в текст и задает свойство <b>SelLength</b> нулю. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -914,10 +914,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>String</b> в C#), представляющую выбранную часть значения поля со списком.    Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> <b>(строка</b> в C#), которая представляет выбранную часть значения окне комбо.    Только для чтения.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>SelText</b> представляет выделенный фрагмент, который является частью элемента управления <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" />. Максимальное число символов, поддерживаемое для <b>value</b> , равно <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.MaxLength" />.</para>
+            <b>SelText</b> представляет текущий выбор, который является частью управления <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" /> . Максимальное количество символов, которые <b></b> можно поддерживать для <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.MaxLength" /> Значения.</para>
           <para>Значение по умолчанию: пустая строка.</para>
           <para> </para></remarks>
       </Docs>
@@ -946,10 +946,10 @@
         <Parameter Name="Item" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Index">Значение с отсчетом от нуля, задающее расположение элемента в списке.</param>
-        <param name="Item">Значение, которое будет использоваться для обновления списка в указанном расположении.</param>
-        <summary>Задает указанное значение для элемента в указанном расположении в списке поля со списком.</summary>
-        <remarks><para>Если <paramref name="Index" /> параметр находится за пределами диапазона допустимых значений (от <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />0 до-1), будет возвращена ошибка за пределами. </para>
+        <param name="Index">Нулевое значение, которое указывает расположение элемента в списке.</param>
+        <param name="Item">Значение, используемого для обновления списка в указанном расположении.</param>
+        <summary>Задает элемент в указанном расположении в списке окне комбо к указанному значению.</summary>
+        <remarks><para>Если он находится за пределами допустимого диапазона значений (от нуля до -1), то будет возвращена ошибка, не связанная с <paramref name="Index" /> <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" /> границами. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -979,9 +979,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlComboBoxStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlComboBoxStyle" /> константу для указания того, как пользователь может выбрать или задать значение элемента управления.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает констант, чтобы указать, как пользователь может выбрать или задать <see cref="T:Microsoft.Office.Interop.Outlook.OlComboBoxStyle" /> значение управления.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>олкомбобоксстилекомбо</b>. </para>
+        <remarks><para>По умолчанию значение <b>olComboBoxStyleCombo</b>. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1011,10 +1011,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), которая представляет собой текст, отображаемый в элементе управления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> <b>(строка</b> в C#), которая является текстом, отображаемой в области управления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию свойства <b>Text</b> — пустая строка.</para>
-          <para>Свойство <b>Text</b> предоставляет то же значение, что и <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" /> свойство, но значение строго типизировано как <b>String</b> (<b>строка</b> в C#).</para>
+        <remarks><para>Значение свойства <b>Text</b> по умолчанию — пустая строка.</para>
+          <para>Свойство <b>Text</b> предоставляет то же значение, что и свойство, но его сильно введите как <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" /> <b>строка</b> (строка<b></b> в C#).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1044,9 +1044,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlTextAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> константу, определяющую выравнивание текста в элементе управления.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> констант, которая указывает, как текст выравнивается в области управления.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>По умолчанию используется значение <b>олтексталигнлефт</b> в языках с письмом слева направо, например, на английском языке.</para>
+        <remarks><para>По умолчанию значение <b>olTextAlignLeft</b> на левом и правом языках, таких как английский.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1076,10 +1076,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), представляющее индекс элемента в верхней части отображаемой части списка в поле со списком. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Integer (int</b> in C#), которое представляет индекс элемента в верхней части отображаемой части списка в поле комбо.<b></b> Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>При прокрутке списка элемент, расположенный в начале списка, изменится, и значение этого свойства изменится в соответствии с элементом, который в данный момент отображается в верхней части списка.</para>
-          <para>Значение индекса отсчитывается от нуля. Значение по умолчанию равно-1, что указывает на то, что особый порядок не должен быть применен.</para>
+        <remarks><para>По мере прокрутки списка элемент в верхней части списка будет изменяться, а значение этого свойства изменится, чтобы отразить элемент, отображаемый в верхней части списка.</para>
+          <para>Значение индекса нулевое. Значение по умолчанию —1, что указывает на то, что не следует применять специальный порядок.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1109,9 +1109,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>объект</b> , представляющий контент, выбранный в списке, отображаемом элементом управления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>объект,</b> который представляет содержимое, выбранное в списке, отображаемом управлением. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Text" />совпадает со значением, за исключением того, что это свойство является <b>Object</b> , а <b>текст</b> строго типизирован как <b>String</b> (<b>строка</b> в C#).  </para>
+        <remarks><para>Значение такое же, как и значение , за исключением того, что это свойство Object и Text сильно введите как <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Text" /> <b>String</b> <b>(строка</b> в C#). <b></b> <b></b>  </para>
           <para> </para></remarks>
       </Docs>
     </Member>

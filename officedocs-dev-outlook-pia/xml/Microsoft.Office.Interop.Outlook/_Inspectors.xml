@@ -1,5 +1,5 @@
 <Type Name="_Inspectors" FullName="Microsoft.Office.Interop.Outlook._Inspectors">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="64c88b63d85d9a7cd53e89ad828726e610da1b42" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27900663" /></Metadata><TypeSignature Language="C#" Value="public interface _Inspectors : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e4b758f01e7a68d5f7d00c56ae8e3035d38de9c7" /><Meta Name="ms.sourcegitcommit" Value="edbc1e709f796342c771b5226636c7e9dde40a82" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="06/25/2021" /><Meta Name="ms.locfileid" Value="53139574" /></Metadata><TypeSignature Language="C#" Value="public interface _Inspectors : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Inspectors implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Inspectors" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Inspectors&#xA;Implements IEnumerable" />
@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.Inspectors" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения об объекте COM см. в <see cref="T:Microsoft.Office.Interop.Outlook.Inspectors" /> .</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,10 +49,10 @@
         <Parameter Name="Item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Item">Элемент, отображаемый в окне инспектора при его создании.</param>
+        <param name="Item">Элемент, отображаемый в окне инспектора при его создания.</param>
         <summary>Создает новое окно инспектора.</summary>
-        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> Объект, представляющий новое окно инспектора.</returns>
-        <remarks><para>Этот метод по сути <b>идентичен свойству</b> GetProperty элемента Outlook, например <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />.</para>
+        <returns>Объект, <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> который представляет новое окно инспектора.</returns>
+        <remarks><para>Этот метод по существу идентичен свойству <b>GetInspector</b> элемента Outlook, например <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -79,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, который представляет родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -107,7 +107,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> констант с указанием класса объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -135,7 +135,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа Integer</b> (<b>int</b> в C#), указывающее количество объектов в указанной коллекции. Только для чтения.</summary>
+        <summary>Возвращает значение <b>Integer</b> <b>(int</b> in C#), указывающее количество объектов в указанной коллекции. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -166,9 +166,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Номер индекса объекта или значение, используемое для сравнения со свойством по умолчанию объекта в коллекции.</param>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> объект из коллекции.</summary>
-        <value>Объект <b>инспекто</b>r, представляющий указанный объект.</value>
+        <param name="Index">Либо число индекса объекта, либо значение, используемого для совпадения по умолчанию свойства объекта в коллекции.</param>
+        <summary>Возвращает объект <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> из коллекции.</summary>
+        <value>Объект <b>Inspector,</b> который представляет указанный объект.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,9 +223,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает объект <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
+        <remarks><para>Свойство <b>Session</b> и метод можно использовать взаимозаменяемо для получения объекта <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> <b>NameSpace</b> для текущего сеанса. Оба члена служат одной и той же цели. Например, следующие пары заявлений выполняют ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>

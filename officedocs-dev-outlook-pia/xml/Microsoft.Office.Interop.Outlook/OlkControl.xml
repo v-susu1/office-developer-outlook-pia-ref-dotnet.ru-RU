@@ -1,5 +1,5 @@
 <Type Name="OlkControl" FullName="Microsoft.Office.Interop.Outlook.OlkControl">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="5939b00a41bad44f31458db50a6e9149c2069729" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901888" /></Metadata><TypeSignature Language="C#" Value="public interface OlkControl" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b59b52e19f1e0e19966fdc0416fc5057d16159e4" /><Meta Name="ms.sourcegitcommit" Value="edbc1e709f796342c771b5226636c7e9dde40a82" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="06/25/2021" /><Meta Name="ms.locfileid" Value="53139581" /></Metadata><TypeSignature Language="C#" Value="public interface OlkControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OlkControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OlkControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface OlkControl" />
@@ -18,8 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Определяет набор свойств элемента управления, общих для некоторых элементов управления Microsoft Outlook.</summary>
-    <remarks><para>Элементы, предлагаемые <b>OlkControl</b> , могут применяться к большинству элементов управления Outlook.  <b>OlkControl</b> предоставляет класс, с помощью которого можно легко привести элемент управления Outlook, не прибегая к отражению. Несмотря на то что <b>OlkControl</b> не применимо к элементам управления Microsoft forms 2,0, аналогичные свойства доступны для элементов управления форм 2,0. Дополнительные сведения см. в статье <a href="http://go.microsoft.com/fwlink/?LinkID=87937">OL98: дополнительные свойства элемента управления, доступные для программирования</a></para>
+    <summary>Определяет набор свойств управления, распространенных для некоторых элементов управления Outlook Майкрософт.</summary>
+    <remarks><para>Участники, предлагаемые <b>OlkControl,</b> могут применяться к большинству Outlook элементов управления.  <b>OlkControl предоставляет</b> класс, в который можно удобно Outlook управления, не прибегая к отражению. Хотя <b>OlkControl</b> не применяется к средствам управления Microsoft Forms 2.0, аналогичные свойства доступны для элементов управления Forms 2.0. Дополнительные сведения см. в <a href="http://go.microsoft.com/fwlink/?LinkID=87937">сайте OL98. Дополнительные свойства управления, доступные для программирования</a></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), представляющую свойство элемента управления, с которым выполняется DataBind. Чтение и запись</summary>
+        <summary>Возвращает или задает <b>строку</b> <b>(строка</b> в C#), которая представляет свойство на контрольном объекте, с помощью который создается databind. Чтение и запись</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -80,9 +80,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое позволяет автоматически корректировать макет элемента управления по отношению к остальной части формы. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>boolean</b> <b>(bool</b> в C#), который включает автоматические корректировки макета для управления по отношению к остальной части формы. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Автоматические изменения макета элемента управления включают вертикальное или горизонтальное выравнивание элемента управления по отношению к другим элементам управления, а также изменение высоты или ширины элемента управления относительно длины или ширины формы.</para>
+        <remarks><para>Автоматические корректировки макета управления включают вертикальное или горизонтальное выравнивание управления по отношению к другим средствам управления, а также размер высоты или ширины управления по длине или ширине формы.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -112,10 +112,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), которое указывает, как значение отображается в элементе управления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Integer (int</b> in C#), которое указывает, как должно отображаться значение в области управления.<b></b> Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>Format</b> может быть константой в перечислении, описывающем способ отображения значения. Например, можно указать <b>Format</b> как константу <b>олформаткурренцидеЦимал</b> , которая определена в <see cref="T:Microsoft.Office.Interop.Outlook.OlFormatCurrency" /> перечислении для отображения денежного значения в <see cref="T:Microsoft.Office.Interop.Outlook.OlkTextBox" /> элементе управления.</para>
-          <para>Свойство <b>Format</b> относится к свойству в объектной модели Outlook, к которой привязан элемент управления. Последнее указывается с помощью <see cref="P:Microsoft.Office.Interop.Outlook.OlkControl.ItemProperty" />. Если элемент управления не привязан к какому-либо свойству, то при доступе к <b>формату</b> будет возвращена ошибка.</para>
+        <remarks><para>Свойство <b>Format</b> может быть константой в переумеществе, описываемом отображением значения. Например, можно указать <b>Format</b> как постоянную <b>olFormatCurrencyDecimal,</b> определяемую в переумериях для отображения значения валюты в <see cref="T:Microsoft.Office.Interop.Outlook.OlFormatCurrency" /> области <see cref="T:Microsoft.Office.Interop.Outlook.OlkTextBox" /> управления.</para>
+          <para>Свойство <b>Format</b> имеет свойство в объектной Outlook объектной модели, к которое должен быть привязан контроль. Последнее указывается <see cref="P:Microsoft.Office.Interop.Outlook.OlkControl.ItemProperty" /> на . Если управление не связано с любым свойством, доступ к <b>Формату</b> возвращает ошибку.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -145,7 +145,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlHorizontalLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlHorizontalLayout" /> константу, определяющую выравнивание в горизонтальном направлении данного элемента управления с другими выбранными элементами управления в форме, а также автоматическое изменение ширины элемента управления при изменении ширины формы. Для чтения и записи.</summary>
+        <summary>Возвращает или задает констант, которая указывает любое выравнивание в горизонтальном направлении этого управления с другими выбранными элементами управления формы или автоматически корректируется ли элемент управления в горизонтальном направлении при смене ширины <see cref="T:Microsoft.Office.Interop.Outlook.OlHorizontalLayout" /> формы. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,7 +176,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>строку</b> (<b>String</b> в C#), которая указывает имя свойства в объектной модели Outlook, к которой привязан элемент управления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает строку <b>(строка</b> в C#), которая указывает имя свойства в объектной Outlook объектной модели, к которую должен быть привязан контроль.<b></b> Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -207,10 +207,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), которое определяет минимальную высоту элемента управления, к которому можно автоматически задать размер. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Integer (int</b> in C#), которое указывает минимальную высоту, до которую можно автоматически использовать управление.<b></b> Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="P:Microsoft.Office.Interop.Outlook.OlkControl.EnableAutoLayout" />должен иметь значение <b>true</b> для того, чтобы <b>минимумленгс</b> стал эффективным.</para>
+            <see cref="P:Microsoft.Office.Interop.Outlook.OlkControl.EnableAutoLayout" /> для <b>того,</b> чтобы <b>MinimumLength</b> стал эффективным.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -240,10 +240,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>типа Integer</b> (<b>int</b> в C#), которое указывает минимальную ширину, на которую можно автоматически изменить размер элемента управления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>Integer (int</b> in C#), которое указывает минимальную ширину, в которую можно автоматически включить размер управления.<b></b> Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="P:Microsoft.Office.Interop.Outlook.OlkControl.EnableAutoLayout" />должен иметь значение <b>true</b> для того, чтобы <b>минимумвидс</b> стал эффективным.</para>
+            <see cref="P:Microsoft.Office.Interop.Outlook.OlkControl.EnableAutoLayout" /> для <b>того,</b> чтобы <b>MinimumWidth</b> стал эффективным.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -273,9 +273,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>строку</b> (<b>String</b> в C#), которая представляет список возможных значений для раскрывающегося списка для элемента управления, разделенных точкой с запятой. Для чтения и записи.</summary>
+        <summary>Возвращает или задает строку <b>(строка</b> в C#), которая представляет список возможных значений для выпадаемого списка для управления, разделенного зайколонами.<b></b> Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Для элементов управления, не поддерживающих раскрывающийся список, значение этого свойства равно <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
+        <remarks><para>Для элементов управления, которые не поддерживают выпадаемого списка, значение этого свойства является <b>Nothing</b> (null reference (Nothing in Visual Basic) в C#).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -305,7 +305,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlVerticalLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlVerticalLayout" /> константу, определяющую выравнивание по вертикали этого элемента управления с другими выбранными элементами управления в форме, а также автоматическая настройка элемента управления в вертикальном направлении при изменении длины формы. Для чтения и записи.</summary>
+        <summary>Возвращает или задает констант, которая указывает любое выравнивание в вертикальном направлении этого управления с другими выбранными элементами управления формы или автоматически корректируется ли элемент управления в вертикальном направлении при смене длины <see cref="T:Microsoft.Office.Interop.Outlook.OlVerticalLayout" /> формы. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

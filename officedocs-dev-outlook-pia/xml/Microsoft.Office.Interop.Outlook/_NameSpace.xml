@@ -1,5 +1,5 @@
 <Type Name="_NameSpace" FullName="Microsoft.Office.Interop.Outlook._NameSpace">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="180db45f39b12a2e4725cdddcd3cc5780306b7d7" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27897222" /></Metadata><TypeSignature Language="C#" Value="public interface _NameSpace" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a87a43de5dc77c99e251521002873396b70a33ed" /><Meta Name="ms.sourcegitcommit" Value="edbc1e709f796342c771b5226636c7e9dde40a82" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="06/25/2021" /><Meta Name="ms.locfileid" Value="53139602" /></Metadata><TypeSignature Language="C#" Value="public interface _NameSpace" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _NameSpace" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._NameSpace" />
   <TypeSignature Language="VB.NET" Value="Public Interface _NameSpace" />
@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения об объекте COM см. в <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> .</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,9 +45,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Accounts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает объект <see cref="T:Microsoft.Office.Interop.Outlook.Accounts" /> Collection, который представляет все <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> объекты в текущем профиле. Только для чтения.</summary>
+        <summary>Возвращает объект <see cref="T:Microsoft.Office.Interop.Outlook.Accounts" /> коллекции, который представляет все <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> объекты текущего профиля. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Если Outlook работает в режиме без сеанса, <b>учетные записи</b> возвращают коллекцию <b>учетных записей</b> со <see cref="P:Microsoft.Office.Interop.Outlook._Accounts.Count" /> значением 0.</para>
+        <remarks><para>Если Outlook работает в режиме сеанса, <b>учетные</b> записи возвращают коллекцию учетных записей с <b></b> <see cref="P:Microsoft.Office.Interop.Outlook._Accounts.Count" /> равным 0.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -74,9 +74,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.AddressLists</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressLists" /> коллекцию, представляющую коллекцию списков адресов, доступных для этого сеанса. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressLists" />  коллекцию, представляющую коллекцию списков адресов, доступных для этого сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Коллекция <b>AddressLists</b> представляет корень иерархии адресной книги для текущего сеанса. Определенный <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> объект представляет одну из доступных адресных книг. Тип получаемого доступа зависит от разрешений доступа каждого отдельного поставщика адресных книг.</para>
+        <remarks><para>Коллекция <b>AddressLists</b> представляет корневую часть иерархии адресных книг для текущего сеанса. Определенный <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" />  объект представляет одну из доступных адресных книг. Тип доступа, который вы получите, зависит от разрешений на доступ, предоставленных вам каждым поставщиком адресной книги.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -103,9 +103,9 @@
         <Parameter Name="Store" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Store">Путь к PST-файлу, который необходимо добавить в профиль. Если PST-файл не существует, он создается в Microsoft Outlook.</param>
-        <summary>Добавляет файл личных папок (PST-файл) в текущий профиль.</summary>
-        <remarks><para>Используйте метод <b>RemoveStore</b> , чтобы удалить PST-файл, который уже добавлен в профиль.</para>
+        <param name="Store">Путь файла .pst, который будет добавлен в профиль. Если файл .pst не существует, microsoft Outlook создает его.</param>
+        <summary>Добавляет файл личных папок (PST) в текущий профиль.</summary>
+        <remarks><para>Используйте метод <b>RemoveStore,</b> чтобы удалить PST, который уже добавлен в профиль.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -133,10 +133,10 @@
         <Parameter Name="Type" Type="Microsoft.Office.Interop.Outlook.OlStoreType" />
       </Parameters>
       <Docs>
-        <param name="Store">Путь к PST-файлу, который необходимо добавить в профиль. Если PST-файл не существует, он создается в Microsoft Outlook.</param>
+        <param name="Store">Путь файла .pst, который будет добавлен в профиль. Если файл .pst не существует, microsoft Outlook создает его.</param>
         <param name="Type">Формат, в котором должен быть создан файл данных.</param>
-        <summary>Добавляет файл личных папок (PST-файл) в указанном формате в текущий профиль.</summary>
-        <remarks><para>Используйте константу <b>олстореуникоде</b> для добавления нового PST-файла с большим объемом памяти для элементов и папок, а также для поддержки многоязычных данных Юникод в профиле пользователя. Константа <b>олстореанси</b> позволяет создавать PST-файлы, которые не обеспечивают полную поддержку многоязычных данных Юникода, но совместимы с предыдущими версиями Outlook.  Константа <b>олсторедефаулт</b> помогает создать PST-файл в формате, используемом по умолчанию, совместимым с режимом почтового ящика, в котором Outlook работает на сервере Microsoft Exchange.</para>
+        <summary>Добавляет файл персональных папок (PST) в указанном формате в текущий профиль.</summary>
+        <remarks><para>Используйте <b>константы olStoreUnicode,</b> чтобы добавить в профиль пользователя новый файл PST, который обладает большей емкостью хранения для элементов и папок и поддерживает многоязычные данные Юникод. <b>Константа olStoreANSI</b> позволяет создавать PST-файлы, которые не обеспечивают полную поддержку многоязычных данных Юникод, но совместимы с более ранними версиями Outlook.  <b>Константа olStoreDefault</b> помогает создать файл PST в формате по умолчанию, совместимый с режимом почтового ящика, в котором Outlook выполняется на Microsoft Exchange Server.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -163,7 +163,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, представляющий родительское приложение Outlook для объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, который представляет родительское приложение Outlook для объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -191,7 +191,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlAutoDiscoverConnectionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlAutoDiscoverConnectionMode" /> константу, определяющую тип подключения к серверу Exchange для службы автоматического обнаружения. Только для чтения.</summary>
+        <summary>Возвращает констант, которая указывает тип подключения к серверу Exchange <see cref="T:Microsoft.Office.Interop.Outlook.OlAutoDiscoverConnectionMode" /> для службы автоматического обнаружения. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -219,10 +219,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>String</b> в C#), которая представляет данные в XML-файле, полученном из службы автоматического обнаружения сервера Exchange Server. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> <b>(строку</b> в C#), которая представляет сведения в XML, извлеченные из службы автоматического обнаружения Exchange сервера. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Возвращаемая строка XML содержит сведения о различных веб-службах (например, служба доступности и служба единой системы обмена сообщениями) и доступные серверы.  </para>
-          <para>Если активный профиль не содержит учетную запись для Microsoft Exchange Server 2007 или более поздней версии, возвращается ошибка.</para>
+        <remarks><para>Возвращенная строка XML содержит сведения о различных веб-службах (например, службе доступности и единой службе обмена сообщениями) и доступных серверах.  </para>
+          <para>Ошибка возвращается, если активный профиль не содержит учетную запись Microsoft Exchange Server 2007 или более поздней.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -249,9 +249,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Categories</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.Categories" /> объект, представляющий набор <see cref="T:Microsoft.Office.Interop.Outlook.Category" /> объектов, доступных пространству имен. Для чтения и записи.</summary>
+        <summary>Возвращает или задает объект, который представляет <see cref="T:Microsoft.Office.Interop.Outlook.Categories" /> набор <see cref="T:Microsoft.Office.Interop.Outlook.Category" /> объектов, доступных в пространстве имен. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство представляет главный список категорий, который является набором объектов <b>Category</b> , которые можно применить к элементам Outlook, находящимся в объекте <b>Namespace</b> , и применяется ко всем пользователям этого пространства имен.</para>
+        <remarks><para>Это свойство представляет список категории Master, который <b></b> представляет собой набор объектов категории, которые могут применяться к Outlook элементов, содержащихся в <b>объекте NameSpace,</b> и применяется ко всем пользователям этого пространства имен.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -278,7 +278,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> константу, указывающую класс объекта. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> констант с указанием класса объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -307,11 +307,11 @@
         <Parameter Name="SecondEntryID" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FirstEntryID">Первый сравниваемый идентификатор записи.</param>
-        <param name="SecondEntryID">Второй идентификатор записи для сравнения.</param>
-        <summary>Возвращает <b>логическое</b> значение (<b>bool</b> в C#), которое указывает, ССЫЛАЮТСЯ ли два значения идентификатора записи на один и тот же элемент Outlook.</summary>
-        <returns><b>Значение true</b> , если значения идентификаторов записей относятся к одному элементу Outlook; в противном случае — <b>false</b>.</returns>
-        <remarks><para>Идентификаторы записей не могут сравниваться напрямую, так как один объект может быть представлен двумя разными двоичными значениями. Используйте этот метод, чтобы определить, представляют ли два идентификатора записи один и тот же объект.</para>
+        <param name="FirstEntryID">Первый iD записи, который необходимо сравнить.</param>
+        <param name="SecondEntryID">Второй ID записи, который необходимо сравнить.</param>
+        <summary>Возвращает значение <b>Boolean</b> <b>(bool</b> в C#), которое указывает, относятся ли два значения ID записи к одному Outlook элементу.</summary>
+        <returns><b>Значение True,</b> если значения ID записи относятся к одному Outlook элементу; в противном <b>случае False</b>.</returns>
+        <remarks><para>Идентификаторы записи нельзя сравнивать напрямую, так как один объект может быть представлен двумя разными двоичными значениями. Используйте этот метод, чтобы определить, представляют ли два идентификатора записи один и тот же объект.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -337,11 +337,11 @@
         <Parameter Name="AddressEntry" Type="Microsoft.Office.Interop.Outlook.AddressEntry" />
       </Parameters>
       <Docs>
-        <param name="AddressEntry"><see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> Объект, представляющий пользователя, для которого необходимо создать карточку контакта.</param>
-        <summary>Создает экземпляр <see cref="T:Microsoft.Office.Core.ContactCard" /> объекта для контакта, указанного с помощью <paramref name="AddressEntry" /> параметра.</summary>
-        <returns>Возвращает объект <b>ContactCard</b> , созданный для указанного пользователя.</returns>
-        <remarks><para>Объект <b>ContactCard</b> доступен в библиотеке типов Microsoft Office. Перед вызовом <b>креатеконтакткард</b> для создания карточки контакта в Microsoft Outlook необходимо войти в сеанс Outlook. </para>
-          <para>Параметр — это объект <b>AddressEntry</b> , представляющий один из следующих типов AddressEntry, определенных в <see cref="T:Microsoft.Office.Interop.Outlook.OlAddressEntryUserType" /> перечислении: <paramref name="AddressEntry" /></para>
+        <param name="AddressEntry">Объект, который представляет пользователя, для которого должна быть создана <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> контактная карточка.</param>
+        <summary>Создает экземпляр объекта <see cref="T:Microsoft.Office.Core.ContactCard" /> для контакта, указанного <paramref name="AddressEntry" /> параметром.</summary>
+        <returns>Возвращает объект <b>ContactCard,</b> созданный для указанного пользователя.</returns>
+        <remarks><para>Объект <b>ContactCard</b> доступен в библиотеке типов Microsoft Office. Перед <b>вызовом CreateContactCard</b> для создания контактной карты в Microsoft Outlook, Outlook необходимо войти в Outlook сеанса. </para>
+          <para>Параметр — объект AddressEntry, который представляет один из следующих типов <paramref name="AddressEntry" /> AddressEntry, определенных в <b></b> <see cref="T:Microsoft.Office.Interop.Outlook.OlAddressEntryUserType" /> переуме-</para>
           <list type="bullet">
             <item>
               <para>
@@ -369,7 +369,7 @@
               </para>
             </item>
           </list>
-          <para>Outlook вызывает ошибку <b>E_INVALIDARG</b> при передаче любого из следующих значений <b>OlAddressEntryUserType</b> в качестве аргумента методу <b>креатеконтакткард</b> :</para>
+          <para>Outlook вызывает ошибку <b>E_INVALIDARG</b> при сдаче любого из следующих значений <b>OlAddressEntryUserType</b> в качестве аргумента для метода <b>CreateContactCard:</b></para>
           <list type="bullet">
             <item>
               <para>
@@ -428,10 +428,10 @@
         <Parameter Name="RecipientName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="RecipientName">Имя получателя; Это может быть строка, представляющая отображаемое имя, псевдоним или полный SMTP-адрес электронной почты получателя.</param>
-        <summary>Создает <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> объект.</summary>
-        <returns>Объект <b>Recipient</b> , представляющий нового получателя.</returns>
-        <remarks><para> Этот метод чаще всего используется для создания объекта <b>Recipient</b> для использования с <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetSharedDefaultFolder(Microsoft.Office.Interop.Outlook.Recipient,Microsoft.Office.Interop.Outlook.OlDefaultFolders)" /> методом, например, для открытия папки представителя. Его также можно использовать для проверки определенного имени в адресной книге.</para>
+        <param name="RecipientName">Имя получателя; это может быть строка, представляющая имя отображения, псевдоним или полный адрес электронной почты SMTP получателя.</param>
+        <summary>Создает <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" />  объект.</summary>
+        <returns>Объект <b>Recipient,</b> который представляет нового получателя.</returns>
+        <remarks><para> Этот метод чаще всего используется для создания объекта <b>Recipient</b> для использования с методом, например, для открытия папки <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetSharedDefaultFolder(Microsoft.Office.Interop.Outlook.Recipient,Microsoft.Office.Interop.Outlook.OlDefaultFolders)" />  делегатора. Он также может использоваться для проверки заданного имени в адресной книге.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -458,12 +458,12 @@
         <Parameter Name="Provider" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Context">Значение типа <b>String</b> (<b>строка</b> в C#) или <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий используемый контекст общего доступа.</param>
-        <param name="Provider"><see cref="T:Microsoft.Office.Interop.Outlook.OlSharingProvider" /> Значение, представляющее используемого поставщика общего доступа.</param>
+        <param name="Context">Значение <b>String</b> <b>(string</b> in C#) или объект, представляющий используемый контекст <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> общего доступа.</param>
+        <param name="Provider">Значение, <see cref="T:Microsoft.Office.Interop.Outlook.OlSharingProvider" />  представляющее используемый поставщик общего доступа.</param>
         <summary>Создает новый <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" /> объект.</summary>
-        <returns>Объект <b>SharingItem</b> , представляющий сообщение о совместном доступе для указанного контекста.</returns>
-        <remarks><para>Если задано значение <b>String</b> (<b>строка</b> в C#), метод <paramref name="Context" />предполагает, что в качестве контекста общего доступа предоставлен URL-адрес. Если <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект указан в <paramref name="Context" />, метод пытается обнаружить общий контекст из папки. Если контекст общего доступа не существует или существует несколько контекстов общего доступа, возникает ошибка.</para>
-          <para>Если <paramref name="Provider" /> параметр не указан, метод пытается использовать соответствующего поставщика общего доступа для значения, указанного в <paramref name="Context" />параметре.</para>
+        <returns>Объект <b>SharingItem,</b> который представляет сообщение общего доступа для указанного контекста.</returns>
+        <remarks><para>Если в <b>строке</b> <b>(строка</b> C#) указывается значение, метод предполагает, что URL-адрес был предоставлен в качестве <paramref name="Context" /> контекста общего доступа. Если объект указан в папке, метод пытается обнаружить контекст общего доступа <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> <paramref name="Context" /> из папки. Если контекст совместного доступа не существует или существует несколько контекстов общего доступа, возникает ошибка.</para>
+          <para>Если не указано, метод пытается использовать соответствующего поставщика общего <paramref name="Provider" /> доступа для значения, указанного в <paramref name="Context" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -490,11 +490,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), представляющую имя текущего профиля. Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> <b>(строку</b> C#) с именем текущего профиля. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Имя профиля назначается при создании профиля. </para>
+        <remarks><para>При создании профиля назначается имя профиля. </para>
           <para>
-            <b>Куррентпрофиленаме</b> сопоставляется со свойством MAPI <b>PidTagProfileName</b>.</para>
+            <b>CurrentProfileName</b> maps to the MAPI property <b>PidTagProfileName</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -521,7 +521,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Recipient</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает отображаемое имя пользователя, вошедшего в систему, в качестве <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает имя отображаемого пользователя, зарегистрированного в настоящее время в качестве <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" />  объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -551,7 +551,7 @@
       <Docs>
         <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объект, представляющий хранилище по умолчанию для профиля. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Возвращает ошибку, если для текущего профиля отсутствует хранилище по умолчанию.</para>
+        <remarks><para>Возвращает ошибку, если для текущего профиля нет магазина по умолчанию.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -577,8 +577,8 @@
         <Parameter Name="ContactItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ContactItem"><see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" /> Объект контакта, который необходимо набрать.</param>
-        <summary>Отображает диалоговое окно Новый звонок, с помощью которого пользователи могут набирать основной номер телефона указанного контакта.</summary>
+        <param name="ContactItem">Объект <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" /> контакта, который необходимо набрать.</param>
+        <summary>Отображает диалоговое окно New Call, которое позволяет пользователям набирать основной номер телефона указанного контакта.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -605,9 +605,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode" /> константу, показывающую текущий режим подключения, который использует пользователь. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode" /> константа, которая указывает текущий режим подключения, который использует пользователь. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Если свойство <b>ExchangeConnectionMode</b> имеет значение <b>олоффлине</b> или <b>олдисконнектед</b>, <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.Offline" /> свойство будет возвращать <b>значение true</b> . Если свойство <b>ExchangeConnectionMode</b> имеет значение <b>олонлине</b>, <b>Олконнектед</b>или <b>Олконнектедхеадерс</b>, свойство <b>Namespace. offline</b> возвратит <b>значение false</b>.</para>
+        <remarks><para>Если свойство <b>ExchangeConnectionMode</b> <b>является olOffline</b> или <b>olDisconnected,</b>свойство <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.Offline" /> возвращает <b>True.</b> Если свойство <b>ExchangeConnectionMode</b> является <b>olOnline,</b> <b>olConnected</b>или <b>olConnectedHeaders,</b>свойство <b>NameSpace.Offline</b> возвращает <b>false</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -634,9 +634,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа String</b> (<b>строка</b> в C#), представляющее имя сервера Exchange, на котором размещается активный почтовый ящик. Только для чтения.</summary>
+        <summary>Возвращает значение <b></b> String<b>(string</b> in C#), представляющего имя сервера Exchange, на котором находится активный почтовый ящик. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Если почтовый ящик Exchange отсутствует в пространстве имен, это свойство возвращает пустую строку.</para>
+        <remarks><para>Если Exchange почтового ящика нет в пространстве имен, это свойство возвращает пустую строку.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -663,12 +663,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает значение <b>типа String</b> (<b>строка</b> в C#), представляющее полную версию сервера Exchange, на котором размещается активный почтовый ящик. Только для чтения.</summary>
+        <summary>Возвращает значение <b></b> String<b>(string</b> in C#), представляющего полную версию сервера Exchange, на котором находится активный почтовый ящик. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Это свойство возвращает строку, содержащую номер версии сервера Exchange для активного почтового ящика. Номер версии состоит из четырех частей, как показано ниже.</para>
+        <remarks><para>Это свойство возвращает строку, содержащую номер версии Exchange сервера для активного почтового ящика. Номер версии имеет четыре части:</para>
           <code>&amp;lt;major version&amp;gt;.&amp;lt;minor version&amp;gt;.&amp;lt;build number&amp;gt;.&amp;lt;revision&amp;gt;</code>
-          <para>В номере версии может присутствовать не все части, в зависимости от сведений о версии, предоставляемых Microsoft Exchange Server. Например, это свойство возвращает значение "6.5.7638" для Microsoft Exchange Server 2003 с пакетом обновления 2 (SP2).</para>
-          <para>Если почтовый ящик Exchange отсутствует в пространстве имен, это свойство возвращает пустую строку.</para>
+          <para>Не все части могут присутствовать в номере версии, в зависимости от информации о версии, предоставленной Microsoft Exchange Server. Например, это свойство возвращает "6.5.7638" за Microsoft Exchange Server 2003 Пакет обновления 2.</para>
+          <para>Если Exchange почтового ящика нет в пространстве имен, это свойство возвращает пустую строку.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -695,9 +695,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Folders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> коллекцию, которая представляет все папки, которые находятся в указанной <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />папке. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> коллекцию, которая представляет все папки, содержащиеся в указанной . <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Объект <b>Namespace</b> является корневым каталогом всех папок для данного пространства имен. </para>
+        <remarks><para>Объект <b>NameSpace</b>  является корнем всех папок для данного пространства имен. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -724,15 +724,15 @@
         <Parameter Name="ID" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ID">Идентификатор строки для записи адреса, хранящейся в сеансе.</param>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объект, представляющий запись адреса, заданную параметром <paramref name="ID" />.</summary>
-        <returns>Объект <b>AddressEntry</b> , <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.ID" /> свойство которого соответствует указанному <paramref name="ID" />параметру.</returns>
-        <remarks><para>Свойство <b>ID</b> для <b>AddressEntry</b> — это постоянный уникальный строковый идентификатор, который поставщик транспорта назначает при создании <b>AddressEntry</b> . </para>
-          <para>Outlook поддерживает иерархию адресных книг для сеанса, а возвращаемая запись адреса должна соответствовать заданному <paramref name="ID" /> адресу и находиться в одной из адресных книг.</para>
+        <param name="ID">Идентификатор строки для записи адреса, сохраненной для сеанса.</param>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> объект, который представляет указанную запись адреса <paramref name="ID" /> .</summary>
+        <returns><b>AddressEntry с</b> <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.ID" /> свойством, которое соответствует <paramref name="ID" /> указанному.</returns>
+        <remarks><para>Свойство <b>ID</b> для <b>AddressEntry</b> — это постоянный уникальный идентификатор строки, который поставщик транспорта назначает при учреждении <b>AddressEntry.</b> </para>
+          <para>Outlook поддерживает иерархию адресных книг для сеанса, а возвращаемая запись адреса должна соответствовать заданной и быть в одной из <paramref name="ID" /> адресных книг.</para>
           <para>
-            <b>Жетаддрессентрифромид</b> возвращает ошибку, если не удается найти ни одного <paramref name="ID" /> элемента с указанным параметром.</para>
+            <b>GetAddressEntryFromID</b> возвращает ошибку, если элемент с заданным не <paramref name="ID" /> найден.</para>
           <para>
-            <b>Жетаддрессентрифромид</b> также возвращает ошибку, если подключение недоступно или пользователь настроен на работу в автономном режиме.</para>
+            <b>GetAddressEntryFromID</b> также возвращает ошибку, если подключение отсутствует или пользователь настроен на работу в автономном режиме.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -760,10 +760,10 @@
       </Parameters>
       <Docs>
         <param name="FolderType">Тип возвращаемой папки по умолчанию.</param>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий используемую по умолчанию папку запрошенного типа для текущего профиля; Например, получает папку календаря по умолчанию для пользователя, который в данный момент вошел в систему.</summary>
-        <returns>Объект <b>Folder</b> , представляющий папку по умолчанию запрошенного типа для текущего профиля.</returns>
-        <remarks><para>Чтобы вернуть определенную папку, не являющуюся папкой по <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> умолчанию, используйте коллекцию.</para>
-          <para>Если папка по умолчанию запрашиваемого типа не существует, в зависимости от типа, Outlook может создать и вернуть папку, или может вызвать ошибку. Например, если Олфолдерманажедемаил указан как Фолдертипе, но группа управляемых папок еще не развернута, Microsoft Outlook выдает ошибку.</para>
+        <summary>Возвращает объект, представляювший папку по умолчанию запрашиваемого типа для текущего профиля; например, получает папку Календарь по умолчанию для пользователя, который в настоящее время вошел в <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> систему.</summary>
+        <returns>Объект <b>Folder,</b> представляю который представляет папку по умолчанию запрашиваемого типа для текущего профиля.</returns>
+        <remarks><para>Чтобы вернуть определенную папку по умолчанию, используйте <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> коллекцию.</para>
+          <para>Если папка запрашиваемого типа по умолчанию не существует в зависимости от типа, Outlook может создать и вернуть папку или создать ошибку. Например, если olFolderManagedEmail указан как FolderType, но группа управляемых папок не развернута, microsoft Outlook вызывает ошибку.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -790,11 +790,11 @@
         <Parameter Name="EntryIDStore" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="EntryIDFolder"><see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.EntryID" /> Папка.</param>
-        <param name="EntryIDStore">Папка <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.StoreID" /> для папки.</param>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, идентифицируемый по УКАЗАНному идентификатору записи (если он допустим).</summary>
-        <returns>Объект<b>Folder</b> , представляющий указанную папку.</returns>
-        <remarks><para>Этот метод используется для упрощения перехода между приложениями MAPI и OLE/Messaging и Microsoft Outlook.</para>
+        <param name="EntryIDFolder"><see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.EntryID" />Папка.</param>
+        <param name="EntryIDStore"><see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.StoreID" />Папка.</param>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" />  объект, определенный указанным ID записи (если он действителен).</summary>
+        <returns>Объект<b>Folder,</b> представляю который представляет указанную папку.</returns>
+        <remarks><para>Этот метод используется для простоты перехода между приложениями MAPI и OLE/Messaging и Microsoft Outlook.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -819,11 +819,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> объект, представляющий глобальный список адресов Exchange.</summary>
-        <returns>Объект <b>AddressList</b> , представляющий глобальный список адресов.</returns>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> объект, который представляет глобальный список Exchange адресов.</summary>
+        <returns>Адресный <b>список,</b> который представляет глобальный список адресов.</returns>
         <remarks><para>
-            <b>GetGlobalAddressList</b> поддерживает только серверы Exchange Server. Он возвращает ошибку, если глобальный список адресов недоступен или не может быть найден.</para>
-          <para>Он также возвращает ошибку, если подключение недоступно или пользователь настроен на работу в автономном режиме.</para>
+            <b>GetGlobalAddressList</b> поддерживает только Exchange серверов. Он возвращает ошибку, если глобальный список адресов не доступен или не может быть найден.</para>
+          <para>Он также возвращает ошибку, если подключение отсутствует или пользователь настроен на работу в автономном режиме.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -850,12 +850,12 @@
         <Parameter Name="EntryIDStore" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="EntryIDItem"><see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.EntryID" /> Элемент.</param>
-        <param name="EntryIDStore">Папка <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.StoreID" /> для папки. <paramref name="EntryIDStore" />Обычно при получении элемента на основе его идентификаторов MAPI обычно требуется предоставить.</param>
-        <summary>Возвращает элемент Microsoft Outlook, идентифицируемый по указанному ИДЕНТИФИКАТОРу записи (если он допустим).</summary>
-        <returns>Значение объекта, представляющее указанный элемент Outlook.</returns>
-        <remarks><para>Этот метод используется для упрощения перехода между приложениями MAPI и OLE/Messaging и Outlook.</para>
-          <para>Дополнительные сведения об идентификаторах записей можно узнать в <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.EntryID" /> свойстве. </para>
+        <param name="EntryIDItem"><see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.EntryID" />Элемент.</param>
+        <param name="EntryIDStore"><see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.StoreID" />Папка. <paramref name="EntryIDStore" /> обычно необходимо предоставлять при искомом элементе на основе его IDs MAPI.</param>
+        <summary>Возвращает элемент Microsoft Outlook, определенный указанным ИД записи (если он действителен).</summary>
+        <returns>Объектное значение, которое представляет указанный Outlook элемент.</returns>
+        <remarks><para>Этот метод используется для простоты перехода между приложениями MAPI и OLE/Messaging и Outlook.</para>
+          <para>Дополнительные сведения о ID-записях см. в <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.EntryID" /> свойстве. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -882,10 +882,10 @@
         <Parameter Name="EntryID" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="EntryID"><see cref="P:Microsoft.Office.Interop.Outlook.Recipient.EntryID" /> Адрес получателя.</param>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> объект, идентифицируемый по УКАЗАНному идентификатору записи (если он допустим).</summary>
-        <returns>Объект <b>Recipient</b> , представляющий указанного получателя.</returns>
-        <remarks><para>Этот метод используется для упрощения перехода между приложениями MAPI и OLE/Messaging и Microsoft Outlook.</para>
+        <param name="EntryID"><see cref="P:Microsoft.Office.Interop.Outlook.Recipient.EntryID" />Получатель.</param>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" />  объект, определенный указанным ID записи (если он действителен).</summary>
+        <returns>Объект <b>Recipient,</b> который представляет указанного получателя.</returns>
+        <remarks><para>Этот метод используется для простоты перехода между приложениями MAPI и OLE/Messaging и Microsoft Outlook.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -910,8 +910,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Получает <see cref="T:Microsoft.Office.Interop.Outlook.SelectNamesDialog" /> объект для текущего сеанса.</summary>
-        <returns>Объект <b>SelectNamesDialog</b> для текущего сеанса. Объект <b>SelectNamesDialog</b> поддерживает отображение диалогового окна Выбор имен для пользователя, чтобы выбрать записи из одного или нескольких списков адресов в текущем сеансе.</returns>
+        <summary>Получает объект <see cref="T:Microsoft.Office.Interop.Outlook.SelectNamesDialog" /> для текущего сеанса.</summary>
+        <returns>Объект  <b>SelectNamesDialog</b> для текущего сеанса. Объект <b>SelectNamesDialog</b> поддерживает отображение диалогового окна Select Names для выбора записей из одного или более адресных списков текущего сеанса.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -938,13 +938,13 @@
         <Parameter Name="FolderType" Type="Microsoft.Office.Interop.Outlook.OlDefaultFolders" />
       </Parameters>
       <Docs>
-        <param name="Recipient">Владелец папки. Обратите внимание, что объект <b>Recipient</b> должен быть разрешен.</param>
+        <param name="Recipient">Владелец папки. Обратите внимание, <b>что объект Recipient</b> должен быть разрешен.</param>
         <param name="FolderType">Тип папки.</param>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> объект, представляющий указанную папку по умолчанию для указанного пользователя.</summary>
-        <returns>Объект <b>Folder</b> , представляющий указанную папку по умолчанию для указанного пользователя.</returns>
-        <remarks><para>Этот метод используется в сценарии делегирования, когда один пользователь получает делегированный доступ другому пользователю для одной или нескольких папок по умолчанию (например, их папки общего календаря).</para>
+        <summary>Возвращает объект, который представляет указанную папку по умолчанию <see cref="T:Microsoft.Office.Interop.Outlook.Folder" />  для указанного пользователя.</summary>
+        <returns>Объект <b>папки,</b> представляю который представляет указанную папку по умолчанию для указанного пользователя.</returns>
+        <remarks><para>Этот метод используется в сценарии делегирования, когда один пользователь делегировал доступ другому пользователю для одной или более папок по умолчанию (например, общей папки Calendar).</para>
           <para>
-            <paramref name="FolderType" />может быть одной из следующих констант <b>OlDefaultFolders</b> : <b>олфолдеркалендар</b>, <b>олфолдерконтактс</b>, <b>олфолдердрафтс</b>, <b>олфолдеринбокс</b>, <b>олфолдержаурнал</b>, <b>олфолдернотес</b>или <b>olFolderTasks</b>. (Константы <b>олфолдерделетедитемс</b>, <b>олфолдераутбокс</b>, <b>олфолдержунк</b>, <b>олфолдерконфликтс</b>, <b>олфолдерлокалфаилурес</b>, <b>olFolderServerFailures</b>, <b>olFolderSyncIssues</b>, <b>olPublicFoldersAllPublicFolders</b>, <b>olFolderRssSubscriptions</b>, <b>olFolderToDo</b>, <b>olFolderManagedEmail</b>и <b>olFolderSentMail</b> не могут быть указаны для этого аргумента.)</para>
+            <paramref name="FolderType" /> может быть одним из следующих констант <b>OlDefaultFolders:</b> <b>olFolderCalendar</b>, <b>olFolderContacts</b>, <b>olFolderDrafts</b>, <b>olFolderInbox</b>, <b>olFolderJournal</b>, <b>olFolderNotes</b>, или <b>olFolderTasks</b>. (Константы <b>olFolderDeletedItems</b>, <b>olFolderOutbox</b>, <b>olFolderJunk</b>, <b>olFolderConflicts</b>, <b>olFolderLocalFailures</b>, <b>olFolderServerFailures</b>, <b>olFolderSyncIssues</b>, <b>olPublicFoldersAllPublicFolders</b>, <b>olFolderRssSubscriptions</b>, <b>olFolderToDo</b>, <b>olFolderManagedEmail</b>и <b>olFolderSentMail</b> не могут быть указаны для этого аргумента.)</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -971,13 +971,13 @@
         <Parameter Name="ID" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ID">Строковое значение, идентифицирующее хранилище.</param>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объект, представляющий хранилище, заданное параметром <paramref name="ID" />.</summary>
-        <returns>Объект <b>Store</b> с сопоставленным <see cref="P:Microsoft.Office.Interop.Outlook._Store.StoreID" /> <paramref name="ID" />свойством.</returns>
-        <remarks><para>Свойство <b>StoreID</b> <b>хранилища</b> является уникальным для профиля сеанса. Оно эквивалентно свойству MAPI <b>PidTagStoreEntryId</b>.</para>
-          <para>Для успешного выполнения этого метода необходимо подключить хранилище.</para>
+        <param name="ID">Строковая величина, определяемая магазином.</param>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объект, который представляет магазин, указанный <paramref name="ID" /> в .</summary>
+        <returns>Объект <b>Store</b> с <see cref="P:Microsoft.Office.Interop.Outlook._Store.StoreID" /> свойством, <paramref name="ID" /> совпадающий.</returns>
+        <remarks><para>Свойство <b>StoreID</b> <b>магазина</b> уникально для профиля сеанса. Это эквивалентно свойству MAPI <b>PidTagStoreEntryId.</b></para>
+          <para>Чтобы этот метод удался, необходимо установить хранилище.</para>
           <para>
-            <b>Жетсторефромид</b> возвращает ошибку, если не удается найти хранилище с <paramref name="ID" /> указанным параметром для текущего сеанса.</para>
+            <b>GetStoreFromID</b> возвращает ошибку, если для текущего сеанса не найден магазин с <paramref name="ID" /> указанным.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1002,7 +1002,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Записывает пользователя из текущего сеанса MAPI.</summary>
+        <summary>Выключит пользователя из текущего сеанса MAPI.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1031,14 +1031,14 @@
         <Parameter Name="NewSession" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Profile">Имя профиля MAPI в виде <b>строки </b>(<b>строка</b> в C#), используемое для сеанса. Укажите пустую строку, чтобы использовать профиль по умолчанию для текущего сеанса.</param>
-        <param name="Password">Пароль (если он есть) в виде <b>строки </b>(<b>строки</b> в C#), связанного с профилем.  Этот параметр существует только для обеспечения обратной совместимости и в целях безопасности не рекомендуется использовать его.  Microsoft Интернете предложит пользователю указать пароль в большинстве конфигураций системы.  Это пароль для входа в систему, который не следует путать с паролями PST.</param>
-        <param name="ShowDialog"><b>Значение true</b> , чтобы отобразить диалоговое окно входа MAPI, позволяющее пользователю выбрать профиль MAPI.</param>
-        <param name="NewSession"><b>Значение true</b> для создания нового сеанса Outlook. Так как в Outlook не удается создать несколько сеансов, этот параметр должен быть задан как true, только если сеанс еще не существует.</param>
-        <summary>Заносит пользователя в MAPI, получая сеанс MAPI.</summary>
-        <remarks><para>Используйте метод <b>logon</b> только для входа в определенный профиль, если Outlook еще не запущен. Это связано с тем, что только один процесс Outlook может выполняться одновременно, и этот процесс Outlook использует только один профиль и поддерживает только один сеанс MAPI. Когда пользователь запускает Outlook во второй раз, этот экземпляр Outlook запускается в том же самом процессе Outlook, не создает новый процесс и использует тот же профиль. </para>
-          <para>Если приложение Outlook уже запущено, использование этого метода не приводит к созданию нового сеанса Outlook или изменению текущего профиля на другой. </para>
-          <para>Если Outlook не запущен, а вы хотите запустить Outlook только с профилем по умолчанию, не используйте метод <b>logon</b> . Более предпочтительная альтернатива показано в следующем примере кода Инитиализемапи: First, создание экземпляра объекта Outlook <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> и ссылка на папку по умолчанию, например папку "Входящие". Это может быть побочным результатом инициализации MAPI для использования профиля по умолчанию и обеспечения полной функциональности объектной модели. </para>
+        <param name="Profile">Имя профиля MAPI в качестве <b>строки </b><b>(строка</b> C#), используемая для сеанса. Укажите пустую строку, чтобы использовать профиль по умолчанию для текущего сеанса.</param>
+        <param name="Password">Пароль (если таково),<b></b> как строка <b>(строка </b>C#), связанная с профилем.  Этот параметр существует только для обратной совместимости и по соображениям безопасности не рекомендуется использовать.  Microsoft Outlook пользователю указать пароль в большинстве конфигураций системы.  Это ваш пароль с логотипом и не следует путать с паролями PST.</param>
+        <param name="ShowDialog"><b>True</b> отображает диалоговое окно логотипа MAPI, чтобы позволить пользователю выбрать профиль MAPI.</param>
+        <param name="NewSession"><b>True</b> для создания нового Outlook сеанса. Так как несколько сеансов невозможно создать в Outlook, этот параметр должен быть указан как True только в том случае, если сеанс еще не существует.</param>
+        <summary>Записывая запись пользователя в MAPI, вы получите сеанс MAPI.</summary>
+        <remarks><para>Используйте метод <b>Logon</b> только для входа в определенный профиль, Outlook еще не запущен. Это потому, что Outlook только один процесс может запускаться одновременно, и этот Outlook использует только один профиль и поддерживает только один сеанс MAPI. Когда пользователь Outlook второй раз, этот экземпляр Outlook выполняется в одном Outlook процессе, не создает новый процесс и использует тот же профиль. </para>
+          <para>Если Outlook уже запущен, этот метод не создает новый сеанс Outlook или не меняет текущий профиль на другой. </para>
+          <para>Если Outlook не запущена и вы хотите начать Outlook с профилем по умолчанию, не используйте метод <b>Logon.</b> Лучшая альтернатива показана в следующем примере кода InitializeMAPI: сначала мгновенно Outlook объект, а затем ссылку на папку по умолчанию, например папку <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> "Входящие". Это имеет побочный эффект инициализации MAPI для использования профиля по умолчанию и полной функциональности объектной модели. </para>
           <code>
 Imports Outlook = Microsoft.Office.Interop.Outlook
 
@@ -1060,7 +1060,7 @@ Sub InitializeMAPI ()
 
     ' Continue to use the object model to automate Outlook.
 End Sub</code>
-          <para>Начиная с Outlook 2010, если у вас несколько профилей, вы настроили Outlook так, чтобы они всегда использовали профиль по умолчанию, и вы используете метод <b>logon</b> для входа в профиль по умолчанию, не выполняя запрос пользователя, пользователь получит запрос на выбор профиля. Чтобы избежать такой ситуации, не используйте метод <b>logon</b> ; Вместо этого используйте обходной путь, предложенный в предыдущем примере Инитиализемапи.</para>
+          <para>Начиная с Outlook 2010 г., если у вас несколько профилей, вы Outlook всегда использовать профиль по умолчанию, и вы используете метод <b>Logon</b> для входа в профиль по умолчанию без запроса пользователя, пользователь получит запрос на выбор профиля в любом случае. Чтобы избежать такого поведения, не используйте метод <b>Logon;</b> вместо этого используйте обходное решение, предложенное в предыдущем примере InitializeMAPI.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1118,10 +1118,10 @@ End Sub</code>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>логическое</b> значение (<b>bool</b> в C#), которое указывает <b>true</b> , если Outlook работает в автономном режиме (не подключен к серверу Exchange), и <b>false</b> , если он подключен к серверу Exchange.  Только для чтения.</summary>
+        <summary>Возвращает <b>boolean (bool</b> в C#) с указанием <b>True,</b> если Outlook отключен (не подключен к серверу Exchange) и <b>False</b> if online (подключен к Exchange серверу).<b></b>  Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство offline возвращает действительные сведения только для профиля Exchange. Он не предназначен для типов учетных записей, не относящихся к Exchange, таких как POP3, IMAPI и HTTP.</para>
-          <para>Если <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.ExchangeConnectionMode" /> свойство равно <b>олоффлине</b> или <b>олдисконнектед</b>, свойство <b>offline</b> будет возвращать <b>значение true</b>. Если свойство <b>ExchangeConnectionMode</b> имеет значение <b>олонлине</b>, <b>Олконнектед</b>или <b>Олконнектедхеадерс</b>, свойство <b>offline</b> будет возвращать <b>значение false</b>.</para>
+        <remarks><para>Свойство Offline возвращает допустимые сведения только для Exchange профиля. Она не предназначена для типов Exchange учетных записей, таких как POP3, IMAPI и HTTP.</para>
+          <para>Если свойство <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.ExchangeConnectionMode" /> <b>olOffline</b> или <b>olDisconnected,</b>свойство <b>Offline</b> возвращает <b>True.</b> Если <b></b> свойство <b>ExchangeConnectionMode</b> является <b>olOnline, olConnected</b>или <b>olConnectedHeaders,</b>свойство Offline возвращает <b>false</b>. <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1150,16 +1150,16 @@ End Sub</code>
         <Parameter Name="UseTTL" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Path">URL-адрес или имя локального файла общедоступной папки, которую необходимо открыть.</param>
-        <param name="Name">Имя веб-канала "действительно простой синдикации" (RSS) или календаря WebCal. Этот параметр игнорируется для других типов общих папок.</param>
-        <param name="DownloadAttachments">Указывает, следует ли загружать вложения (для RSS-каналов) или вложения (для календарей WebCal). Этот параметр игнорируется для других типов общих папок.</param>
-        <param name="UseTTL">Указывает, следует ли использовать параметр срока жизни (TTL) в RSS-канале или календаре WebCal. Этот параметр игнорируется для других типов общих папок.</param>
-        <summary>Открывает общую папку, на которую ссылается URL-адрес или имя файла.</summary>
-        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> Объект, представляющий общую папку.</returns>
-        <remarks><para>Этот метод используется для доступа к следующим типам общих папок:</para>
+        <param name="Path">URL-адрес или локальное имя файла открытой общей папки.</param>
+        <param name="Name">Имя действительно простого канала синдикации (RSS) или веб-календаря. Этот параметр игнорируется для других типов общих папок.</param>
+        <param name="DownloadAttachments">Указывает, следует ли загружать вольеры (для RSS-каналов) или вложения (для календарей Webcal).) Этот параметр игнорируется для других типов общих папок.</param>
+        <param name="UseTTL">Указывает, следует ли использовать параметр Time To Live (TTL) в канале RSS или календаре WebCal. Этот параметр игнорируется для других типов общих папок.</param>
+        <summary>Открывает общую папку, ссылаясь на URL-адрес или имя файла.</summary>
+        <returns>Объект, <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> представляющую общую папку.</returns>
+        <remarks><para>Этот метод используется для доступа к следующим общим типам папок:</para>
           <list type="bullet">
             <item>
-              <para>WebCal календари (webcal://mysite/mycalendar)</para>
+              <para>Веб-календари (webcal://mysite/mycalendar)</para>
             </item>
             <item>
               <para>RSS-каналы (feed://mysite/myfeed)</para>
@@ -1168,18 +1168,18 @@ End Sub</code>
               <para>Папки Microsoft SharePoint Foundation (stssync://mysite/myfolder)</para>
             </item>
             <item>
-              <para>файлы календаря iCalendar (ICS)</para>
+              <para>файлы календаря iCalendar (.ics)</para>
             </item>
             <item>
-              <para>файлы контактов vCard (VCF)</para>
+              <para>файлы контактов vCard (.vcf)</para>
             </item>
             <item>
-              <para>Файлы сообщений Outlook (MSG)</para>
+              <para>Outlook сообщений (msg)</para>
             </item>
           </list>
           <para>
-            <b>Note</b>: Этот метод не поддерживает файлы встреч iCalendar (ICS). Чтобы открыть файлы встреч iCalendar, можно использовать <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.OpenSharedItem(System.String)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта.</para>
-          <para><see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetSharedDefaultFolder(Microsoft.Office.Interop.Outlook.Recipient,Microsoft.Office.Interop.Outlook.OlDefaultFolders)" /> Метод объекта <b>Namespace</b> можно использовать для предоставления общего доступа к папкам по умолчанию, таким как папка "Входящие", в Exchange.</para>
+            <b>Примечание.</b>Этот метод не поддерживает файлы назначения iCalendar (.ics). Чтобы открыть файлы встреч iCalendar, можно использовать <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.OpenSharedItem(System.String)" /> метод <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объекта.</para>
+          <para>Вы можете использовать метод объекта Namespace для совместной работы папок по умолчанию, таких как папка <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetSharedDefaultFolder(Microsoft.Office.Interop.Outlook.Recipient,Microsoft.Office.Interop.Outlook.OlDefaultFolders)" /> "Входящие", в Exchange. <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1206,30 +1206,30 @@ End Sub</code>
         <Parameter Name="Path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Path">Путь или URL-адрес общего элемента, который требуется открыть.</param>
-        <summary>Открывает общий элемент по указанному пути или URL-адресу.</summary>
-        <returns>Объект, представляющий соответствующий элемент Outlook для общего элемента.</returns>
-        <remarks><para>Этот метод используется для открытия файлов встречи iCalendar (ICS), файлов vCard (VCF) и файлов сообщений Outlook (MSG). Тип объекта, возвращаемого этим методом, зависит от типа открытого общего элемента, как описано в следующей таблице.</para>
+        <param name="Path">Путь или URL-адрес открываемого общего элемента.</param>
+        <summary>Открывает общий элемент из указанного пути или URL-адреса.</summary>
+        <returns>Объект, представляющий соответствующий Outlook элемент для общего элемента.</returns>
+        <remarks><para>Этот метод используется для открытия файлов назначения iCalendar (.ics), файлов vCard (.vcf) и Outlook сообщений (.msg). Тип объекта, возвращаемого этим методом, зависит от типа открываемого общего элемента, как описано в следующей таблице.</para>
           <list type="table">
             <item>
-              <description>Тип общего элемента</description>
+              <description>Тип общих элементов</description>
               <description>Элемент Outlook</description>
             </item>
             <item>
-              <description>файл встречи iCalendar (ICS)</description>
+              <description>файл встречи с iCalendar (.ics)</description>
               <description>AppointmentItem</description>
             </item>
             <item>
-              <description>файл vCard (VCF)</description>
+              <description>файл vCard (.vcf)</description>
               <description>ContactItem</description>
             </item>
             <item>
-              <description>Файл сообщения Outlook (MSG)</description>
-              <description>Тип соответствует типу элемента, сохраненного в виде MSG</description>
+              <description>Outlook сообщения (msg)</description>
+              <description>Тип соответствует типу элемента, сохраненного как файл .msg</description>
             </item>
           </list>
           <para>
-            <b>Note</b>: Этот метод не поддерживает файлы календаря iCalendar (ICS). Чтобы открыть файлы календаря iCalendar, можно использовать <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.OpenSharedFolder(System.String,System.Object,System.Object,System.Object)" /> метод объекта <b>Namespace</b> .</para>
+            <b>Примечание.</b>Этот метод не поддерживает файлы календаря iCalendar (.ics). Чтобы открыть файлы календаря iCalendar, можно использовать <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.OpenSharedFolder(System.String,System.Object,System.Object,System.Object)" /> метод <b>объекта NameSpace.</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1282,9 +1282,9 @@ End Sub</code>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Отображает диалоговое окно "Выбор папки".</summary>
-        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> Объект, представляющий папку, выбранную пользователем в диалоговом окне, или <b>значение Nothing</b> , если диалоговое окно отменено пользователем.</returns>
-        <remarks><para>Диалоговое окно Выбор папки — это модальное диалоговое окно, которое означает, что выполнение кода не будет продолжаться до того, как пользователь выберет папку или не отменяет диалоговое окно.</para>
+        <summary>Отображает диалоговое окно папки выбор.</summary>
+        <returns>Объект, который представляет папку, которую пользователь выбирает в диалоговом окне, или Ничего, если диалоговое окно отменяется <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> пользователем. <b></b></returns>
+        <remarks><para>Диалоговое окно "Выбор папок" — это диалоговое окно modal, что означает, что выполнение кода не будет продолжаться до тех пор, пока пользователь не выберет папку или не отменит диалоговое окно.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1339,9 +1339,9 @@ End Sub</code>
         <Parameter Name="Folder" Type="Microsoft.Office.Interop.Outlook.MAPIFolder" />
       </Parameters>
       <Docs>
-        <param name="Folder">Файл личных папок (PST-файл), который необходимо удалить из списка.</param>
-        <summary>Удаляет файл личных папок (PST) из текущего профиля или сеанса MAPI.</summary>
-        <remarks><para>Этот метод удаляет хранилище только из пользовательского интерфейса Microsoft Outlook. Невозможно удалить хранилище из основного почтового ящика на сервере или с жесткого диска пользователя с помощью объектной модели Outlook.</para>
+        <param name="Folder">Файл персональных папок (PST), который будет удален из списка.</param>
+        <summary>Удаляет файл личных папок (PST) из текущего профиля MAPI или сеанса.</summary>
+        <remarks><para>Этот метод удаляет хранилище только из пользовательского интерфейса Microsoft Outlook. Нельзя удалить хранилище из основного почтового ящика на сервере или с жесткого диска пользователя с помощью Outlook объектной модели.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1368,13 +1368,13 @@ End Sub</code>
         <Parameter Name="showProgressDialog" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="showProgressDialog">Указывает, следует ли отображать диалоговое окно хода выполнения отправки и получения Outlook независимо от параметров пользователя.</param>
-        <summary>Инициирует немедленную доставку всех недоставленных сообщений, отправленных в текущем сеансе, и немедленное получение почты для всех учетных записей в текущем профиле.</summary>
-        <remarks><para>Метод <b>сендандрецеиве</b> вызывается асинхронно.</para>
+        <param name="showProgressDialog">Указывает, следует ли Outlook диалоговое окно Send/Receive Progress, независимо от параметров пользователя.</param>
+        <summary>Инициирует немедленную доставку всех незавернутых сообщений, отправленных в текущем сеансе, и немедленное получение почты для всех учетных записей текущего профиля.</summary>
+        <remarks><para>Вызов метода <b>SendAndReceive</b> является асинхронным.</para>
           <para>
-            <b>Сендандрецеиве</b> предоставляет программный эквивалент команды "Отправить/получить все", доступной при нажатии кнопки Сервис, а затем Отправка и получение.</para>
-          <para>Если не требуется синхронизировать все объекты, можно использовать объект <see cref="T:Microsoft.Office.Interop.Outlook.SyncObjects" /> Collection для выбора определенных объектов. Дополнительные сведения см. в статье <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.SyncObjects" />.</para>
-          <para>Все учетные записи, определенные в текущем профиле, используются при отправке и получении. Если для выполнения отправки и получения требуется сетевое подключение, подключение устанавливается в соответствии с предпочтениями пользователя.</para>
+            <b>SendAndReceive</b> предоставляет программный эквивалент командной команды Send/Receive All, которая доступна при нажатии инструментов и отправки/получения.</para>
+          <para>Если нет необходимости синхронизировать все объекты, можно использовать объект коллекции для <see cref="T:Microsoft.Office.Interop.Outlook.SyncObjects" /> выбора определенных объектов. Дополнительные сведения см. в статье <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.SyncObjects" />.</para>
+          <para>Все учетные записи, определенные в текущем профиле, используются в Send/Receive All. Если для выполнения отправки и получения требуется подключение к сети, подключение выполняется в соответствии с предпочтениями пользователей.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1401,9 +1401,9 @@ End Sub</code>
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> объект для текущего сеанса. Только для чтения.</summary>
+        <summary>Возвращает объект <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  для текущего сеанса. Только для чтения.</summary>
         <value>To be added.</value>
-        <remarks><para>Свойство <b>Session</b> и <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> метод можно использовать в качестве взаимозаменяемого для получения объекта <b>пространства имен</b> для текущего сеанса. Оба участника выполняют одну и ту же задачу. Например, следующие пары операторов выполняют одну и ту же функцию:</para>
+        <remarks><para>Свойство <b>Session</b> и метод можно использовать взаимозаменяемо для получения объекта <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> <b>NameSpace</b> для текущего сеанса. Оба члена служат одной и той же цели. Например, следующие пары заявлений выполняют ту же функцию:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -1436,7 +1436,7 @@ End Sub</code>
         <ReturnType>Microsoft.Office.Interop.Outlook.Stores</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает объект <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> Collection, который представляет все <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекты в текущем профиле. Только для чтения.</summary>
+        <summary>Возвращает объект <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> коллекции, который представляет все <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> объекты текущего профиля. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1464,7 +1464,7 @@ End Sub</code>
         <ReturnType>Microsoft.Office.Interop.Outlook.SyncObjects</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.SyncObjects" /> коллекцию, содержащую все группы настроить отправки. Только для чтения.</summary>
+        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.SyncObjects" />  коллекцию, содержащую все группы отправки и получения. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1492,7 +1492,7 @@ End Sub</code>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <b>строку</b> (<b>строка</b> в C#), указывающую тип указанного объекта.  Только для чтения.</summary>
+        <summary>Возвращает <b>строку</b> <b>(строку</b> C#) с указанием типа указанного объекта.  Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

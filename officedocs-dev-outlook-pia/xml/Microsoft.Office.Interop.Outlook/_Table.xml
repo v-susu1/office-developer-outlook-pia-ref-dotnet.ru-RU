@@ -1,5 +1,5 @@
 <Type Name="_Table" FullName="Microsoft.Office.Interop.Outlook._Table">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="158a812340e5870cd83216af795ef455983e655b" /><Meta Name="ms.sourcegitcommit" Value="9e48edef9d279c87fa2fbd78f150bc92c2332179" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="04/13/2021" /><Meta Name="ms.locfileid" Value="51691744" /></Metadata><TypeSignature Language="C#" Value="public interface _Table" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="acab0c8ad700585a716e430c5c571181307dc05c" /><Meta Name="ms.sourcegitcommit" Value="edbc1e709f796342c771b5226636c7e9dde40a82" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="06/25/2021" /><Meta Name="ms.locfileid" Value="53139441" /></Metadata><TypeSignature Language="C#" Value="public interface _Table" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Table" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Table" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Table" />
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> объект, который представляет родительское приложение (Outlook) для <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> объекта. Только для чтения.</summary>
+        <summary>Возвращает объект, который представляет родительское приложение <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> (Outlook) для <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> объекта. Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -162,7 +162,7 @@
       <Parameters />
       <Docs>
         <summary>Находит следующую строку в том, что соответствует <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> критериям, указанным в предыдущей  <see cref="M:Microsoft.Office.Interop.Outlook._Table.FindRow(System.String)" /> строке.</summary>
-        <returns>Объект, представляюющий следующую строку в таблице, которая соответствует состоянию фильтра в предыдущем вызове <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> <b>в FindRow.</b> <b></b> Не возвращает ничего <b>(ссылка</b> null (Ничего в Visual Basic) в C#), если <b>FindNextRow</b> не может найти другую строку, которая соответствует критериям, указанным в <b>FindRow</b>. Кроме того, ничего не возвращает <b>(ссылка</b> null (Ничего в Visual Basic) в C#), если <b>FindRow</b> не был вызван до <b>FindNextRow</b>.</returns>
+        <returns>Объект, представляюющий следующую строку в таблице, которая соответствует состоянию фильтра в предыдущем вызове <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> <b>в FindRow.</b> <b></b> Не <b>возвращает</b> ничего (ссылка null (Ничего в Visual Basic) в C#), если <b>FindNextRow</b> не может найти другую строку, которая соответствует критериям, указанным в <b>FindRow</b>. Кроме того, ничего не возвращает <b>(ссылка</b> null (Ничего в Visual Basic) в C#), если <b>FindRow</b> не был вызван до <b>FindNextRow</b>.</returns>
         <remarks><para>
             <b>FindNextRow</b> находит следующую строку на основе строки, возвращаемой предыдущим <b>FindRow</b> или <b>FindNextRow.</b> Она не зависит от текущей строки (так как текущая строка может быть перенастройка после предыдущего <b>FindRow</b> или <b>FindNextRow,</b>например, <see cref="M:Microsoft.Office.Interop.Outlook._Table.MoveToStart" /> путем).</para>
           <para>Если <b>FindNextRow</b> находит строку, она расположит текущую строку к этой строке. Если она не находит другую строку, она не будет перенастроять текущую строку.</para>
@@ -194,11 +194,11 @@
       <Docs>
         <param name="Filter">Указывает условие, которое должно соответствовать <b>строке</b> в таблице.</param>
         <summary>Находит первую строку в  <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> том, что соответствует критериям, указанным в <paramref name="Filter" /> .</summary>
-        <returns>Объект, <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> который представляет первую строку в <b>таблице,</b> которая соответствует критериям фильтра. Не возвращает <b>ничего</b> (ссылка null (Ничего в Visual Basic) в C#), если такая строка <b></b> не может быть найдена, или в таблице нет строк.</returns>
+        <returns>Объект, <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> который представляет первую строку в <b>таблице,</b> которая соответствует критериям фильтра. Ничего <b>не</b> возвращает (ссылка null (Ничего в Visual Basic) в C#), если такая строка <b></b> не может быть найдена или таблица не содержит строк.</returns>
         <remarks><para>
             <b>FindRow</b> всегда начинается с первой строки <b>в таблице</b>.  </para>
           <para>
-            <b>FindRow</b> возвращает <b>nothing</b> (null reference (Nothing in Visual Basic) в C#), если свойство в указанном пространстве имен не <paramref name="Filter" /> существует. Свойство считается именем свойства в наборе свойств MAPI, PS_PUBLIC_STRINGS. <b>FindRow</b> не возвращает ошибку в этом случае.</para>
+            <b>FindRow</b> возвращает <b>Nothing</b> (null reference (Nothing in Visual Basic) в C#), если свойство в указанном пространстве имен не <paramref name="Filter" /> существует. Свойство считается именем свойства в наборе свойств MAPI, PS_PUBLIC_STRINGS. <b>FindRow</b> не возвращает ошибку в этом случае.</para>
           <para>
             <b>FindRow</b> возвращает ошибку, если <paramref name="Filter" /> является пустой строкой или недействительным ограничением. В тех случаях, когда <b>FindRow</b> не находит строку, текущая строка не будет перенастрояться туда, где она была до вызова <b>в FindRow.</b></para>
           <para>Чтобы использовать поиск индексации контента в <b>таблице,</b>используйте <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> метод. <b>FindRow</b> возвращает ошибку, если содержит ключевые слова <paramref name="Filter" /> индексации контента. </para>
@@ -289,7 +289,7 @@
         <summary>Получение количества строк в <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> .</summary>
         <returns>Значение <b>Integer</b> <b>(int</b> in C#), которое представляет количество строк в таблице.</returns>
         <remarks><para>
-            <b>GetRowCount</b> на большой таблице приведет к производительности.  Из-за ограничений MAPI (например, ограничений памяти для больших таблиц, одновременных операций в <b>таблице)</b> <b>GetRowCount</b> может не определить количество строк в таблице <b>или</b>может возвращать только приблизительное число строк. В этих случаях <b>GetRowCount</b> возвращает ошибку. Чтобы определить, возвращает ли вызов ошибку, необходимо использовать соответствующее обнаружение ошибок <b>для GetRowCount.</b> </para>
+            <b>GetRowCount</b> на большой таблице приведет к производительности.  Из-за ограничений MAPI (например, ограничений памяти для больших таблиц, одновременных операций в <b>таблице)</b> <b>GetRowCount</b> может не определить количество строк в таблице <b>или</b>вернуть только приблизительное число строк. В этих случаях <b>GetRowCount</b> возвращает ошибку. Чтобы определить, возвращает ли вызов ошибку, необходимо использовать соответствующее обнаружение ошибок <b>для GetRowCount.</b> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -379,7 +379,7 @@
           <para>
             <paramref name="Filter" />— это запрос по указанным свойствам элементов, представленных в качестве строк в родительской <b>таблице.</b> В запросе используется синтаксис Microsoft Jet или синтаксис dav Searching and Locating (DASL). Например, в следующем фильтре Jet и фильтре DASL указаны те же критерии для элементов <b>с LastModificationTime</b> до 15:30 12 июня 2005 г.:</para>
           <para>критерии = "[LastModificationTime] &lt; "" &amp; Format$("6/12/2005 3:30PM","General Date") &amp; """</para>
-          <para>критерии = "@SQL=" &amp; Chr(34) &amp; "DAV:getlastmodified" &amp; Chr (34)          &amp; &lt; "" &amp; Format$("6/12/2005 3:30PM", "General Date") &amp; "" </para>
+          <para>критерии = "@SQL=" &amp; Chr(34) &amp; "DAV:getlastmodified" &amp; Chr (34) &amp; &lt; "" &amp; Format$("6/12/2005 3:30PM", "General Date") &amp; "" </para>
           <para>Дополнительные сведения о указании фильтров для объекта <b>Table</b> см. в таблице <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Filtering Items</a></para>
           <para>Если они содержат настраиваемые свойства, эти свойства должны существовать в родительской папке объекта Table, чтобы ограничение <paramref name="Filter" /> работало правильно. <b></b>  Некоторые свойства не поддерживаются в фильтре <b>Table,</b> включая двоичные свойства, вычислительные свойства и содержимое тела HTML или RTF. Дополнительные сведения см. в <a href="http://go.microsoft.com/fwlink/?LinkId=87926">таблице Unsupported Properties in a Table Object or Table Filter</a></para>
           <para>Если <paramref name="Filter" /> пустая строка, <b>ограничить</b> возвращает объект <b>Table,</b> идентичный объекту <b>родительской таблицы.</b>  </para>

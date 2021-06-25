@@ -1,5 +1,5 @@
 <Type Name="_OlkCommandButton" FullName="Microsoft.Office.Interop.Outlook._OlkCommandButton">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="341bad149d45b4c5c3e83478e06e67918652fecd" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27899189" /></Metadata><TypeSignature Language="C#" Value="public interface _OlkCommandButton" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="514c2b47aad5e0f65ed9fb8a30338a93e30048b4" /><Meta Name="ms.sourcegitcommit" Value="edbc1e709f796342c771b5226636c7e9dde40a82" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ru-RU" /><Meta Name="ms.lasthandoff" Value="06/25/2021" /><Meta Name="ms.locfileid" Value="53139615" /></Metadata><TypeSignature Language="C#" Value="public interface _OlkCommandButton" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _OlkCommandButton" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._OlkCommandButton" />
   <TypeSignature Language="VB.NET" Value="Public Interface _OlkCommandButton" />
@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения о COM-объекте приведены в разделе <see cref="T:Microsoft.Office.Interop.Outlook.OlkCommandButton" />.</summary>
+    <summary>Это основной интерфейс в компонентном классе COM, который требуется управляемому программному коду для взаимодействия с соответствующим объектом COM. Используйте этот основной интерфейс только в тех случаях, когда метод, который предполагается использовать, имеет такое же имя, как событие объекта COM; в таких случаях для вызова метода приведите к этому интерфейсу, для соединения с событием приведите к интерфейсу последних событий. Иначе используйте интерфейс .NET, который создается но основе компонентного класса COM для доступа к методам, свойствам и событиям объекта COM. Сведения об объекте COM см. в <see cref="T:Microsoft.Office.Interop.Outlook.OlkCommandButton" /> .</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,10 +48,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает значение <b>типа String</b> (<b>строка</b> в C#), представляющее ускоритель или сочетание клавиш для элемента управления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает значение <b>String (string</b> <b>in</b> C#), представляю которое представляет ускоритель или горячий ключ для управления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — пустая строка, означающее отсутствие сочетания клавиш.  Если для свойства задана строка из нескольких символов, значение будет укорочено до первого символа.  </para>
-          <para>В ускорителе нельзя использовать цифры.</para>
+        <remarks><para>Значение по умолчанию — это пустая строка, то есть нет горячего ключа.  Если свойство установлено со строкой из более чем одного символа, значение будет усечено до первого символа.  </para>
+          <para>Вы не можете использовать цифры в ускорителе.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -81,10 +81,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое автоматически изменяет размер элемента управления для отображения всего содержимого. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>boolean</b> <b>(bool</b> в C#), который автоматически определяет размер управления для отображения всего содержимого. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>  По умолчанию для этого свойства задано значение <b>false</b>.</para>
-          <para>Для элемента управления кнопка это свойство определяет, будет ли элемент управления автоматически настраиваться для отображения всего значения заголовка.</para>
+        <remarks><para>  Значение по умолчанию для этого свойства <b>false</b>.</para>
+          <para>Для управления кнопкой это свойство указывает, автоматически ли управление настраивает для отображения всего значения подписи.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -114,9 +114,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>строку</b> (<b>строку</b> в C#), которая отображается в объекте для идентификации или описания.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>строку</b> <b>(строка</b> в C#), которая появляется на объекте, чтобы идентифицировать или описать ее.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию: пустая строка. Конструктор форм задает для этого свойства имя по умолчанию для элемента управления.  </para>
+        <remarks><para>Значение по умолчанию: пустая строка. Конструктор форм задает это свойство имени по умолчанию.  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -146,9 +146,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое позволяет отобразить стрелку, направленную вниз, на кнопке. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>кнопку Boolean</b> <b>(bool</b> C#), которая позволяет отрисовывать стрелку вниз на кнопку. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Эта стрелка отображается справа на кнопке в лангаужес, написанной слева направо, и слева в лангаужес, написанной справа налево. <b>Значение true</b> , чтобы отобразить стрелку на кнопке, <b>значение false</b> , чтобы отключить отображение.</para>
+        <remarks><para>Эта стрелка отрисовка справа на кнопке на языках, написанных слева направо и слева на языках, написанных справа налево. <b>True</b> для отрисовки стрелки на кнопке <b>False,</b> чтобы отключить отрисовку.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -178,10 +178,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, может ли элемент управления работать.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>boolean</b> <b>(bool</b> в C#), который указывает, разрешено ли работать управление.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>False</b>.</para>
-          <para>Если элемент управления отключен, содержимое элемента управления отображается серым цветом. </para>
+        <remarks><para>Значение по умолчанию — <b>False</b>.</para>
+          <para>При отключении управления содержимое этого управления будет отображаться неохваченным. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -208,7 +208,7 @@
         <ReturnType>stdole.StdFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает объект <b>стдфонт</b> , который представляет шрифт, используемый для отображения текста в элементе управления.  Только для чтения.</summary>
+        <summary>Возвращает <b>StdFont,</b> который представляет шрифт, используемый для отрисовки текста внутри управления.  Только для чтения.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -239,9 +239,9 @@
         <ReturnType>stdole.StdPicture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>стдпиктуре</b> , представляющий пользовательское изображение курсора мыши для этого элемента управления. Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>stdPicture,</b> представляюшку настраиваемую картинку в курсор мыши для этого управления. Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
+        <remarks><para>Значение по умолчанию <b>является Nothing</b> (null reference (Nothing in Visual Basic) в C#).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -271,9 +271,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMousePointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> константу, определяющую тип указателя, отображаемого при наведении указателя мыши на элемент управления.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает констант, указывав тип указателя, отображаемого при позиционировании мыши над <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> управлением.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>олмаусепоинтердефаулт</b>.</para>
+        <remarks><para>По умолчанию значение <b>olMousePointerDefault</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -303,11 +303,11 @@
         <ReturnType>stdole.StdPicture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает объект <b>стдпиктуре</b> , представляющий изображение, которое отображается в элементе управления.    Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>stdPicture,</b> который представляет изображение, отображаемую на пульте управления.    Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>Значение по умолчанию — <b>Nothing</b> (пустая ссылка (Nothing в Visual Basic) в C#).</para>
-          <para>Изображение и текст не могут одновременно отображаться в элементе управления, поэтому если свойство Picture задано, свойство Text игнорируется.</para>
-          <para>Изображение всегда отображается в центре элемента управления "Кнопка".  При необходимости изображение будет обрезано, чтобы вместить все доступное пространство.</para>
+        <remarks><para>Значение по умолчанию <b>является Nothing</b> (null reference (Nothing in Visual Basic) в C#).</para>
+          <para>Изображение и текст не могут отображаться одновременно на уровне управления, поэтому при наборе свойства изображения текстовое свойство игнорируется.</para>
+          <para>Изображение всегда отображается в центре управления кнопкой.  Изображение будет обрезано по мере необходимости, чтобы поместиться в доступном пространстве.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -337,7 +337,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlPictureAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlPictureAlignment" /> константу, определяющую выравнивание изображения и текста на кнопке. Для чтения и записи.</summary>
+        <summary>Возвращает или задает констант, которая указывает выравнивание изображения <see cref="T:Microsoft.Office.Interop.Outlook.OlPictureAlignment" /> и текста на кнопке. Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -368,10 +368,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlTextAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> константу, определяющую выравнивание текста в элементе управления.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> констант, которая указывает, как текст выравнивается в области управления.  Для чтения и записи.</summary>
         <value>To be added.</value>
-        <remarks><para>По умолчанию используется значение <b>олтексталигнлефт</b> в языках с письмом слева направо, например, на английском языке.</para>
-          <para>Если для элемента управления "Кнопка" <b>задано</b> значение <b>олтексталигнлефт</b>, левое поле — это только 1 пиксел от границы элемента управления.</para>
+        <remarks><para>По умолчанию значение <b>olTextAlignLeft</b> на левом и правом языках, таких как английский.</para>
+          <para>Для управления командной кнопкой, когда <b>textAlign</b> установлен <b>olTextAlignLeft,</b>левый предел находится всего в одном пикселе от границы управления.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -401,7 +401,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Возвращает или задает <b>логическое значение</b> (<b>bool</b> в C#), которое указывает, будет ли содержимое элемента управления автоматически переноситься в конце строки.  Для чтения и записи.</summary>
+        <summary>Возвращает или задает <b>boolean</b> <b>(bool</b> в C#), который указывает, автоматически ли содержимое управления оберните в конце строки.  Для чтения и записи.</summary>
         <value>To be added.</value>
         <remarks><para>Значение по умолчанию — <b>True</b>.</para>
           <para> </para></remarks>
